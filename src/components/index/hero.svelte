@@ -1,3 +1,7 @@
+<script>
+  import CubeImage from "$static/images/illustration-placeholder.png?webp&meta";
+</script>
+
 <style lang="scss">
   .hero {
     display: flex;
@@ -122,10 +126,7 @@
       </div>
     </div>
     <div class="hero__illustration">
-      <img
-        src="/images/illustration-placeholder.png"
-        alt="Gitpod in a Nutshell"
-      />
+      <img src={CubeImage.src} alt="Gitpod in a Nutshell" />
     </div>
   </div>
 </div>
