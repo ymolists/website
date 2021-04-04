@@ -1,5 +1,5 @@
 <script>
-  import CubeImage from "$static/images/illustration-placeholder.png?webp&meta";
+  import CubeImage from "$static/images/illustration-placeholder.png?webp&meta&w=400;700";
 </script>
 
 <style lang="scss">
@@ -126,7 +126,25 @@
       </div>
     </div>
     <div class="hero__illustration">
-      <img src={CubeImage.src} alt="Gitpod in a Nutshell" />
+      <picture>
+        <source
+          srcset="{CubeImage[0].src} {CubeImage[0]
+            .width}w,
+                        {CubeImage[1].src} {CubeImage[1]
+            .width}w"
+          sizes="(max-width: 1980px) 100vw, 1980px"
+        />
+        <img
+          sizes="(max-width: 1980px) 100vw, 1980px"
+          srcset="{CubeImage[0].src} {CubeImage[0]
+            .width}w,
+                       {CubeImage[1].src} {CubeImage[1]
+            .width}w"
+          src={CubeImage[1].src}
+          alt="Gitpod in a Nutshell"
+          loading="lazy"
+        />
+      </picture>
     </div>
   </div>
 </div>
