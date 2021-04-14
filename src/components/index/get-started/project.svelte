@@ -36,11 +36,11 @@
       }
     }
 
-    h5 {
+    .h5 {
       color: var(--dark-grey);
       font-size: var(--h6);
       line-height: 120%;
-      transition: all 0.2s;
+      font-weight: bold;
     }
 
     &:not(:last-child) {
@@ -56,7 +56,7 @@
         -webkit-filter: grayscale(0) opacity(1);
       }
 
-      h5 {
+      .h5 {
         color: var(--black);
       }
 
@@ -81,7 +81,7 @@
 <a href={`https://gitpod.io#${githubUrl}`} target="_blank" class="project">
   <div class="project__left">
     <img src={`/${logo}`} {alt} class="project__logo" width="27" height="27" />
-    <h5>{title}</h5>
+    <p class="h5">{title}</p>
   </div>
   <span class="btn-tertiary">Launch workspace</span>
 </a>
