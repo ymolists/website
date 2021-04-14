@@ -186,8 +186,10 @@
       local silicon.
     </p>
 
-    <a href="https://www.youtube.com/watch?v=iYLCHQgj0fE" target="_blank"
-      >Learn more about sudo/Docker in Gitpod.</a
+    <a
+      href="https://www.youtube.com/watch?v=iYLCHQgj0fE"
+      rel="noopener"
+      target="_blank">Learn more about sudo/Docker in Gitpod.</a
     >
   </div>
 </section>
