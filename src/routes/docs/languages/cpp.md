@@ -2,6 +2,10 @@
 section: languages-and-frameworks
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # C++ in Gitpod
 
 Gitpod supports C++ right out of the box, but there are still ways to enhance your C++ experience within Gitpod.

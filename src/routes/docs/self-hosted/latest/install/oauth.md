@@ -2,6 +2,10 @@
 section: self-hosted/latest/self-hosted
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # How To integrate Gitpod with OAuth providers
 
 Gitpod does not implement user authentication itself, but integrates with other auth provider using [OAuth2](https://oauth.net/2/).

@@ -15,7 +15,7 @@
   function M(title: string, path: string, subMenu?: MenuEntry[]): MenuEntry {
     return {
       title,
-      path: "/docs/" + (path ? path + "/" : ""),
+      path: "/docs" + (path ? "/" + path : ""),
       subMenu,
     };
   }
@@ -68,7 +68,7 @@
       M("LaTeX", "languages/latex"),
       M("R", "languages/r"),
       M("Kotlin", "languages/kotlin"),
-      M("Pandas", "languages/python/#pandas"),
+      M("Pandas", "languages/python#pandas"),
       M("Deno", "languages/deno"),
     ]),
     // M("Feature Preview", "feature-preview"),

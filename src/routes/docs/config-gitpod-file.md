@@ -2,6 +2,10 @@
 section: configuration
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # .gitpod.yml
 
 - [Checked-in Gitpod Config File](#checked-in-gitpod-config-file)

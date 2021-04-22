@@ -2,6 +2,10 @@
 section: self-hosted/0.3.0/self-hosted
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Workspace Storage
 
 Gitpod creates a backup of workspaces when they're shut down.

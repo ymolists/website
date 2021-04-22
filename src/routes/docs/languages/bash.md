@@ -2,6 +2,10 @@
 section: languages-and-frameworks
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Bash in Gitpod
 
 Bash is the default shell for Gitpod. However, if you're developing a Bash script yourself, you may want to configure additional language support.
@@ -34,7 +38,7 @@ USER gitpod
 RUN brew install shellcheck
 ```
 
-You should also install the shellcheck VS Code extension in Gitpod, by adding a [.gitpod.yml](/docs/config-gitpod-file/) configuration file to your repository that looks like this (notice the `vscode` extensions section):
+You should also install the shellcheck VS Code extension in Gitpod, by adding a [.gitpod.yml](/docs/config-gitpod-file) configuration file to your repository that looks like this (notice the `vscode` extensions section):
 
 ```yaml
 image:
@@ -55,14 +59,14 @@ Not sure about ShellCheck? Try it in Gitpod!
 
 Just to name a few things Bash IDE adds: Code completion, hovers, and diagnostic reporting.
 
-To install Bash IDE to your repository add the following to your [.gitpod.Dockerfile](/docs/config-docker/)
+To install Bash IDE to your repository add the following to your [.gitpod.Dockerfile](/docs/config-docker)
 
 ```dockerfile
 RUN npm i -g bash-language-server
 ```
 
 Also the following in your
-[.gitpod.yml](/docs/config-gitpod-file/)
+[.gitpod.yml](/docs/config-gitpod-file)
 
 ```yaml
 vscode:

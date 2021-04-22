@@ -2,6 +2,10 @@
 section: configuration
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Checkout and Workspace Location
 
 Older Go projects without module support need a <a href="https://golang.org/doc/code.html#Organization" target="_blank">specific workspace layout</a>:

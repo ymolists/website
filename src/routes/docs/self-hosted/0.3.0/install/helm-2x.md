@@ -2,6 +2,10 @@
 section: self-hosted/0.3.0/self-hosted
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Helm
 
 If you haven't done so before, install helm in the cluster:

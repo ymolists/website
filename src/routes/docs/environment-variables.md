@@ -2,6 +2,10 @@
 section: configuration
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Environment Variables
 
 You can pass environment variables into your workspace.

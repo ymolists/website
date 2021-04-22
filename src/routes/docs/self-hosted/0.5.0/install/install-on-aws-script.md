@@ -2,6 +2,10 @@
 section: self-hosted/0.5.0/self-hosted
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Getting started with Gitpod on AWS
 
 This guide explains how to install an instance of Gitpod with 3 simple steps:
@@ -41,8 +45,8 @@ This will kickstart the installation process, authenticate with AWS and automati
 
 Once finished, the installer will print the URL at which your Gitpod installation can be found. There you need to connect Gitpod to at least one Git provider:
 
-- [Configure an OAuth application for GitLab](/docs/gitlab-integration/#oauth-application)
-- [Configure an OAuth application for GitHub](/docs/github-integration/#oauth-application)
+- [Configure an OAuth application for GitLab](/docs/gitlab-integration#oauth-application)
+- [Configure an OAuth application for GitHub](/docs/github-integration#oauth-application)
 
 ## 4. Configure the Browser extension
 

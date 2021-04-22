@@ -2,6 +2,10 @@
 section: self-hosted/0.3.0/self-hosted
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # How To integrate Gitpod with OAuth providers
 
 Currently Gitpod supports GitHub, GitHub Enterprise and GitLab.
@@ -13,8 +17,7 @@ Follow the guide linked above and:
 
 - set "Authentication callback URL" to:
 
-
-    https://<your-domain.com>/auth/github/callback
+  https://<your-domain.com>/auth/github/callback
 
 - copy the following values and configure them in `values.yaml`:
   - `clientId`
@@ -27,8 +30,7 @@ Follow the guide linked above and:
 
 - set "Authentication callback URL" to:
 
-
-    https://<your-domain.com>/auth/<gitlab.com-OR-your-gitlab.com>/callback
+  https://<your-domain.com>/auth/<gitlab.com-OR-your-gitlab.com>/callback
 
 - set "Scopes" to `api`, `read_user` and `read_repository`.
 - copy the following values and configure them in `values.yaml`:

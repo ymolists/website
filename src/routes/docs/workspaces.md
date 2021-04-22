@@ -2,6 +2,10 @@
 section: workspaces
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Workspaces
 
 A workspace is what you code in. It consists of the files, configuration and the underlying docker file.

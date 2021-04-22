@@ -2,6 +2,10 @@
 section: self-hosted/0.4.0/self-hosted
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Kubernetes Nodes
 
 Configure the nodes (computers or virtual machines) that Kuberntes runs Gitpod's workspace pods on.

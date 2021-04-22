@@ -2,6 +2,10 @@
 section: subscriptions
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Create a Team
 
 From [gitpod.io/teams/](https://gitpod.io/teams/), you can purchase and manage Gitpod subscriptions for your entire team with one centralized billing.

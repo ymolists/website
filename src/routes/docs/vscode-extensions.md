@@ -2,6 +2,10 @@
 section: configuration
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # VS Code Extensions
 
 Gitpod already comes well equipped for most development tasks, and provides language support for the most popular programming languages such as Python, JavaScript, Go, Rust, C/C++, Java, Ruby, and many more out of the box.

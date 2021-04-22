@@ -2,6 +2,10 @@
 section: integrations
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Browser Extension
 
 Creating a workspace is as easy as prefixing any GitHub URL with `gitpod.io/#`.

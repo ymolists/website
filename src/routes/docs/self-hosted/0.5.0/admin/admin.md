@@ -2,6 +2,10 @@
 section: self-hosted/0.5.0/self-hosted
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Administrate Gitpod Self-Hosted
 
 While we are working on the administration experience, there is already a lot you can do if you know where to look.

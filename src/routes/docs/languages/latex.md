@@ -2,13 +2,17 @@
 section: languages-and-frameworks
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # LaTeX in Gitpod
 
 This tutorial will demonstrate how to configure Gitpod to work with [LaTeX](https://www.latex-project.org/) files. You can find a complete [example repository](https://github.com/ptrottier/latex) at the end.
 
 ## Installing LaTeX
 
-First, you will probably want to install LaTeX in Gitpod. To do this, add a new file to your repository called [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker/), and add the following content to it:
+First, you will probably want to install LaTeX in Gitpod. To do this, add a new file to your repository called [.gitpod.Dockerfile](https://www.gitpod.io/docs/config-docker), and add the following content to it:
 
 ```Dockerfile
 FROM gitpod/workspace-full
@@ -19,7 +23,7 @@ RUN sudo apt-get -q update && \
     sudo rm -rf /var/lib/apt/lists/*
 ```
 
-Next, create a file called [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/) and add the following to it:
+Next, create a file called [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file) and add the following to it:
 
 ```YAML
 image:

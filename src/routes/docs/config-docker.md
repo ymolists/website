@@ -2,6 +2,10 @@
 section: configuration
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Docker Configuration
 
 If the [standard Docker image](https://github.com/gitpod-io/workspace-images/blob/master/full/Dockerfile) provided by Gitpod does not include the tools you need for your project, you can provide a custom Docker image or [Dockerfile](#using-a-dockerfile).
@@ -59,7 +63,7 @@ RUN sudo apt-get update \
 ENV ...
 ```
 
-See also [Gero's blog post](/blog/docker-in-gitpod/) running through an example.
+See also [Gero's blog post](/blog/docker-in-gitpod) running through an example.
 
 ## Trying out changes to your Dockerfile
 

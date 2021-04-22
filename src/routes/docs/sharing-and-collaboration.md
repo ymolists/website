@@ -2,6 +2,10 @@
 section: workspaces
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Collaboration & Sharing of Workspaces
 
 There are two different ways to share your workspaces:

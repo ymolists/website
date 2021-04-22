@@ -2,6 +2,10 @@
 section: configuration
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Editor Configuration
 
 Gitpod uses [Theia](https://github.com/eclipse-theia/theia) as its IDE which can be configured using VS Code setting files.

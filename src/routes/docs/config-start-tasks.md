@@ -2,6 +2,10 @@
 section: configuration
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Start Tasks
 
 When starting or restarting a workspace you typically want to run certain tasks.

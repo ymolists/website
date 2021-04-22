@@ -2,6 +2,10 @@
 section: subscriptions
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Subscriptions
 
 In order to use Gitpod, a user has to have a valid subscription. If you are not aware of that, you

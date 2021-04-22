@@ -2,6 +2,10 @@
 section: self-hosted/0.4.0/self-hosted
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # HTTPS certificates
 
 While we highly recommend operating Gitpod using HTTPS, Gitpod is able to run on insecure HTTP.

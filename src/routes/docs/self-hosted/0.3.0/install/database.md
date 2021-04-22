@@ -2,6 +2,10 @@
 section: self-hosted/0.3.0/self-hosted
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Database
 
 This chart installs a MySQL database which gets Gitpod up and running but is not suitable for production (the data is lost on each restart of the DB pod). To connect to a porper MySQL installation:

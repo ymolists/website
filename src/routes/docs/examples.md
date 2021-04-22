@@ -2,6 +2,10 @@
 section: getting-started
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Example Projects
 
 Here are a few example projects that have already been configured for Gitpod.
@@ -22,4 +26,4 @@ Take a look at their `.gitpod.yml` file and try them in Gitpod with a single cli
 
 <br>
 
-You can find more example projects in the [Languages & Frameworks](/docs/languages-and-frameworks/) pages.
+You can find more example projects in the [Languages & Frameworks](/docs/languages-and-frameworks) pages.

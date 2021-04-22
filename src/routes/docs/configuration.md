@@ -2,6 +2,10 @@
 section: configuration
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Configure Your Project
 
 Gitpod dev environments are started with a single click. In order to make sure they come fully initialized and with the tools you need, you should provide a configuration file.
@@ -22,13 +26,13 @@ Gitpod configuration is versioned in the root of your git repository. Versioning
 
 The `.gitpod.yml` contains everything that describes your dev environment as code. Most importantly it contains a list of commands that should be executed when a dev environment is [prebuilt](/docs/prebuilds) and when it is started.
 
-You can find more information about [startup tasks here](/docs/config-start-tasks/).
+You can find more information about [startup tasks here](/docs/config-start-tasks).
 
 ### Step 2: Change Base Image
 
 The `.gitpod.yml` optionally references a Docker image or a Docker file, which is used as the container for your dev environment. This is where you install all the tools (such as runtimes, compilers, databases, etc.) that you need during development. The assistant can propose a couple of default Docker images which are based on the Dockerfiles maintained [here](https://github.com/gitpod-io/workspace-images). You can, of course, bring your own image.
 
-You can find more information about [Docker configuration here](/docs/config-docker/).
+You can find more information about [Docker configuration here](/docs/config-docker).
 
 ### Step 3: Update Readme
 
@@ -38,7 +42,7 @@ In case you want to tell your team or community about the automated dev environm
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/<your-org>/<your-project>)
 ```
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](/docs/configuration/)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](/docs/configuration)
 
 Alternatively you can use a button and put it into your documentation:
 
@@ -46,7 +50,7 @@ Alternatively you can use a button and put it into your documentation:
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/<your-org>/<your-project>)
 ```
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](/docs/configuration/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](/docs/configuration)
 
 ### Step 4: Test Drive Setup
 

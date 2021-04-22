@@ -2,6 +2,10 @@
 section: workspaces
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Command Line Interface
 
 Gitpod supports a command line interface that is available in each workspace terminal called `gp`:
@@ -28,7 +32,7 @@ Use "gp [command] --help" for more information about a command.
 
 ## Init
 
-Gitpod workspaces can be configured - see [Configuring Workspaces](/docs/configuration/) for more details. `gp init` helps creating this configuration by guiding through this process and producing a `gitpod.yml` in the end (think `npm init`).
+Gitpod workspaces can be configured - see [Configuring Workspaces](/docs/configuration) for more details. `gp init` helps creating this configuration by guiding through this process and producing a `gitpod.yml` in the end (think `npm init`).
 
 ## Open
 
@@ -51,7 +55,7 @@ For instance:
 gp preview $(gp url 3000)my/path/index.html
 ```
 
-If you put this into the `.gitpod.yml` to open the a certain page on startup, don't forget to [ignore the default action](/docs/config-ports/) when the port opens.
+If you put this into the `.gitpod.yml` to open the a certain page on startup, don't forget to [ignore the default action](/docs/config-ports) when the port opens.
 
 ## Forward Port
 
