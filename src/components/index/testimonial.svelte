@@ -30,6 +30,8 @@
         src={`/images/avatars/${avatar}`}
         alt={name}
         class="w-12 h-12 rounded-full"
+        width="48"
+        height="48"
       />
       <div class="ml-3">
         <p class="mb-0 font-semibold text-small leading-6">{name}</p>
