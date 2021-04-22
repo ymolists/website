@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: .gitpod.yml
 ---
 
 <script context="module">

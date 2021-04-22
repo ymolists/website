@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Julia in Gitpod
 ---
 
 <script context="module">

@@ -1,5 +1,6 @@
 ---
 section: feature-preview
+title: Feature Preview
 ---
 
 <script context="module">

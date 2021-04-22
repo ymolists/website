@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: Prebuilds
 ---
 
 <script context="module">

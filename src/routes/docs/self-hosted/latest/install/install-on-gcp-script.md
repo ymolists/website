@@ -1,5 +1,6 @@
 ---
 section: self-hosted/latest/self-hosted
+title: Getting started with Gitpod on GCP
 ---
 
 <script context="module">

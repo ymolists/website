@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Kotlin in Gitpod
 ---
 
 <script context="module">

@@ -1,5 +1,6 @@
 ---
 section: subscriptions
+title: Create a Team
 ---
 
 <script context="module">

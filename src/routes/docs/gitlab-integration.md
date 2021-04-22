@@ -1,5 +1,6 @@
 ---
 section: integrations
+title: GitLab Integration
 ---
 
 <script context="module">

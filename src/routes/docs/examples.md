@@ -1,5 +1,6 @@
 ---
 section: getting-started
+title: Example Projects
 ---
 
 <script context="module">

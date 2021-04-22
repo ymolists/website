@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: Editor Configuration
 ---
 
 <script context="module">

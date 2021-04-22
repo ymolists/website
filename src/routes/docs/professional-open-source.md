@@ -1,5 +1,6 @@
 ---
 section: subscriptions
+title: Professional Open Source
 ---
 
 <script context="module">

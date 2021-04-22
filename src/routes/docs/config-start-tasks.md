@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: Start Tasks
 ---
 
 <script context="module">

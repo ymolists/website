@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Languages & Frameworks
 ---
 
 <script context="module">

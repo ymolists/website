@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: Environment Variables
 ---
 
 <script context="module">

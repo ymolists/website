@@ -1,5 +1,6 @@
 ---
 section: languages-and-frameworks
+title: Dart in Gitpod
 ---
 
 <script context="module">

@@ -1,5 +1,6 @@
 ---
 section: configuration
+title: Docker Configuration
 ---
 
 <script context="module">
