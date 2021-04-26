@@ -15,7 +15,7 @@ title: Gitpod Open-Source Sustainability Fund
 
 The myriad of tools relied upon by developers every day is built and maintained almost exclusively by unpaid volunteers. The maintainers of open-source projects - our digital infrastructure - are in desperate need of support. Because code is less charismatic than a hit YouTube video or Kickstarter campaign, there is little public awareness and appreciation for this work.
 
-Open-source, by design, is not financially sustainable. Finding reliable, well-defined funding sources is exceptionally challenging. As projects grow in size, many maintainers burn-out, find themselves unable to satisfy increasing support/maintenance demands and, unfortunately, in my particular case, <a href="https://ghuntley.com/a-new-chapter">irrevocably harm their marriage</a>
+Open-source, by design, is not financially sustainable. Finding reliable, well-defined funding sources is exceptionally challenging. As projects grow in size, many maintainers burn-out, find themselves unable to satisfy increasing support/maintenance demands and, unfortunately, in my particular case, <a href="https://ghuntley.com/a-new-chapter">irrevocably harm their marriage</a>.
 
 <a hre="https://twitter.com/freakboy3742">Russell Keith-Magee</a> delivered this beautiful keynote at PyCon, which captures the essence better than I can put in writing because it is such a personal topic.
 
@@ -35,7 +35,7 @@ Did you know there are less than 2100 people in the inner GitHub open-source mai
 
 The word volunteer, by definition, means those who have the ability and time to give freely.
 
-Paying for resources that are being consumed broadens the list of people who can do open-source. Additionally, money enables open-source maintainers to buy services and outsource the activities that do not bring them bring joy.
+Paying for resources that are being consumed broadens the list of people who can do open-source. Additionally, money enables open-source maintainers to buy services and outsource the activities that do not bring them joy.
 
 ![Money enables diversity](../../../static/images/blog/gitpod-open-source-sustainability-fund/teaser.jpg)
 
