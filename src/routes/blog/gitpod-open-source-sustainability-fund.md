@@ -55,7 +55,7 @@ For every registration to our newly created <a href="https://www.gitpod.io/chat"
 
 #### DevX Conf
 
-The upcoming (<a href="https://www.devxconf.org/">28th of April from 5pm CEST</a>) non-profit conference on developer experience - DevX Conf will donate all surplus and USD 500 for each Gold Sponsor to open-source projects. Additionally attendees of the conference will have a say how an additional USD 10,000 in open-source funding will be distributed between open-source projects that are unseen digital infrastructure.
+The upcoming (<a href="https://devxconf.org/">28th of April from 5pm CEST</a>) non-profit conference on developer experience - DevX Conf will donate all surplus and USD 500 for each Gold Sponsor to open-source projects. Additionally attendees of the conference will have a say how an additional USD 10,000 in open-source funding will be distributed between open-source projects that are unseen digital infrastructure.
 
 #### Build in the open
 
@@ -121,14 +121,14 @@ Do you have more ideas on how funding can foster a diverse community? → Please
 
 ## See you at DevX Conference
 
-That's it for now. I hope you'll join us for non-profit <a href="https://www.devxconf.org">DevX Conf</a>, a two-day virtual conference focusing on developer experience. Attendees of the conference will have a say how an additional USD 10,000 in open-source funding will be distributed between open-source projects that are unseen digital infrastructure.
+That's it for now. I hope you'll join us for non-profit <a href="https://devxconf.org">DevX Conf</a>, a two-day virtual conference focusing on developer experience. Attendees of the conference will have a say how an additional USD 10,000 in open-source funding will be distributed between open-source projects that are unseen digital infrastructure.
 
 <ol>
     <li>
       <span>📆   </span>From 5PM CEST on April 28-29.
     </li>
     <li>
-      <span>📍  </span> <a href="https://www.devxconf.org">devxconf.org</a>.
+      <span>📍  </span> <a href="https://devxconf.org">devxconf.org</a>.
     </li>
     <li>
       <span>🎫 </span> It's free & non-profit.
