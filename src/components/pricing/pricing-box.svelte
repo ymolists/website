@@ -10,6 +10,8 @@
     btnHref,
     btnText,
     spiced,
+    learnMoreHref,
+    footnote,
   } = pricing;
 </script>
 
@@ -35,12 +37,6 @@
       margin-bottom: 0.25rem;
       font-weight: bold;
       color: var(--black);
-    }
-
-    .price {
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     &__duration,
@@ -93,8 +89,16 @@
     align-self: center;
   }
 
+  .learn-more {
+    @apply underline;
+  }
+
   :global(.crossed-out) {
     text-decoration: line-through;
+  }
+
+  :global(.price-small),
+  :global(.crossed-out) {
     color: var(--light-grey);
     font-size: var(--h4);
     margin-right: var(--macro);
@@ -102,9 +106,9 @@
 </style>
 
 <div class={`box ${spiced ? "spiced" : ""}`}>
-  <div>
+  <div class="min-h-full flex flex-col">
     <h2 class="h4">{title}</h2>
-    <div class="h1 price">{@html price}</div>
+    <div class="h1 flex items-center justify-center">{@html price}</div>
     <div class="box__duration">
       {#if duration}
         {duration}
@@ -112,11 +116,23 @@
         <span>&nbsp;</span>
       {/if}
     </div>
-    <ul class="box__list">
-      {#each features as feature}
-        <li class="box__list-item">{feature}</li>
-      {/each}
-    </ul>
+    {#if features}
+      <ul class="box__list">
+        {#each features as feature}
+          <li class="box__list-item">{feature}</li>
+        {/each}
+      </ul>
+    {/if}
+    {#if learnMoreHref}
+      <div class="flex flex-1 justify-center items-center">
+        <a href={learnMoreHref} class="learn-more">Learn More</a>
+      </div>
+    {/if}
   </div>
-  <a href={btnHref} class="btn-cta">{btnText}</a>
+  {#if btnHref && btnText}
+    <a href={btnHref} class="btn-cta">{btnText}</a>
+  {/if}
+  {#if footnote}
+    <div class="text-p-xsmall px-small text-gray-700">{footnote}</div>
+  {/if}
 </div>
