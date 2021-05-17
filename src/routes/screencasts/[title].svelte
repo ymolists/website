@@ -49,6 +49,7 @@
     <ScreencastPreview
       screencast={screencasts[screencast.nextScreencast]}
       screencastNumber={screencast.nextScreencast}
+      headlineOrder="h3"
     />
   </div>
 {/if}
