@@ -28,6 +28,31 @@
     font-weight: 700;
   }
 
+  a[href*="http://"]:not([href*="www.gitpod.io"]),
+  a[href*="https://"]:not([href*="www.gitpod.io"])
+  {
+    position: relative;
+    padding-right: 2rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(0.25rem, -50%) rotate(-135deg);
+      height: 1rem;
+      width: 1rem;
+      background: url("/svg/external.svg");
+      background-size: cover;
+      background-position: center;
+      opacity: 0.6;
+      transition: all 0.2s 50ms;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
   h3 em {
     font-style: normal;
   }
