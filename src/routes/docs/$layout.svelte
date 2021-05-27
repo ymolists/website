@@ -27,6 +27,9 @@
     ? [
         M("Introduction", "beta/introduction"),
         M("Getting Started", "beta"),
+        M("Concepts", "beta/concepts", [
+          M("Contexts", "beta/concepts/contexts"),
+        ]),
         M("🔙 Go back to stable docs", ""),
       ]
     : [
