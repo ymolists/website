@@ -26,7 +26,13 @@
   $: MENU = isBetaPage
     ? [
         M("Introduction", "beta"),
-        M("Quickstart", "beta/quickstart"),
+        M("Quickstart", "beta/quickstart", [
+          M("Go example", "beta/quickstart/go"),
+          M("Node/TypeScript example", "beta/quickstart/typescript"),
+          M("Rust example", "beta/quickstart/rust"),
+          M("Svelte example", "beta/quickstart/svelte"),
+          M("Java example", "beta/quickstart/java"),
+        ]),
         // M("Getting Started", "beta"), // TODO: Merge #467
         M("Configure", "beta/configure", [
           M("Your project", "beta/configure/project"),
