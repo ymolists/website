@@ -35,9 +35,13 @@
         ]),
         // M("Getting Started", "beta"), // TODO: Merge #467
         M("Configure", "beta/configure", [
-          M("Your project", "beta/configure/project"),
-          M("Your workspace", "beta/configure/workspace"),
+          M(".gitpod.yml", "beta/configure/gitpod-yml-file"),
+          M("Custom Docker Image", "beta/configure/docker-image"),
+          M("Start Tasks", "beta/configure/start-tasks"),
+          M("VS Code Extensions", "beta/configure/vscode-extensions"),
+          M("Exposing Ports", "beta/configure/ports"),
           M("Prebuilds", "beta/configure/prebuilds"),
+          M("Environment Variables", "beta/configure/environment-variables"),
         ]),
         M("Develop", "beta/develop", [
           M("One workspace per task", "beta/develop/ephemeral"),
