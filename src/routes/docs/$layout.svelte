@@ -50,7 +50,12 @@
           M("Collaboration & Sharing", "beta/sharing-and-collaboration"),
           M("Command Line Interface", "beta/command-line-interface"),
         ]),
-        // TODO: Insert "Integrations" chapter by merging #495
+        M("Integrations", "beta/integrations", [
+          M("GitLab", "beta/gitlab-integration"),
+          M("GitHub", "beta/github-integration"),
+          M("Bitbucket", "beta/bitbucket-integration"),
+          M("Browser Extension", "beta/browser-extension"),
+        ]),
         M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
           M(
             "Install on Google Cloud Platform",
