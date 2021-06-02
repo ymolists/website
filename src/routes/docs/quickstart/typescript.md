@@ -1,15 +1,15 @@
 ---
 section: quickstart
-title: Java example
+title: Node/TypeScript example
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Java Quickstart
+# Node/TypeScript Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Java](https://github.com/gitpod-io/spring-petclinic) example.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Node/TypeScript](https://github.com/gitpod-io/typescript-node-starter) example.
 
 The following guide will:
 
@@ -21,7 +21,7 @@ For simplicity we use a GitHub template, but Gitpod works similiarly with GitLab
 
 ### Step 1: Clone Git repository
 
-- Create a new repository based on the [Java template](https://github.com/gitpod-io/spring-petclinic/generate).
+- Create a new repository based on the [Node/TypeScript template](https://github.com/gitpod-io/typescript-node-starter/generate).
 
 ### Step 2: Install Gitpod app
 
@@ -71,5 +71,5 @@ Try it out and open 3 workspaces on the same context (e.g. on main or on an issu
 
 You've successfully ran your first workspace and experienced first hand what we mean with ephemeral dev environments. This is just the first step on your journey towards being always ready to code. Helpful resources from here are:
 
-- [Getting started with your own project](https://www.gitpod.io/docs/configuration)
+- [Getting started with your own project](https://www.gitpod.io/docs/configure)
 - Configure your project
