@@ -42,7 +42,7 @@ export const handle: import("@sveltejs/kit").Handle = async ({
   request,
   render,
 }) => {
-  if (request.path.endsWith("/")) {
+  if (request.path !== "/" && request.path.endsWith("/")) {
     // Fix for https://github.com/gitpod-io/website/issues/552 until we
     // upgrade SvelteKit to at least 1.0.0-next.105
     request.path = request.path.substring(0, request.path.length - 1);
