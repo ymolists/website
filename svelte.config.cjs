@@ -2,6 +2,7 @@ const adapterNetlify = require("@sveltejs/adapter-netlify");
 const { mdsvex } = require("mdsvex");
 const headings = require("remark-autolink-headings");
 const slug = require("remark-slug");
+const toc = require("@jsdevtools/rehype-toc");
 const sveltePreprocess = require("svelte-preprocess");
 const pkg = require("./package.json");
 const remarkSetImagePath = require("./src/utils/remark-set-image-path.cjs");
@@ -59,6 +60,15 @@ module.exports = {
             width: 800,
             height: 400,
             noIframeBorder: true,
+          },
+        ],
+      ],
+      rehypePlugins: [
+        [
+          toc,
+          {
+            nav: false,
+            position: "beforeend",
           },
         ],
       ],

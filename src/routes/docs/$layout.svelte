@@ -203,6 +203,9 @@
   <div class="doc-contents">
     <Search />
     <MobileMenu {MENU} />
-    <slot />
+    <div class="flex">
+      <slot />
+      <!-- The page table of content is inserted here -->
+    </div>
   </div>
 </div>
