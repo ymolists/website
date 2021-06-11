@@ -17,7 +17,7 @@ Availability and reliability are king. No feature at Gitpod will ever be as impo
 
 Right now, at Gitpod, there's a great deal of transformation happening behind the scenes thanks to our recently announced a <a href="https://www.gitpod.io/blog/next-chapter-for-gitpod">$13m funding round led</a> which has enabled us to accelerate building out a fully distributed world-class team (<a href="https://www.gitpod.io/careers">we are hiring</a>) that spans multiple timezones.
 
-Today we are pleased to share with you our first increment on our journey towards greater transparency. Gitpod has moved on from our old `edit-markdown+git-push+run-werft-job` incident response loop and now migrated to an automated status page that is hosted independently of our core infrastructure.
+Today we are pleased to share with you our first increment on our journey towards greater transparency. Gitpod has moved on from our old `edit-markdown+git-push+run-CI-job` incident response loop and now migrated to an automated status page that is hosted independently of our core infrastructure.
 
 # Subscribe to status updates
 
