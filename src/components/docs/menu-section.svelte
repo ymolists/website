@@ -11,7 +11,7 @@
           ? $docsCurrentSectionStore.replace(/\d\.\d\.\d/, "latest")
           : $docsCurrentSectionStore
       ) >= 0
-    : /\/docs\/$/.test(menuItem.path);
+    : /\/docs\/?$/.test(menuItem.path);
 </script>
 
 <style type="text/postcss">
@@ -42,7 +42,10 @@
 </style>
 
 <li class="menu-item">
-  <div class:isActiveSection class="menu-container">
+  <div
+    class:isActiveSection={isActiveSection && menuItem.subMenu}
+    class="menu-container"
+  >
     <MenuLink href={menuItem.path} class="text-large">{menuItem.title}</MenuLink
     >
     {#if menuItem.subMenu && isActiveSection}
