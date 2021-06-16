@@ -4,24 +4,7 @@
   import Search from "../../components/docs/search.svelte";
   import "../../assets/markdown-commons.scss";
   import { MENU } from "./menu";
-  import { onMount } from "svelte";
   import Toc from "../../components/docs/toc.svelte";
-
-  onMount(() => {
-    const root = document.documentElement;
-    const docsLayoutEl = document.querySelector(".docs-layout");
-    root.style.setProperty(
-      "--docs-layout-width",
-      `${docsLayoutEl.clientWidth}px`
-    );
-
-    window.addEventListener("resize", () => {
-      root.style.setProperty(
-        "--docs-layout-width",
-        `${docsLayoutEl.clientWidth}px`
-      );
-    });
-  });
 </script>
 
 <style>
@@ -30,18 +13,8 @@
     --toc-width: 200px;
   }
 
-  .docs-layout {
-    @apply pb-10;
-
-    @media (min-width: 769px) {
-      @apply flex;
-      @apply pt-10;
-      margin-top: var(--header-height);
-    }
-  }
-
   .menu {
-    @apply pt-12 pb-36 pr-6 h-screen fixed top-0 overflow-scroll z-10 bg-sand-light;
+    @apply pt-12 pb-36 pr-6 h-screen sticky overflow-y-scroll overflow-x-hidden z-10 bg-sand-light;
     top: var(--header-height);
     width: var(--side-nav-width);
 
@@ -51,7 +24,7 @@
   }
 
   .doc-contents {
-    @apply mx-auto pl-huge;
+    @apply mx-auto p-small overflow-x-hidden;
     width: calc(100% - var(--side-nav-width) - var(--toc-width));
 
     @media (max-width: 1340px) {
@@ -64,18 +37,18 @@
     }
   }
 
-  :global(.toc) {
+  .toc {
     @apply hidden;
 
     @media (min-width: 769px) {
-      @apply inline-block fixed h-screen text-p-small pt-12;
+      @apply block sticky h-screen text-p-small pt-medium z-30 bg-sand-light;
       top: var(--header-height);
       width: var(--toc-width);
-      right: calc((100vw - var(--docs-layout-width)) / 2);
     }
   }
 
-  :global(.toc-level) {
+  :global(main > *) {
+    margin-bottom: 0;
   }
 </style>
 

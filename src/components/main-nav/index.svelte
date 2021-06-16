@@ -46,9 +46,7 @@
 <style lang="scss">
   @media (min-width: 769px) {
     .is-on-docs {
-      left: 50%;
-      transform: translateX(-50%);
-      @apply fixed bg-sand-light z-40;
+      @apply sticky bg-sand-light z-40 transform top-0;
     }
   }
 </style>
