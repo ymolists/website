@@ -65,15 +65,15 @@ module.exports = {
           },
         ],
       ],
-      rehypePlugins: [
-        [
-          toc,
-          {
-            nav: false,
-            position: "beforeend",
-          },
-        ],
-      ],
+      // rehypePlugins: [
+      //   [
+      //     toc,
+      //     {
+      //       nav: false,
+      //       position: "beforeend",
+      //     },
+      //   ],
+      // ],
     }),
   ],
 };

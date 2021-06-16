@@ -48,7 +48,7 @@
     .is-on-docs {
       left: 50%;
       transform: translateX(-50%);
-      @apply fixed bg-sand-light z-10;
+      @apply fixed bg-sand-light z-40;
     }
   }
 </style>

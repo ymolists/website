@@ -5,6 +5,7 @@
   import "../../assets/markdown-commons.scss";
   import { MENU } from "./menu";
   import { onMount } from "svelte";
+  import Toc from "../../components/docs/toc.svelte";
 
   onMount(() => {
     const root = document.documentElement;
@@ -44,15 +45,22 @@
     top: var(--header-height);
     width: var(--side-nav-width);
 
-    @media (max-width: 768px) {
+    @media (max-width: 1340px) {
       @apply hidden;
     }
   }
 
   .doc-contents {
-    @media (min-width: 769px) {
-      @apply relative mx-auto pl-huge;
-      width: calc(100% - var(--side-nav-width) - var(--toc-width));
+    @apply mx-auto pl-huge;
+    width: calc(100% - var(--side-nav-width) - var(--toc-width));
+
+    @media (max-width: 1340px) {
+      width: calc(100% - var(--toc-width));
+      @apply pl-0 ml-0 pr-medium;
+    }
+
+    @media (max-width: 768px) {
+      @apply w-full pr-0;
     }
   }
 
@@ -60,7 +68,7 @@
     @apply hidden;
 
     @media (min-width: 769px) {
-      @apply block fixed h-screen text-p-small;
+      @apply inline-block fixed h-screen text-p-small pt-12;
       top: var(--header-height);
       width: var(--toc-width);
       right: calc((100vw - var(--docs-layout-width)) / 2);
@@ -68,7 +76,6 @@
   }
 
   :global(.toc-level) {
-    @apply flex flex-col justify-center;
   }
 </style>
 
@@ -81,5 +88,8 @@
     <MobileMenu {MENU} />
     <!-- The page table of content is inserted here -->
     <slot />
+  </div>
+  <div class="toc">
+    <Toc />
   </div>
 </div>
