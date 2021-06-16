@@ -5,6 +5,9 @@
   import menuState from "./mobile-menu/state";
   import LoginButton from "./login-button.svelte";
   import Logo from "../svgs/logo.svelte";
+  import { onMount } from "svelte";
+
+  let isOnDocs = false;
 
   const navItems = [
     {
@@ -32,11 +35,28 @@
       label: "We're hiring <sup>*</sup>",
     },
   ];
+
+  onMount(() => {
+    if (window.location.pathname.startsWith("/docs")) {
+      isOnDocs = true;
+    }
+  });
 </script>
+
+<style lang="scss">
+  @media (min-width: 769px) {
+    .is-on-docs {
+      left: 50%;
+      transform: translateX(-50%);
+      @apply fixed bg-sand-light z-10;
+    }
+  }
+</style>
 
 <nav
   id="choose-project-observer-target-top"
   class={`nav text-small ${$menuState ? "bg-off-white" : ""}`}
+  class:is-on-docs={isOnDocs}
 >
   <div class="wrapper">
     <a href="/" aria-label="Gitpod" on:click={() => ($menuState = !menuState)}>

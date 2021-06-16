@@ -4,43 +4,82 @@
   import Search from "../../components/docs/search.svelte";
   import "../../assets/markdown-commons.scss";
   import { MENU } from "./menu";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    const root = document.documentElement;
+    const docsLayoutEl = document.querySelector(".docs-layout");
+    root.style.setProperty(
+      "--docs-layout-width",
+      `${docsLayoutEl.clientWidth}px`
+    );
+
+    window.addEventListener("resize", () => {
+      root.style.setProperty(
+        "--docs-layout-width",
+        `${docsLayoutEl.clientWidth}px`
+      );
+    });
+  });
 </script>
 
 <style>
+  :root {
+    --side-nav-width: 310px;
+    --toc-width: 200px;
+  }
+
   .docs-layout {
     @apply pb-10;
 
     @media (min-width: 769px) {
       @apply flex;
       @apply pt-10;
+      margin-top: var(--header-height);
     }
   }
 
   .menu {
-    @apply w-2/5 pt-24 pr-8;
+    @apply pt-12 pb-36 pr-6 h-screen fixed top-0 overflow-scroll z-10 bg-sand-light;
+    top: var(--header-height);
+    width: var(--side-nav-width);
 
     @media (max-width: 768px) {
-      display: none;
+      @apply hidden;
     }
   }
 
   .doc-contents {
     @media (min-width: 769px) {
-      @apply w-3/5;
+      @apply relative mx-auto pl-huge;
+      width: calc(100% - var(--side-nav-width) - var(--toc-width));
     }
+  }
+
+  :global(.toc) {
+    @apply hidden;
+
+    @media (min-width: 769px) {
+      @apply block fixed h-screen text-p-small;
+      top: var(--header-height);
+      width: var(--toc-width);
+      right: calc((100vw - var(--docs-layout-width)) / 2);
+    }
+  }
+
+  :global(.toc-level) {
+    @apply flex flex-col justify-center;
   }
 </style>
 
-<div class="docs-layout row">
+<div class="flex docs-layout row">
   <div class="menu">
     <Menu {MENU} />
   </div>
   <div class="doc-contents">
     <Search />
     <MobileMenu {MENU} />
-    <div class="flex">
-      <slot />
-      <!-- The page table of content is inserted here -->
-    </div>
+    <!-- The page table of content is inserted here -->
+    <slot />
   </div>
 </div>
