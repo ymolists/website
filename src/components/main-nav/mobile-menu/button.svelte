@@ -13,7 +13,7 @@
     border-radius: 0.75rem;
     background: var(--black);
 
-    @media (min-width: 769px) {
+    @media (min-width: 821px) {
       display: none;
     }
   }
