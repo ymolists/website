@@ -19,7 +19,7 @@
   ];
 </script>
 
-<div class="footer__container pb-8">
+<div class="footer__container">
   <footer class="footer">
     <div class="footer__entries">
       <ul>

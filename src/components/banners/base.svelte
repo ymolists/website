@@ -4,16 +4,26 @@
 
   export let storageKey: string;
   export let location: "top" | "bottom" = "top";
+  let isTheCookieConsent = storageKey === "cookie-consent";
 
   let showBanner = false;
 
   const closeBanner = () => {
     showBanner = false;
     window.localStorage.setItem(storageKey, "true");
+    isTheCookieConsent &&
+      document.querySelector(".footer__container").classList.remove("pb-8");
   };
 
   onMount(() => {
     showBanner = !window.localStorage.getItem(storageKey);
+    if (isTheCookieConsent) {
+      if (showBanner) {
+        document.querySelector(".footer__container").classList.add("pb-8");
+      } else {
+        document.querySelector(".footer__container").classList.remove("pb-8");
+      }
+    }
   });
 </script>
 
