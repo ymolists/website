@@ -1,17 +1,19 @@
 ---
 author: svenefftinge
 date: Thu Dec 07 2020 11:49:24 GMT+0000 (UTC)
-excerpt: The team has been focussing on shipping some major new features, which mark important milestones on our goal to eliminate all friction
-image: santa.jpg
+excerpt: The team has been focussing on shipping some major new features, which mark important milestones on our goal to eliminate all friction.
+image: teaser.jpg
 slug: root-docker-and-vscode
 subtitle: New Release
-teaserImage: santa.jpg
+teaserImage: teaser.jpg
 title: Root, Docker and VS Code
 ---
 
-The team has been focussing on shipping some major new features, which mark important milestones on our goal to **eliminate all friction around maintaining dev environments**.
+<script context="module">
+  export const prerender = true;
+</script>
 
-> We are rolling out new features in [preview mode](/docs/feature-preview) first. So make sure to switch **Feature Preview** on in [your settings](https://gitpod.io/settings/) if you want to try them out.
+The team has been focussing on shipping some major new features, which mark important milestones on our goal to **eliminate all friction around maintaining dev environments**.
 
 - [Root Access](#root-access)
 - [Docker Support](#docker)

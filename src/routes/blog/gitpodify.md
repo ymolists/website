@@ -9,6 +9,10 @@ teaserImage: teaser-gitpodify.jpg
 title: Gitpodifying — The Ultimate Guide
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 I recently stumbled upon a new project on GitHub that peaked my interest. It proposed a new type of database that I was dying to try out. So I cloned their repository, and looked at their README for a way to build their code.
 
 After activating a Python 3.7 virtual env and running `pip install -v -e .` as suggested, I was soon faced with a rather cryptic build output. Investigating a bit revealed that some build command was failing due to a missing package: `zlib1g-dev`. I figured out the right incantation to install it on my machine, then tried again. Next it was `libreadline6-dev` that was missing. After a few similar iterations, I guessed that the project probably needed all [PostgreSQL build dependencies](https://www.manniwood.com/postgresql_93_compile_install_howto/index.html), so I went ahead and installed all that. Yet somehow the project still wouldn't build, showing yet another error, but by then I was out of free time and had to call it a day. Sadly, I hadn't been able to run this project even once.
@@ -104,7 +108,7 @@ tasks:
     command: npm run client
 ```
 
-To learn more about configuring Terminals, please visit [the docs](https://www.gitpod.io/docs/config-start-tasks/).
+To learn more about configuring Terminals, please visit [the docs](https://www.gitpod.io/docs/config-start-tasks).
 
 ## Accelerating startup with prebuilt workspaces
 
@@ -129,7 +133,7 @@ github:
     addComment: false
 ```
 
-To see all configuration options for the Gitpod app, please visit [the docs](https://www.gitpod.io/docs/prebuilds/).
+To see all configuration options for the Gitpod app, please visit [the docs](https://www.gitpod.io/docs/prebuilds).
 
 ## Installing missing packages
 
@@ -154,7 +158,7 @@ image:
 
 Then add a new file called `.gitpod.dockerfile` at the root of your repository, containing:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 RUN sudo apt-get update \
@@ -177,7 +181,7 @@ To get PostgreSQL for your project, you can use our dedicated [PostgreSQL image]
 
 Simply base your `.gitpod.dockerfile` on:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-postgres
 ```
 
@@ -203,7 +207,7 @@ postgres=#
 
 If your project needs MySQL to work, we also have a dedicated [MySQL image](https://github.com/gitpod-io/workspace-images/blob/master/mysql/Dockerfile). Simply base your `.gitpod.dockerfile` on:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-mysql
 ```
 
@@ -219,7 +223,7 @@ mysql -e "show databases;"
 
 To install Redis for your project, simply add these instructions to your `.gitpod.dockerfile`:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full
 
 # Install Redis.
@@ -243,7 +247,7 @@ To get MongoDB for your project, you can use our dedicated [MongoDB image](https
 
 Simply base your `.gitpod.dockerfile` on:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-mongodb
 ```
 
@@ -269,7 +273,7 @@ That's because by default, Gitpod workspaces don't have a graphical environment 
 
 Simply base your `.gitpod.dockerfile` on:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full-vnc
 ```
 
@@ -281,7 +285,7 @@ This will give you a virtual X server and a Remote Desktop client running on por
 
 This can be useful for example to run Electron apps graphically. For that, you'll just need a few extra dependencies in your `.gitpod.dockerfile`:
 
-```Dockerfile
+```dockerfile
 FROM gitpod/workspace-full-vnc
 
 # Install Electron dependencies.
@@ -295,7 +299,7 @@ RUN sudo apt-get update \
 
 <br>
 
-To learn more, please see our dedicated post on [Developing native UI applications in Gitpod](/blog/native-ui-with-vnc/).
+To learn more, please see our dedicated post on [Developing native UI applications in Gitpod](/blog/native-ui-with-vnc).
 
 Or check out this fun [Windows 95 in Electron](https://github.com/felixrieseberg/windows95) example (see the <a href="https://github.com/felixrieseberg/windows95/blob/master/docs/docker-kubernetes-gitpod.md" target="_blank">Gitpod demo</a>, [.gitpod.yml](https://github.com/gitpod-io/definitely-gp/blob/master/windows95/.gitpod.yml), and [Dockerfile](https://github.com/gitpod-io/definitely-gp/blob/master/windows95/Dockerfile)).
 
@@ -413,7 +417,7 @@ These mean that your web app refuses to be opened inside an `<iframe>`, for secu
 
 If your web app starts to show up in a preview, but it doesn't work well, the Browser Console might reveal failing requests to `localhost` URLs like:
 
-```
+```bash
 http://localhost:9000/api/v1/
 ```
 
@@ -503,7 +507,7 @@ https://gitpod.io/#TOKEN=value/https://github.com/gitpod-io/website
 
 (But please don't use this for security-sensitive data like passwords and private keys, because URLs can easily be intercepted. Also, note that values should be URL-encoded.)
 
-Finally, users can also manage env variables for all their workspaces by visiting [gitpod.io/environment-variables](https://gitpod.io/environment-variables). You can learn more about managing Gitpod env variables in [the docs](https://www.gitpod.io/docs/environment-variables/).
+Finally, users can also manage env variables for all their workspaces by visiting [gitpod.io/environment-variables](https://gitpod.io/environment-variables). You can learn more about managing Gitpod env variables in [the docs](https://www.gitpod.io/docs/environment-variables).
 
 For a complete example of a project that requires env variables (saved in `.yml` config files), please see the [dev.to](https://dev.to/) project's [.gitpod.yml](https://github.com/thepracticaldev/dev.to/blob/master/.gitpod.yml).
 

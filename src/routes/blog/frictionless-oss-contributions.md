@@ -1,12 +1,16 @@
 ---
 author: nisarhassan12
 date: Mon Oct 7 2019
-excerpt: To celebrate Open Source and Hacktoberfest, we're stoked 🧙✨🥰 to announce contribute.dev, a list of welcoming open-source projects
+excerpt: To celebrate Open Source and Hacktoberfest, we're stoked 🧙✨🥰 to announce contribute.dev, a list of welcoming open-source projects.
 image: frictionless-oss-contributions.png
 slug: frictionless-oss-contributions
 subtitle: Frictionless Open Source Contributions For Everyone
 title: Announcing contribute.dev — Open Source in One Click
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 To celebrate Open Source and Hacktoberfest, we're stoked <span aria-hidden="true">🧙✨🥰</span> to announce <a href="https://contribute.dev" target="blank">contribute.dev</a>, a list of welcoming open-source projects featuring ready-to-code Gitpod setups.
 

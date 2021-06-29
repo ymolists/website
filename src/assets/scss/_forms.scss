@@ -1,8 +1,10 @@
 input,
-textarea {
+textarea,
+select {
   all: unset;
   font: inherit;
   color: var(--dark-grey);
+  box-sizing: border-box;
 }
 [type="radio"],
 [type="checkbox"] {
@@ -10,6 +12,17 @@ textarea {
 }
 [type] + label {
   cursor: pointer;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("/arrow-grey.svg"),
+    linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 1em top 50%, 0 0;
+  background-size: 1.25em auto, 100%;
+  width: 100%;
 }
 label,
 legend,
@@ -24,7 +37,7 @@ legend,
 textarea {
   width: 100%;
 }
-li {
+form li {
   margin-bottom: 2rem;
 }
 fieldset,
@@ -40,24 +53,29 @@ legend {
 }
 [type="email"],
 [type="text"],
+[type="number"],
 [type="radio"] + label,
-textarea {
+textarea,
+select {
   border: 1px solid var(--divider);
   padding: 0.5rem 1rem;
   border-radius: 0.5em;
 }
 
 [type="checkbox"] + label::before {
-  content: "";
+  content: "✔";
   border: 1px solid var(--divider);
   height: 2rem;
-  width: 2rem;
+  width: 2.5rem;
   padding: 0.25rem;
-  border-radius: 0.5em;
-  font-size: 24px;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
   line-height: 1.1;
   text-align: center;
-  content: "✓";
+}
+
+[type="checkbox"] + label::before,
+.error.error.error [type="checkbox"] + label::before {
   color: transparent;
 }
 .error,
@@ -69,22 +87,17 @@ textarea {
 .error.error [type] + label {
   color: var(--dark-grey);
 }
-[type="checkbox"]:checked + label::before {
-  background-image: var(--brand-gradient);
+[type="checkbox"]:checked + label::before,
+[type="radio"]:checked + label {
   color: var(--black);
+  border: 1px solid #ffb45b;
+  background: #ffb45b;
 }
 [type="checkbox"] + label:hover::before,
-[type="checkbox"] + label:focus::before {
-  border-color: var(--dark-grey);
-}
+[type="checkbox"] + label:focus::before,
 [type="radio"]:hover + label,
 [type="radio"]:focus + label {
-  border-color: currentColor;
-}
-[type="radio"]:checked + label {
-  background-image: var(--brand-gradient);
-  text-shadow: 0 0 1px currentColor;
-  color: var(--black);
+  border-color: var(--dark-grey);
 }
 .btn-conversion:disabled {
   background-color: var(--sand-dark);

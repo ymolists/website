@@ -4,12 +4,8 @@
 </script>
 
 <style lang="scss">
-  /* .link--light-grey {
-    font-size: var(--h6);
-  } */
-
   .projects {
-    margin: var(--small) 0;
+    margin: var(--x-small) 0;
   }
 </style>
 
@@ -21,4 +17,4 @@
   {/each}
 </div>
 
-<!-- <a href="#" class="link--light-grey">More example workspaces ↗</a> -->
+<!-- <a href="#">More example workspaces ↗</a> -->

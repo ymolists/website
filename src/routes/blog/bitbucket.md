@@ -1,13 +1,17 @@
 ---
 author: jankeromnes
 date: Thu, 02 Jul 2020 14:00:00 UTC
-excerpt: Today, we’re excited to bring you instant development environments for all Bitbucket projects. Simply type  in front of any Bitbucket
-image: bitbucket-integration.jpg
+excerpt: We’re excited to bring you instant development environments for all Bitbucket projects.
+image: teaser.jpg
 slug: bitbucket
 subtitle: Instant dev environments for all Bitbucket projects
-teaserImage: bitbucket-post-header.jpg
+teaserImage: teaser.jpg
 title: Gitpod for Bitbucket 🚀
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 Today, we're excited to bring you instant development environments for all Bitbucket projects.
 
@@ -58,11 +62,11 @@ To get the most out of Gitpod, you should describe your project's dev environmen
 
 Furthermore you can specify which tasks should run after a fresh checkout in a `.gitpod.yml` file. Usually these tasks include build steps, downloading dependencies and running some unit tests. Read the section below on prebuilds to make Gitpod automatically run these steps ahead of time, as a CI pipeline whenever some changes are pushed to your project.
 
-There is much more you can do to make sure every team member gets a ready-to-code dev environment when they need one. Please refer to the [docs](/docs/configuration/) for details.
+There is much more you can do to make sure every team member gets a ready-to-code dev environment when they need one. Please refer to the [docs](/docs/configure) for details.
 
 <h3 class="h2">Prebuilds</h3>
 
-Gitpod’s [prebuilt workspaces](/docs/prebuilds/) are key to providing ephemeral, ready-to-code dev environments for your branches and projects. You can configure Gitpod to run your project's build asynchronously every time someone pushes new commits or branches to your repository. So when a developer wants to start coding, she can start immediately, because everything is already prepared.
+Gitpod’s [prebuilt workspaces](/docs/prebuilds) are key to providing ephemeral, ready-to-code dev environments for your branches and projects. You can configure Gitpod to run your project's build asynchronously every time someone pushes new commits or branches to your repository. So when a developer wants to start coding, she can start immediately, because everything is already prepared.
 
 Enabling prebuilds on your Bitbucket project is done by configuring a Webhook. This can be done automatically: Just trigger the first prebuild on your project manually, and Gitpod will take it from there. To do that, use the prefix `https://gitpod.io/#prebuild/`, as in
 

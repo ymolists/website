@@ -1,13 +1,17 @@
 ---
 author: svenefftinge
 date: Thu Jul 05 2018 11:49:24 GMT+0000 (UTC)
-excerpt: As software developers, we already spend a lot of our time in browsers. Be it for searching Google/StackOverflow, checking our latest
+excerpt: As software developers, we already spend a lot of our time in browsers.
 image: a-better-github-flow.png
 slug: github-flow
 subtitle: Stop setting up, start coding!
 title: A Better GitHub Flow
 url: https://medium.com/gitpod/github-flows-better-with-gitpod-e455d17990f9
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 As software developers, we already spend a lot of our time in browsers. Be it for searching Google/StackOverflow, checking our latest Continuous Integration builds on Jenkins resp. Travis, or doing code reviews on GitHub, Bitbucket, or Gerrit. Also, communication with the team happens in web applications, such as Gmail, Google Hangout or Slack. The convenience of web applications and OAuth-based authentication allows us to use any computer to do most of our work immediately.
 

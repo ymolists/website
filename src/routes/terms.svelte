@@ -6,17 +6,10 @@
   import OpenGraph from "../components/open-graph.svelte";
 </script>
 
-<style>
-  .model {
-    color: var(--dark-grey);
-  }
-</style>
-
 <OpenGraph
   data={{
     description: "Gitpod's terms of service.",
     title: "Terms",
-    type: "website",
   }}
 />
 <article class="text-blob">
@@ -71,8 +64,8 @@
       <p>
         You offer to conclude this Agreement when you (i) accept these Terms of
         Service by checking the box at the Website, (ii) provide the data, which
-        is managed in accordance with our <a href="/privacy/">privacy policy</a
-        >, required for opening a Gitpod account in our Existing Account page as
+        is managed in accordance with our <a href="/privacy">privacy policy</a>,
+        required for opening a Gitpod account in our Existing Account page as
         described throughout this Agreement; and (iii) declare your intention to
         create, and create, an account by clicking on the respective button in
         the Existing Account page. By clicking on the button
@@ -283,7 +276,7 @@
           all your data outside of your Gitpod account. Upon termination of the
           Service, we will delete your data according to these Terms of Service
           and our
-          <a href="/privacy/">privacy policy</a>.
+          <a href="/privacy">privacy policy</a>.
         </li>
       </ol>
     </li>
@@ -418,7 +411,7 @@
       </p>
       <p>
         We may also disclose your personal data vis-&agrave;-vis authorities as
-        set forth in the <a href="/privacy/">privacy policy </a>.
+        set forth in the <a href="/privacy">privacy policy </a>.
       </p>
     </li>
     <li>
@@ -537,7 +530,7 @@
       <h2>Privacy and Data</h2>
       <p>
         We will process your data according to the German and European data
-        protection laws. For details please refer to our <a href="/privacy/"
+        protection laws. For details please refer to our <a href="/privacy"
           >privacy policy
         </a>.
       </p>
@@ -676,7 +669,7 @@
     contract.
   </p>
 
-  <div class="model card">
+  <div class="card">
     <div>-- begin model withdrawal form --</div>
     <p>
       To<br /> Gitpod GmbH represented by: Sven Efftinge, Moritz Eysholdt, Dr.

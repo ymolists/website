@@ -1,12 +1,16 @@
 ---
 author: corneliusludmann, svenefftinge
 date: Thu, 06 Oct 2020 14:00:00 UTC
-excerpt: At Gitpod we want to make developers’ lives easier. Starting automated dev environments for your daily coding tasks is already very easy
-image: teaser-gitlab-cover.png
+excerpt: Today, we are super excited to share that we’ve partnered with GitLab and built a native Gitpod integration in GitLab’s UI.
+image: teaser.jpg
 slug: gitlab-integration
 subtitle: Launch Gitpod workspace from GitLab
 title: Native GitLab Integration
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 At Gitpod we want to make developers’ lives easier. Starting automated dev environments for your daily coding tasks is already very easy: Just prefix your repository URL with `gitpod.io/#` and you are ready to go. To make this even better, you can install a browser extension which adds a convenient button to any GitLab, GitHub, or Bitbucket repository that lets you launch a Gitpod workspace with one click.
 
@@ -32,7 +36,7 @@ GitLab’s credo “Everyone can contribute” is a perfect fit for Gitpod becau
 
 GitLab’s engineers have worked on lowering the barrier to contributions on GitLab itself through a comprehensive [contribution guide](https://about.gitlab.com/community/contribute/) and even a [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit) that sets up your dev environment on your machine. But still, running the GDK installer takes at least 30 minutes to download and install dependencies, clone the GitLab repository, and start all services you need like the database, a webserver, etc.
 
-We are currently helping the GitLab team [to build a fully-automated Gitpod configuration for the GitLab source code](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/43103). This makes contributing to the GitLab source code itself as easy as clicking a button. Instead of waiting half an hour for a bunch of libs and tools to get installed, with Gitpod you are productive within just a few minutes. Once this configuration is merged, you will be able to just click on the Gitpod button of the [GitLab repository](https://gitlab.com/gitlab-org/gitlab), and everything will be set up for your first GitLab contribution.
+We are currently helping the GitLab team <a class="no-nowrap" href="https://gitlab.com/gitlab-org/gitlab/-/merge_requests/43103">to build a fully-automated Gitpod configuration for the GitLab source code</a>. This makes contributing to the GitLab source code itself as easy as clicking a button. Instead of waiting half an hour for a bunch of libs and tools to get installed, with Gitpod you are productive within just a few minutes. Once this configuration is merged, you will be able to just click on the Gitpod button of the [GitLab repository](https://gitlab.com/gitlab-org/gitlab), and everything will be set up for your first GitLab contribution.
 
 [![GitLab integration quote](../../../static/images/blog/gitlab-integration/gitlab-integration-quote.png)](https://gitlab.com/gitlab-org/gitlab-development-kit/-/issues/1076#note_419638250)
 

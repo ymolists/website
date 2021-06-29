@@ -1,9 +1,11 @@
 <script>
+  import Section from "../section.svelte";
+
   export let otherPlans;
 </script>
 
 <style lang="scss">
-  h1 {
+  h2 {
     text-align: center;
     text-transform: capitalize;
   }
@@ -39,8 +41,8 @@
   }
 </style>
 
-<div class="row">
-  <h1>Open source, self hosting, and Students</h1>
+<Section>
+  <h2 class="h1">Open source, self hosting, and students</h2>
   <div class="plans">
     {#each otherPlans as p}
       <div class="plan divider">
@@ -56,4 +58,4 @@
       </div>
     {/each}
   </div>
-</div>
+</Section>

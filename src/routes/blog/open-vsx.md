@@ -9,6 +9,10 @@ teaserImage: open.jpg
 title: Open VSX
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 VS Code is used by [more than 50% of all developers worldwide](https://insights.stackoverflow.com/survey/2019#technology-_-most-popular-development-environments). Its extension protocol enabled the broader developer community to create over 16,000 extensions supporting all major programming languages, frameworks, and tools used in modern software projects. While large parts of VS Code are developed as open-source, the actual product (Visual Studio Code) is [not open-source](https://code.visualstudio.com/docs/supporting/FAQ#_what-does-built-on-open-source-mean).
 
 [Eclipse Theia](http://theia-ide.org), the IDE powering Gitpod, Google Cloud Shell and others, offers a vendor-neutral alternative and is based on parts of the same open-source codebase as VS Code. Theia not only works as an Electron-based desktop app, but also runs in browsers. Furthermore, a highly flexible architecture allows extensive customizations. [Arduino’s new Pro IDE](https://www.arduino.cc/pro/arduino-pro-ide) or [Arm’s Mbed Studio](https://os.mbed.com/studio/) are great examples of Theia’s flexibility. On top of that built-in flexibility, Theia can run VS Code extensions as well.
@@ -53,7 +57,7 @@ Visit the [Open VSX Wiki](https://github.com/eclipse/openvsx/wiki/Publishing-Ext
 Until extension developers start publishing to open-vsx.org themselves, we will publish open-source extensions through a script that is maintained in a [GitHub repository](https://github.com/open-vsx/publish-extensions). A continuous integration build regularly runs through the list of changes and automatically deploys all the listed projects. If you are missing a certain extension, you can do the following:
 
 1. Ask the original maintainer to publish to open-vsx.org, pointing them to this post for context.
-2. If the maintainer does not respond, create a PR to https://github.com/open-vsx/publish-extensions
+2. If the maintainer does not respond, create a PR to <a class="no-nowrap" href="https://github.com/open-vsx/publish-extensions">https://github.com/open-vsx/publish-extensions</a>
 
 ## Final Words
 

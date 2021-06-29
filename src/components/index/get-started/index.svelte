@@ -5,11 +5,7 @@
 </script>
 
 <style lang="scss">
-  h1 {
-    text-align: center;
-  }
-
-  .wrapper {
+  .cards-container {
     display: flex;
     justify-content: space-between;
 
@@ -38,15 +34,13 @@
 </style>
 
 <Section id="get-started">
-  <div class="row">
-    <h1>Get started now</h1>
-    <div class="wrapper">
-      <div class="card">
-        <LinkGitRepository />
-      </div>
-      <div class="card">
-        <LaunchExampleWorkspace />
-      </div>
+  <h2 class="mb-small text-center text-h2">Get started now</h2>
+  <div class="cards-container">
+    <div class="card">
+      <LinkGitRepository />
+    </div>
+    <div class="card">
+      <LaunchExampleWorkspace />
     </div>
   </div>
 </Section>

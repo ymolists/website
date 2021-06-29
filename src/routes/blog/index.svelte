@@ -1,4 +1,6 @@
 <script lang="ts" context="module">
+  export const prerender = true;
+
   export async function load({ session }) {
     const posts = session.posts;
     return { props: { posts } };
@@ -13,20 +15,48 @@
   export let posts: BlogPost[];
 </script>
 
-<OpenGraph
-  data={{
-    description:
-      "Visit the Gitpod blog to learn about releases, tutorials, news and more.",
-    title: "Blog",
-    type: "website",
-  }}
-/>
-<div class="mx-auto max-w-row">
-  <h3 class="py-20 text-center">From the team at Gitpod</h3>
+<style>
+  section {
+    margin-top: var(--xx-large);
+    text-align: center;
+  }
 
-  <div class="flex flex-wrap justify-between">
-    {#each posts as post}
-      <PostPreview {post} />
+  h2 {
+    margin-bottom: var(--small);
+  }
+
+  .blog-layout {
+    @apply pb-10;
+  }
+</style>
+
+<div class="blog-layout">
+  <OpenGraph
+    data={{
+      description:
+        "Visit the Gitpod blog to learn about releases, tutorials, news and more.",
+      title: "Blog",
+    }}
+  />
+  <section>
+    <h1>Blog</h1>
+  </section>
+  <div class="posts-grid">
+    {#each posts.slice(0, 6) as post}
+      <div class="posts-grid__item">
+        <PostPreview {post} isMostRecent />
+      </div>
+    {/each}
+  </div>
+
+  <section>
+    <h2>Previous posts</h2>
+  </section>
+  <div class="posts-grid previous">
+    {#each posts.slice(6) as post}
+      <div class="posts-grid__item">
+        <PostPreview {post} />
+      </div>
     {/each}
   </div>
 </div>

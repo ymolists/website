@@ -9,6 +9,10 @@ title: Gitpod — October 2018 Release
 url: https://medium.com/gitpod/gitpod-october-2018-release-672c91294b40
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 It has been a month already since we went public with Gitpod.io. We want to take a moment and send out a big thank you for all the great feedback and kind words! <span aria-hidden="true">❤️</span>
 
 We are working to incorporate all your feedback continuously, adding new features, fixing bugs and improving the overall usability and performance.
@@ -41,19 +45,19 @@ Please read [Gero’s post](/blog/docker-in-gitpod) explaining this feature in m
 
 We have introduced a CLI which allows controlling the IDE from the command line, for instance you can open files. Try:
 
-```
+```bash
 gpopen path/to/file
 ```
 
 or just
 
-```
+```bash
 open path/to/file
 ```
 
 or in case your muscle memory is taking over :)
 
-```
+```bash
 code path/to/file
 ```
 

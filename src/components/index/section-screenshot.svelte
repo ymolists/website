@@ -17,17 +17,16 @@
 </script>
 
 <style lang="scss">
-  h1 {
-    text-align: center;
-  }
-
   .screenshot {
     display: block;
     margin: 0 auto;
     margin-bottom: -48px;
+    margin: 2rem auto;
+    border-radius: 0.875rem;
 
     @media (max-width: 768px) {
       margin-bottom: -20px;
+      border-radius: 0.25rem;
     }
   }
 
@@ -38,19 +37,28 @@
 
     p {
       margin: var(--small) 0;
-      color: var(--dark-grey);
     }
   }
 
-  .buttons-wrapper {
-    justify-content: center;
+  .btn-otherbrand {
+    @media (max-width: 429px) {
+      width: 12rem;
+    }
   }
 </style>
 
 <Section>
   <div class="row">
-    <h1>Remote-first. Secure by Design.</h1>
-    <img class="screenshot" src="/images/gitpod-screenshot.png" alt="Gitpod" />
+    <h2 class="mb-small text-center text-h2">
+      Remote-first. Secure by design.
+    </h2>
+    <img
+      class="screenshot shadow-brand"
+      src="/images/gitpod-editor.jpg"
+      alt="Gitpod"
+      height="819"
+      width="1269"
+    />
     <div class="content">
       <p class="text-large">
         You no longer need an over-powered laptop to code, Gitpod works just as
@@ -60,8 +68,13 @@
       </p>
       <div class="buttons-wrapper">
         {#each buttons as { href, icon, text }}
-          <a {href} target="_blank" class="btn-otherbrand text-medium">
-            <img src={`/${icon}`} alt={text} />
+          <a
+            {href}
+            target="_blank"
+            rel="noopener"
+            class="btn-otherbrand text-medium"
+          >
+            <img src={`/${icon}`} alt={text} width="24" height="24" />
             {text}
           </a>
         {/each}

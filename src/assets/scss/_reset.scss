@@ -2,6 +2,9 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-repeat: no-repeat;
 }
 :root {
   font-size: 16px;
@@ -9,12 +12,13 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--font);
   font-size: var(--p-medium);
-  color: var(--black);
+  color: var(--dark-grey);
   background: var(--sand-light);
   overflow-x: hidden;
   min-height: 100vh;
@@ -65,6 +69,10 @@ img:not([alt]) {
   filter: blur(10px);
   outline: 10px solid;
 }
+img[role="presentation"] {
+  filter: none;
+  outline: none;
+}
 
 /* margin bottom on everything  */
 main > * {
@@ -96,12 +104,14 @@ select {
 }
 
 a {
-  text-decoration-color: var(--brand-ripe);
+  text-decoration: underline solid;
   text-underline-offset: 0.25em;
+  color: var(--link-grey);
 }
 a:hover,
 a:focus {
-  text-decoration: underline solid var(--brand-ripe);
+  color: var(--black);
+  text-decoration: underline solid transparent;
 }
 /* low specificity. easy to overwrite */
 a[class] {

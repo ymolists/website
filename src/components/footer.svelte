@@ -1,5 +1,4 @@
 <script>
-  import LogoTextless from "./svgs/logo-textless.svelte";
   const socialLinks = [
     {
       href: "https://twitter.com/gitpod",
@@ -20,165 +19,140 @@
 </script>
 
 <style lang="scss">
-  .footer {
-    padding: var(--large) var(--xx-small);
+  a {
+    @apply text-dark-grey no-underline;
 
-    @media (min-width: 769px) {
-      max-width: 760px;
-      margin: auto;
-      padding: var(--small) var(--xx-small);
-    }
-
-    &__container {
-      background: var(--off-white);
-    }
-
-    &__entries {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding-bottom: var(--small);
-
-      @media (max-width: 768px) {
-        padding-bottom: var(--micro);
-      }
-
-      ul {
-        @media (max-width: 768px) {
-          flex: 0 0 22%;
-          margin-bottom: var(--xx-small);
-        }
-
-        @media (max-width: 420px) {
-          flex: 0 0 35%;
-        }
-      }
-
-      li {
-        &:first-child {
-          font-weight: 600;
-          color: var(--black);
-        }
-
-        &:not(:last-child) {
-          margin-bottom: var(--macro);
-        }
-      }
-    }
-
-    &__bottom {
-      display: flex;
-      justify-content: space-between;
-      border-top: var(--border-light);
-      padding-top: var(--x-small);
-
-      @media (max-width: 768px) {
-        padding-top: var(--xx-small);
-      }
-
-      @media (max-width: 300px) {
-        flex-direction: column-reverse;
-        align-items: center;
-      }
-    }
-
-    &__copy {
-      display: flex;
-      align-items: center;
-
-      @media (max-width: 300px) {
-        margin-top: var(--micro);
-      }
-
-      span {
-        margin-left: var(--macro);
-      }
-    }
-
-    &__social {
-      display: flex;
-
-      &-link {
-        &:not(:last-child) {
-          margin-right: var(--micro);
-        }
-      }
+    &:hover,
+    &:focus {
+      @apply text-black;
     }
   }
 
-  sup {
-    color: var(--brand-ripe);
+  footer {
+    @media (min-width: 56.25rem) {
+      max-width: 56.25rem;
+    }
+  }
+
+  ul {
+    @media (max-width: 768px) {
+      @apply mb-xx-small;
+    }
+
+    @media (max-width: 500px) {
+      flex: 0 0 34%;
+    }
+  }
+
+  li {
+    &:first-child {
+      @apply font-semibold text-black;
+    }
+
+    &:not(:last-of-type) {
+      @apply mb-macro;
+    }
+  }
+
+  .footer__bottom {
+    @media (max-width: 340px) {
+      @apply flex-col-reverse items-center;
+    }
+  }
+
+  .footer__copy {
+    @media (max-width: 340px) {
+      margin-top: var(--micro);
+    }
+  }
+
+  .footer__social-link:not(:last-child) {
+    @apply mr-micro;
   }
 </style>
 
-<div class="footer__container">
-  <footer class="footer fine-print">
-    <div class="footer__entries">
+<div class="pb-8 bg-gray-100 text-p-xsmall">
+  <footer
+    class="footer py-large m-auto px-xx-small md:max-w-3xl md:py-small md:px-xx-small"
+  >
+    <div class="flex justify-between flex-wrap pb-micro md:pb-small">
       <ul>
         <li>Gitpod</li>
         <li><a href="/">Home</a></li>
-        <li><a href="/features/">Features</a></li>
-        <li><a href="/pricing/">Pricing</a></li>
-        <li><a href="/self-hosted/">Self-Hosted</a></li>
+        <li><a href="/features">Features</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/changelog">Changelog</a></li>
+        <li><a href="/self-hosted">Self-Hosted</a></li>
         <li>
           <a href="/gitpod-vs-github-codespaces"
             >Gitpod vs GitHub <br />Codespaces
           </a>
         </li>
-      </ul>
-      <ul>
-        <li>Solutions</li>
-        <li><a href="/education/">Education</a></li>
-        <li><a href="/recruiting/">Recruiting</a></li>
-        <li><a href="/vendor/">Vendor</a></li>
+        <li>
+          <a href="https://www.gitpodstatus.com/" target="_blank">Status</a>
+        </li>
       </ul>
       <ul>
         <li>Developer</li>
         <li><a href="/#get-started">Getting started</a></li>
-        <li><a href="/screencasts/">Screencasts</a></li>
-        <li><a href="/docs/">Documentation</a></li>
+        <li><a href="/screencasts">Screencasts</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/docs">Documentation</a></li>
         <li>
           <a
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
-            target="_blank">Report a bug</a
+            target="_blank"
+            rel="noopener">Report a bug</a
           >
         </li>
         <li>
-          <a
-            href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
-            target="_blank">Community</a
-          >
+          <a href="https://community.gitpod.io" target="_blank" rel="noopener"
+            >Community
+          </a>
         </li>
       </ul>
       <ul>
         <li>Company</li>
-        <li><a href="/about/">About</a></li>
+        <li><a href="/about">About</a></li>
         <li>
-          <a href="/careers/">Careers<sup>*</sup></a>
+          <a href="/careers">Careers<sup class="text-orange-800">*</sup></a>
         </li>
-        <li><a href="/media-kit/">Media Kit</a></li>
-        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/media-kit">Media Kit</a></li>
       </ul>
       <ul>
         <li>Legal</li>
-        <li><a href="/imprint/">Imprint</a></li>
+        <li><a href="/imprint">Imprint</a></li>
         <li>
-          <a href="/terms/">Terms of Service</a>
+          <a href="/terms">Terms of Service</a>
         </li>
         <li>
-          <a href="/privacy/">Privacy Policy</a>
+          <a href="/privacy">Privacy Policy</a>
         </li>
       </ul>
     </div>
 
-    <div class="footer__bottom">
-      <div class="footer__copy">
-        <a href="/"><LogoTextless /></a><span>Copyright &copy; Gitpod</span>
+    <div
+      class="footer__bottom flex justify-between border-t border-solid border-sand-dark pt-xx-small md:pt-x-small"
+    >
+      <div class="footer__copy flex items-center">
+        <a href="/"
+          ><div class="relative -top-px z-0">
+            <img
+              src="/svg/logo-textless.svg"
+              alt="Gitpod"
+              height="24"
+              width="24"
+            />
+          </div></a
+        ><span class="ml-macro"
+          >Copyright &copy; {new Date().getFullYear()} Gitpod</span
+        >
       </div>
-      <div class="footer__social">
+      <div class="flex">
         {#each socialLinks as link}
           <a href={link.href} class="footer__social-link">
-            <img src={link.icon} alt={link.alt} />
+            <img src={link.icon} alt={link.alt} height="24" width="24" />
           </a>
         {/each}
       </div>

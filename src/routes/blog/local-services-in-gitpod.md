@@ -8,6 +8,10 @@ teaserImage: local-services.jpg
 title: Using local services in Gitpod
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Some things just aren't exposed to the internet. Either because we do not want them out in the open, think some on-prem database, or because they cannot easily be made available like the Docker daemon on your laptop.
 With your Gitpod workspace running in the cloud it does not have access to local services, which could render Gitpod unsuitable in those cases.
 
@@ -28,7 +32,7 @@ Making this work involves running both, the server and client:
 
 1. download and run inlets in your workspace:
 
-```
+```bash
 curl -sLS https://get.inlets.dev | sh
 export token=$(head -c 16 /dev/urandom | shasum | cut -d" " -f1)
 echo "token:  $token"
@@ -40,7 +44,7 @@ Gitpod will show you notifications that there are new services on the ports `808
 
 2. run the inlets client on your local machine. The remote address and token are printed by the commands executed in step one.
 
-```
+```bash
 inlets client --remote=<see-above> --token=<see-above> --upstream=<local-addr>
 ```
 

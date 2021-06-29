@@ -5,7 +5,7 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Open Source",
     price: "Free",
-    features: ["50 hours/month", "Public Repos", "Private repos 30d trial"],
+    features: ["50 hours/month", "Public Repos", "Private Repos 30d Trial"],
     btnText: "Try Now",
     btnHref: "/#get-started",
   },
@@ -20,27 +20,34 @@ export const pricingPlans: Pricing[] = [
       "30min Timeout",
     ],
     btnText: "Buy Now",
-    btnHref: "https://gitpod.io/subscription/",
+    btnHref: "https://gitpod.io/plans",
   },
   {
     title: "Professional",
-    price: isEurope() ? "€24" : "$29",
+    price: isEurope() ? "€23" : "$25",
     duration: "Per User/Month",
-    features: ["All in personal plus", "Unlimited hours", "Teams"],
+    features: [
+      "All in Personal",
+      "8 Parallel Workspaces",
+      "Unlimited Hours",
+      "Teams",
+    ],
     btnText: "Buy Now",
-    btnHref: "https://gitpod.io/subscription/",
+    btnHref: "https://gitpod.io/plans",
+    spiced: true,
   },
   {
     title: "Unleashed",
-    price: isEurope() ? "€36" : "$42",
+    price: isEurope() ? "€35" : "$39",
     duration: "Per User/Month",
     features: [
-      "All in Professional plus",
+      "All in Professional",
       "16 Parallel Workspaces",
+      "1hr Timeout",
       "3hr Timeout boost",
     ],
     btnText: "Buy Now",
-    btnHref: "https://gitpod.io/subscription/",
+    btnHref: "https://gitpod.io/plans",
   },
 ];
 
@@ -49,19 +56,19 @@ export const otherPlans = [
     title: "Pro Open Source",
     paragraphs: [
       "If you're a professional open-source developer and need more hours, you can apply to our free Professional Open Source plan.",
-      "Get free, <strong>unlimited hours</strong> on any <strong>public repository</strong> when you meet the <srong>requirements.</srong>",
+      "Get free, <strong>unlimited hours</strong> on any <strong>public repository</strong> when you meet the <a href='/docs/professional-open-source#who-is-eligible'>requirements.</a>",
     ],
     btnText: "Apply now",
-    btnHref: "/contact/",
+    btnHref: "/contact",
   },
   {
     title: "Self Hosted",
     paragraphs: [
-      "Gitpod Self-Hosted is the best solution for teams who want to keep full data control or use Gitpod in private networks.",
-      "Install Gitpod Self-Hosted on <strong>Google Cloud Platform</strong>, <strong>AWS</strong>, or on <strong>Vanilla Kubernetes.</strong>",
+      "Gitpod self-hosted is the best solution for teams who want to keep full data control or use Gitpod in private networks.",
+      "Install Gitpod Self-Hosted on <strong>Google Cloud Platform</strong> and <strong>K3s</strong>.",
     ],
-    btnText: "Enquire now",
-    btnHref: "/contact/",
+    btnText: "Learn more",
+    btnHref: "/self-hosted",
   },
   {
     title: "Student",
@@ -69,9 +76,16 @@ export const otherPlans = [
       `For those still learning the ropes, you can get our student plan for <strong>${
         isEurope() ? "€8" : "$9"
       } per month.</strong>`,
-      "Make sure your student email is set as your primary email on GitHub/GitLab. Please let us know if your educational institution is not correctly recognized.",
+      `
+      To get it, just follow these steps:
+      <ul class="list-disc list-inside">
+      <li>Log-in with a free Gitpod account.</li>
+      <li>Make sure that the primary email address of the GitHub/GitLab/Bitbucket account you use in Gitpod is from a domain of your educational institution.</li>
+      <li>Go to the <a href="https://gitpod.io/plans">Plans</a> page and select the <em>Student Unlimited Plan</em>.</li>
+      <li>If it doesn't appear, please <a href="/contact">contact us</a> to register your educational email domain.</li>
+      </ul>`,
     ],
-    btnText: "Get verified",
-    btnHref: "/contact/",
+    btnText: "Check now",
+    btnHref: "https://gitpod.io/plans",
   },
 ];

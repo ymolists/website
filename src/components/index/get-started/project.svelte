@@ -6,10 +6,11 @@
 <style lang="scss">
   .project {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 0.625rem var(--micro);
+    padding: 0.75rem 0.75rem 0.75rem var(--micro);
     background: var(--off-white);
-    border-radius: 1.25rem;
+    border-radius: 0.75rem;
     transition: all 0.2s;
 
     @media (max-width: 454px) {
@@ -22,7 +23,8 @@
     }
 
     &__logo {
-      width: 2.25rem;
+      height: 1.6875rem;
+      width: 1.6875rem;
       margin-right: var(--micro);
       filter: grayscale(100%) opacity(0.5);
       -webkit-filter: grayscale(100%) opacity(0.5);
@@ -35,7 +37,7 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: var(--micro);
+      margin-bottom: 0.75rem;
     }
 
     &:hover,
@@ -54,18 +56,29 @@
   }
 
   .btn-tertiary {
+    border-radius: 0.75rem;
+    max-width: 9rem;
+    padding: 0.5rem 0.75rem;
     opacity: 0;
 
-    @media (max-width: 427px) {
+    @media (max-width: 500px) {
       display: none;
     }
   }
 </style>
 
-<a href={`https://gitpod.io#${githubUrl}`} target="_blank" class="project">
+<a
+  href={`https://gitpod.io#${githubUrl}`}
+  target="_blank"
+  class="project group"
+>
   <div class="project__left">
-    <img src={`/${logo}`} {alt} class="project__logo" />
-    <h5>{title}</h5>
+    <img src={`/${logo}`} {alt} class="project__logo" width="27" height="27" />
+    <p
+      class="leading-5 text-h6 text-gray-800 font-semibold transition duration-200 group-focus:text-black group-hover:text-black"
+    >
+      {title}
+    </p>
   </div>
   <span class="btn-tertiary">Launch workspace</span>
 </a>

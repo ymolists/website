@@ -2,18 +2,22 @@
 author: JesterOrNot, svenefftinge
 date: Thu June 18 2020
 excerpt: Until now, you installed VS Code extensions in Gitpod by drag-and-dropping `.vsix` files into your workspace. Today, we're excited to introduce a
-image: open-vsx-blog-post-img.jpg
+image: teaser.jpg
 slug: open-vsx-in-gitpod
 subtitle: Open VSX is now integrated in Gitpod
-teaserImage: open-vsx-blog-post-img.jpg
+teaserImage: teaser.jpg
 title: Search & Install Extensions in Your Gitpod Workspace
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 Until now, you installed VS Code extensions in Gitpod by drag-and-dropping `.vsix` files into your workspace. Today, we're excited to introduce a new, simpler way to install extensions: Just search the new open-source, vendor-neutral marketplace [Open VSX](https://open-vsx.org) directly from your workspace, and install extensions in one click.
 
 ## Open VSX Adoption
 
-Since [we've announced](/blog/open-vsx/) the Open VSX marketplace a few weeks ago, adoption has been extremely quick.
+Since [we've announced](/blog/open-vsx) the Open VSX marketplace a few weeks ago, adoption has been extremely quick.
 
 To seed the registry, we've initially added the most popular open-source extensions ourselves, so that early adopters could immediately find important extensions. We could double down on adding more extensions this way, but it doesn’t seem to be necessary, because today, there are already more than 200 developers publishing their own extensions to Open VSX. 🎉
 
@@ -41,6 +45,6 @@ While more and more extensions land in Open VSX on a daily basis, there still mi
 
 - Ideally, you go to the extension's repository itself and kindly ask the developer to publish it to Open VSX. Publishing is a one-liner (`npx ovsx publish`), so it's really low effort.
 - Download the extension's `.vsix` file (e.g. from the extension's GitHub Releases) and drag and drop it into the IDE's Extensions view. That will install and activate it automatically.
-- Create a PR over at https://github.com/open-vsx/publish-extensions — that's where we seed the Open VSX registry by automatically publishing popular open-source extensions.
+- Create a PR over at <a class="no-nowrap" href="https://github.com/open-vsx/publish-extensions">https://github.com/open-vsx/publish-extensions</a> — that's where we seed the Open VSX registry by automatically publishing popular open-source extensions.
 
-You can find more information in our [docs](/docs/vscode-extensions/).
+You can find more information in our [docs](/docs/vscode-extensions).

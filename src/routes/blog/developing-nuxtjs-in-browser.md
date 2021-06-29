@@ -4,9 +4,13 @@ date: Fri Sep 21 2018 13:23:34 GMT+0000 (UTC)
 author: svenefftinge
 title: Developing a Nuxt.js app entirely in your browser
 image: developing-nuxtjs-in-a-browser.jpeg
-excerpt: A walkthrough to create a fully working Nuxt.js web application with only a browser, using Gitpod.io the online IDE for GitHub. Version 2
+excerpt: A walkthrough to create a fully working Nuxt.js web application with only a browser, using Gitpod.io the online IDE for GitHub.
 slug: developing-nuxtjs-in-browser
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 A walkthrough to create a fully working Nuxt.js web application with only a browser, using Gitpod.io the online IDE for GitHub.
 
@@ -36,7 +40,7 @@ Now a workspace with an online IDE is started for you. It will open up the readm
 
 Using the terminal you can use create-nuxt-app to create an initial project:
 
-```
+```bash
 **yarn create nuxt-app**
 ```
 
@@ -48,7 +52,7 @@ By default the dev server doesn’t allow external IPs. To change that so we can
 
 To do so open the package.json file and add the parameter
 
-```
+```bash
 **—-hostname 0.0.0.0**
 ```
 
@@ -62,7 +66,7 @@ Now we can start the dev server and see the application in action.
 
 In the terminal type
 
-```
+```bash
 **yarn dev**
 ```
 
@@ -76,7 +80,7 @@ Now you can start changing the application and of course committing to your repo
 
 Here’s the contents:
 
-```
+```yaml
 ports:
     - port: 3000
     protocol: "http"

@@ -1,5 +1,15 @@
-<script>
-  import CubeImage from "$static/images/illustration-placeholder.png?webp&meta&w=400;700";
+<script lang="ts">
+  import { onMount } from "svelte";
+  import CubeImage from "$static/images/illustration-large.jpg?webp&meta&w=400;700";
+
+  let githubStarsEl: HTMLAnchorElement;
+
+  onMount(async () => {
+    const githubButtons = await import("github-buttons");
+    githubButtons.render(githubStarsEl, (el) => {
+      githubStarsEl.parentNode.replaceChild(el, githubStarsEl);
+    });
+  });
 </script>
 
 <style lang="scss">
@@ -34,7 +44,7 @@
     }
 
     &__intro-text {
-      margin-top: var(--micro);
+      margin-top: -16px;
 
       @media (max-width: 972px) {
         font-size: var(--p-medium);
@@ -50,12 +60,18 @@
 
       & > * {
         display: grid;
-        grid-template-columns: 32% 2fr;
+        grid-template-columns: 160px 100%;
         gap: var(--xx-small);
 
-        @media (max-width: 972px) {
+        @media (max-width: 1140px) {
           display: flex;
-          gap: var(--micro);
+          gap: initial;
+
+          & > * {
+            &:not(:last-child) {
+              margin-right: var(--micro);
+            }
+          }
         }
       }
     }
@@ -68,83 +84,128 @@
           font-size: var(--btn-small);
         }
       }
+
+      @media (max-width: 360px) {
+        br {
+          display: none;
+        }
+      }
     }
 
     &__icons {
       display: flex;
       justify-content: space-between;
       width: 120px;
+      padding: 0 var(--macro);
 
       @media (min-width: 1141px) {
         width: 160px;
       }
 
-      img {
-        height: 30px;
-        width: 30px;
+      @media (max-width: 768px) {
+        width: 145px;
       }
+
+      img {
+        height: 29px;
+        width: 29px;
+
+        @media (max-width: 1140px) {
+          height: 27px;
+          width: 27px;
+        }
+      }
+    }
+
+    &__stars {
+      height: 2rem;
     }
 
     &__illustration {
       max-width: 700px;
+      padding-left: 70px;
+      padding-top: 20px;
       flex: 1;
 
-      @media (max-width: 642px) {
+      @media (max-width: 972px) {
         margin-top: var(--micro);
+        padding: 0;
       }
     }
   }
 </style>
 
-<div class="row">
-  <div class="hero">
-    <div class="hero__text">
-      <h1 class="homeh1">Ready When <br /> You Are.</h1>
-      <p class="hero__intro-text text-large">
-        Spin up fresh, automated dev environments for each task, in the cloud,
-        in seconds. Or take a day to configure them the old way, up to you.
-      </p>
-      <div class="hero__action">
-        <div class="hero__try-now text-small">
-          <div>
-            <a href="#get-started" class="btn-conversion">Try Now</a>
-          </div>
-          <p>
-            Give an example space a try right now.
-            <br />
-            Instantly link to your Git provider.
-          </p>
+<div class="hero">
+  <div class="hero__text">
+    <h1 class="homeh1">
+      Always<br /> Ready to Code.
+    </h1>
+    <p id="choose-project-observer-target" class="hero__intro-text text-large">
+      Spin up fresh, automated dev environments<br />
+      for each task, in the cloud, in seconds.
+    </p>
+    <div class="hero__action">
+      <div class="hero__try-now text-small">
+        <div>
+          <a href="#get-started" class="btn-conversion">Try Now</a>
+        </div>
+        <p>
+          Open a workspace.
+          <br />
+          Start from any Git context.
+        </p>
+      </div>
+      <div>
+        <div class="hero__icons">
+          <img src="/svg/gitlab.svg" alt="GitLab logo" width="30" height="30" />
+          <img src="/svg/github.svg" alt="GitHub logo" width="30" height="30" />
+          <img
+            src="/svg/bitbucket.svg"
+            alt="Bitbucket logo"
+            width="30"
+            height="30"
+          />
         </div>
         <div class="hero__stars">
-          <div class="hero__icons">
-            <img src="/svg/bitbucket.svg" alt="Bitbucket logo" />
-            <img src="/svg/github.svg" alt="GitHub logo" />
-            <img src="/svg/gitlab.svg" alt="GitLab logo" />
-          </div>
-          <!-- <div>GitHub Stars</div> -->
+          <a
+            bind:this={githubStarsEl}
+            class="github-button"
+            href="https://github.com/gitpod-io/gitpod"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star the Gitpod Repo on GitHub">Star</a
+          >
         </div>
       </div>
     </div>
-    <div class="hero__illustration">
-      <picture>
-        <source
-          srcset="{CubeImage[0].src} {CubeImage[0]
-            .width}w,
-                        {CubeImage[1].src} {CubeImage[1]
-            .width}w"
-          sizes="(max-width: 1980px) 100vw, 1980px"
-        />
-        <img
-          sizes="(max-width: 1980px) 100vw, 1980px"
-          srcset="{CubeImage[0].src} {CubeImage[0]
-            .width}w,
-                       {CubeImage[1].src} {CubeImage[1]
-            .width}w"
-          src={CubeImage[1].src}
-          alt="Gitpod in a Nutshell"
-          loading="lazy"
-        />
-      </picture>
-    </div>
+  </div>
+  <div class="hero__illustration">
+    <picture>
+      <source
+        srcset="{CubeImage[0].src} {CubeImage[0]
+          .width}w,
+                      {CubeImage[1].src} {CubeImage[1]
+          .width}w"
+        sizes="(max-width: 1980px) 100vw, 1980px"
+      />
+      <img
+        sizes="(max-width: 1980px) 100vw, 1980px"
+        srcset="{CubeImage[0].src} {CubeImage[0]
+          .width}w,
+                     {CubeImage[1].src} {CubeImage[1]
+          .width}w"
+        src={CubeImage[1].src}
+        alt="Gitpod in a Nutshell"
+        loading="lazy"
+      />
+    </picture>
+
+    <!-- <img
+      src="/images/illustration-large.jpg"
+      alt="Gitpod in a Nutshell"
+      width="700"
+      height="724"
+    /> -->
   </div>
 </div>

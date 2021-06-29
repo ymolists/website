@@ -1,7 +1,8 @@
 <script>
   import { isEurope } from "../../utils/helper";
   import Section from "../section.svelte";
-  import Faq from "./faq.svelte";
+  import Faqs from "../faqs/faqs.svelte";
+  import Faq from "../faqs/faq.svelte";
 </script>
 
 <style lang="scss">
@@ -19,8 +20,8 @@
   }
 </style>
 
-<div class="row">
-  <Section>
+<Section>
+  <Faqs>
     <h2 class="h1">FAQs</h2>
     <Faq title="Can I always use Gitpod for free?">
       <p>
@@ -28,8 +29,7 @@
         month. If you need more hours or would like to unlock more features, you
         can upgrade your subscription at any time. If you’re a professional
         open-source developer and need more hours, you can apply to our free <a
-          href="/docs/professional-open-source/"
-          >Professional Open Source plan</a
+          href="/docs/professional-open-source">Professional Open Source plan</a
         >.
       </p>
     </Faq>
@@ -38,11 +38,9 @@
     >
       <p>
         Yes, qualified educational institutions may receive a special discount.
-        Please visit{" "}
-        <a href="/education/">Gitpod Education</a> for more information or
-        <a href="/contact/">Contact Sales</a>. If you are a student, you may use
-        the Student Unlimited Plan for {isEurope() ? "€8" : "$9"} per month (usually{" "}
-
+        Please
+        <a href="/contact">Contact us</a>. If you are a student, you may use the
+        Student Unlimited Plan for {isEurope() ? "€8" : "$9"} per month (usually{" "}
         {isEurope() ? "€35" : "$39"}). See
         <a href="#plans">Gitpod for Students</a> for more information.
       </p>
@@ -50,8 +48,13 @@
     <Faq title="How can I pay?">
       <p>All our plans can only be paid via credit card.</p>
       <div class="images">
-        <img src="/svg/brands/mastercard.svg" alt="Mastercard" />
-        <img src="/svg/brands/visa.svg" alt="Visa" />
+        <img
+          src="/svg/brands/mastercard.svg"
+          alt="Mastercard"
+          width="52"
+          height="40"
+        />
+        <img src="/svg/brands/visa.svg" alt="Visa" width="72" height="40" />
       </div>
     </Faq>
     <Faq title="Can I create a team account?">
@@ -63,7 +66,7 @@
       <p>
         In case you need more information on how to setup a team subscription,
         visit{" "}
-        <a href="/docs/teams/">gitpod.io/docs/teams.</a>
+        <a href="/docs/teams">gitpod.io/docs/teams.</a>
       </p>
     </Faq>
     <Faq title="Can I change my subscription at any time?">
@@ -88,9 +91,8 @@
     </Faq>
     <Faq title="Still have more questions?">
       <p>
-        We are happy to answer them, please <a href="/contact/">Get in Touch</a
-        >.
+        We are happy to answer them, please <a href="/contact">Get in Touch</a>.
       </p>
     </Faq>
-  </Section>
-</div>
+  </Faqs>
+</Section>

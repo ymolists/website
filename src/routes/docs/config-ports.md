@@ -1,6 +1,11 @@
 ---
-section: configuration
+section: configure
+title: Exposing Ports
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Exposing Ports
 
@@ -39,8 +44,6 @@ If it is not yet exposed, because it is not listed in the `.gitpod.yml`, the not
 If it is already exposed, either through the `.gitpod.yml` or by manually exposing it, the notification asks
 whether and how to open it.
 
-![Ports Notification](../../../static/images/docs/ports-notification.png)
-
 To change this behavior you can provide the property `onOpen`.
 It has four possible values:
 
@@ -55,10 +58,10 @@ Any changes to the `.gitpod.yml` will have effect immediately.
 
 ## Configure port visibility
 
-By default, all ports are in public visibiltiy state.
+By default, all ports are in private visibility state.
 
 To change this behavior you can provide the property `visibility`.
 It has two possible values:
 
-- `public` (default) - Allows everyone with the port URL to access the port.
-- `private` - Only allow users with workspace access to access the port.
+- `private` (default) - Only allow users with workspace access to access the port.
+- `public` - Allows everyone with the port URL to access the port.

@@ -9,9 +9,13 @@ title: Waiting for code to build is like watching paint dry
 url: https://medium.com/@csweichel/a1c6b25fd601
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Once your development environment is freed from manual setup procedures it can do work even while you are not. We call this continuous development.
 
-A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code/). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much _direct use_ scenarios; you set up a dev-environment using code which you as a developer use straight away.
+A while ago Sven described the idea of [development environment as code](/blog/dev-env-as-code). His main point: instead of using outdated README files that describe how to set up our development environment we should have executable, replicable and version-controlled descriptions thereof. In such a dev-environment as code world, on-boarding new team members/contributors is dead easy, going back to an old branch becomes a breeze (that old setup you had a year ago is now easy to restore) and playing with a new project becomes a joy. All those situations are very much _direct use_ scenarios; you set up a dev-environment using code which you as a developer use straight away.
 
 However, a machine-reproducible version of your development setup enables another powerful capability: your dev-environment can already checkout the latest code, download dependencies and build everything. Once you actually open your IDE, everything’s ready for you. No more siting there and watching ~~paint dry~~ yarn download the internet.
 
@@ -41,7 +45,7 @@ To build a continuous development system we need three things:
 
 Let’s sketch out a possible implementation of a such a system. Our dev-environment-as-code is basically a Docker image that contains the tools we need + [Eclipse Theia](https://www.theia-ide.org/) as IDE). Suppose we’d have this dev-env built as ourprj/dev-env:latest .
 
-```
+```dockerfile
 FROM theiaide/theia:next
 
 USER root
@@ -52,7 +56,7 @@ USER theia
 
 Using for example Jenkins or GitHub Actions we can then build a ready-to-code environment using a Dockerfile such as:
 
-```
+```dockerfile
 FROM ourprj/dev-env:latest
 
 WORKDIR /home/project

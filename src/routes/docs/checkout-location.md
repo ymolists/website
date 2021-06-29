@@ -1,6 +1,11 @@
 ---
-section: configuration
+section: configure
+title: Checkout and Workspace Location
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Checkout and Workspace Location
 
@@ -12,8 +17,7 @@ src/[repository-provider]/[repository-owner]/[repository-name]
 ```
 
 in the `$GOPATH`. Using the `.gitpod.yml` file, you can bring about such a workspace layout. Here is
-how we do that for the example
-<a href="https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod.yml" target="_blank">go-gin-app</a> repository:
+how we do that for the example <a href="https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod.yml" target="_blank">go-gin-app</a> repository:
 
 ```yaml
 ---

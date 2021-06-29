@@ -9,6 +9,10 @@ title: Dev environments as code
 url: dev-env-gilbert.gif
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 ![Source: http://dilbert.com/strip/2017-01-02](../../../static/images/blog/dev-env-as-code/dev-env-gilbert.gif)
 
 Imagine that only a decade ago system administrators deployed, configured, and maintained software systems manually. Doing so burned an endless amount of their precious lifetimes and energy.
@@ -74,7 +78,7 @@ Docker files are a pretty neat way to describe a development environment. Imagin
 
 Once you push the change to the repository and the docker image gets updated (automatically), all team members have the new tool in their development environment. We need to get to coding with a single click.
 
-![Laptop with code on the screen](../../../static/images/blog/dev-env-as-code/clément-h.jpeg)_Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
+![Laptop with code on the screen](../../../static/images/blog/dev-env-as-code/clement-h.jpeg)_Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 
 ### **Automated IDE Setup**
 
@@ -92,7 +96,7 @@ It integrates with code hosting platforms such as GitHub. It eliminates all the 
 
 ## **Summary**
 
-Applying the lessons learned from DevOps to our development setup can save us so much precious time and energy. [ActiveState’s Developer Survey 2018 ](https://www.activestate.com/developer-survey-2018-open-source-runtime-pains/)underlines this with some numbers:
+Applying the lessons learned from DevOps to our development setup can save us so much precious time and energy. <a class="no-nowrap" href="https://www.activestate.com/developer-survey-2018-open-source-runtime-pains/">ActiveState’s Developer Survey 2018 </a> underlines this with some numbers:
 
 ![ActiveState’s Developer Survey 2018: How much time do you spent on managing dependencies and development tools](https://cdn-images-1.medium.com/max/3200/1*Vvl3N-1hDANiy15Pc9xeiQ.png)
 

@@ -3,7 +3,6 @@
 </script>
 
 <script lang="ts">
-  import type { Email } from "../functions/submit-form";
   import type { Form } from "../types/form.type";
 
   const extensionUrls = {
@@ -36,12 +35,12 @@
     },
     otherFeedback: {
       el: null,
-      valid: false,
+      valid: true,
       value: "",
     },
   };
   let isFormDirty = false;
-  let isEmailSent = false;
+  let isFeedbackSent = false;
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
 
@@ -51,27 +50,23 @@
       return;
     }
 
-    const email: Email = {
-      from: {
-        email: "contact+browserextension@gitpod.io",
-        name: "Contact - Browser Extension Uninstall",
-      },
-      subject: "Why did I uninstall the browser extension?",
-      feedback: formData.reason.selected.reduce(
-        (result, reason) =>
-          `${reasons.find(({ id }) => id === reason).label}\n${result}`,
-        ``
-      ),
-      otherFeedback: formData.otherFeedback.value,
-    };
-
     try {
-      const response = await fetch("/.netlify/functions/submit-form", {
-        method: "POST",
-        body: JSON.stringify(email),
+      const response = await fetch("/.netlify/functions/feedback", {
+        method: "post",
+        body: JSON.stringify({
+          type: "browser-extension",
+          browser: currentBrowser,
+          feedback: formData.reason.selected.reduce(
+            (result, reason) =>
+              `${reasons.find(({ id }) => id === reason).label}\n${result}`,
+            ``
+          ),
+          note: formData.otherFeedback.value,
+        }),
       });
-      if (response.ok) {
-        isEmailSent = true;
+
+      if (response.status === 201) {
+        isFeedbackSent = true;
       } else {
         console.error(response.statusText);
       }
@@ -98,7 +93,8 @@
 
 <header>
   {#if extensionUrl}
-    <a href={extensionUrl} target="_blank">Reinstall Extension</a>
+    <a href={extensionUrl} rel="noopener" target="_blank">Reinstall Extension</a
+    >
   {/if}
   <h1>How Can We Improve?</h1>
 </header>
@@ -157,20 +153,21 @@
             bind:this={formData.otherFeedback.el}
             on:change={() => {
               formData.otherFeedback.valid =
-                formData.otherFeedback.value &&
-                formData.otherFeedback.el.validity.valid;
+                formData.otherFeedback.value === ""
+                  ? true
+                  : formData.otherFeedback.el.validity.valid;
             }}
           />
         </li>
         <li>
           <button
             class="btn-conversion"
-            disabled={isFormDirty && !isFormValid}
+            disabled={(isFormDirty && !isFormValid) || isFeedbackSent}
             type="submit">Send</button
           >
         </li>
       </ul>
-      {#if isEmailSent}
+      {#if isFeedbackSent}
         <p>Thanks for your Feedback</p>
       {/if}
     </form>

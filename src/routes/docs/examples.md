@@ -1,6 +1,11 @@
 ---
-section: getting-started
+section:
+title: Example Projects
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # Example Projects
 
@@ -17,9 +22,9 @@ Take a look at their `.gitpod.yml` file and try them in Gitpod with a single cli
 | Rust       | [Nushell](https://github.com/nushell/nushell), a terminal emulator written in Rust                                                           | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nushell/nushell)                        |
 | Java       | [Spring PetClinic](https://github.com/gitpod-io/spring-petclinic), a sample web application in Spring in Java                                | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/spring-petclinic)             |
 | Ruby       | [Ruby on Rails template](https://github.com/gitpod-io/ruby-on-rails) with a PostgreSQL database                                              | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/ruby-on-rails)                |
-| C#         | [C# .NET Core template](https://github.com/gitpod-io/dotnetcore), a simple pipeline example for a .NET Core application                      | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/dotnetcore)                   |
+| C#         | [C# .NET Core template](https://github.com/gitpod-io/example-dotnet-core), a simple pipeline example for a .NET Core application             | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/example-dotnet-core)          |
 | PHP        | [Symfony Demo Application](https://github.com/symfony/demo), a reference application for PHP developers                                      | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/symfony-demo)                 |
 
 <br>
 
-You can find more example projects in the [Languages & Frameworks](/docs/languages-and-frameworks/) pages.
+You can find more example projects in the [Languages & Frameworks](/docs/languages-and-frameworks) pages.

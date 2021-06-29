@@ -1,6 +1,11 @@
 ---
 section: languages-and-frameworks
+title: .NET in Gitpod
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 # .NET in Gitpod
 
@@ -8,17 +13,17 @@ section: languages-and-frameworks
 
 <div class="table-container">
 
-| Repository                                                      | Description                                                                   | Try it                                                                                                                             |
-| --------------------------------------------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| [dotnetcore](https://github.com/gitpod-io/dotnetcore)           | C# .NET Core template                                                         | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/dotnetcore)       |
-| [uno](https://github.com/unoplatform/uno)                       | Build Mobile, Desktop and WebAssembly apps with C# and XAML                   | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno)            |
-| [uno.quickstart](https://github.com/unoplatform/uno.quickstart) | An Uno "Hello world!" project using Windows UWP, iOS, Android and WebAssembly | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno.quickstart) |
+| Repository                                                      | Description                                                                   | Try it                                                                                                                                |
+| --------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| [dotnetcore](https://github.com/gitpod-io/example-dotnet-core)  | C# .NET Core template                                                         | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/example-dotnet-core) |
+| [uno](https://github.com/unoplatform/uno)                       | Build Mobile, Desktop and WebAssembly apps with C# and XAML                   | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno)               |
+| [uno.quickstart](https://github.com/unoplatform/uno.quickstart) | An Uno "Hello world!" project using Windows UWP, iOS, Android and WebAssembly | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/unoplatform/uno.quickstart)    |
 
 </div>
 
 ## Installing the .NET Tools
 
-To get all the .NET tools that you need pre-installed in your Gitpod workspaces, use the following base image in your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+To get all the .NET tools that you need pre-installed in your Gitpod workspaces, use the following base image in your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file):
 
 ```YAML
 image: gitpod/workspace-dotnet
@@ -52,7 +57,7 @@ The official C# extension from Microsoft [is proprietary](https://aka.ms/VSCode-
 
 ![C# Extension Demo](.../../../static/images/docs/CSharpDemo.png)
 
-To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file):
 
 ```yaml
 vscode:
@@ -74,7 +79,7 @@ The [Ionide-fsharp](https://ionide.io/) extensin gives F# developers the followi
 
 ![Ionide fsharp Example](.../../../static/images/docs/Iondine_Example.png)
 
-To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file/):
+To add this extension to your repository, add the following to your [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file):
 
 ```yaml
 vscode:

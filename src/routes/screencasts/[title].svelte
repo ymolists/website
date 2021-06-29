@@ -3,9 +3,7 @@
 
   export const load = async function ({ page }) {
     const { title } = page.params;
-    const screencast = screencasts.find(
-      (s) => s.title.toLocaleLowerCase().replace(/\s/g, "-") === title
-    );
+    const screencast = screencasts.find((s) => hyphenate(s.title) === title);
     return { props: { screencast } };
   };
 </script>
@@ -14,6 +12,7 @@
   import type { Screencast as ScreencastType } from "../../types/screencasts.type";
   import ScreencastPreview from "../../components/screencasts/preview.svelte";
   import YouTubeEmbed from "../../components/youtube-embed.svelte";
+  import { hyphenate } from "../../utils/helper";
 
   export let screencast: ScreencastType;
 </script>
@@ -22,9 +21,13 @@
   .related {
     margin: 2rem auto;
   }
+
+  .header {
+    @apply mb-small;
+  }
 </style>
 
-<header>
+<header class="header">
   <h1>{screencast.title}</h1>
   <p>{screencast.description}</p>
 </header>
@@ -45,11 +48,12 @@
 </p>
 
 {#if screencast.nextScreencast}
-  <div class="screencasts">
-    <h2>Next up...</h2>
+  <div class="max-w-sm my-medium mx-auto">
+    <h2 class="text-center mb-small">Next up...</h2>
     <ScreencastPreview
       screencast={screencasts[screencast.nextScreencast]}
       screencastNumber={screencast.nextScreencast}
+      headlineOrder="h3"
     />
   </div>
 {/if}
