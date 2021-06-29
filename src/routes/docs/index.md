@@ -7,7 +7,7 @@ title: Introduction
   export const prerender = true;
 </script>
 
-# Introduction to Gitpod
+# Coding Challenge Derya
 
 [Gitpod](https://www.gitpod.io) is a container-based development platform that puts developer experience first. Gitpod provisions **ready-to-code development environments** in the cloud accessible through your browser and [your local IDE](/blog/local-app).
 
