@@ -91,14 +91,3 @@ Further customizations:
 
 - [**Kubernetes Nodes**](./nodes): Configure file system layout and the workspace's node associativity.
 - [**Workspaces**](./workspaces): Configure workspace sizing.
-
-## Install Branch Build
-
-To try the latest version of Gitpod, freshly build form the `main` branch of our git repository or any other branch, follow these steps:
-
-1. Obtain the version name from [werft.gitpod-dev.com](https://werft.gitpod-dev.com/). The version has the format `<branchname>.<buildnumber>` (e.g `main.354`).
-
-2. The Helm chart ships as part of our `installer` docker image. You can extract it by running:
-   ```bash
-   docker run --entrypoint cp -v $PWD:/workspace gcr.io/gitpod-io/self-hosted/installer:<version> -R /dist/helm/ /workspace
-   ```
