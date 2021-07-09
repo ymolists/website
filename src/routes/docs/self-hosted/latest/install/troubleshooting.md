@@ -34,7 +34,7 @@ This section should solve all errors that might come up during installation of G
           - <your path here>
     ```
 
-3.  Do an `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.9.0` to apply the changes.
+3.  Do an `helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.10.0` to apply the changes.
 
 > Example: For `k3s` a common configuration looks like this:
 
