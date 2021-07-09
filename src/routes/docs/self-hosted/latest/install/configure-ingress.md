@@ -98,7 +98,8 @@ certbot certonly \
 
 # move them into place
 mkdir -p secrets/https-certificates
-find $WORKDIR/config/live -name "*.pem" -exec cp {} secrets/https-certificates \;
+cp $WORKDIR/config/live/fullchain.pem secrets/https-certificates/tls.crt
+cp $WORKDIR/config/live/privkey.pem secrets/https-certificates/tls.key
 ```
 
 > Note: Do not refrain if `certbot` fails on first execution: Depending on the challenge used you might have to restart it _once_.
