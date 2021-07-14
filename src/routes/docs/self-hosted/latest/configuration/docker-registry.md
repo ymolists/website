@@ -1,5 +1,5 @@
 ---
-section: self-hosted/latest/configuration
+section: self-hosted/latest
 title: Docker Registry
 ---
 
