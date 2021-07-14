@@ -55,22 +55,6 @@ export const MENU: MenuEntry[] = [
     M("Administration", "self-hosted/latest/administration"),
     M("Updating", "self-hosted/latest/updating"),
     M("Releases", "self-hosted/latest/releases"),
-
-    // M(
-    //   "Install on self-managed Kubernetes",
-    //   "self-hosted/latest/install/install-on-kubernetes"
-    // ),
-    // M("Configure Ingress", "self-hosted/latest/install/configure-ingress"),
-    // M("Configure a Database", "self-hosted/latest/install/database"),
-    // M(
-    //   "Configure a Docker Registry",
-    //   "self-hosted/latest/install/docker-registry"
-    // ),
-    // M("Configure Storage", "self-hosted/latest/install/storage"),
-    // M("Configure Nodes", "self-hosted/latest/install/nodes"),
-    // M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
-    // M("Upgrade Notes", "self-hosted/latest/install/upgrade"),
-    // M("Troubleshooting", "self-hosted/latest/install/troubleshooting"),
   ]),
   M("References", "references", [
     M(".gitpod.yml", "references/gitpod-yml"),
