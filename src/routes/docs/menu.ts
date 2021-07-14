@@ -51,14 +51,6 @@ export const MENU: MenuEntry[] = [
   ]),
   M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
     M(
-      "Install on Google Cloud Platform",
-      "self-hosted/latest/install/install-on-gcp-script"
-    ),
-    M(
-      "Install on Amazon Web Services",
-      "self-hosted/latest/install/install-on-aws-script"
-    ),
-    M(
       "Install on self-managed Kubernetes",
       "self-hosted/latest/install/install-on-kubernetes"
     ),
