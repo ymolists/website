@@ -11,6 +11,26 @@ title: Gitpod Self-Hosted Upgrade Notes
 
 ## Upgrading Gitpod from v0.10.0 to v0.10.0
 
+### default registry now requires password and username
+
+Gitpod by default ships with an in-cluster docker-registry. If you use that one (instead of an external one), add the following to your `values.custom.yaml`:
+
+```yaml
+docker-registry:
+  authentication:
+    username: gitpod
+    password: your-registry-password
+```
+
+Afterwards, a full redeploy is required (your DB and workspace state is kept in a PV):
+
+```bash
+helm del gitpod
+helm upgrade --install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.10.0
+```
+
+### Certificate file names changed
+
 The file names we expect in a secret has changed. Before we'd require the default names Let's Encrypt would use. Since 0.10.0 we require a `tls.key` and a `tls.crt`.
 To adjust this in your existing installation:
 
