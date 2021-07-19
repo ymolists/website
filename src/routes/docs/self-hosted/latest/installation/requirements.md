@@ -9,6 +9,13 @@ title: Installation requirements
 
 # Installation requirements
 
+## Hosting requirements
+
+- GKE
+- EKS
+- K3s
+- Docker
+
 ## Hardware requirements
 
 ### Storage
