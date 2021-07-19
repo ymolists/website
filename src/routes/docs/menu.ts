@@ -50,6 +50,7 @@ export const MENU: MenuEntry[] = [
     M("Browser Extension", "browser-extension"),
   ]),
   M("Gitpod Self-Hosted", "self-hosted/latest", [
+    M("Requirements", "self-hosted/latest/installation/requirements"),
     M("Installation", "self-hosted/latest/installation"),
     M("Configuration", "self-hosted/latest/configuration"),
     M("Administration", "self-hosted/latest/administration"),
