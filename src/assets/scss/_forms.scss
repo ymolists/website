@@ -43,7 +43,6 @@ form li {
 fieldset,
 [type="checkbox"] + label {
   display: flex;
-  gap: 1rem;
 }
 fieldset {
   flex-flow: row wrap;
@@ -64,14 +63,8 @@ select {
 
 [type="checkbox"] + label::before {
   content: "✔";
-  border: 1px solid var(--divider);
-  height: 2rem;
-  width: 2.5rem;
-  padding: 0.25rem;
-  border-radius: 0.25rem;
-  font-size: 1.5rem;
+  @apply h-6 w-8 text-p-small mr-micro p-1 rounded text-center transition border border-solid border-divider;
   line-height: 1.1;
-  text-align: center;
 }
 
 [type="checkbox"] + label::before,
@@ -99,9 +92,12 @@ select {
 [type="radio"]:focus + label {
   border-color: var(--dark-grey);
 }
-.btn-conversion:disabled,
-.btn-primary:disabled {
+[class|="btn"]:disabled {
   background-color: var(--sand-dark);
   color: var(--dark-gray);
   cursor: default;
+}
+
+::placeholder {
+  @apply text-light-grey !important;
 }
