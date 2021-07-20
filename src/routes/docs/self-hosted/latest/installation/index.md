@@ -19,8 +19,8 @@ title: Installing Gitpod Self-Hosted
 
 ## Installation guides
 
-- [Installing Gitpod Self-Hosted on AWS](installation/on-aws)
-- [Installing Gitpod Self-Hosted on GCP](installation/on-gcp)
+- [Installing Gitpod Self-Hosted on AWS](installation/on-aws-eks)
+- [Installing Gitpod Self-Hosted on GCP](installation/on-gcp-gke)
 - [Installing Gitpod Self-Hosted on K3S](installation/on-k3s)
 - [Installing Gitpod Self-Hosted on Kubernetes](installation/on-kubernetes)
 
