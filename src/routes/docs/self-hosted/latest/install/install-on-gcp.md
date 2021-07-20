@@ -7,12 +7,6 @@ title: Getting started with Gitpod on GCP
   export const prerender = true;
 </script>
 
-# Getting started with Gitpod on GCP
+> Since the `0.10.0` release (July 2021) the GCP terraform script have been removed.
 
-Gitpod runs best on Google Cloud Platform. That's also where [gitpod.io](https://gitpod.io) is deployed and operated at scale.
-This guide explains how to install an instance of Gitpod with the following steps:
-
-# Terraform script coming soon
-
-We are working on improving this and making it production ready. Work in progress scripts can be found at this url
-[code](https://github.com/gitpod-io/gitpod/tree/main/install/gcp-terraform)
+If you are looking for a general guide on how to deploy Gitpod Self-Hosted on Kubernetes there see [here](./install-on-kubernetes).

@@ -50,18 +50,7 @@ export const MENU: MenuEntry[] = [
     M("Browser Extension", "browser-extension"),
   ]),
   M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
-    M(
-      "Install on Google Cloud Platform",
-      "self-hosted/latest/install/install-on-gcp-script"
-    ),
-    M(
-      "Install on Amazon Web Services",
-      "self-hosted/latest/install/install-on-aws-script"
-    ),
-    M(
-      "Install on self-managed Kubernetes",
-      "self-hosted/latest/install/install-on-kubernetes"
-    ),
+    M("Install Gitpod", "self-hosted/latest/install/install-on-kubernetes"),
     M("Configure Ingress", "self-hosted/latest/install/configure-ingress"),
     M("Configure a Database", "self-hosted/latest/install/database"),
     M(
@@ -71,6 +60,8 @@ export const MENU: MenuEntry[] = [
     M("Configure Storage", "self-hosted/latest/install/storage"),
     M("Configure Nodes", "self-hosted/latest/install/nodes"),
     M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
+    M("Upgrade Notes", "self-hosted/latest/install/upgrade"),
+    M("Troubleshooting", "self-hosted/latest/install/troubleshooting"),
   ]),
   M("References", "references", [
     M(".gitpod.yml", "references/gitpod-yml"),
