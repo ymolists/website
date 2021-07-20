@@ -9,12 +9,25 @@ title: Installation requirements
 
 # Installation requirements
 
-## Hosting requirements
+## Platform requirements
 
-- GKE
-- EKS
-- K3s
-- Docker
+### Google Kubernetes Engine
+
+- Ubuntu 18.04 with ≥ v5.4 kernel.
+- Kubernetes ≥ 1.18.
+- containerd ≥ 1.2.
+- Google Cloud Storage.
+
+### Amazon Elastic Kubernetes
+
+- Ubuntu 20.04 with ≥ v5.4 kernel.
+- Kubernetes ≥ 1.20.
+- containerd ≥ 1.2.
+- MinIO Storage.
+
+### K3s
+
+### Docker
 
 ## Hardware requirements
 
