@@ -23,6 +23,7 @@ title: Installing Gitpod Self-Hosted
 - [Installing Gitpod Self-Hosted on GCP](installation/on-gcp-gke)
 - [Installing Gitpod Self-Hosted on K3S](installation/on-k3s)
 - [Installing Gitpod Self-Hosted on Kubernetes](installation/on-kubernetes)
+- [Installing a Staging Instance of Gitpod Self-Hosted](installation/staging)
 
 ## Troubleshooting
 
