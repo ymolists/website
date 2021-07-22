@@ -23,6 +23,9 @@ export const MENU: MenuEntry[] = [
     M("Ruby on Rails", "quickstart/ruby-on-rails"),
     M("Rust", "quickstart/rust"),
     M("Svelte", "quickstart/svelte"),
+    M("Datasette", "quickstart/datasette"),
+    M("Nix", "quickstart/nix"),
+    M("Haskell", "quickstart/haskell"),
   ]),
   M("Getting Started", "getting-started"),
   M("Configure", "configure", [
