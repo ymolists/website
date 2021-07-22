@@ -70,7 +70,7 @@ This is caused by a bug in the minio Helm chart which blocks itself on updates.
 
 ## 3. `agent-smith` daemonset fails in deployment
 
-In the v0.1.0 release `agent-smith` is [incorrectly enabled](https://github.com/gitpod-io/gitpod/issues/4885#issuecomment-884205801) in Gitpod Self-Hosted.
+In the v0.10.0 release `agent-smith` is [incorrectly enabled](https://github.com/gitpod-io/gitpod/issues/4885#issuecomment-884205801) in Gitpod Self-Hosted.
 
 ### Solution
 
