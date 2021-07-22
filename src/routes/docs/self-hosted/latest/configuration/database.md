@@ -1,13 +1,13 @@
 ---
-section: self-hosted/latest/self-hosted
-title: Database
+section: self-hosted/latest
+title: Configure the database used by your Gitpod installation
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Database
+# Configure the database used by your Gitpod installation
 
 Gitpod uses a MySQL database to store user data. By default Gitpod ships with a MySQL database built-in. If you operate your own MySQL database (which we'd recommend in a production setting) you can use that one. You have the following options:
 

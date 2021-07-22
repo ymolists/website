@@ -1,13 +1,13 @@
 ---
-section: self-hosted/latest/self-hosted
-title: Kubernetes Nodes
+section: self-hosted/latest
+title: Configure the Kubernetes nodes in your Gitpod Self-Hosted installation
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Kubernetes Nodes
+# Configure the Kubernetes nodes in your Gitpod Self-Hosted installation
 
 Configure the nodes (computers or virtual machines) that Kubernetes runs Gitpod's workspace pods on.
 

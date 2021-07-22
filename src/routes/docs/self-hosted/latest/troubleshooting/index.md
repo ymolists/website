@@ -1,13 +1,13 @@
 ---
-section: self-hosted/latest/self-hosted
-title: Troubleshooting
+section: self-hosted/latest
+title: Troubleshooting Gitpod Self-Hosted
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Troubleshooting
+# Troubleshooting Gitpod Self-Hosted
 
 This section should solve all errors that might come up during installation of Gitpod.
 
@@ -54,7 +54,7 @@ Since `0.7.0` minio requires custom credentials to be configured.
 
 ### Solution
 
-1.  Follow the [Upgrade Guide](./upgrade).
+1.  Follow the [Upgrade Guide](./updating).
 
 ## 3. After upgrade, the `minio` Pod is stuck in `ContainerCreating`
 
@@ -68,4 +68,16 @@ This is caused by a bug in the minio Helm chart which blocks itself on updates.
 
 1.  Wait until the pod comes up.
 
-### 4. Installing
+## 3. `agent-smith` daemonset fails in deployment
+
+In the v0.1.0 release `agent-smith` is [incorrectly enabled](https://github.com/gitpod-io/gitpod/issues/4885#issuecomment-884205801) in Gitpod Self-Hosted.
+
+### Solution
+
+Add the following to your `values.yaml` file to disable agent-smith:
+
+```yaml
+components:
+  agentSmith:
+    disabled: true
+```

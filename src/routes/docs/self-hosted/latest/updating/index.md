@@ -1,15 +1,15 @@
 ---
-section: self-hosted/latest/self-hosted
-title: Gitpod Self-Hosted Upgrade Notes
+section: self-hosted/latest
+title: Updating Gitpod Self-Hosted
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Gitpod Self-Hosted Upgrade Notes
+# Updating Gitpod Self-Hosted
 
-## Upgrading Gitpod from v0.10.0 to v0.10.0
+## Upgrading Gitpod from v0.9.0 to v0.10.0
 
 ### default registry now requires password and username
 
@@ -87,4 +87,4 @@ If you don't do this, `helm` will fail with the following message:
 
 ### Remote storage config has been moved to a new component
 
-If you have a custom remote storage config (e.g. you use your own MinIO instance or the Google Cloud Storage), you need to move the config from the component `wsDaemon` to the new component `contentService`. See the [Storage Guide](./storage) for an example.
+If you have a custom remote storage config (e.g. you use your own MinIO instance or the Google Cloud Storage), you need to move the config from the component `wsDaemon` to the new component `contentService`. See the [Storage Guide](./configuration/storage) for an example.

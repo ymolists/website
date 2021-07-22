@@ -1,13 +1,13 @@
 ---
-section: self-hosted/latest/self-hosted
-title: Administrate Gitpod Self-Hosted
+section: self-hosted/latest
+title: Administration of Gitpod Self-Hosted
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Administrate Gitpod Self-Hosted
+# Administration of Gitpod Self-Hosted
 
 While we are working on the administration experience, there is already a lot you can do if you know where to look.
 

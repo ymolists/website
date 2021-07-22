@@ -1,6 +1,6 @@
 ---
-section: self-hosted/latest/self-hosted
-title: Workspaces
+section: self-hosted/latest
+title: Configure the Gitpod Workspaces in your Gitpod Self-Hosted installation
 ---
 
 <script context="module">

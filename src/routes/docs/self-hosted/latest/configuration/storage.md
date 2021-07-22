@@ -1,13 +1,13 @@
 ---
-section: self-hosted/latest/self-hosted
-title: Workspace Storage
+section: self-hosted/latest
+title: Configure the storage used by your Gitpod installation
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Workspace Storage
+# Configure the storage used by your Gitpod installation
 
 Gitpod uses bucket storage to persist the contents of workspaces. Each workspace is tarballed into a single archive file which is then uploaded to a separate bucket.
 
