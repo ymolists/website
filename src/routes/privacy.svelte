@@ -182,13 +182,13 @@
     </li>
     <li>
       <a href="#details-IV"
-        >IV: How are my data processed when using the Gitpod Service (with User
+        >How are my data processed when using the Gitpod Service (with User
         Account)?</a
       >
     </li>
     <li>
       <a href="#details-V"
-        >V: How are Data processed when visiting our Social Media pages?</a
+        >How are Data processed when visiting our Social Media pages?</a
       >
     </li>
     <li>
@@ -412,6 +412,13 @@
         >.
       </p>
 
+      <p>
+        <strong>OPT-OUT:</strong> You can deactivate the use of Google Analytics
+        by enabling the <a href="https://allaboutdnt.com/">"Do Not Track"</a>
+        setting in your web browser. You may follow the instructions in
+        <a href="https://allaboutdnt.com/#adjust-settings">this guide.</a>
+      </p>
+
       <h3>Google Fonts</h3>
       <p>
         Our Website uses the <strong>"Google Fonts"</strong> service of Google (inter
@@ -443,18 +450,48 @@
 
       <h3>Segment</h3>
       <p>
-        We use Segment on our Website and Product to capture marketing- and
-        product-related user information in order to offer the best experience
-        to our users. Segment operates in
+        We use Segment, provided by Segment.io, Inc., on our Website and Product
+        to capture marketing- and product-related user information in order to
+        offer the best experience to our users. Segment operates in
         <a href="https://segment.com/docs/privacy/complying-with-the-gdpr/">
           compliance with the GDPR</a
         >.
       </p>
       <p>
-        You can also find more infomration in Segment's privacy policy:
+        You can also find more information in Segment's privacy policy:
         <a href="https://segment.com/legal/privacy/"
           >https://segment.com/legal/privacy/</a
         >.
+      </p>
+
+      <p>
+        <strong>OPT-OUT:</strong> You can deactivate the use of Segment by
+        enabling the <a href="https://allaboutdnt.com/">"Do Not Track"</a>
+        setting in your web browser. You may follow the instructions in
+        <a href="https://allaboutdnt.com/#adjust-settings">this guide.</a>
+      </p>
+
+      <h3>Mixpanel</h3>
+      <p>
+        We use Mixpanel, provided by Mixpanel, Inc., on our Website and Product
+        to capture marketing- and product-related user information in order to
+        offer the best experience to our users. Mixpanel operates in
+        <a href="https://mixpanel.com/legal/mixpanel-gdpr/">
+          compliance with the GDPR</a
+        >.
+      </p>
+      <p>
+        You can also find more information in Mixpanel's privacy policy:
+        <a href="https://mixpanel.com/legal/privacy-policy/"
+          >https://mixpanel.com/legal/privacy-policy/</a
+        >.
+      </p>
+
+      <p>
+        <strong>OPT-OUT:</strong> You can deactivate the use of Mixpanel by
+        enabling the <a href="https://allaboutdnt.com/">"Do Not Track"</a>
+        setting in your web browser. You may follow the instructions in
+        <a href="https://allaboutdnt.com/#adjust-settings">this guide.</a>
       </p>
 
       <h3 id="youtube">Youtube</h3>
@@ -867,11 +904,11 @@
 
       <p>
         The US companies providing the services of Google, Customer.io, GitHub,
-        Stripe and Chargebee are each certified under EU-US-Privacy-Shield
-        and/or comply with data protection standards applicable in the EU. For
-        more information on EU-US-Privacy-Shield and details about the
-        certificates please refer to: <a href="https://www.privacyshield.gov"
-          >https://www.privacyshield.gov</a
+        Stripe, Segment.io, Mixpanel and Chargebee are each certified under
+        EU-US-Privacy-Shield and/or comply with data protection standards
+        applicable in the EU. For more information on EU-US-Privacy-Shield and
+        details about the certificates please refer to: <a
+          href="https://www.privacyshield.gov">https://www.privacyshield.gov</a
         >.
       </p>
       <p>
