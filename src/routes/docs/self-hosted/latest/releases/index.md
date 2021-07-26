@@ -11,7 +11,7 @@ title: Gitpod Self-Hosted releases
 
 ## Currently Supported
 
-- [latest](../)
+- [latest](../latest)
 
 ## Deprecated
 

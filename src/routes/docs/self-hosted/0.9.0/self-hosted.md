@@ -25,7 +25,7 @@ You can find all configuration templates and installation scripts in the Gitpod 
 
 The easiest way to install Gitpod Self-Hosted is currently on Google Cloud Platform (that's also where [gitpod.io](https://gitpod.io) is deployed). GCP is the recommended platform for most users:
 
-- [Install Gitpod on Google Cloud Platform](/docs/self-hosted/latest/installation/)
+- [Install Gitpod on Google Cloud Platform](/docs/self-hosted/latest/installation)
 
 ### Install on any Kubernetes cluster
 
