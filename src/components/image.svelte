@@ -14,21 +14,22 @@
   export let width: string;
 
   let clazz: string = "";
+  let imagesWithoutFirstElement = images.slice(1).reverse();
 </script>
 
 <picture>
-  <source
-    srcset="{images[2].src} {images[2].width}w {images[3].src} {images[3]
-      .width}w"
-    type="image/{images[2].format}"
-  />
+  {#each imagesWithoutFirstElement as image}
+    <source
+      srcset={image.src}
+      media="(max-width: {image.width}px)"
+      type="image/{image.format}"
+    />
+  {/each}
   <img
     class={clazz}
     src={images[0].src}
     {alt}
     {height}
-    sizes="(max-width: {images[0].width}px) {images[0].width}px, {images[1]
-      .width}px"
     width={width || images[0].width}
     loading="lazy"
   />
