@@ -1,4 +1,6 @@
 <script>
+  import GitpodEditorImages from "$static/images/gitpod-editor.jpg?format=jpg;webp&meta&w=700;1600";
+  import Image from "../image.svelte";
   import Section from "../section.svelte";
 
   const buttons = [
@@ -54,12 +56,12 @@
     <h2 class="mb-small text-center text-h2">
       Remote-first. Secure by design.
     </h2>
-    <img
+    <Image
       class="screenshot shadow-brand"
-      src="/images/gitpod-editor.jpg"
-      alt="Gitpod"
+      images={GitpodEditorImages}
       height="819"
       width="1269"
+      alt="Gitpod"
     />
     <div class="content">
       <p class="text-large">
