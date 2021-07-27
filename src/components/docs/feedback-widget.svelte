@@ -5,8 +5,16 @@
   let selectedEmotion;
   let note = "";
   let resultMessage;
+  let isSubmittedOnce = false;
 
   const submitFeedback = async () => {
+    isSubmittedOnce = true;
+
+    window.analytics.track("feedback_submitted", {
+      score: selectedEmotion,
+      feedback: note,
+    });
+
     const response = await fetch("/.netlify/functions/feedback", {
       method: "post",
       body: JSON.stringify({
@@ -40,7 +48,7 @@
   <div
     class="bg-white shadow-normal rounded-2xl max-w-md py-small px-xx-small m-auto"
   >
-    <h5 class="mb-6 text-center w-full">Was this helpful?</h5>
+    <h5 class="mb-6 text-center justify-center w-full">Was this helpful?</h5>
     {#if resultMessage}
       <p class="text-center">{resultMessage}</p>
     {:else}
@@ -83,6 +91,7 @@
                 ><button
                   role="button"
                   type="submit"
+                  disabled={isSubmittedOnce}
                   class="btn-primary mt-micro"><span>Send</span></button
                 ></span
               >

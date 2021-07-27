@@ -3,6 +3,17 @@
 
   export let isOpen = false;
 
+  $: {
+    if (typeof document !== "undefined") {
+      const html = document.querySelector("html");
+      if (isOpen) {
+        html.style.overflowY = "hidden";
+      } else {
+        html.style.overflowY = "initial";
+      }
+    }
+  }
+
   const dispatch = createEventDispatcher();
 
   let closeEl: HTMLButtonElement;
