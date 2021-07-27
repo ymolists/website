@@ -1,5 +1,15 @@
 <script lang="ts">
   import menuState from "./state";
+
+  const handleToggle = () => {
+    const html = document.querySelector('html')
+    $menuState = !$menuState
+    if ($menuState) {
+      html.classList.add('overflow-y-hidden')
+    } else {  
+      html.classList.remove('overflow-y-hidden')
+    }
+  }
 </script>
 
 <style type="text/postcss">
@@ -11,7 +21,7 @@
 </style>
 
 <button
-  on:click={() => ($menuState = !$menuState)}
+  on:click={handleToggle}
   aria-label="Show / hiide nav items"
   class="flex justify-center items-center h-6 w-12 rounded-xl bg-black"
 >
