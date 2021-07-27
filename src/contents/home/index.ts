@@ -312,7 +312,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Alejandro",
-    avatar: "alejandro-sanchez.jpeg",
+    avatar: "alejandro-sanchez.jpg",
     org: `
       <span>
         @4GeeksAcademy
