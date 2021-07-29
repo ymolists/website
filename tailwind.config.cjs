@@ -13,6 +13,7 @@ module.exports = {
           ([_match, group, ..._rest]) => group
         ),
       ],
+      safelist: ["overflow-y-hidden"],
     },
   },
   darkMode: false, // or 'media' or 'class'
