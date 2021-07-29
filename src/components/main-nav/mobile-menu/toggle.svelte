@@ -4,13 +4,13 @@
   import menuState from "./state";
 
   const handleToggle = () => {
-    $menuState = !$menuState
+    $menuState = !$menuState;
     if ($menuState) {
       showHideOverflowY(true);
-    } else {  
+    } else {
       showHideOverflowY(false);
     }
-  }
+  };
 </script>
 
 <style type="text/postcss">

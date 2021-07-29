@@ -39,7 +39,7 @@
       }
 
       &--gitlab {
-        background: #5E48BA;
+        background: #5e48ba;
       }
     }
 

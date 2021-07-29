@@ -9,7 +9,7 @@
     if (typeof document !== "undefined") {
       if (isOpen) {
         showHideOverflowY(true);
-      } else {  
+      } else {
         showHideOverflowY(false);
       }
     }
