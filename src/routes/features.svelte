@@ -66,17 +66,19 @@
     }
   }
 
-  .triple a,
-  .double a {
-    /* TOD0: better contrast for AA */
-    color: var(--brand-ripe);
-  }
-
   .halfimages .text-large {
     margin: var(--x-small) 0;
   }
   .double .h4 {
     margin-bottom: var(--micro);
+  }
+
+  .double a {
+    @apply underline;
+  }
+
+  .double a:hover {
+    @apply no-underline;
   }
 
   section h3:first-child,
