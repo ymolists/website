@@ -6,7 +6,7 @@
 
   export let baseUrl: string;
   export let imagesDirectoryName: string;
-  export let norobots: boolean;
+  export let norobots: boolean = false;
 
   const {
     date,
