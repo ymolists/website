@@ -110,6 +110,7 @@
         <li><a href="/screencasts">Screencasts</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/docs">Documentation</a></li>
+        <!-- <li><a href="/guides">Guides</a></li> -->
         <li>
           <a
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
@@ -141,7 +142,7 @@
         <li>Company</li>
         <li><a href="/about">About</a></li>
         <li>
-          <a href="/careers">Careers<sup class="text-orange-800">*</sup></a>
+          <a href="/careers" class="highlighted">Careers</a>
         </li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/media-kit">Media Kit</a></li>

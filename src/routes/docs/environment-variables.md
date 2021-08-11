@@ -85,7 +85,9 @@ Subsequently `*/*` makes that variable available in every workspace.
 
 > **Beware:** while the variable values are stored encrypted, they are available as plain text inside a workspace. Be careful when sharing your live workspace or when using `*/*` as repository pattern.
 
-<h2 class="h1">Passing In Environment Variables</h2>
+## Provide env vars via URL
+
+> ❗️ This feature is great for configuring environment variables but is not appropriate for configuring sensitive information, such as passwords or long-lived API tokens. Gitpod and the [Open Web Application Security Project](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url) recommends that you do not pass sensitive information through query strings. Refer to [CWE-598](https://cwe.mitre.org/data/definitions/598.html) to learn more about this recommendation.
 
 In addition to user-specific env variables, Gitpod also allows passing in variables through the `gitpod.io/#` URL.
 The syntax for that is:

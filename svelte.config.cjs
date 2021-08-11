@@ -1,6 +1,7 @@
 const adapterNetlify = require("@sveltejs/adapter-netlify");
 const { mdsvex } = require("mdsvex");
 const headings = require("remark-autolink-headings");
+const remarkExternalLinks = require("remark-external-links");
 const slug = require("remark-slug");
 const sveltePreprocess = require("svelte-preprocess");
 const pkg = require("./package.json");
@@ -47,14 +48,21 @@ module.exports = {
 
   // options passed to svelte.preprocess (https://svelte.dev/docs#svelte_preprocess)
   preprocess: [
-    sveltePreprocess({ postcss: true, scss: true }),
+    sveltePreprocess({ postcss: true, scss: true, preserve: ["ld+json"] }),
     mdsvex({
       extensions: [".md"],
       layout: {
         blog: "./src/components/blog/blog-content-layout.svelte",
         docs: "./src/components/docs/docs-content-layout.svelte",
+        guides: "./src/components/guides/guides-content-layout.svelte",
       },
       remarkPlugins: [
+        [
+          remarkExternalLinks,
+          {
+            target: "_blank",
+          },
+        ],
         slug,
         [
           headings,

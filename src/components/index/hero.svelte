@@ -32,8 +32,8 @@
     }
 
     &__text {
-      max-width: 560px;
-      flex: 0 0 45%;
+      max-width: 700px;
+      flex: 0 0 50%;
 
       @media (max-width: 972px) {
         flex: 0 0 50%;

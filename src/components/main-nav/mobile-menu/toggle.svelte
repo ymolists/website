@@ -1,15 +1,16 @@
 <script lang="ts">
+  import { showHideOverflowY } from "../../../utils/helper";
+
   import menuState from "./state";
 
   const handleToggle = () => {
-    const html = document.querySelector('html')
-    $menuState = !$menuState
+    $menuState = !$menuState;
     if ($menuState) {
-      html.classList.add('overflow-y-hidden')
-    } else {  
-      html.classList.remove('overflow-y-hidden')
+      showHideOverflowY(true);
+    } else {
+      showHideOverflowY(false);
     }
-  }
+  };
 </script>
 
 <style type="text/postcss">
