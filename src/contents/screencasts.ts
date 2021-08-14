@@ -46,7 +46,7 @@ const screencasts: Screencast[] = [
     description:
       "How to customize and configure Gitpod for your personal needs and those of your team.",
     duration: 123,
-    tile: "screencast-2.jpg",
+    tile: "screencast-4.jpg",
     youtubeId: "VYHsd1zI_tE",
     relatedDocs: [
       { path: "/vscode-extensions", title: "VS Code Extensions" },
@@ -59,7 +59,7 @@ const screencasts: Screencast[] = [
     description:
       "How to make Gitpod load in a blink by prebuilding your project ahead-of-time, continuously.",
     duration: 128,
-    tile: "screencast-4.jpg",
+    tile: "screencast-5.jpg",
     youtubeId: "ZtlJ0PakUHQ",
     relatedDocs: [{ path: "/prebuilds", title: "Prebuilt Workspaces" }],
   },
@@ -69,16 +69,17 @@ const screencasts: Screencast[] = [
     description:
       "Discover ephemeral/disposable workspaces and start fresh for each new task with just a single click. Pure magic!",
     duration: 195,
-    tile: "screencast-5.jpg",
+    tile: "screencast-6.jpg",
     youtubeId: "n7Ca3jHFtZg",
     relatedDocs: [{ path: "", title: "Introduction to Gitpod" }],
   },
   {
+    nextScreencast: id++,
     title: "Collaborating With Your Team",
     description:
       "How to collaborate effectively with Gitpod's Shared Workspaces and Snapshots.",
     duration: 189,
-    tile: "screencast-6.jpg",
+    tile: "screencast-7.jpg",
     youtubeId: "TrY15zN98p8",
     relatedDocs: [
       { path: "/sharing-and-collaboration", title: "Collaboration & Sharing" },
