@@ -29,6 +29,7 @@ Learn how to start using Gitpod on an example project that is hosted on GitHub i
 - [C](/docs/quickstart/c)
 - [Perl](/docs/quickstart/perl)
 - [Julia](/docs/quickstart/julia)
+- [Docker Compose](/docs/quickstart/docker-compose)
 
 ## Installing the Gitpod browser extension
 

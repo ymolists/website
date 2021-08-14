@@ -29,6 +29,7 @@ export const MENU: MenuEntry[] = [
     M("C", "quickstart/c"),
     M("Perl", "quickstart/perl"),
     M("Julia", "quickstart/julia"),
+    M("Docker Compose", "quickstart/docker-compose"),
   ]),
   M("Getting Started", "getting-started"),
   M("Configure", "configure", [
