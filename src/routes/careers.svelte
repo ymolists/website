@@ -214,7 +214,7 @@
               {career.title}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="permalink-icon ml-micro text-white group-hover:text-gray-900 transition-all duration-100"
+                class="permalink-icon ml-micro text-transparent group-hover:text-gray-900 transition-all duration-100"
                 viewBox="0 0 512 512"
                 height="22"
                 ><path
