@@ -23,7 +23,7 @@ When anyone starts a new workspace, all Gitpod needs to do is load the prebuilt 
 
 To enable prebuilt workspaces for a GitHub repository, follow these steps:
 
-1. Go to the <a href="https://github.com/apps/gitpod-io" target="_blank">Gitpod GitHub app</a> and click `Configure`
+1. Go to the [Gitpod GitHub app](https://github.com/apps/gitpod-io) and click `Configure`
 2. Choose the organization or account you wish to install the Gitpod app for, then click `Install`
 3. You will be forwarded to Gitpod where you can confirm the installation
 
