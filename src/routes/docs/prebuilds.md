@@ -15,7 +15,7 @@ With prebuilds enabled for your project, Gitpod runs the `before`, `init` and `p
 
 When anyone starts a new workspace, all Gitpod needs to do is load the prebuilt workspace. Since the heavy-lifting happened during the prebuild phase, the workspace starts up quickly, allowing you to start your work right away.
 
-`youtube: KR8ESjGYsXI`
+`youtube: ZtlJ0PakUHQ`
 
 ## Enable Prebuilt Workspaces
 
