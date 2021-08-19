@@ -27,15 +27,15 @@
   ];
 </script>
 
-<style lang="scss">
+<style type="text/postcss">
   a {
     @apply text-dark-grey no-underline;
+  }
 
-    &:hover,
-    &:focus {
+  a:hover,
+  a:focus {
       @apply text-black;
     }
-  }
 
   footer {
     @media (min-width: 56.25rem) {
@@ -53,15 +53,13 @@
     }
   }
 
-  li {
-    &:first-child {
+  li:first-child {
       @apply font-semibold text-black;
     }
 
-    &:not(:last-of-type) {
+    li:not(:last-of-type) {
       @apply mb-macro;
     }
-  }
 
   .footer__bottom {
     @media (max-width: 340px) {
@@ -80,7 +78,7 @@
   }
 </style>
 
-<div class="pb-8 bg-gray-100 text-p-footer">
+<div class="pb-8 bg-gray-100 text-p-footer" data-id="footer">
   <footer
     class="footer py-large m-auto px-xx-small md:max-w-3xl md:py-small md:px-xx-small"
   >

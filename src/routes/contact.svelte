@@ -138,7 +138,7 @@
   };
 </script>
 
-<style>
+<style type="text/postcss">
   p {
     color: var(--dark-grey);
   }
@@ -152,6 +152,10 @@
   }
   fieldset li {
     margin: 0 1rem 0 0;
+  }
+
+  .cards.double {
+    @apply justify-between;
   }
 </style>
 
