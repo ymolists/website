@@ -87,6 +87,7 @@ export const MENU: MenuEntry[] = [
     M("Languages & Framework", "languages-and-frameworks"),
     M("Roadmap", "references/roadmap"),
   ]),
+  M("Troubleshooting", "troubleshooting", []),
 ];
 
 export interface MenuContext {
