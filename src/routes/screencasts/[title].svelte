@@ -21,6 +21,7 @@
 <style>
   .related {
     margin: 2rem auto;
+    text-align: center;
   }
 
   .header {

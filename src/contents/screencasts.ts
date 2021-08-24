@@ -74,7 +74,6 @@ const screencasts: Screencast[] = [
     relatedDocs: [{ path: "", title: "Introduction to Gitpod" }],
   },
   {
-    nextScreencast: id++,
     title: "Collaborating With Your Team",
     description:
       "How to collaborate effectively with Gitpod's Shared Workspaces and Snapshots.",
