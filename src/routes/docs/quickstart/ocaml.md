@@ -1,15 +1,15 @@
 ---
 section: quickstart
-title: C template
+title: OCaml template
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# C Quickstart
+# Ocaml Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [C](https://github.com/gitpod-io/template-c) template.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [OCaml](https://github.com/gitpod-io/template-ocaml) template.
 
 The following guide will:
 
@@ -21,20 +21,20 @@ For simplicity we use a GitHub template, but Gitpod works similarly with GitLab 
 
 ## Step 1: Clone Git repository
 
-- Create a new repository based on the [C template](https://github.com/gitpod-io/template-c).
-- Name it e.g. `my-c-template`.
+- Create a new repository based on the [OCaml template](https://github.com/gitpod-io/template-ocaml/generate).
+- Name it e.g. `my-ocaml-template`.
 
-## Step 2: Install Gitpod app
+## Step 2: Install the Gitpod app
 
 - Install the [Gitpod App](https://github.com/apps/gitpod-io/installations/new).
 
-  Gitpod's GitHub app is similar to a CI server and will continuously prepare prebuilds for all your branches and pull requests - so you don't have to wait for installation of dependancies from the internet when you want to start coding.
+  Gitpod's GitHub app is similar to a CI server and will continuously prepare prebuilds for all your branches and pull requests - so you don't have to wait for Maven or NPM downloading the internet when you want to start coding.
 
 ## Step 3: First prebuild
 
 - Start your first workspace with a prebuild by prefixing **https://gitpod.io#prebuild/** to the URL of the repository.
 
-The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/my-c-template`
+The revised URL is: `https://gitpod.io/#prebuild/https://github.com/<github_username>/<my-ocaml-template>`
 
 Gitpod displays the prebuild progress status by running the `init` commands in the _.gitpod.yml_ file before you even start a workspace. Later, when you create a new workspace on a branch, or pull/merge request the workspace loads much faster, because all dependencies are already downloaded and the code is compiled. For more information see [prebuilds](/docs/prebuilds).
 
@@ -74,5 +74,5 @@ Try it out and open 3 workspaces on the same context (e.g. on main or on an issu
 
 You've successfully ran your first workspace and experienced first hand what we mean with ephemeral dev environments. This is just the first step on your journey towards being always ready to code. Helpful resources from here are:
 
-- [Getting started with your own project](https://www.gitpod.io/docs/configure)
+- [Getting started with your own project](/docs/configure)
 - [Git Integrations](/docs/integrations)
