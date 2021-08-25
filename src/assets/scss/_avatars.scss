@@ -13,3 +13,9 @@
 .content-docs .avatars a:hover {
   color: var(--black);
 }
+
+.avatars .linkless {
+  &:not(:first-child) {
+    @apply -ml-2;
+  }
+}
