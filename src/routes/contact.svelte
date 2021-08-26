@@ -176,7 +176,7 @@
   {/each}
 </div>
 
-<section class="card shadow-xl mb-32 sm:mx-8" bind:this={sectionStart}>
+<section class="card shadow-xl mb-32 sm:mx-8" bind:this={sectionStart} id="form">
   {#if isEmailSent}
     <SubmissionSuccess
       title="Thank you for your message"
