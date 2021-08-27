@@ -6,6 +6,9 @@ select {
   color: var(--dark-grey);
   box-sizing: border-box;
 }
+textarea {
+  @apply whitespace-pre-wrap;
+}
 [type="radio"],
 [type="checkbox"] {
   position: absolute;
