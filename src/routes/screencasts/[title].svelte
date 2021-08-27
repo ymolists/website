@@ -3,7 +3,9 @@
 
   export const load = async function ({ page }) {
     const { title } = page.params;
-    const screencast = screencasts.find((s) => hyphenate(s.title) === title);
+    const screencast = screencasts.find(
+      (s) => stringToBeautifiedFragment(s.title.slice(0, -3)) === title
+    );
     return { props: { screencast } };
   };
 </script>
@@ -12,7 +14,7 @@
   import type { Screencast as ScreencastType } from "../../types/screencasts.type";
   import ScreencastPreview from "../../components/screencasts/preview.svelte";
   import YouTubeEmbed from "../../components/youtube-embed.svelte";
-  import { hyphenate } from "../../utils/helper";
+  import { stringToBeautifiedFragment } from "../../utils/helper";
   import OpenGraph from "../../components/open-graph.svelte";
 
   export let screencast: ScreencastType;
