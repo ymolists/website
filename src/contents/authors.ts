@@ -187,6 +187,15 @@ export const authors: { [idx: string]: Author } = {
     description:
       "Robert loves to code and lives off-grid... although the other way around is probably more accurate. Engineering systems of all shapes and sizes with many different teams highlighted the need for Gitpod's blazingly fast, ephemeral and secure developer environments time and time again - he is helping make that happen.",
   },
+  gtsiolis: {
+    name: "George Tsiolis",
+    socialProfiles: {
+      github: "gtsiolis",
+      twitter: "gtsiolis",
+      linkedin: "",
+    },
+    description: "",
+  },
 };
 
 export const authorSocialMediaLinks: SocialMediaLinks = Object.entries(
