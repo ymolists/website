@@ -187,6 +187,7 @@
         {#each socialLinks as link}
           <a
             href={link.href}
+            target="_blank"
             on:click={() =>
               window.analytics.track("social_opened", {
                 context: "footer-logo",
