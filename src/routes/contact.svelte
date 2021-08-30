@@ -9,6 +9,7 @@
   import Card from "../components/contact/card.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import SubmissionSuccess from "../components/submission-success.svelte";
+  import { onMount } from "svelte";
 
   const contactCards: ContactCard[] = [
     {
@@ -46,6 +47,7 @@
     "Question about Gitpod's Paid Plans",
     "Applying for Professional Open Source",
     "Applying for the Custom IDE Beta",
+    "Report a bug",
     studentUnlimitedSubject,
     "Other",
   ];
@@ -90,6 +92,18 @@
   let isEmailSent = false;
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
+
+  onMount(() => {
+    if(location.search === '?support') {
+      const inputs = [...document.querySelectorAll('input[type="radio"]')]
+      inputs.forEach((input: HTMLInputElement) => {
+        if (input.value === "Report a bug") {
+          formData.selectedSubject.value = "Report a bug"
+          input.checked = true;
+        }
+      })
+    }
+  })
 
   const handleSubmit = async () => {
     isFormDirty = true;
