@@ -5,7 +5,7 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Open Source",
     price: "Free",
-    features: ["Unlimited Users", "Public Repos", "Private Repos"],
+    features: ["10 Registered Users", "Public Repos", "Private Repos"],
     btnText: "Install now",
     btnHref: "/docs/self-hosted/latest",
     trackingName: "free",
@@ -13,7 +13,7 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Professional",
     price: isEurope() ? "€29" : "$35",
-    duration: "Per User/Month",
+    duration: "Per User/Month (starting from the 11th user)",
     features: [
       "Everything in Free",
       "Unlimited Prebuilds",
