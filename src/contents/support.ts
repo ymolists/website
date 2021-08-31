@@ -20,13 +20,13 @@ export const resources: Resource[] = [
     href: "/changelog",
   },
   {
-    title: "Forum",
+    title: "Community Forum",
     text:
       "If you are looking for help with common requests, connect with our community on Discourse.",
     href: "https://community.gitpod.io/",
   },
   {
-    title: "Community Chat",
+    title: "Discord Server",
     text:
       "Would you like to take part in live coding sessions and connect with the community ? Then join us on Discord.",
     href: "https://www.gitpod.io/chat",
