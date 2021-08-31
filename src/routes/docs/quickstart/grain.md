@@ -9,7 +9,7 @@ title: Grain template
 
 # Grain Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Flutter](https://github.com/gitpod-io/template-grain) template.
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with our [Grain](https://github.com/gitpod-io/template-grain) template.
 
 The following guide will:
 
