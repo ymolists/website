@@ -53,7 +53,7 @@
   ];
 
   let isStudentEmailNoteShown: boolean = false;
-  let sectionStart;
+  let sectionStart: HTMLElement;
 
   $: if (formData.selectedSubject.value === studentUnlimitedSubject) {
     isStudentEmailNoteShown = true;
@@ -94,16 +94,16 @@
   $: isFormValid = Object.values(formData).every((field) => field.valid);
 
   onMount(() => {
-    if(location.search === '?support') {
-      const inputs = [...document.querySelectorAll('input[type="radio"]')]
+    if (location.search === "?support") {
+      const inputs = [...document.querySelectorAll('input[type="radio"]')];
       inputs.forEach((input: HTMLInputElement) => {
         if (input.value === "Report a bug") {
-          formData.selectedSubject.value = "Report a bug"
+          formData.selectedSubject.value = "Report a bug";
           input.checked = true;
         }
-      })
+      });
     }
-  })
+  });
 
   const handleSubmit = async () => {
     isFormDirty = true;

@@ -36,14 +36,6 @@
   ];
 </script>
 
-<style type="text/postcss">
-  article h2 {
-    @media (min-width: 930px) {
-      @apply pb-medium;
-    }
-  }
-</style>
-
 <OpenGraph
   data={{
     description: "The browser extension has been installed.",

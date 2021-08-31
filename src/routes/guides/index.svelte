@@ -15,7 +15,7 @@
   export let guides = [];
 </script>
 
-<style>
+<style type="text/postcss">
   header {
     @apply mb-huge !important;
   }
@@ -25,7 +25,7 @@
   data={{
     description: "Follow these guides to use Gitpod with any project",
     title: "Guides",
-    norobots: true
+    norobots: true,
   }}
 />
 

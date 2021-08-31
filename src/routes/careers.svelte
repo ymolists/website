@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+  // @ts-nocheck
   import { stringToBeautifiedFragment } from "../utils/helper";
 
   import CareerModal from "../components/careers/modal.svelte";
@@ -30,7 +31,7 @@
   });
 </script>
 
-<style lang="scss">
+<style type="text/postcss">
   .heroImage {
     margin: 0 auto 2rem auto;
     border-radius: 1rem;
@@ -109,7 +110,7 @@
   class="heroImage"
 />
 
-<Section className="careers-section">
+<Section class="careers-section">
   <div class="content-container">
     <article class="hilited">
       <h2 class="h4">

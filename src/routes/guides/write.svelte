@@ -6,5 +6,9 @@
     Write about how to use Gitpod with a technology of your choice and get
     featured!
   </p>
-  <a href="#" class="btn-conversion">Start Guide</a>
+  <a
+    href="https://github.com/gitpod-io/website/issues/new/choose"
+    class="btn-conversion"
+    target="_blank">Start Guide</a
+  >
 </div>

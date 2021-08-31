@@ -4,7 +4,7 @@
   const imgSrc = "/images/media-kit/founders.jpg";
 </script>
 
-<Section className="text-center">
+<Section class="text-center">
   <h2 class="mb-medium">The founders</h2>
   <div
     class="shadow-normal rounded-4xl bg-white p-small sm:p-x-large mb-x-large"

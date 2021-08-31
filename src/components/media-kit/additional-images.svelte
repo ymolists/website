@@ -31,7 +31,7 @@
   ];
 </script>
 
-<Section className="text-center">
+<Section class="text-center">
   <h2>Additional images</h2>
   <div class="flex justify-around xl:justify-between flex-wrap mt-medium">
     {#each images as image}

@@ -24,7 +24,7 @@
   }
 </style>
 
-<Section className="feature-container-section">
+<Section class="feature-container-section">
   <div
     class="feature grid justify-center items-center md:grid-cols-2 lg:gap-32 gap-small"
   >

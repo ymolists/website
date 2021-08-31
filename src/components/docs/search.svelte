@@ -61,7 +61,7 @@
   });
 </script>
 
-<style lang="scss">
+<style type="text/postcss">
   .input-container {
     @media (max-width: 768px) {
       @apply mb-4;
