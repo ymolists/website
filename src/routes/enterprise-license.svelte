@@ -173,10 +173,8 @@
 />
 
 <header>
-  <h1>Request License Key</h1>
-  <p>
-    Please fill out your order to receive a license key for Gitpod Self-Hosted.
-  </p>
+  <h1>Contact our sales team</h1>
+  <p>Tell us how we can help and we will be in touch shortly.</p>
 </header>
 
 <section class="card shadow-xl mb-32 sm:mx-8" bind:this={sectionStart}>
