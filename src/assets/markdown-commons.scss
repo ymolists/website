@@ -226,20 +226,14 @@
   h4,
   h5,
   h6 {
-    @apply flex items-center;
-
     .icon-link {
-      display: flex;
-      align-items: center;
-      margin-left: 0.5rem;
+      @apply inline-block ml-2;
       &::after {
         content: "";
-        display: inline-block;
-        height: 1.4rem;
-        width: 1.4rem;
+        @apply inline-block opacity-0 bg-cover;
+        width: 22px;
+        height: 18px;
         background-image: url("/svg/headling-link.svg");
-        background-size: cover;
-        opacity: 0;
         transition: all 0.2s 50ms;
       }
     }
@@ -247,7 +241,7 @@
     &:focus,
     &:hover {
       .icon-link::after {
-        opacity: 1;
+        @apply opacity-100;
       }
     }
   }
