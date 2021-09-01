@@ -41,6 +41,7 @@ Learn how to start using Gitpod on an example project that is hosted on GitHub i
 - [TLA+](/docs/quickstart/tlaplus)
 - [Wordpress](/docs/quickstart/wordpress)
 - [X11 VNC](/docs/quickstart/x11-vnc)
+- [Yasm](/docs/quickstart/yasm)
 
 ## Installing the Gitpod browser extension
 

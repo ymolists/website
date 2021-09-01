@@ -42,6 +42,7 @@ export const MENU: MenuEntry[] = [
     M("TLA+", "quickstart/tlaplus"),
     M("Wordpress", "quickstart/wordpress"),
     M("X11 VNC", "quickstart/x11-vnc"),
+    M("Yasm", "quickstart/yasm"),
   ]),
   M("Getting Started", "getting-started"),
   M("Configure", "configure", [
