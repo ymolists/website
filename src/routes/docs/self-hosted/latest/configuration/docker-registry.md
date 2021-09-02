@@ -48,11 +48,12 @@ To connect to an existing Docker registry, perform the following steps:
 
     > Note that Helm does _not_ merge hierarchies in a single file. Please make sure there is only ever _one_ `components` hierarchy or the last one overwrites all previous values.
 
-2.  Login to the registry and safe the authentication
+2.  Persist your registry authentication token to the `secrets/` folder.
 
     ```bash
     mkdir -p secrets
-    docker login your.registry.com/gitpod && cp ~/.docker/config.json secrets/registry-auth.json
+    docker login your.registry.com/gitpod
+    cp ~/.docker/config.json secrets/registry-auth.json
     ```
 
     > This does not work for Google Cloud Registries because their login tokens are short-lived. See the [example](#example-google-cloud-registry-credentials) below on how to configure it.
