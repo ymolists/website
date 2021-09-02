@@ -76,6 +76,10 @@
   .footer__social-link:not(:last-child) {
     @apply mr-micro;
   }
+  .footer__social-link:hover {
+    background: #ffffff;
+    opacity: 0.8;
+  }
 </style>
 
 <div class="pb-8 bg-gray-100 text-p-footer" data-id="footer">
@@ -104,9 +108,8 @@
                 context: "footer",
                 name: "status",
                 url: "https://www.gitpodstatus.com/",
-            })}
-            rel="noopener"
-          >Status</a
+              })}
+            rel="noopener">Status</a
           >
         </li>
       </ul>
