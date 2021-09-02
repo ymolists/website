@@ -39,16 +39,16 @@
     },
   ];
 
-  const studentUnlimitedSubject =
-    "Student Unlimited: Get Verified as a Student";
+  const studentUnlimitedSubject = "Eductional Discount Verification";
 
   const subjects = [
-    "Question about Gitpod Self-Hosted",
-    "Question about Gitpod's Paid Plans",
-    "Applying for Professional Open Source",
-    "Applying for the Custom IDE Beta",
-    "Report a bug",
+    "Abuse Report",
+    "Billing",
+    "Customer Support",
     studentUnlimitedSubject,
+    "Sales Enquiry",
+    "Self-hosting Gitpod",
+    "Open Source Sponsorship",
     "Other",
   ];
 
@@ -97,8 +97,8 @@
     if (location.search === "?support") {
       const inputs = [...document.querySelectorAll('input[type="radio"]')];
       inputs.forEach((input: HTMLInputElement) => {
-        if (input.value === "Report a bug") {
-          formData.selectedSubject.value = "Report a bug";
+        if (input.value === "Customer Support") {
+          formData.selectedSubject.value = "Customer Support";
           input.checked = true;
         }
       });
@@ -223,7 +223,7 @@
           <label for="email"
             >E-Mail*
             {#if isStudentEmailNoteShown}
-              (Please use your student email)
+              (Please use your student or faculty email)
             {/if}
           </label>
           <input
