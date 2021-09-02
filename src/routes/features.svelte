@@ -6,12 +6,12 @@
   import Header from "../components/features/header.svelte";
   import Console from "../components/console.svelte";
   import OpenGraph from "../components/open-graph.svelte";
-  import ScreencastPreview from "../components/screencasts/preview.svelte";
   import screencasts from "../contents/screencasts";
   import { linuxSource } from "../contents/terminal";
   import { features } from "../contents/features";
   import Features from "../components/features.svelte";
   import Section from "../components/section.svelte";
+  import Explore from "../components/explore.svelte";
 
   const firstThreeScreencasts = screencasts.slice(0, 3);
 </script>
@@ -214,12 +214,4 @@
   />
 </section>
 
-<section class="brief screencasts-container">
-  <h2>Get started with screencasts</h2>
-  <div class="screencasts">
-    {#each firstThreeScreencasts as screencast, index}
-      <ScreencastPreview {screencast} screencastNumber={index + 1} />
-    {/each}
-  </div>
-  <a href="/screencasts" class="btn-conversion">See all screencasts</a>
-</section>
+<Explore />

@@ -4,7 +4,7 @@ type Link = {
 };
 
 export type ExploreSection = {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   link?: Link;
 };

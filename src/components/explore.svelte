@@ -5,11 +5,11 @@
   export let contents: ExploreSection;
 
   const {
-    title = "Explore Gitpod",
-    description = "Automated and ephemeral dev environments in the cloud.",
+    title = "Get Started",
+    description = "Spin up fresh, automated dev environments for each task, in the cloud, in seconds.",
     link = {
-      text: "See Features",
-      href: "/features",
+      text: "Try Now",
+      href: "/#get-started",
     },
   } = contents || {};
 </script>

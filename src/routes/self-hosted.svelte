@@ -18,4 +18,9 @@
 />
 <PlansAndPricing {trackingContext} />
 <Faqs {trackingContext} />
-<Explore />
+<Explore
+  contents={{
+    title: "Explore Gitpod",
+    link: { href: "/features", text: "Features" },
+  }}
+/>
