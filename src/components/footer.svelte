@@ -91,6 +91,7 @@
         <li>Gitpod</li>
         <li><a href="/">Home</a></li>
         <li><a href="/features">Features</a></li>
+        <li><a href="/security">Security</a></li>
         <li><a href="/pricing">Pricing</a></li>
         <li><a href="/changelog">Changelog</a></li>
         <li><a href="/self-hosted">Self-Hosted</a></li>
