@@ -82,7 +82,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "svelte-check --fail-on-hints"
     }
   },
   "lint-staged": {

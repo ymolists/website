@@ -1,5 +1,8 @@
-<script>
-  export let project;
+<script lang="ts">
+  import type { Project } from "../../../types/project.type";
+
+  export let project: Project;
+
   const { logo, alt, title, githubUrl, trackingName } = project;
 </script>
 

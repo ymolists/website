@@ -17,7 +17,7 @@
   let videoStarted = false;
 
   const setUpVideo = () => {
-    const onStateChange = (e) => {
+    const onStateChange = (e: any) => {
       if (e.data == 1) {
         if (!videoStarted) {
           window.analytics.track("screencast_started", {

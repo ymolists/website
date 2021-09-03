@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores";
 
-  export let navItem;
+  export let navItem: any;
   const { href, isHighlighted, label } = navItem;
 
   $: isActivePage =

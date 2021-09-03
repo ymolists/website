@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-  import { cubicIn, cubicOut, linear } from "svelte/easing";
+  import { cubicIn, linear } from "svelte/easing";
   import Workspace_1 from "./svgs/workspace-1.svelte";
   import Workspace_2 from "./svgs/workspace-2.svelte";
   import Workspace_3 from "./svgs/workspace-3.svelte";
@@ -10,7 +10,7 @@
   export let alt = "";
   export let iterations = 3;
 
-  let wrapper;
+  let wrapper: Element;
   let wrapper_width = 632;
   let wrapper_height = 500;
 
@@ -26,7 +26,7 @@
   let next = max;
   let remaining = iterations;
 
-  function zoom(node, params) {
+  function zoom(node: Element, params: any) {
     const existingTransform = getComputedStyle(node).transform.replace(
       "none",
       ""
@@ -36,7 +36,7 @@
       delay: params.delay || 0,
       duration: params.duration || 400,
       easing: params.easing || linear,
-      css: (t, u) =>
+      css: (t: number, u: number) =>
         `opacity: ${t}; transform: ${existingTransform} scale(${
           1 + ((params.factor || 1.5) - 1) * u
         })`,

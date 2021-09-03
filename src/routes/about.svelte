@@ -7,49 +7,6 @@
   import LogoAnimated from "../components/logo-animated.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import { careers } from "../contents/careers";
-
-  const investors = [
-    {
-      logo: "",
-      imgHeight: "",
-      imgWidth: "",
-      name: "Vertex US",
-      description:
-        "Vertex Ventures US partners with enterprising founders who seek to disrupt large markets.",
-    },
-    {
-      logo: "",
-      imgHeight: "",
-      imgWidth: "",
-      name: "Crane Ventures",
-      description:
-        "Speedinvest is one of Europe’s most active early-stage investors.",
-    },
-    {
-      logo: "",
-      imgHeight: "",
-      imgWidth: "",
-      name: "Ameet Patel",
-      description:
-        "Start your workflow from your Git hosting platform and let Gitpod beam you in a ready-to-code dev environment.",
-    },
-    {
-      logo: "",
-      imgHeight: "",
-      imgWidth: "",
-      name: "SpeedInvest",
-      description:
-        "Install any VS Code extension with one click via the integrated vendor-neutral marketplace Open VSX.",
-    },
-    {
-      logo: "",
-      imgHeight: "",
-      imgWidth: "",
-      name: "Hanno Renner",
-      description:
-        "Start your workflow from your Git hosting platform and let Gitpod beam you in a ready-to-code dev environment. ",
-    },
-  ];
 </script>
 
 <style>

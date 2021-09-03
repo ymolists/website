@@ -66,7 +66,7 @@
     // for methods in Analytics.js so that you never have to wait
     // for it to load to actually record data. The `method` is
     // stored as the first argument, so we can replay the data.
-    analytics.factory = function (method) {
+    analytics.factory = function (method: any) {
       return function () {
         var args = Array.prototype.slice.call(arguments);
         args.unshift(method);
@@ -81,7 +81,7 @@
     }
     // Define a method to load Analytics.js from our CDN,
     // and that will be sure to only ever load it once.
-    analytics.load = function (key, options) {
+    analytics.load = function (key: string, options: any) {
       // Create an async script element based on your key.
       var script = document.createElement("script");
       script.type = "text/javascript";
@@ -110,11 +110,9 @@
     analytics.page();
   });
 
-  $: {
+  $: if ($page.path) {
     // We need to depend on $page.path to trigger
     // a recompute on each new page.
-    const page_path = $page.path;
-
     if (typeof window !== "undefined") {
       // Track subsequent pages
       window.analytics?.page();

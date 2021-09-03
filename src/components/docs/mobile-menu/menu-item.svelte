@@ -1,9 +1,6 @@
 <script lang="ts">
-  import { page } from "$app/stores";
-  import topicsState from "../states/topics-state";
-
   export let href: string;
-  export let onClick;
+  export let onClick: svelte.JSX.MouseEventHandler<HTMLAnchorElement>;
   export let showIcon: boolean = false;
 </script>
 

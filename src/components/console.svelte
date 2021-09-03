@@ -25,8 +25,8 @@
   let wrapper: HTMLDivElement;
   let canvas: HTMLCanvasElement;
 
-  function debounce(fn, wait, callFirst) {
-    var timeout;
+  function debounce(fn: any, wait: number, callFirst: boolean) {
+    var timeout: NodeJS.Timeout;
     return function () {
       if (!wait) {
         return fn.apply(this, arguments);
@@ -49,16 +49,21 @@
   }
 
   onMount(() => {
-    let font_size;
-    let line_height;
-    let margins;
+    let font_size: number;
+    let line_height: number;
+    let margins: {
+      top: number;
+      right: number;
+      bottom: number;
+      left: number;
+    };
 
     let c = canvas.getContext("2d");
 
-    let width;
-    let height;
-    let char_width;
-    let char_max;
+    let width: number;
+    let height: number;
+    let char_width: number;
+    let char_max: number;
 
     function resize() {
       width = wrapper.clientWidth;
@@ -106,10 +111,10 @@
 
     resize();
 
-    function parse(source) {
+    function parse(source: string) {
       let color = colors.black;
       let lines = [];
-      let line;
+      let line: any;
       let offset = 0;
 
       function new_line() {
@@ -118,10 +123,19 @@
         lines.push(line);
       }
 
-      function parse_chunk(type, chunk) {
+      function parse_chunk(type: any, chunk: any) {
         chunk.replace(
           /(\u001b\[30m)|(\u001b\[31m)|(\u001b\[32m)|(\u001b\[33m)|(\u001b\[34m)|(\u001b\[39m)|([^\u001b]+)/g,
-          (_, c_black, c_red, c_green, c_yellow, c_blue, c_default, str) => {
+          (
+            _: any,
+            c_black: string,
+            c_red: string,
+            c_green: string,
+            c_yellow: string,
+            c_blue: string,
+            c_default: string,
+            str: string
+          ) => {
             if (c_black) color = colors.black;
             if (c_red) color = colors.orange;
             if (c_green) color = colors.green;
@@ -132,7 +146,7 @@
             if (str) {
               let start = 0;
               let end = Math.min(str.length, char_max - offset);
-              let text;
+              let text: string;
               while ((text = str.slice(start, end))) {
                 line[type].push({ type, color, text });
                 offset += end - start;
@@ -162,8 +176,8 @@
         }
       }
 
-      function count_characters(runs) {
-        return runs.reduce((acc, cur) => acc + cur.text.length, 0);
+      function count_characters(runs: any) {
+        return runs.reduce((acc: any, cur: any) => acc + cur.text.length, 0);
       }
 
       for (let line of lines) {
@@ -174,7 +188,7 @@
       return lines;
     }
 
-    let state;
+    let state: any;
 
     function init() {
       let lines = parse(source);
@@ -206,11 +220,11 @@
 
     init();
 
-    function now(trigger) {
+    function now(trigger: any) {
       return state.tick === trigger;
     }
 
-    function random(min, max) {
+    function random(min: number, max: number) {
       return Math.floor(min + (max - min) * Math.random());
     }
 
@@ -246,7 +260,7 @@
       }
     }
 
-    function draw(time) {
+    function draw(time: number) {
       c.clearRect(0, 0, width, height);
 
       let scroll_y = 0;
@@ -327,7 +341,7 @@
 
     observer.observe(wrapper);
 
-    function render(time) {
+    function render(time: number) {
       if (!mounted) {
         return;
       }

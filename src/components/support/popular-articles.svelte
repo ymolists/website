@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+  import type { BlogPost } from "../../types/blog-post.type";
+
   import MoreArticles from "../more-articles.svelte";
   import { session } from "$app/stores";
 
@@ -8,7 +10,7 @@
     "continuous-dev-environment-in-devops",
   ];
 
-  const popularPosts = $session.posts.filter((p) =>
+  const popularPosts = $session.posts.filter((p: BlogPost) =>
     popularPostsSlugs.some((slug) => p.slug === slug)
   );
 </script>

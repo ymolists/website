@@ -3,9 +3,9 @@
 </script>
 
 <script lang="ts">
-  // @ts-nocheck
-  import { stringToBeautifiedFragment } from "../utils/helper";
+  import type { Career } from "../types/career.type";
 
+  import { stringToBeautifiedFragment } from "../utils/helper";
   import CareerModal from "../components/careers/modal.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import { careers, perks } from "../contents/careers";
@@ -14,7 +14,7 @@
   import StructuredData from "../components/careers/structured-data.svelte";
   import { CAREER_EMAIL } from "../utils/constants";
 
-  let selectedCareer;
+  let selectedCareer: Career;
 
   $: if (selectedCareer) {
     window.location.hash = `#${stringToBeautifiedFragment(

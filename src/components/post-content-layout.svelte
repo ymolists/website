@@ -32,14 +32,14 @@
     {}
   );
 
-  const hasATwitterProfile = (author) =>
+  const hasATwitterProfile = (author: string) =>
     !!authors[author].socialProfiles.twitter;
 
   const writers = author.split(", ");
 
   const renderTwitterHandles = () => {
     let result = writers.reduce(
-      (acc, current) =>
+      (acc: string, current: string) =>
         acc +
         (hasATwitterProfile(current) ? `@${current}` : authors[current].name) +
         ", ",

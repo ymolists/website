@@ -1,6 +1,6 @@
 <script lang="ts">
-import { onMount } from "svelte";
-import { showHideOverflowY } from "../../../utils/helper";
+  import { onMount } from "svelte";
+  import { showHideOverflowY } from "../../../utils/helper";
 
   import LoginButton from "../login-button.svelte";
   import NavItem from "../nav-item.svelte";
@@ -9,15 +9,15 @@ import { showHideOverflowY } from "../../../utils/helper";
   export let navItems = [];
 
   onMount(() => {
-    const handleTabletChange = (e) => {
-      if(e.matches) {
-        $menuState = false
+    const handleTabletChange = (e: any) => {
+      if (e.matches) {
+        $menuState = false;
         showHideOverflowY(false);
       }
-    }
-    let query = window.matchMedia("(min-width: 931px)")
-    query.addEventListener('change',handleTabletChange);
-  })
+    };
+    let query = window.matchMedia("(min-width: 931px)");
+    query.addEventListener("change", handleTabletChange);
+  });
 </script>
 
 <style type="text/postcss">

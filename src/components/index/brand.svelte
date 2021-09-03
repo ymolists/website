@@ -1,5 +1,8 @@
-<script>
-  export let brand;
+<script lang="ts">
+  import type { Brand } from "../../types/brand.type";
+
+  export let brand: Brand;
+
   const { href, logo, alt, transform, className } = brand;
 </script>
 

@@ -1,7 +1,9 @@
 <script lang="ts">
   let clazz = "";
+
   export { clazz as class };
-  let email;
+
+  let email: string;
   let resultMessage = "";
   let isSubmittedOnce = false;
   let titleText = "Stay updated";
@@ -16,8 +18,9 @@
       if (response.ok) {
         resultMessage = "Thanks you are now signed up for our newsletter.";
       } else if (response.status === 409) {
-        resultMessage = "Lean back and relax. The next newsletter will be sent right to your inbox.";
-        titleText = "You are already signed up"
+        resultMessage =
+          "Lean back and relax. The next newsletter will be sent right to your inbox.";
+        titleText = "You are already signed up";
       } else {
         resultMessage = "Oh no, something went wrong :(.";
       }
@@ -29,7 +32,7 @@
 
 <style type="text/postcss">
   form {
-    @media(min-width: 450px) {
+    @media (min-width: 450px) {
       width: 440px;
     }
   }

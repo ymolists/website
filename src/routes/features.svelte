@@ -6,14 +6,11 @@
   import Header from "../components/features/header.svelte";
   import Console from "../components/console.svelte";
   import OpenGraph from "../components/open-graph.svelte";
-  import screencasts from "../contents/screencasts";
   import { linuxSource } from "../contents/terminal";
   import { features } from "../contents/features";
   import Features from "../components/features.svelte";
   import Section from "../components/section.svelte";
   import Explore from "../components/explore.svelte";
-
-  const firstThreeScreencasts = screencasts.slice(0, 3);
 </script>
 
 <style lang="scss">
@@ -79,10 +76,6 @@
   .brief > p {
     max-width: 900px;
     margin: auto;
-  }
-
-  .screencasts-container {
-    margin-top: 0;
   }
 </style>
 

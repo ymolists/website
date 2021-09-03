@@ -2,11 +2,12 @@
   // Credit: www.vercel.com/docs 🙏
   import { page } from "$app/stores";
 
-  let selectedEmotion;
+  let selectedEmotion: number;
   let note = "";
-  let resultMessage;
+  let resultMessage: string;
   let isSubmittedOnce = false;
   let clazz = "";
+
   export { clazz as class };
   export let type: "docs" | "guides" | "digests";
 

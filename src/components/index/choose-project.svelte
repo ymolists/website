@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import Section from "../section.svelte";
 
@@ -64,14 +64,14 @@
   };
 
   onMount(() => {
-    const callbackTop = (entries) => {
+    const callbackTop = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         isTopHidden = !entry.isIntersecting;
       });
       manageAnimation();
     };
 
-    const callbackBottom = (entries) => {
+    const callbackBottom = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         isBottomShown = entry.isIntersecting;
       });

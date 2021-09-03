@@ -1,10 +1,10 @@
 <script lang="ts">
-  // @ts-nocheck
-  import { CAREER_EMAIL } from "../../utils/constants";
   import type { Career } from "../../types/career.type";
-  export let career: Career;
-  const { title, intro, paragraphs, lists, textAfterTheLists, date } = career;
+  import { CAREER_EMAIL } from "../../utils/constants";
 
+  export let career: Career;
+
+  const { title, intro, paragraphs, lists, textAfterTheLists, date } = career;
   const applicationEmail = `mailto:${CAREER_EMAIL}?subject=Application as ${title}`;
 
   const structuredData = {
@@ -53,6 +53,11 @@
       email: applicationEmail,
     },
   };
+
+  // Thanks to https://github.com/sveltejs/svelte/issues/5292#issuecomment-787743573
+  const html = `<${""}script type="application/ld+json">${JSON.stringify(
+    structuredData
+  )}</${""}script>`;
 </script>
 
-{@html `<script type="application/ld+json">${JSON.stringify(structuredData)}</script>`}
+{@html html}
