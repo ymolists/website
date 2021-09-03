@@ -34,8 +34,8 @@
 
   a:hover,
   a:focus {
-      @apply text-black;
-    }
+    @apply text-black;
+  }
 
   footer {
     @media (min-width: 56.25rem) {
@@ -54,12 +54,12 @@
   }
 
   li:first-child {
-      @apply font-semibold text-black;
-    }
+    @apply font-semibold text-black;
+  }
 
-    li:not(:last-of-type) {
-      @apply mb-macro;
-    }
+  li:not(:last-of-type) {
+    @apply mb-macro;
+  }
 
   .footer__bottom {
     @media (max-width: 340px) {
@@ -91,6 +91,7 @@
         <li>Gitpod</li>
         <li><a href="/">Home</a></li>
         <li><a href="/features">Features</a></li>
+        <li><a href="/security">Security</a></li>
         <li><a href="/pricing">Pricing</a></li>
         <li><a href="/changelog">Changelog</a></li>
         <li><a href="/self-hosted">Self-Hosted</a></li>
