@@ -80,7 +80,7 @@
     border-radius: 2rem;
   }
 
-  @media(max-width: 1140px) {
+  @media (max-width: 1140px) {
     .halfimages article {
       @apply flex-col;
     }
@@ -88,7 +88,7 @@
     .halfimages article > div,
     .cards.double > div {
       @apply flex-1 self-center;
-    }    
+    }
   }
 
   .flex-grow {
@@ -113,8 +113,8 @@
 <header>
   <h1>Gitpod vs GitHub Codespaces</h1>
   <p>
-    Gitpod is the faster, more powerful, open-source platform that integrates
-    with your individual stack.
+    Gitpod is the faster, more resource-efficient, open-source platform that
+    integrates with your individual stack.
   </p>
 </header>
 
@@ -142,9 +142,7 @@
         workspaces for your project. Thereby it allows you to start coding or
         debugging immediately, from any context, at any time.
       </p>
-      <a href="/blog/continuous-dev-environment-in-devops" class="btn-secondary"
-        >More about Continuous Dev Environments.</a
-      >
+      <a href="/docs/prebuilds" class="btn-secondary">More about Prebuilds.</a>
     </div>
   </article>
 
@@ -158,26 +156,30 @@
         height="414"
       />
       <p class="card-image-legend">
-        Compared resources for 100 active hours at $9/month. Last verified 25
-        Sep 2020.<br />Sources: <a href="/pricing"><strong>Gitpod</strong></a>,
+        Price comparison for a developer working 5h per day, 21 per month with 8
+        core CPUs and 12GB RAM. Last verified 3 Sep 2021. Sources: <a
+          href="/pricing"><strong>Gitpod</strong></a
+        >,
         <a
-          href="https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces"
+          href="https://github.com/features/codespaces"
           on:click={() =>
             window.analytics.track("external_resource_clicked", {
               name: "codespaces-resources",
-              url:
-                "https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/about-billing-for-codespaces",
+              url: "https://github.com/features/codespaces",
               context: "body",
             })}><strong>GitHub Codespaces</strong></a
         >.
       </p>
     </div>
     <div>
-      <h2 class="max-w-30rem">3x more power</h2>
+      <h2 class="max-w-30rem">Resource Efficient</h2>
       <p class="text-large max-w-30rem">
-        By leveraging cloud technologies like containers and Kubernetes, Gitpod
-        achieves best-in-class resource-efficiency with scalable workspaces
-        running on shared high-powered cloud servers.
+        Instead of running on expensive VMs, Gitpod provisions secure containers
+        and achieves best-in-class resource-efficiency with scalable workspaces
+        running on shared high-powered cloud servers. <a
+          href="https://www.researchgate.net/publication/333096446_Reduced_carbon_emission_and_optimized_power_consumption_technique_using_container_over_virtual_machine"
+          >Helping our planet</a
+        > 🌱.
       </p>
     </div>
   </article>
@@ -187,7 +189,9 @@
   <section class="card toc">
     <ul class="tableOfContents" role="presentation">
       <li>Pricing (Hosted)</li>
+      <li>Free Tier</li>
       <li>License</li>
+      <li>Availability</li>
       <li class="hasIcon">
         <img src="/svg/github.svg" alt="GitHub" width="24" /> GitHub Integration
       </li>
@@ -202,7 +206,7 @@
 
       <li class="hasIcon">
         <img src="/svg/brands/gcp.svg" alt="Google Cloud Platform" width="24" />
-        Self-Host on GCP
+        Self-Host on GKE
       </li>
 
       <li class="hasIcon">
@@ -210,7 +214,11 @@
           src="/svg/brands/aws.svg"
           alt="Amazon Web Services"
           width="24"
-        />Self-Host on AWS
+        />Self-Host on EKS
+      </li>
+      <li class="hasIcon">
+        <img src="/svg/brands/azure.svg" alt="Azure" width="24" />Self-Host on
+        AKS
       </li>
       <li class="hasIcon">
         <img
@@ -224,6 +232,7 @@
       <li>VS Code Extensions</li>
       <li>iPad Support</li>
       <li>Virtual Desktop (VNC)</li>
+      <li>Desktop VS Code</li>
       <li>Multi-IDE Support</li>
     </ul>
   </section>
@@ -234,8 +243,12 @@
     <dl id="gitpodPricing" class="tableColumn">
       <dt>Pricing (Hosted)</dt>
       <dd>Free for Open-Source</dd>
+      <dt>Free Tier</dt>
+      <dd>50h per month</dd>
       <dt>License</dt>
       <dd>Open Source</dd>
+      <dt>Availability</dt>
+      <dd>Everyone</dd>
       <dt>GitHub Integration</dt>
       <dd>
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
@@ -248,11 +261,15 @@
       <dd>
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
       </dd>
-      <dt>Self-Host on GCP</dt>
+      <dt>Self-Host on GKE</dt>
       <dd>
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
       </dd>
-      <dt>Self-Host on AWS</dt>
+      <dt>Self-Host on EKS</dt>
+      <dd>
+        <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
+      </dd>
+      <dt>Self-Host on AKS</dt>
       <dd>
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
       </dd>
@@ -277,6 +294,10 @@
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
       </dd>
       <dt>Virtual Desktop (VNC)</dt>
+      <dd>
+        <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
+      </dd>
+      <dt>Desktop VS Code</dt>
       <dd>
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
       </dd>
@@ -293,8 +314,14 @@
       <dd>
         <span aria-label="unknown" class="icon">$$$</span>
       </dd>
+      <dt>Free Tier</dt>
+      <dd>
+        <img alt="No" class="mx-auto" height="24" width="24" src="/cross.svg" />
+      </dd>
       <dt>License</dt>
       <dd>Proprietary</dd>
+      <dt>Availability</dt>
+      <dd>Teams, Enterprise</dd>
       <dt>GitHub Integration</dt>
       <dd>
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
@@ -307,11 +334,15 @@
       <dd>
         <img alt="No" class="mx-auto" height="24" width="24" src="/cross.svg" />
       </dd>
-      <dt>Self-Host on GCP</dt>
+      <dt>Self-Host on GKE</dt>
       <dd>
         <img alt="No" class="mx-auto" height="24" width="24" src="/cross.svg" />
       </dd>
-      <dt>Self-Host on AWS</dt>
+      <dt>Self-Host on EKS</dt>
+      <dd>
+        <img alt="No" class="mx-auto" height="24" width="24" src="/cross.svg" />
+      </dd>
+      <dt>Self-Host on AKS</dt>
       <dd>
         <img alt="No" class="mx-auto" height="24" width="24" src="/cross.svg" />
       </dd>
@@ -339,6 +370,10 @@
       <dd>
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
       </dd>
+      <dt>Desktop VS Code</dt>
+      <dd>
+        <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
+      </dd>
       <dt>Multi-IDE Support</dt>
       <dd>
         <img alt="No" class="mx-auto" height="24" width="24" src="/cross.svg" />
@@ -349,7 +384,7 @@
 <p>
   <small
     >Disclaimer: All information, prices, and data were last verified on Sept.
-    25, 2020. To report any incorrect or outdated information, please <a
+    3, 2021. To report any incorrect or outdated information, please <a
       href="/contact">contact us.</a
     ></small
   >
@@ -381,11 +416,11 @@
         Gitpod puts developers' interest first and thereby guarantees full
         transparency and flexibility. Integrate, don't dictate.
       </p>
-      <ul class="text-large ticklist">
+      <ul class="ticklist">
         <li>
           <img alt="✓" src="/tick.svg" />
           <span
-            >Host Gitpod yourself on GCP, AWS, Azure or self-managed Kubernetes</span
+            >Host Gitpod yourself on GKE, EKS, AKS or self-managed Kubernetes</span
           >
         </li>
         <li>
