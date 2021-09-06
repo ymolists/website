@@ -4,7 +4,7 @@
 
   import SubmissionSuccess from "../components/submission-success.svelte";
   import { countryList } from "../contents/license-key";
-  import { isEurope } from "../utils/helper";
+  import { isEurope } from "../utils/helpers";
   import type { Email } from "../functions/submit-form";
 
   let orderTotal = 0;

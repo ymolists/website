@@ -6,7 +6,7 @@
   import menuState from "./mobile-menu/state";
   import LoginButton from "./login-button.svelte";
   import Logo from "../svgs/logo.svelte";
-  import { showHideOverflowY } from "../../utils/helper";
+  import { showHideOverflowY } from "../../utils/helpers";
 
   const navItems = [
     {

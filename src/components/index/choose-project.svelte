@@ -1,6 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { reducedMotion } from "../../stores/reduce-motion";
   import Section from "../section.svelte";
+  let disableAnimation = false;
 
   let animatedTexts = {
     desktop: [
@@ -64,6 +66,10 @@
   };
 
   onMount(() => {
+    if ($reducedMotion) {
+      disableAnimation = true;
+      return;
+    }
     const callbackTop = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         isTopHidden = !entry.isIntersecting;
@@ -100,7 +106,7 @@
   });
 </script>
 
-<style lang="scss">
+<style type="text/postcss">
   .row {
     width: 100%;
   }
@@ -166,6 +172,13 @@
     transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1);
   }
 
+  .disabled {
+    @apply transition-none;
+    &::after {
+      @apply transition-none animate-none bg-light-grey transform scale-100;
+    }
+  }
+
   @keyframes strikethrough {
     from {
       transform: scaleX(0);
@@ -186,7 +199,10 @@
       {#each Object.entries(animatedTexts) as [device, texts]}
         <del class={device}>
           {#each texts as { isVisible, text }}
-            <span class:strikethrough={isVisible}>{text}</span>
+            <span
+              class:strikethrough={isVisible || disableAnimation}
+              class:disabled={disableAnimation}>{text}</span
+            >
           {/each}
         </del>
       {/each}

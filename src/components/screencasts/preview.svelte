@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { stringToBeautifiedFragment } from "../../utils/helper";
+  import { stringToBeautifiedFragment } from "../../utils/helpers";
   import type { Screencast } from "../../types/screencasts.type";
   import Logo from "../svgs/logo.svelte";
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { isEurope } from "../../utils/helper";
+  import { isEurope } from "../../utils/helpers";
   import Section from "../section.svelte";
   import Faqs from "../faqs/faqs.svelte";
   import Faq from "../faqs/faq.svelte";

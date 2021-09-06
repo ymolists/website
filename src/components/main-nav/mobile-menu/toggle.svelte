@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { showHideOverflowY } from "../../../utils/helper";
+  import { showHideOverflowY } from "../../../utils/helpers";
 
   import menuState from "./state";
 

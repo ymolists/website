@@ -6,6 +6,7 @@
   import Workspace_2 from "./svgs/workspace-2.svelte";
   import Workspace_3 from "./svgs/workspace-3.svelte";
   import Workspace_4 from "./svgs/workspace-4.svelte";
+  import { reducedMotion } from "../stores/reduce-motion";
 
   export let alt = "";
   export let iterations = 3;
@@ -22,7 +23,7 @@
   ];
 
   let max = 2;
-  let items = available.slice(0, max);
+  let items = $reducedMotion ? available : available.slice(0, max);
   let next = max;
   let remaining = iterations;
 
@@ -44,6 +45,9 @@
   }
 
   function shuffle() {
+    if ($reducedMotion) {
+      return;
+    }
     if (remaining === 0) {
       items = [available[next], ...items];
       return;

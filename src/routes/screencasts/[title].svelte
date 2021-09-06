@@ -14,7 +14,7 @@
   import type { Screencast as ScreencastType } from "../../types/screencasts.type";
   import ScreencastPreview from "../../components/screencasts/preview.svelte";
   import YouTubeEmbed from "../../components/youtube-embed.svelte";
-  import { stringToBeautifiedFragment } from "../../utils/helper";
+  import { stringToBeautifiedFragment } from "../../utils/helpers";
   import OpenGraph from "../../components/open-graph.svelte";
 
   export let screencast: ScreencastType;

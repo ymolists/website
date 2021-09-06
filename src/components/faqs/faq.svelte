@@ -1,7 +1,7 @@
 <script>
   import { faqsKey } from "./faqs.svelte";
   import { getContext, onMount } from "svelte";
-  import { stringToBeautifiedFragment } from "../../utils/helper";
+  import { stringToBeautifiedFragment } from "../../utils/helpers";
 
   export let title;
   export let trackingContext;

@@ -5,7 +5,7 @@
 <script lang="ts">
   import type { Career } from "../types/career.type";
 
-  import { stringToBeautifiedFragment } from "../utils/helper";
+  import { stringToBeautifiedFragment } from "../utils/helpers";
   import CareerModal from "../components/careers/modal.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import { careers, perks } from "../contents/careers";

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { showHideOverflowY } from "../../../utils/helper";
+  import { showHideOverflowY } from "../../../utils/helpers";
 
   import LoginButton from "../login-button.svelte";
   import NavItem from "../nav-item.svelte";

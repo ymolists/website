@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { reducedMotion } from "../stores/reduce-motion";
   import { onMount } from "svelte";
 
   export let source = "";
@@ -49,6 +50,7 @@
   }
 
   onMount(() => {
+    skipToEnd = $reducedMotion;
     let font_size: number;
     let line_height: number;
     let margins: {
@@ -295,12 +297,17 @@
               margins.top + line_height * i - scroll_y
             );
             if (time % 1000 < 500) {
-              c.fillRect(
-                margins.left + (offset + run_length) * char_width + 0.5,
-                margins.top + line_height * i - scroll_y - line_height * 0.575,
-                char_width,
-                line_height * 0.7
-              );
+              if (!$reducedMotion) {
+                c.fillRect(
+                  margins.left + (offset + run_length) * char_width + 0.5,
+                  margins.top +
+                    line_height * i -
+                    scroll_y -
+                    line_height * 0.575,
+                  char_width,
+                  line_height * 0.7
+                );
+              }
             }
           } else {
             c.fillText(
