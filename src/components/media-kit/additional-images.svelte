@@ -5,35 +5,42 @@
 
   const images: Image[] = [
     {
-      src: "/images/gitpod-editor.jpg",
-      alt: "Gitpod",
-      text: "light theme screenshot",
-      btnText: "JPG",
-      imgClass: "shadow-brand",
-      containerClasses: "px-huge",
+      src: "/images/media-kit/desktop-vscode.png",
+      alt: "Desktop VS Code",
+      text: "Desktop VS Code",
+      btnText: "PNG",
+    },
+    {
+      src: "/images/media-kit/browser-vscode.png",
+      alt: "VS Code running in the browser",
+      text: "VS Code running in the browser",
+      btnText: "PNG",
     },
     {
       src: "/images/extension-activation/extension-screenshot.png",
       alt: "Gitpod Extension",
       text: "screenshot of the Gitpod browser extension within GitHub",
       btnText: "PNG",
-      imgClass: "h-auto md:h-72",
-      containerClasses: "max-w-xl",
     },
     {
       src: "/images/blog/gitlab-integration/gitpod-button-on-gitlab.png",
       alt: "Gitpod button on GitLab",
       text: "screenshot of the native Gitpod integration within GitLab",
       btnText: "PNG",
-      imgClass: "h-auto md:h-72",
-      containerClasses: "max-w-xl",
+    },
+    {
+      src: "/images/gitpod-editor.jpg",
+      alt: "Gitpod",
+      text: "light theme screenshot",
+      btnText: "JPG",
+      imgClass: "shadow-brand",
     },
   ];
 </script>
 
 <Section class="text-center">
   <h2>Additional images</h2>
-  <div class="flex justify-around xl:justify-between flex-wrap mt-medium">
+  <div class="flex justify-around flex-wrap mt-medium">
     {#each images as image}
       <ImageBox {image} />
     {/each}

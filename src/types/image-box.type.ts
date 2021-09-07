@@ -4,5 +4,4 @@ export type ImageBox = {
   text: string;
   btnText: string;
   imgClass?: string;
-  containerClasses?: string;
 };
