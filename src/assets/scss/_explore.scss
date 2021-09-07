@@ -23,10 +23,6 @@
 
 .explore__paragraph {
   margin-bottom: var(--x-small);
-
-  @media (max-width: 768px) {
-    font-size: var(--p-large);
-  }
 }
 
 .explore__illustration {

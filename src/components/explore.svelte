@@ -14,14 +14,11 @@
   } = contents || {};
 </script>
 
-<style lang="scss">
-</style>
-
 <Section>
   <div class="explore">
     <div class="explore__text">
       <h2 class="h1">{title}</h2>
-      <p class="explore__paragraph h4">
+      <p class="explore__paragraph text-p-large">
         {description}
       </p>
       <a href={link.href} class="btn-conversion">{link.text}</a>
