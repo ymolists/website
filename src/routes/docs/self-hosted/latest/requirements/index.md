@@ -18,6 +18,7 @@ Gitpod Self-Hosted runs well on:
 - [Amazon Elastic Kubernetes Service](./installation/on-amazon-eks)
 - [Google Kubernetes Engine](./installation/on-gke)
 - [K3s](./installation/on-kubernetes)
+- [Microsoft Azure Kubernetes Service](./installation/on-microsoft-aks)
 
 ## Incompatible Kubernetes distributions
 
