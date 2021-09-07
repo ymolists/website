@@ -48,7 +48,7 @@ We did not need to raise money and actually did not plan for it. We reconsidered
 We believe there are standards to be set when it comes to establishing brands in developer tooling. Over the last 2 months we set out to institutionalise design as a key part of the company and will continue to work closely together with our friends at [MAD](https://mad.ac) as well as [Vic](https://twitter.com/killnicole) - giving our visual identity a style & feel that is on par with our backend architecture. What we launch today is a back to basics approach where we present a complex, feature-rich developer tool in a clear and simple way. On the way we also learned about kumquats! 🍊
 
 <div class="redirector">
-  <a class="btn-otherbrand" href="https://www.notion.so/gitpod/Brand-Values-2ed4c2f93c84499b98e3b5389980992e" rel="noreferrer" target="_blank"><span class="icon">✨</span> <img class="arrow" src="/svg/external.svg" alt="External"/> Brand &amp; Values</a>
+  <a class="btn-otherbrand" href="https://www.gitpod.io/values" rel="noreferrer" target="_blank"><span class="icon">✨</span> <img class="arrow" src="/svg/external.svg" alt="External"/> Brand &amp; Values</a>
 </div>
 
 ![A monitor with three open windows](../../../static/images/blog/next-chapter-for-gitpod/product.jpg)

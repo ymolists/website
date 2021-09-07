@@ -128,7 +128,7 @@
   <p>
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Brand-Values-2ed4c2f93c84499b98e3b5389980992e"
+      href="https://www.gitpod.io/values"
       target="_blank"
       rel="noopener"
       ><span class="icon">✨</span>
