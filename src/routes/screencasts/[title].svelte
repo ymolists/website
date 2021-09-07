@@ -63,7 +63,7 @@
     <h2 class="text-center mb-small">Next up...</h2>
     <ScreencastPreview
       screencast={screencasts[screencast.nextScreencast]}
-      screencastNumber={screencast.nextScreencast}
+      screencastNumber={screencast.nextScreencast + 1}
       headlineOrder="h3"
     />
   </div>
