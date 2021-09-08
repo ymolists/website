@@ -18,7 +18,7 @@ Recently we asked ourselves how we could streamline the integration with your da
 
 <h2 class="h1">The last missing piece in your GitLab DevOps pipeline</h2>
 
-GitLab is one of the most popular DevOps tools/platforms out there, used by more than 100,000 organizations across the globe. Through its Web IDE, simple edits can already be made today from within the application. However, for more advanced programming tasks, developers require a full development environment.
+GitLab is one of the most popular DevOps tools/platforms out there, used by more than 100,000 organizations across the globe. Through its Web IDE, simple edits can already be made today from within the application. However, for more advanced programming tasks, developers require a full developer environment.
 
 Such dev environments not only include a professional IDE/editor with all the convenient plugins for the project at hand, but also things like compilers, build tools, code generators, databases, and application servers.
 
@@ -32,7 +32,7 @@ GitLab and Gitpod started a partnership to bring Gitpod's ready-to-code dev envi
 
 <h2 class="h1">“Everyone can contribute”</h2>
 
-GitLab’s credo “Everyone can contribute” is a perfect fit for Gitpod because contributing becomes much simpler when you allow anyone to spin up a ready-to-code development environment in a few seconds.
+GitLab’s credo “Everyone can contribute” is a perfect fit for Gitpod because contributing becomes much simpler when you allow anyone to spin up a ready-to-code developer environment in a few seconds.
 
 GitLab’s engineers have worked on lowering the barrier to contributions on GitLab itself through a comprehensive [contribution guide](https://about.gitlab.com/community/contribute/) and even a [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit) that sets up your dev environment on your machine. But still, running the GDK installer takes at least 30 minutes to download and install dependencies, clone the GitLab repository, and start all services you need like the database, a webserver, etc.
 

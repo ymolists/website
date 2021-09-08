@@ -20,7 +20,7 @@
   <title>{title}</title>
   <meta
     name="keywords"
-    content="dev environment, development environment, devops, cloud ide, github ide, gitlab ide, javascript, online ide, web ide, code review"
+    content="dev environment, developer environment, devops, cloud ide, github ide, gitlab ide, javascript, online ide, web ide, code review"
   />
   <meta name="description" content={description} />
 

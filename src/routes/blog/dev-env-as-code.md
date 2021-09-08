@@ -21,7 +21,7 @@ Today, in the age of microservice architectures, systems have become even more c
 
 ## **What about our dev environments?**
 
-While we have automated deployments of our applications, most of us don’t apply the same techniques to development environments, yet. Instead, on-boarding a new team member on any non-trivial project usually is a multiple hour (if not days) exercise.
+While we have automated deployments of our applications, most of us don’t apply the same techniques to developer environments, yet. Instead, on-boarding a new team member on any non-trivial project usually is a multiple hour (if not days) exercise.
 
 It often goes like that:
 
@@ -72,11 +72,11 @@ So let’s please stop polluting our readme files and start writing setup instru
 
 ### Dockerfiles
 
-Docker files are a pretty neat way to describe a development environment. Imagine you want to add something like ‘_asciidoctor_’ to your project’s toolchain. You could just add the following line to your dev environment’s Dockerfile:
+Docker files are a pretty neat way to describe a developer environment. Imagine you want to add something like ‘_asciidoctor_’ to your project’s toolchain. You could just add the following line to your dev environment’s Dockerfile:
 
     RUN apt-get install -y asciidoctor
 
-Once you push the change to the repository and the docker image gets updated (automatically), all team members have the new tool in their development environment. We need to get to coding with a single click.
+Once you push the change to the repository and the docker image gets updated (automatically), all team members have the new tool in their developer environment. We need to get to coding with a single click.
 
 ![Laptop with code on the screen](../../../static/images/blog/dev-env-as-code/clement-h.jpeg)_Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 
@@ -90,7 +90,7 @@ By far the best option is an IDE that runs in browsers, like the new [Theia I](h
 
 For a simple Docker-based dev environment you could add Theia to your Docker image. It offers a full IDE including terminals to your workspace image.
 
-The next step would be to treat your development environment as some serverless function which you only spawn when needed and forget about when done. The online service [Gitpod](/) does exactly that.
+The next step would be to treat your developer environment as some serverless function which you only spawn when needed and forget about when done. The online service [Gitpod](/) does exactly that.
 
 It integrates with code hosting platforms such as GitHub. It eliminates all the tedious transitions by automating them. You see code on some website and want to give it a spin in a real dev environment? Gitpod does everything it can to get you there with a single click. It lets you provide custom Docker files or Docker images and runs Theia IDE.
 

@@ -15,7 +15,7 @@ url: https://medium.com/gitpod/github-flows-better-with-gitpod-e455d17990f9
 
 As software developers, we already spend a lot of our time in browsers. Be it for searching Google/StackOverflow, checking our latest Continuous Integration builds on Jenkins resp. Travis, or doing code reviews on GitHub, Bitbucket, or Gerrit. Also, communication with the team happens in web applications, such as Gmail, Google Hangout or Slack. The convenience of web applications and OAuth-based authentication allows us to use any computer to do most of our work immediately.
 
-However, when it comes to the actual coding and debugging, we have to prepare our local development environments manually. We do this based on often outdated, incomplete or just plain wrong documentation. The transition from an online repository to the actual coding is a barrier that hinders thousands of possible contributions every day. Coding needs to get more accessible.
+However, when it comes to the actual coding and debugging, we have to prepare our local developer environments manually. We do this based on often outdated, incomplete or just plain wrong documentation. The transition from an online repository to the actual coding is a barrier that hinders thousands of possible contributions every day. Coding needs to get more accessible.
 
 ![(Programming Environment - Dilbert by Scott Adams. Source: [http://dilbert.com/strip/2017-01-02)](http://dilbert.com/strip/2017-01-02))](https://cdn-images-1.medium.com/max/2048/0*f260tcqJvgvCguFu)_(Source: [http://dilbert.com/strip/2017-01-02)](http://dilbert.com/strip/2017-01-02))_
 
@@ -23,7 +23,7 @@ But that only needs to be done once, right? Unfortunately, no. Coding is a team 
 
 Once we have the setup, we run builds and test suites. Those processes are usually an excellent reason to grab a coffee because it is blocking our machine. Wouldn’t it be nice to push such workload to the cloud, where it not only runs faster but can easily be parallelized? Your computer stays calm and cool, and you still can have your coffee if you want.
 
-In this article, I will walk you through an automated, cloud-based development workflow. [Gitpod](https://gitpod.io) is based on Kubernetes, GitHub, and the new Eclipse Theia project — a VS Code-like IDE that runs in modern browsers. You can think of it as an online IDE with deep GitHub integration (and soon other platforms), providing fully-featured development environments with a single click for any GitHub project, issue, branch or pull request.
+In this article, I will walk you through an automated, cloud-based development workflow. [Gitpod](https://gitpod.io) is based on Kubernetes, GitHub, and the new Eclipse Theia project — a VS Code-like IDE that runs in modern browsers. You can think of it as an online IDE with deep GitHub integration (and soon other platforms), providing fully-featured developer environments with a single click for any GitHub project, issue, branch or pull request.
 
 **Automation**
 

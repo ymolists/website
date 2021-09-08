@@ -15,7 +15,7 @@ The following guide will:
 
 - Walk you through a real world example with an existing Gitpod config
 - Introduce you to prebuilds
-- Demonstrate the benefits of ephemeral development environments
+- Demonstrate the benefits of ephemeral developer environments
 
 For simplicity we use a GitHub template, but Gitpod works similarly with GitLab and Bitbucket.
 
@@ -40,7 +40,7 @@ Gitpod displays the prebuild progress status by running the `init` commands in t
 
 ### Step 4: Enjoy being ready-to-code 🤙
 
-Once the first prebuild ran, Gitpod starts an automated and fully configured development environment in a workspace that is now ready for you to develop.
+Once the first prebuild ran, Gitpod starts an automated and fully configured developer environment in a workspace that is now ready for you to develop.
 
 Other developers made their setup even more productive and supercharged their workflows with the following quick steps:
 

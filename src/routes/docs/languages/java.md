@@ -52,7 +52,7 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
 
 ### Prebuilds
 
-Gitpod provides disposable dev environments, which means you are getting fresh development environments for every task. So configuring them to be ready-to-code is crucial to get the most out of Gitpod.
+Gitpod provides disposable dev environments, which means you are getting fresh developer environments for every task. So configuring them to be ready-to-code is crucial to get the most out of Gitpod.
 
 In the generated `.gitpod.yml` you will find the following section:
 

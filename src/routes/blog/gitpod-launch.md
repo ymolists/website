@@ -1,7 +1,7 @@
 ---
 author: svenefftinge
 date: Mon Apr 5 2019 15:00:00 GMT+0000 (UTC)
-excerpt: Every day developers waste millions of hours switching contexts between projects and branches, setting up development environments, or
+excerpt: Every day developers waste millions of hours switching contexts between projects and branches, setting up developer environments, or
 image: teaser-launch-min.jpg
 slug: gitpod-launch
 subtitle: No Setup, Less Waiting, More Flow
@@ -13,11 +13,11 @@ title: Introducing Gitpod — Frictionless Coding on GitHub
   export const prerender = true;
 </script>
 
-Every day developers waste millions of hours switching contexts between projects and branches, setting up development environments, or simply waiting for builds to complete.
+Every day developers waste millions of hours switching contexts between projects and branches, setting up developer environments, or simply waiting for builds to complete.
 
 This friction is not only time consuming but is a serious barrier for contributors. Reading through a long list of setup instructions and messing up your own laptop is just too much effort.
 
-Today, we are happy to announce the launch of [Gitpod.io](https://gitpod.io), an online service that provides disposable, ready-to-code development environments for GitHub projects.
+Today, we are happy to announce the launch of [Gitpod.io](https://gitpod.io), an online service that provides disposable, ready-to-code developer environments for GitHub projects.
 
 ## One-Click Dev Environments for GitHub
 

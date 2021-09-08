@@ -78,7 +78,7 @@ export const popularArticles: Article[] = [
   {
     title: "I said goodbye to local development and so can you",
     text:
-      "Stop maintaining your local development environment. Instead, automate the setup once and use a new environment for each task you work on - available in seconds and always ready-to-code.",
+      "Stop maintaining your local developer environment. Instead, automate the setup once and use a new environment for each task you work on - available in seconds and always ready-to-code.",
     slug: "i-said-goodbye-to-local-development-and-so-can-you",
   },
   {

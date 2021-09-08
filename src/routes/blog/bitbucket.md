@@ -1,7 +1,7 @@
 ---
 author: jankeromnes
 date: Thu, 02 Jul 2020 14:00:00 UTC
-excerpt: We’re excited to bring you instant development environments for all Bitbucket projects.
+excerpt: We’re excited to bring you instant developer environments for all Bitbucket projects.
 image: teaser.jpg
 slug: bitbucket
 subtitle: Instant dev environments for all Bitbucket projects
@@ -13,7 +13,7 @@ title: Gitpod for Bitbucket 🚀
   export const prerender = true;
 </script>
 
-Today, we're excited to bring you instant development environments for all Bitbucket projects.
+Today, we're excited to bring you instant developer environments for all Bitbucket projects.
 
 Simply type `gitpod.io/#` in front of any Bitbucket repository URL, and get a fully prebuilt and ready-to-code dev environment in seconds.
 

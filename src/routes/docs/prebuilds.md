@@ -9,9 +9,9 @@ title: Prebuilds
 
 # Prebuilds
 
-Download & install dependencies, run build scripts, you name it - tasks Gitpod takes care of **before** you start a new development environment so you don't have to wait for any of that.
+Download & install dependencies, run build scripts, you name it - tasks Gitpod takes care of **before** you start a new developer environment so you don't have to wait for any of that.
 
-With prebuilds enabled for your project, Gitpod runs the `before`, `init` and `prebuild` commands in your [`.gitpod.yml`](/docs/config-gitpod-file) file every time code is pushed to your repository. The resulting snapshot of the development environment is called a prebuilt workspace.
+With prebuilds enabled for your project, Gitpod runs the `before`, `init` and `prebuild` commands in your [`.gitpod.yml`](/docs/config-gitpod-file) file every time code is pushed to your repository. The resulting snapshot of the developer environment is called a prebuilt workspace.
 
 When anyone starts a new workspace, all Gitpod needs to do is load the prebuilt workspace. Since the heavy-lifting happened during the prebuild phase, the workspace starts up quickly, allowing you to start your work right away.
 

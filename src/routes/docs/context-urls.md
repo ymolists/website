@@ -82,7 +82,7 @@ In either case, Gitpod automatically performs the following tasks for you:
 1. Displays a list of files changed as part of that PR/MR
 1. Enables you to leave comments right within individual files (yep, no need to switch between the code and the PR/MR in your browser)
 
-In addition, Gitpod lets you merge a PR/MR. Once merged, you close the browser tab and move on to your next task - in a new, ephemeral development environment 🎉.
+In addition, Gitpod lets you merge a PR/MR. Once merged, you close the browser tab and move on to your next task - in a new, ephemeral developer environment 🎉.
 
 An example URL for the pull/merge request context is:
 

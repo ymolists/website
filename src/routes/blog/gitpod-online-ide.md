@@ -17,7 +17,7 @@ After over one year of intensive work, we are proud to announce the public Beta 
 
 Gitpod is an online IDE which can be launched from any GitHub page. Simply **prefix any GitHub-URL with “*https://gitpod.io/#*”** or use our [browser extension](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en) that adds a button to GitHub pages.
 
-Within seconds, Gitpod provides you with a fully working development environment, including a VS Code-powered IDE and a cloud-based Linux container configured specifically for the project at hand.
+Within seconds, Gitpod provides you with a fully working developer environment, including a VS Code-powered IDE and a cloud-based Linux container configured specifically for the project at hand.
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/D41zSHJthZI" title="Gitpod introduction" frameborder="0" allowfullscreen></iframe></center>
 
@@ -45,7 +45,7 @@ Once you are in the IDE, you can interact with GitHub in various ways. Besides t
 
 ## **Automated Setup**
 
-Gitpod is built on Kubernetes and you can use any Docker image for your development environments. This allows to fully automate the setup and frees everybody from manually going through long and outdated setup documentation. No more “works on my machine” scenarios.
+Gitpod is built on Kubernetes and you can use any Docker image for your developer environments. This allows to fully automate the setup and frees everybody from manually going through long and outdated setup documentation. No more “works on my machine” scenarios.
 
 Gitpod provides your collaborators a **single-click-to-contribute** **experience**.
 

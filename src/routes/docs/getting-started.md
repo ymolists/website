@@ -9,12 +9,12 @@ title: Getting Started
 
 # Getting Started
 
-Gitpod can provide fully initialized, perfectly set-up development environmments for any kind of software project. This page helps you understand how to provide such a configuration for _your project_.
+Gitpod can provide fully initialized, perfectly set-up developer environmments for any kind of software project. This page helps you understand how to provide such a configuration for _your project_.
 `youtube: w65POyu3ZUQ`
 
 ## Start your first workspace
 
-The best way to configure Gitpod is by using Gitpod - you could perform the following steps in your local environment as well, but we may as well experience ephemeral development environments right from the beginning.
+The best way to configure Gitpod is by using Gitpod - you could perform the following steps in your local environment as well, but we may as well experience ephemeral developer environments right from the beginning.
 
 1. In a browser, navigate to your project's GitHub, GitLab or Bitbucket page.
 1. In the browser's address bar, prefix the entire URL with `gitpod.io/#` and press Enter.
@@ -22,9 +22,9 @@ The best way to configure Gitpod is by using Gitpod - you could perform the foll
    - We recommend you [install the Gitpod browser extension](/docs/browser-extension) to make this a one-click operation.
 1. Sign in with one of the listed providers and let the workspace start up.
 
-**Congratulations**, you have started your first of many ephemeral development environments 🎉!
+**Congratulations**, you have started your first of many ephemeral developer environments 🎉!
 
-Next, let's help Gitpod understand your repository to automate the development environment and turn on prebuilds to supercharge your development workflow.
+Next, let's help Gitpod understand your repository to automate the developer environment and turn on prebuilds to supercharge your development workflow.
 
 ## Help Gitpod understand your repository
 

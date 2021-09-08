@@ -18,7 +18,7 @@
 <OpenGraph
   data={{
     description:
-      "Gitpod streamlines developer workflows by providing prebuilt, collaborative development environments in your browser - powered by VS Code.",
+      "Gitpod streamlines developer workflows by providing prebuilt, collaborative developer environments in your browser - powered by VS Code.",
     title: "Gitpod - Always ready to code",
   }}
 />

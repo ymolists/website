@@ -68,7 +68,7 @@ export const authors: { [idx: string]: Author } = {
       linkedin: "jankeromnes",
     },
     description:
-      "Jan is the creator of Janitor, and he has been automating development environments for almost a decade. He is passionate about making software development saner, easier, and more accessible for all humans.",
+      "Jan is the creator of Janitor, and he has been automating developer environments for almost a decade. He is passionate about making software development saner, easier, and more accessible for all humans.",
   },
   nisarhassan12: {
     name: "Nisar Hassan",
@@ -146,7 +146,7 @@ export const authors: { [idx: string]: Author } = {
       linkedin: "mikenikles",
     },
     description:
-      "Mike is a software architect who values developer experience, productivity and team morale. He is on a journey to help developers let go of their local development environments and embrace automated, ephemeral development environments.",
+      "Mike is a software architect who values developer experience, productivity and team morale. He is on a journey to help developers let go of their local developer environments and embrace automated, ephemeral developer environments.",
   },
   arthursens: {
     name: "Arthur Sens",
@@ -185,7 +185,7 @@ export const authors: { [idx: string]: Author } = {
       linkedin: "robert-leftwich",
     },
     description:
-      "Robert loves to code and lives off-grid... although the other way around is probably more accurate. Engineering systems of all shapes and sizes with many different teams highlighted the need for Gitpod's blazingly fast, ephemeral and secure development environments time and time again - he is helping make that happen.",
+      "Robert loves to code and lives off-grid... although the other way around is probably more accurate. Engineering systems of all shapes and sizes with many different teams highlighted the need for Gitpod's blazingly fast, ephemeral and secure developer environments time and time again - he is helping make that happen.",
   },
 };
 

@@ -25,14 +25,14 @@ You can learn more about the [Life of a workspace](/docs/life-of-workspace).
 
 ## Gitpod vs. local development
 
-A Gitpod workspace is similar to your local development environment, except for two key differentiators:
+A Gitpod workspace is similar to your local developer environment, except for two key differentiators:
 
 1. It is configured as code
 1. It is ephemeral and only lives for as long as you work on a task
 
 ### Configuration vs. manual setup
 
-Your project's `.gitpod.yml` and optional `.gitpod.Dockerfile` files control what tools will be available in your Gitpod workspace. Both files are version-controlled and let you monitor changes to the development environment over time. There is no longer a need to `@channel` in your team's communication software to tell everyone to upgrade their version of Node.js, only to find out that some people were on vacation and didn't see the message.
+Your project's `.gitpod.yml` and optional `.gitpod.Dockerfile` files control what tools will be available in your Gitpod workspace. Both files are version-controlled and let you monitor changes to the developer environment over time. There is no longer a need to `@channel` in your team's communication software to tell everyone to upgrade their version of Node.js, only to find out that some people were on vacation and didn't see the message.
 
 ### Ephemeral vs. long-lived
 
