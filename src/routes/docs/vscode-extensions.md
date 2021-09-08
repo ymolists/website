@@ -62,7 +62,9 @@ You can view all pre-installed extensions by navigating to VS Code's Extensions 
 
 If you cannot find an extension by searching in Gitpod, it probably means that the extension hasn't been added to the [Open VSX](https://open-vsx.org/) registry yet.
 
-In that case, you can also install it by installing a `*.vsix` file. To do that:
+In that case, you can run the official CI script for publishing existing open-source VS Code extensions to open-vsx.org by following the steps described in https://github.com/open-vsx/publish-extensions#how-to-add-an-extension.
+
+The CI script automates the manual way of installing a `*.vsix` file. To manually install an extension:
 
 1. Drag a `.vsix` file into your editor's Explorer view where you see your project's files (you can delete that file after you installed the extension).
 1. Open the VS Code Extensions view on the left-side of the editor.
