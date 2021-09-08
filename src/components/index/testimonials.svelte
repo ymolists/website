@@ -36,7 +36,7 @@
   }
 </style>
 
-<Section>
+<Section class="-mb-20">
   <div class="row">
     <h2 class="h1">Used by 400,000+ developers.</h2>
     <Carousel>

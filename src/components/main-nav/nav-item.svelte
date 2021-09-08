@@ -1,8 +1,9 @@
 <script lang="ts">
   import { page } from "$app/stores";
 
-  export let navItem: any;
-  const { href, isHighlighted, label } = navItem;
+  export let navItem;
+  const { href, isHighlighted, label, isExternal } = navItem;
+  const isPrefecthable = isExternal ? undefined : true;
 
   $: isActivePage =
     $page.path === "/" ? /\/$/.test(href) : href.indexOf($page.path) >= 0;
@@ -10,7 +11,7 @@
 
 <style type="text/postcss">
   a {
-    @media (min-width: 931px) {
+    @media (min-width: 1050px) {
       @apply text-base;
     }
   }
@@ -21,11 +22,12 @@
 </style>
 
 <a
-  class:active={isActivePage}
+  class:active={isActivePage && !isExternal}
   class:highlighted={isHighlighted}
   {href}
   on:click
-  sveltekit:prefetch
+  on:focus
+  sveltekit:prefetch={isPrefecthable}
   class="text-black text-p-large sm:text-dark-grey sm:hover:text-black sm:focus:text-black"
 >
   {label}

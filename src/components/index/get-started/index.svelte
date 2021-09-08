@@ -33,7 +33,7 @@
   }
 </style>
 
-<Section id="get-started">
+<Section id="get-started" class="pt-20">
   <h2 class="mb-small text-center text-h2">Get started now</h2>
   <div class="cards-container">
     <div class="card">

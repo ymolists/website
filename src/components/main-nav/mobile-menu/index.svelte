@@ -4,6 +4,7 @@
 
   import LoginButton from "../login-button.svelte";
   import NavItem from "../nav-item.svelte";
+  import SignUpButton from "../sign-up-button.svelte";
   import menuState from "./state";
 
   export let navItems = [];
@@ -15,14 +16,15 @@
         showHideOverflowY(false);
       }
     };
-    let query = window.matchMedia("(min-width: 931px)");
+
+    let query = window.matchMedia("(min-width: 1050px)");
     query.addEventListener("change", handleTabletChange);
   });
 </script>
 
 <style type="text/postcss">
   /* Always make sure to keep the media query intact with one specified above in the matchMedia call. */
-  @media (min-width: 931px) {
+  @media (min-width: 1050px) {
     .nav-items {
       @apply hidden;
     }
@@ -43,5 +45,6 @@
       />
     {/each}
     <LoginButton />
+    <SignUpButton class="text-lg h-8 w-28" />
   </div>
 {/if}

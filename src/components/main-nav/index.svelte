@@ -5,8 +5,15 @@
   import NavItem from "./nav-item.svelte";
   import menuState from "./mobile-menu/state";
   import LoginButton from "./login-button.svelte";
+  import SignUpButton from "./sign-up-button.svelte";
   import Logo from "../svgs/logo.svelte";
   import { showHideOverflowY } from "../../utils/helpers";
+
+  let scroll: number;
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   const navItems = [
     {
@@ -39,12 +46,35 @@
 
 <style type="text/postcss">
   nav {
-    max-width: 1500px;
+    transition: border-color 0.2s linear;
   }
 
-  @media (min-width: 931px) {
-    nav {
-      @apply bg-sand-light;
+  .nav-items {
+    @apply transition-opacity duration-200 ease-linear;
+  }
+
+  .bg-open-state {
+    @apply bg-off-white !important;
+  }
+
+  .wrapper {
+    max-width: 1500px;
+    @apply h-14;
+  }
+
+  .scrolled-out {
+    @apply border-divider;
+    background: hsl(0 5% 96% / 85%);
+    backdrop-filter: saturate(0.5) blur(5px);
+  }
+
+  .scrolled-out .nav-items {
+    @apply opacity-0 pointer-events-none;
+  }
+
+  @media (min-width: 1050px) {
+    .wrapper {
+      @apply h-20;
     }
 
     .nav-items,
@@ -52,31 +82,49 @@
       @apply flex;
     }
   }
+
+  button {
+    @apply outline-none;
+  }
+
+  button::-moz-focus-inner {
+    @apply border-0;
+  }
 </style>
 
+<svelte:window bind:scrollY={scroll} />
+<!-- Intersection observer target to trigger the strike through animation. -->
+<div id="choose-project-observer-target-top" />
 <nav
-  id="choose-project-observer-target-top"
-  class={`${$menuState ? "bg-off-white " : ""}mx-auto w-full`}
+  class="fixed z-50 mx-auto w-full border-b border-solid border-transparent"
+  class:scrolled-out={scroll > 0}
+  class:bg-open-state={$menuState}
 >
-  <div class="flex items-center justify-between h-20 px-4 sm:px-8">
-    <a
+  <div
+    class="wrapper flex items-center justify-between mx-auto h-16 md:h-20 px-4 sm:px-8"
+  >
+    <button
       on:contextmenu|preventDefault={() => goto("/media-kit")}
-      href="/"
-      aria-label="Gitpod"
+      aria-label="Home"
       on:click={() => {
         $menuState = !menuState;
         showHideOverflowY(false);
+        goto("/");
+        scrollToTop();
       }}
     >
-      <Logo />
-    </a>
-    <div class="nav-items hidden px-2 space-x-6 items-center md:space-x-12">
+      <Logo class="h-8 w-28 lgx:h-10 lgx:w-32" />
+    </button>
+    <div
+      class="nav-items mx-auto hidden px-2 space-x-6 items-center md:space-x-12"
+    >
       {#each navItems as navItem}
-        <NavItem {navItem} on:click={() => ($menuState = !$menuState)} />
+        <NavItem on:focus={scrollToTop} {navItem} />
       {/each}
     </div>
-    <div class="login-wrapper hidden">
+    <div class="login-wrapper items-center hidden">
       <LoginButton />
+      <SignUpButton class="ml-x-small h-8 w-20" />
     </div>
     <MobileMenuToggle />
   </div>
