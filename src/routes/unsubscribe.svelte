@@ -2,7 +2,7 @@
   import OpenGraph from "../components/open-graph.svelte";
   import GitpodIllustration from "../components/gitpod-illustration.svelte";
   import { onMount } from "svelte";
-  
+
   onMount(() => {
     const footer: HTMLElement = document.querySelector('[data-id="footer"]')
     footer.style.display = 'none'
