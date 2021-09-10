@@ -65,9 +65,9 @@ image:
 
 Then, after committing your changes, start a new workspace, the version for that workspace will be what you’ve specified in your [.gitpod.Dockerfile](/docs/config-docker).
 
-## Using Eslint for linting
+## Using ESLint for linting
 
-If your project's `package.json` does not mention Eslint as a dependency then you have to install it first. For installing it add the following to the end of the `init` phase of your [.gitpod.yml](/docs/config-gitpod-file) as shown:
+If your project's `package.json` does not mention ESLint as a dependency then you have to install it first. For installing it add the following to the end of the `init` phase of your [.gitpod.yml](/docs/config-gitpod-file) as shown:
 
 ```yaml
 tasks:
@@ -76,7 +76,7 @@ tasks:
 
 and then search for `eslint` in the extensions tab and then install it from there using the install button as shown in the screenshot.
 
-![Install Eslint in Gitpod](.../../../static/images/docs/eslint-extension.png)
+![Install ESLint in Gitpod](.../../../static/images/docs/eslint-extension.png)
 
 ## Making Live Reload work in Rollup based projects like Svelte
 
