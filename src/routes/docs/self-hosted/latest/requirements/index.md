@@ -35,7 +35,7 @@ We strongly recommend deploying a dedicated kubernetes cluster just for Gitpod S
 
 Here are the minimumn requirements:
 
-- Either Ubuntu 18.04 with ≥ v5.4 kernel or Ubuntu 20.04 with ≥ v5.4 kernel.
+- Either Ubuntu 18.04 with ≥ v5.4 kernel or Ubuntu 20.04 with ≥ v5.4 kernel as FUSE ≥ v4.18 and OverlayFS ≥ v3.18 is required.
 - Calico for the networking overlay and network policy.
 - Kubernetes ≥ 1.18.
 - containerd ≥ 1.2.
