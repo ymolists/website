@@ -19,5 +19,5 @@ This website uses the following technologies:
 - [SvelteKit](https://kit.svelte.dev)
 - [mdsvex](https://mdsvex.com)
 - [Tailwind CSS](https://tailwindcss.com)
-  - Note: Custom CSS was used initally. This is considered legacy and any PR going forward requires Tailwind CSS.
+  - Note: Custom CSS was used initially. This is considered legacy and any PR going forward requires Tailwind CSS.
 - [Netlify](https://www.netlify.com)
