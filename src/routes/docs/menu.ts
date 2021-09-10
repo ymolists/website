@@ -22,6 +22,7 @@ export const MENU: MenuEntry[] = [
     M("Golang", "quickstart/go"),
     M("Grain", "quickstart/grain"),
     M("Haskell", "quickstart/haskell"),
+    M("IHP", "quickstart/ihp"),
     M("Java Spring", "quickstart/java"),
     M("Jetbrains", "integrations/jetbrains"),
     M("Julia", "quickstart/julia"),

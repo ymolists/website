@@ -21,6 +21,7 @@ Learn how to start using Gitpod on an example project that is hosted on GitHub i
 - [Golang](/docs/quickstart/go)
 - [Grain](/docs/quickstart/grain)
 - [Haskell](/docs/quickstart/haskell)
+- [IHP](/docs/quickstart/ihp)
 - [Java Spring](/docs/quickstart/java)
 - [Jetbrains](/docs/integrations/jetbrains)
 - [Julia](/docs/quickstart/julia)
