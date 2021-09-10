@@ -9,7 +9,7 @@ title: IHP template
 
 # IHP Quickstart
 
-Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with the official [IHP template](https://github.com/digitallyinduced/ihp-gitpod-template).
+Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with the official [IHP template](https://github.com/gitpod-io/template-ihp).
 
 The following guide will:
 
@@ -21,7 +21,7 @@ For simplicity we use a GitHub template, but Gitpod works similarly with GitLab 
 
 ## Step 1: Clone Git repository
 
-- Create a new repository based on the [IHP template](https://github.com/digitallyinduced/ihp-gitpod-template/generate).
+- Create a new repository based on the [IHP template](https://github.com/gitpod-io/template-ihp/generate).
 - Name it e.g. `my-ihp-app`.
 
 ## Step 2: Install the Gitpod app
