@@ -59,7 +59,7 @@ You usually never need to go back to any workspace, but of course you can in cas
 
 ## **Full Terminal Access**
 
-Gitpod gives developers full featured terminals to run any processes such as compiling, linting or simply running tests or your application. Any docker image works and you can even configure Gitpod to automatically launch certain tasks on start.
+Gitpod gives developers full featured terminals to run any processes such as compiling, linting or simply running tests or your application. Any Docker image works and you can even configure Gitpod to automatically launch certain tasks on start.
 
 ![Terminal](https://cdn-images-1.medium.com/max/6796/1*K8oKjiVfaptpeI27UXPbcA.png)
 

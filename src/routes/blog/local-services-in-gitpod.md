@@ -59,7 +59,7 @@ What you choose as `--upstream` depends on which kind of service you want to exp
 ## Example 1: your local Docker daemon
 
 Running a container engine like Docker or `containerd` in a Gitpod workspace is still [work-in-progress](https://github.com/gitpod-io/gitpod/issues/755). Until that's possible your only recurse is to connect to a remote daemon.
-Usually that daemon would run somewhere in the cloud, too, e.g. in your dev-cluster. However, some of us don't have a Kubernetes cluster laying around or just need access to docker to try something real quick.
+Usually that daemon would run somewhere in the cloud, too, e.g. in your dev-cluster. However, some of us don't have a Kubernetes cluster laying around or just need access to Docker to try something real quick.
 
 > This is _not_ how we plan to ultimatively support Docker/other containers in a Gitpod workspace.
 

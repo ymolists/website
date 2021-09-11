@@ -15,7 +15,7 @@ title: Journey to Site Reliability Engineering at Gitpod
 
 Gitpod is changing the way developers code. We're breaking the paradigm of relying on local environments to develop applications, by making those environments available through a web browser. Those environments are hosted in the cloud, they are ephemeral and they can be customized through automation to make them perfect for the project being developed.
 
-Those cloud-based environments provide everything that our users have in their local machines, including [sudo access](/blog/root-docker-and-vscode#root-access) and [docker](/blog/root-docker-and-vscode#docker), and thanks to configuration-as-code (that can be automated) they remove the friction of installing and managing all different kinds of dependencies that we have when working on multiple projects. We want the world to forget about local environments and completely focus on our cloud-based environments.
+Those cloud-based environments provide everything that our users have in their local machines, including [sudo access](/blog/root-docker-and-vscode#root-access) and [Docker](/blog/root-docker-and-vscode#docker), and thanks to configuration-as-code (that can be automated) they remove the friction of installing and managing all different kinds of dependencies that we have when working on multiple projects. We want the world to forget about local environments and completely focus on our cloud-based environments.
 
 _We gave those cloud-based environments a unique name: "Workspaces"._
 

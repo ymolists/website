@@ -66,7 +66,7 @@ RUN yarn install && \
     yarn build
 ```
 
-Once we’re ready to start working on a new feature, or want to review a PR, we just find the previously built Docker image and have everything ready to go. No faffing with git clone, waiting for the code to build or anything of the sorts. We have reduced many minutes of our time to a simple docker run.
+Once we’re ready to start working on a new feature, or want to review a PR, we just find the previously built Docker image and have everything ready to go. No faffing with git clone, waiting for the code to build or anything of the sorts. We have reduced many minutes of our time to a simple Docker run.
 
 A similar way of implementing this is the way [gitpod.io](https://gitpod.io) does it (full disclosure: I am one of the folks working on this project). Gitpod comes with a GitHub app that triggers _workspace prebuilds_ which in essence take your dev-environment as code (Dockerfile), execute a set of commands in there and associate the results with the particular commit that triggered it all. When you open a workspace on that commit, you’ll get the results of the prebuild instead of waiting for everything to complete.
 

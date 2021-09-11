@@ -76,7 +76,7 @@ Docker files are a pretty neat way to describe a developer environment. Imagine 
 
     RUN apt-get install -y asciidoctor
 
-Once you push the change to the repository and the docker image gets updated (automatically), all team members have the new tool in their developer environment. We need to get to coding with a single click.
+Once you push the change to the repository and the Docker image gets updated (automatically), all team members have the new tool in their developer environment. We need to get to coding with a single click.
 
 ![Laptop with code on the screen](../../../static/images/blog/dev-env-as-code/clement-h.jpeg)_Photo by [Clément H](https://unsplash.com/@clemhlrdt?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 

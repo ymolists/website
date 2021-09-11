@@ -15,7 +15,7 @@ Installation instructions for Gitpod Self-Hosted on Google Kubernetes Engine are
 - GCP L4 load balancer.
 - Cloud SQL - Mysql database.
 - Cloud DNS zone.
-- In-cluster docker registry using [Cloud Storage](https://cloud.google.com/storage) as storage backend.
+- In-cluster Docker registry using [Cloud Storage](https://cloud.google.com/storage) as storage backend.
 - Installation of [calico](https://docs.projectcalico.org) as CNI and NetworkPolicy implementation
 - Installation of [cert-manager](https://cert-manager.io/) for self-signed SSL certificates
 - Installation of a [Jaeger operator](https://github.com/jaegertracing/helm-charts/tree/main/charts/jaeger-operator) and Jaeger deployment for gitpod distributed tracing

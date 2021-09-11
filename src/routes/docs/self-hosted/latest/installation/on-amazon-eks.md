@@ -24,7 +24,7 @@ Installation instructions for Gitpod Self-Hosted on Amazon EKS are currently loc
 - ALB load balancer with TLS termination and re-encryption
 - RDS Mysql database
 - Two autoscaling groups, one for gitpod components and another for workspaces
-- In-cluster docker registry using S3 as storage backend
+- In-cluster Docker registry using S3 as storage backend
 - IAM account with S3 access (docker-registry and gitpod user content)
 - Installation of [calico](https://docs.projectcalico.org) as CNI and NetworkPolicy implementation
 - Installation of [cert-manager](https://cert-manager.io/) for self-signed SSL certificates

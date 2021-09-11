@@ -33,7 +33,7 @@ Starting a workspace with Gitpod is much easier than with other cloud IDEs. Gitp
 
 > To see the Gitpod button on the GitHub page, you would have to [install a browser extension](https://gitpod.io). Alternatively, you can manually prefix any GitHub URL with `https://gitpod.io/#`. For instance, clicking the following link will instantly provide you a development workspace for the Eclipse Theia project: [https://gitpod.io/#https://github.com/theia-ide/theia](https://gitpod.io/#https://github.com/theia-ide/theia)
 
-Of course, different projects need different setups. Gitpod has a three-stage process to determine the workspace configuration, e.g. what docker image to use for development, what startup script to run, and which ports to expose:
+Of course, different projects need different setups. Gitpod has a three-stage process to determine the workspace configuration, e.g. what Docker image to use for development, what startup script to run, and which ports to expose:
 
 1. It first looks for a _.gitpod_ configuration file in the repository. Note, that it will check the state of the currently viewed commit. This allows you to keep working configuration for old states as well as trying a new configuration in a pull request.
 

@@ -41,7 +41,7 @@ With the new privileges you can now also run and build Docker images to start co
 
 At Gitpod we want to help automate your dev environments, so that you are always ready-to-code. We believe you should not have to compromise in terms of what tools you use. Instead we make sure you get all your favourite tools readily configured and initialised for any project and task. Until today you had no choice but to use Theia, which is a great vendor-neutral IDE that leverages a lot of VS Code’s tech and provides a very similar UX. Still there are some differences in behaviour and compatibility so many users asked for supporting VS Code (and other IDEs as well).
 
-Since today you can switch between VS Code and Theia in your settings. You can even bring your own web IDE though a docker image. This enables Gitpod to run other IDEs such as all the Jetbrains IDEs (using [projector](https://github.com/JetBrains/projector-server/blob/master/docs/Projector.md)), Jupyter Notebook, or Jupyter Lab. This feature is however currently still in a private beta, so you need to contact us in order to get access to that.
+Since today you can switch between VS Code and Theia in your settings. You can even bring your own web IDE though a Docker image. This enables Gitpod to run other IDEs such as all the Jetbrains IDEs (using [projector](https://github.com/JetBrains/projector-server/blob/master/docs/Projector.md)), Jupyter Notebook, or Jupyter Lab. This feature is however currently still in a private beta, so you need to contact us in order to get access to that.
 
 `youtube: 5hArIRPZuBI`
 

@@ -16,7 +16,7 @@ A great example of a ready-to-code Java dev environment is our [Spring Petclinic
 ## Ready-to-code Dev Environments for Java
 
 To set up your project, you should run `gp init` in the terminal first. This will create the two configuration files needed to explain Gitpod what your project needs.
-A dev environment is based on a Docker image. But don't fear you don't need to understand Docker to get started. In most cases, the default docker image is enough.
+A dev environment is based on a Docker image. But don't fear you don't need to understand Docker to get started. In most cases, the default Docker image is enough.
 
 ### SDKMAN
 
@@ -77,7 +77,7 @@ tasks:
 
 Since we have installed the [Gitpod app](https://github.com/apps/gitpod-io) on that GitHub repository, Gitpod will prebuild any branch as soon as it starts. During a prebuild it will
 
-1.  start a container based on the docker image,
+1.  start a container based on the Docker image,
 2.  clone the repository and check out the respective branch,
 3.  run the `before` and `init` parts of every task,
 4.  capture the result and store it

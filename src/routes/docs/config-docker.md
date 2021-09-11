@@ -13,7 +13,7 @@ By default, Gitpod uses a [standard Docker image](https://github.com/gitpod-io/w
 
 If this image does not include the tools you need for your project, you can provide a public Docker image or your own [Dockerfile](#using-a-dockerfile). This provides you with the flexibility to install the tools & libraries required for your project.
 
-> **Note:** Gitpod supports Debian/Ubuntu based docker images. Alpine images do not include [libgcc and libstdc++](https://code.visualstudio.com/docs/remote/linux#_tips-by-linux-distribution) which breaks Visual Studio Code. See also [Issue #3356](https://github.com/gitpod-io/gitpod/issues/3356).
+> **Note:** Gitpod supports Debian/Ubuntu based Docker images. Alpine images do not include [libgcc and libstdc++](https://code.visualstudio.com/docs/remote/linux#_tips-by-linux-distribution) which breaks Visual Studio Code. See also [Issue #3356](https://github.com/gitpod-io/gitpod/issues/3356).
 
 ## Configure a public Docker image
 
@@ -101,6 +101,6 @@ The easiest way to try out your changes is to push them to a branch and then sta
 
 **Caution**: The above is important in case your Dockerfile has bugs and prevents Gitpod from starting a workspace.
 
-On start of the second workspace, the docker build will start and show the output. If your Dockerfile has issues and the build fails or the resulting workspace does not look like you expected, you can force push changes to your config using your first, still running workspace and simply start a fresh workspace again to try them out.
+On start of the second workspace, the Docker build will start and show the output. If your Dockerfile has issues and the build fails or the resulting workspace does not look like you expected, you can force push changes to your config using your first, still running workspace and simply start a fresh workspace again to try them out.
 
-We are working on allowing docker builds directly from within workspaces, but until then this approach has been proven to be the most productive.
+We are working on allowing Docker builds directly from within workspaces, but until then this approach has been proven to be the most productive.

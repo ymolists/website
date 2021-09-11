@@ -14,9 +14,9 @@ To this end, Gitpod requires a container registry where it can push the images i
 
 By default Gitpod ships with a built-in Docker registry. If you operate your own Docker registry (which we'd recommend in a production setting) you can use that one. You have the following options:
 
-- Integrated docker registry: If not disabled, this docker registry is installed in a Kubernetes Pod as a dependency of Gitpod’s Helm chart.
-  The docker registry requires a Kubernetes PersistentVolume. This registry is not recommended to be used for production.
-- Own docker registry: Gitpod can connect to your own docker registry. Compared to its built-in counterpart this enables performance gains and access to otherwise private images.
+- Integrated Docker registry: If not disabled, this Docker registry is installed in a Kubernetes Pod as a dependency of Gitpod’s Helm chart.
+  The Docker registry requires a Kubernetes PersistentVolume. This registry is not recommended to be used for production.
+- Own Docker registry: Gitpod can connect to your own Docker registry. Compared to its built-in counterpart this enables performance gains and access to otherwise private images.
 
 This helm chart can either deploy its own registry (default but requires [HTTPS certs](./ingress)) or use an existing one.
 
