@@ -63,7 +63,7 @@
     </Faq>
     <Faq title="Can I create a team account?" {trackingContext}>
       <p>
-        Sure, if you would like to mange subscriptions for a whole team on a
+        Sure, if you would like to manage subscriptions for a whole team on a
         single invoice, you can create a{" "}
         <a href="https://gitpod.io/teams/">team subscription.</a>
       </p>
@@ -89,8 +89,8 @@
     <Faq title="What if I decide to cancel?" {trackingContext}>
       <p>
         If you wish to stop using Gitpod, you may cancel your subscription at
-        any time. Your cancellation will take into effect after that month’s
-        billing cycle.
+        any time. Your cancellation will take effect after that month’s billing
+        cycle.
       </p>
     </Faq>
     <Faq title="Still have more questions?" {trackingContext}>
