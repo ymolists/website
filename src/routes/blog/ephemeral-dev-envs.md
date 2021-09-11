@@ -50,7 +50,7 @@ There is so much friction for developers when there shouldn't be. Ideally, all w
 
 Bringing that peace of mind to developer environments makes sense and is already possible. For instance, a single `.gitpod.yml` file is used to describe your dev environment, including what dependencies and start-up commands are needed to get you to the position where you can start coding.
 
-Your dev environment then becomes ephemeral. Gitpod continuously builds all your git branches like a CI server. You have a new, consistent environment for every single task, and once you're done with a workspace, you can close it and start another super quickly because it has already been prebuilt.
+Your dev environment then becomes ephemeral. Gitpod continuously builds all your Git branches like a CI server. You have a new, consistent environment for every single task, and once you're done with a workspace, you can close it and start another super quickly because it has already been prebuilt.
 
 Ephemeral developer environments reduce friction and improve developer experience massively - let us demonstrate that with specific workflows in more detail.
 

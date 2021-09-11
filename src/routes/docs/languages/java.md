@@ -65,7 +65,7 @@ tasks:
 
 You can have as many tasks as you which, each will result in an opened terminal when you start a dev environment.
 
-Each task supports multiple phases, most importantly `before`, `init`, `command`. To be ready to code a dev environment should not only be in sync with the git repo but also needs to have the currently checked out state built.
+Each task supports multiple phases, most importantly `before`, `init`, `command`. To be ready to code a dev environment should not only be in sync with the Git repo but also needs to have the currently checked out state built.
 For instance, in the [Spring Petclinic demo](https://github.com/gitpod-io/spring-petclinic) the command section looks like this:
 
 ```yml

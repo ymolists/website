@@ -27,19 +27,19 @@ Only then you are **always ready-to-code** - immediately creative, immediately p
 
 A Gitpod workspace includes everything developers need to be productive: source code, a Linux shell with root/sudo, a file system, the full VS Code editing experience including extensions, language support and all other tools and binaries that run on Linux.
 
-Workspaces are highly customizable and can be pre-configured and optimized on both a team/project as well as an individual/developer level. From themes to extensions developers have full control. Workspaces work with all major git hosting platforms including GitHub, GitLab and Bitbucket.
+Workspaces are highly customizable and can be pre-configured and optimized on both a team/project as well as an individual/developer level. From themes to extensions developers have full control. Workspaces work with all major Git hosting platforms including GitHub, GitLab and Bitbucket.
 
 Leveraging the power of the cloud Gitpod provisions **blazingly fast, ephemeral and secure developer environments**.
 
 ### ⚡ Fast
 
-Gitpod **launches workspaces in seconds** and removes long init and build times by continuously pre-building workspaces for your project. This enables you and everybody collaborating on your project to **start coding or debugging immediately**, from any git context, at any time, from any device. No more waiting for NPM or Maven to download the Internet.
+Gitpod **launches workspaces in seconds** and removes long init and build times by continuously pre-building workspaces for your project. This enables you and everybody collaborating on your project to **start coding or debugging immediately**, from any Git context, at any time, from any device. No more waiting for NPM or Maven to download the Internet.
 
 Spinning up dev environments is easily repeatable and reproducible, because Gitpod creates a single configuration file in your repository allowing you to **automate, version-control and share consistent dev environments across your team**. We call this [dev-environments-as-code](/blog/dev-env-as-code).
 
 ### ⚙️ Ephemeral
 
-Gitpod continuously builds _all_ your git branches like a CI server. Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the `init` commands in your `.gitpod.yml` configuration file before you even start a workspace.
+Gitpod continuously builds _all_ your Git branches like a CI server. Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the `init` commands in your `.gitpod.yml` configuration file before you even start a workspace.
 
 Then, when someone from your team does create a new workspace on a branch or Pull/Merge Request a workspace will load almost instantly, because all dependencies will have been already downloaded ahead of time and your code will be already compiled.
 

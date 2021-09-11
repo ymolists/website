@@ -74,7 +74,7 @@ When Gitpod notices port 3000 is available, it automatically opens your applicat
 
 ### Commit `.gitpod.yml`
 
-Lastly, make sure to commit the `.gitpod.yml` configuration file to git and push it to your repository.
+Lastly, make sure to commit the `.gitpod.yml` configuration file to Git and push it to your repository.
 
 ## Start your second workspace
 
@@ -119,7 +119,7 @@ For each new commit to your project, Gitpod continuously creates prebuilt worksp
 
 ### Configure prebuilds for your projects
 
-Depending on your git provider, the steps to configure prebuilds vary slightly. Please refer to the dedicated [Prebuilds](/docs/prebuilds) page for detailed instructions on how to configure prebuilds for your project.
+Depending on your Git provider, the steps to configure prebuilds vary slightly. Please refer to the dedicated [Prebuilds](/docs/prebuilds) page for detailed instructions on how to configure prebuilds for your project.
 
 ## Next steps
 
