@@ -101,7 +101,7 @@ See [Start Tasks](/docs/config-start-tasks#wait-for-commands-to-complete) for a 
 
 To notify a `gp sync-await <name>` call (see previous chapter), you can call `gp sync-done <name>`.
 
-A common use case is the followig where we have three terminals:
+A common use case is the following where we have three terminals:
 
 - Terminal 1: A build process takes several minutes to complete. At the end, you call `gp sync-done build`.
 - Terminal 2: You use `gp sync-await build && npm run start-database` to wait for the build to complete before you start a database
