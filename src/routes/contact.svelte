@@ -39,7 +39,7 @@
     },
   ];
 
-  const studentUnlimitedSubject = "Eductional Discount Verification";
+  const studentUnlimitedSubject = "Educational Discount Verification";
 
   const subjects = [
     "Abuse Report",
