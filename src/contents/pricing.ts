@@ -3,9 +3,15 @@ import { isEurope } from "../utils/helpers";
 
 export const pricingPlans: Pricing[] = [
   {
-    title: "Open Source",
+    title: "Basic",
     price: "Free",
-    features: ["50 hours/month", "Private & Public Repos"],
+    features: [
+      "50 hours/month",
+      "Private & Public Repos",
+      "Unlimited Prebuilds",
+      "Shared Workspaces",
+      "Snapshots",
+    ],
     btnText: "Try Now",
     btnHref: "/#get-started",
     trackingName: "free",
@@ -14,7 +20,14 @@ export const pricingPlans: Pricing[] = [
     title: "Personal",
     price: isEurope() ? "€8" : "$9",
     duration: "Per User/Month",
-    features: ["100 hours/month", "4 Parallel Workspaces", "30min Timeout"],
+    features: [
+      "100 hours/month",
+      "4 Parallel Workspaces",
+      "Unlimited Prebuilds",
+      "Shared Workspaces",
+      "Snapshots",
+      "30min Timeout",
+    ],
     btnText: "Buy Now",
     btnHref: "https://gitpod.io/plans",
     trackingName: "personal",
@@ -65,7 +78,7 @@ export const otherPlans = [
     title: "Self Hosted",
     paragraphs: [
       "Gitpod self-hosted is the best solution for teams who want to keep full data control or use Gitpod in private networks.",
-      "Install Gitpod Self-Hosted on <strong>Google Cloud Platform</strong> and <strong>K3s</strong>.",
+      "Install Gitpod Self-Hosted on <strong>GKE</strong>, <strong>K3s</strong>, <strong>EKS</strong> or <strong>AKS</strong>.",
     ],
     btnText: "More about Self-Hosted",
     btnHref: "/self-hosted",
