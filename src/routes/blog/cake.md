@@ -121,7 +121,7 @@ I started 🤬 'ing myself. Had I chosen the wrong baker? I am IN OVER MY HEAD H
 
 ### Delivery
 
-Camshia, being the legend that she is, included 2 dozen gluten-free vegan cupcakes in the delivery just in case some wouldn't be able to have the actual cake.
+Camisha, being the legend that she is, included 2 dozen gluten-free vegan cupcakes in the delivery just in case some wouldn't be able to have the actual cake.
 
 ![Photo Credit: Camisha's Cakes](../../../static/images/blog/cake/collage.jpg)
 _Photo Credit: [Camisha's Cakes](https://www.camishascakes.com/)_
