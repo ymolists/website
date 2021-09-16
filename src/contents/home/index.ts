@@ -16,17 +16,16 @@ export const brands: Brand[] = [
     className: "fcc",
   },
   {
-    alt: "D-Wave",
-    href: "https://www.dwavesys.com/",
-    logo: "svg/brands/dwave.svg",
-    transform: "scale(1.3)",
-    className: "dwave-logo",
-  },
-  {
     alt: "Google",
     href: "https://about.google/",
     logo: "svg/brands/google.svg",
     transform: "scale(0.9)",
+    className: "grey-logo",
+  },
+  {
+    alt: "Uber",
+    href: "https://www.uber.com",
+    logo: "svg/brands/uber.svg",
     className: "grey-logo",
   },
   {
@@ -37,15 +36,29 @@ export const brands: Brand[] = [
     className: "grey-logo",
   },
   {
-    alt: "Facebook",
-    href: "https://about.fb.com/",
-    logo: "svg/brands/facebook.svg",
+    alt: "Intel",
+    href: "https://www.intel.com",
+    logo: "svg/brands/intel.svg",
+    transform: "scale(0.8)",
     className: "grey-logo",
   },
   {
-    alt: "Uber",
-    href: "https://www.uber.com",
-    logo: "svg/brands/uber.svg",
+    alt: "Code Institute",
+    href: "https://codeinstitute.net/",
+    logo: "svg/brands/code-institute.svg",
+    className: "grey-logo",
+  },
+  {
+    alt: "D-Wave",
+    href: "https://www.dwavesys.com/",
+    logo: "svg/brands/dwave.svg",
+    transform: "scale(1.3)",
+    className: "dwave-logo",
+  },
+  {
+    alt: "Facebook",
+    href: "https://about.fb.com/",
+    logo: "svg/brands/facebook.svg",
     className: "grey-logo",
   },
   {
@@ -62,23 +75,10 @@ export const brands: Brand[] = [
     className: "grey-logo",
   },
   {
-    alt: "Intel",
-    href: "https://www.intel.com",
-    logo: "svg/brands/intel.svg",
-    transform: "scale(0.8)",
-    className: "grey-logo",
-  },
-  {
     alt: "Eclipse Theia",
     href: "https://theia-ide.org",
     logo: "svg/brands/theia.svg",
     transform: "scale(1.1)",
-    className: "grey-logo",
-  },
-  {
-    alt: "Code Institute",
-    href: "https://codeinstitute.net/",
-    logo: "svg/brands/code-institute.svg",
     className: "grey-logo",
   },
   {
