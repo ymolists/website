@@ -4,6 +4,10 @@
   functions = "src/functions"
 
 [[redirects]]
+  from = "/security"
+  to = "/.well-known/security.txt"
+
+[[redirects]]
   from = "/code-of-conduct"
   to = "https://github.com/gitpod-io/gitpod/blob/main/CODE_OF_CONDUCT.md"
 

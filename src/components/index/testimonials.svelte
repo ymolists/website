@@ -4,7 +4,6 @@
   import Brands from "./brands.svelte";
   import Testimonial from "./testimonial.svelte";
   import type { Testimonial as TestimonialType } from "../../types/testimonial.type";
-  import { brands } from "../../contents/home";
 
   export let testimonials: TestimonialType[];
 </script>
@@ -45,6 +44,6 @@
         <Testimonial {testimonial} {position} />
       {/each}
     </Carousel>
-    <Brands brands={brands} />
+    <Brands />
   </div>
 </Section>

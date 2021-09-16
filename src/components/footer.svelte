@@ -156,7 +156,6 @@
         </li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/media-kit">Media Kit</a></li>
-        <li><a href="/security">Security</a></li>
       </ul>
       <ul>
         <li>Legal</li>
