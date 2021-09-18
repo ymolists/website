@@ -24,6 +24,10 @@ To install Gitpod in your Kubernetes cluster, follow these steps:
 1. Create a file `values.custom.yaml` with the following content (please replace the keys/secrets, for instance with `openssl rand -hex 20`):
 
    ```yaml
+   docker-registry:
+     authentication:
+       username: gitpod
+       password: your-registry-password
    rabbitmq:
      auth:
        username: your-rabbitmq-user

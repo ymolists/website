@@ -81,3 +81,38 @@ components:
   agentSmith:
     disabled: true
 ```
+
+## 4. Workspaces stopping once container image downloaded
+
+This may be caused by your host operating system not supporting shiftfs. Check the `ws-daemon` logs for an error message like `"error":"cannot run nsinsider: exit status 1","level":"error","message":"cannot mount shiftfs mark"` to confirm.
+
+### Solution
+
+Add the following to your `values.yaml` file to use fuse-overlayfs:
+
+```yaml
+components:
+  wsDaemon:
+    userNamespaces:
+      fsShift: fuse
+```
+
+## 5. Create workspace results in `7 PERMISSION_DENIED: cannot resolve workspace image` error
+
+![Request createWorkspace failed with message: 7 PERMISSION_DENIED: cannot resolve workspace image: not authorized Unknown Error](../../../static/images/docs/self-hosted/troubleshooting/registry-unauthorized.jpeg)
+
+If you are using the internal Docker registry, you will need to specify the username and password so your Gitpod instance can access it.
+
+### Solution
+
+Add the following to your `values.yaml` file to authorize the Docker registry:
+
+```yaml
+components:
+  docker-registry:
+    authentication:
+      username: gitpod
+      password: gitpod
+```
+
+> Replace these with your own values.
