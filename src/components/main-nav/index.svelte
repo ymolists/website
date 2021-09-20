@@ -8,11 +8,17 @@
   import SignUpButton from "./sign-up-button.svelte";
   import Logo from "../svgs/logo.svelte";
   import { showHideOverflowY } from "../../utils/helpers";
+  import SignUpButtonTablet from "./sign-up-button-tablet.svelte";
 
   let scroll: number;
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
+  };
+
+  const toggle = () => {
+    $menuState = !menuState;
+    showHideOverflowY(false);
   };
 
   const navItems = [
@@ -126,7 +132,17 @@
       <LoginButton />
       <SignUpButton class="ml-x-small h-8 w-20" />
     </div>
-    <MobileMenuToggle />
+    <div class="flex items-center">
+      <SignUpButtonTablet
+        on:click={() => {
+          toggle();
+          window.analytics.track("dashboard_clicked", {
+            context: "header_button",
+          });
+        }}
+      />
+      <MobileMenuToggle />
+    </div>
   </div>
   <MobileMenu {navItems} />
 </nav>

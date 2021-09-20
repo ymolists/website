@@ -20,6 +20,11 @@
     let query = window.matchMedia("(min-width: 1050px)");
     query.addEventListener("change", handleTabletChange);
   });
+
+  const toggle = () => {
+    $menuState = !$menuState;
+    showHideOverflowY(false);
+  };
 </script>
 
 <style type="text/postcss">
@@ -36,15 +41,17 @@
     class="nav-items absolute flex flex-col pt-10 pb-16 w-screen items-center bg-off-white space-y-xx-small z-10 shadow-md"
   >
     {#each navItems as navItem}
-      <NavItem
-        {navItem}
-        on:click={() => {
-          $menuState = !$menuState;
-          showHideOverflowY(false);
-        }}
-      />
+      <NavItem {navItem} on:click={toggle} />
     {/each}
     <LoginButton />
-    <SignUpButton class="text-lg h-8 w-28" />
+    <SignUpButton
+      on:click={() => {
+        toggle();
+        window.analytics.track("dashboard_clicked", {
+          context: "header_button",
+        });
+      }}
+      class="text-lg h-8 w-28"
+    />
   </div>
 {/if}
