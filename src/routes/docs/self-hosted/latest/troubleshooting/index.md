@@ -84,7 +84,15 @@ components:
 
 ## 4. Workspaces stopping once container image downloaded
 
-This may be caused by your host operating system not supporting shiftfs. Check the `ws-daemon` logs for an error message like `"error":"cannot run nsinsider: exit status 1","level":"error","message":"cannot mount shiftfs mark"` to confirm.
+This may be caused by your host operating system not supporting shiftfs. Check the `ws-daemon` logs for an error message like `"error","message":"cannot mount shiftfs mark"` to confirm.
+
+Further proof can be found by checking if the shiftfs kernel module is present on your host operating system:
+
+```shell
+find /lib/modules/ -name '*shiftfs*'
+```
+
+If this returns nothing, shiftfs is not supported by your instance and you will need to use fuse instead.
 
 ### Solution
 
