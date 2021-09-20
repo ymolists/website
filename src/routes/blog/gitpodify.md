@@ -28,7 +28,7 @@ What if there was a better way to do this? Maybe one day we can all just forget 
 | <div style="width:120px">&nbsp;</div>     | The idea in brief                                                                                                                                                                                                                                        |
 | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | &nbsp;&nbsp;<strong>The problem</strong>  | Figuring out which dependencies, tools, and language versions to install to properly configure a dev environment takes a lot of time and energy, and has to be repeated from scratch every time you use a different computer, and for every new project. |
-| &nbsp;&nbsp;<strong>The cause</strong>    | Most setup instructions are written in a format that is not executable or reproducible, like plain text in markdown files.                                                                                                                               |
+| &nbsp;&nbsp;<strong>The cause</strong>    | Most setup instructions are written in a format that is not executable or reproducible, like plain text in Markdown files.                                                                                                                               |
 | &nbsp;&nbsp;<strong>The solution</strong> | To solve this problem for every developer of your project, setup instructions should be written in a format that is executable, like scripts and Dockerfiles, and ideally versioned and shipped with your code. Gitpod was invented to make this easy.   |
 
 </div>
@@ -49,7 +49,7 @@ gitpod.io/#https://github.com/gitpod-io/website
 
 When you see the IDE and Terminal, just try building and running your project as usual. Maybe it will just work out of the box, but maybe you'll notice that something is missing or broken, and you can iterate on your Gitpod setup to fix it (see table of contents below).
 
-Once you're happy with your automated setup, a cool way to guide your contributors toward it is to add a Gitpod badge to your README. Here is a markdown snippet you can use (just replace the `...` with your repo):
+Once you're happy with your automated setup, a cool way to guide your contributors toward it is to add a Gitpod badge to your README. Here is a Markdown snippet you can use (just replace the `...` with your repo):
 
 ```markdown
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/...)
