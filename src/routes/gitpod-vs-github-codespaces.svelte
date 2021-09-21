@@ -80,14 +80,22 @@
     border-radius: 2rem;
   }
 
+  .cards.double {
+    @apply space-x-small;
+  }
+
   @media (max-width: 1140px) {
+    .cards.double {
+      @apply space-x-0 flex-col !important;
+    }
+
     .halfimages article {
       @apply flex-col;
     }
 
     .halfimages article > div,
     .cards.double > div {
-      @apply flex-1 self-center;
+      @apply flex-1;
     }
   }
 
@@ -124,15 +132,18 @@
       <!-- svelte-ignore a11y-missing-attribute -->
       <img src="/images/codespace/spaces-1.svg" role="presentation" />
       <p class="card-image-legend">
-        Compared start-up time until ready-to-code for<br /><a
+        Compared start-up time until ready-to-code for<br />
+        <a
           href="https://github.com/gitpod-io/vscode"
           on:click={() =>
             window.analytics.track("external_resource_clicked", {
               name: "vscode-repo",
               url: "https://github.com/gitpod-io/vscode",
               context: "body",
-            })}><strong>https://github.com/gitpod-io/vscode</strong></a
-        >. Last verified 25 Sep 2020.
+            })}
+        >
+          <strong>https://github.com/gitpod-io/vscode</strong>
+        </a>. Last verified 25 Sep 2020.
       </p>
     </div>
     <div>
@@ -167,8 +178,10 @@
               name: "codespaces-resources",
               url: "https://github.com/features/codespaces",
               context: "body",
-            })}><strong>GitHub Codespaces</strong></a
-        >.
+            })}
+        >
+          <strong>GitHub Codespaces</strong>
+        </a>.
       </p>
     </div>
     <div>
@@ -436,7 +449,7 @@
   </article>
 </div>
 
-<div class="cards double mt-1rem mb-7rem">
+<div class="cards double mt-1rem items-stretch">
   <div class="card p-4rem">
     <h2 class="h3">Automation-first</h2>
     <p class="flex-grow">

@@ -4,9 +4,9 @@
   import { onMount } from "svelte";
 
   onMount(() => {
-    const footer: HTMLElement = document.querySelector('[data-id="footer"]')
-    footer.style.display = 'none'
-  })
+    const footer: HTMLElement = document.querySelector('[data-id="footer"]');
+    footer.style.display = "none";
+  });
 </script>
 
 <style type="text/postcss">
