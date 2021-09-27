@@ -12,6 +12,10 @@
   :global(#svelte-announcer) {
     @apply sr-only;
   }
+
+  :global(html) {
+    scroll-padding-top: 6rem;
+  }
 </style>
 
 <!-- <AnnouncementBanner /> -->
