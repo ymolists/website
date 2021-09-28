@@ -4,7 +4,7 @@ import type { Brand } from "../types/brand.type";
 export const quotes: Quote[] = [
   {
     text:
-      "“Gitpod’s move to open source their technology will improve the productivity of developers who run VS Code in the browser.”",
+      "“Gitpod’s move to open source their technology will improve the productivity of developers who run VS Code in the browser. Extension developers can further automate end-to-end tests in a DevOps platform like GitLab, improving the overall developer flow from ideation through CI/CD pipelines.”",
     author: "Sid Sijbrandij",
     jobTitle: "Co-founder and CEO at GitLab",
     companyLogo: {
