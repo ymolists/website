@@ -3,7 +3,7 @@
 
   export let brand: Brand;
 
-  const { href, logo, alt, transform, className } = brand;
+  const { logo, alt, transform, className } = brand;
 </script>
 
 <style lang="scss">
@@ -13,15 +13,12 @@
 
   .brand {
     flex-basis: calc(14% - 1.375rem);
+    min-width: 130px;
     display: flex;
     border: 2px solid transparent;
     justify-content: center;
     margin: 0.75rem;
-
-    img {
-      height: 100%;
-    }
-
+    
     .grey-logo {
       filter: grayscale(100%) contrast(0%) brightness(116%);
       -webkit-filter: grayscale(100%) contrast(0%) brightness(116%);
@@ -59,21 +56,11 @@
   }
 </style>
 
-<a
-  {href}
-  target="_blank"
-  on:click={() =>
-    window.analytics.track("socialproof_clicked", {
-      type: "logo",
-      url: href,
-    })}
-  rel="noopener"
-  class="brand"
->
+<div class="brand">
   <img
     src={`/${logo}`}
     {alt}
     style={`transform: ${transform}`}
     class={className}
   />
-</a>
+</div>

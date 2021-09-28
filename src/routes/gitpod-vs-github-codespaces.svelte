@@ -56,9 +56,6 @@
   .mt-2rem {
     margin-top: 2rem;
   }
-  .mb-7rem {
-    margin-bottom: 7rem;
-  }
   .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -104,10 +101,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 </style>
 
@@ -321,7 +314,7 @@
     </dl>
   </section>
   <section class="card text-center">
-    <h2 class="text-xl card-heading h4">GitHub<br />Codespaces</h2>
+    <h2 class="card-heading h5">GitHub<br />Codespaces</h2>
     <dl>
       <dt>Pricing (Hosted)</dt>
       <dd>
