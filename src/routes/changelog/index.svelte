@@ -12,7 +12,7 @@
   import NewsletterSignup from "../../components/blog/newsletter-signup.svelte";
   import "../../assets/markdown-commons.scss";
   import Modal from "../../components/modal.svelte";
-  import TwitterFollowButton from "../../components/twitter-follow-button.svelte";
+  import TwitterFollowButton from "../../components/t-button.svelte";
   import { formatDate, stringToBeautifiedFragment } from "../../utils/helpers";
   import ChangelogDate from "../../components/changelog/changelog-date.svelte";
   import ChangelogLink from "../../components/changelog/changelog-link.svelte";

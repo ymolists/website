@@ -1,6 +1,6 @@
 <script lang="ts">
   import Modal from "../modal.svelte";
-  import TwitterFollowButton from "../twitter-follow-button.svelte";
+  import TwitterFollowButton from "../t-button.svelte";
   import NewsletterSignup from "./newsletter-signup.svelte";
   let isNewsLetterFormShown: boolean = false;
 
