@@ -62,7 +62,7 @@ Getting started is as simple as a one-line `docker run` command and starting [lo
 docker run -it --init -p 3000:3000 -v "$(pwd):/home/workspace:cached" gitpod/openvscode-server
 ```
 
-To run VS Code on the cloud provider of your choice we created [guides](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/) for [AWS](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/aws-ec2), [Digital Ocean](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/digital-ocean), [GCP](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/gcp-gce), [Railway](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/railway) and [Render](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/render).
+To run VS Code on the cloud provider of your choice we created [guides](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/) for [AWS](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/aws-ec2), [Azure](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/azure-vm), [Digital Ocean](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/digital-ocean), [GCP](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/gcp-gce), [Railway](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/railway) and [Render](https://github.com/gitpod-io/openvscode-server/tree/main/docs/guides/render).
 
 A big thank you to all our engineers involved in making this happen, specifically [Anton](https://github.com/akosyakov), [Jean Pierre](https://github.com/jeanp413), [Filip](https://github.com/filiptronicek) and [Mike](https://github.com/mikenikles)!
 
