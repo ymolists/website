@@ -11,7 +11,7 @@
 </script>
 
 <div class="border-b border-gray-300 border-solid">
-  <Banner storageKey="announcement-{announcementDate}" let:closeBanner>
+  <Banner storageKey="announcement-{announcementDate}" let:closeBanner clazz="announcement-banner">
     <span class="flex-1 text-lg text-right">🎁</span>
     <p class="flex-2 px-4 md:px-2">
       VS Code in the browser for everyone | <a
