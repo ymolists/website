@@ -45,7 +45,7 @@
 </style>
 
 <form
-  class="bg-white shadow-normal rounded-2xl max-w-lg py-small px-xx-small sm:px-small {clazz} relative h-48 md:h-54 lgx:h-60"
+  class="bg-white box-content shadow-normal rounded-2xl max-w-lg py-small px-xx-small sm:px-small {clazz} relative h-48 md:h-54 lgx:h-60"
   on:submit|preventDefault={submitEmail}
   id="newsletter"
   on:click|stopPropagation
