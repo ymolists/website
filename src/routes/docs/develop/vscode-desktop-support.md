@@ -25,3 +25,9 @@ VS Code desktop support is built on top of the [Local Companion](/docs/develop/l
 
 <br />
 <sup>1</sup> Yes this also means you get to keep your keyboard shortcuts just the way you prefer them. You know, Ctrl/Cmd + W to close an editor tab 😉.
+
+## Managing extensions
+
+VS Code runs extensions in one of two places: locally on the UI / client side, or remotely on your Gitpod workspace.
+
+For further details, please refer to the official VS Code docs on how to [manage extensions](https://code.visualstudio.com/docs/remote/ssh#_managing-extensions).
