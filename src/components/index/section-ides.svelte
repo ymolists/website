@@ -49,7 +49,7 @@
         and customise it to your individual needs - from themes to extensions,
         you have full control.
       </p>
-      <a href="/#get-started" class="btn-primary">Try Now</a>
+      <a href="/#get-started" class="btn-conversion">Try Now</a>
     </div>
   </div>
 </Section>
