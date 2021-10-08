@@ -32,6 +32,7 @@
 
 <style type="text/postcss">
   form {
+    max-width: 95vw;
     @media (min-width: 450px) {
       width: 440px;
     }
@@ -45,12 +46,12 @@
 </style>
 
 <form
-  class="bg-white box-content shadow-normal rounded-2xl max-w-lg py-small px-xx-small sm:px-small {clazz} relative h-48 md:h-54 lgx:h-60"
+  class="bg-white shadow-normal rounded-2xl max-w-lg py-small px-xx-small sm:px-small {clazz} relative h-48 md:h-54 lgx:h-60"
   on:submit|preventDefault={submitEmail}
   id="newsletter"
   on:click|stopPropagation
 >
-  <h2 class="h4">{titleText}</h2>
+  <h2 class="h4 newsletter-title">{titleText}</h2>
   {#if resultMessage}
     <p class="">{resultMessage}</p>
   {:else}

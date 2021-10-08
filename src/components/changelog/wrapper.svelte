@@ -4,7 +4,7 @@
 </script>
 
 <style type="text/postcss">
-  :global(h2) {
+  :global(h2:not(.newsletter-title)) {
     @apply mt-12 mb-4 md:mt-16 !important;
   }
 
