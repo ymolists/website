@@ -24,10 +24,10 @@ Here are a few HTML/CSS example projects that are already automated with Gitpod:
 
 </div>
 
-## [emmet](http://emmet.io/) &nbsp;Support
+## [emmet](https://emmet.io/) &nbsp;Support
 
 ![emmet demo](.../../../static/images/docs/emmet.png)
-Gitpod comes with [emmet](http://emmet.io/) support right out of the box giving you access to powerful snippets and completions
+Gitpod comes with [emmet](https://emmet.io/) support right out of the box giving you access to powerful snippets and completions
 
 ## Live Preview
 
