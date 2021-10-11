@@ -43,15 +43,15 @@ Read more about [start tasks](/docs/config-start-tasks).
 
 ## Node Versions
 
-Gitpod comes with the latest stable Node.js version pre-installed but let's say your project uses a different version of `node` (say 8 for example), well the good news is that Gitpod also comes with `nvm` (a tool used to manage multiple active Node.js versions) installed. To install and configure the desired version of node create a [.gitpod.Dockerfile](/docs/config-docker) and add the following to it:
+Gitpod comes with the latest stable Node.js version pre-installed but let's say your project uses a different version of `node` (say 14.08 for example), well the good news is that Gitpod also comes with `nvm` (a tool used to manage multiple active Node.js versions) installed. To install and configure the desired version of node create a [.gitpod.Dockerfile](/docs/config-docker) and add the following to it:
 
 ```dockerfile
 FROM gitpod/workspace-full:latest
 
 RUN bash -c ". .nvm/nvm.sh \
-    && nvm install 8 \
-    && nvm use 8 \
-    && nvm alias default 8"
+    && nvm install 14.08 \
+    && nvm use 14.08 \
+    && nvm alias default 14.08"
 
 RUN echo "nvm use default &>/dev/null" >> ~/.bashrc.d/51-nvm-fix
 ```
