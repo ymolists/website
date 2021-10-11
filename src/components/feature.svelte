@@ -51,12 +51,12 @@
       class="preview w-full col-start-1 row-start-1 md:col-start-auto md:row-start-auto"
     >
       {#if terminal}
-        <Console 
-          source={terminal.source} 
+        <Console
+          source={terminal.source}
           dark={terminal.dark}
           narrow={terminal.narrow}
           shadow={terminal.shadow}
-          skipToEnd={terminal.skipToEnd} 
+          skipToEnd={terminal.skipToEnd}
         />
       {/if}
       {#if image}

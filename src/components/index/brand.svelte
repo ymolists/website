@@ -18,7 +18,7 @@
     border: 2px solid transparent;
     justify-content: center;
     margin: 0.75rem;
-    
+
     .grey-logo {
       filter: grayscale(100%) contrast(0%) brightness(116%);
       -webkit-filter: grayscale(100%) contrast(0%) brightness(116%);
