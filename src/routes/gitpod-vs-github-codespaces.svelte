@@ -45,7 +45,7 @@
   }
   .ticklist > li > img {
     width: 24px;
-    margin-right: 1rem;
+    @apply mr-micro ml-0;
   }
   .max-w-30rem {
     @apply lgx:max-w-lg;
@@ -64,7 +64,7 @@
     padding: 4rem;
   }
   .card-image-legend {
-    @apply mt-x-small mb-small;
+    @apply mt-x-small mb-small max-w-md mx-auto;
     font-size: 12px;
     align-self: stretch;
   }
@@ -86,13 +86,49 @@
       @apply space-x-0 flex-col !important;
     }
 
+    .card-image-legend {
+      @apply mb-0;
+    }
+
     .halfimages article {
-      @apply flex-col;
+      @apply flex-col px-small !important;
+    }
+
+    .halfimages img {
+      @apply mx-auto;
+    }
+
+    .halfimages article:last-of-type {
+      @apply flex-col-reverse !important;
+    }
+
+    .text-box {
+      @apply mb-small !important;
+    }
+
+    .text-box p {
+      @apply mb-0;
+    }
+
+    .text-box a {
+      @apply mt-x-small;
     }
 
     .halfimages article > div,
     .cards.double > div {
       @apply flex-1;
+    }
+  }
+
+  @media (max-width: 799px) {
+    .halfimages article:first-of-type {
+      @apply flex-col-reverse !important;
+    }
+    .halfimages article {
+      @apply max-w-full !important;
+    }
+    .cards.double {
+      @apply max-w-none;
     }
   }
 
@@ -118,7 +154,6 @@
     integrates with your individual stack.
   </p>
 </header>
-
 <div class="halfimages">
   <article class="card">
     <div>
@@ -139,7 +174,7 @@
         </a>. Last verified 25 Sep 2020.
       </p>
     </div>
-    <div>
+    <div class="text-box">
       <h2 class="max-w-30rem">Ready in a flash</h2>
       <p class="text-large max-w-30rem flex-grow">
         Gitpod removes long init and build times by continuously pre-building
@@ -177,7 +212,7 @@
         </a>.
       </p>
     </div>
-    <div>
+    <div class="text-box">
       <h2 class="max-w-30rem">Resource Efficient</h2>
       <p class="text-large max-w-30rem">
         Instead of running on expensive VMs, Gitpod provisions secure containers
