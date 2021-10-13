@@ -119,7 +119,7 @@
         <img src="/svg/index/{icon}" alt={label} class="icon" />
       </div>
       <div
-        class="hidden absolute -top-2 -left-10 lg:left-3/4 items-center justify-center h-5 w-14 text-xs font-semibold text-gray-900 bg-pink-900 rounded-lg shadow-light"
+        class="hidden absolute -top-1 -left-10 lg:left-3/4 items-center justify-center h-5 w-14 text-xs font-semibold text-gray-900 bg-pink-900 rounded-lg shadow-light"
       >
         Soon
       </div>
