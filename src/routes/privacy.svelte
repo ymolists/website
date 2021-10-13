@@ -307,9 +307,8 @@
       <p>
         The data are stored for the purpose of newsletter subscription will be
         stored by us until you unsubscribe from the newsletter and will be
-        deleted from our servers as well as from the servers of Mailchimp after
-        you unsubscribe from the newsletter. Data stored by us for other
-        purposes (e.g. email address for the use of our Service) remain
+        deleted after you unsubscribe from the newsletter. Data stored by us for
+        other purposes (e.g. email address for the use of our Service) remain
         unaffected.
       </p>
 
@@ -448,7 +447,7 @@
         >.
       </p>
 
-      <h3>Segment</h3>
+      <h3 id="segment-io">Segment</h3>
       <p>
         We use Segment, provided by Segment.io, Inc., on our Website and Product
         to capture marketing- and product-related user information in order to
@@ -465,17 +464,20 @@
       </p>
 
       <p>
-        <strong>OPT-OUT:</strong> You can deactivate the use of Segment by
-        enabling the <a href="https://allaboutdnt.com/">"Do Not Track"</a>
+        <strong>OPT-OUT:</strong> You can deactivate the capturing of
+        user-specific Website data by enabling the
+        <a href="https://allaboutdnt.com/">"Do Not Track"</a>
         setting in your web browser. You may follow the instructions in
         <a href="https://allaboutdnt.com/#adjust-settings">this guide.</a>
       </p>
 
       <h3>Mixpanel</h3>
       <p>
-        We use Mixpanel, provided by Mixpanel, Inc., on our Website and Product
-        to capture marketing- and product-related user information in order to
-        offer the best experience to our users. Mixpanel operates in
+        We use Mixpanel, provided by Mixpanel, Inc., as data sink for <a
+          href="#segment-io">Segment</a
+        >
+        for the analysis of user behaviour in order to offer the best experience
+        to our users. Mixpanel operates in
         <a href="https://mixpanel.com/legal/mixpanel-gdpr/">
           compliance with the GDPR</a
         >.
@@ -488,10 +490,36 @@
       </p>
 
       <p>
-        <strong>OPT-OUT:</strong> You can deactivate the use of Mixpanel by
-        enabling the <a href="https://allaboutdnt.com/">"Do Not Track"</a>
+        <strong>OPT-OUT:</strong> You can deactivate that user-specific Website
+        informnation is sent to Mixpanel by enabling the
+        <a href="https://allaboutdnt.com/">"Do Not Track"</a>
         setting in your web browser. You may follow the instructions in
         <a href="https://allaboutdnt.com/#adjust-settings">this guide.</a>
+      </p>
+
+      <h3>Mode Analytics</h3>
+      <p>
+        We use Mode Analytics, provided by Mode Analytics, Inc., to explore and
+        analyse usage data that may contain data captured by <a
+          href="#segment-io">Segment</a
+        >
+        from the Website and Product. Mode Analytics operates in
+        <a href="https://mode.com/gdpr/">compliance with the GDPR</a>.
+      </p>
+      <p>
+        You can also find more information in Mode's privacy policy: <a
+          href="https://mode.com/privacy/">https://mode.com/privacy/</a
+        >.
+      </p>
+
+      <h3>Orbit Labs</h3>
+      <p>
+        We use Orbit Labs, provided by Orbit Labs, Inc., to analyse engagement
+        of our community on social Platforms such as GitHub, Twitter, Discord,
+        and Discourse. Orbit Labs has no access to data of our Website Visitors.
+        Orbit Labs acts as data controller in accordance with the GDPR (see
+        Section <i>Who is responsible for your personal information</i> of the
+        <a href="https://orbit.love/privacy-policy">Privacy Policy</a>).
       </p>
 
       <h3 id="youtube">Youtube</h3>
