@@ -85,6 +85,22 @@ Subsequently `*/*` makes that variable available in every workspace.
 
 > **Beware:** while the variable values are stored encrypted, they are available as plain text inside a workspace. Be careful when sharing your live workspace or when using `*/*` as repository pattern.
 
+## Terminal Specific Environment Variables
+
+You can set environment variables within the terminal of VS Code by setting the `env` property within the task definition in your `.gitpod.yml`.
+
+For example:
+
+```yaml
+tasks:
+  - name: Example of passing an environment variable to a command
+    env:
+      PRINT_ME: "Hello World!"
+    command: echo $PRINT_ME
+```
+
+See [`.gitpod.yml`](/docs/references/gitpod-yml#tasks%5Bn%5D.env) for more details.
+
 ## Provide env vars via URL
 
 > ❗️ This feature is great for configuring environment variables but is not appropriate for configuring sensitive information, such as passwords or long-lived API tokens. Gitpod and the [Open Web Application Security Project](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url) recommends that you do not pass sensitive information through query strings. Refer to [CWE-598](https://cwe.mitre.org/data/definitions/598.html) to learn more about this recommendation.
