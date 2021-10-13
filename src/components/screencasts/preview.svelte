@@ -1,7 +1,6 @@
 <script lang="ts">
   import { stringToBeautifiedFragment } from "../../utils/helpers";
   import type { Screencast } from "../../types/screencasts.type";
-  import Logo from "../svgs/logo.svelte";
 
   export let screencast: Screencast;
   export let screencastNumber: number;
@@ -26,6 +25,11 @@
     {:else}
       <h2>{screencast.title}</h2>
     {/if}
-    <Logo />
+    <img
+      src="/svg/media-kit/logo-light-theme.svg"
+      height="40"
+      width="81.6"
+      alt="Gitpod"
+    />
   </div>
 </a>
