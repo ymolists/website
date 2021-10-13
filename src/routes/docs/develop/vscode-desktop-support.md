@@ -9,9 +9,9 @@ title: VS Code Desktop Support
 
 # {title}
 
-**This feature is currently in preview.** If you prefer to develop in your local VS Code, we've got you covered thanks to VS Code desktop support.
+> **Please note:** VS Code Desktop Support is currently in preview If you experience any issues, or have feedback, please [get in touch](https://www.gitpod.io/support).
 
-Keep your local settings<sup>1</sup> **and** benefit from Gitpod's high-spec servers & automated prebuilds. As you would expect, your code continues to stay in an ephemeral Gitpod workspace which keeps each of your projects nicely isolated from one another.
+With VS Code Desktop Support, you can keep your local IDE configurations<sup>1</sup> **and** benefit from Gitpod's high-spec servers & automated prebuilds. As you would expect, your code executes in an ephemeral Gitpod workspace which keeps each of your projects nicely isolated from one another.
 
 To get started:
 
@@ -19,9 +19,9 @@ To get started:
 1. Open the command palette (⇧⌘P or Ctrl+Shift+P)
 1. Type "Open in VS Code" and hit Enter.
 
-This opens your local VS Code, connects to the Gitpod workspace and let’s you develop, test & debug your application as if it was running locally.
+This command will open your local VS Code, connect to the Gitpod workspace and let you develop, test & debug your application as if the code was running locally.
 
-VS Code desktop support is built on top of the [Local Companion](/docs/develop/local-companion) app, which you can continue to use independently.
+VS Code desktop support installs, manages and runs the [Local Companion](/docs/develop/local-companion) app under-the-hood so you don't have to. However, if you're currently using the local companion, you can can continue to use it independently.
 
 <br />
 <sup>1</sup> Yes this also means you get to keep your keyboard shortcuts just the way you prefer them. You know, Ctrl/Cmd + W to close an editor tab 😉.
