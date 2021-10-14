@@ -62,7 +62,7 @@ export const MENU: MenuEntry[] = [
     M("Life of a workspace", "life-of-workspace"),
     M("Contexts", "context-urls"),
     M("Collaboration & Sharing", "sharing-and-collaboration"),
-    M("Create a team", "teams"),
+    M("Create a team plan", "teams"),
     M("Local Companion", "develop/local-companion"),
     M("VS Code Desktop Support", "develop/vscode-desktop-support"),
   ]),

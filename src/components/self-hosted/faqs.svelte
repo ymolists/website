@@ -15,7 +15,7 @@
 <Section>
   <Faqs>
     <h2 class="h1">FAQs</h2>
-    <Faq title="Can I create a team account?" {trackingContext}>
+    <Faq title="Can I create a team plan?" {trackingContext}>
       <p>
         Of course! You can use Gitpod Self-Hosted on your own infrastructure for
         free for unlimited users. If you'd like to access additional features

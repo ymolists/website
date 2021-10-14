@@ -1,17 +1,15 @@
 ---
 section: develop
-title: Create a Team
+title: Create a Team Plan
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-# Create a Team
+# Create a Team Plan
 
-From [gitpod.io/teams/](https://gitpod.io/teams/), you can create a team and manage subscriptions for your team members with centralized billing.
-
-![Teams List](../../../static/images/docs/teams-list.jpg)
+From [gitpod.io/teams/](https://gitpod.io/teams/), you can create team plans and manage subscriptions for your team members with centralized billing.
 
 If you don’t have a Gitpod account yet, you’ll be asked to create one first. You can choose between the Team Professional or Team Unleashed plan and how many seats you want for each team.
 
@@ -31,5 +29,5 @@ You can either directly assign a seat by entering your team member's GitHub user
 
 ## Good to know
 
-- You don’t need to have a subscription yourself in order to manage seats for your team. You can simply sign in to https://gitpod.io/teams/ for free.
+- You don’t need to have a subscription yourself in order to manage seats for your team plan. You can simply sign in to https://gitpod.io/teams/ for free.
 - If you’d like to add more seats, delete seats or reassign existing seats, you can do these changes at any time.

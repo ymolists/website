@@ -61,11 +61,11 @@
         <img src="/svg/brands/visa.svg" alt="Visa" width="72" height="40" />
       </div>
     </Faq>
-    <Faq title="Can I create a team account?" {trackingContext}>
+    <Faq title="Can I create a team plan?" {trackingContext}>
       <p>
         Sure, if you would like to manage subscriptions for a whole team on a
         single invoice, you can create a{" "}
-        <a href="https://gitpod.io/teams/">team subscription.</a>
+        <a href="https://gitpod.io/teams/">team plan.</a>
       </p>
       <p>
         In case you need more information on how to setup a team subscription,
