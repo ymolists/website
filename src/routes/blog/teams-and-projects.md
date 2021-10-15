@@ -6,10 +6,10 @@ image: teaser.jpg
 slug: teams-and-projects
 subtitle: Introducing Teams and Projects
 teaserImage: teaser.jpg
-title: Introducing Teams & Projects
+title: Hello world
 ---
 
-Our mission here at Gitpod has always been about removing friction from the lives of developers.
+Mission here at Gitpod has always been about removing friction from the lives of developers.
 
 Today, we're excited to share with you the next big step in this journey—Teams and Projects.
 
