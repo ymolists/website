@@ -8,6 +8,8 @@ title: Create a Team Plan
 </script>
 
 # Create a Team Plan
+> **NEW FEATURE** —
+> Hi there! We're introducing <strong>Teams & Projects</strong> to surface <strong>Prebuilds</strong> in the dashboard. Existing team plans remain unchanged. No action is required on your side. <a href="/docs/teams-and-projects" className="learn-more">Learn more</a>.
 
 From [gitpod.io/teams/](https://gitpod.io/teams/), you can create team plans and manage subscriptions for your team members with centralized billing.
 
