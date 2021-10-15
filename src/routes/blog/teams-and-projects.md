@@ -39,7 +39,7 @@ Our goal with this latest update is to resolve the three pain points listed abov
 
 ## Teams
 
-![Teams](../../../static/images/blog/teams-and-projects/teams.png)
+![Teams](../../../static/images/blog/teams-and-projects/teams.jpg)
 
 We're making it easy to create and to manage your Teams.
 
@@ -60,7 +60,7 @@ We are also making it easy to automate your Projects with Gitpod.
 4. View and edit your Project's configuration
 5. Finally, trigger your first Prebuild to test your new configuration
 
-![Running your first Gitpod Prebuild](../../../static/images/blog/teams-and-projects/prebuild-in-progress.png)
+![Running your first Gitpod Prebuild](../../../static/images/blog/teams-and-projects/prebuild-in-progress.jpg)
 
 Voilà. From now on, Gitpod will automatically detect changes in your repository, and start new Prebuilds to speed up your workspaces continuously. From here on out, waiting for builds really is a thing of the past!
 
