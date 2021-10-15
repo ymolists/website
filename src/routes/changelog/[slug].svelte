@@ -15,6 +15,7 @@
 <script lang="ts">
   import Wrapper from "../../components/changelog/wrapper.svelte";
   import OpenGraph from "../../components/open-graph.svelte";
+  import "../../assets/markdown-commons.scss";
   export let changelogEntry: ChangelogEntryType;
   const { date, title, excerpt, content, image, alt } = changelogEntry;
 </script>
