@@ -97,6 +97,7 @@ You can remove a project by using the more actions button while hovering over a 
 | Permission          | Owner | Member |
 | ------------------- | ----- | ------ |
 | Manage Team Members | Yes   | No     |
+| Delete Team         | Yes   | No     |
 | Invite Team Members | Yes   | Yes    |
 | Add Projects        | Yes   | Yes    |
 | Remove Projects     | Yes   | Yes    |
