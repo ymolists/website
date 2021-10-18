@@ -62,17 +62,17 @@
         >).
       </p>
       <p>
-        You offer to conclude this Agreement when you (i) accept these Terms of
-        Service by checking the box at the Website, (ii) provide the data, which
-        is managed in accordance with our <a href="/privacy">privacy policy</a>,
-        required for opening a Gitpod account in our Existing Account page as
+        You acknowledge that you have read, understand and offer to conclude
+        this Agreement when you (i) use or sign in to the Service, (ii) provide
+        the data, which is managed in accordance with our <a href="/privacy"
+          >privacy policy</a
+        >, required for opening a Gitpod account in our Existing Account page as
         described throughout this Agreement; and (iii) declare your intention to
-        create, and create, an account by clicking on the respective button in
-        the Existing Account page. By clicking on the button
-        <strong>"Create my free account"</strong> the Customer submits an offer on
-        the conclusion of the contract about the usage of the Service and agrees
-        to the Agreement and the privacy policy of Gitpod which are valid at the
-        time of registration.
+        create, and create, an account by connecting to and/or signing into
+        Gitpod with your Existing Account. By creating an account or signing
+        into Gitpod, Customer submits an offer on the conclusion of the contract
+        about the usage of the Service and agrees to the Agreement and the
+        privacy policy of Gitpod which are valid at the time of registration.
       </p>
       <p>
         Notwithstanding anything in the contrary in this Agreement, upon your
