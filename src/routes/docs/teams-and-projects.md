@@ -8,7 +8,7 @@ title: Create a Team
 </script>
 
 > **NEW FEATURE** —
-> Teams & Projects is still in BETA. You can activate this feature by joining a team or directly visiting [`gitpod.io/new`](https://gitpod.io/new).
+> Teams & Projects is still in **Beta**. [Send feedback](https://github.com/gitpod-io/gitpod/issues/5095).
 
 # Teams & Projects
 
