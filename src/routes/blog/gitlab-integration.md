@@ -18,7 +18,7 @@ Recently we asked ourselves how we could streamline the integration with your da
 
 <h2 class="h1">The last missing piece in your GitLab DevOps pipeline</h2>
 
-GitLab is one of the most popular DevOps tools/platforms out there, used by more than 100,000 organizations across the globe. Through its Web IDE, simple edits can already be made today from within the application. However, for more advanced programming tasks, developers require a full developer environment.
+GitLab is one of the most popular DevOps tools/platforms out there, used by more than 100,000 organisations across the globe. Through its Web IDE, simple edits can already be made today from within the application. However, for more advanced programming tasks, developers require a full developer environment.
 
 Such dev environments not only include a professional IDE/editor with all the convenient plugins for the project at hand, but also things like compilers, build tools, code generators, databases, and application servers.
 

@@ -25,7 +25,7 @@ title: VS Code in the browser for everyone
 
 In retrospect the second half of 2021 will mark an important turning point for remote, cloud-based developer environments. After two years GitHub managed to ship Codespaces (& [received a cake 🎂](https://www.gitpod.io/blog/cake)). With JetBrains’ [remote development support](https://youtrack.jetbrains.com/issue/IDEA-226455#focus=Comments-27-5192116.0-0) developers will be able to choose between IDEs to access Gitpod's ephemeral, cloud-based developer environments later this year. For those who like the convenience of a browser, we have great news to share today.
 
-We are excited to announce [OpenVSCode Server](https://github.com/gitpod-io/openvscode-server/) - an open-source project that makes running VS Code in a browser easily accessible for all developers and organizations. [OpenVSCode Server](https://github.com/gitpod-io/openvscode-server/) runs upstream VS Code on a remote machine accessed through a modern web browser - from any device, from anywhere.
+We are excited to announce [OpenVSCode Server](https://github.com/gitpod-io/openvscode-server/) - an open-source project that makes running VS Code in a browser easily accessible for all developers and organisations. [OpenVSCode Server](https://github.com/gitpod-io/openvscode-server/) runs upstream VS Code on a remote machine accessed through a modern web browser - from any device, from anywhere.
 
 > **Unlike other attempts, this project is based on a minimal set of changes and uses the same architecture that powers both Gitpod and GitHub Codespaces at scale.**
 
@@ -35,7 +35,7 @@ The project is officially backed by our partners from GitLab, VMware, Uber, SAP,
 
 ## Goals
 
-We have been approached by individual developers and large organizations asking how we manage to always run the latest VS Code in Gitpod given that Microsoft doesn't publish the source code they use to enable GitHub Codespaces. Since many developers and organisations want to adopt the approach within their own products and daily workflows with the same low-footprint technique like Gitpod, we decided to share this with everyone.
+We have been approached by individual developers and large organisations asking how we manage to always run the latest VS Code in Gitpod given that Microsoft doesn't publish the source code they use to enable GitHub Codespaces. Since many developers and organisations want to adopt the approach within their own products and daily workflows with the same low-footprint technique like Gitpod, we decided to share this with everyone.
 
 The project has the following long-standing objectives:
 

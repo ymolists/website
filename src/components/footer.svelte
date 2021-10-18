@@ -1,4 +1,6 @@
 <script>
+  // import LogoTextless from "./svgs/logo-textless.svelte";
+
   const socialLinks = [
     {
       href: "https://twitter.com/gitpod",
@@ -93,6 +95,7 @@
         <li><a href="/pricing">Pricing</a></li>
         <li><a href="/changelog">Changelog</a></li>
         <li><a href="/self-hosted">Self-Hosted</a></li>
+        <!-- <li><a href="/for/startups" class="flex items-center"><LogoTextless title="Gitpod" height={19} width={19} /> <span class="ml-macro">for Startups</span></a></li> -->
         <li>
           <a href="/gitpod-vs-github-codespaces"
             >Gitpod vs GitHub <br />Codespaces
