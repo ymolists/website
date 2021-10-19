@@ -16,3 +16,4 @@ title: Configuring Gitpod Self-Hosted
 - [Configure the storage used by your Gitpod installation](./configuration/storage)
 - [Configure the Gitpod Workspaces in your Gitpod Self-Hosted installation](./configuration/workspaces)
 - [Configure the authentication used by your Gitpod Self-Hosted installation](./configuration/authentication)
+- [Configure the VSX registry used by your Gitpod Self-Hosted installation](./configuration/vsx-registry)
