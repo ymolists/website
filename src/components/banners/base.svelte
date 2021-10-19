@@ -2,7 +2,8 @@
   import { onMount } from "svelte";
   import { slide } from "svelte/transition";
 
-  export let clazz = "";
+  let clazz = "";
+  export { clazz as class };
   export let storageKey: string;
   export let location: "top" | "bottom" = "top";
 
@@ -11,15 +12,15 @@
   const closeBanner = () => {
     showBanner = false;
     window.localStorage.setItem(storageKey, "true");
-    if(clazz === "announcement-banner") {
-      document.body.classList.remove("banner-is-shown")
+    if (clazz === "announcement-banner") {
+      document.body.classList.remove("banner-is-shown");
     }
   };
 
   onMount(() => {
     showBanner = !window.localStorage.getItem(storageKey);
-    if(showBanner && clazz === "announcement-banner") {
-      document.body.classList.add("banner-is-shown")
+    if (showBanner && clazz === "announcement-banner") {
+      document.body.classList.add("banner-is-shown");
     }
   });
 </script>
