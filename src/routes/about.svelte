@@ -183,11 +183,11 @@
     >
     <a
       class="btn-otherbrand"
-      href="https://www.notion.so/gitpod/Development-Process-080f1e439e0440f9b063a000ee213692"
+      href="https://www.notion.so/gitpod/Architecture-0e39e570b10f4e8ba7b259629ee3cb74"
       target="_blank"
       rel="noopener"
-      ><span class="icon">🔨</span>
-      <img class="arrow" src="/svg/external.svg" alt="External" /> How we develop</a
+      ><span class="icon">🏗</span>
+      <img class="arrow" src="/svg/external.svg" alt="External" /> Architecture</a
     >
   </p>
 </div>
