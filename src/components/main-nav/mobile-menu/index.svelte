@@ -5,9 +5,11 @@
   import LoginButton from "../login-button.svelte";
   import NavItem from "../nav-item.svelte";
   import SignUpButton from "../sign-up-button.svelte";
+  import DashboardButton from "../dashboard-button.svelte";
   import menuState from "./state";
 
   export let navItems = [];
+  export let isLoggedIn: boolean;
 
   onMount(() => {
     const handleTabletChange = (e: any) => {
@@ -43,15 +45,19 @@
     {#each navItems as navItem}
       <NavItem {navItem} on:click={toggle} />
     {/each}
-    <LoginButton />
-    <SignUpButton
-      on:click={() => {
-        toggle();
-        window.analytics.track("dashboard_clicked", {
-          context: "header_button",
-        });
-      }}
-      class="text-lg h-8 w-28"
-    />
+    {#if isLoggedIn}
+      <DashboardButton class="text-lg h-8 w-28" />
+    {:else}
+      <LoginButton />
+      <SignUpButton
+        on:click={() => {
+          toggle();
+          window.analytics.track("dashboard_clicked", {
+            context: "header_button",
+          });
+        }}
+        class="text-lg h-8 w-28"
+      />
+    {/if}
   </div>
 {/if}

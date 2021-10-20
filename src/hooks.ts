@@ -61,7 +61,8 @@ export const handle: import("@sveltejs/kit").Handle = async ({
     ...response,
     headers: {
       ...response.headers,
-      "Set-Cookie": "gitpod-user=loggedIn; Domain=.gitpod.io; Path=/",
+      "Set-Cookie":
+        "gitpod-marketing-website-visited=true; Domain=.gitpod.io; Path=/",
       // Avoid clickjacking attacks, see https://cheatsheetseries.owasp.org/cheatsheets/Clickjacking_Defense_Cheat_Sheet.html
       "Content-Security-Policy": "frame-ancestors *.gitpod.io;",
     },
