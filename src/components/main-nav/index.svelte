@@ -11,6 +11,7 @@
   import { showHideOverflowY } from "../../utils/helpers";
   import SignUpButtonTablet from "./sign-up-button-tablet.svelte";
   import AnnouncementBanner from "../../components/banners/announcement.svelte";
+  import ContactLink from "./contact-link.svelte";
 
   let scroll: number;
 
@@ -133,12 +134,13 @@
         <NavItem on:focus={scrollToTop} {navItem} />
       {/each}
     </div>
-    <div class="login-wrapper items-center hidden">
+    <div class="login-wrapper items-center hidden space-x-x-small">
+      <ContactLink />
       {#if isLoggedIn}
-        <DashboardButton class="ml-x-small h-8 w-24" />
+        <DashboardButton class="h-8 w-24" />
       {:else}
         <LoginButton />
-        <SignUpButton class="ml-x-small h-8 w-20" />
+        <SignUpButton class="h-8 w-20" />
       {/if}
     </div>
     <div class="flex items-center">

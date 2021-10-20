@@ -54,8 +54,11 @@ main > header:first-child {
   }
 }
 main > header:first-child h1 {
-  font-size: var(--h2);
-  margin-bottom: var(--x-small);
+  @apply text-h2 mb-x-small;
+
+  @media(max-width: 1140px) {
+    @apply mb-micro;
+  }
 }
 main > header:first-child h1 + p {
   font-size: var(--p-large);

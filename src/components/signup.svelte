@@ -1,25 +1,29 @@
 <script lang="ts">
   let clazz = "";
-
   export { clazz as class };
-
+  export let type: "newsletter" | "ambassador program";
+  let titleText = type === "newsletter" ? "Stay updated" : "Sign Up";
   let email: string;
   let resultMessage = "";
   let isSubmittedOnce = false;
-  let titleText = "Stay updated";
 
   const submitEmail = async () => {
     isSubmittedOnce = true;
     try {
-      const response = await fetch("/.netlify/functions/newsletter", {
+      const response = await fetch("/.netlify/functions/signup", {
         method: "post",
-        body: email,
+        body: JSON.stringify({
+          type,
+          email,
+        }),
       });
       if (response.ok) {
-        resultMessage = "Thanks you are now signed up for our newsletter.";
+        resultMessage = `Thanks you are now signed up for our ${
+          type === "newsletter" ? type : "Ambassador Program"
+        }.`;
       } else if (response.status === 409) {
-        resultMessage =
-          "Lean back and relax. The next newsletter will be sent right to your inbox.";
+        resultMessage = type === "newsletter" ?
+          "Lean back and relax. The next newsletter will be sent right to your inbox." : "We will get back to you once the ambassador program is ready.";
         titleText = "You are already signed up";
       } else {
         resultMessage = "Oh no, something went wrong :(.";
@@ -55,7 +59,7 @@
   {#if resultMessage}
     <p class="">{resultMessage}</p>
   {:else}
-    <p class="text-medium">Sign up now for our newsletter.</p>
+    <p class="text-medium">Sign up now for our {type === "newsletter" ? type : "Ambassador Program"}.</p>
     <div class="flex mt-micro lgx:mt-x-small">
       <input
         type="email"

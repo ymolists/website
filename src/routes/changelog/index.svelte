@@ -9,7 +9,7 @@
   import type { ChangelogEntry as ChangelogEntryType } from "../../types/changelog-entry.type";
 
   import OpenGraph from "../../components/open-graph.svelte";
-  import NewsletterSignup from "../../components/blog/newsletter-signup.svelte";
+  import Signup from "../../components/signup.svelte";
   import "../../assets/markdown-commons.scss";
   import Modal from "../../components/modal.svelte";
   import TwitterFollowButton from "../../components/t-button.svelte";
@@ -86,5 +86,5 @@
 </div>
 
 <Modal isOpen={isNewsLetterFormShown} on:close={handleClose}>
-  <NewsletterSignup />
+  <Signup type="newsletter" />
 </Modal>

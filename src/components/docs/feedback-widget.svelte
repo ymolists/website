@@ -7,7 +7,6 @@
   let resultMessage: string;
   let isSubmittedOnce = false;
   let clazz = "";
-
   export { clazz as class };
   export let type: "docs" | "guides" | "digests";
 

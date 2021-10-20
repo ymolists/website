@@ -1,5 +1,9 @@
 export type Resource = {
 	title: string;
 	text: string;
-	href: string;
+	link: {
+		href: string;
+		text: string;
+	}
+	icon?: string;
 }

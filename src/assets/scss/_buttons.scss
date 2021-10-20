@@ -43,7 +43,6 @@ a {
 
 .btn-primary {
   background-color: var(--brand-almost-ripe);
-  margin-right: var(--micro);
 }
 
 .btn-conversion,
@@ -61,6 +60,10 @@ a {
   &:focus {
     background-color: var(--salmon-hover);
   }
+}
+
+.btn-primary + .btn-secondary {
+  @apply ml-micro;
 }
 
 .btn-tertiary {

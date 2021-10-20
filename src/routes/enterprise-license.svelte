@@ -362,11 +362,12 @@
           class:error={isFormDirty && !formData.country.valid}
         >
           Country*
+          <!-- svelte-ignore a11y-no-onchange -->
           <select
             name="country"
             bind:value={formData.country.value}
             bind:this={formData.country.el}
-            on:blur={() => {
+            on:change={() => {
               formData.country.valid =
                 formData.country.value && formData.country.el.checkValidity();
             }}

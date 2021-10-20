@@ -1,12 +1,14 @@
 <script lang="ts">
+  import { isAnExternalLink } from "../utils/helpers";
+
   import type { Feature } from "../types/feature.type";
   import Console from "./console.svelte";
   import Section from "./section.svelte";
 
   export let feature: Feature;
   const {
-    documentationLink,
     moreButton,
+    secondaryButton,
     paragraph,
     title,
     terminal,
@@ -15,12 +17,15 @@
   } = feature;
 </script>
 
-<style lang="scss">
-  :global(.feature-container-section:nth-of-type(even)) {
-    .preview {
+<style type="text/postcss">
+  :global(.feature-container-section:nth-of-type(even)) .preview {
       @apply col-start-1;
       @apply row-start-1;
-    }
+  }
+
+  .feature :global(code) {
+    @apply py-1 px-2 rounded-xl bg-orange-700;
+    white-space: break-spaces;
   }
 </style>
 
@@ -31,21 +36,27 @@
     <div class="sm:my-micro md:my-0">
       <div class="text-large">
         <h2 class="h3">{title}</h2>
-        <p class="mt-micro">{paragraph}</p>
+        <p class="mt-micro">{@html paragraph}</p>
       </div>
-      {#if moreButton || documentationLink}
-        <div class="mt-xx-small md:mt-small">
+      <div class="mt-xx-small md:mt-small">
+        {#if moreButton}
           <a
             href={moreButton.href}
             class={`btn-${moreButton.type || "primary"}`}
           >
             {moreButton.text}
           </a>
-          {#if documentationLink}
-            <a href={documentationLink} class="btn-secondary">Documentation </a>
-          {/if}
-        </div>
-      {/if}
+        {/if}
+        {#if secondaryButton}
+          <a
+            href={secondaryButton.href}
+            class="btn-secondary"
+            target={isAnExternalLink(secondaryButton.href)
+              ? "_blank"
+              : undefined}>{secondaryButton.text}</a
+          >
+        {/if}
+      </div>
     </div>
     <div
       class="preview w-full col-start-1 row-start-1 md:col-start-auto md:row-start-auto"

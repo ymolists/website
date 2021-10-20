@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { showHideOverflowY } from "../../../utils/helpers";
+  import ContactLink from "../contact-link.svelte";
 
   import LoginButton from "../login-button.svelte";
   import NavItem from "../nav-item.svelte";
@@ -45,6 +46,7 @@
     {#each navItems as navItem}
       <NavItem {navItem} on:click={toggle} />
     {/each}
+    <ContactLink />
     {#if isLoggedIn}
       <DashboardButton class="text-lg h-8 w-28" />
     {:else}

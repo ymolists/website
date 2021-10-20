@@ -25,3 +25,5 @@ export const formatDate = (date) =>
     month: "long",
     day: "numeric",
   });
+
+export const isAnExternalLink = (href: string) => href.startsWith("http");

@@ -2,7 +2,7 @@ export type Feature = {
   title: string;
   paragraph: string;
   moreButton?: { text: string; href: string; type?: "secondary" | "tertiary" };
-  documentationLink?: string;
+  secondaryButton?: { text: string; href: string };
   image?: { src: string; alt: string; height?: number; width?: number; classNames?: string; styles?: string };
   terminal?: {
     source: string;

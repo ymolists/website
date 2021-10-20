@@ -137,18 +137,7 @@
               })}>Report a bug</a
           >
         </li>
-        <li>
-          <a
-            href="https://community.gitpod.io"
-            target="_blank"
-            rel="noopener"
-            on:click={() =>
-              window.analytics.track("social_opened", {
-                context: "footer",
-                platform: "discourse",
-              })}>Community</a
-          >
-        </li>
+        <li><a href="/community">Community</a></li>
       </ul>
       <ul>
         <li>Company</li>

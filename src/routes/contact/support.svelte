@@ -3,50 +3,17 @@
 </script>
 
 <script lang="ts">
-  import type { ContactCard } from "../types/contact-card.type";
-  import type { Form } from "../types/form.type";
-  import type { Email } from "../functions/submit-form";
-  import Card from "../components/contact/card.svelte";
-  import OpenGraph from "../components/open-graph.svelte";
-  import SubmissionSuccess from "../components/submission-success.svelte";
-  import { onMount } from "svelte";
-
-  const contactCards: ContactCard[] = [
-    {
-      btnHref: "https://community.gitpod.io",
-      btnText: "Open community",
-      description:
-        "If you are looking for help for common requests please visit our community.",
-      title: "Ask the community",
-      image: "icon-enter.svg",
-      imgHeight: "154",
-      imgWidth: "147",
-      tracking: () =>
-        window.analytics.track("social_opened", {
-          context: "body",
-          name: "discourse",
-        }),
-    },
-    {
-      btnHref: "/docs/professional-open-source#who-is-eligible",
-      btnText: "Open documentation",
-      description:
-        "If you want to find out if you are elegible for our professional open source programm you can check out our docs.",
-      title: "Professional Open Source",
-      image: "icon-cube.svg",
-      imgHeight: "154",
-      imgWidth: "147",
-    },
-  ];
+  import type { Form } from "../../types/form.type";
+  import type { Email } from "../../functions/submit-form";
+  import OpenGraph from "../../components/open-graph.svelte";
+  import SubmissionSuccess from "../../components/submission-success.svelte";
 
   const studentUnlimitedSubject = "Educational Discount Verification";
 
   const subjects = [
     "Abuse Report",
     "Billing",
-    "Customer Support",
     studentUnlimitedSubject,
-    "Sales Enquiry",
     "Self-hosting Gitpod",
     "Open Source Sponsorship",
     "Other",
@@ -92,18 +59,6 @@
   let isEmailSent = false;
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
-
-  onMount(() => {
-    if (location.search === "?support") {
-      const inputs = [...document.querySelectorAll('input[type="radio"]')];
-      inputs.forEach((input: HTMLInputElement) => {
-        if (input.value === "Customer Support") {
-          formData.selectedSubject.value = "Customer Support";
-          input.checked = true;
-        }
-      });
-    }
-  });
 
   const handleSubmit = async () => {
     isFormDirty = true;
@@ -153,6 +108,10 @@
 </script>
 
 <style type="text/postcss">
+  .h3 {
+    @apply mb-small;
+  }
+
   p {
     color: var(--dark-grey);
   }
@@ -167,28 +126,23 @@
   fieldset li {
     margin: 0 1rem 0 0;
   }
-
-  .cards.double {
-    @apply justify-between;
-  }
 </style>
 
 <OpenGraph
   data={{
-    description: "Contact us if you have any questions regarding Gitpod.",
-    title: "Contact us",
+    description:
+      "Need help with any question or issue? Please get in contact and we’ll get onto it right away.",
+    title: "Contact Support",
   }}
 />
-<header class="tight">
-  <h1>Contact us</h1>
-  <p>Please let us know if you have any questions regarding Gitpod.</p>
-</header>
 
-<div class="cards double sm:mx-8">
-  {#each contactCards as contactCard}
-    <Card {contactCard} />
-  {/each}
-</div>
+<header class="tight">
+  <h1>Contact Support</h1>
+  <p class="max-w-2xl mx-auto">
+    Need help with any question or issue? Please get in contact and we’ll get
+    onto it right away.
+  </p>
+</header>
 
 <section
   class="card shadow-xl mb-32 sm:mx-8"
@@ -203,41 +157,8 @@
     />
   {:else}
     <form on:submit|preventDefault={handleSubmit} novalidate>
-      <h2 class="h3 text-center mb-8">Send us a message</h2>
+      <h2 class="h3 text-center">Send us a message</h2>
       <ul>
-        <li class:error={isFormDirty && !formData.name.valid}>
-          <label for="name">Name*</label>
-          <input
-            id="name"
-            bind:value={formData.name.value}
-            bind:this={formData.name.el}
-            on:change={() => {
-              formData.name.valid =
-                formData.name.value && formData.name.el.checkValidity();
-            }}
-            type="text"
-            autocomplete="name"
-          />
-        </li>
-        <li class:error={isFormDirty && !formData.email.valid}>
-          <label for="email"
-            >E-Mail*
-            {#if isStudentEmailNoteShown}
-              (Please use your student or faculty email)
-            {/if}
-          </label>
-          <input
-            id="email"
-            bind:value={formData.email.value}
-            bind:this={formData.email.el}
-            on:change={() => {
-              formData.email.valid =
-                formData.email.value && formData.email.el.checkValidity();
-            }}
-            type="email"
-            autocomplete="email"
-          />
-        </li>
         <li class:error={isFormDirty && !formData.selectedSubject.valid}>
           <fieldset>
             <legend>Please choose a subject</legend>
@@ -264,6 +185,39 @@
               {/each}
             </ul>
           </fieldset>
+        </li>
+        <li class:error={isFormDirty && !formData.name.valid}>
+          <label for="name">Name*</label>
+          <input
+            id="name"
+            bind:value={formData.name.value}
+            bind:this={formData.name.el}
+            on:change={() => {
+              formData.name.valid =
+                formData.name.value && formData.name.el.checkValidity();
+            }}
+            type="text"
+            autocomplete="name"
+          />
+        </li>
+        <li class:error={isFormDirty && !formData.email.valid}>
+          <label for="email"
+            >E-mail*
+            {#if isStudentEmailNoteShown}
+              (Please use your student or faculty email)
+            {/if}
+          </label>
+          <input
+            id="email"
+            bind:value={formData.email.value}
+            bind:this={formData.email.el}
+            on:change={() => {
+              formData.email.valid =
+                formData.email.value && formData.email.el.checkValidity();
+            }}
+            type="email"
+            autocomplete="email"
+          />
         </li>
         <li class:error={isFormDirty && !formData.message.valid}>
           <label for="message">Your message*</label>

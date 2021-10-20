@@ -1,7 +1,7 @@
 <script lang="ts">
   import Modal from "../modal.svelte";
   import TwitterFollowButton from "../t-button.svelte";
-  import NewsletterSignup from "./newsletter-signup.svelte";
+  import Signup from "../signup.svelte";
   let isNewsLetterFormShown: boolean = false;
 
   const handleClose = () => {
@@ -31,5 +31,5 @@
 </header>
 
 <Modal isOpen={isNewsLetterFormShown} on:close={handleClose}>
-  <NewsletterSignup />
+  <Signup type="newsletter"/>
 </Modal>

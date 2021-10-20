@@ -6,59 +6,89 @@ export const resources: Resource[] = [
     title: "Getting Started",
     text:
       "This page helps you understand how to provide a configuration for your project.",
-    href: "/docs/getting-started",
+    link: { 
+      href: "/docs/getting-started",
+      text: "Get Started"
+    }
   },
   {
     title: "Documentation",
     text:
       "Have a look at our documentation to learn how to get the most out of Gitpod",
-    href: "/docs/",
+    link: { 
+      href: "/docs/",
+      text: "View Documentation"
+    }
   },
   {
     title: "Changelog",
     text: "Here you can view the latest product improvements and updates.",
-    href: "/changelog",
+    link: { 
+      href: "/changelog",
+      text: "View Changelog"
+    }
   },
   {
     title: "Community Forum",
     text:
       "If you are looking for help with common requests, connect with our community on Discourse.",
-    href: "https://community.gitpod.io/",
+    link: { 
+      href: "https://community.gitpod.io/",
+      text: "View forum"
+    }
   },
   {
     title: "Discord Server",
     text:
       "Would you like to take part in live coding sessions and connect with the community ? Then join us on Discord.",
-    href: "https://www.gitpod.io/chat",
+    link: { 
+      href: "https://www.gitpod.io/chat",
+      text: "Join Discord"
+    }
   },
   {
     title: "Gitpod Roadmap",
     text:
       "Are you curious where Gitpod is heading to next? On the roadmap you can see our next steps.",
-    href: "https://github.com/gitpod-io/roadmap/projects/1",
+    link: { 
+      href: "https://www.gitpod.io/roadmap",
+      text: "View Roadmap"
+    }
   },
   {
     title: "Status",
     text:
       "On the status page you get informed on all past and current incidents.",
-    href: "https://www.gitpodstatus.com/",
+    link: { 
+      href: "https://www.gitpodstatus.com/",
+      text: "View Status Page"
+    }
   },
   {
     title: "Report a bug or request a feature",
     text: "Head over to GitHub to submit your bug report or feature request.",
-    href: "https://github.com/gitpod-io/gitpod/issues/new/choose",
+    link: { 
+      href: "https://github.com/gitpod-io/gitpod/issues/new/choose",
+      text: "File an issue"
+    }
   },
   {
     title: "Self-hosted",
     text:
       "Would you like to host Gitpod yourself? Here you can learn all about it.",
-    href: "/self-hosted",
+    link: { 
+      href: "/self-hosted",
+      text: "Gitpod Self-hosted"
+    }
   },
   {
     title: "Account Settings",
     text:
       "Here you can update your account prefences like themes, email notifications, integrations, etc..",
-    href: "https://gitpod.io/account",
+    link: { 
+      href: "https://gitpod.io/account",
+      text: "Go to Account Settings"
+    }
   },
 ];
 
