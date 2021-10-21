@@ -56,10 +56,8 @@ To configure the HTTPS certificates for your domain
 1.  [Generate certificates](#using-lets-encrypt-to-generate-https-certificates) and put your certificate files under `secrets/https-certificates/`:
     ```text
     secrets/https-certificates:
-      |- cert.pem
-      |- chain.pem
-      |- fullchain.pem
-      |- privkey.pem
+      |- tls.crt
+      |- tls.key
     ```
 2.  Generate the [dhparams.pem](https://security.stackexchange.com/questions/94390/whats-the-purpose-of-dh-parameters) file using:
     ```bash
