@@ -5,7 +5,12 @@ export const ghStudentPricingPlans: Pricing[] = [
   {
     title: "Open Source",
     price: "Free",
-    features: ["50 hours/month", "Private & Public Repos"],
+    features: [
+      "50 hours/month",
+      "Private & Public Repos",
+      "4 Parallel Workspaces",
+      "30min Timeout",
+    ],
     btnText: "Try Now",
     btnHref: "/#get-started",
   },
@@ -15,13 +20,7 @@ export const ghStudentPricingPlans: Pricing[] = [
       isEurope() ? "€8" : "$9"
     }</span> Free</>`,
     duration: "Per User/Month",
-    features: [
-      "100 hours/month",
-      "Private & Public Repos",
-      "4 Parallel Workspaces",
-      "30min Timeout",
-      "Limited to 6 months",
-    ],
+    features: ["All in Free", "100 hours/month", "Limited to 6 months"],
     btnText: "Claim Offer",
     btnHref: "https://gitpod.io/plans/",
     spiced: true,
@@ -47,7 +46,12 @@ export const ghTeacherPricingPlans: Pricing[] = [
   {
     title: "Open Source",
     price: "Free",
-    features: ["50 hours/month", "Private & Public Repos"],
+    features: [
+      "50 hours/month",
+      "Private & Public Repos",
+      "4 Parallel Workspaces",
+      "30min Timeout",
+    ],
     btnText: "Try Now",
     btnHref: "/#get-started",
   },
@@ -55,13 +59,7 @@ export const ghTeacherPricingPlans: Pricing[] = [
     title: "Teacher",
     price: `<span class="crossed-out">${isEurope() ? "€8" : "$9"}</span> Free`,
     duration: "100 hours/Month",
-    features: [
-      "100 hours/month",
-      "Private & Public Repos",
-      "4 Parallel Workspaces",
-      "30min Timeout",
-      "Limited to 6 months",
-    ],
+    features: ["All in Free", "100 hours/month", "Limited to 6 months"],
     btnText: "Claim Offer",
     btnHref: "https://gitpod.io/plans/",
     spiced: true,
