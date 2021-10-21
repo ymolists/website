@@ -24,6 +24,7 @@
     </p>
     <div class="flex-1">
       <button on:click={closeBanner}
+        class="align-middle"
         ><svg
           width="16"
           height="16"
