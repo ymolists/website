@@ -46,7 +46,7 @@
     {#each navItems as navItem}
       <NavItem {navItem} on:click={toggle} />
     {/each}
-    <ContactLink />
+    <ContactLink on:click={toggle} />
     {#if isLoggedIn}
       <DashboardButton class="text-lg h-8 w-28" />
     {:else}

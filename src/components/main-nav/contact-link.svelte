@@ -3,6 +3,7 @@
 </script>
 
 <NavItem
+  on:click
   navItem={{
     href: "/contact",
     label: "Contact",
