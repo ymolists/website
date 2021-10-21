@@ -2,7 +2,7 @@
   import Section from "./section.svelte";
   import type { ExploreSection } from "../types/explore-section.type";
 
-  export let contents: ExploreSection;
+  export let contents: ExploreSection = {};
 
   const {
     title = "Get Started",
@@ -13,7 +13,7 @@
       href: "/#get-started",
     },
     useKumquatIllustration = false,
-  } = contents || {};
+  } = contents;
 </script>
 
 <style type="text/postcss">

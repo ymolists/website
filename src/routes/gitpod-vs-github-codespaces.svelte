@@ -348,7 +348,7 @@
       </dd>
     </dl>
   </section>
-  <section class="card text-center">
+  <section class="card text-center shadow-normal">
     <h2 class="card-heading h5">GitHub<br />Codespaces</h2>
     <dl>
       <dt>Pricing (Hosted)</dt>

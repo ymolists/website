@@ -1,6 +1,6 @@
 <script lang="ts">
-  import PostPreview from "../blog/post-preview.svelte";
-  import Section from "../section.svelte";
+  import PostPreview from "./blog/post-preview.svelte";
+  import Section from "./section.svelte";
   import { session } from "$app/stores";
   import type { BlogPost } from "src/types/blog-post.type";
 
@@ -8,14 +8,16 @@
     (p: BlogPost) =>
       p.slug === "i-said-goodbye-to-local-development-and-so-can-you"
   );
+
+  export let title: string;
+  export let text: string;
 </script>
 
 <Section>
   <div class="text-center max-w-3xl mx-auto">
-    <h2>Helpful resources</h2>
+    <h2>{title}</h2>
     <p class="text-large">
-      If you are still uncertain about moving your local dev environment to the
-      cloud, this blog post will clear your thoughts.
+      {@html text}
     </p>
   </div>
   <div class="max-w-7xl mx-auto mt-small">

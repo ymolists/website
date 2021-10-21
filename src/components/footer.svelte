@@ -102,6 +102,11 @@
           </a>
         </li>
         <li>
+          <a href="/vs/local-development"
+            >Gitpod vs Local <br />Development
+          </a>
+        </li>
+        <li>
           <a
             href="https://www.gitpodstatus.com/"
             target="_blank"

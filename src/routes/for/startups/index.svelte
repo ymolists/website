@@ -5,7 +5,7 @@
   import ProgramBenefits from "../../../components/startups/program-benefits.svelte";
   import Header from "../../../components/startups/header.svelte";
   import Eligibility from "../../../components/startups/eligibility.svelte";
-  import HelpfulResources from "../../../components/startups/helpful-resources.svelte";
+  import GitpodVsLocalDevPost from "../../../components/gitpod-vs-local-development-post.svelte";
   import Faqs from "../../../components/startups/faqs.svelte";
   import Explore from "../../../components/explore.svelte";
 </script>
@@ -21,10 +21,12 @@
 
 <Eligibility />
 
-<HelpfulResources />
+<GitpodVsLocalDevPost
+  title="Helpful resources"
+  text="If you are still uncertain about moving your local dev environment to the
+  cloud, this blog post will clear your thoughts."
+/>
 
 <Faqs />
 
-<Explore
-  contents={exploreContents}
-/>
+<Explore contents={exploreContents} />

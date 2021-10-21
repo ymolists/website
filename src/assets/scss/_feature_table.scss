@@ -19,7 +19,7 @@
   line-height: 1.2;
 }
 .featureTable dl {
-  border-top: 1px solid var(--divider);
+  border-top: 2px solid var(--divider);
   padding-top: 2rem;
 }
 .featureTable .icon {
@@ -35,7 +35,7 @@
 .featureTable ul {
   text-transform: uppercase;
 }
-@media (min-width: 800px) {
+@media (min-width: 1060px) {
   .featureTable > * > * {
     display: grid;
     grid-auto-rows: 4rem;
@@ -58,7 +58,7 @@
     box-shadow: var(--shadow-brand);
   }
 }
-@media (max-width: 799.99px) {
+@media (max-width: 1059px) {
   .featureTable .toc {
     display: none;
   }
