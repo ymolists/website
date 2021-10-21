@@ -64,13 +64,13 @@
   }
 
   .footer__bottom {
-    @media (max-width: 340px) {
+    @media (max-width: 470px) {
       @apply flex-col-reverse items-center;
     }
   }
 
   .footer__copy {
-    @media (max-width: 340px) {
+    @media (max-width: 470px) {
       margin-top: var(--micro);
     }
   }
