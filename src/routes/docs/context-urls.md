@@ -22,6 +22,8 @@ Gitpod is aware of the following contexts:
 - [Issue Context](#issue-context)
 - [Pull/Merge Request Context](#pullmerge-request-context)
 
+Please note, these contexts are supported for GitHub, GitLab, and Bitbucket. This also includes self-hosted installations of these git providers, where available.
+
 ## Repository Context
 
 To start a new workspace, you prefix your repository URL with `gitpod.io/#`. E.g. [gitpod.io/#https://github.com/gitpod-io/website](https://gitpod.io/#https://github.com/gitpod-io/website).

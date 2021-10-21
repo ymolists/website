@@ -11,7 +11,7 @@ title: Prebuilds
 
 Download & install dependencies, run build scripts, you name it - tasks Gitpod takes care of **before** you start a new developer environment so you don't have to wait for any of that.
 
-With prebuilds enabled for your project, Gitpod runs the `before`, `init` and `prebuild` commands in your [`.gitpod.yml`](/docs/config-gitpod-file) file every time code is pushed to your repository. The resulting snapshot of the developer environment is called a prebuilt workspace.
+With prebuilds enabled for your project, Gitpod runs the `before` and `init` commands in your [`.gitpod.yml`](/docs/config-gitpod-file) file every time code is pushed to your repository. The resulting snapshot of the developer environment is called a prebuilt workspace.
 
 When anyone starts a new workspace, all Gitpod needs to do is load the prebuilt workspace. Since the heavy-lifting happened during the prebuild phase, the workspace starts up quickly, allowing you to start your work right away.
 
@@ -74,9 +74,12 @@ Prebuilds are configured in your repository's [`.gitpod.yml`](/docs/config-gitpo
 
 - `before`
 - `init`
-- `prebuild`
 
-Note the absence of the `command` task. Since this task may potentially run indefinitely, e.g. if you start a dev server, Gitpod does not execute the `command` task during prebuilds. To perform long-running tasks such as executing unit tests, you can use the `prebuild` task.
+Note the absence of the `command` task. Since this task may potentially run indefinitely, e.g. if you start a dev server, Gitpod does not execute the `command` task during prebuilds.
+
+Prebuilds have a timeout of 1 hour. If your `before` and `init` tasks combined exceed 1 hour, your prebuild will fail. Subscribe to [this issue](https://github.com/gitpod-io/gitpod/issues/6283) for updates when this limit will be lifted.
+
+Each prebuild starts with a clean environment. In other words, Gitpod does not cache artifacts between prebuilds. We do have _incremental prebuilds_ available in Beta though and if you have a use case where this would be benefitial, please let us know.
 
 ## Configure the GitHub app
 

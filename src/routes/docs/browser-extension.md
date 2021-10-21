@@ -27,7 +27,7 @@ If you are using Gitpod Self-Hosted you can still use the browser extension by c
 
 After you have installed the extension go to the options panel and enter your Gitpod Self-Hosted URL.
 
-<img width="461" alt="Gitpod browser extension configuration" src="https://user-images.githubusercontent.com/372735/91141921-57ce6c80-e6b0-11ea-92e2-8e3a624bb87e.png">
+<img width="461" alt="Gitpod browser extension configuration" src="/images/docs/beta/integrations/browser-extension-options.png">
 
 ### Accessing the options on Chrome
 

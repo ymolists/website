@@ -9,7 +9,7 @@ title: Environment Variables
 
 # Environment Variables
 
-You can pass environment variables into your workspace.
+You can pass environment variables into your workspace and use them in your code as usual. Please refer to the documentation of your programming language of choice for details on that.
 
 ## Default Environment Variables
 

@@ -18,4 +18,9 @@
       >let us know</a
     >.
   </p>
+  <p>
+    Also note that you are free to install any tools you need for your specific
+    use case. Please refer to the [custom docker image](/docs/config-docker)
+    documentation for more details.
+  </p>
 {/each}

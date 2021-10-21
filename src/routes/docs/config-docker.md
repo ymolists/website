@@ -27,6 +27,12 @@ The official Gitpod Docker images are hosted on <a href="https://hub.docker.com/
 
 You can find the source code for these images in <a href="https://github.com/gitpod-io/workspace-images/" target="_blank">this GitHub repository</a>.
 
+### Docker image tags
+
+For public images, feel free to specify a tag, e.g. `image: node:buster` if you are interested in a particular version of the Docker image.
+
+For Gitpod images, we reommend you do not specify a tag or use `:latest` to make sure you automatically benefit from security patches and fixes we release.
+
 ## Configure a custom Dockerfile
 
 This option provides you with the most flexibility. Start by adding the following configuration in your `.gitpod.yml` file:
@@ -48,10 +54,12 @@ FROM gitpod/workspace-full
 RUN brew install fzf
 ```
 
+**Docker support**: If you use the `gitpod/workspace-full` image, you get Docker support built-in to your environment.
+
 If you want a base image without the default tooling installed then use the <a href="https://github.com/gitpod-io/workspace-images/blob/master/base/Dockerfile" target="_blank">gitpod/workspace-base</a> image.
 
 ```dockerfile
-FROM gitpod/workspace-base:latest
+FROM gitpod/workspace-base
 
 # Install custom tools, runtime, etc.
 RUN brew install fzf

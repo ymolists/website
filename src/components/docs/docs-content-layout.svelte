@@ -1,5 +1,5 @@
 <script>
-  import BetaBanner from "./beta-banner.svelte";
+  import AnnouncementBanner from "./announcement-banner.svelte";
   import OpenGraph from "../open-graph.svelte";
   import FeedbackWidget from "./feedback-widget.svelte";
   import EditInGitpod from "../../components/docs/edit-in-gitpod.svelte";
@@ -24,7 +24,7 @@
   }}
 />
 <div class="content-docs">
-  <BetaBanner />
+  <AnnouncementBanner />
   <EditInGitpod />
   <slot />
   <FeedbackWidget type="docs" class="my-huge" />

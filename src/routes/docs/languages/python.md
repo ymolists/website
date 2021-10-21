@@ -23,6 +23,8 @@ Before we get started, here are some examples of already-[gitpodified](/blog/git
 | [django-locallibrary-tutorial](https://github.com/gitpod-io/django-locallibrary-tutorial) | An example website written in Django by MDN               | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/django-locallibrary-tutorial) |
 | [Gitpod-PyQt](https://github.com/gitpod-io/Gitpod-PyQt)                                   | A PyQt example for Gitpod                                 | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/Gitpod-PyQt)                  |
 | [wxPython-example](https://github.com/gitpod-io/wxPython-example)                         | A wxPython example for Gitpod                             | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/wxPython-example)             |
+| [template-python-django](https://github.com/gitpod-io/template-python-django)             | A Django example for Gitpod                               | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-python-django)       |
+| [template-python-flask](https://github.com/gitpod-io/template-python-flask)               | A Flask example for Gitpod                                | [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-python-flask)        |
 
 </div>
 

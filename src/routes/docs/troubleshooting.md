@@ -1,5 +1,5 @@
 ---
-section: troubleshooting
+section: references
 title: Troubleshooting
 ---
 
@@ -8,6 +8,8 @@ title: Troubleshooting
 </script>
 
 # Troubleshooting
+
+Please review this page to see if your issue is listed below. If not, contact us via our [Support page](/support) and we will gladly assist you.
 
 ## Incompatible Browser Extensions
 

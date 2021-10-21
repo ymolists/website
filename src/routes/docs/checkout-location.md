@@ -21,20 +21,22 @@ how we do that for the example <a href="https://github.com/gitpod-io/definitely-
 
 ```yaml
 ---
-checkoutLocation: "go/src/github.com/demo-apps/go-gin-app"
+checkoutLocation: "src/github.com/demo-apps/go-gin-app"
 workspaceLocation: "."
 tasks:
-  - command: |
-      cd /workspace/go/src/github.com/demo-apps/go-gin-app
-      go get -v ./...
+  - init: >
+      cd /workspace/src/github.com/demo-apps/go-gin-app &&
+      go get -v ./... &&
       go build -o app
+    command: >
+      cd /workspace/src/github.com/demo-apps/go-gin-app &&
       ./app
 ```
 
 In more detail:
 
 - By default, Gitpod clones the repository into the directory `/workspace`, which becomes the
-  root directory for the workspace. With `checkoutLocation` and `workspaceLocation` you can
+  root directory for the workspace. With [`checkoutLocation`](/docs/references/gitpod-yml#checkoutlocation) and [`workspaceLocation`](/docs/references/gitpod-yml#workspacelocation) you can
   change this behavior (the paths are taken relative to `/workspace`).
 - Gitpod preconfigures the `$GOPATH` environment variable to include the directory `/workspace/go`.
 - With `go get -v ./...` we retrieve the sources of the dependencies from GitHub.

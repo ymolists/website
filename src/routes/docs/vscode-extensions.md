@@ -62,18 +62,8 @@ You can view all pre-installed extensions by navigating to VS Code's Extensions 
 
 If you cannot find an extension by searching in Gitpod, it probably means that the extension hasn't been added to the [Open VSX](https://open-vsx.org/) registry yet.
 
-In that case, you can run the official CI script for publishing existing open-source VS Code extensions to open-vsx.org by following the steps described in https://github.com/open-vsx/publish-extensions#how-to-add-an-extension.
+In that case, please reach out to the extension author and politely ask them to publish their extension to the vendor-neutral, open source Open VSX registry. The "[How to Publish an Extension](https://github.com/eclipse/openvsx/wiki/Publishing-Extensions)" docs provide step-by-step instructions.
 
-The CI script automates the manual way of installing a `*.vsix` file. To manually install an extension:
+Please note that `.vsix` files downloaded from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode) should not be installed in Gitpod, because Microsoft prohibits the direct use of their marketplace by any non-Microsoft software, even though most extensions are actually open source and not developed or maintained by Microsoft.
 
-1. Drag a `.vsix` file into your editor's Explorer view where you see your project's files (you can delete that file after you installed the extension).
-1. Open the VS Code Extensions view on the left-side of the editor.
-1. Click the "..." menu at the top right of the view
-1. Select **Install from VSIX...**
-1. Enter the path to the `.vsix` file you uploaded in step 1 above and press Enter.
-
-- `.vsix` extension files can be found in the [Open VSX](https://open-vsx.org/) registry and [on GitHub](https://github.com/prettier/prettier-vscode/releases) as well.
-
-- Please note that `.vsix` files downloaded from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode) should not be installed in Gitpod, because Microsoft prohibits the direct use of their marketplace by any non-Microsoft software, even though most extensions are actually open source and not developed or maintained by Microsoft.
-
-- You can of course also develop and install your own extensions. Note that installing a `.vsix` file in Gitpod will not list that extension anywhere publicly except in your own `.gitpod.yml`, so you can also install private extensions that way.
+You can also develop and install your own extensions. Note that installing a `.vsix` file in Gitpod will not list that extension anywhere publicly except in your own `.gitpod.yml`, so you can also install private extensions that way.

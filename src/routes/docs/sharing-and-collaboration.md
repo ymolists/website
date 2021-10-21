@@ -57,3 +57,5 @@ This marks your workspace as shared. When you open it, you can copy & share its 
 > It is highly recommended to give workspace URLs only to trusted users and unshare workspaces as soon as sharing them is no longer necessary.
 >
 > **A running Gitpod workspace really is your personal machine.**
+>
+> At present, this feature cannot be disabled. If this is something you are interested in, please [let us know in this issue](https://github.com/gitpod-io/gitpod/issues/6328).

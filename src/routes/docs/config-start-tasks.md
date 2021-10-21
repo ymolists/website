@@ -25,9 +25,9 @@ Tasks are shell scripts that run on top of the Docker image you configure (learn
 
 With Gitpod, you have the following three types of tasks:
 
-- `before`
-- `init`
-- `command`
+- `before`: Use this for tasks that need to run before `init` and before `command`. For example, customzie the terminal or install global project dependencies.
+- `init`: Use this for heavy-lifting tasks such as downloading dependencies or compiling source code.
+- `command`: Use this to start your database or develoment server.
 
 The order in which these tasks execute depends on whether you have [Prebuilds](/docs/prebuilds) configured for your project and which startup scenario applies. Let's look at the details.
 
@@ -46,7 +46,7 @@ The `init` task is where you want to do the heavy lifting, things like:
 
 As displayed in the diagram above, we highly recommend you enable Prebuilds for your project. In that case, Gitpod executes the `before` and most importantly, `init` tasks automatically for each new commit to your project.
 
-By the time you start a new workspace, all that's left to do is execute the `begin` (optional) and `command` tasks. The latter most often starts a database and/or development server.
+By the time you start a new workspace, all that's left to do is execute the `before` (optional) and `command` tasks. The latter most often starts a database and/or development server.
 
 > Let Gitpod run the time-consuming `init` tasks continously behind the scene so you and anyone who opens your project on Gitpod doesn't have to wait.
 
@@ -102,7 +102,7 @@ You can configure how the terminal should be opened relative to the previous tas
 
 The examples below are common use cases you can get inspired by and adjust for your project's needs.
 
-> **Note**: `begin` and `init` tasks need to terminate while `command` can run indefinitely (i.e. until cancelled with Ctrl + C). This is because `begin` and `init` may run as part of a prebuild and if these tasks do not terminate, the prebuild will eventually fail with a timeout.
+> **Note**: `before` and `init` tasks need to terminate while `command` can run indefinitely (i.e. until cancelled with Ctrl + C). This is because `before` and `init` may run as part of a prebuild and if these tasks do not terminate, the prebuild will eventually fail with a timeout.
 
 ### One-line tasks
 
@@ -162,6 +162,24 @@ tasks:
   - name: Sidekiq
     init: gp sync-await bundle
     command: sidekiq
+```
+
+### Wait for a port to be available
+
+Let's say you have a web app dev server that takes a moment to start up to listen on port 3000. Once it's up and running, you want to run end-to-end tests against `http://localhost:3000`.
+
+You can achieve this with two terminals and the `gp await-port` CLI command.
+
+```yaml
+tasks:
+  - name: Dev Server
+    init: npm install
+    command: npm run dev
+
+  - name: e2e Tests
+    command: |
+      gp await-port 3000
+      npm run test
 ```
 
 ### Missing examples?

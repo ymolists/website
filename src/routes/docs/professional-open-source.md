@@ -13,6 +13,8 @@ It wouldn't have been possible for us to create Gitpod without all of the amazin
 
 Deeply devoted to the open-source community, we are happy to provide the professional open-source community a free **Professional Open Source** plan.
 
+We also [introduced the Gitpod Open-Source Sustainability Fund](/blog/gitpod-open-source-sustainability-fund).
+
 ## What does it include?
 
 No more hour restrictions, you'll be able to use Gitpod for any number of hours, on any public GitHub or GitLab repository.
