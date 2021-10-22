@@ -17,9 +17,9 @@ export const features: Feature[] = [
       source: terminalSource,
     },
   },
+  multiTrackDevelopmentFeature,
   { ...collaborationFeature, paragraph: 'Share running workspaces for pair programming, use port forwarding or share a snapshot as a copy of your workspace with teammates.' },
   { ...codeAnywhereFeature, paragraph: 'No need for over powered laptops - a chrome book and even iPads work just as fine. And if you adopt a remote work policy one day, then you don\'t have to worry about source code security.' },
-  multiTrackDevelopmentFeature,
 ];
 
 export const programBenefits: ProgramBenefit[] = [
@@ -78,7 +78,6 @@ export const exploreContents: ExploreSection = {
   title: "Apply Now",
   note: "Use all our services for free, up to 2 years.",
   link: { text: "Apply Now", href: "https://bit.ly/3liFICY" },
-  useKumquatIllustration: true
 };
 
 export const organisationsLists = [
