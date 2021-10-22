@@ -14,7 +14,7 @@
   <p>Get in touch and let us know how we can help.</p>
   <div class="flex flex-wrap justify-around mt-x-small">
     {#each contactActions as action}
-      <Action {action} class="w-80" />
+      <Action {action} width="19rem" />
     {/each}
   </div>
 </header>

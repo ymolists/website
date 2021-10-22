@@ -3,6 +3,7 @@
 
   import type { ContactAction } from "../../types/contact-action.type";
 
+  export let width: string = "";
   let clazz = "";
   export { clazz as class };
   export let action: ContactAction;
@@ -11,6 +12,7 @@
 
 <div
   class="flex flex-col justify-between items-center bg-white rounded-4xl px-xx-small py-not-huge mt-small shadow-normal {clazz}"
+  style="width: {width}"
 >
   <div>
     {#if icon}
