@@ -12,7 +12,16 @@
   import GitpodVsLocalDevPost from "../../../components/gitpod-vs-local-development-post.svelte";
   import Faqs from "../../../components/startups/faqs.svelte";
   import Explore from "../../../components/explore.svelte";
+  import OpenGraph from "../../../components/open-graph.svelte";
+
 </script>
+
+<OpenGraph
+  data={{
+    title: "Gitpod for Startups",
+    description: "With Gitpod for Startups you'll improve your developer experience, morale and productivity and focus more on what really counts: being creative and writing code to build great products."
+  }}
+/>
 
 <Header />
 

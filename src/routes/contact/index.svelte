@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import OpenGraph from "../../components/open-graph.svelte";
   import Action from "../../components/contact/action.svelte";
   import { contactActions } from "../../contents/contact";
 </script>
@@ -12,6 +13,13 @@
     @apply max-w-none !important;
   }
 </style>
+
+<OpenGraph 
+  data={{
+    title: "Contact",
+    description: "Get in touch and let us know how we can help."
+  }}
+/>
 
 <header>
   <h1>How can we help you?</h1>

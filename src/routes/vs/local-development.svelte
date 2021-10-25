@@ -8,7 +8,15 @@
   import Explore from "../../components/explore.svelte";
   import GitpodVsLocalDevelopmentPost from "../../components/gitpod-vs-local-development-post.svelte";
   import FeelTheDifference from "../../components/gitpod-vs-local-development/feel-the-difference.svelte";
+  import OpenGraph from "../../components/open-graph.svelte";
 </script>
+
+<OpenGraph
+  data={{
+    title: "Gitpod vs local development",
+    description: "Why should you move your dev environment to the cloud? Here is the answer."
+  }}
+/>
 
 <Header />
 
