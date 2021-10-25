@@ -28,9 +28,9 @@ Gitpod supports the following authentication providers:
 To authenticate your users with GitHub you need to create a [GitHub OAuth App](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/).
 Follow the guide linked above and:
 
-- set "Authentication callback URL" to:
+- set "Authentication callback URL" to after replacing example.com with your domain name:
 
-  https://<your-domain.com>/auth/github/callback
+  https://example.com/auth/github/callback
 
 - copy the following values and configure them in `values.yaml`:
   - `clientId`
