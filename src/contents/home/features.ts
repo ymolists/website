@@ -82,13 +82,13 @@ export const otherFeatures: Feature[] = [
       text: "More on collaboration",
     },
   },
- { 
-   ...codeAnywhereFeature,
-   moreButton: {
-    href: "#get-started",
-    text: "Try now",
+  {
+    ...codeAnywhereFeature,
+    moreButton: {
+      href: "#get-started",
+      text: "Try now",
+    },
   },
- },
 ];
 
 export const secondaryFeatures: SecondaryFeature[] = [
@@ -108,6 +108,6 @@ export const secondaryFeatures: SecondaryFeature[] = [
     icon: "/svg/features/secure.svg",
     title: "Secure by design",
     text:
-      "Gitpod centralizes all source code and safely stores it in the cloud, never locally. Security is at the core of everything we do at Gitpod.",
+      "Gitpod centralizes all source code and safely stores it in the cloud, never locally. Security is at the core of everything we do at Gitpod. <br><a href='/security'>More about security</a>",
   },
 ];
