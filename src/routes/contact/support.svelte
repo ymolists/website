@@ -7,6 +7,7 @@
   import type { Email } from "../../functions/submit-form";
   import OpenGraph from "../../components/open-graph.svelte";
   import SubmissionSuccess from "../../components/submission-success.svelte";
+  import { onMount } from "svelte";
 
   const studentUnlimitedSubject = "Educational Discount Verification";
 
@@ -105,6 +106,13 @@
       console.error(error);
     }
   };
+
+  onMount(() => {
+    if (window.location.search.includes("open-source-sponsorship")) {
+      formData.selectedSubject.value = "Open Source Sponsorship"
+      formData.selectedSubject.valid = true
+    }
+  })
 </script>
 
 <style type="text/postcss">

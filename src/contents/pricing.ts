@@ -66,7 +66,7 @@ export const otherPlans = [
       "Get free, <strong>unlimited hours</strong> on any <strong>public repository</strong> when you meet the <a href='/docs/professional-open-source#who-is-eligible'>requirements.</a>",
     ],
     btnText: "Apply now",
-    btnHref: "/contact",
+    btnHref: "/contact/support?open-source-sponsorship",
     trackingName: "pro-open-source",
   },
   {
