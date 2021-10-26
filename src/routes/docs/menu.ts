@@ -23,6 +23,7 @@ export const MENU: MenuEntry[] = [
     M("Environment Variables", "environment-variables"),
     M("Checkout and Workspace Location", "checkout-location"),
     M("Browser Settings", "configure/browser-settings"),
+    M("Tailscale", "configure/tailscale"),
   ]),
   M("Develop", "develop", [
     M("One workspace per task", "workspaces"),
