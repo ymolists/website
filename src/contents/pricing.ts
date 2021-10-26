@@ -8,9 +8,6 @@ export const pricingPlans: Pricing[] = [
     features: [
       "50 hours/month",
       "Private & Public Repos",
-      "Unlimited Prebuilds",
-      "Shared Workspaces",
-      "Snapshots",
       "4 Parallel Workspaces",
       "30min Timeout",
     ],
