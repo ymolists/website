@@ -6,7 +6,7 @@ export const primaryCtas: Resource[] = [
 	{
 		icon: '/svg/community/discord.svg',
 		title: 'Discord Chat',
-		text: 'Hang out, collaborate and connect with the Gitpod community, take part in live coding sessions, share what you\'ve built with Gitpod and more! Join us over on Discord.',
+		text: 'Hang out, collaborate and connect with the Gitpod community, take part in live coding sessions and more!',
 		link: {
 			href: '/chat',
 			text: "Join Discord"
@@ -15,7 +15,7 @@ export const primaryCtas: Resource[] = [
 	{
 		icon: '/svg/community/discourse.svg',
 		title: 'Discourse Forum',
-		text: ' Our community discussion forum, perfect for asking questions that would benefit others too. Join our forum.',
+		text: ' Our community discussion forum, perfect for asking questions that would benefit others too.',
 		link: {
 			href: 'https://community.gitpod.io',
 			text: "View forum"
@@ -24,7 +24,7 @@ export const primaryCtas: Resource[] = [
 	{
 		icon: '/svg/community/twitter.svg',
 		title: 'Twitter',
-		text: 'Stay up to date on the latest Gitpod news and help us spread the Gitpod love. Follow us on Twitter!',
+		text: 'Stay up to date on the latest Gitpod news and help us spread the Gitpod love.',
 		link: {
 			href: 'https://twitter.com/gitpod',
 			text: "Follow on Twitter"
@@ -33,7 +33,7 @@ export const primaryCtas: Resource[] = [
 	{
 		icon: '/svg/community/github.svg',
 		title: 'GitHub',
-		text: 'Do you want to contribute to Gitpod? Or need to report a bug? Check our our GitHub project.',
+		text: 'Do you want to contribute to Gitpod? Or need to report a bug?',
 		link: {
 			href: 'https://github.com/gitpod-io/',
 			text: "Go to GitHub"
@@ -42,7 +42,7 @@ export const primaryCtas: Resource[] = [
 	{
 		icon: '/svg/community/youtube.svg',
 		title: 'YouTube',
-		text: 'Prefer watching videos and previous livestreams to learn about Gitpod? Head over to our YouTube channel!',
+		text: 'Prefer watching videos and previous livestreams to learn about Gitpod?',
 		link: {
 			href: 'https://www.youtube.com/c/Gitpod',
 			text: "Go to YouTube"
@@ -51,7 +51,7 @@ export const primaryCtas: Resource[] = [
 	{
 		icon: '/svg/community/reddit.svg',
 		title: 'Reddit',
-		text: ' Do you have Gitpod content that you\'d like to share? Check out our subreddit.',
+		text: ' Do you have Gitpod content that you\'d like to share?',
 		link: {
 			href: 'https://www.reddit.com/r/gitpod/',
 			text: "Go to Reddit"

@@ -12,7 +12,7 @@
   </p>
   <div class="flex flex-wrap justify-around">
     {#each letsCollaborateActions as action}
-      <Action {action} class="max-w-sm lg:max-w-md" />
+      <Action {action} class="max-w-sm lg:max-w-md" btnClass="btn-cta" />
     {/each}
   </div>
 </Section>

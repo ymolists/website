@@ -6,6 +6,7 @@
   export let width: string = "";
   let clazz = "";
   export { clazz as class };
+  export let btnClass: "btn-primary" | "btn-cta" = "btn-primary";
   export let action: ContactAction;
   const { icon, title, text, link } = action;
 </script>
@@ -24,6 +25,6 @@
   <a
     href={link.href}
     target={isAnExternalLink(link.href) ? "_blank" : undefined}
-    class="btn-primary">{link.text}</a
+    class={btnClass}>{link.text}</a
   >
 </div>
