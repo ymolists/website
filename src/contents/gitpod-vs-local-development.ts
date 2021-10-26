@@ -13,19 +13,19 @@ export const benefits: Benefit[] = [
     icon: "/svg/gitpod-vs-local-development/remote-work.svg",
     title: "Remote work",
     text: "Work from anywhere on any device. All you need is a browser.",
-    transform: "scale(1.3)",
+    transform: "scale(1.4)",
   },
   {
     icon: "/svg/gitpod-vs-local-development/faster-onboarding.svg",
     title: "Faster onboarding",
     text: "Ready to code within seconds. No need to set up dev environments.",
-    transform: "scale(1.4)",
+    transform: "scale(1.5)",
   },
   {
     icon: "/svg/gitpod-vs-local-development/open-source-contributions.svg",
     title: "Open-source contributions",
     text: "Increase in open-source contributions thanks to an easy onboarding.",
-    transform: "scale(1.2)",
+    transform: "scale(1.5) translateY(4px)",
   },
 ];
 

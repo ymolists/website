@@ -17,9 +17,9 @@
   <img
     src={icon}
     alt={title}
-    class="mx-auto h-16"
+    class="mx-auto w-20 h-16"
     style="transform: {transform};"
   />
-  <h2 class="h5 mt-x-small mb-micro">{title}</h2>
+  <h2 class="h5 mt-xx-small mb-micro">{title}</h2>
   <p class="px-x-small">{text}</p>
 </div>
