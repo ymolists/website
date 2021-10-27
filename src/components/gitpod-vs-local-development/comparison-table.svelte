@@ -6,7 +6,7 @@
   import ComparisonTableSection from "./comparison-table-section.svelte";
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .title {
     max-width: 1260px;
 

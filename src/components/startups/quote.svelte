@@ -1,4 +1,4 @@
-<style type="text/postcss">
+<style lang="postcss">
   [class|="kumquat"] {
     @apply absolute;
   }
@@ -20,7 +20,9 @@
   }
 </style>
 
-<div class="relative card shadow-xl bg-white mt-small md:mt-x-large py-small md:mx-auto">
+<div
+  class="relative card shadow-xl bg-white mt-small md:mt-x-large py-small md:mx-auto"
+>
   <img
     src="/images/startups/kumquat-left.png"
     alt="Gitpod Kumquat"
@@ -43,11 +45,7 @@
       </div>
     </div>
     <div class="inline-flex justify-center">
-      <img
-        src="/images/startups/instana.png"
-        class="h-10"
-        alt="Instana"
-      />
+      <img src="/images/startups/instana.png" class="h-10" alt="Instana" />
     </div>
   </div>
 

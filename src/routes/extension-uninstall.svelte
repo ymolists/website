@@ -77,7 +77,7 @@
   };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   header {
     @apply mb-0 !important;
   }

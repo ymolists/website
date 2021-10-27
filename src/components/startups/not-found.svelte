@@ -1,4 +1,4 @@
-<style type="text/postcss">
+<style lang="postcss">
   p {
     @apply max-w-md mx-auto text-center;
 

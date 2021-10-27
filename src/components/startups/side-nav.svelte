@@ -16,7 +16,7 @@
   });
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .parent {
     position: -webkit-sticky;
     max-width: 120px;

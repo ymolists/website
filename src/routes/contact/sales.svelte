@@ -25,10 +25,10 @@
 
   let sectionStart: HTMLElement;
   let isCloudPlatformsSelectShown = false;
-    let cloudInfrastructure = {
-      el: null,
-      valid: false,
-      value: "",
+  let cloudInfrastructure = {
+    el: null,
+    valid: false,
+    value: "",
   };
 
   const formData: Form = {
@@ -142,7 +142,7 @@
   };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .h3 {
     @apply mb-small;
   }
@@ -227,13 +227,13 @@
                 name="cloudInfrastructure"
                 bind:value={formData.cloudInfrastructure.value}
                 on:change={(e) => {
-                  formData.cloudInfrastructure.valid = 
+                  formData.cloudInfrastructure.valid =
                     formData.cloudInfrastructure.value &&
                     // @ts-ignore
                     e.target.validity.valid;
                 }}
               >
-                <option class="option"
+                <option class="option" value=""
                   >Which cloud infrastructure do you use?</option
                 >
                 {#each cloudPlatforms as n}
@@ -302,7 +302,7 @@
                   formData.noOfEngineers.el.checkValidity();
               }}
             >
-              <option class="option">Total number of engineers</option>
+              <option class="option" value="">Total number of engineers</option>
               {#each noOfEngineers as n}
                 <option class="option" value={n}>
                   {n}

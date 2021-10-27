@@ -9,7 +9,7 @@
     $page.path === "/" ? /\/$/.test(href) : href.indexOf($page.path) >= 0;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   a {
     @media (min-width: 1050px) {
       @apply text-base;

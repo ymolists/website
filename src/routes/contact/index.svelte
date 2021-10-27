@@ -3,7 +3,7 @@
   import { contactActions } from "../../contents/contact";
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   header {
     @apply max-w-none !important;
   }

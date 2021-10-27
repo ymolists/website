@@ -22,7 +22,7 @@ module.exports = {
     extend: {
       screens: {
         lgx: "1140px",
-        "1/2xl": "1442px"
+        "1/2xl": "1442px",
       },
       backgroundImage: {
         "gitpod-kumquat-gradient":

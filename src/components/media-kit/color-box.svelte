@@ -1,7 +1,7 @@
 <script lang="ts">
   export let colorName: string;
   export let colorValue: string;
-  export let isDark: boolean;
+  export let isDark: boolean = false;
 </script>
 
 <div

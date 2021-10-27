@@ -1,4 +1,16 @@
-export const getContext: import("@sveltejs/kit").GetContext = async () => {
+import { sequence } from "@sveltejs/kit/hooks";
+
+export const getSession: import("@sveltejs/kit").GetSession = async (
+  request
+) => {
+  return {
+    changelogEntries: request.locals.changelogEntries,
+    posts: request.locals.posts,
+    guides: request.locals.guides,
+  };
+};
+
+const handleBlogPosts = async ({ request, resolve }) => {
   const posts = await Promise.all(
     Object.entries(import.meta.glob("/src/routes/blog/*.md")).map(
       async ([path, page]) => {
@@ -9,7 +21,11 @@ export const getContext: import("@sveltejs/kit").GetContext = async () => {
     )
   );
   posts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+  request.locals.posts = posts;
+  return await resolve(request);
+};
 
+const handleChangelogEntries = async ({ request, resolve }) => {
   const changelogEntries = await Promise.all(
     Object.entries(import.meta.glob("/src/contents/changelog/*.md")).map(
       async ([, mod]) => {
@@ -22,7 +38,11 @@ export const getContext: import("@sveltejs/kit").GetContext = async () => {
     )
   );
   changelogEntries.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+  request.locals.changelogEntries = changelogEntries;
+  return await resolve(request);
+};
 
+const handleGuides = async ({ request, resolve }) => {
   const guides = await Promise.all(
     Object.entries(import.meta.glob("/src/routes/guides/*.md")).map(
       async ([path, page]) => {
@@ -33,29 +53,12 @@ export const getContext: import("@sveltejs/kit").GetContext = async () => {
     )
   );
   guides.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
-
-  return {
-    changelogEntries,
-    posts,
-    guides,
-  };
+  request.locals.guides = guides;
+  return await resolve(request);
 };
 
-export const getSession: import("@sveltejs/kit").GetSession = async ({
-  context,
-}) => {
-  return {
-    changelogEntries: context.changelogEntries,
-    posts: context.posts,
-    guides: context.guides,
-  };
-};
-
-export const handle: import("@sveltejs/kit").Handle = async ({
-  request,
-  render,
-}) => {
-  const response = await render(request);
+const handleHeaders = async ({ request, resolve }) => {
+  const response = await resolve(request);
 
   return {
     ...response,
@@ -68,3 +71,10 @@ export const handle: import("@sveltejs/kit").Handle = async ({
     },
   };
 };
+
+export const handle = sequence(
+  handleHeaders,
+  handleBlogPosts,
+  handleChangelogEntries,
+  handleGuides
+);

@@ -7,20 +7,20 @@
   let ideType = "browser";
   let toggleChecked = false;
 
-  $: if(toggleChecked) {
-    ideType = 'desktop'
+  $: if (toggleChecked) {
+    ideType = "desktop";
   } else {
-    ideType = 'browser'
+    ideType = "browser";
   }
 
-  const handleIdeChange = (e: {detail: {text: string}}) => {
+  const handleIdeChange = (e: { detail: { text: string } }) => {
     selectedIde = e.detail.text;
-  }
+  };
 
   $: idetoRender = ides.find((ide) => ide.name === selectedIde);
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   p {
     max-width: 638px;
   }
@@ -30,14 +30,17 @@
   <div class="row">
     <h2 class="text-center">Your environment, your tools, your craft</h2>
     <div class="max-w-5xl mx-auto">
-      <ScreenshotToggle bind:value={toggleChecked} on:change={() => (ideType = "desktop")} />
+      <ScreenshotToggle
+        bind:value={toggleChecked}
+        on:change={() => (ideType = "desktop")}
+      />
       <div class="relative">
         <div class="py-micro pl-0 pr-micro sm:px-xx-small">
           <img
-          src="/images/index/{idetoRender.screenshots[ideType]}"
-          alt={idetoRender.label}
-          class="shadow-brand rounded-lg"
-        />
+            src="/images/index/{idetoRender.screenshots[ideType]}"
+            alt={idetoRender.label}
+            class="shadow-brand rounded-lg"
+          />
         </div>
         <IdeSwitcher on:message={handleIdeChange} {ides} />
       </div>

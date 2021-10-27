@@ -16,26 +16,15 @@
     display: flex;
     justify-content: center;
   }
-
-  :global(.carousel.carousel.carousel) :global(li) {
-    background-color: var(--divider);
-    transition: all 0.2s;
-
-    &:hover {
-      background-color: var(--dark-grey);
-    }
-
-    &.active {
-      background-color: var(--dark-grey);
-    }
-  }
 </style>
 
 <Section class="-mb-20">
   <div class="row">
     <div class="text-center">
       <h2>Putting developer experience first</h2>
-      <p class="text-large mt-xx-small mb-medium">Bring back joy and speed to your workflows.</p>
+      <p class="text-large mt-xx-small mb-medium">
+        Bring back joy and speed to your workflows.
+      </p>
     </div>
     <Carousel>
       {#each testimonials as testimonial, position}

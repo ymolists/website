@@ -2,7 +2,7 @@
   import Section from "../section.svelte";
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   ul {
     max-width: 365px;
 

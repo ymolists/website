@@ -4,7 +4,7 @@
   export let contactCard: ContactCard;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .card {
     @apply mx-auto lg:mx-0;
     @media (max-width: 375px) {

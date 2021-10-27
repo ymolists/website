@@ -41,7 +41,7 @@
   };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .selected {
     @apply grayscale-0 scale-150;
   }

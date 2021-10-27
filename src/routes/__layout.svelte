@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import { onMount } from "svelte";
   import Segment from "../components/segment.svelte";
   import LayoutMain from "../components/layout-main.svelte";
@@ -10,6 +11,18 @@
   onMount(() => {
     document.cookie = "gitpod-marketing-website-visited=true;domain=gitpod.io";
   });
+
+  $: if ($page.path) {
+    // Workaround until https://github.com/sveltejs/kit/issues/2664 is fixed
+    if (typeof window !== "undefined" && window.location.hash) {
+      const deepLinkedElement = document.getElementById(
+        window.location.hash.substring(1)
+      );
+      if (deepLinkedElement) {
+        deepLinkedElement.scrollIntoView();
+      }
+    }
+  }
 </script>
 
 <style>

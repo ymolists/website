@@ -2,20 +2,12 @@
 ports:
   - port: 3000
     onOpen: open-preview
-  - port: 10000
-    onOpen: ignore
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - init: npm install
     command: |
-      echo "Applying a temporary workaround until we can upgrade to SvelteKit 1.0"
-      (
-        cd ./node_modules/vite/dist/node/chunks/ &&
-        sed -i 's/JSON.stringify(port)/JSON.stringify(443)/g' * &&
-        export WSS_HOST=`gp url 24678 | sed 's#https://##g'` &&
-        sed -i "s#JSON.stringify(host)#JSON.stringify(\"$WSS_HOST\")#g" *
-      )
+      export HMR_HOST=`gp url 3000`
       npm run dev
 
 github:

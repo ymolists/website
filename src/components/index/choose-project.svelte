@@ -106,7 +106,7 @@
   });
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .row {
     width: 100%;
   }

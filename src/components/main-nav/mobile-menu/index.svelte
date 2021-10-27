@@ -30,7 +30,7 @@
   };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   /* Always make sure to keep the media query intact with one specified above in the matchMedia call. */
   @media (min-width: 1050px) {
     .nav-items {

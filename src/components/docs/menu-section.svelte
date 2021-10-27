@@ -14,7 +14,7 @@
     : /\/docs\/?$/.test(menuItem.path);
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   /* override _forms.scss */
   .menu-item {
     margin-bottom: 0;

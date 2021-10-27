@@ -16,7 +16,7 @@
   } = contents;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .explore {
     @apply flex items-center bg-off-white shadow-normal max-w-none text-left;
     border-radius: 4rem;
@@ -83,7 +83,11 @@
           {note}
         </p>
       {/if}
-      <a href={link.href} target={link.href.startsWith("http") ? "_blank" : null} class="btn-conversion">{link.text}</a>
+      <a
+        href={link.href}
+        target={link.href.startsWith("http") ? "_blank" : null}
+        class="btn-conversion">{link.text}</a
+      >
     </div>
     <div class="explore__illustration">
       <img

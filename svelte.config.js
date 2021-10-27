@@ -1,19 +1,19 @@
-const adapterNetlify = require("@sveltejs/adapter-netlify");
-const { mdsvex } = require("mdsvex");
-const headings = require("remark-autolink-headings");
-const remarkExternalLinks = require("remark-external-links");
-const slug = require("remark-slug");
-const sveltePreprocess = require("svelte-preprocess");
-const pkg = require("./package.json");
-const remarkSetImagePath = require("./src/utils/remark-set-image-path.cjs");
-const remarkEmbedVideo = require("./src/utils/remark-embed-video.cjs");
-const remarkLinkWithImageAsOnlyChild = require("./src/utils/remark-link-with-image-as-only-child.cjs");
-const remarkHeadingsPermaLinks = require("./src/utils/remark-headings-permalinks.cjs");
-const toString = require("mdast-util-to-string");
-const h = require("hastscript");
+import adapterNetlify from "@sveltejs/adapter-netlify";
+import { mdsvex } from "mdsvex";
+import headings from "remark-autolink-headings";
+import remarkExternalLinks from "remark-external-links";
+import slug from "remark-slug";
+import sveltePreprocess from "svelte-preprocess";
+import remarkSetImagePath from "./src/utils/remark-set-image-path.cjs";
+import remarkEmbedVideo from "./src/utils/remark-embed-video.cjs";
+import remarkLinkWithImageAsOnlyChild from "./src/utils/remark-link-with-image-as-only-child.cjs";
+import remarkHeadingsPermaLinks from "./src/utils/remark-headings-permalinks.cjs";
+import toString from "mdast-util-to-string";
+import h from "hastscript";
+import { fail } from "assert";
 
 /** @type {import('@sveltejs/kit').Config} */
-module.exports = {
+const config = {
   extensions: [".svelte", ".md"],
 
   kit: {
@@ -31,12 +31,22 @@ module.exports = {
     prerender: {
       crawl: true,
       enabled: true,
-      force: false,
-      pages: ["*"],
+      onError: "fail",
+      entries: ["*"],
     },
     router: true,
     ssr: true,
     target: "#svelte",
+    vite: {
+      server: {
+        hmr: {
+          clientPort: process.env.HMR_HOST ? 443 : 24678,
+          host: process.env.HMR_HOST
+            ? process.env.HMR_HOST.substring("https://".length)
+            : "localhost",
+        },
+      },
+    },
   },
 
   // options passed to svelte.preprocess (https://svelte.dev/docs#svelte_preprocess)
@@ -86,3 +96,5 @@ module.exports = {
     }),
   ],
 };
+
+export default config;

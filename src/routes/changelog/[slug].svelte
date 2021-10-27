@@ -20,7 +20,7 @@
   const { date, title, excerpt, content, image, alt } = changelogEntry;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .entry {
     max-width: 800px;
     @apply mx-auto;

@@ -5,7 +5,7 @@
   export let path: string;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .search-result__text {
     @media (max-width: 768px) {
       max-width: 40%;

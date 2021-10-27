@@ -63,52 +63,51 @@ export const setupDetails = {
       {
         term: "Setup new Project",
         data: [
-          'clones the source code',
-          'ensures the correct runtime versions are installed (e.g. Java, Node, .NET)',
-          'makes sure the project supports his operating system',
-          'follows onboarding instructions, potentially spending up to a few days on this'
-        ]
+          "clones the source code",
+          "ensures the correct runtime versions are installed (e.g. Java, Node, .NET)",
+          "makes sure the project supports his operating system",
+          "follows onboarding instructions, potentially spending up to a few days on this",
+        ],
       },
       {
         term: "Develop a new feature",
         data: [
-          'pulls latest default branch',
-          'creates feature branch',
-          'ensures correct runtimes',
-          'ensures correct dependencies',
-          'starts database and dev servers',
-        ]
-      }, {
+          "pulls latest default branch",
+          "creates feature branch",
+          "ensures correct runtimes",
+          "ensures correct dependencies",
+          "starts database and dev servers",
+        ],
+      },
+      {
         term: "Switch context",
         data: [
-          'git stash',
-          'git pull',
-          'changes branch',
-          'ensures correct runtimes',
-          'ensures correct dependencies',
-          'review code',
-          'changes back to previous branch',
-          'get stashed files',
-          'ensures correct runtimes',
-          'ensures correct dependencies',
-        ]
+          "git stash",
+          "git pull",
+          "changes branch",
+          "ensures correct runtimes",
+          "ensures correct dependencies",
+          "review code",
+          "changes back to previous branch",
+          "get stashed files",
+          "ensures correct runtimes",
+          "ensures correct dependencies",
+        ],
       },
       {
         term: "Set up a new computer",
         data: [
-          'installs runtimes',
-          'installs editors',
-          'install editor extensions',
-          'configures git',
-        ]
+          "installs runtimes",
+          "installs editors",
+          "install editor extensions",
+          "configures git",
+        ],
       },
       {
         term: "Contribute to open-source projects",
-        data: [
-          'repeating all steps of SETUP NEW PROJECT 🥱'
-        ]
-      }
-    ]
+        data: ["repeating all steps of SETUP NEW PROJECT 🥱"],
+      },
+    ],
   },
   alice: {
     image: "/images/gitpod-vs-local-development/alice.png",
@@ -117,7 +116,7 @@ export const setupDetails = {
       {
         term: "Setup new Project",
         data: [
-          'creates a .gitpod.yml file at the root of her project',
+          "creates a .gitpod.yml file at the root of her project",
           `
           adds start task, e.g.
           <div class="code">
@@ -126,36 +125,35 @@ export const setupDetails = {
             <span>&nbsp;&nbsp;&nbsp;&nbsp;command:</span> npm run dev
           </div>
           `,
-          'enables Prebuilds'
-        ]
+          "enables Prebuilds",
+        ],
       },
       {
         term: "Develop a new feature",
         data: [
-          'opens new browser tab',
+          "opens new browser tab",
           'prefixes the issue URL with gitpod.io/#&lang;issue-url&rang; or uses the Gitpod <a href="/docs/browser-extension">browser extension</a>',
-        ]
-      }, {
+        ],
+      },
+      {
         term: "Switch context",
         data: [
-          'opens new browser tab',
+          "opens new browser tab",
           'prefixes the PR URL with gitpod.io/#&lang;issue-url&rang; or uses the Gitpod <a href="/docs/browser-extension">browser extension</a>',
-          'reviews code within Gitpod',
-          'closes browser tab',
-        ]
+          "reviews code within Gitpod",
+          "closes browser tab",
+        ],
       },
       {
         term: "Set up a new computer",
-        data: [
-          'only needs is a browser',
-        ]
+        data: ["only needs is a browser"],
       },
       {
         term: "Contribute to open-source projects",
         data: [
-          'launches workspace with a single click for all project with a gitpod.yml configured'
-        ]
-      }
-    ]
-  }
-}
+          "launches workspace with a single click for all project with a gitpod.yml configured",
+        ],
+      },
+    ],
+  },
+};

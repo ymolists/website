@@ -17,10 +17,10 @@
   } = feature;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   :global(.feature-container-section:nth-of-type(even)) .preview {
-      @apply col-start-1;
-      @apply row-start-1;
+    @apply col-start-1;
+    @apply row-start-1;
   }
 
   .feature :global(code) {

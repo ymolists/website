@@ -22,8 +22,10 @@
           type === "newsletter" ? type : "Ambassador Program"
         }.`;
       } else if (response.status === 409) {
-        resultMessage = type === "newsletter" ?
-          "Lean back and relax. The next newsletter will be sent right to your inbox." : "We will get back to you once the ambassador program is ready.";
+        resultMessage =
+          type === "newsletter"
+            ? "Lean back and relax. The next newsletter will be sent right to your inbox."
+            : "We will get back to you once the ambassador program is ready.";
         titleText = "You are already signed up";
       } else {
         resultMessage = "Oh no, something went wrong :(.";
@@ -34,7 +36,7 @@
   };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   form {
     max-width: 95vw;
     @media (min-width: 450px) {
@@ -59,7 +61,9 @@
   {#if resultMessage}
     <p class="">{resultMessage}</p>
   {:else}
-    <p class="text-medium">Sign up now for our {type === "newsletter" ? type : "Ambassador Program"}.</p>
+    <p class="text-medium">
+      Sign up now for our {type === "newsletter" ? type : "Ambassador Program"}.
+    </p>
     <div class="flex mt-micro lgx:mt-x-small">
       <input
         type="email"

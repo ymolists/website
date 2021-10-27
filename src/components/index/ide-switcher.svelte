@@ -45,7 +45,7 @@
   };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   button {
     @apply outline-none;
   }

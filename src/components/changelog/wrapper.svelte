@@ -3,7 +3,7 @@
   export { clazz as class };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   :global(h2:not(.newsletter-title)) {
     @apply mt-12 mb-4 md:mt-16 !important;
   }

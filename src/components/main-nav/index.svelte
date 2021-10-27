@@ -55,7 +55,7 @@
         !!document.cookie.match("gitpod-user=true");
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   nav {
     transition: border-color 0.2s linear;
   }

@@ -18,5 +18,5 @@
     <div><slot name="description" /></div>
   </div>
 
-  <PricingBoxes {pricingPlans} />
+  <PricingBoxes {pricingPlans} trackingContext="general" />
 </div>

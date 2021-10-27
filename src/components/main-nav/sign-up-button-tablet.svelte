@@ -1,4 +1,4 @@
-<style type="text/postcss">
+<style lang="postcss">
   a {
     @media (min-width: 1050px) {
       @apply hidden;

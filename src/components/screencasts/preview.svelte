@@ -4,7 +4,7 @@
 
   export let screencast: Screencast;
   export let screencastNumber: number;
-  export let headlineOrder: "h3";
+  export let headlineOrder: "h3" | "" = "";
 
   $: screencastNumberPadded = `${screencastNumber}`.padStart(3, "0");
 </script>

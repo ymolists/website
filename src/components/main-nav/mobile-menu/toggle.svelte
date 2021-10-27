@@ -13,7 +13,7 @@
   };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   button {
     @media (min-width: 1050px) {
       @apply hidden;

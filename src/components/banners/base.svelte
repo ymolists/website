@@ -25,7 +25,7 @@
   });
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   :global(.banner-is-shown) :global(.hero) {
     @apply mt-small !important;
   }

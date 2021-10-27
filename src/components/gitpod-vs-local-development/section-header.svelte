@@ -3,7 +3,7 @@
   export let name: string;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .card-heading {
     @apply flex flex-col items-center justify-center pb-x-small;
   }

@@ -7,9 +7,6 @@
   import { ghTeacherPricingPlans as pricingPlans } from "../contents/github-page";
 </script>
 
-<style>
-</style>
-
 <OpenGraph
   data={{
     title: "GitHub Teacher Toolbox",

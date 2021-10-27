@@ -9,7 +9,7 @@
   };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   header {
     @apply mb-0 !important;
   }
@@ -31,5 +31,5 @@
 </header>
 
 <Modal isOpen={isNewsLetterFormShown} on:close={handleClose}>
-  <Signup type="newsletter"/>
+  <Signup type="newsletter" />
 </Modal>

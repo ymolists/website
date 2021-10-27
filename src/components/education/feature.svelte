@@ -4,7 +4,7 @@
   export let feature: EducationFeature;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .card {
     @apply gap-5 my-micro items-start;
     min-height: 192px;

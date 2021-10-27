@@ -109,13 +109,13 @@
 
   onMount(() => {
     if (window.location.search.includes("open-source-sponsorship")) {
-      formData.selectedSubject.value = "Open Source Sponsorship"
-      formData.selectedSubject.valid = true
+      formData.selectedSubject.value = "Open Source Sponsorship";
+      formData.selectedSubject.valid = true;
     }
-  })
+  });
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .h3 {
     @apply mb-small;
   }

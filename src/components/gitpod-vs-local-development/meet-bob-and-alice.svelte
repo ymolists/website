@@ -6,7 +6,7 @@
   import ComparisonTable from "./comparison-table.svelte";
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .intros {
     max-width: 820px;
   }

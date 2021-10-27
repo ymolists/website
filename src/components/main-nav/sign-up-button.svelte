@@ -3,7 +3,7 @@
   export { clazz as class };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   a {
     @apply sm:hidden;
     @media (min-width: 1050px) {

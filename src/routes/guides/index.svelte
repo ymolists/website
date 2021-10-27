@@ -15,7 +15,7 @@
   export let guides = [];
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   header {
     @apply mb-huge !important;
   }

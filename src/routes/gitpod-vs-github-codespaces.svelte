@@ -6,7 +6,7 @@
   import OpenGraph from "../components/open-graph.svelte";
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .featureTable + p {
     margin: auto;
     max-width: 60%;

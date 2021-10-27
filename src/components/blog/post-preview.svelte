@@ -12,7 +12,7 @@
   export let headlineOrder: "h3" | "" = "";
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .blurb > :first-child {
     @media (min-width: 1280px) {
       flex: 0 0 75%;

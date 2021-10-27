@@ -29,7 +29,7 @@
   ];
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   a {
     @apply text-dark-grey no-underline;
   }
@@ -102,9 +102,7 @@
           </a>
         </li>
         <li>
-          <a href="/vs/local-development"
-            >Gitpod vs Local <br />Development
-          </a>
+          <a href="/vs/local-development">Gitpod vs Local <br />Development </a>
         </li>
         <li>
           <a

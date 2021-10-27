@@ -9,7 +9,7 @@
   });
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   section {
     @apply pb-0 mt-x-large sm:mt-large;
   }

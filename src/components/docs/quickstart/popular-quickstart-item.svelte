@@ -4,7 +4,7 @@
   export let icon: string;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .btn-conversion {
     min-width: unset;
   }

@@ -1,4 +1,4 @@
-<style type="text/postcss">
+<style lang="postcss">
   h1 {
     font-style: normal;
     font-weight: bold;

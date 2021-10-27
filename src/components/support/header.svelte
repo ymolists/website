@@ -2,7 +2,7 @@
   import Search from "../docs/search.svelte";
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   header {
     @apply px-0 !important;
   }

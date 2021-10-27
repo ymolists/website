@@ -28,7 +28,7 @@ Folks in technical education, I have a hot-tip for you - **Running workshops is 
 
 Yup, that’s right, running an operating system in your browser is now possible in 2021. In 2019, which now seems like an eternity thanks COVID19, I was invited to deliver a workshop at [Compose](https://www.composeconference.org/2019-melbourne/speakers/#geoff-javier) on NixOS.
 
-![Photo Credit: Javier Candeira](../../../static/images/blog/workshops-as-code/nixos-compose-workshop.jpg)
+![Credit: Javier Candeira](../../../static/images/blog/workshops-as-code/nixos-compose-workshop.jpg)
 _Photo Credit: [Javier Candeira](https://twitter.com/candeira)_
 
 NixOS is an exciting up-and-coming in the DevOps space because it provides declarative and [reproducible](https://nix.dev/tutorials/declarative-and-reproducible-developer-environments#declarative-and-reproducible-developer-environments) environments supported by powerful [testing primitives](https://github.com/gitpod-io/template-nixos/blob/main/test.nix). One may say NixOS is “an overnight success that is 18 years in the making” as many [industry leaders are switching](https://twitter.com/mitchellh/status/1346136404682625024).

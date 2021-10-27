@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-import OrganisationsList from "./organisations-list.svelte";
+  import OrganisationsList from "./organisations-list.svelte";
 
   export let from: string;
   export let organisations: { name: string; url: string }[];
@@ -34,16 +34,16 @@ import OrganisationsList from "./organisations-list.svelte";
   });
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   div {
     max-width: 250px;
     @apply whitespace-nowrap mx-auto;
 
-    @media(max-width: 540px) {
+    @media (max-width: 540px) {
       @apply ml-auto mr-0;
     }
 
-    @media(max-width: 340px) {
+    @media (max-width: 340px) {
       @apply mx-auto;
     }
   }
@@ -51,7 +51,7 @@ import OrganisationsList from "./organisations-list.svelte";
   h3 {
     @apply mb-x-small text-center;
 
-    @media(max-width: 540px) {
+    @media (max-width: 540px) {
       @apply text-left;
     }
   }
@@ -59,5 +59,5 @@ import OrganisationsList from "./organisations-list.svelte";
 
 <div class="organisations-list e-{from}" id={from}>
   <h3 class="h2">{from}</h3>
-  <OrganisationsList organisations={organisations} />
+  <OrganisationsList {organisations} />
 </div>

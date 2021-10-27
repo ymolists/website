@@ -18,7 +18,7 @@
   export let trackingContext: String;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .box {
     width: 295px;
   }

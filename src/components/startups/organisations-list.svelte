@@ -2,16 +2,16 @@
   export let organisations: { name: string; url: string }[];
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   ul {
     max-width: 250px;
     @apply whitespace-nowrap mx-auto;
 
-    @media(max-width: 540px) {
+    @media (max-width: 540px) {
       @apply ml-auto mr-0;
-    }    
+    }
 
-    @media(max-width: 340px) {
+    @media (max-width: 340px) {
       @apply mx-auto;
     }
   }
@@ -20,9 +20,9 @@
     content: "—";
     @apply text-orange-800 mr-micro;
 
-    @media(max-width: 540px) {
+    @media (max-width: 540px) {
       @apply mr-macro;
-    }  
+    }
   }
 </style>
 

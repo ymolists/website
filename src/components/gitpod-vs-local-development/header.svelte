@@ -3,7 +3,7 @@
   import Benefit from "./benefit.svelte";
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   header {
     @apply max-w-none !important;
   }

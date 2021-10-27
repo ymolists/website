@@ -3,7 +3,7 @@
   import Section from "../section.svelte";
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .benefit {
     flex: 0 0 32%;
 
@@ -24,7 +24,12 @@
       <div
         class="benefit mx-auto bg-off-white rounded-2xl shadow-normal px-xx-small py-small xl:px-small mt-small"
       >
-        <img src={f.icon.src} alt={f.icon.alt} class="mx-auto h-20" style="transform: {f.icon.transform}"/>
+        <img
+          src={f.icon.src}
+          alt={f.icon.alt}
+          class="mx-auto h-20"
+          style="transform: {f.icon.transform}"
+        />
         <h3 class="h5 mt-x-small mb-micro">{f.title}</h3>
         <p>{@html f.text}</p>
       </div>

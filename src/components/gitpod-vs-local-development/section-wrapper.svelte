@@ -3,7 +3,7 @@
   export let isHighlighted: boolean = false;
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   .mobile {
     @media (min-width: 1060px) {
       @apply hidden;
@@ -28,6 +28,9 @@
   }
 </style>
 
-<section class="card text-center shadow-normal {type}" class:shadow-brand={isHighlighted}>
+<section
+  class="card text-center shadow-normal {type}"
+  class:shadow-brand={isHighlighted}
+>
   <slot />
 </section>

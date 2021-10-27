@@ -4,7 +4,7 @@
   export { clazz as class };
 </script>
 
-<style type="text/postcss">
+<style lang="postcss">
   a {
     @apply block no-underline;
   }
