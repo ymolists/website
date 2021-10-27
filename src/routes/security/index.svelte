@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import Secure from "../../components/security/secure.svelte";
   import Program from "../../components/security/program.svelte";

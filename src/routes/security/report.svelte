@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import Action from "../../components/security/action.svelte";
   import OpenGraph from "../../components/open-graph.svelte";

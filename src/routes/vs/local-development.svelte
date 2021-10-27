@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import MeetBobAndAlice from "../../components/gitpod-vs-local-development/meet-bob-and-alice.svelte";
   import Header from "../../components/gitpod-vs-local-development/header.svelte";

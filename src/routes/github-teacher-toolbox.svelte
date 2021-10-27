@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import Header from "../components/github-page/header.svelte";
   import OpenGraph from "../components/open-graph.svelte";
@@ -19,9 +23,7 @@
   <svelte:fragment slot="description">
     Let’s Focus on Teaching Code, not Tedious Setups! With Gitpod you can create
     coding exams and exercises easily, help out your students via live tutoring,
-    and benefit from a simple onboarding with any device <a href="/education"
-      >Learn more</a
-    >.
+    and benefit from a simple onboarding with any device.
   </svelte:fragment>
 </Header>
 <PricingOffers title="GitHub Teacher Offer" {pricingPlans}>

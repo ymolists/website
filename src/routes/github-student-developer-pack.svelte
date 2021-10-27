@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import Header from "../components/github-page/header.svelte";
   import OpenGraph from "../components/open-graph.svelte";
@@ -6,9 +10,6 @@
   import Headline from "../components/github-page/headline.svelte";
   import { ghStudentPricingPlans as pricingPlans } from "../contents/github-page";
 </script>
-
-<style>
-</style>
 
 <OpenGraph
   data={{

@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import Action from "../../components/contact/action.svelte";
   import { contactActions } from "../../contents/contact";

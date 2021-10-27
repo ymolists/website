@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script lang="ts">
   import type { Form } from "../types/form.type";
   import OpenGraph from "../components/open-graph.svelte";

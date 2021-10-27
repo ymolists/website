@@ -9,6 +9,10 @@ teaserImage: gitpod-tabnine.png
 title: Match made in automation heaven
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 **TL;DR**
 
 - [Tabnine](https://www.tabnine.com/) and Gitpod partner to remove friction from developers' workflows

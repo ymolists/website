@@ -9,6 +9,10 @@ teaserImage: header.jpg
 title: Tailscale x Gitpod
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 **TL;DR**
 
 - Tailscale and Gitpod partner to enable secure, professional software development from anywhere

@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import LetsCollaborate from "../components/community/lets-collaborate.svelte";
   import CommunityLove from "../components/community/community-love.svelte";

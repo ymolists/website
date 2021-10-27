@@ -8,4 +8,8 @@ teaserImage: teaser-image.png
 image: teaser.jpg
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 This project demonstrates a complete Drupal 9 developer environment, utilizing ddev and Gitpod, through your browser.

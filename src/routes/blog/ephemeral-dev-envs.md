@@ -10,6 +10,10 @@ title: DevX Digest 02 - The rise of ephemeral developer environments ✨
 type: digest
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 **Welcome to DevX Digest - the place to hear all about Developer Experience**, brought to you by Pauline Narvas [(@paulienuh)](https://twitter.com/paulienuh) and Mike Nikles [(@mikenikles)](https://twitter.com/mikenikles) from Gitpod. You're reading another newsletter from us 🎉! In this edition, we talk about developer experience in cloud-based,ephemeral dev environments.
 
 > Disclaimer: Gitpod is mentioned quite a bit here. Apologies in advance for the product placement -- we promise that the next 10 editions won't be about our product! But we were super excited to share our take on ephemeral developer environments, especially with the excitement recently in the developer community.
@@ -96,7 +100,7 @@ Want to contribute to an open-source project?
 
 The friction that comes with onboarding to open-source projects can cause eager contributors to lose their interest quickly. Trying to get themselves set up is almost not even worth the pain!
 
-Onboarding is easy with ephemeral environments, as we described in [workflow #1.](/blog/the-rise-of-ephemeral-dev-environments#workflow-1-onboarding-) You have a one-click button accessible from anywhere that allows those eager contributors to get started instantly. Win for everyone!
+Onboarding is easy with ephemeral environments, as we described in [workflow #1.](#workflow-#1:-onboarding) You have a one-click button accessible from anywhere that allows those eager contributors to get started instantly. Win for everyone!
 
 ![Running Prometheus using our local companion app on Gitpod](../../../static/images/blog/ephemeral-dev-envs/screenshot.png)
 _Look at us running [Prometheus](https://github.com/prometheus/prometheus) on Gitpod using our [Local Companion App!](https://www.gitpod.io/blog/local-app)_

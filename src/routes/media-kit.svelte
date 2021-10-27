@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import Founders from "../components/media-kit/founders.svelte";
   import AdditionalImages from "../components/media-kit/additional-images.svelte";

@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import Report from "../../components/security/report.svelte";
   import Thanks from "../../components/security/thanks.svelte";

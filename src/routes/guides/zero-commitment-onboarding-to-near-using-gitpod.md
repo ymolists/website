@@ -8,4 +8,8 @@ teaserImage: teaser.jpg
 image: teaser.jpg
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 NEAR has discovered a fantastic tool called Gitpod that gives new developers a kick-start, improves the efficacy of community code reviews, and saves resources on a developer’s machine

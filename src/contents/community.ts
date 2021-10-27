@@ -9,7 +9,7 @@ export const primaryCtas: Resource[] = [
     text:
       "Hang out, collaborate and connect with the Gitpod community, take part in live coding sessions and more!",
     link: {
-      href: "/chat",
+      href: "https://www.gitpod.io/chat",
       text: "Join Discord",
     },
   },

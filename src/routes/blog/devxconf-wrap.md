@@ -1,13 +1,17 @@
 ---
 author: christinfrohne, ghuntley
 date: Thursday, 3 Jun 2021 11:00:00 UTC
-excerpt: As part of Gitpod’s Open-Source Sustainability Fund initiative attendees of DevX Conf were able to decide where $10,000 USD of funds (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. Here's the breakdown how the fund was split and our retrospective on running our first-ever conference.
+excerpt: As part of Gitpod’s Open-Source Sustainability Fund initiative attendees of DevX Conf were able to decide where USD 10,000 of funds (the profits from DevX Conf plus an additional donation by Gitpod) were to be distributed. Here's the breakdown how the fund was split and our retrospective on running our first-ever conference.
 image: teaser.png
 slug: devxconf-wrap
 subtitle:
 teaserImage: teaser.png
-title: DevX Conf wrap & distributing $10k of open-source funding
+title: DevX Conf wrap & distributing USD 10k of open-source funding
 ---
+
+<script context="module">
+  export const prerender = true;
+</script>
 
 On April 28- 29 we hosted the [DevX Conference](http://www.devxconf.org), a space where creators could collaborate, listen, discuss and declutter dev workflows, toolchains and minds. To improve developer experience. We wanted to foster an ecosystem that sparks dialogue and establishes best practices and frameworks across the areas of coding, testing, building, deploying, collaborating on, and running software.
 

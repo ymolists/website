@@ -10,9 +10,7 @@ title: From Theia to OpenVSCode Server - A history of Cloud IDEs
 ---
 
 <script context="module">
-  export const hydrate = false;
   export const prerender = true;
-  export const router = false;
 </script>
 
 I am [Anton](https://github.com/akosyakov) and I am leading IDE development at Gitpod. Almost a decade ago, I joined [Sven Efftinge](https://twitter.com/svenefftinge) and the team to work on open-source developer tools and help companies around the world to adopt them. We learned the intricacies of different desktop IDEs (Eclipse, IntelliJ, VS Code) and web editors (Monaco, Ace, Orion, and CodeMirror) - and eventually ended up building Gitpod.

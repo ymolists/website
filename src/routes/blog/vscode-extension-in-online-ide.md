@@ -9,6 +9,10 @@ teaserImage: tools.jpg
 title: Your Favorite VS Code Extension in an Online IDE
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Today, we are excited to announce the start of our public beta phase for VS Code extensions in Gitpod, the next generation cloud IDE.
 
 So far Gitpod supported the mainstream languages like JavaScript, Java, Python, Ruby, Rust, C++ and Go, but many others weren't covered yet. With today's release, we have added support for installing any of the 10K+ existing extensions for VS Code. Finally, Scala, Swift and F# developers will feel at home in Gitpod, too.

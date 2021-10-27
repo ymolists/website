@@ -1,4 +1,5 @@
 <script lang="ts" context="module">
+  export const prerender = true;
   export async function load({ session }) {
     const changelogEntries = session.changelogEntries;
     return { props: { changelogEntries } };
@@ -73,16 +74,6 @@
     </div>
     <div class="border-b border-gray-300" />
   {/each}
-</div>
-<div class="flex py-large md:py-x-large">
-  <div class="hidden w-4/12 md:block" />
-  <div class="w-full md:w-8/12">
-    <p>
-      For older updates, please visit <a href="/docs/changelog"
-        >the previous changelog.</a
-      >
-    </p>
-  </div>
 </div>
 
 <Modal isOpen={isNewsLetterFormShown} on:close={handleClose}>

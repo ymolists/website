@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import OpenGraph from "../../components/open-graph.svelte";
   import Screencast from "../../components/screencasts/screencast.svelte";

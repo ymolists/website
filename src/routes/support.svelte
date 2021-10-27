@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import Header from "../components/support/header.svelte";
   import Cta from "../components/support/cta.svelte";

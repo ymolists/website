@@ -69,7 +69,6 @@ export const ghTeacherPricingPlans: Pricing[] = [
     price: `<span class="price-small">From</span> ${
       isEurope() ? "€0.75" : "$0.9"
     }`,
-    learnMoreHref: "/education",
     footnote: "Only available for educational institutions",
   },
 ];
