@@ -31,7 +31,7 @@ You can find the source code for these images in <a href="https://github.com/git
 
 For public images, feel free to specify a tag, e.g. `image: node:buster` if you are interested in a particular version of the Docker image.
 
-For Gitpod images, we reommend you do not specify a tag or use `:latest` to make sure you automatically benefit from security patches and fixes we release.
+For Gitpod images, we recommend you do not specify a tag or use `:latest` to make sure you automatically benefit from security patches and fixes we release.
 
 ## Configure a custom Dockerfile
 
