@@ -28,9 +28,9 @@ Gitpod provisions and orchestrates remote developer environments enabling you to
 
 You can now automatically and securely connect your Gitpod workspace to other development resources, whether in the cloud or on prem, such as a production database behind your company's firewall. You can also spin up several Gitpod workspaces that can talk to each other.
 
-To connect any new dev environment, spin up a workspace in Gitpod and authenticate to Tailscale with an [auth key](https://tailscale.com/kb/1085/auth-keys/?q=auth%20key). We recommend setting an ephemeral auth key as an [environment variable](https://gitpod.io/variables) so you do not pollute your list of Tailscale nodes once you experienced the magic of [ephemeral dev environments 🪄](https://www.gitpod.io/docs#ephemeral). You’ll also need to add a task to start up Tailscale as well as set a network variable as part of your `.gitpod.yml` configuration file.
+To connect any new dev environment, spin up a workspace in Gitpod and authenticate to Tailscale with an [auth key](https://tailscale.com/kb/1085/auth-keys/). We recommend setting an ephemeral auth key as an [environment variable](https://gitpod.io/variables) so you do not pollute your list of Tailscale nodes once you experienced the magic of [ephemeral dev environments 🪄](https://www.gitpod.io/docs#ephemeral). You’ll also need to add a task to start up Tailscale as well as set a network variable as part of your `.gitpod.yml` configuration file.
 
-> Check out our [docs](www.gitpod.io/docs/configure/Tailscale) and/or the Tailscale repo for a [sample `.gitpod.Dockerfile` and `.gitpod.yml` to get started](https://github.com/gitpod-io/template-tailscale).
+> Check out our [docs](https://www.gitpod.io/docs/configure/Tailscale) and/or the Tailscale repo for a [sample `.gitpod.Dockerfile` and `.gitpod.yml` to get started](https://github.com/gitpod-io/template-tailscale).
 
 With Gitpod and Tailscale you can:
 
