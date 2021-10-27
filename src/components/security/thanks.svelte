@@ -1,4 +1,4 @@
-<style type="text/postcss">
+<style lang="postcss">
   .year {
     border-bottom: 3px;
     @apply inline-block border-orange-900 border-solid;
