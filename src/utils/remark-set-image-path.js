@@ -1,4 +1,4 @@
-const visit = require("unist-util-visit");
+import { visit } from "unist-util-visit";
 
 const imagesRelativeUrlPattern = "../static/images/";
 
@@ -10,7 +10,7 @@ const visitor = (node) => {
   }
 };
 
-module.exports = () => async (tree, vFile) => {
+export default () => async (tree, vFile) => {
   if (
     vFile.filename.indexOf("src/routes/docs/") > 0 ||
     vFile.filename.indexOf("src/routes/blog/") > 0 ||

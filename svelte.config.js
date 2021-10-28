@@ -4,13 +4,12 @@ import headings from "remark-autolink-headings";
 import remarkExternalLinks from "remark-external-links";
 import slug from "remark-slug";
 import sveltePreprocess from "svelte-preprocess";
-import remarkSetImagePath from "./src/utils/remark-set-image-path.cjs";
-import remarkEmbedVideo from "./src/utils/remark-embed-video.cjs";
-import remarkLinkWithImageAsOnlyChild from "./src/utils/remark-link-with-image-as-only-child.cjs";
-import remarkHeadingsPermaLinks from "./src/utils/remark-headings-permalinks.cjs";
-import toString from "mdast-util-to-string";
-import h from "hastscript";
-import { fail } from "assert";
+import remarkSetImagePath from "./src/utils/remark-set-image-path.js";
+import remarkEmbedVideo from "./src/utils/remark-embed-video.js";
+import remarkLinkWithImageAsOnlyChild from "./src/utils/remark-link-with-image-as-only-child.js";
+import remarkHeadingsPermaLinks from "./src/utils/remark-headings-permalinks.js";
+import { toString } from "mdast-util-to-string";
+import { h } from "hastscript";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

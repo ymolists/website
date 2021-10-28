@@ -53,9 +53,7 @@
 
   onMount(() => {
     if (!navigator.userAgent.toLowerCase().match(/mobile/i)) {
-      const platformKey = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)
-        ? "⌘"
-        : "Ctrl";
+      const platformKey = /(Mac)/i.test(navigator.userAgent) ? "⌘" : "Ctrl";
       placeholder += ` ${platformKey}+K`;
     }
   });

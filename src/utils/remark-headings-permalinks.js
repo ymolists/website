@@ -1,5 +1,5 @@
-const visit = require("unist-util-visit");
-const regexCreator = require("emoji-regex");
+import { visit } from "unist-util-visit";
+import regexCreator from "emoji-regex";
 const emojiRegex = regexCreator();
 
 const emojiStrip = (string) => {
@@ -13,7 +13,8 @@ const stringToBeautifiedFragment = (str = "") =>
     .replace(/\?/g, "")
     .replace(/,/g, "");
 
-const generateFragment = (str) => stringToBeautifiedFragment(emojiStrip(str).trim())
+const generateFragment = (str) =>
+  stringToBeautifiedFragment(emojiStrip(str).trim());
 
 const visitor = (node) => {
   node.data = node.data || {};
@@ -30,7 +31,7 @@ const visitor = (node) => {
   }
 };
 
-module.exports = () => async (tree) => {
+export default () => async (tree) => {
   visit(tree, visitor);
   return tree;
 };

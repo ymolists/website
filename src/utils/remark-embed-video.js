@@ -1,4 +1,4 @@
-const visit = require("unist-util-visit");
+import { visit } from "unist-util-visit";
 
 const youtubeEmbedRegex = new RegExp(`\(youtube\):\(\.\*\)`, "i");
 
@@ -24,7 +24,7 @@ const visitor = (options) => (node) => {
   }
 };
 
-module.exports = (options) => (tree) => {
+export default (options) => (tree) => {
   visit(tree, visitor(options));
   return tree;
 };

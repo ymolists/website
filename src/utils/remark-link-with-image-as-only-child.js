@@ -1,4 +1,4 @@
-const visit = require("unist-util-visit");
+import { visit } from "unist-util-visit";
 
 const visitor = (node) => {
   node.data = node.data || {};
@@ -12,7 +12,7 @@ const visitor = (node) => {
   }
 };
 
-module.exports = () => async (tree) => {
+export default () => async (tree) => {
   visit(tree, visitor);
   return tree;
 };

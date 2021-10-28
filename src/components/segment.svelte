@@ -2,6 +2,7 @@
   declare global {
     interface Window {
       analytics: any;
+      doNotTrack: any;
     }
   }
 </script>
