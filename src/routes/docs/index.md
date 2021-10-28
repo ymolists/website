@@ -9,7 +9,7 @@ title: Introduction
 
 # Introduction to Gitpod
 
-[Gitpod](/) is a container-based development platform that puts developer experience first. Gitpod provisions **ready-to-code developer environments** in the cloud accessible through your browser and [your local IDE](/blog/local-app).
+[Gitpod](/) is a container-based development platform that puts developer experience first. Gitpod provisions **ready-to-code developer environments** in the cloud accessible through your browser (on your computer or tablet) and [your local IDE](/blog/local-app).
 
 Gitpod enables development teams to describe their dev environment as code and **start configurable and fresh developer environments for each new task** entirely in the cloud. Think CI/CD for dev environments.
 
