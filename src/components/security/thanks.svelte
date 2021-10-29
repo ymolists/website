@@ -27,6 +27,11 @@
     <h2 class="h4 year">2021</h2>
     <ol class="text-left mx-auto my-x-small">
       <li>
+        <a rel="nofollow" href="https://twitter.com/Kuys_Potpot"
+          >Andrei Jiroh Eugenio Halili</a
+        > from Marilao.
+      </li>
+      <li>
         <a rel="nofollow" href="https://twitter.com/byte89">Kirill Efimov</a> from
         Snyk.
       </li>
