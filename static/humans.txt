@@ -1,0 +1,43 @@
+────────────────────────────────────────────────────────────────────────────────
+
+      ./shhs          Developers architect our future. Gitpod frees developers
+   :oyhhhhhy          from the friction of manual, stateful and local dev 
+.ohhhhhhs/-    -//-   environments. This is the next logical step in automating 
+yyyyyo:    .:ohhhhhs  software delivery pipelines.
+yyyy:   .+yhhhhhhhhh  
+yyyy:  .yyhhhy+ohhhh  We want everybody to have a frictionless experience when
+yyyy:   :++:.  :hhhh  interacting with our product, our company and our brand: 
+yyyys/.      ./shhhh  no hurdles, no BS, no unnecessary extra steps and as much 
+-syyyyyy+-:+yyyyyyy-  automation as possible. Just straight to the point
+  .:osyyyyyyyyyo/.    solutions that delight.
+      -+syys+-      
+
+We are not opinionated. We integrate, don't dictate. Gitpod is an open platform
+giving developers full transparency over how Gitpod works and allowing everybody
+to contribute. Our product design integrates with all stacks giving developers
+full flexibility. We seek to collaborate and partner with other products/companies
+that share these values.
+
+────────────────────────────────────────────────────────────────────────────────
+
+We are a fully remote company with employees in 13 countries across 4 continents
+that deeply value our community and develop Gitpod with Gitpod. Gitpod was
+founded because we were frustrated by setting up and maintaining dev
+environments. 
+
+Our founding team has created development tools, programming languages and
+grown open-source communities for the last 15 years. We have improved developer
+tooling for companies such as Facebook, Apple and Ericsson.
+
+Our goal is simple: Bring back joy and speed to dev workflows.
+
+Sound interesting? We are hiring https://www.gitpod.io/careers
+
+────────────────────────────────────────────────────────────────────────────────
+
+Contacts:
+
+  Help and general support      - https://www.gitpod.io/support
+  Press information             - https://www.gitpod.io/contact
+  Privacy policy                - https://www.gitpod.io/privacy
+  Security disclosures          - https://www.gitpod.io/security
