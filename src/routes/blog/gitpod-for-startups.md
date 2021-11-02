@@ -1,6 +1,6 @@
 ---
 author: phimae, JohannesLandgraf
-date: Tuesday, 26 Oct 2021 13:00:00 UTC
+date: Tuesday, 02 Nov 2021 13:00:00 UTC
 excerpt: We're launching our startup program to help you build great things without friction, for free.
 image: gitpod-for-startups.png
 slug: gitpod-for-startups
