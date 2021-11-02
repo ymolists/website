@@ -147,11 +147,11 @@
       <div class="hero__try-now text-small">
         <div>
           <a
-            href="https://gitpod.io/new"
+            href="#get-started"
             on:click={() =>
               window.analytics.track("product_cta_clicked", {
                 context: "hero",
-                destination: "https://gitpod.io/new",
+                destination: "#get-started",
               })}
             class="btn-conversion">Try Now</a
           >
