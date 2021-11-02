@@ -19,11 +19,6 @@
     window.scrollTo(0, 0);
   };
 
-  const toggle = () => {
-    $menuState = !menuState;
-    showHideOverflowY(false);
-  };
-
   const navItems = [
     {
       href: "/screencasts",
@@ -144,14 +139,8 @@
       {/if}
     </div>
     <div class="flex items-center">
-      <SignUpButtonTablet
-        on:click={() => {
-          toggle();
-          window.analytics.track("dashboard_clicked", {
-            context: "header_button",
-          });
-        }}
-      />
+      <!-- no toggle() required because SignUp buttons go offsite now -->
+      <SignUpButtonTablet />
       <MobileMenuToggle />
     </div>
   </div>

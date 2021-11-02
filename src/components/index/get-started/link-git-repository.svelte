@@ -71,7 +71,7 @@
 </p>
 <div class="buttons">
   <a
-    href="https://gitpod.io/login"
+    href="https://gitpod.io/new"
     on:click={() =>
       window.analytics.track("dashboard_clicked", {
         context: "continue_gitlab",
@@ -110,7 +110,7 @@
     Continue with GitLab
   </a>
   <a
-    href="https://gitpod.io/login"
+    href="https://gitpod.io/new"
     on:click={() =>
       window.analytics.track("dashboard_clicked", {
         context: "continue_github",
@@ -129,7 +129,7 @@
     Continue with GitHub
   </a>
   <a
-    href="https://gitpod.io/login"
+    href="https://gitpod.io/new"
     on:click={() =>
       window.analytics.track("dashboard_clicked", {
         context: "continue_bitbucket",

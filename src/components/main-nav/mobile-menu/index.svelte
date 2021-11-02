@@ -51,15 +51,8 @@
       <DashboardButton class="text-lg h-8 w-28" />
     {:else}
       <LoginButton />
-      <SignUpButton
-        on:click={() => {
-          toggle();
-          window.analytics.track("dashboard_clicked", {
-            context: "header_button",
-          });
-        }}
-        class="text-lg h-8 w-28"
-      />
+      <!-- no toggle() required because SignUp buttons go offsite now -->
+      <SignUpButton class="text-lg h-8 w-28" />
     {/if}
   </div>
 {/if}
