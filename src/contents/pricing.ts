@@ -67,6 +67,15 @@ export const otherPlans = [
     trackingName: "pro-open-source",
   },
   {
+    title: "Gitpod for Startups",
+    paragraphs: [
+      "Our startup program gives <a href='/for/startups'>eligible</a> startups up to 2 years of Gitpod for free, no matter how fast your developers and workloads scale. Spend less time worrying about brittle, local dev environments and more time on building great things.",
+    ],
+    btnText: "View Startups Program",
+    btnHref: "/for/startups",
+    trackingName: "gitpod-for-startups",
+  },
+  {
     title: "Self Hosted",
     paragraphs: [
       "Gitpod self-hosted is the best solution for teams who want to keep full data control or use Gitpod in private networks.",
