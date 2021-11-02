@@ -177,6 +177,16 @@ export const authors: { [idx: string]: Author } = {
     },
     description: "",
   },
+  phimae: {
+    name: "Philipp Mägel",
+    socialProfiles: {
+      github: "phimae",
+      twitter: "philmaegel",
+      linkedin: "phimae",
+    },
+    description:
+      "Philipp is a Chief of Staff at Gitpod focusing on company building and driving out-of-product growth initiatives. Previously, Philipp was part of Google's APAC Corporate Strategy & Planning team based out of Singapore.",
+  },
   "rl-gitpod": {
     name: "Robert Leftwich",
     socialProfiles: {
