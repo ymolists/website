@@ -5,18 +5,18 @@
 .ohhhhhhs/-    -//-   environments. This is the next logical step in automating 
 yyyyyo:    .:ohhhhhs  software delivery pipelines.
 yyyy:   .+yhhhhhhhhh  
-yyyy:  .yyhhhy+ohhhh  We want everybody to have a frictionless experience when
-yyyy:   :++:.  :hhhh  interacting with our product, our company and our brand: 
-yyyys/.      ./shhhh  no hurdles, no BS, no unnecessary extra steps and as much 
--syyyyyy+-:+yyyyyyy-  automation as possible. Just straight to the point
-  .:osyyyyyyyyyo/.    solutions that delight.
-      -+syys+-      
+yyyy:  .yyhhhy+ohhhh  Gitpod wants everybody to have a frictionless experience
+yyyy:   :++:.  :hhhh  when interacting with our product, our company and our 
+yyyys/.      ./shhhh  brand: no hurdles, no BS, no unnecessary extra step
+-syyyyyy+-:+yyyyyyy-  and as much automation as possible. Just straight to the
+  .:osyyyyyyyyyo/.    point solutions that delight.
+      -+syys+-        
 
-We are not opinionated. We integrate, don't dictate. Gitpod is an open platform
-giving developers full transparency over how Gitpod works and allowing everybody
-to contribute. Our product design integrates with all stacks giving developers
-full flexibility. We seek to collaborate and partner with other products/companies
-that share these values.
+Gitpod is not opinionated. We integrate, don't dictate. Gitpod is an open
+platform giving developers full transparency over how Gitpod works and allowing
+everybody to contribute. Our product design integrates with all stacks giving 
+developers full flexibility. We seek to collaborate and partner with other
+products/companies that share these values.
 
 ────────────────────────────────────────────────────────────────────────────────
 
