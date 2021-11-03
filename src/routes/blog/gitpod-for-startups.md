@@ -35,7 +35,7 @@ So we think you'll benefit from saying goodbye to local development early on, wh
 
 ## The benefits
 
-You’ll receive one year of Gitpod’s unleashed team plan for free. For your whole team, no matter how big you scale and how many engineers you hire during that time. If you’re affiliated with one of these [organisations](http://www.gitpod.io/for/startups/organisations), you’ll even get the benefits for 2 years.
+You’ll receive one year of Gitpod’s unleashed team plan for free. For your whole team, no matter how big you scale and how many engineers you hire during that time. If you’re affiliated with one of these [organisations](/for/startups/organisations), you’ll even get the benefits for 2 years.
 
 ## Who is eligible?
 
@@ -43,6 +43,6 @@ Your startup is eligible if it was founded less than 3y ago, has raised a maximu
 
 ## How do I apply?
 
-Give it a try and fill out the [application form](https://bit.ly/3anDmwd). Once you’re part of the program, you’ll get the chance for a personal onboarding call with our community engineers. Check out our [website](http://www.gitpod.io/for/startups) for more details.
+Give it a try and fill out the [application form](https://bit.ly/3anDmwd). Once you’re part of the program, you’ll get the chance for a personal onboarding call with our community engineers. Check out our [website](/for/startups) for more details.
 
 Want to share program details with your colleagues or other startups? This [Notion page](https://bit.ly/Gitpod-for-startups-notion) might be handy.
