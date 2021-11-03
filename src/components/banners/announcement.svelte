@@ -18,13 +18,12 @@
   >
     <span class="flex-1 text-lg text-right">🎁</span>
     <p class="flex-2 px-4 md:px-2">
-      VS Code in the browser for everyone | <a
-        href="https://www.gitpod.io/blog/openvscode-server-launch">Read blog</a
+      Introducing Gitpod for Startups | <a
+        href="https://www.gitpod.io/blog/gitpod-for-startups">Read blog</a
       >
     </p>
     <div class="flex-1">
-      <button on:click={closeBanner}
-        class="align-middle"
+      <button on:click={closeBanner} class="align-middle"
         ><svg
           width="16"
           height="16"
