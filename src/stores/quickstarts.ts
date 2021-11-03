@@ -23,6 +23,7 @@ const quickstartItems = readable(
     mapQuickstart("Datasette", "quickstart/datasette", false),
     mapQuickstart("Deno", "quickstart/deno", false),
     mapQuickstart("Docker Compose", "quickstart/docker-compose", false),
+    mapQuickstart("Elixir", "quickstart/elixir", false),
     mapQuickstart("Elm", "quickstart/elm", false),
     mapQuickstart("Flutter", "quickstart/flutter", false),
     mapQuickstart("Golang", "quickstart/go", true, "/svg/projects/go.svg"),
