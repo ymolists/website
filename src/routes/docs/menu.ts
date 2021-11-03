@@ -60,6 +60,10 @@ export const MENU: MenuEntry[] = [
     M("Languages & Framework", "languages-and-frameworks"),
     M("Roadmap", "references/roadmap"),
   ]),
+  M("Contribute", "contribute", [
+    M("Documentation", "contribute/documentation"),
+    M("Features & Patches", "contribute/features-and-patches"),
+  ]),
   M("Troubleshooting", "troubleshooting", []),
 ];
 
