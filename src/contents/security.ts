@@ -27,7 +27,7 @@ export const programFeatures: ProgramFeature[] = [
   {
     title: "Open source",
     paragraphs: [
-      'Built-in the open, our source code and how Gitpod is developed are publicly available for review by everyone. Our security posture, disclosure policy and speed in vulnerability handling is highlighted in the following <a href="https://about.gitlab.com/blog/2021/07/08/two-bugs-and-a-quick-fix-in-gitpod/" rel="noreferrer" target="_blank">blog post</a> from the security research team at GitLab. Due to our native GitLab integration, they continuously monitor our system for bugs.',
+      'Built-in the open, our source code and how Gitpod is developed are publicly available for review by everyone. Our security posture, disclosure policy and speed in vulnerability handling is highlighted in the following <a href="https://about.gitlab.com/blog/2021/07/08/two-bugs-and-a-quick-fix-in-gitpod/" rel="noreferrer" target="_blank">blog post</a> from the security research team at GitLab.',
       "In addition to this, we acknowledge the importance of giving back to the community and have taken steps to support the software supply chain of Gitpod and our customers through the creation of a monetary fund for supporting open-source maintainers.",
     ],
     image: "open-source.svg",
