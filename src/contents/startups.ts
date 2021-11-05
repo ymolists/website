@@ -533,6 +533,10 @@ export const organisationsLists = [
         url: "https://www.crunchbase.com/organization/new-enterprise-associates",
       },
       {
+        name: "New Forge",
+        url: "https://www.crunchbase.com/organization/new-forge",
+      },
+      {
         name: "Newchip",
         url: "https://www.crunchbase.com/organization/newchip",
       },
