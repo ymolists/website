@@ -70,6 +70,15 @@ export const authors: { [idx: string]: Author } = {
     description:
       "Jan is the creator of Janitor, and he has been automating developer environments for almost a decade. He is passionate about making software development saner, easier, and more accessible for all humans.",
   },
+  loujaybee: {
+    name: "Lou Bichard",
+    socialProfiles: {
+      github: "loujaybee",
+      twitter: "loujaybee",
+      linkedin: "loujaybee",
+    },
+    description: "",
+  },
   nisarhassan12: {
     name: "Nisar Hassan",
     socialProfiles: {
@@ -203,6 +212,15 @@ export const authors: { [idx: string]: Author } = {
       github: "gtsiolis",
       twitter: "gtsiolis",
       linkedin: "",
+    },
+    description: "",
+  },
+  jeanp413: {
+    name: "Jean Pierre Huaroto",
+    socialProfiles: {
+      github: "jeanp413",
+      twitter: "",
+      linkedin: "jeanpierrehuaroto",
     },
     description: "",
   },
