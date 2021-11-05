@@ -18,4 +18,4 @@ Gitpodders have built-in the open for the last decade. Transparency is key and a
 - [Commit message convention](features-and-patches/commit-message-convention)
 - [Submitting a pull request](features-and-patches/submitting-a-pull-request)
 
-We 🧡 the people who are involved in this project, and we’d love to help you with onboarding. Drop by the `#contributing` channel on the [Gitpod Discord server](https://www.gitpod.io/cla) and _ask for help_.
+We 🧡 the people who are involved in this project, and we’d love to help you with onboarding. Drop by the `#contributing` channel on the [Gitpod Discord server](https://www.gitpod.io/chat) and _ask for help_.
