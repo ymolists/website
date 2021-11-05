@@ -51,3 +51,23 @@ If we suggest changes, then:
 - Push the changes to your GitHub repository (this will update your Pull Request).
 
 That's it! Thank you for your contribution!
+
+&nbsp;
+
+# [Optional] Submitting a pull request with Gitpod
+
+Before you submit your pull request, please:
+
+- If you are considering submitting a pull-request that is more than a simple fix, open a discussion on GitHub first with your proposal.
+- Search [GitHub](https://github.com/gitpod-io/gitpod/pulls) for an open or closed Pull Request that relates to your submission.
+
+- Sign the [Contributor License Agrement](https://www.gitpod.io/cla) if prompted by the robots.
+
+If we suggest changes, then:
+
+- Make the required updates.
+- Re-run the test suite to ensure tests are still passing.
+- Commit your changes to your branch (e.g. `my-fix-branch`).
+- Push the changes to your GitHub repository (this will update your Pull Request).
+
+That's it! Thank you for your contribution!
