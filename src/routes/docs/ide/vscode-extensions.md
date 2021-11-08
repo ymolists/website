@@ -1,5 +1,5 @@
 ---
-section: configure
+section: ide
 title: VS Code Extensions
 ---
 

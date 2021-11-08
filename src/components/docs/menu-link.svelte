@@ -15,4 +15,6 @@
   }
 </style>
 
-<a class:active {href} sveltekit:prefetch {...$$props}><slot /></a>
+<a style="flex: 1;" class:active {href} sveltekit:prefetch {...$$props}
+  ><slot /></a
+>

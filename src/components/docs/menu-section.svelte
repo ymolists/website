@@ -18,6 +18,7 @@
   /* override _forms.scss */
   .menu-item {
     margin-bottom: 0;
+    display: flex;
   }
 
   .menu-container {
@@ -39,6 +40,31 @@
     font-size: var(--p-medium);
     line-height: var(--x-small);
   }
+
+  .status {
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: var(--p-xsmall);
+    height: 15px;
+    line-height: 13px;
+    width: 90px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 12px;
+    background-color: var(--white);
+    color: var(--light-grey);
+    border: 1px solid var(--light-grey);
+  }
+
+  .status-coming-soon {
+    line-height: 10px;
+  }
+
+  .status-beta {
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+  }
 </style>
 
 <li class="menu-item">
@@ -50,6 +76,11 @@
         {#each menuItem.subMenu as sub}
           <li class="menu-item">
             <MenuLink href={sub.path}>{sub.title}</MenuLink>
+            {#if sub.status}
+              <span class={sub.status ? `status status-${sub.status}` : ""}>
+                {sub.status.split("-").join(" ")}
+              </span>
+            {/if}
           </li>
         {/each}
       </ul>

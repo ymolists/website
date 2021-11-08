@@ -1,8 +1,14 @@
-import type { MenuEntry } from "../../types/menu-entry.type";
+import type { MenuStatus, MenuEntry } from "../../types/menu-entry.type";
 
-function M(title: string, path: string, subMenu?: MenuEntry[]): MenuEntry {
+function M(
+  title: string,
+  path: string,
+  subMenu?: MenuEntry[],
+  status?: MenuStatus
+): MenuEntry {
   return {
     title,
+    status,
     path: "/docs" + (path ? "/" + path : ""),
     subMenu,
   };
@@ -16,8 +22,6 @@ export const MENU: MenuEntry[] = [
     M(".gitpod.yml", "config-gitpod-file"),
     M("Custom Docker Image", "config-docker"),
     M("Start Tasks", "config-start-tasks"),
-    M("VS Code Extensions", "vscode-extensions"),
-    M("Editor", "configure/editor"),
     M("Exposing Ports", "config-ports"),
     M("Prebuilds", "prebuilds"),
     M("Environment Variables", "environment-variables"),
@@ -30,16 +34,27 @@ export const MENU: MenuEntry[] = [
     M("Life of a workspace", "life-of-workspace"),
     M("Contexts", "context-urls"),
     M("Collaboration & Sharing", "sharing-and-collaboration"),
-    M("Teams & Projects", "teams-and-projects"),
+    M("Teams & Projects", "teams-and-projects", [], "beta" as MenuStatus),
     M("Create a team plan", "teams"),
-    M("Local Companion", "develop/local-companion"),
-    M("VS Code Desktop Support", "develop/vscode-desktop-support"),
+    M("Local Companion", "develop/local-companion", [], "beta" as MenuStatus),
+  ]),
+  M("IDE", "ide", [
+    M("CLion", "ide/clion", [], "coming-soon" as MenuStatus),
+    M("DataGrip", "ide/datagrip", [], "coming-soon" as MenuStatus),
+    M("GoLand", "ide/goland", [], "beta" as MenuStatus),
+    M("IntelliJ IDEA", "ide/intellij", [], "beta" as MenuStatus),
+    M("PhpStorm", "ide/phpstorm", [], "coming-soon" as MenuStatus),
+    M("PyCharm", "ide/pycharm", [], "coming-soon" as MenuStatus),
+    M("Rider", "ide/rider", [], "coming-soon" as MenuStatus),
+    M("RubyMine", "ide/rubymine", [], "coming-soon" as MenuStatus),
+    M("VS Code", "ide/vscode", [], "beta" as MenuStatus),
+    M("VS Code Extensions", "ide/vscode-extensions"),
+    M("WebStorm", "ide/webstorm", [], "coming-soon" as MenuStatus),
   ]),
   M("Integrations", "integrations", [
     M("GitLab", "gitlab-integration"),
     M("GitHub", "github-integration"),
     M("Bitbucket", "bitbucket-integration"),
-    M("JetBrains", "integrations/jetbrains"),
     M("Browser Bookmarklet", "browser-bookmarklet"),
     M("Browser Extension", "browser-extension"),
   ]),

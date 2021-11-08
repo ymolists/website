@@ -36,7 +36,6 @@ const quickstartItems = readable(
       true,
       "/svg/projects/java.svg"
     ),
-    mapQuickstart("Jetbrains", "integrations/jetbrains", false),
     mapQuickstart("Julia", "quickstart/julia", false),
     mapQuickstart("NextJS", "quickstart/nextjs", false),
     mapQuickstart("Nix", "quickstart/nix", false),
