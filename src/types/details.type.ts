@@ -1,4 +1,4 @@
-export type Details = { 
-	term: string; 
-	data: string[] 
+export type Details = {
+	term: string;
+	data: string[]
 }[];

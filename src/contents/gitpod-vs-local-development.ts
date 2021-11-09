@@ -35,7 +35,7 @@ export const intros: Intro[] = [
     name: "Bob",
     works: "works locally",
     workflow: `
-			<p>Needs to manually configure each project. This includes:</p> 
+			<p>Needs to manually configure each project. This includes:</p>
 			<ul>
 				<li>installing development tools</li>
 				<li>cloning Git repos</li>

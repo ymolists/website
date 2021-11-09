@@ -6,7 +6,7 @@ export const resources: Resource[] = [
     title: "Getting Started",
     text:
       "This page helps you understand how to provide a configuration for your project.",
-    link: { 
+    link: {
       href: "/docs/getting-started",
       text: "Get Started"
     }
@@ -15,7 +15,7 @@ export const resources: Resource[] = [
     title: "Documentation",
     text:
       "Have a look at our documentation to learn how to get the most out of Gitpod",
-    link: { 
+    link: {
       href: "/docs/",
       text: "View Documentation"
     }
@@ -23,7 +23,7 @@ export const resources: Resource[] = [
   {
     title: "Changelog",
     text: "Here you can view the latest product improvements and updates.",
-    link: { 
+    link: {
       href: "/changelog",
       text: "View Changelog"
     }
@@ -32,7 +32,7 @@ export const resources: Resource[] = [
     title: "Community Forum",
     text:
       "If you are looking for help with common requests, connect with our community on Discourse.",
-    link: { 
+    link: {
       href: "https://community.gitpod.io/",
       text: "View forum"
     }
@@ -41,7 +41,7 @@ export const resources: Resource[] = [
     title: "Discord Server",
     text:
       "Would you like to take part in live coding sessions and connect with the community ? Then join us on Discord.",
-    link: { 
+    link: {
       href: "https://www.gitpod.io/chat",
       text: "Join Discord"
     }
@@ -50,7 +50,7 @@ export const resources: Resource[] = [
     title: "Gitpod Roadmap",
     text:
       "Are you curious where Gitpod is heading to next? On the roadmap you can see our next steps.",
-    link: { 
+    link: {
       href: "https://www.gitpod.io/roadmap",
       text: "View Roadmap"
     }
@@ -59,7 +59,7 @@ export const resources: Resource[] = [
     title: "Status",
     text:
       "On the status page you get informed on all past and current incidents.",
-    link: { 
+    link: {
       href: "https://www.gitpodstatus.com/",
       text: "View Status Page"
     }
@@ -67,7 +67,7 @@ export const resources: Resource[] = [
   {
     title: "Report a bug or request a feature",
     text: "Head over to GitHub to submit your bug report or feature request.",
-    link: { 
+    link: {
       href: "https://github.com/gitpod-io/gitpod/issues/new/choose",
       text: "File an issue"
     }
@@ -76,7 +76,7 @@ export const resources: Resource[] = [
     title: "Self-hosted",
     text:
       "Would you like to host Gitpod yourself? Here you can learn all about it.",
-    link: { 
+    link: {
       href: "/self-hosted",
       text: "Gitpod Self-hosted"
     }
@@ -85,7 +85,7 @@ export const resources: Resource[] = [
     title: "Account Settings",
     text:
       "Here you can update your account prefences like themes, email notifications, integrations, etc..",
-    link: { 
+    link: {
       href: "https://gitpod.io/account",
       text: "Go to Account Settings"
     }

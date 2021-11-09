@@ -14,7 +14,7 @@
   }
 </style>
 
-<OpenGraph 
+<OpenGraph
   data={{
     title: "Contact",
     description: "Get in touch and let us know how we can help."
