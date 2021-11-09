@@ -718,6 +718,10 @@ export const organisationsLists = [
         url: "https://www.crunchbase.com/organization/tiger-global",
       },
       {
+        name: "Tribe Capital",
+        url: "https://www.crunchbase.com/organization/tribe-capital",
+      },
+      {
         name: "Trinity Ventures",
         url: "https://www.crunchbase.com/organization/trinity-ventures",
       },
