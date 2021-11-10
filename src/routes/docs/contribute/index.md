@@ -14,6 +14,7 @@ The team behind Gitpod has built-in the open for the last decade. Transparency i
 We 🧡 the people who are involved in this project, and we’d love to have you on board, especially if you are just getting started or have never contributed to open-source before. So here's to you, lovely person who wants to join us — this is how you can support us:
 
 - [Participating in the Gitpod Discord communtiy](https://www.gitpod.io/chat).
+- [Are you using Gitpod? Adding your company to ADOPTERS.md really helps Gitpod grow](https://github.com/gitpod-io/gitpod/pull/6641)!
 - [Responding to questions on StackOverflow](https://stackoverflow.com/questions/tagged/gitpod).
 - [Creating content that shares your experiences with Gitpod](https://www.youtube.com/watch?v=XLOwNev0TM0&t=18s)
 - [Using the feedback widget at the bottom of each page in our documentation](contribute/documentation).
