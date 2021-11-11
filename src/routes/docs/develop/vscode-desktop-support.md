@@ -11,6 +11,8 @@ title: VS Code Desktop Support
 
 > **Please note:** VS Code Desktop Support is currently in preview If you experience any issues, or have feedback, please [get in touch](https://www.gitpod.io/support).
 
+`youtube: kI6firDA0Bw`
+
 With VS Code Desktop Support, you can keep your local IDE configurations<sup>1</sup> **and** benefit from Gitpod's high-spec servers & automated prebuilds. As you would expect, your code executes in an ephemeral Gitpod workspace which keeps each of your projects nicely isolated from one another.
 
 To get started:
