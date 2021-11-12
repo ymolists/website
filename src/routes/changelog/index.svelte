@@ -40,7 +40,7 @@
   <div class="hidden w-4/12 md:block" />
   <header class="w-full mb-x-large md:w-8/12 md:mb-xx-large">
     <h1 class="mt-x-large mb-macro md:mt-xx-large">Changelog</h1>
-    <p>Gitpod product improvements and updates</p>
+    <p class="text-large">Gitpod product improvements and updates</p>
     <p class="mt-micro">
       <TwitterFollowButton trackingContext="changelog" class="btn-primary" />
       <button
