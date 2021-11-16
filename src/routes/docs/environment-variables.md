@@ -81,7 +81,7 @@ You can also configure and view the persistent environment variables in [your ac
 You can add as many environment variables as you wish.
 
 The repository pattern of each variable determines in what workspace it will be available.
-Repository patterns follow the `repo/owner` pattern. You can use a wildcard on either of the two, e.g. `gitpod-io/*` would make that variable available in all repositories owned by `gitpod-io`.
+Repository patterns follow the `owner/repository` pattern. You can use a wildcard on either of the two, e.g. `gitpod-io/*` would make that variable available in all repositories owned by `gitpod-io`.
 Conversely `*/vscode` would make that variable available on all repositories called `vscode`; this is especially useful for forks.
 Subsequently `*/*` makes that variable available in every workspace.
 
