@@ -10,9 +10,7 @@
   import type { ChangelogEntry as ChangelogEntryType } from "../../types/changelog-entry.type";
 
   import OpenGraph from "../../components/open-graph.svelte";
-  import Signup from "../../components/signup.svelte";
   import "../../assets/markdown-commons.scss";
-  import Modal from "../../components/modal.svelte";
   import TwitterFollowButton from "../../components/t-button.svelte";
   import { formatDate, stringToBeautifiedFragment } from "../../utils/helpers";
   import ChangelogDate from "../../components/changelog/changelog-date.svelte";
@@ -20,12 +18,6 @@
   import Wrapper from "../../components/changelog/wrapper.svelte";
 
   export let changelogEntries: ChangelogEntryType[];
-
-  let isNewsLetterFormShown: boolean = false;
-
-  const handleClose = () => {
-    isNewsLetterFormShown = false;
-  };
 </script>
 
 <OpenGraph
@@ -43,12 +35,12 @@
     <p class="text-large">Gitpod product improvements and updates</p>
     <p class="mt-micro">
       <TwitterFollowButton trackingContext="changelog" class="btn-primary" />
-      <button
+      <a
+        href="https://gitpod.io/notifications"
+        target="_blank"
         class="btn-secondary"
-        on:click={() => (isNewsLetterFormShown = true)}
-      >
-        Signup for the Newsletter
-      </button>
+        >Signup for the Newsletter
+      </a>
     </p>
   </header>
 </div>
@@ -75,7 +67,3 @@
     <div class="border-b border-gray-300" />
   {/each}
 </div>
-
-<Modal isOpen={isNewsLetterFormShown} on:close={handleClose}>
-  <Signup type="newsletter" />
-</Modal>
