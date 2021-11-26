@@ -50,13 +50,13 @@ main > header:first-child {
   }
 
   @media (max-width: 600px) {
-    padding: 0 var(--xx-small);
+    padding: 0;
   }
 }
 main > header:first-child h1 {
   @apply text-h2 mb-x-small;
 
-  @media(max-width: 1140px) {
+  @media (max-width: 1140px) {
     @apply mb-micro;
   }
 }

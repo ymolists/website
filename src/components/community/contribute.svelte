@@ -1,5 +1,5 @@
 <script>
-  import { contributeToGitpod } from "../../contents/community";
+  import { contributeToGitpod } from "../../contents/community/index";
 
   import Feature from "../feature.svelte";
 </script>

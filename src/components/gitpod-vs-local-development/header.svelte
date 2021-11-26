@@ -1,11 +1,23 @@
 <script>
   import { benefits } from "../../contents/gitpod-vs-local-development";
-  import Benefit from "./benefit.svelte";
+  import Benefit from "../benefit.svelte";
 </script>
 
 <style lang="postcss">
   header {
     @apply max-w-none !important;
+  }
+
+  div {
+    grid-template-columns: repeat(auto-fill, 316px);
+
+    @media (max-width: 1460px) {
+      @apply max-w-4xl mx-auto;
+    }
+
+    @media (max-width: 400px) {
+      grid-template-columns: none;
+    }
   }
 </style>
 
@@ -14,7 +26,7 @@
   <p>
     Why should you move your dev environment to the cloud? Here is the answer.
   </p>
-  <div class="flex flex-wrap  mx-auto max-w-7xl mt-xx-small sm:mt-0">
+  <div class="grid gap-micro justify-center mt-small">
     {#each benefits as benefit}
       <Benefit {benefit} />
     {/each}

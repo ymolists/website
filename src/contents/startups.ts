@@ -1,12 +1,12 @@
-import type { ProgramBenefit } from "../types/program-benefit.type";
 import type { Feature } from "../types/feature.type";
 import {
   codeAnywhereFeature,
   collaborationFeature,
   multiTrackDevelopmentFeature,
 } from "./home/features";
-import type { ExploreSection } from "src/types/explore-section.type";
+import type { ExploreSection } from "../types/explore-section.type";
 import { terminalSource } from "./terminal";
+import type { SecondaryFeature } from "../types/secondary-feature.type";
 
 export const features: Feature[] = [
   {
@@ -30,7 +30,7 @@ export const features: Feature[] = [
   },
 ];
 
-export const programBenefits: ProgramBenefit[] = [
+export const programBenefits: SecondaryFeature[] = [
   {
     icon: {
       src: "/svg/media-kit/logo-mark.svg",

@@ -93,21 +93,24 @@ export const otherFeatures: Feature[] = [
 
 export const secondaryFeatures: SecondaryFeature[] = [
   {
-    icon: "/svg/features/open-source.svg",
+    icon: {
+      src: "/svg/features/open-source.svg",
+    },
     title: "Open Source",
-    text:
-      "We're free from big tech influence and integrate, not dictate. This makes our product development fast and close to our users & community.",
+    text: "We're free from big tech influence and integrate, not dictate. This makes our product development fast and close to our users & community.",
   },
   {
-    icon: "/svg/features/saas.svg",
+    icon: {
+      src: "/svg/features/saas.svg",
+    },
     title: "SaaS or Self-hosted",
-    text:
-      "Use our SaaS solution running on the carbon neutral Google Cloud Platform or host Gitpod on your own cloud infrastructure using GKE, k3s, EKS or AKS.",
+    text: "Use our SaaS solution running on the carbon neutral Google Cloud Platform or host Gitpod on your own cloud infrastructure using GKE, k3s, EKS or AKS.",
   },
   {
-    icon: "/svg/features/secure.svg",
+    icon: {
+      src: "/svg/features/secure.svg",
+    },
     title: "Secure by design",
-    text:
-      "Gitpod centralizes all source code and safely stores it in the cloud, never locally. Security is at the core of everything we do at Gitpod. <br><a href='/security'>More about security</a>",
+    text: "Gitpod centralizes all source code and safely stores it in the cloud, never locally. Security is at the core of everything we do at Gitpod. <br><a href='/security'>More about security</a>",
   },
 ];

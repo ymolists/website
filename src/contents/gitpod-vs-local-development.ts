@@ -1,31 +1,42 @@
-import type { Benefit } from "src/types/benefit.type";
-import type { Intro } from "src/types/intro.type";
+import type { Benefit } from "../types/benefit.type";
+import type { Intro } from "../types/intro.type";
 
 export const benefits: Benefit[] = [
   {
-    icon: "/svg/gitpod-vs-local-development/developer-experience.svg",
+    icon: {
+      src: "/svg/gitpod-vs-local-development/developer-experience.svg",
+      alt: "Developer experience",
+      transform: "scale(1.6)",
+    },
     title: "Developer experience",
-    text:
-      "Developer productivity increases and results in greater team morale.",
-    transform: "scale(1.6)",
+    text: "Developer productivity increases and results in greater team morale.",
   },
   {
-    icon: "/svg/gitpod-vs-local-development/remote-work.svg",
+    icon: {
+      src: "/svg/gitpod-vs-local-development/remote-work.svg",
+      alt: "Remote work",
+      transform: "scale(1.4)",
+    },
     title: "Remote work",
     text: "Work from anywhere on any device. All you need is a browser.",
-    transform: "scale(1.4)",
   },
   {
-    icon: "/svg/gitpod-vs-local-development/faster-onboarding.svg",
+    icon: {
+      src: "/svg/gitpod-vs-local-development/faster-onboarding.svg",
+      alt: "Faster onboarding",
+      transform: "scale(1.5)",
+    },
     title: "Faster onboarding",
     text: "Ready to code within seconds. No need to set up dev environments.",
-    transform: "scale(1.5)",
   },
   {
-    icon: "/svg/gitpod-vs-local-development/open-source-contributions.svg",
+    icon: {
+      src: "/svg/gitpod-vs-local-development/open-source-contributions.svg",
+      alt: "Open-source contributions",
+      transform: "scale(1.5) translateY(4px)",
+    },
     title: "Open-source contributions",
     text: "Increase in open-source contributions thanks to an easy onboarding.",
-    transform: "scale(1.5) translateY(4px)",
   },
 ];
 

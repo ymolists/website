@@ -1,5 +1,5 @@
 <script>
-  import { primaryCtas } from "../../contents/community";
+  import { primaryCtas } from "../../contents/community/index";
   import Resource from "../support/resource.svelte";
 </script>
 

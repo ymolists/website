@@ -1,13 +1,12 @@
-import type { ContactAction as Action } from "../types/contact-action.type";
-import type { Feature } from "../types/feature.type";
-import type { Resource } from "../types/resource.type";
+import type { ContactAction as Action } from "../../types/contact-action.type";
+import type { Feature } from "../../types/feature.type";
+import type { Resource } from "../../types/resource.type";
 
 export const primaryCtas: Resource[] = [
   {
     icon: "/svg/community/discord.svg",
     title: "Discord Chat",
-    text:
-      "Hang out, collaborate and connect with the Gitpod community, take part in live coding sessions and more!",
+    text: "Hang out, collaborate and connect with the Gitpod community, take part in live coding sessions and more!",
     link: {
       href: "https://www.gitpod.io/chat",
       text: "Join Discord",
@@ -16,8 +15,7 @@ export const primaryCtas: Resource[] = [
   {
     icon: "/svg/community/discourse.svg",
     title: "Discourse Forum",
-    text:
-      " Our community discussion forum, perfect for asking questions that would benefit others too.",
+    text: " Our community discussion forum, perfect for asking questions that would benefit others too.",
     link: {
       href: "https://community.gitpod.io",
       text: "View forum",
@@ -26,8 +24,7 @@ export const primaryCtas: Resource[] = [
   {
     icon: "/svg/community/twitter.svg",
     title: "Twitter",
-    text:
-      "Stay up to date on the latest Gitpod news and help us spread the Gitpod love.",
+    text: "Stay up to date on the latest Gitpod news and help us spread the Gitpod love.",
     link: {
       href: "https://twitter.com/gitpod",
       text: "Follow on Twitter",
@@ -45,8 +42,7 @@ export const primaryCtas: Resource[] = [
   {
     icon: "/svg/community/youtube.svg",
     title: "YouTube",
-    text:
-      "Prefer watching videos and previous livestreams to learn about Gitpod?",
+    text: "Prefer watching videos and previous livestreams to learn about Gitpod?",
     link: {
       href: "https://www.youtube.com/c/Gitpod",
       text: "Go to YouTube",
@@ -84,8 +80,7 @@ export const contributeToGitpod: Feature = {
 export const letsCollaborateActions: Action[] = [
   {
     title: "Author a blog post",
-    text:
-      "Do you have a cool story to share related to Gitpod? Publish a guest post on our blog.",
+    text: "Do you have a cool story to share related to Gitpod? Publish a guest post on our blog.",
     link: {
       href: "https://github.com/gitpod-io/website/issues/new/choose ",
       text: "Open a PR",
@@ -93,8 +88,7 @@ export const letsCollaborateActions: Action[] = [
   },
   {
     title: "Publish a guide",
-    text:
-      "Do you have a project integration guide to share? Share it with the community on guides.",
+    text: "Do you have a project integration guide to share? Share it with the community on guides.",
     link: {
       href: "https://github.com/gitpod-io/website/issues/new/choose",
       text: "Open a PR",
@@ -102,8 +96,7 @@ export const letsCollaborateActions: Action[] = [
   },
   {
     title: "Join affiliate program",
-    text:
-      "Do you have some reach and regulary convince people about using Gitpod? Let’s discuss a collaboration.",
+    text: "Do you have some reach and regulary convince people about using Gitpod? Let’s discuss a collaboration.",
     link: {
       href: "/contact/support",
       text: "Get in contact",

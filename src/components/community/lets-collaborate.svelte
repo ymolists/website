@@ -10,7 +10,7 @@
     Would you like to collaborate? We’re excited to hear your ideas. Get in
     contact.
   </p>
-  <div class="flex flex-wrap justify-around max-w-7xl">
+  <div class="flex flex-wrap justify-around max-w-7xl mx-auto">
     {#each letsCollaborateActions as action}
       <Action {action} class="max-w-sm" btnClass="btn-cta" isTextSmall={true} />
     {/each}

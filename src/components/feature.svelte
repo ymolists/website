@@ -38,7 +38,10 @@
         <h2 class="h3">{title}</h2>
         <p class="mt-micro">{@html paragraph}</p>
       </div>
-      <div class="mt-xx-small md:mt-small">
+      <div
+        class="mt-xx-small md:mt-small"
+        class:hidden={!moreButton && !secondaryButton}
+      >
         {#if moreButton}
           <a
             href={moreButton.href}

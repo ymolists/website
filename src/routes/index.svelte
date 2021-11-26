@@ -20,6 +20,7 @@
   import UsedBy from "../components/index/used-by.svelte";
   import SecondaryFeatures from "../components/secondary-features.svelte";
   import SpinUp from "../components/index/spin-up.svelte";
+  import Section from "../components/section.svelte";
 </script>
 
 <OpenGraph
@@ -38,7 +39,9 @@
 <SectionScreenshot />
 <UsedBy title="Used by 400k+ developers" />
 <Features features={otherFeatures} />
-<SecondaryFeatures {secondaryFeatures} />
+<Section>
+  <SecondaryFeatures {secondaryFeatures} />
+</Section>
 <Testimonials {testimonials} />
 <GetStarted />
 <SpinUp />

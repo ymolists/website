@@ -1,6 +1,9 @@
 export type Benefit = {
-	icon: string;
-	title: string;
-	text: string;
-	transform?: string;
-}
+  icon: {
+    src: string;
+    alt?: string;
+    transform?: string;
+  };
+  title: string;
+  text: string;
+};
