@@ -61,7 +61,7 @@
   <div
     class="blurb {layout === 'column'
       ? 'flex-col h-full'
-      : ''} flex flex-wrap lg:justify-between p-x-small pt-small"
+      : ''} flex flex-nowrap lg:justify-between p-x-small pt-small"
   >
     <div>
       {#if headlineOrder === "h3"}
