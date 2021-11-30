@@ -31,9 +31,9 @@
 
 <Section class="feature-container-section">
   <div
-    class="feature grid justify-center items-center md:grid-cols-2 lg:gap-32 gap-small"
+    class="feature md:grid justify-center items-center md:grid-cols-2 lg:gap-32 md:gap-small flex flex-col"
   >
-    <div class="sm:my-micro md:my-0">
+    <div class="mb-x-small md:my-0">
       <div class="text-large">
         <h2 class="h3">{title}</h2>
         <p class="mt-micro">{@html paragraph}</p>

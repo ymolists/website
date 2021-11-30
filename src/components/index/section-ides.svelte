@@ -35,7 +35,7 @@
         on:change={() => (ideType = "desktop")}
       />
       <div class="relative">
-        <div class="py-micro pl-0 pr-micro sm:px-xx-small">
+        <div class="py-micro md:pr-micro lg:px-xx-small">
           <img
             src="/images/index/{idetoRender.screenshots[ideType]}"
             alt={idetoRender.label}

@@ -55,43 +55,29 @@
     width: 71px;
 
     @media (max-width: 1140px) {
-      height: 55px;
-      width: 55px;
+      height: 60px;
+      width: 60px;
     }
 
-    @media (max-width: 768px) {
-      height: 44px;
-      width: 44px;
-    }
-
-    @media (max-width: 536px) {
-      height: 38px;
-      width: 38px;
-    }
-
-    @media (max-width: 435px) {
-      height: 32px;
-      width: 32px;
+    @media (max-width: 520px) {
+      height: 45px;
+      width: 45px;
+      border-radius: 10px;
     }
   }
 
   .icon {
-    height: 41px;
-    width: 41px;
+    height: 42px;
+    width: 42px;
 
     @media (max-width: 1140px) {
       height: 36px;
       width: 36px;
     }
 
-    @media (max-width: 768px) {
-      height: 23px;
-      width: 23px;
-    }
-
-    @media (max-width: 536px) {
-      height: 20px;
-      width: 20px;
+    @media (max-width: 520px) {
+      height: 26px;
+      width: 26px;
     }
   }
 
@@ -101,7 +87,9 @@
   }
 </style>
 
-<div class="absolute top-0 right-0 lgx:-right-2 space-y-0 sm:space-y-2">
+<div
+  class="mt-macro md:mt-0 md:absolute md:top-0 md:-right-1 lgx:-right-2 flex space-x-1 sm:space-x-2 md:space-x-0 justify-center md:w-min md:block space-y-0 md:space-y-2"
+>
   {#each ides as { name, label, icon, screenshots }}
     <button
       class="block relative cursor-pointer"
@@ -113,13 +101,13 @@
       }}
     >
       <div
-        class="icon-box flex items-center justify-center bg-off-white rounded-lg sm:rounded-2xl shadow-lg transition duration-200 linear"
+        class="icon-box flex items-center justify-center bg-off-white rounded-lg md:rounded-xl lgx:rounded-2xl shadow-lg transition duration-200 linear"
         class:grayed={!screenshots}
       >
         <img src="/svg/index/{icon}" alt={label} class="icon" />
       </div>
       <div
-        class="hidden absolute -top-1 -left-10 lg:left-3/4 items-center justify-center h-5 w-14 text-xs font-semibold text-gray-900 bg-pink-900 rounded-lg shadow-light"
+        class="hidden absolute -top-3 md:-top-1 left-1/2 transform -translate-x-1/2 md:transform-none md:-left-10 lg:left-3/4 items-center justify-center h-4 w-10 sm:h-5 sm:w-14 text-xs font-semibold text-gray-900 bg-pink-900 rounded-md sm:rounded-lg shadow-light"
       >
         Soon
       </div>
