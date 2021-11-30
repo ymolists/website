@@ -4,8 +4,8 @@
 </script>
 
 <Section>
-  <h2 class="text-center">Primary colors</h2>
-  <div class="flex justify-around flex-wrap my-small">
+  <h2 class="text-center mb-small">Primary colors</h2>
+  <div class="flex justify-around flex-wrap mb-small">
     <ColorBox colorName="Sand light" colorValue="#f5f4f4" />
     <ColorBox colorName="Kumquat" colorValue="#FFB45B" />
     <ColorBox colorName="Black" colorValue="#12100C" isDark={true} />

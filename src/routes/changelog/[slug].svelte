@@ -41,7 +41,7 @@
   }}
 />
 
-<Wrapper class="py-20">
+<Wrapper class="pt-small pb-x-large md:pb-xx-large">
   <div class=" entry flex flex-col md:flex-row">
     <div class="content-changelog">
       <BackLink />

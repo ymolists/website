@@ -26,14 +26,17 @@ main {
 }
 
 main > header:first-child,
-.header,
-.brief {
+.header {
   text-align: center;
   margin: var(--xx-large) auto;
   width: 100%;
 
   @media (max-width: 972px) {
     margin: var(--x-large) 0;
+  }
+
+  @media (max-width: 768px) {
+    margin: var(--small) 0 var(--x-large);
   }
 }
 main > header:first-child {
@@ -65,15 +68,11 @@ main > header:first-child h1 + p {
   line-height: 133.33%;
 }
 
-.brief h2 {
-  margin-bottom: 2rem;
-}
-
 main > header {
   margin-bottom: var(--huge);
 }
 header.tight.tight {
-  margin-bottom: var(--not-huge);
+  margin-bottom: var(--small);
 }
 
 main > header + section {
@@ -89,7 +88,7 @@ main > header + section {
 .cards {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 2rem;
+  margin-bottom: var(--small);
   justify-content: center;
   max-width: 98vw;
 

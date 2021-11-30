@@ -11,22 +11,18 @@
   import type { BlogPost } from "../../types/blog-post.type";
   import OpenGraph from "../../components/open-graph.svelte";
   import PostPreview from "../../components/blog/post-preview.svelte";
+  import Section from "../../components/section.svelte";
 
   export let posts: BlogPost[];
 </script>
 
-<style>
-  section {
-    margin-top: var(--xx-large);
-    text-align: center;
-  }
-
-  h2 {
-    margin-bottom: var(--small);
-  }
-
+<style lang="postcss">
   .blog-layout {
-    @apply pb-10;
+    @apply mb-xx-large;
+
+    @media (max-width: 972px) {
+      @apply mb-x-large;
+    }
   }
 </style>
 
@@ -38,25 +34,25 @@
       title: "Blog",
     }}
   />
-  <section>
-    <h1>Blog</h1>
-  </section>
-  <div class="posts-grid">
-    {#each posts.slice(0, 6) as post}
-      <div class="posts-grid__item">
-        <PostPreview {post} type="blog" isMostRecent />
-      </div>
-    {/each}
-  </div>
+  <Section>
+    <h1 class="text-center">Blog</h1>
+    <div class="posts-grid">
+      {#each posts.slice(0, 6) as post}
+        <div class="posts-grid__item">
+          <PostPreview {post} type="blog" isMostRecent />
+        </div>
+      {/each}
+    </div>
+  </Section>
 
-  <section>
-    <h2>Previous posts</h2>
-  </section>
-  <div class="posts-grid previous">
-    {#each posts.slice(6) as post}
-      <div class="posts-grid__item">
-        <PostPreview {post} type="blog" />
-      </div>
-    {/each}
-  </div>
+  <Section>
+    <h2 class="mb-small text-center">Previous posts</h2>
+    <div class="posts-grid previous">
+      {#each posts.slice(6) as post}
+        <div class="posts-grid__item">
+          <PostPreview {post} type="blog" />
+        </div>
+      {/each}
+    </div>
+  </Section>
 </div>

@@ -26,13 +26,13 @@
 </style>
 
 <div
-  class="logo-box px-small py-medium sm:p-large rounded-4xl bg-white shadow-normal mx-micro mb-small"
+  class="logo-box px-small py-medium sm:p-large rounded-4xl bg-white shadow-normal md:mx-micro mb-micro md:mb-small"
   class:bg-gray-900={isDark}
   class:text-white={isDark}
 >
   <img src={svgSrc} {alt} class="mx-auto" />
   <p class="mt-medium mb-micro">Download {text}</p>
-  <div class="buttons-wrapper">
+  <div class="buttons-wrapper justify-center">
     <a
       href={svgSrc}
       on:click={() =>

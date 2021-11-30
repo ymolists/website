@@ -8,7 +8,7 @@
 </script>
 
 <div
-  class="flex flex-col justify-between items-center max-w-xs lg:max-w-sm mb-small bg-off-white py-small px-x-small sm:py-small rounded-4xl shadow-normal"
+  class="flex flex-col justify-between items-center max-w-xs lg:max-w-sm mb-micro md:mb-small bg-off-white py-small px-x-small sm:py-small rounded-4xl shadow-normal"
 >
   <div>
     {#if icon}

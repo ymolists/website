@@ -23,7 +23,7 @@
   <img
     src="/images/media-kit/media-kit.png"
     alt="Gitpod Illustration"
-    class="mt-x-large rounded-4xl w-full"
+    class="mt-small rounded-4xl w-full"
   />
 </header>
 

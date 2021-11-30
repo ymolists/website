@@ -8,6 +8,7 @@
   import OpenGraph from "../../components/open-graph.svelte";
   import SubmissionSuccess from "../../components/submission-success.svelte";
   import { onMount } from "svelte";
+  import Section from "../../components/section.svelte";
 
   const studentUnlimitedSubject = "Educational Discount Verification";
 
@@ -152,122 +153,121 @@
   </p>
 </header>
 
-<section
-  class="card shadow-xl mb-32 sm:mx-8"
-  bind:this={sectionStart}
-  id="form"
->
-  {#if isEmailSent}
-    <SubmissionSuccess
-      title="Thank you for your message"
-      text="We received your message. Our team will take a look and get back to you as
+<Section class="card shadow-xl sm:mx-8" id="form">
+  <div bind:this={sectionStart}>
+    {#if isEmailSent}
+      <SubmissionSuccess
+        title="Thank you for your message"
+        text="We received your message. Our team will take a look and get back to you as
       soon as possible."
-    />
-  {:else}
-    <form on:submit|preventDefault={handleSubmit} novalidate>
-      <h2 class="h3 text-center">Send us a message</h2>
-      <ul>
-        <li class:error={isFormDirty && !formData.selectedSubject.valid}>
-          <fieldset>
-            <legend>Please choose a subject</legend>
-            <ul>
-              {#each subjects as subject, index}
-                <li>
-                  <input
-                    id="subject-{index}"
-                    type="radio"
-                    bind:group={formData.selectedSubject.value}
-                    bind:this={formData.selectedSubject.el}
-                    on:change={() => {
-                      formData.selectedSubject.valid =
-                        formData.selectedSubject.value &&
-                        formData.selectedSubject.el.validity.valid;
-                    }}
-                    value={subject}
-                    name="subject"
-                  />
-                  <label for="subject-{index}" class="font-medium"
-                    >{subject}</label
-                  >
-                </li>
-              {/each}
-            </ul>
-          </fieldset>
-        </li>
-        <li class:error={isFormDirty && !formData.name.valid}>
-          <label for="name">Name*</label>
-          <input
-            id="name"
-            bind:value={formData.name.value}
-            bind:this={formData.name.el}
-            on:change={() => {
-              formData.name.valid =
-                formData.name.value && formData.name.el.checkValidity();
-            }}
-            type="text"
-            autocomplete="name"
-          />
-        </li>
-        <li class:error={isFormDirty && !formData.email.valid}>
-          <label for="email"
-            >E-mail*
-            {#if isStudentEmailNoteShown}
-              (Please use your student or faculty email)
-            {/if}
-          </label>
-          <input
-            id="email"
-            bind:value={formData.email.value}
-            bind:this={formData.email.el}
-            on:change={() => {
-              formData.email.valid =
-                formData.email.value && formData.email.el.checkValidity();
-            }}
-            type="email"
-            autocomplete="email"
-          />
-        </li>
-        <li class:error={isFormDirty && !formData.message.valid}>
-          <label for="message">Your message*</label>
-          <textarea
-            id="message"
-            bind:value={formData.message.value}
-            bind:this={formData.message.el}
-            on:change={() => {
-              formData.message.valid =
-                formData.message.value && formData.message.el.validity.valid;
-            }}
-            cols="30"
-            rows="10"
-          />
-        </li>
-        <li class:error={isFormDirty && !formData.consent.valid}>
-          <input
-            id="consent"
-            bind:checked={formData.consent.checked}
-            bind:this={formData.consent.el}
-            on:change={() => {
-              formData.consent.valid =
-                formData.consent.checked && formData.consent.el.validity.valid;
-            }}
-            type="checkbox"
-          />
-          <label for="consent"
-            >I consent to having this website store my submitted information so
-            that a support staff can respond to my inquiry.</label
-          >
-        </li>
-        <li>
-          <button
-            type="submit"
-            class="btn"
-            disabled={isFormDirty && !isFormValid}>Send message</button
-          >
-        </li>
-      </ul>
-      {#if isEmailSent}
-        <p>Thank you! We'll get back to you soon.</p>
-      {/if}
-    </form>
-  {/if}
-</section>
+      />
+    {:else}
+      <form on:submit|preventDefault={handleSubmit} novalidate>
+        <h2 class="h3 text-center">Send us a message</h2>
+        <ul>
+          <li class:error={isFormDirty && !formData.selectedSubject.valid}>
+            <fieldset>
+              <legend>Please choose a subject</legend>
+              <ul>
+                {#each subjects as subject, index}
+                  <li>
+                    <input
+                      id="subject-{index}"
+                      type="radio"
+                      bind:group={formData.selectedSubject.value}
+                      bind:this={formData.selectedSubject.el}
+                      on:change={() => {
+                        formData.selectedSubject.valid =
+                          formData.selectedSubject.value &&
+                          formData.selectedSubject.el.validity.valid;
+                      }}
+                      value={subject}
+                      name="subject"
+                    />
+                    <label for="subject-{index}" class="font-medium"
+                      >{subject}</label
+                    >
+                  </li>
+                {/each}
+              </ul>
+            </fieldset>
+          </li>
+          <li class:error={isFormDirty && !formData.name.valid}>
+            <label for="name">Name*</label>
+            <input
+              id="name"
+              bind:value={formData.name.value}
+              bind:this={formData.name.el}
+              on:change={() => {
+                formData.name.valid =
+                  formData.name.value && formData.name.el.checkValidity();
+              }}
+              type="text"
+              autocomplete="name"
+            />
+          </li>
+          <li class:error={isFormDirty && !formData.email.valid}>
+            <label for="email"
+              >E-mail*
+              {#if isStudentEmailNoteShown}
+                (Please use your student or faculty email)
+              {/if}
+            </label>
+            <input
+              id="email"
+              bind:value={formData.email.value}
+              bind:this={formData.email.el}
+              on:change={() => {
+                formData.email.valid =
+                  formData.email.value && formData.email.el.checkValidity();
+              }}
+              type="email"
+              autocomplete="email"
+            />
+          </li>
+          <li class:error={isFormDirty && !formData.message.valid}>
+            <label for="message">Your message*</label>
+            <textarea
+              id="message"
+              bind:value={formData.message.value}
+              bind:this={formData.message.el}
+              on:change={() => {
+                formData.message.valid =
+                  formData.message.value && formData.message.el.validity.valid;
+              }}
+              cols="30"
+              rows="10"
+            />
+          </li>
+          <li class:error={isFormDirty && !formData.consent.valid}>
+            <input
+              id="consent"
+              bind:checked={formData.consent.checked}
+              bind:this={formData.consent.el}
+              on:change={() => {
+                formData.consent.valid =
+                  formData.consent.checked &&
+                  formData.consent.el.validity.valid;
+              }}
+              type="checkbox"
+            />
+            <label for="consent"
+              >I consent to having this website store my submitted information
+              so that a support staff can respond to my inquiry.</label
+            >
+          </li>
+          <li>
+            <button
+              type="submit"
+              class="btn"
+              disabled={isFormDirty && !isFormValid}>Send message</button
+            >
+          </li>
+        </ul>
+        {#if isEmailSent}
+          <p>Thank you! We'll get back to you soon.</p>
+        {/if}
+      </form>
+    {/if}
+  </div>
+</Section>

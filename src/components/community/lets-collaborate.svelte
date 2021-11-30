@@ -1,7 +1,7 @@
 <script>
   import { letsCollaborateActions } from "../../contents/community";
-  import Action from "../contact/action.svelte";
   import Section from "../section.svelte";
+  import Resource from "../support/resource.svelte";
 </script>
 
 <Section class="text-center">
@@ -10,9 +10,9 @@
     Would you like to collaborate? We’re excited to hear your ideas. Get in
     contact.
   </p>
-  <div class="flex flex-wrap justify-around max-w-7xl mx-auto">
-    {#each letsCollaborateActions as action}
-      <Action {action} class="max-w-sm" btnClass="btn-cta" isTextSmall={true} />
+  <div class="flex flex-wrap justify-around max-w-7xl mx-auto mt-small">
+    {#each letsCollaborateActions as resource}
+      <Resource {resource} />
     {/each}
   </div>
 </Section>

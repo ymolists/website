@@ -4,19 +4,25 @@
   export { clazz as class };
 </script>
 
-<style lang="scss">
+<style lang="postcss">
   section {
-    margin-top: var(--xx-large);
+    @apply mt-xx-large;
+
+    &:first-of-type:not(:only-of-type) {
+      @media (max-width: 768px) {
+        @apply mt-small;
+      }
+    }
 
     &:last-of-type {
-      margin-bottom: var(--xx-large);
+      @apply mb-xx-large;
     }
 
     @media (max-width: 972px) {
-      margin-top: var(--x-huge);
+      @apply mt-x-large;
 
       &:last-of-type {
-        margin-bottom: var(--x-huge);
+        @apply mb-x-large;
       }
     }
   }

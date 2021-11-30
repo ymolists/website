@@ -31,9 +31,9 @@
 <div class="flex">
   <div class="hidden w-4/12 md:block" />
   <header class="w-full mb-x-large md:w-8/12 md:mb-xx-large">
-    <h1 class="mt-x-large mb-macro md:mt-xx-large">Changelog</h1>
-    <p class="text-large">Gitpod product improvements and updates</p>
-    <p class="mt-micro">
+    <h1 class="mb-macro mt-small md:mt-xx-large">Changelog</h1>
+    <p class="text-large mb-x-small">Gitpod product improvements and updates</p>
+    <p class="buttons-wrapper">
       <TwitterFollowButton trackingContext="changelog" class="btn-primary" />
       <a
         href="https://gitpod.io/notifications"

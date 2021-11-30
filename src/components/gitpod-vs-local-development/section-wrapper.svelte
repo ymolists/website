@@ -23,7 +23,7 @@
   }
   @media (max-width: 1059px) {
     .card {
-      @apply pb-macro;
+      @apply pb-macro mb-micro md:mb-x-small;
     }
   }
 </style>

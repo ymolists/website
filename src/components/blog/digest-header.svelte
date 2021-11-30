@@ -14,8 +14,10 @@
 
 <header class="mb-0">
   <h1>DevX Digest</h1>
-  <p>Our newsletter where we cover everything about Developer Experience</p>
-  <p class="mt-micro text-base">
+  <p class="mb-x-small">
+    Our newsletter where we cover everything about Developer Experience
+  </p>
+  <div class="buttons-wrapper justify-center">
     <a
       class="btn-primary"
       href="https://gitpod.io/notifications"
@@ -23,5 +25,5 @@
       >Signup for the Newsletter
     </a>
     <TwitterFollowButton trackingContext="Digest" class="btn-secondary" />
-  </p>
+  </div>
 </header>

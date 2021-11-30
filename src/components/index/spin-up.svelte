@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { ExtensionButton } from '../../types/extension-button.type'
+  import type { ExtensionButton } from "../../types/extension-button.type";
   import Section from "../section.svelte";
 
   const buttons: ExtensionButton[] = [
@@ -7,8 +7,7 @@
       name: "chrome-extension",
       icon: "svg/browsers/chrome.svg",
       text: "Chrome Extension",
-      href:
-        "https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki",
+      href: "https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki",
     },
     {
       name: "firefox-extension",
@@ -18,12 +17,6 @@
     },
   ];
 </script>
-
-<style>
-  .buttons-wrapper {
-    @apply justify-start;
-  }
-</style>
 
 <Section
   class="flex flex-col max-w-2xl mx-auto lg:max-w-none lg:flex-row items-center bg-off-white shadow-normal px-micro py-small sm:px-small sm:py-medium lg:space-x-small xl:py-24 xl:px-20 xl:space-x-20 rounded-5xl"

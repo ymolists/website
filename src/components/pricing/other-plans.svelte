@@ -36,10 +36,6 @@
   p:not(:last-of-type) {
     margin-bottom: var(--xx-small);
   }
-
-  .btn-cta {
-    margin-top: var(--small);
-  }
 </style>
 
 <Section>
@@ -62,7 +58,7 @@
                 plan: p.trackingName,
                 name: "cta",
               })}
-            class="btn-cta">{p.btnText}</a
+            class="btn-cta mt-x-small">{p.btnText}</a
           >
         </div>
       </div>

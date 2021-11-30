@@ -6,7 +6,7 @@
 </script>
 
 <div
-  class="flex flex-col items-center space-y-small lg:items-stretch lg:space-y-0 lg:flex-row lg:space-x-xx-small max-w-screen-xl mx-auto"
+  class="flex flex-col items-center space-y-micro md:space-y-small lg:items-stretch lg:space-y-0 lg:flex-row lg:space-x-xx-small max-w-screen-xl mx-auto"
 >
   {#each secondaryFeatures as secondaryFeature}
     <SecondaryFeature {secondaryFeature} {headingLevel} />

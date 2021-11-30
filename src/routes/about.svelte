@@ -13,16 +13,6 @@
   .cardlike a {
     padding: 1.5rem;
   }
-
-  .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
 </style>
 
 <OpenGraph
@@ -31,8 +21,9 @@
     title: "About Gitpod",
   }}
 />
+
 <header class="tight">
-  <h1 class="visually-hidden">Gitpod</h1>
+  <h1 class="sr-only">Gitpod</h1>
   <LogoAnimated center={true} iterations={1} />
   <p>
     Open source developer platform. Originally from Kiel now fully-remote from

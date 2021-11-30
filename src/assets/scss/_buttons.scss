@@ -62,10 +62,6 @@ a {
   }
 }
 
-.btn-primary + .btn-secondary {
-  @apply ml-micro;
-}
-
 .btn-tertiary {
   background-color: var(--black);
   color: var(--white);
@@ -124,7 +120,6 @@ a {
 .buttons-wrapper {
   --gap: var(--micro);
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
   width: calc(100% + var(--gap));

@@ -15,7 +15,7 @@
     Welcome! Our community is at the centre of everything at Gitpod. We're
     excited to have you join us 🧡
   </p>
-  <div class="flex flex-wrap justify-around mt-large max-w-7xl mx-auto">
+  <div class="flex flex-wrap justify-around mt-small max-w-7xl mx-auto">
     {#each primaryCtas as resource}
       <Resource {resource} />
     {/each}

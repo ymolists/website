@@ -27,7 +27,7 @@
 
     &:not(:last-child) {
       @media (max-width: 944px) {
-        margin-bottom: var(--small);
+        @apply mb-x-small;
       }
     }
   }

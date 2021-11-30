@@ -9,21 +9,22 @@
   justify-content: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .posts-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: none;
   }
 }
 
 .posts-grid__item {
   display: flex;
+  justify-content: center;
   max-width: 25rem;
   min-width: 20rem;
 }
 
 .content-blog {
   max-width: 94vw;
-  margin: 5rem auto 2rem;
+  margin: var(--small) auto 2rem;
 
   @media (min-width: 1041px) {
     width: 50rem;

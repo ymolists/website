@@ -5,10 +5,10 @@
 </script>
 
 <Section class="text-center">
-  <h2>Helpful Resources</h2>
-  <div class="flex flex-wrap justify-around mt-large max-w-7xl mx-auto">
-	{#each resources as resource}
-    <Resource {resource} />
-  {/each}
+  <h2 class="mb-small">Helpful Resources</h2>
+  <div class="flex flex-wrap justify-around max-w-7xl mx-auto">
+    {#each resources as resource}
+      <Resource {resource} />
+    {/each}
   </div>
 </Section>

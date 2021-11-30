@@ -39,8 +39,8 @@
 </script>
 
 <Section class="text-center">
-  <h2>Additional images</h2>
-  <div class="flex justify-around flex-wrap mt-medium">
+  <h2 class="mb-small">Additional images</h2>
+  <div class="flex justify-around flex-wrap">
     {#each images as image}
       <ImageBox {image} />
     {/each}

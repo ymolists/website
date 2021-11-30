@@ -17,14 +17,14 @@
 <OpenGraph
   data={{
     title: "Contact",
-    description: "Get in touch and let us know how we can help."
+    description: "Get in touch and let us know how we can help.",
   }}
 />
 
 <header>
   <h1>How can we help you?</h1>
   <p>Get in touch and let us know how we can help.</p>
-  <div class="flex flex-wrap justify-around mt-x-small">
+  <div class="flex flex-wrap justify-around mt-small">
     {#each contactActions as action}
       <Action {action} width="19rem" />
     {/each}

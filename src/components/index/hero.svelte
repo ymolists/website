@@ -15,17 +15,12 @@
   .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     @media (max-width: 647px) {
       flex-direction: column;
+      margin: var(--small) auto 0;
       max-width: 450px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @media (max-width: 375px) {
-      margin-top: var(--x-small);
     }
 
     &__text {

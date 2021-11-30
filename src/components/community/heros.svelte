@@ -8,10 +8,10 @@
   }
 
   .box:last-of-type {
-    margin-bottom: var(--xx-large);
+    @apply mb-xx-large;
 
     @media (max-width: 972px) {
-      margin-top: var(--x-huge);
+      @apply my-x-large;
     }
   }
 </style>

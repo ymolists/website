@@ -7,14 +7,15 @@
   import Header from "../../components/gitpod-vs-local-development/header.svelte";
   import Explore from "../../components/explore.svelte";
   import GitpodVsLocalDevelopmentPost from "../../components/gitpod-vs-local-development-post.svelte";
-  import FeelTheDifference from "../../components/gitpod-vs-local-development/feel-the-difference.svelte";
   import OpenGraph from "../../components/open-graph.svelte";
+  import CalloutSecondary from "../../components/callout-secondary.svelte";
 </script>
 
 <OpenGraph
   data={{
     title: "Gitpod vs local development",
-    description: "Why should you move your dev environment to the cloud? Here is the answer."
+    description:
+      "Why should you move your dev environment to the cloud? Here is the answer.",
   }}
 />
 
@@ -22,7 +23,11 @@
 
 <MeetBobAndAlice />
 
-<FeelTheDifference />
+<CalloutSecondary
+  title="Feel the difference"
+  text="Spin up fresh, automated dev environments for each task, in the cloud, in
+  seconds."
+/>
 
 <GitpodVsLocalDevelopmentPost
   title="Full blog post"

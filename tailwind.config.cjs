@@ -92,7 +92,6 @@ module.exports = {
         "x-large": "var(--x-large)",
         large: "var(--large)",
         medium: "var(--medium)",
-        "not-huge": "var(--not-huge)",
         small: "var(--small)",
         "x-small": "var(--x-small)",
         "xx-small": "var(--xx-small)",

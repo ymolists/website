@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import CalloutSecondary from "../components/callout-secondary.svelte";
   import OpenGraph from "../components/open-graph.svelte";
 </script>
 
@@ -52,9 +53,6 @@
   }
   .mt-1rem {
     margin-top: 1rem;
-  }
-  .mt-2rem {
-    margin-top: 2rem;
   }
   .mx-auto {
     margin-left: auto;
@@ -147,7 +145,7 @@
     title: "Gitpod vs GitHub Codespaces",
   }}
 />
-<header>
+<header class="tight">
   <h1>Gitpod vs GitHub Codespaces</h1>
   <p>
     Gitpod is the faster, more resource-efficient, open-source platform that
@@ -431,15 +429,10 @@
   >
 </p>
 
-<div class="brief">
-  <h2>Ready to feel the difference?</h2>
-  <p class="text-large">
-    Spin up an example workspace now, just link your git provider
-  </p>
-  <p>
-    <a href="/#get-started" class="btn-conversion mt-2rem">Try Now</a>
-  </p>
-</div>
+<CalloutSecondary
+  title="Ready to feel the difference?"
+  text="Spin up an example workspace now, just link your git provider"
+/>
 
 <div class="halfimages">
   <article class="card">

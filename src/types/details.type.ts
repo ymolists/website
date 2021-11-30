@@ -1,4 +1,4 @@
 export type Details = {
-	term: string;
-	data: string[]
+  term: string;
+  data: string[];
 }[];

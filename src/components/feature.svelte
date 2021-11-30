@@ -36,10 +36,16 @@
     <div class="mb-x-small md:my-0">
       <div class="text-large">
         <h2 class="h3">{title}</h2>
-        <p class="mt-micro">{@html paragraph}</p>
+        <p
+          class="mt-micro"
+          class:mb-xx-small={moreButton || secondaryButton}
+          class:md:mb-x-small={moreButton || secondaryButton}
+        >
+          {@html paragraph}
+        </p>
       </div>
       <div
-        class="mt-xx-small md:mt-small"
+        class:buttons-wrapper={moreButton && secondaryButton}
         class:hidden={!moreButton && !secondaryButton}
       >
         {#if moreButton}

@@ -18,7 +18,7 @@
   }}
 />
 
-<header>
+<header class="tight">
   <h1>Security at Gitpod</h1>
   <p class="max-w-2xl mx-auto mb-medium">
     Gitpod is trusted by over 450k developers and companies that are moving

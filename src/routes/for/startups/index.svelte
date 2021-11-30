@@ -15,6 +15,14 @@
   import OpenGraph from "../../../components/open-graph.svelte";
 </script>
 
+<style lang="postcss">
+  h2 {
+    @media (min-width: 973px) {
+      @apply -mb-16;
+    }
+  }
+</style>
+
 <OpenGraph
   data={{
     title: "Gitpod for Startups",
@@ -26,7 +34,7 @@
 <Header />
 
 <Section>
-  <h2 class="text-center -mb-16">Accelerate your workflow</h2>
+  <h2 class="text-center">Accelerate your workflow</h2>
   <Features {features} />
 </Section>
 

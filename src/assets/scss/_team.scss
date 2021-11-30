@@ -1,10 +1,10 @@
 .redirector {
   max-width: 900px;
-  margin: 3rem auto;
+  margin: var(--small) auto;
 }
 @media (min-width: 900px) {
   .redirector {
-    margin: 7.5rem auto;
+    margin: var(--x-huge) auto;
   }
 }
 .redirector p {
@@ -21,7 +21,7 @@
   width: 12px;
 }
 .hilited.redirector {
-  margin-top: 3rem;
+  margin-top: var(--small);
 }
 .othercompanies span {
   padding: 0.3rem 0.5rem;
