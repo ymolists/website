@@ -1,4 +1,5 @@
 const { tailwindExtractor } = require("tailwindcss/lib/lib/purgeUnusedStyles");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: {
@@ -78,6 +79,9 @@ module.exports = {
         "btn-small": "var(--btn-small)",
         "fine-print": "var(--fine-print)",
       },
+      lineHeight: {
+        "x-small": "var(--x-small)",
+      },
       maxWidth: {
         row: "var(--row-max-width)",
         "container-normal": "var(--container-normal)",
@@ -104,6 +108,10 @@ module.exports = {
       zIndex: {
         "-10": "-10",
       },
+    },
+    minHeight: {
+      13: "3.375rem",
+      ...defaultTheme.minHeight,
     },
   },
   variants: {

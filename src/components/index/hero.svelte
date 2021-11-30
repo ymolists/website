@@ -16,7 +16,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: var(--x-small);
 
     @media (max-width: 647px) {
       flex-direction: column;
@@ -134,7 +133,7 @@
   }
 </style>
 
-<div class="hero">
+<div class="hero mt-x-small">
   <div class="hero__text">
     <h1 class="homeh1">
       Always<br /> Ready to Code.

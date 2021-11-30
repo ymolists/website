@@ -16,40 +16,22 @@
 </script>
 
 <style lang="postcss">
-  /* override _forms.scss */
-  .menu-item {
-    margin-bottom: 0;
-  }
-
-  .menu-container {
-    @apply px-6;
-    display: inline-block;
-    font-size: var(--p-large);
-    line-height: var(--x-small);
-
-    &.isActiveSection {
-      @apply bg-white;
-      @apply py-6;
-      border-radius: 1rem;
-      box-shadow: var(--shadow);
-    }
-  }
-
-  .submenu {
-    @apply ml-4 mt-4;
-    font-size: var(--p-medium);
-    line-height: var(--x-small);
+  .isActiveSection {
+    @apply py-6 bg-white rounded-2xl shadow-normal;
   }
 </style>
 
-<li class="menu-item">
-  <div class:isActiveSection class="menu-container">
+<li>
+  <div
+    class:isActiveSection
+    class="px-6 inline-block text-p-large leading-x-small"
+  >
     <MenuLink href={menuItem.path} class="text-large">{menuItem.title}</MenuLink
     >
     {#if menuItem.subMenu && isActiveSection}
-      <ul class="submenu">
+      <ul class="ml-4 mt-4 text-p-medium leading-x-small">
         {#each menuItem.subMenu as sub}
-          <li class="menu-item">
+          <li>
             <MenuLink href={sub.path}>{sub.title}</MenuLink>
             {#if sub.status}
               <Pill text={sub.status} />

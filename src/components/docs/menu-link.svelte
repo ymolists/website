@@ -9,9 +9,9 @@
   $: active = href === normalizedPath || href === `${normalizedPath}/`;
 </script>
 
-<style>
+<style lang="postcss">
   .active {
-    color: var(--black);
+    @apply text-black;
   }
 </style>
 

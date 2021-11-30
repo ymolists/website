@@ -4,6 +4,7 @@
 </script>
 
 <style lang="postcss">
+  /* This is needed to overwrite `a[class]` in _reset.scss */
   a {
     @apply underline;
   }

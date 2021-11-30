@@ -34,11 +34,7 @@
 </script>
 
 <style lang="postcss">
-  :global(.banner-is-shown) :global(.hero) {
-    @apply mt-small !important;
-  }
-
-  :global(.banner-is-shown) :global(.docs-layout) {
+  :global(.banner-is-shown) :global(main > div:first-child) {
     @apply mt-small;
   }
 

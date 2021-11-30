@@ -60,8 +60,6 @@
   --micro: 1rem; /* should we invert micro and macro? */
   --macro: 0.5rem;
 
-  --border-light: 1px solid var(--sand-dark);
-
   @media (max-width: 1140px) {
     --h1: 3rem;
     --h2: 2.5rem;

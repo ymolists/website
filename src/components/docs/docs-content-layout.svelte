@@ -23,10 +23,10 @@
     title: title ? title : "Gitpod Documentation",
   }}
 />
+<AnnouncementBanner />
+<EditInGitpod />
 <div class="content-docs">
-  <AnnouncementBanner />
-  <EditInGitpod />
   <slot />
-  <FeedbackWidget type="docs" class="my-huge" />
-  <PrevNext />
 </div>
+<FeedbackWidget type="docs" class="my-huge" />
+<PrevNext />

@@ -6,36 +6,11 @@
   import { MENU } from "./menu";
 </script>
 
-<style lang="postcss">
-  .docs-layout {
-    @apply pb-10;
-
-    @media (min-width: 769px) {
-      @apply flex;
-      @apply pt-10;
-    }
-  }
-
-  .menu {
-    @apply w-2/5 pt-24 pr-8;
-
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
-
-  .doc-contents {
-    @media (min-width: 769px) {
-      @apply w-3/5;
-    }
-  }
-</style>
-
-<div class="docs-layout row">
-  <div class="menu">
+<div class="pb-10 md:flex md:pt-10">
+  <div class="hidden md:block md:w-1/3 md:pt-24 md:pr-8">
     <Menu {MENU} />
   </div>
-  <div class="doc-contents">
+  <div class="md:w-2/3">
     <Search />
     <MobileMenu {MENU} />
     <slot />

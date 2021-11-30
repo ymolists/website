@@ -10,7 +10,7 @@
 </script>
 
 <div role="navigation" aria-label="All topics">
-  <ul>
+  <ul class="divide-y divide-sand-dark">
     {#each MENU as menuItem}
       <MenuItem
         href={menuItem.path}

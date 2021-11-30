@@ -20,17 +20,7 @@
   );
 </script>
 
-<style lang="scss">
-  .mobile-menu {
-    margin-bottom: 2.5rem;
-
-    @media (min-width: 769px) {
-      display: none;
-    }
-  }
-</style>
-
-<div class="mobile-menu">
+<div class="mobile-menu mb-10 md:hidden">
   {#if $topicsState}
     <MobileMenuTopics {MENU} />
   {:else}
