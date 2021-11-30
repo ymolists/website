@@ -3,8 +3,11 @@
   import { slide } from "svelte/transition";
 
   let clazz = "";
+  let dateNow = new Date(Date.now());
   export { clazz as class };
   export let storageKey: string;
+  export let startDate: Date = new Date("2021-01-01");
+  export let endDate: Date = new Date("2021-01-02");
   export let location: "top" | "bottom" = "top";
 
   let showBanner = false;
@@ -19,8 +22,13 @@
 
   onMount(() => {
     showBanner = !window.localStorage.getItem(storageKey);
-    if (showBanner && clazz === "announcement-banner") {
-      document.body.classList.add("banner-is-shown");
+    if (clazz === "announcement-banner") {
+      let isWithinTheDates = startDate < dateNow && dateNow < endDate;
+      if (isWithinTheDates && showBanner) {
+        document.body.classList.add("banner-is-shown");
+      } else if (!isWithinTheDates || !showBanner) {
+        closeBanner();
+      }
     }
   });
 </script>

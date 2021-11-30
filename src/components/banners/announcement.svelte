@@ -7,14 +7,17 @@
    * For simplicity, the announcement `storageKey` is the date the announcement
    * was made, in the `yyyy-mm-dd` format.
    */
-  const announcementDate = "2021-10-28";
+  const startDate = new Date("2021-11-02");
+  const endDate = new Date("2021-11-10");
 </script>
 
 <div class="border-b border-gray-300 border-solid">
   <Banner
-    storageKey="announcement-{announcementDate}"
+    storageKey="announcement-{`${startDate}${endDate}`}"
     let:closeBanner
     class="announcement-banner"
+    {startDate}
+    {endDate}
   >
     <span class="flex-1 text-lg text-right">🎁</span>
     <p class="flex-2 px-4 md:px-2">
