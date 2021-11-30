@@ -8,15 +8,8 @@
   export let imagesDirectoryName: string;
   export let norobots: boolean = false;
 
-  const {
-    date,
-    author,
-    slug,
-    title,
-    image,
-    teaserImage,
-    excerpt,
-  } = $$restProps;
+  const { date, author, slug, title, image, teaserImage, excerpt } =
+    $$restProps;
 
   let dateDisplay = new Date(Date.parse(date)).toLocaleDateString(undefined, {
     year: "numeric",
@@ -65,6 +58,14 @@
       alt: "Reddit",
       icon: "/svg/brands/reddit.svg",
       trackingName: "reddit",
+    },
+    {
+      href: `http://news.ycombinator.com/submitlink?u=${encodeURIComponent(
+        `${baseUrl}${slug}`
+      )}&t=${encodeURIComponent(title)}`,
+      alt: "HackerNews",
+      icon: "/svg/brands/hackernews.svg",
+      trackingName: "hackernews",
     },
   ];
 </script>
