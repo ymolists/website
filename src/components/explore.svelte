@@ -24,12 +24,17 @@
 
   @media (max-width: 830px) {
     .explore {
-      @apply flex-col rounded-2xl mx-auto text-center max-w-lg;
+      @apply flex-col rounded-2xl mx-auto;
+      max-width: 345px;
     }
   }
 
   .h1 {
     @apply mb-micro;
+
+    @media (max-width: 830px) {
+      @apply mb-macro;
+    }
   }
 
   .explore__text {
@@ -37,7 +42,7 @@
     flex: 0 0 45%;
 
     @media (max-width: 830px) {
-      @apply py-small px-x-small;
+      @apply pt-xx-small px-xx-small;
     }
   }
 
@@ -46,7 +51,7 @@
     max-width: 465px;
 
     @media (max-width: 830px) {
-      @apply max-w-sm;
+      @apply max-w-sm mb-xx-small;
     }
   }
 
@@ -64,7 +69,7 @@
     border-radius: inherit;
   }
 
-  @media (max-width: 1020px) {
+  @media (max-width: 830px) {
     .explore__illustration img {
       @apply hidden;
     }
@@ -93,7 +98,7 @@
         class="btn-conversion">{link.text}</a
       >
     </div>
-    <div class="explore__illustration">
+    <div class="explore__illustration w-full">
       <img
         src="/images/{useKumquatIllustration
           ? 'kumquat.png'
@@ -103,9 +108,9 @@
       <img
         src="/images/{useKumquatIllustration
           ? 'kumquat.png'
-          : 'illustration-small.jpg'}"
+          : 'illustration-small.png'}"
+        class:pt-micro={useKumquatIllustration}
         class="small"
-        class:p-x-small={!useKumquatIllustration}
         alt="Gitpod in a Nutshell"
       />
     </div>
