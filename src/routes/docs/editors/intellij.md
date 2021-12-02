@@ -11,7 +11,7 @@ title: IntelliJ IDEA
 
 ## Desktop
 
-We currently have support for JetBrains IntelliJ IDEA (in private Beta). If you're interested to be part of the private Beta group, [leave a comment in this GitHub issue](https://github.com/gitpod-io/gitpod/issues/6342). If you have any issues with the IntelliJ GoLand Beta, you can [leave feedback in this GitHub issue](https://github.com/gitpod-io/gitpod/issues/6576).
+We currently have support for JetBrains IntelliJ IDEA (in private Beta). If you're interested to be part of the private Beta group, [leave a comment in this GitHub issue](https://github.com/gitpod-io/gitpod/issues/6342). If you have any issues with the IntelliJ Beta, you can [leave feedback in this GitHub issue](https://github.com/gitpod-io/gitpod/issues/6576).
 
 > **Warning:** Currently, our JetBrains implementation uses [Code With Me](https://www.jetbrains.com/code-with-me/) links and a shared password to facilitate early Beta testing. This means that for now, anyone who might discover the workspace URL could potentially get full access to your workspace. This solution is temporary and will be resolved before the final release.
 
