@@ -60,8 +60,8 @@
   {/if}
   <div
     class="blurb {layout === 'column'
-      ? 'flex-col h-full'
-      : ''} flex flex-nowrap lg:justify-between p-x-small pt-small"
+      ? 'flex-col h-full flex-nowrap'
+      : 'flex-wrap'} flex lg:justify-between p-x-small pt-small"
   >
     <div>
       {#if headlineOrder === "h3"}
