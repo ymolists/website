@@ -37,4 +37,4 @@ You **must start a new workspace** to see the JetBrains IDE prompt. Workspaces c
 
 **When will the other IDEs be supported?** Soon, we don't yet have any official dates, but will share them when we have them.
 
-**Do you need a license to use the JetBrains integration?** Licensing is required from the desktop client, however during the EAP the integration is free to use.
+**Do you need a license to use the JetBrains integration?** [Licensing](https://www.jetbrains.com/help/idea/remote-development-starting-page.html#licensing) is required from the desktop client.
