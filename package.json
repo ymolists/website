@@ -25,11 +25,13 @@
     "deploy": "run-s clean build:css build:svelte",
     "start": "svelte-kit preview",
     "validate": "svelte-check",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "e2e-test": "cypress open"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.5.0",
     "@slack/webhook": "^6.0.0",
+    "cypress": "^9.1.0",
     "emoji-regex": "^10.0.0",
     "google-spreadsheet": "^3.1.15"
   },
