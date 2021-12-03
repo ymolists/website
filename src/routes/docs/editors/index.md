@@ -17,22 +17,23 @@ There are currently 3 general ways to configure an IDE to work with Gitpod:
 
 ### Browser
 
-- [vscode](editors/vscode-browser)
+- [VS Code](editors/vscode-browser)
 
 ### Desktop
 
-- [GoLand](editors/goland)
-- [IntelliJ](editors/intellij)
-- [vscode](editors/vscode)
+- [GoLand](editors/goland#desktop)
+- [IntelliJ](editors/intellij#desktop)
+- [PyCharm](editors/pycharm#desktop)
+- [VS Code](editors/vscode)
 
 ### Browser (via Docker image)
 
-- [CLion](editors/clion)
-- [DataGrip](editors/datagrip)
-- [GoLand](editors/goland)
-- [IntelliJ](editors/intellij)
-- [phpstorm](editors/phpstorm)
-- [pycharm](editors/pycharm)
-- [rider](editors/rider)
-- [rubymine](editors/rubymine)
-- [webstorm](editors/webstorm)
+- [CLion](<editors/clion#browser-(via-jetbrains-projector)>)
+- [DataGrip](<editors/datagrip#browser-(via-jetbrains-projector)>)
+- [GoLand](<editors/goland#browser-(via-jetbrains-projector)>)
+- [IntelliJ](<editors/intellij#browser-(via-jetbrains-projector)>)
+- [PhpStorm](<editors/phpstorm#browser-(via-jetbrains-projector)>)
+- [PyCharm](<editors/pycharm#browser-(via-jetbrains-projector)>)
+- [Rider](<editors/rider#browser-(via-jetbrains-projector)>)
+- [RubyMine](<editors/rubymine#browser-(via-jetbrains-projector)>)
+- [WebStorm](<editors/webstorm#browser-(via-jetbrains-projector)>)
