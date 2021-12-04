@@ -94,8 +94,10 @@
       <Section title="Company">
         <li><FooterLink href="/about">About</FooterLink></li>
         <li>
-          <FooterLink href="https://www.gitpod.io/careers" class="highlighted"
-            >Careers</FooterLink
+          <FooterLink
+            href="https://www.gitpod.io/careers"
+            target="_blank"
+            class="highlighted">Careers</FooterLink
           >
         </li>
         <li><FooterLink href="/contact">Contact</FooterLink></li>
