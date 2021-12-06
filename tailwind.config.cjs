@@ -118,6 +118,7 @@ module.exports = {
       dropShadow: ["hover", "focus"],
       grayscale: ["hover"],
       opacity: ["hover"],
+      padding: ["last"],
     },
   },
   plugins: [],
