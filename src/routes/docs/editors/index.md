@@ -23,6 +23,7 @@ There are currently 3 general ways to configure an IDE to work with Gitpod:
 
 - [GoLand](editors/goland#desktop)
 - [IntelliJ](editors/intellij#desktop)
+- [PhpStorm](editors/phpstorm#desktop)
 - [PyCharm](editors/pycharm#desktop)
 - [VS Code](editors/vscode)
 
