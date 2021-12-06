@@ -24,7 +24,7 @@
     Gitpod is trusted by over 450k developers and companies that are moving
     their dev environments to the cloud.
   </p>
-  <a href="/contact" class="btn btn-primary">Talk to an expert</a>
+  <a href="/contact/support" class="btn btn-primary">Talk to an expert</a>
 </header>
 <UsedBy title="Trusted by developer led companies" />
 <Secure />

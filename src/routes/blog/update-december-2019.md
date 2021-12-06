@@ -52,7 +52,7 @@ To protect us from such miss-use and at the same time better support open-source
 1. Add a **free, unlimited hours for professional open-source developers**.
 2. Reduce the free plan to 50h/month, which is still plenty for part-time contributors and trying Gitpod.
 
-Please [apply](/contact) for the unlimited open-source plan, once you ran against the 50 hours limit. We'll check your track record and get you going within one business day.
+Please [apply](/contact/support) for the unlimited open-source plan, once you ran against the 50 hours limit. We'll check your track record and get you going within one business day.
 
 ### Personal Plan
 

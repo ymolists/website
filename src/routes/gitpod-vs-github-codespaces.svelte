@@ -424,7 +424,7 @@
   <small
     >Disclaimer: All information, prices, and data were last verified on Sept.
     3, 2021. To report any incorrect or outdated information, please <a
-      href="/contact">contact us.</a
+      href="/contact/support">contact us.</a
     ></small
   >
 </p>
