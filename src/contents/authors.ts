@@ -58,7 +58,16 @@ export const authors: { [idx: string]: Author } = {
       linkedin: "christian-weichel-740b4224",
     },
     description:
-      "Christian loves building things, systems and software. Ever keen to solve cross-cutting problems, he has experience in human-computer interaction, embedded software development, and the backend side of things (Kubernetes, Docker). He is also co-leading Eclipse Mita.",
+      "Christian loves building things, systems and software. Ever keen to solve cross-cutting problems, he has experience in human-computer interaction, embedded software development, and the backend side of things (Kubernetes, Docker).",
+  },
+  aledbf: {
+    name: "Manuel Alejandro de Brito Fontes",
+    socialProfiles: {
+      github: "aledbf",
+      twitter: "aledbf",
+      linkedin: "aledbf",
+    },
+    description: "",
   },
   jankeromnes: {
     name: "Jan Keromnes",
