@@ -1,0 +1,3 @@
+[submodule "gitpod-test-docs"]
+	path = gitpod-test-docs
+	url = https://github.com/mikenikles/gitpod-test-docs
