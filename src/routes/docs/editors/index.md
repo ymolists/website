@@ -9,11 +9,12 @@ In line with [our ambition to "remove all friction from the developer experience
 
 ## The 3 IDE setups within Gitpod
 
-There are currently 3 general ways to configure an IDE to work with Gitpod:
+There are currently the following ways to configure an IDE to work with Gitpod:
 
 1. **Browser** - These are the IDE's which Gitpod supports as first-class within the browser. Currently, Gitpod only supports VS Code, which is the default browser IDE. You can also enable "VSCode Insiders", which is VS Code in the browser synced with [the latest upstream VS Code](https://github.com/microsoft/vscode). You can configure the Insiders VS Code IDE [in your Gitpod preferences](https://gitpod.io/preferences).
 1. **Desktop** - Gitpod also has first-class support for desktop IDE's, allowing you to connect to your Gitpod workspace from your desktop machine.
 1. **Browser (via Docker Image)** - Because Gitpod has [Docker image support](/docs/config-docker) and the ability to preview a running application, you can load an IDE via Docker, and interact with it in your browser. JetBrains IDE's have [the Projector product](https://lp.jetbrains.com/projector/), which enables this workflow.
+1. Run an Editor via VNC. The image `gitpod/workspace-full-vnc` contains a in-browser VNC setup, which allows to run Emacs or any other Linux/X11 Editor/IDE side-by-side with the main IDE.
 
 ### Browser
 
