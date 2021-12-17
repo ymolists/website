@@ -2,7 +2,7 @@
   import Quote from "./quote.svelte";
 </script>
 
-<header>
+<header data-analytics={`{"position":"hero"}`}>
   <h1>Gitpod for Startups</h1>
   <p>
     Spend less time worrying about brittle, local dev environments and more time
@@ -15,10 +15,6 @@
   </p>
   <a
     href="https://docs.google.com/forms/d/e/1FAIpQLSc-Vaelz0yG-XkuN2CYyUtZz0khhwMaju4oSLdMNIzoMkpHug/viewform"
-    on:click={() =>
-      window.analytics.track("startup_application_opened", {
-        context: "hero",
-      })}
     target="_blank"
     class="btn-conversion">Apply now</a
   >

@@ -35,15 +35,10 @@
       click.
     </p>
     <div class="buttons-wrapper">
-      {#each buttons as { name, href, icon, text }}
+      {#each buttons as { href, icon, text }}
         <a
           {href}
           target="_blank"
-          on:click={() =>
-            window.analytics.track("extension_button_clicked", {
-              type: name,
-              url: href,
-            })}
           rel="noopener"
           class="btn-otherbrand text-medium"
         >

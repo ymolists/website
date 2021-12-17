@@ -2,7 +2,6 @@
   import Section from "../section.svelte";
 
   export let otherPlans: any[];
-  export let trackingContext: String;
 </script>
 
 <style lang="scss">
@@ -40,7 +39,7 @@
 
 <Section>
   <h2 class="h1">Open source, self hosting, and students</h2>
-  <div class="plans">
+  <div class="plans" data-analytics={`{"context":"other_plans"}`}>
     {#each otherPlans as p}
       <div class="plan divider">
         <div class="plan__header">
@@ -50,16 +49,7 @@
           {#each p.paragraphs as para}
             <p>{@html para}</p>
           {/each}
-          <a
-            href={p.btnHref}
-            on:click={() =>
-              window.analytics.track("pricing_plan_clicked", {
-                context: trackingContext,
-                plan: p.trackingName,
-                name: "cta",
-              })}
-            class="btn-cta mt-x-small">{p.btnText}</a
-          >
+          <a href={p.btnHref} class="btn-cta mt-x-small">{p.btnText}</a>
         </div>
       </div>
     {/each}

@@ -3,8 +3,6 @@
   export let testimonial: Testimonial;
 
   const { name, avatar, role, org, text, twitterHandle, tweetId } = testimonial;
-
-  export let position: Number;
 </script>
 
 <style lang="scss">
@@ -34,12 +32,9 @@
 <a
   href={`https://twitter.com/${twitterHandle}/status/${tweetId}`}
   target="_blank"
-  on:click={() =>
-    window.analytics.track("socialproof_clicked", {
-      type: "tweet",
-      url: `https://twitter.com/${twitterHandle}/status/${tweetId}`,
-      position: position,
-    })}
+  data-analytics={`{"variant":"social_media","context":"socialproof","label":"` +
+    name +
+    `"}`}
   class="my-2 text-small"
   rel="noreferrer"
 >

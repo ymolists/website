@@ -22,8 +22,9 @@
       class="btn-primary"
       href="https://gitpod.io/notifications"
       target="_blank"
+      data-analytics={`{"context":"dashboard"}`}
       >Signup for the Newsletter
     </a>
-    <TwitterFollowButton trackingContext="Digest" class="btn-secondary" />
+    <TwitterFollowButton class="btn-secondary" />
   </div>
 </header>

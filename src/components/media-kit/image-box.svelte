@@ -9,13 +9,5 @@
 >
   <img {src} {alt} class="h-auto md:h-72 rounded m-auto w-full {imgClass}" />
   <p class="mt-small mb-micro max-w-sm mx-auto">Download {text}</p>
-  <a
-    href={src}
-    on:click={() =>
-      window.analytics.track("media_downloaded", {
-        name: src,
-      })}
-    class="btn-cta"
-    download>{btnText}</a
-  >
+  <a href={src} class="btn-cta" download>{btnText}</a>
 </div>

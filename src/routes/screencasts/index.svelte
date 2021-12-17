@@ -29,6 +29,7 @@
 
 <section
   class="screencasts grid justify-center gap-y-medium gap-x-5 m-x-small px-5"
+  data-analytics={`{"context":"grid"}`}
 >
   {#each screencasts as screencast, index}
     <Screencast {screencast} screencastNumber={index + 1} />

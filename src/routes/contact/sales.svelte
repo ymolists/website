@@ -8,6 +8,7 @@
   import OpenGraph from "../../components/open-graph.svelte";
   import SubmissionSuccess from "../../components/submission-success.svelte";
   import Section from "../../components/section.svelte";
+  import { trackEvent, trackIdentity } from "../../components/segment.svelte";
 
   const selfHostingSubject = "Self-hosting";
   const subjects = [
@@ -89,12 +90,12 @@
       return;
     }
 
-    window.analytics.identify({
+    trackIdentity({
       name_untrusted: formData.name.value,
       email_untrusted: formData.workEmail.value,
     });
 
-    window.analytics.track("message_submitted", {
+    trackEvent("message_submitted", {
       subject: formData.selectedSubject.value,
     });
 
@@ -179,7 +180,7 @@
 </header>
 
 <Section class="card shadow-xl mb-32 sm:mx-8" id="form">
-  <div bind:this={sectionStart}>
+  <div bind:this={sectionStart} data-analytics={`{"dnt":true}`}>
     {#if isEmailSent}
       <SubmissionSuccess
         title="Thank you for your message"

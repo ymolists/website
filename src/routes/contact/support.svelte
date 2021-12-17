@@ -9,6 +9,7 @@
   import SubmissionSuccess from "../../components/submission-success.svelte";
   import { onMount } from "svelte";
   import Section from "../../components/section.svelte";
+  import { trackEvent, trackIdentity } from "../../components/segment.svelte";
 
   const studentUnlimitedSubject = "Educational Discount Verification";
 
@@ -68,12 +69,12 @@
       return;
     }
 
-    window.analytics.identify({
+    trackIdentity({
       name_untrusted: formData.name.value,
       email_untrusted: formData.email.value,
     });
 
-    window.analytics.track("message_submitted", {
+    trackEvent("message_submitted", {
       subject: formData.selectedSubject.value,
     });
 
@@ -154,7 +155,7 @@
 </header>
 
 <Section class="card shadow-xl sm:mx-8" id="form">
-  <div bind:this={sectionStart}>
+  <div bind:this={sectionStart} data-analytics={`{"dnt":true}`}>
     {#if isEmailSent}
       <SubmissionSuccess
         title="Thank you for your message"

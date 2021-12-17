@@ -1,6 +1,7 @@
 <script lang="ts">
   // Credit: www.vercel.com/docs 🙏
   import { page } from "$app/stores";
+  import { trackEvent } from "../segment.svelte";
 
   let selectedEmotion: number;
   let note = "";
@@ -13,9 +14,11 @@
   const submitFeedback = async () => {
     isSubmittedOnce = true;
 
-    window.analytics.track("feedback_submitted", {
+    trackEvent("feedback_submitted", {
       score: selectedEmotion,
       feedback: note,
+      url: window.location.href,
+      path: window.location.pathname,
     });
 
     const response = await fetch("/.netlify/functions/feedback", {
@@ -50,6 +53,7 @@
 <div class={clazz}>
   <div
     class="bg-white shadow-normal rounded-2xl max-w-md py-small px-xx-small m-auto"
+    data-analytics={`{"dnt":true}`}
   >
     <h2 class="text-xl leading-6 mb-6 text-center justify-center w-full">
       Was this helpful?

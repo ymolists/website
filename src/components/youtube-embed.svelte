@@ -8,21 +8,25 @@
 </script>
 
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { afterUpdate } from "svelte";
+  import { trackEvent } from "./segment.svelte";
 
   export let embedId: string;
   export let title: string;
 
   const randomId = "yt-player-" + Math.random().toString(36).slice(2, 5);
+  const VIDEO_PLAYING = 1;
   let videoStarted = false;
 
   const setUpVideo = () => {
     const onStateChange = (e: any) => {
-      if (e.data == 1) {
+      if (e.data == VIDEO_PLAYING) {
         if (!videoStarted) {
-          window.analytics.track("screencast_started", {
+          trackEvent("screencast_started", {
             id: embedId,
             name: title,
+            url: window.location.href,
+            path: window.location.pathname,
           });
         }
         videoStarted = true;
@@ -34,7 +38,7 @@
     });
   };
 
-  onMount(() => {
+  afterUpdate(() => {
     if (typeof YT === "undefined") {
       var tag = document.createElement("script");
       tag.src = "https://www.youtube.com/iframe_api";
@@ -42,13 +46,11 @@
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
       // Youtube script will automatically call the following function
-      window.onYouTubeIframeAPIReady = () =>
-        window.dispatchEvent(new Event("YouTubeIframeApiReady"));
-
-      window.addEventListener("YouTubeIframeApiReady", () => {
+      window.onYouTubeIframeAPIReady = () => {
         setUpVideo();
-      });
+      };
     } else {
+      videoStarted = false;
       setUpVideo();
     }
   });

@@ -44,6 +44,7 @@
   class="flex flex-col max-w-sm lg:max-w-none {layout === 'column'
     ? ''
     : 'lg:flex-row lg:max-w-6xl mx-auto'} rounded-xl bg-off-white"
+  data-analytics={`{"context":"grid","variant":"preview"}`}
 >
   {#if isMostRecent}
     <a href="/{type}/{post.slug}" sveltekit:prefetch>

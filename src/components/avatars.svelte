@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { DisplayNames, SocialMediaLinks } from "../types/avatars.type";
-import Avatar from "./avatar.svelte";
+  import Avatar from "./avatar.svelte";
 
   /**
    * One or more comma-separated GitHub username.
@@ -69,8 +69,9 @@ import Avatar from "./avatar.svelte";
         class:showAvatar
         class="no-underline transition-none {socialMediaLinkClasses}"
         rel="noreferrer"
+        data-analytics={`{"variant":"social_media"}`}
       >
-      <Avatar {username} {socialMediaImgClasses} />
+        <Avatar {username} {socialMediaImgClasses} />
         {displayNames[username]}
       </a>
     {:else}

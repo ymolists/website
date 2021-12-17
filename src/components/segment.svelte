@@ -3,15 +3,159 @@
     interface Window {
       analytics: any;
       doNotTrack: any;
+      href?: string;
+      prevPages?: string[];
       localStorage: any;
     }
   }
+
+  export const trackEvent = (event_name: string, props: any) => {
+    window.analytics?.track(event_name, props, {
+      context: {
+        ip: "0.0.0.0",
+        page: {
+          referrer: window.prevPages?.length == 2 ? window.prevPages[0] : "",
+          url: window.location.href,
+        },
+      },
+    });
+  };
+
+  export const trackPage = (props: any) => {
+    window.analytics?.page(props, {
+      context: {
+        ip: "0.0.0.0",
+        page: props,
+      },
+    });
+  };
+
+  export const trackIdentity = (traits: any) => {
+    window.analytics?.identify(traits, {
+      context: {
+        ip: "0.0.0.0",
+        page: {
+          referrer: window.prevPages?.length == 2 ? window.prevPages[0] : "",
+          url: window.location.href,
+        },
+      },
+    });
+  };
 </script>
 
 <script lang="ts">
   import { onMount } from "svelte";
   import { page } from "$app/stores";
   import Cookies from "js-cookie";
+
+  interface TrackWebsiteClick {
+    path: string;
+    url: string;
+    context?: string;
+    position?: string;
+    variant?: string;
+    label?: string;
+    destination?: string;
+    dnt?: boolean;
+  }
+
+  const implicitPositions = ["nav", "footer", "main"];
+
+  const handleButtonOrAnchorTracking = (props: MouseEvent) => {
+    var curr = props.target as HTMLElement;
+    //check if current target or any ancestor up to document is button or anchor
+    while (
+      curr.parentNode != undefined &&
+      !(curr.parentNode instanceof Document)
+    ) {
+      if (
+        curr instanceof HTMLButtonElement ||
+        curr instanceof HTMLAnchorElement ||
+        (curr instanceof HTMLDivElement && curr.onclick) ||
+        (curr instanceof HTMLDetailsElement && !curr.open)
+      ) {
+        trackButtonOrAnchor(curr);
+        break; //finding first ancestor is sufficient
+      }
+      curr = curr.parentNode as HTMLElement;
+    }
+  };
+
+  const trackButtonOrAnchor = (
+    target:
+      | HTMLAnchorElement
+      | HTMLButtonElement
+      | HTMLDivElement
+      | HTMLDetailsElement
+  ) => {
+    //read manually passed analytics props from 'data-analytics' attribute of event target
+    let passedProps: TrackWebsiteClick | undefined;
+    if (target.dataset.analytics) {
+      try {
+        passedProps = JSON.parse(target.dataset.analytics) as TrackWebsiteClick;
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    let trackingMsg: TrackWebsiteClick = {
+      path: window.location.pathname,
+      url: window.location.href,
+      label: target.innerText || target.ariaLabel,
+    };
+
+    //assign style of button to variant (e.g. if class contains "btn-primary", "btn-primary" will be passed)
+    for (var i = 0; i < target.classList.length; i++) {
+      const item = target.classList[i];
+      if (/btn-.*/.test(item)) {
+        trackingMsg.variant = item;
+        break;
+      }
+    }
+
+    if (target instanceof HTMLDetailsElement) {
+      trackingMsg.variant = "open_details";
+    }
+
+    if (target instanceof HTMLAnchorElement) {
+      const anchor = target as HTMLAnchorElement;
+      trackingMsg.destination = anchor.href;
+      //an anchor tag that is not styled as button will be classified as "link" variant
+      trackingMsg.variant = trackingMsg.variant || "link";
+    }
+
+    const getAncestorProps = (
+      curr: HTMLElement | null
+    ): TrackWebsiteClick | undefined => {
+      const curr_tag = curr.tagName?.toLowerCase();
+      if (!curr || curr_tag == "body") {
+        return;
+      }
+      const ancestorProps: TrackWebsiteClick | undefined = getAncestorProps(
+        curr.parentElement
+      );
+      const currProps = JSON.parse(
+        curr.dataset.analytics || "{}"
+      ) as TrackWebsiteClick;
+      //set position in trackingMsg if it can be read from ancestor prop
+      if (implicitPositions.includes(curr_tag)) {
+        trackingMsg.position = curr_tag;
+      }
+      return { ...ancestorProps, ...currProps };
+    };
+
+    const ancestorProps = getAncestorProps(target);
+
+    //props that were passed directly to the event target take precedence over those passed to ancestor elements, which take precedence over those implicitly determined.
+    trackingMsg = { ...trackingMsg, ...ancestorProps, ...passedProps };
+
+    //if dnt was passed to event target or any ancestor, no track call is done
+    if (trackingMsg.dnt) {
+      return;
+    }
+
+    trackEvent("website_clicked", trackingMsg);
+  };
 
   const writeKey =
     typeof window !== "undefined" &&
@@ -116,15 +260,24 @@
     }
 
     // Track first page
-    analytics.page();
+    trackPage({});
+    window.prevPages = [window.location.href];
+    window.addEventListener("click", handleButtonOrAnchorTracking, true);
   });
 
   $: if ($page.path) {
     // We need to depend on $page.path to trigger
     // a recompute on each new page.
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && window.prevPages) {
       // Track subsequent pages
-      window.analytics?.page();
+      trackPage({
+        referrer: window.prevPages[window.prevPages.length - 1],
+        url: window.location.href,
+      });
+      window.prevPages.push(window.location.href);
+      if (window.prevPages.length > 2) {
+        window.prevPages.shift();
+      }
     }
   }
 </script>
