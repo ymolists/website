@@ -52,9 +52,7 @@ If we suggest changes, then:
 
 That's it! Thank you for your contribution!
 
-&nbsp;
-
-# [Optional] Submitting a pull request with Gitpod
+## [Optional] Submitting a pull request with Gitpod
 
 Before you submit your pull request, please:
 
