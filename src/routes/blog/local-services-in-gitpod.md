@@ -77,7 +77,7 @@ Suppose you're developing a [Flutter based app](https://medium.com/@jacksonz666/
 Chances are that the device side of that product isn't exposed to the internet just yet, but only available in your local network.
 If that thing, as in Internet of Things, is speaking something akin to HTTP (like Yamaha's MusicCast or anything gRPC based) you could just replicate the setup above, except that you'd substitute Docker for the API you're trying to talk to.
 
-While are plenty of other services in this space that speak HTTP, think InfluxDB, OpenHAB or Prometheus, some don't.
+While there are plenty of other services in this space that speak HTTP, think InfluxDB, OpenHAB or Prometheus, some don't.
 Most notably [MQTT based](https://en.wikipedia.org/wiki/MQTT) broker or the [bulk](https://www.eclipse.org/hono/) of [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) based services.
 
 Inlets does not [support tunneling TCP](https://github.com/inlets/inlets-pro-pkg). There is yet another project that can shovel TCP through an HTTP tunnel: [chisel](https://github.com/jpillora/chisel).
