@@ -78,6 +78,7 @@ const quickstartItems = readable(
       true,
       "/svg/projects/black/svelte-black.svg"
     ),
+    mapQuickstart("SvelteKit", "quickstart/sveltekit", false),
     mapQuickstart("TLA+", "quickstart/tlaplus", false),
     mapQuickstart("Wordpress", "quickstart/wordpress", false),
     mapQuickstart("X11 VNC", "quickstart/x11-vnc", false),
