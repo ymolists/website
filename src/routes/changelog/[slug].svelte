@@ -3,10 +3,15 @@
   import type { ChangelogEntry as ChangelogEntryType } from "../../types/changelog-entry.type";
   import BackLink from "../../components/changelog/back-link.svelte";
 
+  export const prerender = true;
+
+  const reverseHtmlEscaping = (slug: string) => slug.replace(/&amp;/g, "&");
+
   export async function load({ page, session }) {
     const changelogEntry: ChangelogEntryType = session.changelogEntries.find(
       (entry: ChangelogEntryType) =>
-        stringToBeautifiedFragment(entry.title) === page.params.slug
+        stringToBeautifiedFragment(entry.title) ===
+        reverseHtmlEscaping(page.params.slug)
     );
     return { props: { changelogEntry } };
   }
