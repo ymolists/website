@@ -100,6 +100,7 @@
     });
 
     const email: Email = {
+      toType: "sales",
       from: {
         email: formData.workEmail.value,
         name: formData.name.value,
