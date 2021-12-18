@@ -101,7 +101,7 @@ tasks:
     command: echo $PRINT_ME
 ```
 
-See [`.gitpod.yml`](/docs/references/gitpod-yml#tasks%5Bn%5D.env) for more details.
+See [`.gitpod.yml`](/docs/references/gitpod-yml#tasksnenv) for more details.
 
 ## Provide env vars via URL
 

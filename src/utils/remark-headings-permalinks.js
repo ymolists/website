@@ -2,32 +2,29 @@ import { visit } from "unist-util-visit";
 import regexCreator from "emoji-regex";
 const emojiRegex = regexCreator();
 
-const emojiStrip = (string) => {
-  return string.replace(emojiRegex, "");
-};
+const nonAlphanumericsAtTheBeginningRegex = /^\W+/g;
+const nonAlphanumericsAtTheEndRegex = /\W+$/g;
 
-const stringToBeautifiedFragment = (str = "") =>
+const beautifyFragment = (str = "") =>
   str
-    .toLocaleLowerCase()
-    .replace(/\s/g, "-")
-    .replace(/\?/g, "")
-    .replace(/,/g, "");
-
-const generateFragment = (str) =>
-  stringToBeautifiedFragment(emojiStrip(str).trim());
+    .replace(emojiRegex, "")
+    .replace(nonAlphanumericsAtTheBeginningRegex, "")
+    .replace(nonAlphanumericsAtTheEndRegex, "");
 
 const visitor = (node) => {
   node.data = node.data || {};
   node.data.hProperties = node.data.hProperties || {};
 
   if (node.type === "heading") {
-    const text = node.children[0].value;
-    if (text) {
-      const fragment = generateFragment(text);
-      node.children[1].url = `#${fragment}`;
-      node.data.hProperties.id = fragment;
-      node.data.id = fragment;
-    }
+    let fragment = node.data.id;
+    fragment = beautifyFragment(fragment);
+
+    const lastChildrenIdx = node.children.length - 1;
+    const headingPermalink = node.children[lastChildrenIdx];
+    headingPermalink.url = `#${fragment}`;
+
+    node.data.hProperties.id = fragment;
+    node.data.id = fragment;
   }
 };
 

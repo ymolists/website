@@ -37,7 +37,7 @@ The result of _continuous development_ is a ready-to-code workspace. The second 
 
 To build a continuous development system we need three things:
 
-1. A dev-environment-as-code, e.g. based on Docker — there are [various ways](/blog/dev-env-as-code#dev-environment-as-code/) of how this can be achieved.
+1. A dev-environment-as-code, e.g. based on Docker — there are [various ways](/blog/dev-env-as-code#dev-environment-as-code) of how this can be achieved.
 
 1. Means to trigger an action when our code changes. The obvious candidates are [webhooks](https://developer.github.com/webhooks/), [GitHub actions](https://github.com/features/actions), or something tied in to your CI system.
 
