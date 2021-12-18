@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
   import { faqsKey } from "./faqs.svelte";
   import { getContext, onMount } from "svelte";
   import { stringToBeautifiedFragment } from "../../utils/helpers";
 
-  export let title;
+  export let title: string;
 
-  const activeFaq = getContext(faqsKey);
+  const activeFaq: any = getContext(faqsKey);
   const fragment = stringToBeautifiedFragment(title);
 
   const setActive = ({ target }) => {

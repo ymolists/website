@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { isAnExternalLink } from "../../utils/helpers";
   import { authorSocialMediaLinks } from "../../contents/authors";
 
   import type { BlogPost } from "../../types/blog-post.type";
@@ -10,6 +11,10 @@
   export let layout: "row" | "column" = "column";
 
   export let headlineOrder: "h3" | "" = "";
+
+  const href = post && post.url ? post.url : `/${type}/${post.slug}`;
+  const target =
+    post && post.url && isAnExternalLink(post.url) ? "_blank" : undefined;
 </script>
 
 <style lang="postcss">
@@ -47,7 +52,7 @@
   data-analytics={`{"context":"grid","variant":"preview"}`}
 >
   {#if isMostRecent}
-    <a href="/{type}/{post.slug}" sveltekit:prefetch>
+    <a {href} {target} sveltekit:prefetch>
       <div
         role="img"
         aria-label={`${type === "blog" ? "Blog post" : "Guide"}: ${post.title}`}
@@ -55,7 +60,11 @@
         'column'
           ? ''
           : 'lg:rounded-l-xl lg:rounded-t-none lg:w-60 lg:h-full'}"
-        style={`background-image: url(/images/${type}/${post.slug}/${post.image});`}
+        style={`background-image: url(${
+          post.isNotAnActualPost
+            ? post.image
+            : `/images/${type}/${post.slug}/${post.image}`
+        });`}
       />
     </a>
   {/if}
@@ -67,13 +76,13 @@
     <div>
       {#if headlineOrder === "h3"}
         <h3 class="h2">
-          <a href="/{type}/{post.slug}" sveltekit:prefetch>
+          <a {href} {target} sveltekit:prefetch>
             {post.title}
           </a>
         </h3>
       {:else}
         <h2>
-          <a href="/{type}/{post.slug}" sveltekit:prefetch>
+          <a {href} {target} sveltekit:prefetch>
             {post.title}
           </a>
         </h2>
@@ -82,22 +91,27 @@
     </div>
     <p>
       <span>
-        <Avatars
-          usernames={post.author}
-          socialMediaLinks={authorSocialMediaLinks}
-          socialMediaLinkClasses="hover:drop-shadow"
-        />
-        <a
-          href="/{type}/{post.slug}"
-          class="date no-underline text-p-small ml-macro"
-          sveltekit:prefetch
-        >
-          {new Date(Date.parse(post.date)).toLocaleDateString(undefined, {
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-          })}
-        </a>
+        {#if post.author}
+          <Avatars
+            usernames={post.author}
+            socialMediaLinks={authorSocialMediaLinks}
+            socialMediaLinkClasses="hover:drop-shadow"
+          />
+        {/if}
+        {#if post.date}
+          <a
+            {href}
+            {target}
+            class="date no-underline text-p-small ml-macro"
+            sveltekit:prefetch
+          >
+            {new Date(Date.parse(post.date)).toLocaleDateString(undefined, {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </a>
+        {/if}
       </span>
     </p>
   </div>

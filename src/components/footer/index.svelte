@@ -32,10 +32,15 @@
         <li><FooterLink href="/changelog">Changelog</FooterLink></li>
         <li><FooterLink href="/self-hosted">Self-Hosted</FooterLink></li>
         <li>
-          <FooterLink href="/for/startups" class="flex items-center"
-            >Gitpod for Startups</FooterLink
-          >
+          <FooterLink href="/for/startups" class="flex items-center">
+            Gitpod for Startups
+          </FooterLink>
         </li>
+        <!-- <li>
+          <FooterLink href="/for/opensource" class="flex items-center"
+            >Gitpod for Open Source</FooterLink
+          >
+        </li> -->
         <li>
           <FooterLink href="/gitpod-vs-github-codespaces"
             >Gitpod vs GitHub <br />Codespaces

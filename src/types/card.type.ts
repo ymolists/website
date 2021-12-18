@@ -1,5 +1,5 @@
-export type SecondaryFeature = {
-  icon: {
+export type Card = {
+  icon?: {
     src: string;
     alt?: string;
     transform?: string;

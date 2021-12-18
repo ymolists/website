@@ -6,7 +6,7 @@ import {
 } from "./home/features";
 import type { ExploreSection } from "../types/explore-section.type";
 import { terminalSource } from "./terminal";
-import type { SecondaryFeature } from "../types/secondary-feature.type";
+import type { Card } from "../types/card.type";
 
 export const features: Feature[] = [
   {
@@ -30,7 +30,7 @@ export const features: Feature[] = [
   },
 ];
 
-export const programBenefits: SecondaryFeature[] = [
+export const programBenefits: Card[] = [
   {
     icon: {
       src: "/svg/media-kit/logo-mark.svg",
