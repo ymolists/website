@@ -9,6 +9,10 @@ teaserImage: gitpod-for-startups.png
 title: Introducing Gitpod for Startups
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 **TL;DR**
 
 - With “Gitpod for Startups”, we offer eligible companies free services for up to 2 years

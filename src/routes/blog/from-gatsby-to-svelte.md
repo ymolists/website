@@ -9,6 +9,10 @@ teaserImage: teaser.png
 title: From Gatsby to Svelte in 3 weeks
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 **tl;dr:**
 
 - [Gitpod](/) recently announced new funding and a completely new brand ([read more](/blog/next-chapter-for-gitpod)) 🍊.

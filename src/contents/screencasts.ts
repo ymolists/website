@@ -34,7 +34,7 @@ const screencasts: Screencast[] = [
     tile: "screencast-3.jpg",
     youtubeId: "fA2fpqP1xaM",
     relatedDocs: [
-      { path: "/configuration", title: "Configure Your Project" },
+      { path: "/configure", title: "Configure Your Project" },
       { path: "/config-gitpod-file", title: ".gitpod.yml" },
       { path: "/config-docker", title: "Docker Configuration" },
       { path: "/config-start-tasks", title: "Start Tasks" },

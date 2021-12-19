@@ -1,6 +1,7 @@
 <script lang="ts" context="module">
   import screencasts from "../../contents/screencasts";
 
+  export const prerender = true;
   export const load = async function ({ page }) {
     const { title } = page.params;
     const screencast = screencasts.find(
