@@ -37,7 +37,7 @@ Slirp4netns solves this problem using [TAP/TUN](https://www.kernel.org/doc/html/
 
 Biggest benefit: works without elevated capabilities. Biggest drawback: forwards all traffic through user-space, which incurs a significant performance cost.
 
-## `CAP_NET_ADMIN` for ~~everyone~~ those who configure it
+## [`CAP_NET_ADMIN`](<https://man7.org/linux/man-pages/man7/capabilities.7.html#:~:text=using%20mknod(2).-,CAP_NET_ADMIN,-Perform%20various%20network>) for ~~everyone~~ those who configure it
 
 We've been living with the setup described above (netns only for the Docker daemon) for more than eight months. Mainly driven by performance considerations, but also because we saw no use-case which would warrant a change.
 
