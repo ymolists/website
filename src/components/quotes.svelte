@@ -6,7 +6,7 @@
 
 <style lang="postcss">
   .quote {
-    height: 330px;
+    height: 390px;
 
     @media (max-width: 1040px) {
       height: 300px;

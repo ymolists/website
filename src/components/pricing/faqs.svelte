@@ -29,9 +29,7 @@
         up to 50h per month. If you need more hours or would like to unlock more
         features, you can upgrade your subscription at any time. If you’re a
         professional open-source developer and need more hours, you can apply to
-        our free <a href="/docs/professional-open-source"
-          >Professional Open Source plan</a
-        >.
+        our free <a href="/for/opensource">Professional Open Source plan</a>.
       </p>
     </Faq>
     <Faq
