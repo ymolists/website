@@ -3,6 +3,7 @@ export type Feature = {
   paragraph: string;
   moreButton?: { text: string; href: string; type?: "secondary" | "tertiary" };
   secondaryButton?: { text: string; href: string };
+  featureList?: string[];
   image?: {
     src: string;
     alt: string;
@@ -11,6 +12,7 @@ export type Feature = {
     classNames?: string;
     styles?: string;
   };
+  footnote?: string;
   terminal?: {
     source: string;
     skipToEnd?: boolean;

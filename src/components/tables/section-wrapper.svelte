@@ -1,6 +1,7 @@
 <script lang="ts">
   export let type: "desktop" | "mobile";
   export let isHighlighted: boolean = false;
+  export let renderedOn: string = "";
 </script>
 
 <style lang="postcss">
@@ -18,9 +19,10 @@
     }
   }
 
-  section > :global(*) {
+  .local-development > :global(*) {
     grid-template-rows: 350px 250px 400px 200px 100px;
   }
+
   @media (max-width: 1059px) {
     .card {
       @apply pb-macro mb-micro md:mb-x-small;
@@ -29,7 +31,7 @@
 </style>
 
 <section
-  class="card text-center shadow-normal {type}"
+  class="card text-center shadow-normal {type} {renderedOn}"
   class:shadow-brand={isHighlighted}
 >
   <slot />

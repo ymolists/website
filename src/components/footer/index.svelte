@@ -51,6 +51,11 @@
             >Gitpod vs Local <br />Development
           </FooterLink>
         </li>
+        <!-- <li>
+          <FooterLink href="/vs/jetbrains-space">
+            Gitpod vs JetBrains
+          </FooterLink>
+        </li> -->
         <li>
           <FooterLink
             href="https://www.gitpodstatus.com/"

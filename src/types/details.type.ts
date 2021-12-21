@@ -1,4 +1,6 @@
 export type Details = {
   term: string;
-  data: string[];
+  list?: string[];
+  text?: string;
+  availibility?: boolean;
 }[];

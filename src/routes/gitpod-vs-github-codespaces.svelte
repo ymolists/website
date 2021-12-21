@@ -157,7 +157,7 @@
       <p class="card-image-legend">
         Compared start-up time until ready-to-code for<br />
         <a href="https://github.com/gitpod-io/vscode" target="_blank">
-          <strong>https://github.com/gitpod-io/vscode</strong>
+          https://github.com/gitpod-io/vscode
         </a>. Last verified 25 Sep 2020.
       </p>
     </div>
@@ -184,10 +184,10 @@
       <p class="card-image-legend">
         Price comparison for a developer working 5h per day, 21 per month with 8
         core CPUs and 12GB RAM. Last verified 3 Sep 2021. Sources: <a
-          href="/pricing"><strong>Gitpod</strong></a
+          href="/pricing">Gitpod</a
         >,
         <a href="https://github.com/features/codespaces" target="_blank">
-          <strong>GitHub Codespaces</strong>
+          GitHub Codespaces
         </a>.
       </p>
     </div>
@@ -270,9 +270,7 @@
       <dt>Availability</dt>
       <dd>Everyone</dd>
       <dt>GitHub Integration</dt>
-      <dd>
-        <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
-      </dd>
+      <dd />
       <dt>GitLab Integration</dt>
       <dd>
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />

@@ -1,9 +1,12 @@
 <script>
-  import { setupDetails } from "../../contents/gitpod-vs-local-development";
+  import {
+    bobTableData,
+    aliceTableData,
+  } from "../../contents/gitpod-vs-local-development";
 
   import Section from "../section.svelte";
-  import ComparisonTableSectionMobile from "./comparison-table-section-mobile.svelte";
-  import ComparisonTableSection from "./comparison-table-section.svelte";
+  import ComparisonTableSectionMobile from "../tables/comparison-table-section-mobile.svelte";
+  import ComparisonTableSection from "../tables/comparison-table-section.svelte";
 </script>
 
 <style lang="postcss">
@@ -72,25 +75,27 @@
       </ul>
     </section>
     <ComparisonTableSection
-      name={setupDetails.bob.name}
-      image={setupDetails.bob.image}
-      details={setupDetails.bob.details}
+      title={bobTableData.title}
+      image={bobTableData.image}
+      details={bobTableData.details}
+      renderedOn="local-development"
     />
     <ComparisonTableSection
-      name={setupDetails.alice.name}
-      image={setupDetails.alice.image}
-      details={setupDetails.alice.details}
+      title={aliceTableData.title}
+      image={aliceTableData.image}
+      details={aliceTableData.details}
       isHighlighted={true}
+      renderedOn="local-development"
     />
     <ComparisonTableSectionMobile
-      name={setupDetails.bob.name}
-      image={setupDetails.bob.image}
-      details={setupDetails.bob.details}
+      title={bobTableData.title}
+      image={bobTableData.image}
+      details={bobTableData.details}
     />
     <ComparisonTableSectionMobile
-      name={setupDetails.alice.name}
-      image={setupDetails.alice.image}
-      details={setupDetails.alice.details}
+      title={aliceTableData.title}
+      image={aliceTableData.image}
+      details={aliceTableData.details}
     />
   </div>
 </Section>

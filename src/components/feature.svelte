@@ -11,16 +11,21 @@
     secondaryButton,
     paragraph,
     title,
+    featureList,
     terminal,
     image,
     previewComponent,
     showTheMediaFirstOnMobile,
+    footnote,
     headingLevel,
   } = feature;
 </script>
 
 <style lang="postcss">
-  :global(.feature-container-section:nth-of-type(even)) .preview {
+  :global(.feature-container-section:nth-of-type(even)) .preview,
+  :global(.feature-box:nth-of-type(even))
+    :global(.feature-container-section)
+    .preview {
     @apply col-start-1;
     @apply row-start-1;
   }
@@ -28,6 +33,16 @@
   .feature :global(code) {
     @apply py-1 px-2 rounded-xl bg-orange-700;
     white-space: break-spaces;
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  li::before {
+    content: url("/tick.svg");
+    @apply block h-6 w-6 mr-micro;
+    flex: 0 0 1.5rem;
   }
 </style>
 
@@ -42,9 +57,9 @@
     >
       <div class="text-large">
         {#if headingLevel === "h3"}
-          <h3 class="h3">{title}</h3>
+          <h3 class="h3">{@html title}</h3>
         {:else}
-          <h2 class="h3">{title}</h2>
+          <h2 class="h3">{@html title}</h2>
         {/if}
         <p
           class="mt-micro"
@@ -53,6 +68,13 @@
         >
           {@html paragraph}
         </p>
+        {#if featureList}
+          <ul class="space-y-3 mt-micro">
+            {#each featureList as f}
+              <li class="flex">{f}</li>
+            {/each}
+          </ul>
+        {/if}
       </div>
       <div
         class:buttons-wrapper={moreButton && secondaryButton}
@@ -96,6 +118,9 @@
           class="{image.classNames} mx-auto"
           style={image.styles}
         />
+      {/if}
+      {#if footnote}
+        <p class="fine-print mt-x-small max-w-md mx-auto">{@html footnote}</p>
       {/if}
       {#if previewComponent}
         <svelte:component this={previewComponent} />

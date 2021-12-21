@@ -27,14 +27,27 @@
 </style>
 
 <dl id="gitpodPricing" class="tableColumn">
-  {#each details as { term, data }}
+  {#each details as { term, list, text, availibility }}
     <dt>{term}</dt>
     <dd>
-      <ul>
-        {#each data as d}
-          <li>{@html d}</li>
-        {/each}
-      </ul>
+      {#if text}
+        {text}
+      {/if}
+      {#if availibility}
+        <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
+      {/if}
+
+      {#if availibility === false}
+        <img alt="No" class="mx-auto" height="24" width="24" src="/cross.svg" />
+      {/if}
+
+      {#if list}
+        <ul>
+          {#each list as item}
+            <li>{@html item}</li>
+          {/each}
+        </ul>
+      {/if}
     </dd>
   {/each}
 </dl>
