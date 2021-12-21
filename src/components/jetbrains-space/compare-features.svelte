@@ -112,12 +112,12 @@
       title={gitpodTableData.title}
       image={gitpodTableData.image}
       details={gitpodTableData.details}
+      isHighlighted={true}
     />
     <ComparisonTableSection
       title={jetbrainsTableData.title}
       image={jetbrainsTableData.image}
       details={jetbrainsTableData.details}
-      isHighlighted={true}
     />
     <ComparisonTableSectionMobile
       title={gitpodTableData.title}
