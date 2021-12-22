@@ -1,12 +1,19 @@
 <script>
+  /**
+   * Typescript is not supported in mdsvex layout files.
+   * @see https://github.com/pngwn/MDsveX/issues/116
+   */
   import AnnouncementBanner from "./announcement-banner.svelte";
   import OpenGraph from "../open-graph.svelte";
   import FeedbackWidget from "./feedback-widget.svelte";
   import EditInGitpod from "../../components/docs/edit-in-gitpod.svelte";
   import docsCurrentSectionStore from "../../stores/docs-current-section";
   import PrevNext from "./prev-next.svelte";
+  import OnThisPageNav from "../on-this-page-nav.svelte";
 
+  /** @type {string} */
   export let section;
+  /** @type {string} */
   export let title;
 
   $: $docsCurrentSectionStore = section;
@@ -25,8 +32,11 @@
 />
 <AnnouncementBanner />
 <EditInGitpod />
-<div class="content-docs">
-  <slot />
+<div class="flex">
+  <div class="content-docs flex-auto min-w-0 xl:w-2/3">
+    <slot />
+  </div>
+  <OnThisPageNav class="mt-20" />
 </div>
 <FeedbackWidget type="docs" class="my-huge" />
 <PrevNext />

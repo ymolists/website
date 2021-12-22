@@ -249,7 +249,6 @@
   a[href*="http://"]:not([href*="www.gitpod.io"]),
   a[href*="https://"]:not([href*="www.gitpod.io"])
   {
-    white-space: nowrap;
     &::after {
       display: inline;
       content: url("/svg/external.svg");

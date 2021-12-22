@@ -2,6 +2,7 @@
   import Avatars from "./avatars.svelte";
   import OpenGraph from "./open-graph.svelte";
   import { authors, authorSocialMediaLinks } from "../contents/authors";
+  import OnThisPageNav from "./on-this-page-nav.svelte";
   import "../assets/markdown-commons.scss";
 
   export let baseUrl: string;
@@ -84,7 +85,7 @@
     norobots: norobots,
   }}
 />
-<div class="post content-blog">
+<div class="post mt-small mb-8">
   <img
     src="/images/{imagesDirectoryName}/{slug}/{teaserImage || image}"
     alt={`${title}`}
@@ -103,8 +104,11 @@
       /></span
     >
   </p>
-  <div>
-    <slot />
+  <div class="flex">
+    <div class="content-blog flex-auto min-w-0">
+      <slot />
+    </div>
+    <OnThisPageNav />
   </div>
   <section class="share">
     <h2 class="h4">Share this post:</h2>
