@@ -237,7 +237,7 @@
       </label>
     </div>
 
-    <label class="half">
+    <label class="half mt-micro">
       <p>
         Optionally, tell us more about your interest in Gitpod. What challenges
         are you looking to solve? How can we help?

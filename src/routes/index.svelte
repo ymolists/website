@@ -37,7 +37,10 @@
   <Features {features} />
 </div>
 <SectionScreenshot />
-<UsedBy title="Used by 500k+ developers" />
+<UsedBy
+  title="Used by 500k+ developers"
+  class="bg-off-white rounded-2xl shadow-normal pt-small pb-9"
+/>
 <Features features={otherFeatures} />
 <Section>
   <Resources {cards} headingLevel="h2" />

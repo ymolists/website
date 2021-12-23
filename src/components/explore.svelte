@@ -85,7 +85,7 @@
     <div class="explore__text">
       <h2 class="h1">{title}</h2>
       <p class="explore__paragraph text-p-large">
-        {description}
+        {@html description}
       </p>
       {#if note}
         <p class="h5 font-semibold text-gray-900 mb-x-small md:-mt-micro">

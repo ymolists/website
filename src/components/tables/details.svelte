@@ -1,6 +1,8 @@
 <script lang="ts">
   import type { Details } from "../../types/details.type";
   export let details: Details;
+  export let link: { href: string; text: string } = null;
+  export let isHighlighted: boolean = false;
 </script>
 
 <style lang="postcss">
@@ -24,6 +26,14 @@
       @apply text-base mb-medium;
     }
   }
+
+  .btn-cta {
+    @apply inline-block whitespace-nowrap;
+
+    @media (max-width: 1059px) {
+      @apply mb-small;
+    }
+  }
 </style>
 
 <dl id="gitpodPricing" class="tableColumn">
@@ -31,7 +41,7 @@
     <dt>{term}</dt>
     <dd>
       {#if text}
-        {text}
+        {@html text}
       {/if}
       {#if availibility}
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
@@ -51,3 +61,13 @@
     </dd>
   {/each}
 </dl>
+
+{#if link}
+  <div class="relative h-10 w-full">
+    <a
+      href={link.href}
+      class="btn-cta absolute left-1/2 -translate-x-1/2"
+      class:btn-primary={isHighlighted}>{link.text}</a
+    >
+  </div>
+{/if}

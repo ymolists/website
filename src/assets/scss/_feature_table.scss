@@ -1,7 +1,7 @@
 .featureTable .toc.toc.toc {
   background-color: transparent;
 }
-.featureTable .toc img {
+.featureTable .toc li > img {
   width: 35px;
   position: absolute;
   left: 0;
@@ -38,7 +38,7 @@
 @media (min-width: 1060px) {
   .featureTable > * > * {
     display: grid;
-    grid-auto-rows: 4rem;
+    grid-auto-rows: 3.75rem;
   }
   .featureTable {
     display: grid;

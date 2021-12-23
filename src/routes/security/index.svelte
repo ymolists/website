@@ -20,13 +20,16 @@
 
 <header class="tight">
   <h1>Security at Gitpod</h1>
-  <p class="max-w-2xl mx-auto mb-medium">
+  <p class="max-w-2xl mx-auto mb-x-small">
     Gitpod is trusted by over 500k developers and companies that are moving
     their dev environments to the cloud.
   </p>
   <a href="/contact/support" class="btn btn-primary">Talk to an expert</a>
 </header>
-<UsedBy title="Trusted by developer led companies" />
+<UsedBy
+  title="Trusted by developer led companies"
+  class="bg-off-white rounded-2xl shadow-normal pt-small pb-9"
+/>
 <Secure />
 <Program />
 <CallToAction />

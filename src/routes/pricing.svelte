@@ -6,9 +6,11 @@
   import Explore from "../components/explore.svelte";
   import Faqs from "../components/pricing/faqs.svelte";
   import OpenGraph from "../components/open-graph.svelte";
-  import OtherPlans from "../components/pricing/other-plans.svelte";
   import PlansAndPricing from "../components/pricing/plans-and-pricing.svelte";
-  import { otherPlans } from "../contents/pricing";
+  import { pricingPlans } from "../contents/pricing";
+  import UsedBy from "../components/index/used-by.svelte";
+  import Empower from "../components/pricing/empower.svelte";
+  import CompareFeatures from "../components/pricing/compare-features.svelte";
 </script>
 
 <OpenGraph
@@ -18,7 +20,14 @@
     title: "Pricing",
   }}
 />
-<PlansAndPricing />
-<OtherPlans {otherPlans} />
+<PlansAndPricing {pricingPlans} />
+<UsedBy title="Used by 500k+ developers" />
+<CompareFeatures />
+<Empower />
 <Faqs />
-<Explore />
+
+<Explore
+  contents={{
+    title: "Get started for free",
+  }}
+/>

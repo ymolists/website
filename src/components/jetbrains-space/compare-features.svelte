@@ -124,6 +124,7 @@
       image={gitpodTableData.image}
       details={gitpodTableData.details}
       usesTheArrowButton={true}
+      isHighlighted={true}
     />
     <ComparisonTableSectionMobile
       title={jetbrainsTableData.title}

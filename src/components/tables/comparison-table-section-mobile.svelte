@@ -7,8 +7,11 @@
 
   export let image: Image;
   export let title: string;
+  export let subtitle: string = "";
   export let details: DetailsType;
   export let usesTheArrowButton: boolean = false;
+  export let isHighlighted: boolean = false;
+  export let link: { href: string; text: string } = null;
 
   let isShown: boolean = false;
 
@@ -17,8 +20,8 @@
   };
 </script>
 
-<SectionWrapper type="mobile">
-  <TableHeader {title} {image}>
+<SectionWrapper type="mobile" {isHighlighted}>
+  <TableHeader {title} {image} {subtitle}>
     <button
       class="{!usesTheArrowButton
         ? 'btn-cta w-40'
@@ -34,7 +37,14 @@
         {/if}
       {/if}
       {#if usesTheArrowButton}
-        <div class="underline">View all features</div>
+        <div class="underline">
+          {#if isShown}
+            Hide
+          {:else}
+            View all
+          {/if}
+          features
+        </div>
         <img
           src="/arrow.svg"
           alt="Arrow Toggle"
@@ -45,6 +55,6 @@
     </button>
   </TableHeader>
   {#if isShown}
-    <Details {details} />
+    <Details {details} {link} {isHighlighted} />
   {/if}
 </SectionWrapper>

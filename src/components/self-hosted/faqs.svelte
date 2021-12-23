@@ -15,16 +15,17 @@
     <h2 class="h1">FAQs</h2>
     <Faq title="Can I create a team plan?">
       <p>
-        Of course! You can use Gitpod Self-Hosted on your own infrastructure for
-        free for unlimited users. If you'd like to access additional features
-        like unlimited prebuilds, shared workspaces, snapshots and an admin
-        dashboard, you can upgrade to the Professional Plan at any time. Simply
-        update your existing instance with a purchased license key. Self-hosted
-        Gitpod licenses can currently only be purchased by request. Please <a
-          href="/enterprise-license">request a license key</a
+        Of course! You can use Gitpod Self-Hosted Community on your own
+        infrastructure for free for unlimited users. If you'd like to try
+        additional features like unlimited prebuilds, shared workspaces,
+        snapshots and an admin dashboard, the Free tier is available without a
+        license for the first 10 users. You can upgrade to to the Professional
+        Plan at any time. Simply update your existing instance with a license
+        key. Currently, Self-hosted Gitpod licenses can currently only be
+        purchased through contacting sales. Please <a href="/enterprise-license"
+          >request a license</a
         >
-        or
-        <a href="/contact/sales">Get in touch</a> if you have any questions.
+        key or <a href="/contact/sales">Get in touch</a> if you have any questions.
       </p>
     </Faq>
     <Faq title="Can I add more users to my plan at any time?">
@@ -51,10 +52,17 @@
     <Faq title="How can I install Self-Hosted?">
       <p>
         You can either install <strong>Gitpod Self-Hosted</strong> on
-        <strong>Google Cloud Platform</strong> or on
-        <strong>K3s</strong>. See
-        <a href="/docs/self-hosted/latest">Self-Hosted Installation</a> for more
-        information.
+        <a href="/docs/self-hosted/latest/installation/on-gke">Google GKE</a>,
+        <a href="/docs/self-hosted/latest/installation/on-amazon-eks"
+          >Amazon EKS</a
+        >,
+        <a href="/docs/self-hosted/latest/installation/on-microsoft-aks"
+          >Azure AKS</a
+        >
+        or
+        <a href="/docs/self-hosted/latest/installation/on-kubernetes">K3s</a>.
+        See
+        <a href="/docs/self-hosted/latest">Self-Hosted Docs</a> for more information.
       </p>
     </Faq>
     <Faq title="How can I pay?">

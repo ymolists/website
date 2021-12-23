@@ -30,7 +30,7 @@
     {#if headingLevel === "h3"}
       <h3 class="mb-micro {titleClassNames}">{title}</h3>
     {:else}
-      <h3 class="mb-micro {titleClassNames}">{title}</h3>
+      <h2 class="mb-micro {titleClassNames}">{title}</h2>
     {/if}
     <p>{@html text}</p>
   </div>

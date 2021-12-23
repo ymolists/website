@@ -9,7 +9,9 @@
   }
 </style>
 
-<div class="brands flex flex-wrap justify-center items-center mx-auto">
+<div
+  class="brands flex flex-wrap justify-center items-center mx-auto mt-x-small"
+>
   {#each brands as brand}
     <Brand {brand} />
   {/each}

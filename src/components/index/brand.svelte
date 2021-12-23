@@ -12,6 +12,7 @@
   }
 
   .brand {
+    @apply max-h-16;
     flex-basis: calc(14% - 1.375rem);
     min-width: 130px;
     display: flex;

@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Pricing } from "../../types/pricing.type";
+  import QaTooltip from "../qa-tooltip.svelte";
 
   export let pricing: Pricing;
   const {
@@ -19,6 +20,10 @@
 <style lang="postcss">
   .box {
     width: 295px;
+
+    @media (max-width: 375px) {
+      @apply w-full;
+    }
   }
 
   .h1 {
@@ -27,10 +32,13 @@
 
   li::before {
     content: url("/tick.svg");
-    @apply absolute inline-block;
-    left: -2.188rem;
+    @apply absolute inline-block -left-7 sm:-left-9;
     height: 1.375rem;
     width: 1.375rem;
+
+    @media (max-width: 375px) {
+      @apply h-5 w-5;
+    }
   }
 
   .btn-cta {
@@ -61,9 +69,7 @@
     <div class="h1 font-bold text-black flex items-center justify-center">
       {@html price}
     </div>
-    <div
-      class="px-large lgx:px-medium mb-xx-small text-dark-grey font-semibold"
-    >
+    <div class="mb-xx-small text-dark-grey font-semibold">
       {#if duration}
         {duration}
       {:else}
@@ -71,10 +77,16 @@
       {/if}
     </div>
     {#if features}
-      <ul class="px-large lgx:px-medium my-small mx-0 space-y-micro text-left">
+      <ul
+        class="mx-small sm:mx-medium lgx:mx-small my-small space-y-micro text-left"
+      >
         {#each features as feature}
-          <li class="relative text-black">
-            {feature}
+          <li class="relative flex text-black">
+            {#if typeof feature !== "string"}
+              <QaTooltip text={feature.text} tooltip={feature.tooltip} />
+            {:else}
+              {feature}
+            {/if}
           </li>
         {/each}
       </ul>
@@ -89,7 +101,8 @@
     <a
       href={btnHref}
       data-analytics={`{"context":"` + trackingName + `","position":"hero"}`}
-      class="btn-cta">{btnText}</a
+      class="btn-cta"
+      class:btn-primary={spiced}>{btnText}</a
     >
   {/if}
   {#if footnote}

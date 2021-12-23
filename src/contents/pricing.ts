@@ -1,15 +1,24 @@
 import type { Pricing } from "../types/pricing.type";
 import { isEurope } from "../utils/helpers";
+import type { Card } from "../types/card.type";
+import type { TableData } from "../types/table-data.type";
 
 export const pricingPlans: Pricing[] = [
   {
-    title: "Basic",
-    price: "Free",
+    title: "Free",
+    price: isEurope() ? "€0" : "$0",
     features: [
       "50 hours/month",
-      "Private & Public Repos",
-      "4 Parallel Workspaces",
-      "30min Timeout",
+      "Public & private repos",
+      {
+        text: "4 parallel workspaces",
+        tooltip: "open up to 4 workspaces in parallel.",
+      },
+      {
+        text: "30min inactivity timeout",
+        tooltip:
+          "workspaces are stopped automatically after 30min of inactivity.",
+      },
     ],
     btnText: "Try Now",
     btnHref: "/#get-started",
@@ -18,23 +27,30 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Personal",
     price: isEurope() ? "€8" : "$9",
-    duration: "Per User/Month",
+    duration: "per user/month",
     features: ["All in Free", "100 hours/month"],
-    btnText: "Buy Now",
+    btnText: "Choose plan",
     btnHref: "https://gitpod.io/plans",
     trackingName: "personal",
   },
   {
     title: "Professional",
     price: isEurope() ? "€23" : "$25",
-    duration: "Per User/Month",
+    duration: "per user/month",
     features: [
       "All in Personal",
-      "8 Parallel Workspaces",
-      "Unlimited Hours",
-      "Teams",
+      "Unlimited hours",
+      {
+        text: "8 parallel workspaces",
+        tooltip: "open up to 8 workspaces in parallel.",
+      },
+      {
+        text: "Team Plans",
+        tooltip:
+          "Manage subscriptions for your team members with centralized billing.",
+      },
     ],
-    btnText: "Buy Now",
+    btnText: "Choose plan",
     btnHref: "https://gitpod.io/plans",
     spiced: true,
     trackingName: "professional",
@@ -42,66 +58,316 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Unleashed",
     price: isEurope() ? "€35" : "$39",
-    duration: "Per User/Month",
+    duration: "per user/month",
     features: [
       "All in Professional",
-      "16 Parallel Workspaces",
-      "1hr Timeout",
-      "3hr Timeout boost",
+      {
+        text: "16 parallel workspaces",
+        tooltip: "open up to 16 workspaces in parallel.",
+      },
+      "1hr inactivity timeout",
+      {
+        text: "3hr timeout boost",
+        tooltip: "Activate up to 3hr extra workspace inactivity timeout boost.",
+      },
     ],
-    btnText: "Buy Now",
+    btnText: "Choose plan",
     btnHref: "https://gitpod.io/plans",
     trackingName: "unleashed",
   },
 ];
 
-export const otherPlans = [
+export const empowermentFeatures: Card[] = [
   {
-    title: "Pro Open Source",
-    paragraphs: [
-      "If you're a professional open-source developer and need more hours, you can apply to our free Professional Open Source plan.",
-      "Get free, <strong>unlimited hours</strong> on any <strong>public repository</strong> when you meet the <a href='/docs/professional-open-source#who-is-eligible'>requirements.</a>",
-    ],
-    btnText: "Apply now",
-    btnHref: "/contact/support?open-source-sponsorship",
-    trackingName: "pro-open-source",
+    title: "Pro OSS developers",
+    text: "Professional open-source developers, can apply to our free Professional Open Source Plan.",
+    link: {
+      text: "View requirements",
+      href: "/contact/support?open-source-sponsorship",
+    },
   },
   {
-    title: "Gitpod for Startups",
-    paragraphs: [
-      "Our startup program gives <a href='/for/startups'>eligible</a> startups up to 2 years of Gitpod for free, no matter how fast your developers and workloads scale. Spend less time worrying about brittle, local dev environments and more time on building great things.",
-    ],
-    btnText: "View Startups Program",
-    btnHref: "/for/startups",
-    trackingName: "gitpod-for-startups",
+    title: "Startups",
+    text: "Startups can get up to 2 years of Gitpod for free, no matter how fast your developers and workloads scale.",
+    link: {
+      text: "View Startups Program",
+      href: "/for/startups",
+    },
   },
   {
-    title: "Self Hosted",
-    paragraphs: [
-      "Gitpod self-hosted is the best solution for teams who want to keep full data control or use Gitpod in private networks.",
-      "Install Gitpod Self-Hosted on <strong>GKE</strong>, <strong>K3s</strong>, <strong>EKS</strong> or <strong>AKS</strong>.",
-    ],
-    btnText: "More about Self-Hosted",
-    btnHref: "/self-hosted",
-    trackingName: "self-hosted",
-  },
-  {
-    title: "Student",
-    paragraphs: [
-      `For those still learning the ropes, you can get our Unleashed Plan for <strong>${
-        isEurope() ? "€8" : "$9"
-      } per month.</strong>`,
-      `
-      To get it, just follow these steps:
-      <ul class="list-disc list-inside">
-      <li>Log-in with a free Gitpod account.</li>
-      <li>Make sure that the primary email address of the GitHub/GitLab/Bitbucket account you use in Gitpod is from a domain of your educational institution.</li>
-      <li>Go to the <a href="https://gitpod.io/plans">Plans</a> page and select the <em>Student Unlimited Plan</em>.</li>
-      <li>If it doesn't appear, please <a href="/contact/support">contact us</a> to register your educational email domain.</li>
-      </ul>`,
-    ],
-    btnText: "Check now",
-    btnHref: "https://gitpod.io/plans",
-    trackingName: "student",
+    title: "Students & teachers",
+    text: "For those still learning the ropes, you can get our Unleashed Plan for <strong>€8 per month</strong> instead of €36/month.",
+    link: {
+      text: "Redeem offer",
+      href: "", // todo: this is gonna op en up the redeem student offer pop-up.
+    },
   },
 ];
+
+export const freePlanTableData: TableData = {
+  title: "Free",
+  subtitle: `${isEurope() ? "€" : "$"}0 per user/month`,
+  link: {
+    text: "Try now",
+    href: "/#get-started",
+  },
+  details: [
+    {
+      term: "Public & Private Repos",
+      text: "limited to 50h",
+    },
+    {
+      term: "Team Plans",
+      availibility: false,
+    },
+    {
+      term: "Inactivity timeout",
+      text: "30min",
+    },
+    {
+      term: "timeout Boost",
+      availibility: false,
+    },
+    {
+      term: "Parallel Workspaces",
+      text: "4",
+    },
+    {
+      term: "prebuilds",
+      availibility: true,
+    },
+    {
+      term: "Shared workspaces",
+      availibility: true,
+    },
+    {
+      term: "Snapshots",
+      availibility: true,
+    },
+    {
+      term: "Admin Dashboard",
+      availibility: false,
+    },
+    {
+      term: "Encrypted backups",
+      availibility: true,
+    },
+    {
+      term: "multi-ide support",
+      availibility: true,
+    },
+    {
+      term: "GitLab",
+      availibility: true,
+    },
+    {
+      term: "GitHub",
+      availibility: true,
+    },
+    {
+      term: "Bitbucket",
+      availibility: true,
+    },
+  ],
+};
+
+export const personalPlanTableData: TableData = {
+  title: "Personal",
+  subtitle: `${isEurope() ? "€8" : "$9"} per user/month`,
+  link: {
+    text: "Choose plan",
+    href: "https://gitpod.io/plans",
+  },
+  details: [
+    {
+      term: "Public & Private Repos",
+      text: "limited to 100h",
+    },
+    {
+      term: "Team Plans",
+      availibility: false,
+    },
+    {
+      term: "Inactivity timeout",
+      text: "30min",
+    },
+    {
+      term: "timeout Boost",
+      availibility: false,
+    },
+    {
+      term: "Parallel Workspaces",
+      text: "4",
+    },
+    {
+      term: "prebuilds",
+      availibility: true,
+    },
+    {
+      term: "Shared workspaces",
+      availibility: true,
+    },
+    {
+      term: "Snapshots",
+      availibility: true,
+    },
+    {
+      term: "Admin Dashboard",
+      availibility: false,
+    },
+    {
+      term: "Encrypted backups",
+      availibility: true,
+    },
+    {
+      term: "multi-ide support",
+      availibility: true,
+    },
+    {
+      term: "GitLab",
+      availibility: true,
+    },
+    {
+      term: "GitHub",
+      availibility: true,
+    },
+    {
+      term: "Bitbucket",
+      availibility: true,
+    },
+  ],
+};
+
+export const professionalPlanTableData: TableData = {
+  title: "Professional",
+  subtitle: `${isEurope() ? "€23" : "$25"} per user/month`,
+  link: {
+    text: "Choose plan",
+    href: "https://gitpod.io/plans",
+  },
+  details: [
+    {
+      term: "Public & Private Repos",
+      text: "unlimited",
+    },
+    {
+      term: "Team Plans",
+      availibility: true,
+    },
+    {
+      term: "Inactivity timeout",
+      text: "30min",
+    },
+    {
+      term: "timeout Boost",
+      availibility: false,
+    },
+    {
+      term: "Parallel Workspaces",
+      text: "8",
+    },
+    {
+      term: "prebuilds",
+      availibility: true,
+    },
+    {
+      term: "Shared workspaces",
+      availibility: true,
+    },
+    {
+      term: "Snapshots",
+      availibility: true,
+    },
+    {
+      term: "Admin Dashboard",
+      availibility: false,
+    },
+    {
+      term: "Encrypted backups",
+      availibility: true,
+    },
+    {
+      term: "multi-ide support",
+      availibility: true,
+    },
+    {
+      term: "GitLab",
+      availibility: true,
+    },
+    {
+      term: "GitHub",
+      availibility: true,
+    },
+    {
+      term: "Bitbucket",
+      availibility: true,
+    },
+  ],
+};
+
+export const unleashedPlanTableData: TableData = {
+  title: "Unleashed",
+  subtitle: `${isEurope() ? "€35" : "$39"} per user/month`,
+  link: {
+    text: "Choose plan",
+    href: "https://gitpod.io/plans",
+  },
+  details: [
+    {
+      term: "Public & Private Repos",
+      text: "unlimited",
+    },
+    {
+      term: "Team Plans",
+      availibility: true,
+    },
+    {
+      term: "Inactivity timeout",
+      text: "1h",
+    },
+    {
+      term: "timeout Boost",
+      text: "3h",
+    },
+    {
+      term: "Parallel Workspaces",
+      text: "16",
+    },
+    {
+      term: "prebuilds",
+      availibility: true,
+    },
+    {
+      term: "Shared workspaces",
+      availibility: true,
+    },
+    {
+      term: "Snapshots",
+      availibility: true,
+    },
+    {
+      term: "Admin Dashboard",
+      availibility: false,
+    },
+    {
+      term: "Encrypted backups",
+      availibility: true,
+    },
+    {
+      term: "multi-ide support",
+      availibility: true,
+    },
+    {
+      term: "GitLab",
+      availibility: true,
+    },
+    {
+      term: "GitHub",
+      availibility: true,
+    },
+    {
+      term: "Bitbucket",
+      availibility: true,
+    },
+  ],
+};

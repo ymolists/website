@@ -270,7 +270,9 @@
       <dt>Availability</dt>
       <dd>Everyone</dd>
       <dt>GitHub Integration</dt>
-      <dd />
+      <dd>
+        <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
+      </dd>
       <dt>GitLab Integration</dt>
       <dd>
         <img alt="Yes" class="mx-auto" height="24" width="24" src="/tick.svg" />
