@@ -10,7 +10,7 @@
   <div class="hidden md:block md:w-1/4 md:pt-24">
     <Menu {MENU} />
   </div>
-  <div class="md:w-3/4 pl-4">
+  <div class="md:w-3/4 md:pl-4">
     <Search />
     <MobileMenu {MENU} />
     <slot />
