@@ -263,6 +263,27 @@
     trackPage({});
     window.prevPages = [window.location.href];
     window.addEventListener("click", handleButtonOrAnchorTracking, true);
+
+    // Track Extension install or uninstall if necessary
+    if (
+      ["/extension-activation", "/extension-uninstall"].indexOf(
+        window.location.pathname
+      ) > -1
+    ) {
+      const doTrack = JSON.parse(
+        new URLSearchParams(window.location.search).get("track")
+      );
+      if (doTrack) {
+        trackEvent(
+          window.location.pathname == "/extension-activation"
+            ? "extension_installed"
+            : "extension_uninstalled",
+          {}
+        );
+        window.location.href =
+          window.location.origin + window.location.pathname;
+      }
+    }
   });
 
   $: if ($page.path) {
