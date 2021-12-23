@@ -76,6 +76,7 @@
   use:renderPageToc
   id="toc-wrapper"
   class="hidden self-start flex-none w-1/4 pl-8 sticky top-24 max-h-[calc(100vh-6rem)] pb-10 overflow-x-hidden overflow-y-auto {clazz}"
+  data-analytics={`{"position":"main","context":"on_this_page"}`}
 >
   <p><strong>On this page</strong></p>
 </div>
