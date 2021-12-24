@@ -174,11 +174,14 @@
 
   table {
     width: 100%;
-    min-width: 31.25rem;
     margin: var(--micro) 0;
     overflow: hidden;
     border-radius: 1rem;
     font-size: var(--p-small);
+
+    @media (min-width: 768px) {
+      min-width: 31.25rem;
+    }
   }
 
   thead {
