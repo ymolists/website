@@ -8,8 +8,8 @@ title: Quickstart
 </script>
 
 <script lang="ts">
-  import PopularQuickstart from "../../../components/docs/quickstart/popular-quickstart.svelte";
-  import QuickstartSearch from "../../../components/docs/quickstart/quickstart-search.svelte";
+  import PopularQuickstart from "$lib/components/docs/quickstart/popular-quickstart.svelte";
+  import QuickstartSearch from "$lib/components/docs/quickstart/quickstart-search.svelte";
 </script>
 
 # Quickstart

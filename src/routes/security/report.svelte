@@ -3,10 +3,10 @@
 </script>
 
 <script>
-  import Action from "../../components/security/action.svelte";
-  import OpenGraph from "../../components/open-graph.svelte";
-  import { thanksAction } from "../../contents/security";
-  import Section from "../../components/section.svelte";
+  import Action from "$lib/components/security/action.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import { thanksAction } from "$lib/contents/security";
+  import Section from "$lib/components/section.svelte";
 </script>
 
 <OpenGraph

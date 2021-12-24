@@ -8,9 +8,9 @@
 </script>
 
 <script lang="ts">
-  import OpenGraph from "../../components/open-graph.svelte";
-  import PostPreview from "../../components/blog/post-preview.svelte";
-  import Write from "../../components/guides/write.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import PostPreview from "$lib/components/blog/post-preview.svelte";
+  import Write from "$lib/components/guides/write.svelte";
 
   export let guides = [];
 </script>

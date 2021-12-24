@@ -5,7 +5,7 @@ title: PyCharm
 
 <script context="module">
   export const prerender = true;
-  import { faqs } from "../../../contents/editors";
+  import { faqs } from "$lib/contents/editors";
 </script>
 
 # {title}

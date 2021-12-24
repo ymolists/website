@@ -19,7 +19,7 @@ Container runtimes (e.g. Docker) or VPNs (e.g. Tailscale) both require control o
 
 ## Enabling rootless Docker in workspaces
 
-More than a year ago we enabled "rootless workspaces" by wrapping the actual user workload in a barrage of user, pid and mount namespaces. We've talked [about this at length](https://www.youtube.com/watch?v=cs3CbPoIrlk), and all the code is [out in the open](https://github.com/gitpod-io/gitpod/tree/main/components/workspacekit).
+More than a year ago we enabled "$lib/components/workspacekit).
 
 ![Docker-specific network setup](../../../static/images/blog/workspace-networking/old-setup.png)
 

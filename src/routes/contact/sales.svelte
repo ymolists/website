@@ -3,12 +3,12 @@
 </script>
 
 <script lang="ts">
-  import type { Form } from "../../types/form.type";
+  import type { Form } from "$lib/types/form.type";
   import type { Email } from "../../functions/submit-form";
-  import OpenGraph from "../../components/open-graph.svelte";
-  import SubmissionSuccess from "../../components/submission-success.svelte";
-  import Section from "../../components/section.svelte";
-  import { trackEvent, trackIdentity } from "../../components/segment.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import SubmissionSuccess from "$lib/components/submission-success.svelte";
+  import Section from "$lib/components/section.svelte";
+  import { trackEvent, trackIdentity } from "$lib/components/segment.svelte";
 
   const selfHostingSubject = "Self-hosting";
   const subjects = [

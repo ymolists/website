@@ -14,8 +14,8 @@ title: VS Code in the browser for everyone
 </script>
 
 <script>
-  import OpenvscodeLaunchPartners from '../../components/blog/openvscode-launch-partners.svelte';
-  import Quotes from '../../components/blog/openvscode-quotes.svelte';
+  import OpenvscodeLaunchPartners from "$lib/components/blog/openvscode-launch-partners.svelte";
+  import Quotes from "$lib/components/blog/openvscode-quotes.svelte";
 </script>
 
 **TL;DR**

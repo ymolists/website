@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
-  import { formatDate, stringToBeautifiedFragment } from "../../utils/helpers";
-  import type { ChangelogEntry as ChangelogEntryType } from "../../types/changelog-entry.type";
-  import BackLink from "../../components/changelog/back-link.svelte";
+  import { formatDate, stringToBeautifiedFragment } from "$lib/utils/helpers";
+  import type { ChangelogEntry as ChangelogEntryType } from "$lib/types/changelog-entry.type";
+  import BackLink from "$lib/components/changelog/back-link.svelte";
 
   export const prerender = true;
 
@@ -19,9 +19,9 @@
 
 <script lang="ts">
   import { onMount } from "svelte";
-  import Wrapper from "../../components/changelog/wrapper.svelte";
-  import OpenGraph from "../../components/open-graph.svelte";
-  import "../../assets/markdown-commons.scss";
+  import Wrapper from "$lib/components/changelog/wrapper.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import "$lib/assets/markdown-commons.scss";
   export let changelogEntry: ChangelogEntryType;
   const { date, title, excerpt, content, image, alt } = changelogEntry;
 

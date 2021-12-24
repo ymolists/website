@@ -3,10 +3,10 @@
 </script>
 
 <script lang="ts">
-  import Feature from "../components/feature.svelte";
-  import { feature } from "../contents/extension-activation";
-  import Config from "../components/extension-activation/config.svelte";
-  import OpenGraph from "../components/open-graph.svelte";
+  import Feature from "$lib/components/feature.svelte";
+  import { feature } from "$lib/contents/extension-activation";
+  import Config from "$lib/components/extension-activation/config.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
 
   const currentBrowser = ["Opera", "Chrome", "Firefox", "IE"].find(
     (browser) =>
@@ -53,12 +53,20 @@
 
 <Config />
 
-<section class="flex items-center lg:items-stretch flex-col lg:flex-row sm:pb-huge space-y-small lg:space-y-0 lg:space-x-xx-small">
+<section
+  class="flex items-center lg:items-stretch flex-col lg:flex-row sm:pb-huge space-y-small lg:space-y-0 lg:space-x-xx-small"
+>
   {#each features as feature}
-    <div class="text-center py-small px-xx-small bg-gray-100 rounded-4xl lg:w-1/3 max-w-md">
+    <div
+      class="text-center py-small px-xx-small bg-gray-100 rounded-4xl lg:w-1/3 max-w-md"
+    >
       <div>
         <!-- svelte-ignore a11y-missing-attribute -->
-        <img src={feature.icon} role="presentation" class="mx-auto mb-xx-small h-28 w-28" />
+        <img
+          src={feature.icon}
+          role="presentation"
+          class="mx-auto mb-xx-small h-28 w-28"
+        />
         <h2 class="h3">{feature.title}</h2>
         <p>{feature.description}</p>
       </div>

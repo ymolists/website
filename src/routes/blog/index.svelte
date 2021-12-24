@@ -8,10 +8,10 @@
 </script>
 
 <script lang="ts">
-  import type { BlogPost } from "../../types/blog-post.type";
-  import OpenGraph from "../../components/open-graph.svelte";
-  import PostPreview from "../../components/blog/post-preview.svelte";
-  import Section from "../../components/section.svelte";
+  import type { BlogPost } from "$lib/types/blog-post.type";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import PostPreview from "$lib/components/blog/post-preview.svelte";
+  import Section from "$lib/components/section.svelte";
 
   export let posts: BlogPost[];
 </script>

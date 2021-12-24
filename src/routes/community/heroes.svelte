@@ -3,14 +3,14 @@
 </script>
 
 <script>
-  import OpenGraph from "../../components/open-graph.svelte";
-  import HeartOfGitpod from "../../components/heroes/heart-of-gitpod.svelte";
-  import Header from "../../components/heroes/header.svelte";
-  import Benefits from "../../components/heroes/benefits.svelte";
-  import Eligibility from "../../components/eligibility.svelte";
-  import MeetTheHeros from "../../components/heroes/meet-the-heros.svelte";
-  import Explore from "../../components/explore.svelte";
-  import { exploreContents } from "../../contents/community/hereos";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import HeartOfGitpod from "$lib/components/heroes/heart-of-gitpod.svelte";
+  import Header from "$lib/components/heroes/header.svelte";
+  import Benefits from "$lib/components/heroes/benefits.svelte";
+  import Eligibility from "$lib/components/eligibility.svelte";
+  import MeetTheHeros from "$lib/components/heroes/meet-the-heros.svelte";
+  import Explore from "$lib/components/explore.svelte";
+  import { exploreContents } from "$lib/contents/community/hereos";
 </script>
 
 <OpenGraph

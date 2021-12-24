@@ -3,7 +3,7 @@
 </script>
 
 <script>
-  import OpenGraph from "../components/open-graph.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
 </script>
 
 <OpenGraph

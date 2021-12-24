@@ -5,10 +5,10 @@ import remarkExternalLinks from "remark-external-links";
 import slug from "remark-slug";
 import sveltePreprocess from "svelte-preprocess";
 import rehypeToc from "@jsdevtools/rehype-toc";
-import remarkSetImagePath from "./src/utils/remark-set-image-path.js";
-import remarkEmbedVideo from "./src/utils/remark-embed-video.js";
-import remarkLinkWithImageAsOnlyChild from "./src/utils/remark-link-with-image-as-only-child.js";
-import remarkHeadingsPermaLinks from "./src/utils/remark-headings-permalinks.js";
+import remarkSetImagePath from "./src/lib/utils/remark-set-image-path.js";
+import remarkEmbedVideo from "./src/lib/utils/remark-embed-video.js";
+import remarkLinkWithImageAsOnlyChild from "./src/lib/utils/remark-link-with-image-as-only-child.js";
+import remarkHeadingsPermaLinks from "./src/lib/utils/remark-headings-permalinks.js";
 import { toString } from "mdast-util-to-string";
 import { h } from "hastscript";
 
@@ -23,7 +23,7 @@ const config = {
     files: {
       assets: "static",
       hooks: "src/hooks",
-      lib: "src/components",
+      lib: "src/lib",
       routes: "src/routes",
       template: "src/app.html",
     },
@@ -55,9 +55,9 @@ const config = {
     mdsvex({
       extensions: [".md"],
       layout: {
-        blog: "./src/components/blog/blog-content-layout.svelte",
-        docs: "./src/components/docs/docs-content-layout.svelte",
-        guides: "./src/components/guides/guides-content-layout.svelte",
+        blog: "./src/lib/components/blog/blog-content-layout.svelte",
+        docs: "./src/lib/components/docs/docs-content-layout.svelte",
+        guides: "./src/lib/components/guides/guides-content-layout.svelte",
       },
       rehypePlugins: [
         [

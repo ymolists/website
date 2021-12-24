@@ -4,10 +4,10 @@
 
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import type { Form } from "../types/form.type";
-  import OpenGraph from "../components/open-graph.svelte";
+  import type { Form } from "$lib/types/form.type";
+  import OpenGraph from "$lib/components/open-graph.svelte";
 
-  import { countryList } from "../contents/license-key";
+  import { countryList } from "$lib/contents/license-key";
   import type { Email } from "../functions/submit-form";
 
   const formData: Form = {

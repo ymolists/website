@@ -3,8 +3,8 @@
 </script>
 
 <script>
-  import CalloutSecondary from "../components/callout-secondary.svelte";
-  import OpenGraph from "../components/open-graph.svelte";
+  import CalloutSecondary from "$lib/components/callout-secondary.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
 </script>
 
 <style lang="postcss">

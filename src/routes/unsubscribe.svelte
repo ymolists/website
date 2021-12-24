@@ -3,8 +3,8 @@
 </script>
 
 <script lang="ts">
-  import OpenGraph from "../components/open-graph.svelte";
-  import GitpodIllustration from "../components/gitpod-illustration.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import GitpodIllustration from "$lib/components/gitpod-illustration.svelte";
   import { onMount } from "svelte";
 
   onMount(() => {

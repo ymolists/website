@@ -27,7 +27,7 @@ const handleBlogPosts = async ({ request, resolve }) => {
 
 const handleChangelogEntries = async ({ request, resolve }) => {
   const changelogEntries = await Promise.all(
-    Object.entries(import.meta.glob("/src/contents/changelog/*.md")).map(
+    Object.entries(import.meta.glob("/src/lib/contents/changelog/*.md")).map(
       async ([, mod]) => {
         const { default: content, metadata } = await mod();
         return {

@@ -1,10 +1,10 @@
 <script>
-  import Hero from "../../components/jetbrains-space/hero.svelte";
-  import FeatureBoxes from "../../components/feature-boxes.svelte";
-  import { features } from "../../contents/jetbrains-space";
-  import CalloutSecondary from "../../components/callout-secondary.svelte";
-  import CompareFeatures from "../../components/jetbrains-space/compare-features.svelte";
-  import OpenGraph from "../../components/open-graph.svelte";
+  import Hero from "$lib/components/jetbrains-space/hero.svelte";
+  import FeatureBoxes from "$lib/components/feature-boxes.svelte";
+  import { features } from "$lib/contents/jetbrains-space";
+  import CalloutSecondary from "$lib/components/callout-secondary.svelte";
+  import CompareFeatures from "$lib/components/jetbrains-space/compare-features.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
 </script>
 
 <OpenGraph

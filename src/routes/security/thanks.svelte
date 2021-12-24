@@ -3,9 +3,9 @@
 </script>
 
 <script>
-  import Report from "../../components/security/report.svelte";
-  import Thanks from "../../components/security/thanks.svelte";
-  import OpenGraph from "../../components/open-graph.svelte";
+  import Report from "$lib/components/security/report.svelte";
+  import Thanks from "$lib/components/security/thanks.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
 </script>
 
 <OpenGraph

@@ -3,13 +3,13 @@
 </script>
 
 <script>
-  import Header from "../components/support/header.svelte";
-  import Cta from "../components/support/cta.svelte";
-  import PopularArticles from "../components/support/popular-articles.svelte";
-  import OpenGraph from "../components/open-graph.svelte";
-  import { cards } from "../contents/support";
-  import Resources from "../components/resources.svelte";
-  import SectionCommon from "../components/section-common.svelte";
+  import Header from "$lib/components/support/header.svelte";
+  import Cta from "$lib/components/support/cta.svelte";
+  import PopularArticles from "$lib/components/support/popular-articles.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import { cards } from "$lib/contents/support";
+  import Resources from "$lib/components/resources.svelte";
+  import SectionCommon from "$lib/components/section-common.svelte";
 </script>
 
 <OpenGraph

@@ -3,9 +3,9 @@
 </script>
 
 <script>
-  import OpenGraph from "../../components/open-graph.svelte";
-  import Action from "../../components/contact/action.svelte";
-  import { contactActions } from "../../contents/contact";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import Action from "$lib/components/contact/action.svelte";
+  import { contactActions } from "$lib/contents/contact";
 </script>
 
 <style lang="postcss">

@@ -7,15 +7,15 @@
     exploreContents,
     features,
     programBenefits as cards,
-  } from "../../../contents/startups";
-  import ProgramBenefits from "../../../components/program-benefits.svelte";
-  import Header from "../../../components/startups/header.svelte";
-  import Eligibility from "../../../components/eligibility.svelte";
-  import GitpodVsLocalDevPost from "../../../components/gitpod-vs-local-development-post.svelte";
-  import Faqs from "../../../components/startups/faqs.svelte";
-  import Explore from "../../../components/explore.svelte";
-  import OpenGraph from "../../../components/open-graph.svelte";
-  import SectionFeatures from "../../../components/section-features.svelte";
+  } from "$lib/contents/startups";
+  import ProgramBenefits from "$lib/components/program-benefits.svelte";
+  import Header from "$lib/components/startups/header.svelte";
+  import Eligibility from "$lib/components/eligibility.svelte";
+  import GitpodVsLocalDevPost from "$lib/components/gitpod-vs-local-development-post.svelte";
+  import Faqs from "$lib/components/startups/faqs.svelte";
+  import Explore from "$lib/components/explore.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import SectionFeatures from "$lib/components/section-features.svelte";
 </script>
 
 <OpenGraph

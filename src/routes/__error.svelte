@@ -10,8 +10,8 @@
 
 <script lang="ts">
   import { dev } from "$app/env";
-  import OpenGraph from "../components/open-graph.svelte";
-  import Section from "../components/section.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import Section from "$lib/components/section.svelte";
 
   export let status: number;
   export let error: Error;

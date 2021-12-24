@@ -12,8 +12,8 @@ title: Introduction
 
 <script lang="ts">
   import { setContext } from "svelte";
-  import GetStarted from "../../components/docs/landing-page/get-started.svelte";
-  import Timeline, { contextKeyChangelogEntries } from "../../components/docs/landing-page/timeline/timeline.svelte";
+  import GetStarted from "$lib/components/docs/landing-page/get-started.svelte";
+  import Timeline, { contextKeyChangelogEntries } from "$lib/components/docs/landing-page/timeline/timeline.svelte";
 
   export let changelogEntries;
 

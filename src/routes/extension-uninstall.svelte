@@ -3,8 +3,8 @@
 </script>
 
 <script lang="ts">
-  import type { Form } from "../types/form.type";
-  import OpenGraph from "../components/open-graph.svelte";
+  import type { Form } from "$lib/types/form.type";
+  import OpenGraph from "$lib/components/open-graph.svelte";
 
   const extensionUrls = {
     chrome:

@@ -7,16 +7,16 @@
 </script>
 
 <script lang="ts">
-  import type { ChangelogEntry as ChangelogEntryType } from "../../types/changelog-entry.type";
+  import type { ChangelogEntry as ChangelogEntryType } from "$lib/types/changelog-entry.type";
 
   import { onMount } from "svelte";
-  import OpenGraph from "../../components/open-graph.svelte";
-  import "../../assets/markdown-commons.scss";
-  import TwitterFollowButton from "../../components/t-button.svelte";
-  import { formatDate, stringToBeautifiedFragment } from "../../utils/helpers";
-  import ChangelogDate from "../../components/changelog/changelog-date.svelte";
-  import ChangelogLink from "../../components/changelog/changelog-link.svelte";
-  import Wrapper from "../../components/changelog/wrapper.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import "$lib/assets/markdown-commons.scss";
+  import TwitterFollowButton from "$lib/components/t-button.svelte";
+  import { formatDate, stringToBeautifiedFragment } from "$lib/utils/helpers";
+  import ChangelogDate from "$lib/components/changelog/changelog-date.svelte";
+  import ChangelogLink from "$lib/components/changelog/changelog-link.svelte";
+  import Wrapper from "$lib/components/changelog/wrapper.svelte";
 
   export let changelogEntries: ChangelogEntryType[];
 

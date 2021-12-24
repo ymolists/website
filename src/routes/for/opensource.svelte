@@ -3,23 +3,23 @@
 </script>
 
 <script>
-  import Header from "../../components/opensource/header.svelte";
+  import Header from "$lib/components/opensource/header.svelte";
   import {
     programBenefits,
     cards,
     exploreContents,
     features,
-  } from "../../contents/opensource";
+  } from "$lib/contents/opensource";
 
-  import SectionFeatures from "../../components/section-features.svelte";
-  import ProgramBenefits from "../../components/program-benefits.svelte";
-  import Eligibility from "../../components/eligibility.svelte";
-  import Faqs from "../../components/opensource/faqs.svelte";
-  import OpenGraph from "../../components/open-graph.svelte";
-  import SectionCommon from "../../components/section-common.svelte";
-  import Explore from "../../components/explore.svelte";
-  import ActionsSpeakLouderThanWords from "../../components/opensource/actions-speak-louder-than-words.svelte";
-  import CardSmall from "../../components/card/card-small.svelte";
+  import SectionFeatures from "$lib/components/section-features.svelte";
+  import ProgramBenefits from "$lib/components/program-benefits.svelte";
+  import Eligibility from "$lib/components/eligibility.svelte";
+  import Faqs from "$lib/components/opensource/faqs.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import SectionCommon from "$lib/components/section-common.svelte";
+  import Explore from "$lib/components/explore.svelte";
+  import ActionsSpeakLouderThanWords from "$lib/components/opensource/actions-speak-louder-than-words.svelte";
+  import CardSmall from "$lib/components/card/card-small.svelte";
 </script>
 
 <OpenGraph

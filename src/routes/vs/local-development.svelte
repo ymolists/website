@@ -3,12 +3,12 @@
 </script>
 
 <script>
-  import MeetBobAndAlice from "../../components/gitpod-vs-local-development/meet-bob-and-alice.svelte";
-  import Header from "../../components/gitpod-vs-local-development/header.svelte";
-  import Explore from "../../components/explore.svelte";
-  import GitpodVsLocalDevelopmentPost from "../../components/gitpod-vs-local-development-post.svelte";
-  import OpenGraph from "../../components/open-graph.svelte";
-  import CalloutSecondary from "../../components/callout-secondary.svelte";
+  import MeetBobAndAlice from "$lib/components/gitpod-vs-local-development/meet-bob-and-alice.svelte";
+  import Header from "$lib/components/gitpod-vs-local-development/header.svelte";
+  import Explore from "$lib/components/explore.svelte";
+  import GitpodVsLocalDevelopmentPost from "$lib/components/gitpod-vs-local-development-post.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import CalloutSecondary from "$lib/components/callout-secondary.svelte";
 </script>
 
 <OpenGraph

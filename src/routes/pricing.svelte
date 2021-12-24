@@ -3,14 +3,14 @@
 </script>
 
 <script>
-  import Explore from "../components/explore.svelte";
-  import Faqs from "../components/pricing/faqs.svelte";
-  import OpenGraph from "../components/open-graph.svelte";
-  import PlansAndPricing from "../components/pricing/plans-and-pricing.svelte";
-  import { pricingPlans } from "../contents/pricing";
-  import UsedBy from "../components/index/used-by.svelte";
-  import Empower from "../components/pricing/empower.svelte";
-  import CompareFeatures from "../components/pricing/compare-features.svelte";
+  import Explore from "$lib/components/explore.svelte";
+  import Faqs from "$lib/components/pricing/faqs.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import PlansAndPricing from "$lib/components/pricing/plans-and-pricing.svelte";
+  import { pricingPlans } from "$lib/contents/pricing";
+  import UsedBy from "$lib/components/index/used-by.svelte";
+  import Empower from "$lib/components/pricing/empower.svelte";
+  import CompareFeatures from "$lib/components/pricing/compare-features.svelte";
 </script>
 
 <OpenGraph

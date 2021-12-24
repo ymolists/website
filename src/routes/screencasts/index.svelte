@@ -3,11 +3,11 @@
 </script>
 
 <script>
-  import OpenGraph from "../../components/open-graph.svelte";
-  import Screencast from "../../components/screencasts/screencast.svelte";
-  import screencasts from "../../contents/screencasts";
-  import Section from "../../components/section.svelte";
-  import Explore from "../../components/explore.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import Screencast from "$lib/components/screencasts/screencast.svelte";
+  import screencasts from "$lib/contents/screencasts";
+  import Section from "$lib/components/section.svelte";
+  import Explore from "$lib/components/explore.svelte";
 </script>
 
 <style lang="postcss">

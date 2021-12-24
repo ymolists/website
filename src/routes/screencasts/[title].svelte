@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-  import screencasts from "../../contents/screencasts";
+  import screencasts from "$lib/contents/screencasts";
 
   export const prerender = true;
   export const load = async function ({ page }) {
@@ -12,11 +12,11 @@
 </script>
 
 <script lang="ts">
-  import type { Screencast as ScreencastType } from "../../types/screencasts.type";
-  import ScreencastPreview from "../../components/screencasts/preview.svelte";
-  import YouTubeEmbed from "../../components/youtube-embed.svelte";
-  import { stringToBeautifiedFragment } from "../../utils/helpers";
-  import OpenGraph from "../../components/open-graph.svelte";
+  import type { Screencast as ScreencastType } from "$lib/types/screencasts.type";
+  import ScreencastPreview from "$lib/components/screencasts/preview.svelte";
+  import YouTubeEmbed from "$lib/components/youtube-embed.svelte";
+  import { stringToBeautifiedFragment } from "$lib/utils/helpers";
+  import OpenGraph from "$lib/components/open-graph.svelte";
 
   export let screencast: ScreencastType;
 </script>

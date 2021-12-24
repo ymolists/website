@@ -3,9 +3,9 @@
 </script>
 
 <script lang="ts">
-  import Explore from "../components/explore.svelte";
-  import LogoAnimated from "../components/logo-animated.svelte";
-  import OpenGraph from "../components/open-graph.svelte";
+  import Explore from "$lib/components/explore.svelte";
+  import LogoAnimated from "$lib/components/logo-animated.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
 </script>
 
 <style>

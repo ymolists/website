@@ -1,12 +1,12 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import { onMount } from "svelte";
-  import Segment from "../components/segment.svelte";
-  import LayoutMain from "../components/layout-main.svelte";
-  import LayoutRoot from "../components/layout-root.svelte";
-  import Nav from "../components/main-nav/index.svelte";
-  import Footer from "../components/footer/index.svelte";
-  import CookieConsent from "../components/banners/cookie-consent.svelte";
+  import Segment from "$lib/components/segment.svelte";
+  import LayoutMain from "$lib/components/layout-main.svelte";
+  import LayoutRoot from "$lib/components/layout-root.svelte";
+  import Nav from "$lib/components/main-nav/index.svelte";
+  import Footer from "$lib/components/footer/index.svelte";
+  import CookieConsent from "$lib/components/banners/cookie-consent.svelte";
 
   onMount(() => {
     document.cookie = "gitpod-marketing-website-visited=true;domain=gitpod.io";

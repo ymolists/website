@@ -3,12 +3,12 @@
 </script>
 
 <script>
-  import Secure from "../../components/security/secure.svelte";
-  import Program from "../../components/security/program.svelte";
-  import CallToAction from "../../components/security/call-to-action.svelte";
-  import Report from "../../components/security/report.svelte";
-  import OpenGraph from "../../components/open-graph.svelte";
-  import UsedBy from "../../components/index/used-by.svelte";
+  import Secure from "$lib/components/security/secure.svelte";
+  import Program from "$lib/components/security/program.svelte";
+  import CallToAction from "$lib/components/security/call-to-action.svelte";
+  import Report from "$lib/components/security/report.svelte";
+  import OpenGraph from "$lib/components/open-graph.svelte";
+  import UsedBy from "$lib/components/index/used-by.svelte";
 </script>
 
 <OpenGraph
