@@ -25,9 +25,9 @@ Tasks are shell scripts that run on top of the Docker image you configure (learn
 
 With Gitpod, you have the following three types of tasks:
 
-- `before`: Use this for tasks that need to run before `init` and before `command`. For example, customzie the terminal or install global project dependencies.
+- `before`: Use this for tasks that need to run before `init` and before `command`. For example, customize the terminal or install global project dependencies.
 - `init`: Use this for heavy-lifting tasks such as downloading dependencies or compiling source code.
-- `command`: Use this to start your database or develoment server.
+- `command`: Use this to start your database or development server.
 
 The order in which these tasks execute depends on whether you have [Prebuilds](/docs/prebuilds) configured for your project and which startup scenario applies. Let's look at the details.
 
