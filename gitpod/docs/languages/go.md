@@ -99,7 +99,7 @@ vscode:
 
 Here is a quick clip on how to automatically configure debugging for Go!
 
-![Go debugging example](.../../../static/images/docs/GoDebug.gif)
+![Go debugging example](../../../static/images/docs/GoDebug.gif)
 
 So, basically in this video we:
 

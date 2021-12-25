@@ -26,17 +26,17 @@ Here are a few HTML/CSS example projects that are already automated with Gitpod:
 
 ## [emmet](https://emmet.io/) &nbsp;Support
 
-![emmet demo](.../../../static/images/docs/emmet.png)
+![emmet demo](../../../static/images/docs/emmet.png)
 Gitpod comes with [emmet](https://emmet.io/) support right out of the box giving you access to powerful snippets and completions
 
 ## Live Preview
 
-![Live Preview Demo](.../../../static/images/docs/live_preview.png)
+![Live Preview Demo](../../../static/images/docs/live_preview.png)
 With Gitpod you can open a preview for Markdown and HTML files while you are coding.
 
 To open the preview for a file, click the `Open Preview to the Side` icon in the upper right-hand corner:
 
-![preview icon](.../../../static/images/docs/preview.png)
+![preview icon](../../../static/images/docs/preview.png)
 
 ## Try It!
 

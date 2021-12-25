@@ -56,7 +56,7 @@ Not sure about ShellCheck? Try it in Gitpod!
 
 ### Bash IDE
 
-![A Bash IDE demonstration](.../../../static/images/docs/bashIDE.png)
+![A Bash IDE demonstration](../../../static/images/docs/bashIDE.png)
 
 Just to name a few things Bash IDE adds: Code completion, hovers, and diagnostic reporting.
 

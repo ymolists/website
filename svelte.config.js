@@ -38,6 +38,9 @@ const config = {
     ssr: true,
     target: "#svelte",
     vite: {
+      resolve: {
+        preserveSymlinks: true,
+      },
       server: {
         hmr: {
           clientPort: process.env.HMR_HOST ? 443 : 3000,

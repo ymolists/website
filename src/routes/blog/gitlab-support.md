@@ -27,7 +27,7 @@ Besides the standard project URL, Gitpod supports
 
 - opening file URLs
 
-  <p>Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/.../petclinic/PetClinicApplication.java</a></p>
+  <p>Example: <a href="https://gitpod.io/#https://gitlab.com/gitpod/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://gitlab.com/gitpod/spring-petclinic/../petclinic/PetClinicApplication.java</a></p>
 
 - opening branches
 

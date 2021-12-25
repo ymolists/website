@@ -33,7 +33,7 @@ Gitpod also supports other types of Bitbucket URLs, like:
 
 - Opening file URLs
 
-  <p>Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/src/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/.../petclinic/PetClinicApplication.java</a></p>
+  <p>Example: <a href="https://gitpod.io/#https://bitbucket.org/gitpod/spring-petclinic/src/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java" target="blank"><b style="font-weight:700;">https://gitpod.io/#</b>https://bitbucket.org/gitpod/spring-petclinic/../petclinic/PetClinicApplication.java</a></p>
 
 - Opening branches
 

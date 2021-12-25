@@ -1,8 +1,6 @@
 ---
-
 section: contribute
 title: Commit Message Convention
-
 ---
 
  <script context="module">
