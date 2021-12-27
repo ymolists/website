@@ -7,7 +7,21 @@ export const getSession: import("@sveltejs/kit").GetSession = async (
     changelogEntries: request.locals.changelogEntries,
     posts: request.locals.posts,
     guides: request.locals.guides,
+    docsMenu: request.locals.docsMenu,
   };
+};
+
+const handleDocsMenu = async ({ request, resolve }) => {
+  const menuEntries = await Promise.all(
+    Object.entries(import.meta.glob("/src/routes/docs/**/*.md")).map(
+      async ([path, page]) => {
+        const { metadata } = await page();
+        return { ...metadata };
+      }
+    )
+  );
+  request.locals.docsMenu = menuEntries;
+  return await resolve(request);
 };
 
 const handleBlogPosts = async ({ request, resolve }) => {
@@ -76,5 +90,6 @@ export const handle = sequence(
   handleHeaders,
   handleBlogPosts,
   handleChangelogEntries,
-  handleGuides
+  handleGuides,
+  handleDocsMenu
 );
