@@ -13,7 +13,8 @@
   import "$lib/assets/markdown-commons.scss";
   import { MENU } from "$lib/contents/docs/menu";
 
-  export let docsMenu;
+  export let docsMenu: any;
+  console.log(docsMenu);
 </script>
 
 <div class="pb-10 md:flex md:pt-10">
