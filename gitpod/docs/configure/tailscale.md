@@ -1,7 +1,6 @@
 ---
 section: configure
 title: tailscale
-status:
 ---
 
 <script context="module">

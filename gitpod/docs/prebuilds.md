@@ -1,7 +1,6 @@
 ---
 section: configure
 title: Prebuilds
-status:
 ---
 
 <script context="module">

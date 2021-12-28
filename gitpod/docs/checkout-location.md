@@ -1,7 +1,6 @@
 ---
 section: configure
 title: Checkout and Workspace Location
-status:
 ---
 
 <script context="module">

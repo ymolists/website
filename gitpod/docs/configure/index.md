@@ -1,7 +1,6 @@
 ---
 section: configure
 title: Configure
-status:
 ---
 
 <script context="module">

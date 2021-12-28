@@ -1,7 +1,6 @@
 ---
 section: configure
 title: Exposing Ports
-status:
 ---
 
 <script context="module">
