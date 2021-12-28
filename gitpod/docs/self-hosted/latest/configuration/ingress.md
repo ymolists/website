@@ -1,8 +1,3 @@
----
-section: self-hosted/latest
-title: Configure the ingress to your Gitpod installation
----
-
 <script context="module">
   export const prerender = true;
 </script>

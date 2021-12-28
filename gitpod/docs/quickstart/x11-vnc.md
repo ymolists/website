@@ -1,8 +1,3 @@
----
-section: quickstart
-title: X11 VNC template
----
-
 <script context="module">
   export const prerender = true;
 </script>

@@ -1,8 +1,3 @@
----
-section: references
-title: Go in Gitpod
----
-
 <script context="module">
   export const prerender = true;
 </script>

@@ -1,8 +1,3 @@
----
-section: references
-title: Svelte in Gitpod
----
-
 <script context="module">
   export const prerender = true;
 </script>

@@ -1,8 +1,3 @@
----
-section: quickstart
-title: Ruby on Rails template
----
-
 <script context="module">
   export const prerender = true;
 </script>

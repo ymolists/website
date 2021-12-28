@@ -1,8 +1,3 @@
----
-section: contribute
-title: Submitting a pull request
----
-
 <script context="module">
   export const prerender = true;
 </script>

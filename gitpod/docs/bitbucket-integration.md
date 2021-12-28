@@ -1,6 +1,6 @@
 ---
 section: integrations
-title: Bitbucket Integration
+title: Bitbucket
 ---
 
 <script context="module">

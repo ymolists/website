@@ -1,8 +1,3 @@
----
-section: self-hosted/latest
-title: Configure the authentication used by your Gitpod Self-Hosted installation
----
-
 <script context="module">
   export const prerender = true;
 </script>

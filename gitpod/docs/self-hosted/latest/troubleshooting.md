@@ -1,6 +1,6 @@
 ---
 section: self-hosted/latest
-title: Troubleshooting Gitpod Self-Hosted
+title: Troubleshooting
 ---
 
 <script context="module">

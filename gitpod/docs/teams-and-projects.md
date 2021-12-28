@@ -1,6 +1,7 @@
 ---
 section: develop
-title: Create a Team
+title: Teams & Projects
+status: beta
 ---
 
 <script context="module">

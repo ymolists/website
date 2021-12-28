@@ -1,6 +1,6 @@
 ---
 section: self-hosted/latest
-title: Installation requirements for Gitpod Self-Hosted
+title: Requirements
 ---
 
 <script context="module">

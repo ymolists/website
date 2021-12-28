@@ -1,8 +1,3 @@
----
-section: quickstart
-title: Node/TypeScript/Express template
----
-
 <script context="module">
   export const prerender = true;
 </script>

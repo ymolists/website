@@ -1,8 +1,3 @@
----
-section: quickstart
-title: Coq template
----
-
 <script context="module">
   export const prerender = true;
 </script>

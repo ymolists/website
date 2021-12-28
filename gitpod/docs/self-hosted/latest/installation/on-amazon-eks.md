@@ -1,8 +1,3 @@
----
-section: self-hosted/latest
-title: Install Gitpod Self-Hosted on Amazon Elastic Kubernetes Service (EKS)
----
-
 <script context="module">
   export const prerender = true;
 </script>

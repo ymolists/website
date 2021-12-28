@@ -1,8 +1,3 @@
----
-section: references
-title: Custom Docker image
----
-
 <script context="module">
   export const prerender = true;
 </script>

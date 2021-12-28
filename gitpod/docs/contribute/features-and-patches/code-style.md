@@ -1,8 +1,3 @@
----
-section: contribute
-title: Code style
----
-
 <script context="module">
   export const prerender = true;
 </script>
