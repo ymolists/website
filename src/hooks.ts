@@ -16,7 +16,7 @@ const handleDocsMenu = async ({ request, resolve }) => {
     Object.entries(import.meta.glob("/src/routes/docs/**/*.md")).map(
       async ([path, page]) => {
         const { metadata } = await page();
-        return { ...metadata };
+        return { ...metadata, path };
       }
     )
   );

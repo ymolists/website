@@ -1,4 +1,8 @@
-import type { MenuStatus, MenuEntry } from "$lib/types/menu-entry.type";
+import type {
+  MenuStatus,
+  MenuEntry,
+  MenuFrontmatter,
+} from "$lib/types/menu-entry.type";
 
 function M(
   title: string,
@@ -111,4 +115,68 @@ export function getMenuContext(
     }
   }
   return context;
+}
+
+export class MenuService {
+  constructor() {}
+
+  public generateMenu(menuEntries: MenuFrontmatter[]) {
+    let menu: any[] = [];
+    const filtered = menuEntries.filter((el) => el.hasOwnProperty("status")); //TODO remove hasOwnProperty
+
+    const headlines = filtered.filter((element) =>
+      element.path.includes("index")
+    );
+
+    const regulars = filtered.filter(
+      (element) => !element.path.includes("index")
+    );
+
+    headlines.forEach((headline) => {
+      const subMenu = this.getSubmenu(headline, regulars);
+      menu = [...menu, ...[this.mapFrontmatterToMenuentry(headline, subMenu)]];
+    });
+    return menu;
+  }
+
+  private preparePath(path: string) {
+    const pathArray = path.split("/");
+    pathArray.splice(1, 2);
+    const lastItem = pathArray.slice(-1);
+    pathArray[pathArray.length - 1] = pathArray[pathArray.length - 1].replace(
+      /\.[^/.]+$/,
+      ""
+    );
+    if (lastItem[0].includes("index")) pathArray.pop();
+    return pathArray.join("/");
+  }
+
+  // private checkHeadline(path: string) {
+  //   return path.includes("index");
+  // }
+
+  private mapFrontmatterToMenuentry(
+    frontmatter: MenuFrontmatter,
+    subMenu?: MenuEntry[]
+  ): MenuEntry {
+    return {
+      path: this.preparePath(frontmatter.path),
+      title: frontmatter.title,
+      status: frontmatter.status,
+      subMenu: subMenu || [],
+    };
+  }
+
+  private getSubmenu(
+    headline: MenuFrontmatter,
+    regulars: MenuFrontmatter[]
+  ): MenuEntry[] {
+    const healdineArray = headline.path.split("/");
+    healdineArray.pop();
+    const sanitizedPath = healdineArray.join("/");
+    const children = regulars.filter((regular) =>
+      regular.path.includes(sanitizedPath)
+    );
+    return children.map((child) => this.mapFrontmatterToMenuentry(child));
+  }
 }

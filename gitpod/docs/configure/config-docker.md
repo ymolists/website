@@ -1,6 +1,7 @@
 ---
 section: configure
 title: Custom Docker Image
+status:
 ---
 
 <script context="module">

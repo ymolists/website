@@ -11,10 +11,13 @@
   import MobileMenu from "$lib/components/docs/mobile-menu/index.svelte";
   import Search from "$lib/components/docs/search.svelte";
   import "$lib/assets/markdown-commons.scss";
-  import { MENU } from "$lib/contents/docs/menu";
+  import { MenuService } from "$lib/contents/docs/menu";
 
   export let docsMenu: any;
-  console.log(docsMenu);
+
+  const menuService = new MenuService();
+
+  const MENU = menuService.generateMenu(docsMenu);
 </script>
 
 <div class="pb-10 md:flex md:pt-10">

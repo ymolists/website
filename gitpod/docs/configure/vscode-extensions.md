@@ -1,6 +1,7 @@
 ---
 section: configure
 title: VS Code Extensions
+status:
 ---
 
 <script context="module">

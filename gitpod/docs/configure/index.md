@@ -1,6 +1,7 @@
 ---
 section: configure
-title: Configure Gitpod
+title: Configure
+status:
 ---
 
 <script context="module">

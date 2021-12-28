@@ -1,6 +1,7 @@
 ---
 section: configure
 title: Browser Settings
+status:
 ---
 
 <script context="module">
