@@ -26,8 +26,4 @@
 <Empower />
 <Faqs />
 
-<Explore
-  contents={{
-    title: "Get started for free",
-  }}
-/>
+<Explore />

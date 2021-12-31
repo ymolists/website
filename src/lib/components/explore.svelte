@@ -5,7 +5,7 @@
   export let contents: ExploreSection = {};
 
   const {
-    title = "Get Started",
+    title = "Get Started for Free",
     description = "Spin up fresh, automated dev environments for each task, in the cloud, in seconds.",
     note = "",
     link = {
