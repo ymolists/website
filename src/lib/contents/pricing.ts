@@ -2,6 +2,8 @@ import type { Pricing } from "$lib/types/pricing.type";
 import { isEurope } from "$lib/utils/helpers";
 import type { Card } from "$lib/types/card.type";
 import type { TableData } from "$lib/types/table-data.type";
+// @ts-ignore
+import RedeemOffer from "$lib/components/pricing/redeem-offer.svelte";
 
 export const pricingPlans: Pricing[] = [
   {
@@ -83,7 +85,7 @@ export const empowermentFeatures: Card[] = [
     text: "Professional open-source developers, can apply to our free Professional Open Source Plan.",
     link: {
       text: "View requirements",
-      href: "/contact/support?open-source-sponsorship",
+      href: "/docs/professional-open-source",
     },
   },
   {
@@ -97,9 +99,9 @@ export const empowermentFeatures: Card[] = [
   {
     title: "Students & teachers",
     text: "For those still learning the ropes, you can get our Unleashed Plan for <strong>€8 per month</strong> instead of €36/month.",
-    link: {
-      text: "Redeem offer",
-      href: "", // todo: this is gonna op en up the redeem student offer pop-up.
+    modal: {
+      btnText: "Redeem offer",
+      modalContentComponent: RedeemOffer,
     },
   },
 ];
