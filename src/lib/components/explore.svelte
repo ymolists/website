@@ -5,7 +5,7 @@
   export let contents: ExploreSection = {};
 
   const {
-    title = "Get Started for Free",
+    title = "Get Started <span>for Free</span>",
     description = "Spin up fresh, automated dev environments for each task, in the cloud, in seconds.",
     note = "",
     link = {
@@ -26,6 +26,10 @@
     .explore {
       @apply flex-col rounded-2xl mx-auto;
       max-width: 345px;
+    }
+
+    .h1 :global(span) {
+      @apply hidden;
     }
   }
 
@@ -83,7 +87,7 @@
 <Section>
   <div class="explore">
     <div class="explore__text">
-      <h2 class="h1">{title}</h2>
+      <h2 class="h1">{@html title}</h2>
       <p class="explore__paragraph text-p-large">
         {@html description}
       </p>
