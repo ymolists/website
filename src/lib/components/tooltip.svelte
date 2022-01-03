@@ -16,9 +16,11 @@
 
 <style lang="postcss">
   .tooltip {
-    @apply absolute z-10 w-60;
-    top: 112%;
+    --bg: #565252;
+    @apply absolute z-50 w-60;
+    bottom: 150%;
     left: 90%;
+    background: var(--bg);
 
     @media (max-width: 1700px) {
       @apply left-1/3;
@@ -44,9 +46,20 @@
 
     &::before {
       content: "";
-      @apply absolute block h-10 w-1/2;
-      top: -60%;
-      left: -25%;
+      @apply absolute block h-10  w-1/2 -z-10;
+      bottom: -60%;
+      left: 0%;
+    }
+
+    &::after {
+      content: "";
+      @apply block h-5 w-5 absolute -z-10;
+      transform: rotate(45deg) translateY(-8px);
+      background: var(--bg);
+    }
+
+    :global(a) {
+      @apply text-white;
     }
   }
 </style>
@@ -70,7 +83,7 @@
 
   {#if isRendered}
     <div
-      class="tooltip bg-off-white text-xs p-macro rounded-xl shadow-normal border border-solid border-white normal-case font-normal"
+      class="tooltip text-white text-xs p-macro rounded-xl normal-case font-normal"
     >
       {@html title}
     </div>
