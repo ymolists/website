@@ -46,9 +46,8 @@
 
     &::before {
       content: "";
-      @apply absolute block h-10  w-1/2 -z-10;
+      @apply absolute block h-10 left-0 w-1/2 -z-10;
       bottom: -60%;
-      left: 0%;
     }
 
     &::after {

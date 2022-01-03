@@ -60,7 +60,7 @@
 </style>
 
 <div
-  class={`box flex flex-col justify-between bg-gray-100 pt-x-small pb-medium px-0 mt-0 mx-micro mb-x-small rounded-2xl shadow-normal text-center transition-all duration-200 hover:shadow-brand ${
+  class={`box flex flex-col justify-between items-center bg-gray-100 pt-x-small pb-medium px-0 mt-0 mx-micro mb-x-small rounded-2xl shadow-normal text-center transition-all duration-200 hover:shadow-brand ${
     spiced ? "spiced shadow-brand" : ""
   }`}
 >
@@ -78,10 +78,10 @@
     </div>
     {#if features}
       <ul
-        class="mx-small sm:mx-medium lgx:mx-small my-small space-y-micro text-left"
+        class="inline-flex flex-col ml-x-small my-xx-small sm:my-small space-y-micro text-left"
       >
         {#each features as feature}
-          <li class="relative flex text-black">
+          <li class="relative inline-flex text-black">
             {#if typeof feature !== "string"}
               <QaTooltip text={feature.text} tooltip={feature.tooltip} />
             {:else}
