@@ -28,7 +28,7 @@
   >
     <MenuLink href={menuItem.path} class="text-large">{menuItem.title}</MenuLink
     >
-    {#if menuItem.subMenu && isActiveSection}
+    {#if menuItem.subMenu && isActiveSection && menuItem.subMenu.length > 1}
       <ul class="ml-4 mt-4 text-p-medium leading-x-small">
         {#each menuItem.subMenu as sub}
           <li
