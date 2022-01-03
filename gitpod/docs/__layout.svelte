@@ -12,12 +12,12 @@
   import Search from "$lib/components/docs/search.svelte";
   import "$lib/assets/markdown-commons.scss";
   import { MenuService } from "$lib/contents/docs/menu";
+  import { setContext } from "svelte";
 
   export let docsMenu: any;
-
-  const menuService = new MenuService();
-
-  const MENU = menuService.generateMenu(docsMenu);
+  setContext("docsMenu", docsMenu);
+  const menuService = new MenuService(docsMenu);
+  const MENU = menuService.menu;
 </script>
 
 <div class="pb-10 md:flex md:pt-10">
