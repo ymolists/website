@@ -1,6 +1,6 @@
 ---
 section: contribute
-title: Features & Patches
+title: Contribute Features & Patches
 ---
 
 <script context="module">

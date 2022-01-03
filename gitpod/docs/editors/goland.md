@@ -1,7 +1,6 @@
 ---
 section: editors
 title: GoLand
-status: beta
 ---
 
 <script context="module">

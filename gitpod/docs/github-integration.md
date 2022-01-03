@@ -1,6 +1,6 @@
 ---
 section: integrations
-title: GitHub
+title: GitHub Integration
 ---
 
 <script context="module">

@@ -1,3 +1,8 @@
+---
+section: references
+title: Architecture
+---
+
 <script context="module">
   export const prerender = true;
 </script>

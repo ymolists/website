@@ -1,3 +1,8 @@
+---
+section: quickstart
+title: Docker Compose template
+---
+
 <script context="module">
   export const prerender = true;
 </script>

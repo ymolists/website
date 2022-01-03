@@ -1,6 +1,6 @@
 ---
 section: contribute
-title: Documentation
+title: Contribute Documentation
 ---
 
 <script context="module">

@@ -1,7 +1,6 @@
 ---
 section: editors
 title: Rider
-status: soon
 ---
 
 <script context="module">

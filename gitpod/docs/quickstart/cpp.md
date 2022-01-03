@@ -1,3 +1,8 @@
+---
+section: quickstart
+title: C++ CMake template
+---
+
 <script context="module">
   export const prerender = true;
 </script>

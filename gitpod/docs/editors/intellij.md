@@ -1,7 +1,6 @@
 ---
 section: editors
 title: IntelliJ IDEA
-status: beta
 ---
 
 <script context="module">

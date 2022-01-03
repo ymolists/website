@@ -1,3 +1,8 @@
+---
+section: self-hosted/latest
+title: Configure the Gitpod Workspaces in your Gitpod Self-Hosted installation
+---
+
 <script context="module">
   export const prerender = true;
 </script>

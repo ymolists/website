@@ -1,3 +1,8 @@
+---
+section: self-hosted/latest
+title: Install Gitpod Self-Hosted on Microsoft Azure Kubernetes Service (AKS)
+---
+
 <script context="module">
   export const prerender = true;
 </script>

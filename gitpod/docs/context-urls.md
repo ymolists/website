@@ -1,6 +1,6 @@
 ---
 section: develop
-title: Contexts
+title: Gitpod Contexts
 ---
 
 <script context="module">

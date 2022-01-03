@@ -1,7 +1,6 @@
 ---
 section: editors
 title: RubyMine
-status: soon
 ---
 
 <script context="module">

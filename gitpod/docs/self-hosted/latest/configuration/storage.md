@@ -1,3 +1,8 @@
+---
+section: self-hosted/latest
+title: Configure the storage used by your Gitpod installation
+---
+
 <script context="module">
   export const prerender = true;
 </script>

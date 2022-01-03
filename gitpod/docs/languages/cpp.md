@@ -1,3 +1,8 @@
+---
+section: references
+title: C++ in Gitpod
+---
+
 <script context="module">
   export const prerender = true;
 </script>

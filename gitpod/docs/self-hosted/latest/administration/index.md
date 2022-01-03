@@ -1,6 +1,6 @@
 ---
 section: self-hosted/latest
-title: Administration
+title: Administration of Gitpod Self-Hosted
 ---
 
 <script context="module">

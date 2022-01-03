@@ -1,3 +1,12 @@
+---
+section: quickstart
+title: Elixir template
+---
+
+<script context="module">
+  export const prerender = true;
+</script>
+
 # Elixir Quickstart
 
 Learn how to set-up and understand the benefits of Gitpod **in less than 5 min** with an [Elixir](https://github.com/gitpod-io/template-elixir) template.

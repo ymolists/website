@@ -1,3 +1,8 @@
+---
+section: references
+title: Python in Gitpod
+---
+
 <script context="module">
   export const prerender = true;
 </script>

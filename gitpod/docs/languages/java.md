@@ -1,3 +1,8 @@
+---
+section: references
+title: Java in Gitpod
+---
+
 <script context="module">
   export const prerender = true;
 </script>

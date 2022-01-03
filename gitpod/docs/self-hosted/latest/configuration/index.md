@@ -1,6 +1,6 @@
 ---
 section: self-hosted/latest
-title: Configuation
+title: Configuring Gitpod Self-Hosted
 ---
 
 <script context="module">

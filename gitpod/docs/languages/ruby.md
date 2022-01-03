@@ -1,3 +1,8 @@
+---
+section: references
+title: Ruby in Gitpod
+---
+
 <script context="module">
   export const prerender = true;
 </script>

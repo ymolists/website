@@ -1,7 +1,6 @@
 ---
 section: develop
-title: Local Companion
-status: beta
+title: Gitpod Local Companion
 ---
 
 <script context="module">

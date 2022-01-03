@@ -1,3 +1,8 @@
+---
+section: self-hosted/latest
+title: Install Gitpod Self-Hosted on Google Kubernetes Engine (GKE)
+---
+
 <script context="module">
   export const prerender = true;
 </script>

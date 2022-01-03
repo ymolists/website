@@ -1,3 +1,8 @@
+---
+section: quickstart
+title: Yasm template
+---
+
 <script context="module">
   export const prerender = true;
 </script>

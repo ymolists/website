@@ -1,3 +1,8 @@
+---
+section: quickstart
+title: Python template
+---
+
 <script context="module">
   export const prerender = true;
 </script>

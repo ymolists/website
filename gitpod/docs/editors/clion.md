@@ -1,7 +1,6 @@
 ---
 section: editors
 title: CLion
-status: soon
 ---
 
 <script context="module">

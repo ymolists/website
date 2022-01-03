@@ -1,3 +1,8 @@
+---
+section: self-hosted/latest
+title: Configure the Kubernetes nodes in your Gitpod Self-Hosted installation
+---
+
 <script context="module">
   export const prerender = true;
 </script>

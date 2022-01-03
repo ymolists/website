@@ -122,7 +122,7 @@ export class MenuService {
 
   public generateMenu(menuEntries: MenuFrontmatter[]) {
     let menu: any[] = [];
-    const filtered = menuEntries.filter((el) => el.hasOwnProperty("title")); //TODO remove hasOwnProperty
+    const filtered = menuEntries.filter((el) => el.hasOwnProperty("status")); //TODO remove hasOwnProperty
 
     const headlines = filtered.filter((element) =>
       element.path.includes("index")
@@ -151,6 +151,10 @@ export class MenuService {
     return pathArray.join("/");
   }
 
+  // private checkHeadline(path: string) {
+  //   return path.includes("index");
+  // }
+
   private mapFrontmatterToMenuentry(
     frontmatter: MenuFrontmatter,
     subMenu?: MenuEntry[]
@@ -167,13 +171,12 @@ export class MenuService {
     headline: MenuFrontmatter,
     regulars: MenuFrontmatter[]
   ): MenuEntry[] {
-    const children = regulars.filter(
-      (regular) => regular.section === headline.section
+    const healdineArray = headline.path.split("/");
+    healdineArray.pop();
+    const sanitizedPath = healdineArray.join("/");
+    const children = regulars.filter((regular) =>
+      regular.path.includes(sanitizedPath)
     );
-    children.sort((a, b) => {
-      if (!a.title || !b.title) return;
-      return a.title.localeCompare(b.title);
-    });
     return children.map((child) => this.mapFrontmatterToMenuentry(child));
   }
 }

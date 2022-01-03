@@ -1,6 +1,6 @@
 ---
 section: self-hosted/latest
-title: Installation
+title: Installing Gitpod Self-Hosted
 ---
 
 <script context="module">

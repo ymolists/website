@@ -1,7 +1,6 @@
 ---
 section: editors
 title: PyCharm
-status: beta
 ---
 
 <script context="module">

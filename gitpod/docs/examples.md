@@ -1,3 +1,8 @@
+---
+section:
+title: Example Projects
+---
+
 <script context="module">
   export const prerender = true;
 </script>
