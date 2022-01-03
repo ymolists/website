@@ -1,5 +1,5 @@
 ---
-section: quickstart
+section:
 title: Rust template
 ---
 

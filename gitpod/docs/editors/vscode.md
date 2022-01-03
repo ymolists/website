@@ -1,6 +1,7 @@
 ---
 section: editors
 title: VS Code Desktop
+status: beta
 ---
 
 <script context="module">

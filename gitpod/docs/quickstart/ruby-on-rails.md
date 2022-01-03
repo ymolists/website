@@ -1,5 +1,5 @@
 ---
-section: quickstart
+section:
 title: Ruby on Rails template
 ---
 

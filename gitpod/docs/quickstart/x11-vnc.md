@@ -1,5 +1,5 @@
 ---
-section: quickstart
+section:
 title: X11 VNC template
 ---
 

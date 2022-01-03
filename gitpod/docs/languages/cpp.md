@@ -1,5 +1,5 @@
 ---
-section: references
+section:
 title: C++ in Gitpod
 ---
 

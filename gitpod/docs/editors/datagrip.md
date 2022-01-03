@@ -1,6 +1,7 @@
 ---
 section: editors
 title: DataGrip
+status: soon
 ---
 
 <script context="module">

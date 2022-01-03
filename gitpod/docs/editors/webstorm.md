@@ -1,6 +1,7 @@
 ---
 section: editors
 title: WebStorm
+status: soon
 ---
 
 <script context="module">

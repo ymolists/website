@@ -1,6 +1,7 @@
 ---
 section: editors
 title: PhpStorm
+status: beta
 ---
 
 <script context="module">

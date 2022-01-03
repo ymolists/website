@@ -1,5 +1,5 @@
 ---
-section: references
+section:
 title: Kotlin in Gitpod
 ---
 

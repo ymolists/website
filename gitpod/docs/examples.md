@@ -1,5 +1,5 @@
 ---
-section:
+section: examples
 title: Example Projects
 ---
 

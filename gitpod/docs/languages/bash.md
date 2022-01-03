@@ -1,5 +1,5 @@
 ---
-section: references
+section:
 title: Bash in Gitpod
 ---
 

@@ -1,5 +1,5 @@
 ---
-section: quickstart
+section:
 title: Flask template
 ---
 

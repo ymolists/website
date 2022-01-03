@@ -1,5 +1,5 @@
 ---
-section: references
+section:
 title: JavaScript in Gitpod
 ---
 

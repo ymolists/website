@@ -1,5 +1,5 @@
 ---
-section: references
+section:
 title: R in Gitpod
 ---
 

@@ -1,5 +1,5 @@
 ---
-section: quickstart
+section:
 title: C++ CMake template
 ---
 
