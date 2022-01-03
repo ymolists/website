@@ -1,5 +1,5 @@
 ---
-section:
+section: notDisplayed
 title: Bash in Gitpod
 ---
 

@@ -1,5 +1,5 @@
 ---
-section:
+section: notDisplayed
 title: Elixir template
 ---
 

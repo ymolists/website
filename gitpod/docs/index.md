@@ -1,5 +1,5 @@
 ---
-section: index
+section:
 title: Introduction
 ---
 

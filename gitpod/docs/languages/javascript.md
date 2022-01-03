@@ -1,5 +1,5 @@
 ---
-section:
+section: notDisplayed
 title: JavaScript in Gitpod
 ---
 

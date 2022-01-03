@@ -1,5 +1,5 @@
 ---
-section:
+section: notDisplayed
 title: Ruby on Rails template
 ---
 

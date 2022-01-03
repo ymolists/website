@@ -1,5 +1,5 @@
 ---
-section:
+section: notDisplayed
 title: C++ in Gitpod
 ---
 

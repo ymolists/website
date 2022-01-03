@@ -1,5 +1,5 @@
 ---
-section:
+section: notDisplayed
 title: X11 VNC template
 ---
 

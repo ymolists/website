@@ -1,5 +1,5 @@
 ---
-section:
+section: notDisplayed
 title: Java in Gitpod
 ---
 
@@ -54,7 +54,7 @@ RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \
 
 Gitpod provides disposable dev environments, which means you are getting fresh developer environments for every task. So configuring them to be ready-to-code is crucial to get the most out of Gitpod.
 
-In the generated `.gitpod.yml` you will find the following section:
+In the generated `.gitpod.yml` you will find the following section: notDisplayed
 
 ```yml
 # List the startup tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
