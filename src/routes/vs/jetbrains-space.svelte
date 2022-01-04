@@ -12,7 +12,6 @@
     description:
       "Gitpod is the vendor neutral, open-source platform that integrates with your individual stack including all JetBrains IDEs.",
     title: "Gitpod vs JetBrains Space",
-    norobots: true,
   }}
 />
 

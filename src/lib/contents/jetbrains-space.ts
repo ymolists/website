@@ -3,6 +3,17 @@ import type { Feature } from "$lib/types/feature.type";
 
 export const features: Feature[] = [
   {
+    title: "Greater cost-efficiency",
+    paragraph:
+      "Instead of running on expensive VMs, Gitpod provisions secure containers and achieves best-in-class resource-efficiency with scalable workspaces running on shared high-powered cloud servers. <strong>Saves you money, helps our planet 🌱</strong>.",
+    image: {
+      src: "/svg/jetbrains-space/cost-efficency.svg",
+      alt: "Greater cost-efficiency",
+    },
+    footnote:
+      'Price comparison for a developer working 5h per day, 21 per month with 8 core CPUs and 12GB RAM. Last verified 9 Dec 2021. Sources: <a href="/pricing">Gitpod</a>, <a href="https://www.jetbrains.com/space/buy/?billing=yearly#cloud" target="_blank">JetBrains Space</a>.',
+  },
+  {
     title: "Your environment, your tools, your&nbsp;craft",
     paragraph:
       "We adapt, so you don't need to. That's why we natively integrated JetBrains IDEs into Gitpod next to VS Code. Don't limit yourself or your team to a single vendor and choose from the best options available.",
@@ -33,17 +44,6 @@ export const features: Feature[] = [
       src: "/svg/features/muti-track-development.svg",
       alt: "Ephemeral Workspaces",
     },
-  },
-  {
-    title: "Greater cost-efficiency",
-    paragraph:
-      "Instead of running on expensive VMs, Gitpod provisions secure containers and achieves best-in-class resource-efficiency with scalable workspaces running on shared high-powered cloud servers. <strong>Saves you money, helps our planet 🌱</strong>.",
-    image: {
-      src: "/svg/jetbrains-space/cost-efficency.svg",
-      alt: "Greater cost-efficiency",
-    },
-    footnote:
-      'Price comparison for a developer working 5h per day, 21 per month with 8 core CPUs and 12GB RAM. Last verified 9 Dec 2021. Sources: <a href="/pricing">Gitpod</a>, <a href="https://www.jetbrains.com/space/buy/?billing=yearly#cloud" target="_blank">JetBrains Space</a>.',
   },
 ];
 
