@@ -7,9 +7,9 @@
   import topicsState from "../states/topics-state";
 
   import docsCurrentSectionStore from "$lib/stores/docs-current-section";
-  export let MENU;
+  export let menu;
 
-  $: currentSection = MENU.find(({ path }) =>
+  $: currentSection = menu.find(({ path }) =>
     $docsCurrentSectionStore
       ? path.indexOf(
           /self-hosted\/\d\.\d\.\d/.test($docsCurrentSectionStore)
@@ -22,7 +22,7 @@
 
 <div class="mobile-menu mb-10 md:hidden">
   {#if $topicsState}
-    <MobileMenuTopics {MENU} />
+    <MobileMenuTopics {menu} />
   {:else}
     <MobileMenuSubMenu {currentSection} />
   {/if}

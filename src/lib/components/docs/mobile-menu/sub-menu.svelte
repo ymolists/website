@@ -6,7 +6,7 @@
   import topicsState from "../states/topics-state";
   import subMenuState from "../states/sub-menu-state";
 
-  import type { MenuEntry } from "$lib/types/menu-entry.type";
+  import type { MenuEntry } from "$lib/types/docs-menu.type";
   import Pill from "../pill.svelte";
   export let currentSection: MenuEntry = null;
 </script>

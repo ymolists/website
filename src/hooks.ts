@@ -1,3 +1,4 @@
+import type { DocsFileToFrontmatterMap } from "$lib/types/docs-menu.type";
 import { sequence } from "@sveltejs/kit/hooks";
 
 export const getSession: import("@sveltejs/kit").GetSession = async (
@@ -7,20 +8,25 @@ export const getSession: import("@sveltejs/kit").GetSession = async (
     changelogEntries: request.locals.changelogEntries,
     posts: request.locals.posts,
     guides: request.locals.guides,
-    docsMenu: request.locals.docsMenu,
+    docsFileToFrontmatterMap: request.locals.docsFileToFrontmatterMap,
   };
 };
 
 const handleDocsMenu = async ({ request, resolve }) => {
-  const menuEntries = await Promise.all(
-    Object.entries(import.meta.glob("/src/routes/docs/**/*.md")).map(
-      async ([path, page]) => {
-        const { metadata } = await page();
-        return { ...metadata, path };
-      }
-    )
-  );
-  request.locals.docsMenu = menuEntries;
+  const docsFileToFrontmatterMap: DocsFileToFrontmatterMap = {};
+  const docsPages = await import.meta.glob("/src/routes/docs/**/*.md");
+  for (const path in docsPages) {
+    const page = await docsPages[path]();
+    if (
+      page.metadata &&
+      (page.metadata.section === "/" || page.metadata.section === "editors")
+    ) {
+      docsFileToFrontmatterMap[path.substring("/src/routes/docs/".length)] =
+        page.metadata;
+    }
+  }
+
+  request.locals.docsFileToFrontmatterMap = docsFileToFrontmatterMap;
   return await resolve(request);
 };
 
