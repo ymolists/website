@@ -1,9 +1,9 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import { MenuService } from "$lib/contents/docs/menu";
+  import { MenuService, contextKey } from "$lib/contents/docs/menu";
   import { getContext } from "svelte";
   import type { MenuFrontmatter } from "../../types/menu-entry.type";
-  const docsMenu: MenuFrontmatter[] = getContext("docsMenu");
+  const docsMenu: MenuFrontmatter[] = getContext(contextKey);
   const menuService = new MenuService(docsMenu);
   const menuCtx = menuService.getMenuContext($page.path, menuService.menu);
 </script>

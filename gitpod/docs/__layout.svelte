@@ -11,11 +11,11 @@
   import MobileMenu from "$lib/components/docs/mobile-menu/index.svelte";
   import Search from "$lib/components/docs/search.svelte";
   import "$lib/assets/markdown-commons.scss";
-  import { MenuService } from "$lib/contents/docs/menu";
+  import { MenuService, contextKey } from "$lib/contents/docs/menu";
   import { setContext } from "svelte";
 
   export let docsMenu: any;
-  setContext("docsMenu", docsMenu);
+  setContext(contextKey, docsMenu);
   const menuService = new MenuService(docsMenu);
   const MENU = menuService.menu;
 </script>

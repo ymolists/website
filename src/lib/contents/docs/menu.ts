@@ -1,5 +1,7 @@
 import type { MenuEntry, MenuFrontmatter } from "$lib/types/menu-entry.type";
 
+export const contextKey = {};
+
 export class MenuService {
   public menu: MenuEntry[];
   constructor(menuEntries: MenuFrontmatter[]) {
