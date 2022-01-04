@@ -39,6 +39,7 @@
     labelRight="Self-hosted"
     on:change={handleChange}
     isInversed={$page.path.includes("self-hosted")}
+    checked={toggled}
   />
   <PricingBoxes {pricingPlans} />
   <p class="mt-micro text-center">
