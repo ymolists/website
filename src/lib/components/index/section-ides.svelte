@@ -39,6 +39,7 @@
           // @ts-ignore
           toggleChecked = e.currentTarget.checked;
         }}
+        checked={toggleChecked}
       />
       <div class="relative">
         <div class="py-micro md:pr-micro lg:px-xx-small">
