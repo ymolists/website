@@ -32,7 +32,8 @@
     "@slack/webhook": "^6.0.0",
     "emoji-regex": "^10.0.0",
     "google-spreadsheet": "^3.1.15",
-    "js-cookie": "^3.0.1"
+    "js-cookie": "^3.0.1",
+    "lite-youtube-embed": "^0.2.0"
   },
   "devDependencies": {
     "@jsdevtools/rehype-toc": "^3.0.2",
