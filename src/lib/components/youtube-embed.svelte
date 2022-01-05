@@ -8,7 +8,7 @@
 </script>
 
 <script lang="ts">
-  import { trackEvent } from "./segment.svelte";
+  // import { trackEvent } from "./segment.svelte";
 
   export let embedId: string;
   export let title: string;
