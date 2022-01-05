@@ -13,14 +13,14 @@
   export let embedId: string;
   export let title: string;
 
-  const eventTracker = () => {
-    trackEvent("screencast_started", {
-      id: embedId,
-      name: title,
-      url: window.location.href,
-      path: window.location.pathname,
-    });
-  };
+  // const eventTracker = () => {
+  //   trackEvent("screencast_started", {
+  //     id: embedId,
+  //     name: title,
+  //     url: window.location.href,
+  //     path: window.location.pathname,
+  //   });
+  // };
 </script>
 
 <div class="flex justify-center">
