@@ -52,8 +52,8 @@
 
     &::after {
       content: "";
-      @apply block h-5 w-5 absolute -z-10;
-      transform: rotate(45deg) translateY(-8px);
+      @apply block h-4 w-4 absolute -z-10;
+      transform: rotate(45deg) translateY(-2px);
       background: var(--bg);
     }
 
@@ -82,7 +82,7 @@
 
   {#if isRendered}
     <div
-      class="tooltip text-white text-xs p-macro rounded-xl normal-case font-normal"
+      class="tooltip text-white text-xs py-macro px-micro rounded-xl normal-case font-normal"
     >
       {@html title}
     </div>

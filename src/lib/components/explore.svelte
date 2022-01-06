@@ -27,10 +27,6 @@
       @apply flex-col rounded-2xl mx-auto;
       max-width: 345px;
     }
-
-    .h1 :global(span) {
-      @apply hidden;
-    }
   }
 
   .h1 {
@@ -38,6 +34,10 @@
 
     @media (max-width: 830px) {
       @apply mb-macro;
+
+      :global(span) {
+        @apply hidden;
+      }
     }
   }
 

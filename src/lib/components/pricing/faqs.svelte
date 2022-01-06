@@ -3,6 +3,10 @@
   import Section from "../section.svelte";
   import Faqs from "../faqs/faqs.svelte";
   import Faq from "../faqs/faq.svelte";
+  import Modal from "../modal.svelte";
+  import RedeemOffer from "./redeem-offer.svelte";
+
+  let isModalOpen: boolean = false;
 </script>
 
 <style lang="scss">
@@ -43,7 +47,12 @@
         <a href="/contact/sales">Contact us</a>. If you are a student, you may
         use the Student Unlimited Plan for {isEurope() ? "€8" : "$9"} per month (usually{" "}
         {isEurope() ? "€35" : "$39"}). See
-        <a href="#plans">Gitpod for Students</a> for more information.
+        <button
+          on:click={() => (isModalOpen = true)}
+          class="font-bold text-link-grey hover:text-black transition duration-200"
+        >
+          Gitpod for Students
+        </button> for more information.
       </p>
     </Faq>
     <Faq title="How can I pay?">
@@ -129,3 +138,7 @@
     </Faq>
   </Faqs>
 </Section>
+
+<Modal on:close={() => (isModalOpen = false)} isOpen={isModalOpen}>
+  <RedeemOffer />
+</Modal>

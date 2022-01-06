@@ -17,12 +17,17 @@
   <ol
     class="text-left list-decimal my-x-small pl-12 pr-xx-small sm:pl-20 sm:pr-small space-y-macro"
   >
-    <li>Log-in with a free Gitpod account.</li>
+    <li>
+      <a href="https://gitpod.io/login">Log-in</a> with a free Gitpod account.
+    </li>
     <li>
       Make sure that your educational email is your primary email address in
       your GitHub/GitLab/Bitbucket account.
     </li>
-    <li>Go to the Plans page and select the Student Unlimited Plan.</li>
+    <li>
+      Go to the <a href="https://gitpod.io/plans">Plans page</a> and select the Student
+      Unlimited Plan.
+    </li>
     <li>
       If it doesn't appear, please contact us to register your educational email
       domain.
