@@ -2,7 +2,6 @@
   import Avatars from "./avatars.svelte";
   import OpenGraph from "./open-graph.svelte";
   import { authors, authorSocialMediaLinks } from "$lib/contents/authors";
-  import OnThisPageNav from "./on-this-page-nav.svelte";
   import "$lib/assets/markdown-commons.scss";
 
   export let baseUrl: string;
@@ -85,48 +84,47 @@
     norobots: norobots,
   }}
 />
-<div class="post mt-small mb-8">
-  <img
-    src="/images/{imagesDirectoryName}/{slug}/{teaserImage || image}"
-    alt={`${title}`}
-    class="headerImage"
-  />
-  <p class="date">{dateDisplay}</p>
-  <h1>{title}</h1>
-  <p>
-    <span
-      ><Avatars
-        usernames={author}
-        displayNames={authorDisplayNames}
-        socialMediaLinks={authorSocialMediaLinks}
-        socialMediaLinkClasses="inline-flex mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-black hover:bg-off-white hover:text-black"
-        socialMediaImgClasses="mr-2 h-6 w-6 place-self-center"
-      /></span
-    >
-  </p>
-  <div class="flex">
-    <div class="content-blog flex-auto min-w-0">
+<div class="flex justify-center mt-small mb-8">
+  <div class="post content-blog">
+    <img
+      src="/images/{imagesDirectoryName}/{slug}/{teaserImage || image}"
+      alt={`${title}`}
+      class="headerImage"
+    />
+    <p class="date">{dateDisplay}</p>
+    <h1>{title}</h1>
+    <p>
+      <span
+        ><Avatars
+          usernames={author}
+          displayNames={authorDisplayNames}
+          socialMediaLinks={authorSocialMediaLinks}
+          socialMediaLinkClasses="inline-flex mr-4 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-black hover:bg-off-white hover:text-black"
+          socialMediaImgClasses="mr-2 h-6 w-6 place-self-center"
+        /></span
+      >
+    </p>
+    <div>
       <slot />
     </div>
-    <OnThisPageNav />
+    <section class="share">
+      <h2 class="h4">Share this post:</h2>
+      <ul>
+        {#each socialLinks as link}
+          <li>
+            <a
+              href={link.href}
+              rel="noreferrer"
+              target="_blank"
+              data-analytics={`{"variant":"social_media","context":"` +
+                link.alt.toLowerCase() +
+                `_share"}`}
+            >
+              <img src={link.icon} alt={link.alt} height="24" width="24" />
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </section>
   </div>
-  <section class="share">
-    <h2 class="h4">Share this post:</h2>
-    <ul>
-      {#each socialLinks as link}
-        <li>
-          <a
-            href={link.href}
-            rel="noreferrer"
-            target="_blank"
-            data-analytics={`{"variant":"social_media","context":"` +
-              link.alt.toLowerCase() +
-              `_share"}`}
-          >
-            <img src={link.icon} alt={link.alt} height="24" width="24" />
-          </a>
-        </li>
-      {/each}
-    </ul>
-  </section>
 </div>
