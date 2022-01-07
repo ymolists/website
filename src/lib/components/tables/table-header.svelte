@@ -7,15 +7,20 @@
 
 <style lang="postcss">
   .card-heading {
-    @apply flex flex-col items-center justify-center pb-x-small whitespace-nowrap;
+    @apply flex flex-col items-center justify-center pb-x-small whitespace-nowrap h-20;
   }
 </style>
 
 <div class="card-heading">
   {#if image}
-    <img src={image.src} alt={title} class={image.class || "h-10"} />
+    <img
+      src={image.src}
+      alt={title ? title : image.alt}
+      class={image.class || "h-10"}
+    />
   {/if}
-  <h3 class="h4 mt-x-small">{title}</h3>
+  {#if title}
+    <h3 class="h4 mt-x-small">{title}</h3>{/if}
   {#if subtitle}
     <p>{subtitle}</p>
   {/if}
