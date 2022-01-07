@@ -53,6 +53,7 @@ export const gitpodTableData: TableData = {
     src: "/svg/media-kit/logo-mark.svg",
   },
   title: "Gitpod",
+  isHighlighted: true,
   details: [
     {
       term: "Pricing (SAAS)",

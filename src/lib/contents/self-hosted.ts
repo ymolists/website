@@ -119,6 +119,7 @@ export const freePlanTableData: TableData = {
 export const professionalPlanTableData: TableData = {
   title: "Professional",
   subtitle: `${isEurope() ? "€29" : "$35"} per user/month`,
+  isHighlighted: true,
   link: {
     text: "Register and Install Now",
     href: "/enterprise-license",

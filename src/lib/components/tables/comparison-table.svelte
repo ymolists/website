@@ -87,6 +87,7 @@
     <ComparisonTableSection
       title={dataSet.title}
       subtitle={dataSet.subtitle}
+      isHighlighted={dataSet.isHighlighted}
       details={dataSet.details}
       image={dataSet.image}
       link={dataSet.link}
@@ -96,9 +97,9 @@
       subtitle={dataSet.subtitle}
       details={dataSet.details}
       link={dataSet.link}
-      image={null}
+      image={dataSet.image}
       usesTheArrowButton={true}
-      isHighlighted={true}
+      isHighlighted={dataSet.isHighlighted}
     />
   {/each}
 </div>

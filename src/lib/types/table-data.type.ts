@@ -5,6 +5,7 @@ export type TableData = {
   title: string;
   subtitle?: string;
   image?: Image;
+  isHighlighted?: boolean;
   details: Details;
   link?: {
     href: string;
