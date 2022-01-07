@@ -6,6 +6,8 @@
 
   export let tableData: ComparisonTable;
 
+  const gridCols = tableData.dataSets.length + 1;
+
   const hasLink =
     tableData.dataSets.filter((dataset) => dataset.link).length > 0;
 </script>
@@ -50,7 +52,10 @@
   }
 </style>
 
-<div class="featureTable">
+<div
+  class="featureTable"
+  style="grid-template-columns: repeat({gridCols}, minmax(0, 1fr));"
+>
   <section class="card toc has-the-link">
     <ul class="tableOfContents text-left" role="presentation">
       <!-- Generate Tooltips -->
