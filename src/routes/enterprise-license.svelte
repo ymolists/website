@@ -205,6 +205,7 @@
           class="option"
           autocomplete="country"
         >
+          <option class="option" value="" disabled selected>Select...</option>
           {#each countryList as c}
             <option class="option" value={c}>
               {c}
@@ -219,6 +220,7 @@
       >
         Total Number of Developers*
         <select
+          class="option"
           name="noOfDevelopers"
           bind:value={formData.noOfDevelopers.value}
           bind:this={formData.noOfDevelopers.el}
@@ -228,6 +230,7 @@
               formData.noOfDevelopers.el.checkValidity();
           }}
         >
+          <option class="option" value="" disabled selected>Select...</option>
           {#each ["1 - 100", "101 - 250", "251 - 500", "500 - 1000", "+1000"] as n}
             <option class="option" value={n}>
               {n}
@@ -237,7 +240,7 @@
       </label>
     </div>
 
-    <label class="half mt-micro">
+    <label class="mt-macro half">
       <p>
         Optionally, tell us more about your interest in Gitpod. What challenges
         are you looking to solve? How can we help?
