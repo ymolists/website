@@ -63,7 +63,10 @@
 </dl>
 
 {#if link}
-  <div class="relative h-10 w-full">
+  <div
+    class="relative w-full flex justify-center items-center"
+    style="height: 60px;"
+  >
     <a
       href={link.href}
       class="btn-cta absolute left-1/2 -translate-x-1/2"

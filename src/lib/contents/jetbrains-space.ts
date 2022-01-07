@@ -1,5 +1,6 @@
 import type { TableData } from "$lib/types/table-data.type";
 import type { Feature } from "$lib/types/feature.type";
+import type { ComparisonTable } from "../types/comparison-table";
 
 export const features: Feature[] = [
   {
@@ -181,6 +182,64 @@ export const jetbrainsTableData: TableData = {
     {
       term: "VS Code Support",
       availibility: false,
+    },
+  ],
+};
+
+export const jetbrainsComparisonTable: ComparisonTable = {
+  dataSets: [gitpodTableData, jetbrainsTableData],
+  tooltips: [
+    {
+      text: "Pricing (SAAS)",
+    },
+
+    {
+      text: "License",
+    },
+    {
+      path: "/svg/github.svg",
+      text: "GitHub Integration",
+    },
+    {
+      path: "/svg/gitlab.svg",
+      text: "GitLab Integration",
+    },
+    {
+      path: "/svg/bitbucket.svg",
+      text: "Bitbucket Integration",
+    },
+    {
+      path: "/svg/brands/gcp.svg",
+      text: "Self-Host on GCP",
+    },
+    {
+      path: "/svg/brands/aws.svg",
+      text: "Self-Host on AWS",
+    },
+    {
+      path: "/svg/brands/kubernetes.svg",
+      text: "Self-Host on Kubernetes",
+    },
+    {
+      text: "Prebuilds",
+    },
+    {
+      text: "Snapshots",
+    },
+    {
+      text: "VS Code Extensions",
+    },
+    {
+      text: "iPad Support",
+    },
+    {
+      text: "Virtual Desktop (VNC)",
+    },
+    {
+      text: "Jetbrains Ide Support",
+    },
+    {
+      text: "VS Code Support",
     },
   ],
 };
