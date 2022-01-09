@@ -24,10 +24,10 @@
   contents={{
     title: "Install Self-hosted",
     description: `
-      Install Gitpod Self-hosted on 
-        <a href='/docs/self-hosted/latest/installation/on-gke'>GKE</a>, 
-        <a href='/docs/self-hosted/latest/installation/on-amazon-eks'>EKS</a>, 
-        <a href='/docs/self-hosted/latest/installation/on-microsoft-aks'>AKS</a> or 
+      Install Gitpod Self-hosted on
+        <a href='/docs/self-hosted/latest/installation/on-gke'>GKE</a>,
+        <a href='/docs/self-hosted/latest/installation/on-amazon-eks'>EKS</a>,
+        <a href='/docs/self-hosted/latest/installation/on-microsoft-aks'>AKS</a> or
         <a href='/docs/self-hosted/latest/installation/on-kubernetes'>K3s</a>.
     `,
     link: { href: "/docs/self-hosted/latest", text: "View installation guide" },
