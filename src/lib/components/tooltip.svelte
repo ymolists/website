@@ -18,7 +18,7 @@
   .tooltip {
     --bg: #565252;
     @apply absolute z-50 w-60;
-    bottom: 150%;
+    bottom: 105%;
     left: 90%;
     background: var(--bg);
 
@@ -50,12 +50,14 @@
       bottom: -60%;
     }
 
+    /* 
     &::after {
       content: "";
       @apply block h-4 w-4 absolute -z-10;
       transform: rotate(45deg) translateY(-2px);
       background: var(--bg);
-    }
+    } 
+    */
 
     :global(a) {
       @apply text-white;
@@ -82,7 +84,7 @@
 
   {#if isRendered}
     <div
-      class="tooltip text-white text-xs py-macro px-micro rounded-xl normal-case font-normal"
+      class="tooltip text-white text-xs py-macro px-2.5 rounded-xl normal-case font-normal"
     >
       {@html title}
     </div>
