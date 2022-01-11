@@ -14,12 +14,12 @@ export const pricingPlans: Pricing[] = [
       "Public & private repos",
       {
         text: "4 parallel workspaces",
-        tooltip: "open up to 4 workspaces in parallel.",
+        tooltip: "Open up to 4 workspaces in parallel.",
       },
       {
         text: "30min inactivity timeout",
         tooltip:
-          "workspaces are stopped automatically after 30min of inactivity.",
+          "Workspaces are stopped automatically after 30min of inactivity.",
       },
     ],
     btnText: "Try Now",
@@ -44,7 +44,7 @@ export const pricingPlans: Pricing[] = [
       "Unlimited hours",
       {
         text: "8 parallel workspaces",
-        tooltip: "open up to 8 workspaces in parallel.",
+        tooltip: "Open up to 8 workspaces in parallel.",
       },
       {
         text: "Team Plans",
@@ -65,7 +65,7 @@ export const pricingPlans: Pricing[] = [
       "All in Professional",
       {
         text: "16 parallel workspaces",
-        tooltip: "open up to 16 workspaces in parallel.",
+        tooltip: "Open up to 16 workspaces in parallel.",
       },
       "1hr inactivity timeout",
       {
