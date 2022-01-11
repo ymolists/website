@@ -152,6 +152,16 @@ Once the GitHub app is installed, Gitpod can add helpful annotations to your pul
 #### Checks
 
 By default, Gitpod registers itself as a check to pull requests - much like a continuous integration system would do.
+
+The default behavior, however, would not make the checks fail when the prebuild failed.
+This can be enabled with the following snippet:
+
+```yaml
+github:
+  prebuilds:
+    addCheck: prevent-merge-on-error
+```
+
 You can disable this behaviour in the `.gitpod.yml` file in your default branch:
 
 ```yaml

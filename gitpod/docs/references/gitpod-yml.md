@@ -128,13 +128,15 @@ Gitpod can modify the description of a pull request to add an â€œOpen in Gitpodâ
 
 ### `prebuilds.addCheck`
 
-Configure whether Gitpod registers itself as a status check to pull requests - much like a continuous integration system would do. To learn more about status checks, please see the GitHub documentation [about status checks](https://docs.github.com/en/github/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks).
+Configure whether Gitpod registers itself as a status check to pull requests - much like a continuous integration system would do. By default a failing prebuild would not make the check fail. Set `prevent-merge-on-error` to block PR merging when prebuilds failed.
+
+To learn more about status checks, please see the GitHub documentation [about status checks](https://docs.github.com/en/github/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks).
 
 <div class="table-container">
 
-| Type      | Default |
-| --------- | ------- |
-| `boolean` | `true`  |
+| Type     | Default                  | Values                                    |
+| -------- | ------------------------ | ----------------------------------------- |
+| `string` | `prevent-merge-on-error` | `true`, `false`, `prevent-merge-on-error` |
 
 </div>
 
