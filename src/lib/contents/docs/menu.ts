@@ -29,6 +29,7 @@ export const MENU: MenuEntry[] = [
     M("VS Code Extensions", "vscode-extensions"),
     M("Workspace Location", "checkout-location"),
     M("Browser Settings", "configure/browser-settings"),
+    M("Dotfiles", "config-dotfiles", [], "beta"),
   ]),
   M("Develop", "develop", [
     M("One workspace per task", "workspaces"),
