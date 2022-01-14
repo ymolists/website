@@ -1,6 +1,6 @@
 ---
 author: pawlean, mikenikles
-date: Thurs, 13 Jan 2021 16:00:00 UTC
+date: Thurs, 13 Jan 2022 16:00:00 UTC
 excerpt: For our sixth edition of DevX Digest, we’d be breaking down the key highlights of our DevXPod conversation with Shanea from CodeSee.
 image: teaser.jpg
 slug: offload-pressure-to-improve-devx
