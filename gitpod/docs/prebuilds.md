@@ -116,7 +116,9 @@ Note the absence of the `command` task. Since this task may potentially run inde
 
 Prebuilds have a timeout of 1 hour. If your `before` and `init` tasks combined exceed 1 hour, your prebuild will fail. Subscribe to [this issue](https://github.com/gitpod-io/gitpod/issues/6283) for updates when this limit will be lifted.
 
-Each prebuild starts with a clean environment. In other words, Gitpod does not cache artifacts between prebuilds. We do have _incremental prebuilds_ available in Beta though and if you have a use case where this would be benefitial, please let us know.
+Each prebuild starts with a clean environment. In other words, Gitpod does not cache artifacts between prebuilds.
+
+Incremental Prebuilds use an earlier, successful Prebuild as the base. This can reduce the duration of your Prebuilds significantly, especially if they normally take more than ten minutes to complete. Incremental Prebuilds can be found under the project settings in your Gitpod dashboard.
 
 ## GitHub-specific configuration
 
