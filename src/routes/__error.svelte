@@ -17,6 +17,16 @@
   export let error: Error;
 </script>
 
+<style lang="postcss">
+  img {
+    filter: grayscale(60%);
+  }
+
+  p {
+    @apply mb-x-small;
+  }
+</style>
+
 <OpenGraph
   data={{
     description: "404 Oh, no! Something went wrong on our side.",
@@ -24,11 +34,12 @@
   }}
 />
 
-<div class="error-page row">
+<div class="text-center">
   <Section>
     <img
       src="/images/illustration-large.jpg"
       alt="The Gitpod cube set up as a remote workspace"
+      class="w-full max-w-sm mx-auto mb-x-small"
     />
     <h1>{status}</h1>
     <p>Oh, no! Something went wrong on our side.</p>
