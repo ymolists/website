@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+  import Images from "$lib/components/about/images.svelte";
   import Explore from "$lib/components/explore.svelte";
   import LogoAnimated from "$lib/components/logo-animated.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
@@ -37,42 +38,7 @@
   </h2>
 </div>
 
-<ul class="imageCarousel">
-  <li>
-    <img
-      src="/images/about/team-2.jpg"
-      alt="A female Gitpod team member"
-      height="310"
-      width="310"
-    />
-  </li>
-  <li>
-    <img
-      src="/images/about/team-3.jpg"
-      alt="A laptop and office chair in a tent"
-      height="310"
-      width="310"
-      role="presentation"
-    />
-  </li>
-  <li>
-    <img
-      src="/images/about/about-6.png"
-      alt="Gitpod team members on the beach"
-      height="310"
-      width="310"
-      role="presentation"
-    />
-  </li>
-  <li>
-    <img
-      src="/images/about/about-5.png"
-      alt="4 kumquats on a table"
-      height="310"
-      width="310"
-    />
-  </li>
-</ul>
+<Images />
 
 <div class="redirector">
   <h2>Obsessed with developer experience</h2>
