@@ -77,6 +77,7 @@ module.exports = {
       },
       spacing: {
         huge: "var(--huge)",
+        "x-huge": "var(--x-huge)",
         "xx-large": "var(--xx-large)",
         "x-large": "var(--x-large)",
         large: "var(--large)",
