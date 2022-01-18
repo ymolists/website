@@ -86,7 +86,7 @@
           <FooterLink
             href="https://www.gitpod.io/careers"
             target="_blank"
-            class="highlighted">Careers</FooterLink
+            highlight>Careers</FooterLink
           >
         </li>
         <li><FooterLink href="/contact">Contact</FooterLink></li>
