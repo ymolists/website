@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "watch:css": "run-p watch:css:*",
-    "watch:css:global": "postcss src/lib/assets/global.scss -o static/global.css -w",
+    "watch:css:global": "postcss src/lib/assets/global.css -o static/global.css -w",
     "watch:css:styles": "postcss src/lib/assets/styles.scss -o static/styles.css -w",
     "watch:dev": "svelte-kit dev --host 0.0.0.0",
     "clean": "run-p clean:*",
@@ -19,7 +19,7 @@
     "dev": "npm run clean && run-p watch:*",
     "build": "run-s build:css build:svelte",
     "build:css": "run-p build:css:*",
-    "build:css:global": "NODE_ENV=production postcss src/lib/assets/global.scss -o static/global.css",
+    "build:css:global": "NODE_ENV=production postcss src/lib/assets/global.css -o static/global.css",
     "build:css:styles": "NODE_ENV=production postcss src/lib/assets/styles.scss -o static/styles.css",
     "build:svelte": "svelte-kit build --verbose",
     "deploy": "run-s clean build:css build:svelte",

@@ -6,6 +6,10 @@ module.exports = {
   safelist: ["overflow-y-hidden", "mr-4"],
   theme: {
     extend: {
+      listStyleType: {
+        alpha: "upper-alpha",
+        roman: "upper-roman",
+      },
       screens: {
         lgx: "1140px",
         "1/2xl": "1442px",
