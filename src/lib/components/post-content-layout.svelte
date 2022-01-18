@@ -85,7 +85,7 @@
   }}
 />
 <div class="flex justify-center mt-small mb-8">
-  <div class="post content-blog">
+  <div class="post content-blog lg:w-[50rem]">
     <img
       src="/images/{imagesDirectoryName}/{slug}/{teaserImage || image}"
       alt={`${title}`}
