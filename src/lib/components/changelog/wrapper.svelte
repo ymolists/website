@@ -15,6 +15,12 @@
   .content-docs :global(li) {
     @apply mt-0 mb-3;
   }
+  .content-docs :global(.avatars a) {
+    @apply text-dark-grey font-normal;
+  }
+  .content-docs :global(.avatars a:hover) {
+    @apply text-black;
+  }
 </style>
 
 <div class="content-docs {clazz}">
