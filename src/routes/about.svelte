@@ -38,10 +38,10 @@
   </h2>
 </div>
 
-<ul class="imageCarousel">
+<ul class="flex basis-1/4 my-8 mx-auto justify-center space-x-4">
   <li>
     <img
-      class="rounded-2xl"
+      class="w-full rounded-2xl"
       src="/images/about/team-2.jpg"
       alt="A female Gitpod team member"
       height="310"
@@ -50,7 +50,7 @@
   </li>
   <li>
     <img
-      class="rounded-2xl"
+      class="w-full rounded-2xl"
       src="/images/about/team-3.jpg"
       alt="A laptop and office chair in a tent"
       height="310"
@@ -60,7 +60,7 @@
   </li>
   <li>
     <img
-      class="rounded-2xl"
+      class="w-full rounded-2xl"
       src="/images/about/about-6.png"
       alt="Gitpod team members on the beach"
       height="310"
@@ -70,7 +70,7 @@
   </li>
   <li>
     <img
-      class="rounded-2xl"
+      class="w-full rounded-2xl"
       src="/images/about/about-5.png"
       alt="4 kumquats on a table"
       height="310"
