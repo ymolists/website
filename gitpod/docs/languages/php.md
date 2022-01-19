@@ -13,7 +13,7 @@ Gitpod supports PHP right out of the box, but more advanced features such as deb
 
 ## Example Repositories
 
-<div class="table-container">
+<div class="overflow-x-auto">
 
 | Repository                                                         | Description                                                                    | Try it                                                                                                                                        |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |

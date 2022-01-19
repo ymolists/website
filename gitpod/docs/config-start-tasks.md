@@ -85,7 +85,7 @@ tasks:
 
 You can configure how the terminal should be opened relative to the previous task.
 
-<div class="table-container">
+<div class="overflow-x-auto">
 
 | openMode                 | Description                                                |
 | ------------------------ | ---------------------------------------------------------- |

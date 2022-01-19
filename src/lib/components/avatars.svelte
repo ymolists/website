@@ -67,7 +67,7 @@
         href={getSocialMediaLink(username)}
         target="_blank"
         class:showAvatar
-        class="no-underline transition-none {socialMediaLinkClasses}"
+        class="no-underline transition-none after:hidden leading-7 {socialMediaLinkClasses}"
         rel="noreferrer"
         data-analytics={`{"variant":"social_media"}`}
       >

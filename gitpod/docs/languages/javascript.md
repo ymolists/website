@@ -15,7 +15,7 @@ Gitpod comes with great built-in support for JavaScript, TypeScript, and tools l
 
 Here are a few JavaScript example projects that are automated with Gitpod:
 
-<div class="table-container">
+<div class="overflow-x-auto">
 
 | Repository                                                   | Description                                                                             | Try it                                                                                                                            |
 | ------------------------------------------------------------ | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
