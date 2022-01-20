@@ -1,7 +1,11 @@
-<script>
+<script lang="ts">
   import QaTooltip from "$lib/components/qa-tooltip.svelte";
-  //import FeatureTableSection from "./feature-table-section.svelte";
-  //import FeatureTableSectionMobile from "./feature-table-section-mobile.svelte";
+  import FeatureTableSection from "./feature-table-section.svelte";
+  import FeatureTableSectionMobile from "./feature-table-section-mobile.svelte";
+  import type { TableData } from "../../../types/table-data.type";
+
+  export let data: TableData[];
+  export let tableOfContents: any[];
 </script>
 
 <style lang="postcss">
@@ -46,19 +50,24 @@
       <!-- Don't remove this it is to help with the layout temporarily unless we find a better way to adjust it.  -->
     </ul>
   </section>
-  <!-- <FeatureTableSection
-    title={freePlanTableData.title}
-    subtitle={freePlanTableData.subtitle}
-    details={freePlanTableData.details}
-    image={null}
-    link={freePlanTableData.link}
-  />
-  <FeatureTableSectionMobile
-    title={unleashedPlanTableData.title}
-    subtitle={unleashedPlanTableData.subtitle}
-    details={unleashedPlanTableData.details}
-    link={unleashedPlanTableData.link}
-    image={null}
-    usesTheArrowButton={true}
-  /> -->
+  {#each data as item}
+    <FeatureTableSection
+      title={item.title}
+      subtitle={item.subtitle}
+      details={item.details}
+      image={item.image || null}
+      renderedOn={item.renderedOn}
+      isHighlighted={item.isHighlighted}
+      link={item.link}
+    />
+    <FeatureTableSectionMobile
+      title={item.title}
+      subtitle={item.subtitle}
+      details={item.details}
+      isHighlighted={item.isHighlighted}
+      link={item.link}
+      image={null}
+      usesTheArrowButton={true}
+    />
+  {/each}
 </div>
