@@ -74,12 +74,12 @@
   {/each}
 </dl>
 
-<!-- {#if link}
-  <div class="relative h-10 w-full">
+{#if link}
+  <div class="relative h-[60px] w-full">
     <a
       href={link.href}
       class="btn-cta absolute left-1/2 -translate-x-1/2"
       class:btn-primary={isHighlighted}>{link.text}</a
     >
   </div>
-{/if} -->
+{/if}
