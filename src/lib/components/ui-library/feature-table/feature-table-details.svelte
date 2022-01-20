@@ -42,14 +42,16 @@
   }
 </style>
 
-<dl id="gitpodPricing" class="tableColumn border-t-2 border-divider pt-8">
+<dl
+  class="lg:grid lg:auto-rows-[3.75rem] tableColumn border-t-2 border-divider pt-8"
+>
   {#each details as { term, list, text, availibility }}
     <dt
       class="text-center uppercase lg:absolute lg:w-px lg:h-px lg:overflow-hidden"
     >
       {term}
     </dt>
-    <dd class="text-center">
+    <dd class="flex justify-center items-center">
       {#if text}
         {@html text}
       {/if}
@@ -72,7 +74,7 @@
   {/each}
 </dl>
 
-{#if link}
+<!-- {#if link}
   <div class="relative h-10 w-full">
     <a
       href={link.href}
@@ -80,4 +82,4 @@
       class:btn-primary={isHighlighted}>{link.text}</a
     >
   </div>
-{/if}
+{/if} -->
