@@ -176,7 +176,7 @@
 
 <div class="header max-w-4xl my-small lg:my-x-huge mx-auto">
   <h2>Gitpod in the news</h2>
-  <ul class="cardlike flex flex-row flex-wrap justify-center mt-x-small">
+  <ul class="flex flex-row flex-wrap justify-center mt-x-small">
     <li
       class="p-4 flex-grow-0 flex-shrink-0 basis-1/2 min-w-[300px] text-center mb-0"
     >

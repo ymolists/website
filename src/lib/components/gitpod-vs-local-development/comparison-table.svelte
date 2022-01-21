@@ -65,7 +65,7 @@
     <h3>How does the setup affect their work?</h3>
   </div>
   <div class="featureTable">
-    <section class="card toc">
+    <section class="toc">
       <ul class="tableOfContents" role="presentation">
         <li>Setup new Project</li>
         <li>Develop a new feature</li>
