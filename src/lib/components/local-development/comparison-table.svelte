@@ -2,7 +2,7 @@
   import {
     bobTableData,
     aliceTableData,
-  } from "$lib/contents/gitpod-vs-local-development";
+  } from "$lib/contents/local-development";
 
   import Section from "../section.svelte";
   import ComparisonTableSectionMobile from "../tables/comparison-table-section-mobile.svelte";

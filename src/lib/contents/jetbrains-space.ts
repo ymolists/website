@@ -11,7 +11,7 @@ export const openSourceFeature = {
     "Works just as smoothly with GitHub, GitLab and Bitbucket",
   ],
   image: {
-    src: "/images/gitpod-vs-github-codespaces/spaces-3.svg",
+    src: "/images/github-codespaces/spaces-3.svg",
     alt: "Gitpod integrations",
   },
 };
