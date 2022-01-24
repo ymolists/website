@@ -83,7 +83,7 @@
       text: "More about Prebuilds.",
     },
     image: {
-      src: "/images/codespace/spaces-1.svg",
+      src: "/images/gitpod-vs-github-codespaces/spaces-1.svg",
       alt: "Gitpod vs GitHub Codespaces speed comparison",
     },
     footnote:
@@ -97,7 +97,7 @@
     paragraph:
       "Instead of running on expensive VMs, Gitpod provisions secure containers and achieves best-in-class resource-efficiency with scalable workspaces running on shared high-powered cloud servers. <a href='https://www.researchgate.net/publication/333096446_Reduced_carbon_emission_and_optimized_power_consumption_technique_using_container_over_virtual_machine' target='_blank'>Helping our planet</a> 🌱.",
     image: {
-      src: "/images/codespace/spaces-2.svg",
+      src: "/images/gitpod-vs-github-codespaces/spaces-2.svg",
       alt: "Gitpod vs GitHub Codespaces price comparison",
     },
     footnote:

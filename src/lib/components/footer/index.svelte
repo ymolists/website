@@ -42,7 +42,7 @@
           >
         </li> -->
         <li>
-          <FooterLink href="/gitpod-vs-github-codespaces"
+          <FooterLink href="/vs/gitpod-vs-github-codespaces"
             >Gitpod vs GitHub <br />Codespaces
           </FooterLink>
         </li>
