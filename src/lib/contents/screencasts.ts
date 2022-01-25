@@ -147,7 +147,9 @@ export const screencasts: Screencast[] = [
     duration: 230,
     tile: "screencast-11.jpg",
     youtubeId: "kI6firDA0Bw",
-    relatedDocs: [{ path: "/docs/editors/vscode", title: "VS Code Desktop" }],
+    relatedDocs: [
+      { path: "/docs/ides-and-editors/vscode", title: "VS Code Desktop" },
+    ],
     tags: ["Advanced"],
   },
   {

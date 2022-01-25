@@ -1,5 +1,5 @@
 ---
-section: editors
+section: ides-and-editors
 title: VS Code Desktop
 ---
 
