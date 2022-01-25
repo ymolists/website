@@ -16,7 +16,7 @@ Welcome to DevX Digest - the place to hear all about Developer Experience, broug
 
 Happy New Year, everyone!
 
-To kick off the year of all things developer experience, we’re reflecting on our latest DevXPod episode, where we spoke to [Shanea Leaven](https://twitter.com/ShaneaLeven) from [CodeSee](codesee.io).
+To kick off the year of all things developer experience, we’re reflecting on our latest DevXPod episode, where we spoke to [Shanea Leaven](https://twitter.com/ShaneaLeven) from [CodeSee](https://codesee.io).
 
 Our conversation highlighted some important topics, and we’ll leave you with our key takeaways below. [You can also listen to the episode anywhere you get your podcasts!](https://devxpod.buzzsprout.com/1895030/9867669-offload-pressure-from-developers-to-improve-devx-w-shanea-leven-co-founder-ceo) Don’t forget to subscribe and leave us a rating ⭐️
 
