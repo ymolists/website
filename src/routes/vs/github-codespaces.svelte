@@ -6,7 +6,7 @@
   import CalloutSecondary from "$lib/components/callout-secondary.svelte";
   import Card from "$lib/components/card/card.svelte";
   import FeatureBox from "$lib/components/feature-box.svelte";
-  import Header from "$lib/components/github-codespaces/header.svelte";
+  import Header from "$lib/components/header.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import Section from "$lib/components/section.svelte";
   import { openSourceFeature } from "$lib/contents/jetbrains-space";
@@ -71,7 +71,12 @@
   }}
 />
 
-<Header />
+<Header
+  title="Gitpod vs GitHub Codespaces"
+  text="Gitpod is the faster, more resource-efficient, open-source platform that
+  integrates with your individual stack."
+  tight={true}
+/>
 
 <FeatureBox
   feature={{

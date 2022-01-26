@@ -9,6 +9,7 @@
 
   import { countryList } from "$lib/contents/license-key";
   import type { Email } from "../functions/submit-form";
+  import Header from "$lib/components/header.svelte";
 
   const formData: Form = {
     firstName: {
@@ -96,10 +97,6 @@
 </script>
 
 <style lang="scss">
-  header {
-    @apply mb-small;
-  }
-
   .title:not(:first-child) {
     margin-top: var(--medium);
   }
@@ -121,10 +118,12 @@
   }}
 />
 
-<header>
-  <h2>Fill this out and get 10 additional users.</h2>
-  <p>Tell us how we can help and your license will be emailed shortly.</p>
-</header>
+<Header tight={true}>
+  <div slot="content">
+    <h1 class="h2">Fill this out and get 10 additional users.</h1>
+    <p>Tell us how we can help and your license will be emailed shortly.</p>
+  </div>
+</Header>
 
 <section
   class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-off-white shadow-xl mb-32 sm:mx-8"

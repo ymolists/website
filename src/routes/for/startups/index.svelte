@@ -9,7 +9,6 @@
     programBenefits as cards,
   } from "$lib/contents/startups";
   import ProgramBenefits from "$lib/components/program-benefits.svelte";
-  import Header from "$lib/components/startups/header.svelte";
   import Eligibility from "$lib/components/eligibility.svelte";
   import Faqs from "$lib/components/startups/faqs.svelte";
   import Explore from "$lib/components/explore.svelte";
@@ -17,6 +16,8 @@
   import SectionFeatures from "$lib/components/section-features.svelte";
   import SectionCommon from "$lib/components/section-common.svelte";
   import FeatureBox from "$lib/components/feature-box.svelte";
+  import Header from "$lib/components/header.svelte";
+  import Quote from "$lib/components/startups/quote.svelte";
 </script>
 
 <style lang="postcss">
@@ -33,7 +34,26 @@
   }}
 />
 
-<Header />
+<Header
+  title="Gitpod for Startups"
+  text="Spend less time worrying about brittle, local dev environments and more time
+  on building great things."
+  data-analytics={`{"position":"hero"}`}
+>
+  <div slot="content">
+    <p
+      class="h5 text-gray-900 font-semibold max-w-2xl mx-auto mt-micro mb-x-small"
+    >
+      Use all our services for free, up to 2 years.
+    </p>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSc-Vaelz0yG-XkuN2CYyUtZz0khhwMaju4oSLdMNIzoMkpHug/viewform"
+      target="_blank"
+      class="btn-conversion">Apply now</a
+    >
+    <Quote />
+  </div>
+</Header>
 
 <SectionFeatures title="Accelerate your workflow" {features} />
 

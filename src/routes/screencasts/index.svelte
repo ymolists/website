@@ -9,6 +9,7 @@
   import ScreencastsGrid from "$lib/components/screencasts/screencasts-grid.svelte";
   import Search from "$lib/components/search.svelte";
   import SuggestedTopics from "$lib/components/screencasts/suggested-topics.svelte";
+  import Header from "$lib/components/header.svelte";
 
   let searchTerm = "";
   let tag = "";
@@ -45,10 +46,11 @@
   }}
 />
 
-<header class="tight">
-  <h1 class="h2 text-center">Full screencast playlist</h1>
-  <p>Learn how to be always ready-to-code by following these short videos.</p>
-</header>
+<Header
+  title="Full screencast playlist"
+  text="Learn how to be always ready-to-code by following these short videos."
+  tight={true}
+/>
 
 <Search bind:value={searchTerm} class="md:mt-medium" />
 

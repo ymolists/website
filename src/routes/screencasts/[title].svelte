@@ -23,6 +23,7 @@
   import ScreencastsGrid from "$lib/components/screencasts/screencasts-grid.svelte";
   import { beforeUpdate, onMount } from "svelte";
   import { afterNavigate } from "$app/navigation";
+  import Header from "$lib/components/header.svelte";
 
   export let screencast: ScreencastType;
 
@@ -62,10 +63,7 @@
   }}
 />
 
-<header class="header tight">
-  <h1>{screencast.title}</h1>
-  <p>{screencast.description}</p>
-</header>
+<Header title={screencast.title} text={screencast.description} tight={true} />
 
 <YouTubeEmbed embedId={screencast.youtubeId} title={screencast.title} />
 

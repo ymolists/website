@@ -108,7 +108,7 @@
 >
   <AnnouncementBanner />
   <div
-    class="wrapper flex items-center justify-between mx-auto h-16 md:h-20 px-4 sm:px-8"
+    class="wrapper flex items-center justify-between mx-auto h-16 md:h-20 px-micro md:px-x-small"
   >
     <button
       on:contextmenu|preventDefault={() => goto("/media-kit")}

@@ -4,6 +4,7 @@
 
 <script lang="ts">
   import Explore from "$lib/components/explore.svelte";
+  import Header from "$lib/components/header.svelte";
   import LogoAnimated from "$lib/components/logo-animated.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import LinkIconExternal from "$lib/components/ui-library/link-icon-external.svelte";
@@ -22,14 +23,15 @@
   }}
 />
 
-<header class="tight">
-  <h1 class="sr-only">Gitpod</h1>
-  <LogoAnimated center={true} iterations={1} />
-  <p>
-    Open source developer platform. Originally from Kiel now fully-remote from
-    all around the globe.
-  </p>
-</header>
+<Header tight={true}>
+  <div slot="content">
+    <LogoAnimated center={true} iterations={1} />
+    <p>
+      Open source developer platform. Originally from Kiel now fully-remote from
+      all around the globe.
+    </p>
+  </div>
+</Header>
 
 <div class="max-w-[50rem] mt-small mx-auto mb-auto my-small lg:my-x-huge">
   <h2 class="h4 pl-7 border-l-orange-800 border-l-[0.25rem]">
