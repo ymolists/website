@@ -20,7 +20,7 @@ export const quotes: Quote[] = [
       alt: "Prisma",
     },
     img: {
-      src: "/images/opensource/4-geeks.png",
+      src: "/images/casestudies/gitlab.png",
       alt: "",
     },
   },
@@ -46,7 +46,7 @@ export const quotes: Quote[] = [
       alt: "RedwoodJS",
     },
     img: {
-      src: "/images/opensource/4-geeks.png",
+      src: "/images/casestudies/gitlab.png",
       alt: "",
     },
   },
