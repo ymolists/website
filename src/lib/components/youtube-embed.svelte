@@ -93,10 +93,6 @@
     max-width: 100%;
     max-height: 620px;
     margin: auto;
-
-    @media (min-width: 1240px) {
-      height: 620px;
-    }
   }
 
   .youtube,
