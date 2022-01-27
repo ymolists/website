@@ -1,5 +1,5 @@
 <script>
-  import GitpodBenefits from "$lib/components/casestudies/gitpod-benefits.svelte";
+  import GitpodBenefits from "$lib/components/customers/gitpod-benefits.svelte";
   import Explore from "$lib/components/explore.svelte";
   import Hero from "$lib/components/hero.svelte";
   import Testimonials from "$lib/components/index/testimonials.svelte";
@@ -8,7 +8,7 @@
   import Quotes from "$lib/components/quotes.svelte";
   import SectionFeatures from "$lib/components/section-features.svelte";
   import Section from "$lib/components/section.svelte";
-  import { developFeature, quotes } from "$lib/contents/casestudies";
+  import { developFeature, quotes } from "$lib/contents/customers";
   import { testimonials } from "$lib/contents/home/index";
 </script>
 
@@ -29,7 +29,7 @@
   title="You’re in good company"
   text="Learn how other customers leverage Gitpod to improve their developer experience, velocity, as well as security."
   image={{
-    src: "/images/casestudies/hero.png",
+    src: "/images/customers/hero.png",
     alt: "Gitpod Illustration image",
   }}
   btnPrimary={{

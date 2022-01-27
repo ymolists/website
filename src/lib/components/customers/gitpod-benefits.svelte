@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { gitpodBenefits } from "$lib/contents/casestudies";
+  import { gitpodBenefits } from "$lib/contents/customers";
   import Section from "../section.svelte";
 </script>
 

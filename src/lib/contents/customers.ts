@@ -22,11 +22,11 @@ export const quotes: Quote[] = [
     author: "Johannes Schickling",
     jobTitle: "Co-founder of Prisma",
     companyLogo: {
-      src: "/svg/casestudies/gitlab.svg",
+      src: "/svg/customers/gitlab.svg",
       alt: "Prisma",
     },
     img: {
-      src: "/images/casestudies/gitlab.png",
+      src: "/images/customers/gitlab.png",
       alt: "GitLab",
     },
   },
@@ -35,7 +35,7 @@ export const quotes: Quote[] = [
     author: "Julius Volz",
     jobTitle: "Co-founder of Prometheus",
     companyLogo: {
-      src: "/svg/casestudies/customer-io.svg",
+      src: "/svg/customers/customer-io.svg",
       alt: "Prometheus",
     },
     img: {
@@ -52,7 +52,7 @@ export const quotes: Quote[] = [
       alt: "RedwoodJS",
     },
     img: {
-      src: "/images/casestudies/gitlab.png",
+      src: "/images/customers/gitlab.png",
       alt: "",
     },
   },
@@ -61,11 +61,11 @@ export const quotes: Quote[] = [
     author: "Tom Preston-Werner",
     jobTitle: "Co-founder RedwoodJS",
     companyLogo: {
-      src: "/svg/casestudies/appslayer.svg",
+      src: "/svg/customers/appslayer.svg",
       alt: "RedwoodJS",
     },
     img: {
-      src: "/images/casestudies/gitlab.png",
+      src: "/images/customers/gitlab.png",
       alt: "",
     },
   },
@@ -76,7 +76,7 @@ export const developFeature: Feature = {
   paragraph:
     "What big tech companies are trying to build internally, Gitpod is bringing to the rest of the world: container-based development in the cloud.",
   image: {
-    src: "/svg/casestudies/develop-like.svg",
+    src: "/svg/customers/develop-like.svg",
     alt: "Develop like Google, Facebook or Shopify",
   },
 };

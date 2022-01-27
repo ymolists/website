@@ -38,6 +38,10 @@
       label: "Changelog",
     },
     {
+      href: "/customers",
+      label: "Customers",
+    },
+    {
       href: "/pricing",
       label: "Pricing",
     },
@@ -78,7 +82,7 @@
     @apply opacity-0 pointer-events-none;
   }
 
-  @media (min-width: 1050px) {
+  @media (min-width: 1090px) {
     .wrapper {
       @apply h-20;
     }
