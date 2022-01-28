@@ -1,7 +1,7 @@
 import type { Feature } from "$lib/types/feature.type";
 import type { Quote } from "$lib/types/quote.type";
 
-export const gitpodBenefits = [
+export const benefits = [
   {
     title: "5h",
     text: "average weekly<br/>time saved per engineer",

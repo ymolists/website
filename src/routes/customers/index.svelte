@@ -7,9 +7,9 @@
   }
 </script>
 
-<script>
+<script lang="ts">
   import PostPreview from "$lib/components/blog/post-preview.svelte";
-  import GitpodBenefits from "$lib/components/customers/gitpod-benefits.svelte";
+  import CompanyBenefits from "$lib/components/customers/company-benefits.svelte";
   import Explore from "$lib/components/explore.svelte";
   import Hero from "$lib/components/hero.svelte";
   import Testimonials from "$lib/components/index/testimonials.svelte";
@@ -19,12 +19,10 @@
   import SectionCommon from "$lib/components/section-common.svelte";
   import SectionFeatures from "$lib/components/section-features.svelte";
   import Section from "$lib/components/section.svelte";
-  import { developFeature, quotes } from "$lib/contents/customers";
+  import { developFeature, quotes, benefits } from "$lib/contents/customers";
   import { testimonials } from "$lib/contents/home/index";
 
-  export let customers;
-
-  console.log(customers);
+  export let customers: any;
 </script>
 
 <style lang="postcss">
@@ -57,7 +55,7 @@
   }}
 />
 
-<GitpodBenefits />
+<CompanyBenefits {benefits} class="lg:pt-16" />
 
 <Section>
   <Quotes {quotes} />
@@ -73,6 +71,7 @@
 <SectionCommon
   title="Featured Customer Stories"
   text="Read how our customers improved their development workflows"
+  id="stories"
 >
   <div
     slot="content"
