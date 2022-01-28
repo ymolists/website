@@ -7,7 +7,7 @@
 
   export let post: BlogPost;
   export let isMostRecent: boolean = false;
-  export let type: "blog" | "guides";
+  export let type: "blog" | "guides" | "customers";
   export let layout: "row" | "column" = "column";
 
   export let headlineOrder: "h3" | "" = "";

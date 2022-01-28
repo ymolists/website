@@ -1,4 +1,14 @@
+<script lang="ts" context="module">
+  export const prerender = true;
+
+  export async function load({ session }) {
+    const customers = session.customers;
+    return { props: { customers } };
+  }
+</script>
+
 <script>
+  import PostPreview from "$lib/components/blog/post-preview.svelte";
   import GitpodBenefits from "$lib/components/customers/gitpod-benefits.svelte";
   import Explore from "$lib/components/explore.svelte";
   import Hero from "$lib/components/hero.svelte";
@@ -6,10 +16,15 @@
   import UsedBy from "$lib/components/index/used-by.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import Quotes from "$lib/components/quotes.svelte";
+  import SectionCommon from "$lib/components/section-common.svelte";
   import SectionFeatures from "$lib/components/section-features.svelte";
   import Section from "$lib/components/section.svelte";
   import { developFeature, quotes } from "$lib/contents/customers";
   import { testimonials } from "$lib/contents/home/index";
+
+  export let customers;
+
+  console.log(customers);
 </script>
 
 <style lang="postcss">
@@ -54,6 +69,31 @@
   features={[{ ...developFeature, headingLevel: "h3" }]}
   type="box"
 />
+
+<SectionCommon
+  title="Featured Customer Stories"
+  text="Read how our customers improved their development workflows"
+>
+  <div
+    slot="content"
+    class="grid grid-cols-2 gap-xx-small max-w-3xl mx-auto mt-small"
+  >
+    {#each customers as { title, excerpt, image, slug }}
+      <PostPreview
+        post={{
+          title,
+          excerpt,
+          slug,
+          image,
+          teaserImage: image,
+        }}
+        headlineOrder="h3"
+        type="customers"
+        isMostRecent={true}
+      />
+    {/each}
+  </div>
+</SectionCommon>
 
 <UsedBy title="Trusted by +500k developers" />
 
