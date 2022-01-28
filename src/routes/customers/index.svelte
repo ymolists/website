@@ -75,7 +75,7 @@
 >
   <div
     slot="content"
-    class="grid grid-cols-2 gap-xx-small max-w-3xl mx-auto mt-small"
+    class="grid justify-center md:grid-cols-2 gap-xx-small max-w-3xl mx-auto mt-small"
   >
     {#each customers as { title, excerpt, image, slug }}
       <PostPreview
@@ -100,6 +100,8 @@
 
 <Explore
   contents={{
+    description:
+      "Spin up fresh, automated dev environments for each task, in the cloud, in seconds - no contracts or banking details required.",
     secondaryLink: {
       href: "https://www.notion.so/gitpod/Gitpod-Onboarding-Guides-Stages-1-3-d97968210ad2408789e968597fe4633c",
       text: "View onboarding guides",

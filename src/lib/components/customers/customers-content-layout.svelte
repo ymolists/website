@@ -1,4 +1,8 @@
 <script>
+  /**
+   * Typescript is not supported in mdsvex layout files.
+   * @see https://github.com/pngwn/MDsveX/issues/116
+   */
   import OpenGraph from "../open-graph.svelte";
 
   import Share from "../share.svelte";
