@@ -52,4 +52,7 @@
   {/each}
 </div>
 
-<a href="/docs/self-hosted/latest">View documentation</a>
+<p>
+  <a href="/self-hosted#features">View features</a> or
+  <a href="/docs/self-hosted/latest">read documentation</a>
+</p>
