@@ -1,6 +1,7 @@
 <script type="ts">
   import Section from "../section.svelte";
   export let bannerImg: string;
+  export let text: string;
 </script>
 
 <style lang="postcss">
@@ -12,7 +13,7 @@
 <Section>
   <div class="text-center">
     <h2 class="h2">Full customer story</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <p>{text}</p>
   </div>
 
   <div class="prose max-w-3xl mx-auto mt-x-large">

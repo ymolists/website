@@ -28,14 +28,16 @@
 </style>
 
 <header
-  class="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto mt-small mb-x-large md:my-x-large lg:my-xx-large"
+  class="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto mt-small mb-x-large md:my-x-large lg:my-xx-large"
 >
   <div class="lg:mr-small mb-small lg:mb-0">
-    <header class="max-w-2xl">
-      <img src={logo.src} alt={logo.alt} />
+    <header class="max-w-3xl">
+      <p class="flex items-center h5 font-bold text-light-grey mb-xx-small">
+        <img src={logo.src} alt={logo.alt} class="w-10 mr-micro" /> Customer story
+      </p>
       <h1 class="h1">{title}</h1>
     </header>
-    <p class="text-large max-w-xl">{text}</p>
+    <p class="text-large max-w-3xl">{text}</p>
   </div>
   <CustomerCard {card} />
 </header>
