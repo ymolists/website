@@ -5,7 +5,15 @@
   export let pricingPlans: Pricing[];
 </script>
 
-<div class="flex flex-wrap justify-center">
+<style lang="postcss">
+  div {
+    @media (max-width: 1250px) {
+      @apply flex-wrap;
+    }
+  }
+</style>
+
+<div class="flex justify-center">
   {#each pricingPlans as pricing}
     <PricingBox {pricing} />
   {/each}
