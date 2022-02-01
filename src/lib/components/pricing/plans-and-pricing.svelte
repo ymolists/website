@@ -34,6 +34,7 @@
 <Section>
   <h1 class="text-center">Plans and pricing</h1>
   <Toggle
+    id="pricing"
     class="mb-xx-small"
     labelLeft="SaaS"
     labelRight="Self-hosted"

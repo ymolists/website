@@ -1,12 +1,24 @@
-<script>
+<script lang="ts">
+  import Toggle from "$lib/components/toggle.svelte";
   import Section from "../../section.svelte";
+  import HostGitpodYourself from "./host-gitpod-yourself.svelte";
   import LaunchExampleWorkspace from "./launch-example-workspace.svelte";
   import LinkGitRepository from "./link-git-repository.svelte";
+
+  let checked: boolean = false;
+
+  const handleChange = () => {
+    checked = !checked;
+  };
 </script>
 
 <style lang="postcss">
+  h2 {
+    @apply mb-x-small;
+  }
+
   .cards-container {
-    @apply flex justify-between;
+    @apply flex;
 
     @media (max-width: 944px) {
       @apply flex-col mx-auto;
@@ -32,12 +44,30 @@
 
 <Section id="get-started" class="pt-20">
   <h2 class="mb-small text-center text-h2">Get started now</h2>
-  <div class="cards-container">
-    <div class="card shadow-normal">
-      <LinkGitRepository />
-    </div>
-    <div class="card">
-      <LaunchExampleWorkspace />
-    </div>
+  <Toggle
+    labelLeft="SaaS"
+    labelRight="Self-hosted"
+    on:change={handleChange}
+    {checked}
+    class="mb-x-small"
+    id="saas-self-hosted"
+  />
+  <div
+    class="cards-container"
+    class:justify-center={checked}
+    class:justify-between={!checked}
+  >
+    {#if checked}
+      <div class="card shadow-normal">
+        <HostGitpodYourself />
+      </div>
+    {:else}
+      <div class="card shadow-normal">
+        <LinkGitRepository />
+      </div>
+      <div class="card">
+        <LaunchExampleWorkspace />
+      </div>
+    {/if}
   </div>
 </Section>

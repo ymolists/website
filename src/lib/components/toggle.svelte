@@ -6,6 +6,7 @@
   export let labelRight: string;
   export let isInversed: boolean = false;
   export let checked: boolean;
+  export let id: string;
 </script>
 
 <style lang="postcss">
@@ -58,12 +59,19 @@
     class:checked
     class:inversed={isInversed}
   >
-    <label for="toggle" class:text-gray-900={!checked && !isInversed}
+    <label for={id} class:text-gray-900={!checked && !isInversed}
       >{labelLeft}</label
     >
-    <div class="relative flex items-center cursor-pointer">
-      <input id="toggle" type="checkbox" on:change class="h-full w-full" />
+    <div
+      class="relative flex items-center cursor-pointer"
+      data-analytics={`{"label":"` +
+        labelLeft +
+        ` <> ` +
+        labelRight +
+        ` Toggle"}`}
+    >
+      <input {id} type="checkbox" on:change class="h-full w-full" />
     </div>
-    <label for="toggle">{labelRight}</label>
+    <label for={id}>{labelRight}</label>
   </div>
 </div>
