@@ -36,6 +36,8 @@ Creating a snapshot is simple. You can find the action behind the hamburger menu
 
 Once you execute it, the snapshot is taken and the URL is shown in a dialog.
 
+You can also run `gp snapshot` if you prefer to do it from CLI for some automation need.
+
 ## Sharing Running Workspaces
 
 Sharing running workspaces makes it possible to quickly look at a workspace together with a (remote) colleague. It is similar to collaborating on Google Docs, in that you can see who is online and look at the same code and processes.
