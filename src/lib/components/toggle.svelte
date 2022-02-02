@@ -62,15 +62,18 @@
     <label for={id} class:text-gray-900={!checked && !isInversed}
       >{labelLeft}</label
     >
-    <div
-      class="relative flex items-center cursor-pointer"
-      data-analytics={`{"label":"` +
-        labelLeft +
-        ` <> ` +
-        labelRight +
-        ` Toggle"}`}
-    >
-      <input {id} type="checkbox" on:change class="h-full w-full" />
+    <div class="relative flex items-center cursor-pointer">
+      <input
+        {id}
+        type="checkbox"
+        on:change
+        class="h-full w-full toggle"
+        data-analytics={`{"label":"` +
+          labelLeft +
+          ` <> ` +
+          labelRight +
+          ` Toggle"}`}
+      />
     </div>
     <label for={id}>{labelRight}</label>
   </div>

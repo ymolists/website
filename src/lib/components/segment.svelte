@@ -71,8 +71,9 @@
       if (
         curr instanceof HTMLButtonElement ||
         curr instanceof HTMLAnchorElement ||
-        (curr instanceof HTMLDivElement &&
-          (curr.onclick || curr.classList.contains("cursor-pointer"))) ||
+        (curr instanceof HTMLDivElement && curr.onclick) ||
+        (curr instanceof HTMLInputElement &&
+          curr.classList.contains("toggle")) ||
         (curr instanceof HTMLDetailsElement && !curr.open)
       ) {
         trackButtonOrAnchor(curr);
