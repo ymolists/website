@@ -16,6 +16,10 @@ Gitpod can be deployed and operated on your own infrastructure. It supports diff
 1. [Requirements](./latest/requirements)
 2. [Installation](./latest/installation)
 
+### Deprecated Helm Documentation
+
+[v0.10.0 Helm](./helm-deprecated)
+
 ### Reference
 
 - [Releases](./latest/releases)
