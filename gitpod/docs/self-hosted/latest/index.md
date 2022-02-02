@@ -15,14 +15,6 @@ Gitpod can be deployed and operated on your own infrastructure. It supports diff
 
 1. [Requirements](./latest/requirements)
 2. [Installation](./latest/installation)
-3. [Configuration](./latest/configuration)
-
-If at any time you face any issues, check our [Troubleshooting](./latest/troubleshooting) page.
-
-### Operating Gitpod Self-Hosted
-
-- [Administration](./latest/administration)
-- [Updating](./latest/updating)
 
 ### Reference
 
