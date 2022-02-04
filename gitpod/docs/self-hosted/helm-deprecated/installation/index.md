@@ -9,7 +9,8 @@ title: Installing Gitpod Self-Hosted
 
 # Install Gitpod Self-Hosted
 
-- [Install Gitpod Self-Hosted on Amazon Elastic Kubernetes Service (EKS)](./installation/on-amazon-eks)
-- [Install Gitpod Self-Hosted on Google Kubernetes Engine (GKE)](./installation/on-gke)
+> ⚠️ **Deprecated Content**
+>
+> The content of this page assumes you are using Helm, which is now deprecated.
+
 - [Install Gitpod Self-Hosted on Kubernetes](./installation/on-kubernetes)
-- [Install Gitpod Self-Hosted on Microsoft Azure Kubernetes Service (AKS)](./installation/on-microsoft-aks)

@@ -9,16 +9,20 @@ title: Installation requirements for Gitpod Self-Hosted
 
 # Installation requirements for Gitpod Self-Hosted
 
+> ⚠️ **Deprecated Content**
+>
+> The content of this page assumes you are using Helm, which is now deprecated.
+
 This page details the software and hardware requirements for installing Gitpod Self-Hosted on your own infrastructure.
 
 ## Supported Kubernetes distributions
 
 Gitpod Self-Hosted runs well on:
 
-- [Amazon Elastic Kubernetes Service](./installation/on-amazon-eks)
-- [Google Kubernetes Engine](./installation/on-gke)
-- [K3s](./installation/on-kubernetes)
-- [Microsoft Azure Kubernetes Service](./installation/on-microsoft-aks)
+- Amazon Elastic Kubernetes Service
+- Google Kubernetes Engine
+- K3s
+- Microsoft Azure Kubernetes Service
 
 ## Incompatible Kubernetes distributions
 
