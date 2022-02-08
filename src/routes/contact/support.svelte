@@ -14,13 +14,14 @@
 
   const studentUnlimitedSubject = "Educational Discount Verification";
 
+  const otherSubject = "Other";
   const subjects = [
     "Abuse Report",
     "Billing",
     studentUnlimitedSubject,
     "Self-hosting Gitpod",
     "Open Source Sponsorship",
-    "Other",
+    otherSubject,
   ];
 
   let isStudentEmailNoteShown: boolean = false;
@@ -30,6 +31,11 @@
     isStudentEmailNoteShown = true;
   } else {
     isStudentEmailNoteShown = false;
+  }
+
+  $: if (!formData.selectedSubject.value) {
+    formData.selectedSubject.value = otherSubject;
+    formData.selectedSubject.valid = true;
   }
 
   const formData: Form = {
@@ -173,7 +179,7 @@
         <ul>
           <li class:error={isFormDirty && !formData.selectedSubject.valid}>
             <fieldset>
-              <legend>Please choose a subject</legend>
+              <legend>Please choose a subject*</legend>
               <ul>
                 {#each subjects as subject, index}
                   <li>

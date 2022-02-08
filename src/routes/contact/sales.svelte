@@ -12,11 +12,12 @@
   import Header from "$lib/components/header.svelte";
 
   const selfHostingSubject = "Self-hosting";
+  const otherSubject = "Other";
   const subjects = [
     selfHostingSubject,
     "Educational Discount",
     "Reselling",
-    "Other",
+    otherSubject,
   ];
   const cloudPlatforms = [
     "Amazon Elastic Kubernetes Service (EKS)",
@@ -78,6 +79,15 @@
   } else {
     isCloudPlatformsSelectShown = false;
     delete formData.cloudInfrastructure;
+  }
+
+  $: if (formData.cloudInfrastructure) {
+    formData.cloudInfrastructure.valid = true;
+  }
+
+  $: if (!formData.selectedSubject.value) {
+    formData.selectedSubject.value = otherSubject;
+    formData.selectedSubject.valid = true;
   }
 
   let isFormDirty = false;
@@ -198,7 +208,7 @@
         <ul>
           <li class:error={isFormDirty && !formData.selectedSubject.valid}>
             <fieldset>
-              <legend>Please choose a subject</legend>
+              <legend>Please choose a subject*</legend>
               <ul>
                 {#each subjects as subject, index}
                   <li>
