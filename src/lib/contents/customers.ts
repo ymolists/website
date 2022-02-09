@@ -63,10 +63,10 @@ export const quotes: Quote[] = [
       src: "/images/customers/redwoodjs/quote.png",
       alt: "Shares.io",
     },
-    link: {
-      href: "/customers/redwoodjs",
-      text: "View customer story",
-    },
+    // link: {
+    //   href: "/customers/redwoodjs",
+    //   text: "View customer story",
+    // },
   },
 ];
 
