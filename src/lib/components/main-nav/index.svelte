@@ -23,7 +23,6 @@
     {
       href: "/screencasts/getting-started-with-gitpod",
       label: "Screencasts",
-      highlight: true,
     },
     {
       href: "/blog",
@@ -37,10 +36,11 @@
       href: "/changelog",
       label: "Changelog",
     },
-    // {
-    //   href: "/customers",
-    //   label: "Customers",
-    // },
+    {
+      href: "/customers",
+      label: "Customers",
+      highlight: true,
+    },
     {
       href: "/pricing",
       label: "Pricing",

@@ -16,7 +16,7 @@
     slot="content"
     class="grid justify-center gap-xx-small mx-auto mt-small {clazz}"
   >
-    {#each customers as { title, excerpt, image, slug }}
+    {#each customers as { title, excerpt, image, slug, availability }}
       <PostPreview
         post={{
           title,
@@ -25,6 +25,7 @@
           image,
           teaserImage: image,
         }}
+        availability={!(availability === "soon")}
         headlineOrder="h3"
         type="customers"
         isMostRecent={true}

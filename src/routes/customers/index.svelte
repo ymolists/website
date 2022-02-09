@@ -37,7 +37,6 @@
       "Learn how other companies leverage Gitpod to improve their developer experience, remote collaboration and security.",
     keywords:
       "case study, customer story, experience, review, benefit, companies",
-    norobots: true,
   }}
 />
 

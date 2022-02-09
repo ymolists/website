@@ -15,6 +15,7 @@
   export let pageDescription;
   export let keywords;
   export let image;
+  export let norobots = false;
 
   const shareLinks = [
     {
@@ -52,7 +53,7 @@
     type: "article",
     image: `images/customers/${slug}/${image}`,
     imageTwitter: `images/customers/${slug}/${image}`,
-    norobots: true,
+    norobots,
   }}
 />
 
