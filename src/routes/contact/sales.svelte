@@ -81,19 +81,21 @@
     delete formData.cloudInfrastructure;
   }
 
-  $: if (formData.cloudInfrastructure) {
-    formData.cloudInfrastructure.valid = true;
-  }
-
-  $: if (!formData.selectedSubject.value) {
-    formData.selectedSubject.value = otherSubject;
-    formData.selectedSubject.valid = true;
-  }
-
   let isFormDirty = false;
   let isEmailSent = false;
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
+
+  const handleClick = () => {
+    if (formData.cloudInfrastructure) {
+      formData.cloudInfrastructure.valid = true;
+    }
+
+    if (!formData.selectedSubject.value) {
+      formData.selectedSubject.value = otherSubject;
+      formData.selectedSubject.valid = true;
+    }
+  };
 
   const handleSubmit = async () => {
     isFormDirty = true;
@@ -364,6 +366,7 @@
             <button
               type="submit"
               class="btn"
+              on:click={handleClick}
               disabled={isFormDirty && !isFormValid}>Send message</button
             >
           </li>
