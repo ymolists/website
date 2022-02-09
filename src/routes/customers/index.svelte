@@ -41,8 +41,8 @@
 />
 
 <Hero
-  title="You’re in good company"
-  text="Learn how other customers leverage Gitpod to improve their developer experience, velocity, as well as security."
+  title="You are in good company"
+  text="Learn how other customers leverage Gitpod to improve their developer experience, remote collaboration and security."
   image={{
     src: "/images/customers/hero.png",
     alt: "Gitpod Illustration image",
@@ -65,7 +65,7 @@
 
 <SectionFeatures
   title="Accelerate your workflow"
-  text="Spin up fresh, automated dev environments for each task, in the cloud, in seconds."
+  text="Spin up fresh, automated developer environments for each task, in the cloud, in seconds."
   features={[{ ...developFeature, headingLevel: "h3" }]}
   type="box"
 />
