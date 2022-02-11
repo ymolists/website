@@ -2,6 +2,9 @@
   import type { Quote } from "$lib/types/quote.type";
   export let quotes: Quote[];
   let selectedQuote: Quote = quotes[0];
+
+  let clazz = "";
+  export { clazz as class };
 </script>
 
 <style lang="postcss">
@@ -11,7 +14,7 @@
 </style>
 
 <div
-  class="quotes bg-off-white shadow-normal rounded-2xl sm:rounded-5xl pt-micro px-0 sm:px-xx-small sm:pt-x-small sm:pb-micro lg:p-small mx-auto"
+  class="quotes bg-off-white shadow-normal rounded-2xl sm:rounded-5xl pt-micro px-0 sm:px-xx-small sm:pt-x-small sm:pb-micro lg:p-small mx-auto {clazz}"
 >
   <div class="flex justify-around flex-wrap max-w-3xl mx-auto">
     {#each quotes as quote}

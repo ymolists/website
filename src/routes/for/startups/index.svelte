@@ -17,7 +17,8 @@
   import SectionCommon from "$lib/components/section-common.svelte";
   import FeatureBox from "$lib/components/feature-box.svelte";
   import Header from "$lib/components/header.svelte";
-  import Quote from "$lib/components/quote.svelte";
+  import Quotes from "$lib/components/quotes.svelte";
+  import { quotes } from "$lib/contents/customers";
 </script>
 
 <style lang="postcss">
@@ -39,6 +40,7 @@
   text="Spend less time worrying about brittle, local dev environments and more time
   on building great things."
   data-analytics={`{"position":"hero"}`}
+  style="max-width: 1000px"
 >
   <div slot="content">
     <p
@@ -51,15 +53,7 @@
       target="_blank"
       class="btn-conversion">Apply now</a
     >
-    <Quote
-      quote="Using Gitpod will improve your feature velocity and drastically reduce your
-      cycle times from commit to deploy."
-      author={{
-        name: "Fabian Lange",
-        jobTitle: "Founder & VP Engineering at Instana",
-      }}
-      class="mt-small md:mt-x-large"
-    />
+    <Quotes class="mt-small" {quotes} />
   </div>
 </Header>
 
