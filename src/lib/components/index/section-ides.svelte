@@ -6,18 +6,27 @@
   let selectedIde = "vscode";
   let ideType = "browser";
   let toggleChecked = false;
+  let activeIdeName: string = "";
 
   $: if (toggleChecked) {
-    ideType = "desktop";
-  } else {
     ideType = "browser";
+    selectedIde = "vscode";
+    activeIdeName = "vscode";
+  } else {
+    ideType = "desktop";
+    activeIdeName = "";
   }
 
+  const getIdeByName = (name: string) => ides.find((ide) => ide.name === name);
+
   const handleIdeChange = (e: { detail: { text: string } }) => {
-    selectedIde = e.detail.text;
+    const text = e.detail.text;
+    if (getIdeByName(text).screenshots.desktop !== "") {
+      selectedIde = e.detail.text;
+    }
   };
 
-  $: idetoRender = ides.find((ide) => ide.name === selectedIde);
+  $: idetoRender = getIdeByName(selectedIde);
 </script>
 
 <style lang="postcss">
@@ -32,8 +41,8 @@
     <div class="max-w-5xl mx-auto">
       <Toggle
         class="mt-x-small mb-macro"
-        labelLeft="Browser"
-        labelRight="Desktop"
+        labelLeft="Desktop"
+        labelRight="Browser"
         on:change={(e) => {
           ideType = "desktop";
           // @ts-ignore
@@ -50,7 +59,13 @@
             class="shadow-brand rounded-lg"
           />
         </div>
-        <IdeSwitcher on:message={handleIdeChange} {ides} />
+        <IdeSwitcher
+          on:message={handleIdeChange}
+          {ides}
+          activeByDefaultName="vscode"
+          {ideType}
+          {activeIdeName}
+        />
       </div>
     </div>
     <div class="text-center m-auto">

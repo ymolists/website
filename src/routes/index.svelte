@@ -31,6 +31,16 @@
   }}
 />
 
+<svelte:head>
+  <!-- Preloading the IDE screenshots so that the IDE switcher works swiftly -->
+  <link rel="preload" as="image" href="/images/index/vscode-desktop.png" />
+  <link rel="preload" as="image" href="/images/index/vscode-browser.png" />
+  <link rel="preload" as="image" href="/images/index/goland.png" />
+  <link rel="preload" as="image" href="/images/index/pycharm.png" />
+  <link rel="preload" as="image" href="/images/index/phpstorm.png" />
+  <link rel="preload" as="image" href="/images/index/Intellij.png" />
+</svelte:head>
+
 <Hero />
 <ChooseProject />
 <div id="choose-project-observer-target-bottom">
