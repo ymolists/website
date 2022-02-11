@@ -61,7 +61,7 @@
 
     const email: Email = {
       toType: "sales",
-      from: {
+      replyTo: {
         email: formData.email.value,
         name: `${formData.firstName.value} ${formData.lastName.value}`,
       },

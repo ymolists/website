@@ -114,7 +114,7 @@
 
     const email: Email = {
       toType: "sales",
-      from: {
+      replyTo: {
         email: formData.workEmail.value,
         name: formData.name.value,
       },

@@ -88,7 +88,7 @@
     });
 
     const email: Email = {
-      from: {
+      replyTo: {
         email: formData.email.value,
         name: formData.name.value,
       },
