@@ -63,7 +63,7 @@ text: "To spin up a fully functional test project",
 />
 
 <Section>
-	<Quote 
+	<Quote
 		quote="Gitpod totally changed the development velocity for RedwoodJS—it removed any issues related to configurations of dev environments and made it incredibly easy to contribute."
 		author={{
 			name: "Tom Preston-Werner",

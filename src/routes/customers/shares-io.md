@@ -62,7 +62,7 @@ text: "of engineers develop w/ Gitpod",
 />
 
 <Section>
-	<Quote 
+	<Quote
 		quote="Gitpod has been instrumental to our ability to scale&nbsp;so&nbsp;quickly"
 		author={{
 			name: "François Ruty",

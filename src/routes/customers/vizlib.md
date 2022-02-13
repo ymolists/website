@@ -62,7 +62,7 @@ text: "Saved per dev/month",
 />
 
 <Section>
-	<Quote 
+	<Quote
 		quote="Gitpod will become the default way of developing. Local development is just not an option anymore."
 		author={{
 			name: "Konrad Mattheis",
