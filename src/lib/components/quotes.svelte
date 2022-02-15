@@ -44,7 +44,7 @@
       />
     </div>
     <div
-      class="text flex-1 max-w-lg pt-xx-small px-xx-small sm:pt-0 sm:pl-x-small lg:pl-small lg:pr-0 mx-auto"
+      class="text flex-1 max-w-lg pt-xx-small px-xx-small md:pt-0 sm:pl-x-small lg:pl-small lg:pr-0 mx-auto"
     >
       <p class="text-large">
         &ldquo;{selectedQuote.text}&rdquo;
