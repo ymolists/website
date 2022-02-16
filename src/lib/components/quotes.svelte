@@ -11,6 +11,19 @@
   .quotes {
     max-width: 1000px !important;
   }
+
+  .quote {
+    height: 400px;
+
+    @media (max-width: 1040px) {
+      height: 300px;
+    }
+
+    @media (max-width: 890px) {
+      @apply block;
+      height: auto;
+    }
+  }
 </style>
 
 <div
@@ -34,17 +47,17 @@
     {/each}
   </div>
   <div
-    class="quote flex flex-col md:flex-row mt-xx-small lg:mt-small text-left pb-small md:pb-macro"
+    class="flex items-center justify-center px-xx-small mt-xx-small lg:mt-small text-left quote"
   >
     <div>
       <img
         src={selectedQuote.img.src}
         alt={selectedQuote.img.alt}
-        class="sm:max-w-xs sm:rounded-3xl lg:max-w-sm xl:max-w-md w-full mx-auto"
+        class="w-56 sm:max-w-xs rounded-3xl lg:max-w-sm xl:max-w-md  mx-auto"
       />
     </div>
     <div
-      class="text flex-1 max-w-lg pt-xx-small px-xx-small md:pt-0 sm:pl-x-small lg:pl-small lg:pr-0 mx-auto"
+      class="text flex justify-center flex-col flex-1 max-w-lg py-xx-small px-xx-small sm:pl-x-small lg:pl-small lg:pr-0"
     >
       <p class="text-large">
         &ldquo;{selectedQuote.text}&rdquo;

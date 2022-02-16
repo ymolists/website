@@ -56,7 +56,7 @@
 
   .explore__paragraph {
     @apply mb-x-small;
-    max-width: 465px;
+    max-width: 510px;
 
     @media (max-width: 830px) {
       @apply max-w-sm mb-xx-small;
