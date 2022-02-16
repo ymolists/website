@@ -12,17 +12,8 @@
     max-width: 1000px !important;
   }
 
-  .quote {
-    height: 400px;
-
-    @media (max-width: 1040px) {
-      height: 300px;
-    }
-
-    @media (max-width: 890px) {
-      @apply block;
-      height: auto;
-    }
+  .square {
+    @apply max-w-[50%] md:max-w-[65%] rounded-3xl;
   }
 </style>
 
@@ -47,17 +38,18 @@
     {/each}
   </div>
   <div
-    class="flex items-center justify-center px-xx-small mt-xx-small lg:mt-small text-left quote"
+    class="items-center justify-center mt-xx-small text-center md:text-left flex-wrap md:flex h-auto md:h-[400px]"
   >
-    <div>
+    <div class="w-full md:w-1/2">
       <img
         src={selectedQuote.img.src}
         alt={selectedQuote.img.alt}
-        class="w-56 sm:max-w-xs rounded-3xl lg:max-w-sm xl:max-w-md  mx-auto"
+        class:square={selectedQuote.img.square}
+        class="w-full sm:rounded-3xl mx-auto"
       />
     </div>
     <div
-      class="text flex justify-center flex-col flex-1 max-w-lg py-xx-small px-xx-small sm:pl-x-small lg:pl-small lg:pr-0"
+      class="text flex w-full md:w-1/2 justify-center flex-col flex-1 py-xx-small px-xx-small sm:pl-x-small lg:pl-small lg:pr-0"
     >
       <p class="text-large">
         &ldquo;{selectedQuote.text}&rdquo;
@@ -68,11 +60,13 @@
       </p>
 
       {#if selectedQuote.link}
-        <a
-          href={selectedQuote.link.href}
-          class="inline-flex items-center justify-center py-macro px-xx-small mt-xx-small rounded-xl bg-black font-bold text-off-white text-sm focus:text-off-white focus:bg-black-hover hover:text-off-white hover:bg-black-hover"
-          >{selectedQuote.link.text}</a
-        >
+        <div>
+          <a
+            href={selectedQuote.link.href}
+            class="inline-flex items-center justify-center py-macro px-xx-small mt-xx-small rounded-xl bg-black font-bold text-off-white text-sm focus:text-off-white focus:bg-black-hover hover:text-off-white hover:bg-black-hover"
+            >{selectedQuote.link.text}</a
+          >
+        </div>
       {/if}
     </div>
   </div>

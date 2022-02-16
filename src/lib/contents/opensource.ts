@@ -23,6 +23,7 @@ export const quotes: Quote[] = [
     link: { href: "/customers/redwoodjs", text: "View Customer Story" },
     img: {
       src: "/images/opensource/mojombo.jpg",
+      square: true,
       alt: "",
     },
   },
@@ -36,6 +37,7 @@ export const quotes: Quote[] = [
     },
     img: {
       src: "/images/opensource/schickling.jpg",
+      square: true,
       alt: "",
     },
   },
@@ -49,6 +51,7 @@ export const quotes: Quote[] = [
     },
     img: {
       src: "/images/opensource/juliusv.jpg",
+      square: true,
       alt: "",
     },
   },
