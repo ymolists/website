@@ -119,6 +119,11 @@ export const faqs: FAQ = {
   headline: "FAQs",
   items: [
     {
+      title: "My Gitpod account has been automatically upgraded?",
+      content:
+        "Over 18,000 people in the GitHub ecosystem were pre-qualified on the 16th of Feburary 2022 for complementary professional open source accounts with unlimited hours. If you are in the short-list your account will be automatically upgraded either upon account creation or when you next start a workspace with your existing account. No action is required. See the <a href='/blog/gitpod-for-opensource'>announcement blog post</a> and this <a href='https://github.com/gitpod-io/gitpod/issues/8212'>pull-request for specifics</a>.",
+    },
+    {
       title: "I'm not eligible but still want to use Gitpod",
       content:
         "We have a very generous <a href='/pricing'>free plan</a> for up to 50h a month, including private repos.",

@@ -60,10 +60,10 @@
 <Eligibility
   text="To qualify for Gitpod’s Opensource program, need to meet one of these criteria:"
   list={[
-    "You are a maintainer, core contributor to a well-established open-source project.",
-    "You regularly contribute to open source communities in other ways (e.g. producing regular content like blog posts, videos, live streams, translations, or organizing meet-ups, conferences, hackathons, etc).",
+    "You are a maintainer, core contributor to a well-established free software or open-source project.",
+    "You regularly contribute to free software or open source communities in other ways (e.g. producing regular content like blog posts, videos, live streams, translations, or organizing meet-ups, conferences, hackathons, etc).",
     "You are an author, core contributor of extensions for editors such as VSCode, VIM, eMacs, et al. or of developer tools such as build systems, programming languages, compilers, and editor tooling such as Language Server Protocol (LSP) implementations.",
-    "A significant part of your income is from maintaining or producing open source work.",
+    "A significant part of your income (employment or via community support) is from maintaining or producing open source work.",
   ]}
   link={{
     href: "https://docs.google.com/forms/d/1TE0YGgnUpHxQIH-2Sibn4LldB2ZLlhc_nQo90bJya3w/viewform?edit_requested=true",
