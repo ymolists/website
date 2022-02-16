@@ -498,6 +498,10 @@ export const organisationsLists = [
         url: "https://www.crunchbase.com/organization/madrona-venture-group",
       },
       {
+        name: "Main Sequence",
+        url: "https://www.crunchbase.com/organization/main-sequence-ventures",
+      },
+      {
         name: "MassChallenge",
         url: "https://www.crunchbase.com/organization/masschallenge",
       },
