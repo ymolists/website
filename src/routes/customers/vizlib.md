@@ -3,7 +3,7 @@ title: From internal hackathon to 20% fewer hotfixes
 excerpt: Vizlib started using Gitpod for an internal hackathon and eventually moved their whole development to the cloud. This reduced the onboarding time for new hires from two days to one hour and resulted in 20% fewer hotfixes after release.
 slug: vizlib
 image: teaser.png
-date: Thursday, 3 Feburary 2022 05:00:00 UTC
+date: Thursday, 3 February 2022 05:00:00 UTC
 pageTitle: "Vizlib case study: 20% fewer hotfixes with Gitpod"
 pageDescription: By moving their whole development to the cloud, Vizlib reduced onboarding time for new hires from 2d to 1h. 20% fewer hotfixes after release through Gitpod.
 keywords: vizlib, astrato, data visualisation, hackathon
@@ -57,7 +57,7 @@ text: "Fewer hotfixes after release",
 },
 {
 title: "100€",
-text: "Saved per dev/month",
+text: "Cloud cost saved per dev/month",
 }]}
 />
 
