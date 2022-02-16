@@ -4,7 +4,8 @@ date: Wednesday, 16 Feb 2022 06:00:00 UTC
 excerpt: We're launching our open source program to help you build great things without friction, for free.
 slug: gitpod-for-opensource
 subtitle:
-teaserImage: teaser.png
+teaserImage: teaser.jpg
+image: teaser.jpg
 title: Introducing Gitpod for Open Source
 ---
 
@@ -22,7 +23,7 @@ title: Introducing Gitpod for Open Source
   - If you had published a Visual Studio Code extension, eMacs or Vim plugin on GitHub before this blog post went live then you are likely on the shortlist.
   - If your membership was public before this blog post went live on one of more of the following GitHub organizations then you are likely on the shortlist:
 
-> alpinelinux, angular, apache, apple, archlinux, babel, caddyserver, cake-build, cakephp, centos, clojure, cncf, curl, darktable-org, dart-lang, django, docker, dotnet, eclipse, elastic, elixir-lang, endeavouros-team, erlang, expressjs, facebook, flutter, fody, freebsd, fsprojects, ghc, gnome, golang, haproxy, hashicorp, haskell, homebrew, illumos, jaegertracing, jetbrains, julialang, k3s-io, kubernetes, laravel, libressl-portable, llvm, lua, maintainers, mathworks, microsoft, moby, mongodb, mono, mozilla, mysql, neovim, netbsd, nginx, nixos, nodejs, npm, obsproject, ohmyzsh, open-telemetry, openjdk, openresty, openssl, particular, perl, phoenixframework, php, pnpm, postgres, python, r-lib, rails, redhat-developer, redis, rethinkdb, rstudio, rust-lang, scala, serilog, sixlabors, sparklemotion, spring-projects, statiqdev, sveltejs, symfony, tailwindlabs, tc39, tmux, twbs, videolan, vim, vuejs, wolfssl, womenwhocode and xunit
+> alpinelinux, angular, apache, apple, archlinux, babel, caddyserver, cake-build, cakephp, centos, clojure, cncf, cockroachdb, curl, darktable-org, dart-lang, django, docker, dotnet, eclipse, elastic, elixir-lang, endeavouros-team, erlang, expressjs, facebook, flutter, fody, freebsd, fsprojects, ghc, gnome, golang, haproxy, hashicorp, haskell, homebrew, illumos, jaegertracing, jetbrains, julialang, k3s-io, kubernetes, laravel, libressl-portable, llvm, lua, maintainers, mathworks, microsoft, moby, mongodb, mono, mozilla, mysql, neovim, netbsd, nginx, nixos, nodejs, npm, obsproject, ohmyzsh, open-telemetry, openjdk, openresty, openssl, particular, perl, phoenixframework, php, pnpm, postgres, python, r-lib, rails, redhat-developer, redis, rethinkdb, rstudio, rust-lang, scala, serilog, sixlabors, sparklemotion, spring-projects, statiqdev, sveltejs, symfony, tailwindlabs, tc39, tmux, twbs, videolan, vim, vuejs, wolfssl, womenwhocode and xunit
 
 - Projects, communities and maintainers that use GitLab (or Bitbucket) or that are not in the above list can use [this form](/for/opensource) to request an upgrade of your account to our complementary professional open-source plan.
 
@@ -89,7 +90,7 @@ Via [this form](/for/opensource) but you might not need to. Over 18,000 people i
 
 - If your membership was public before this blog post went live on one of more of the following GitHub organizations then you are likely on the shortlist:
 
-> alpinelinux, angular, apache, apple, archlinux, babel, caddyserver, cake-build, cakephp, centos, clojure, cncf, curl, darktable-org, dart-lang, django, docker, dotnet, eclipse, elastic, elixir-lang, endeavouros-team, erlang, expressjs, facebook, flutter, fody, freebsd, fsprojects, ghc, gnome, golang, haproxy, hashicorp, haskell, homebrew, illumos, jaegertracing, jetbrains, julialang, k3s-io, kubernetes, laravel, libressl-portable, llvm, lua, maintainers, mathworks, moby, mongodb, mono, mozilla, mysql, neovim, netbsd, nginx, nixos, nodejs, npm, obsproject, ohmyzsh, open-telemetry, openjdk, openresty, openssl, particular, perl, phoenixframework, php, pnpm, postgres, python, r-lib, rails, redhat-developer, redis, rethinkdb, rstudio, rust-lang, scala, serilog, sixlabors, sparklemotion, spring-projects, statiqdev, sveltejs, symfony, tailwindlabs, tc39, tmux, twbs, videolan, vim, vuejs, wolfssl, womenwhocode and xunit
+> alpinelinux, angular, apache, apple, archlinux, babel, caddyserver, cake-build, cakephp, centos, clojure, cncf, cockroachdb, curl, darktable-org, dart-lang, django, docker, dotnet, eclipse, elastic, elixir-lang, endeavouros-team, erlang, expressjs, facebook, flutter, fody, freebsd, fsprojects, ghc, gnome, golang, haproxy, hashicorp, haskell, homebrew, illumos, jaegertracing, jetbrains, julialang, k3s-io, kubernetes, laravel, libressl-portable, llvm, lua, maintainers, mathworks, moby, mongodb, mono, mozilla, mysql, neovim, netbsd, nginx, nixos, nodejs, npm, obsproject, ohmyzsh, open-telemetry, openjdk, openresty, openssl, particular, perl, phoenixframework, php, pnpm, postgres, python, r-lib, rails, redhat-developer, redis, rethinkdb, rstudio, rust-lang, scala, serilog, sixlabors, sparklemotion, spring-projects, statiqdev, sveltejs, symfony, tailwindlabs, tc39, tmux, twbs, videolan, vim, vuejs, wolfssl, womenwhocode and xunit
 
 For projects, communities and maintainers that use GitLab (or Bitbucket) or that are not in the above list please use this [application form](/for/opensource) to request an upgrade of your account to our complementary professional open-source plan.
 
