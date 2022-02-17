@@ -37,6 +37,21 @@ export const brands: Brand[] = [
     className: "grey-logo",
   },
   {
+    alt: "Shares",
+    logo: "svg/brands/shares.svg",
+    transform: "scale(1.1)",
+  },
+  {
+    alt: "Astrato",
+    logo: "svg/brands/astrato.svg",
+    transform: "scale(1.1)",
+  },
+  {
+    alt: "Redwood",
+    logo: "svg/brands/redwood.svg",
+    transform: "scale(1.1)",
+  },
+  {
     alt: "Code Institute",
     logo: "svg/brands/code-institute.svg",
     className: "grey-logo",
