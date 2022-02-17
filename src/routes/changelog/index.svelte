@@ -18,6 +18,7 @@
   import ChangelogLink from "$lib/components/changelog/changelog-link.svelte";
   import Wrapper from "$lib/components/changelog/wrapper.svelte";
   import Header from "$lib/components/header.svelte";
+  import LinkButton from "$lib/components/ui-library/link-button";
 
   export let changelogEntries: ChangelogEntryType[];
 
@@ -54,15 +55,18 @@
     class="w-full"
     textAlign="left"
   >
-    <div slot="content" class="buttons-wrapper pt-x-small">
-      <TwitterFollowButton class="btn-primary" />
-      <a
-        href="https://gitpod.io/notifications"
+    <div
+      slot="content"
+      class="flex justify-center items-center flex-wrap space-x-4 pt-x-small"
+    >
+      <TwitterFollowButton variant="primary" />
+      <LinkButton
         target="_blank"
-        class="btn-secondary"
         data-analytics={`{"context":"dashboard"}`}
-        >Signup for the Newsletter
-      </a>
+        href="https://gitpod.io/notifications"
+        variant="secondary"
+        size="medium">Signup for the Newsletter</LinkButton
+      >
     </div>
   </Header>
 </div>

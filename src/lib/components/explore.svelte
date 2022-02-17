@@ -1,5 +1,6 @@
 <script lang="ts">
   import Section from "./section.svelte";
+  import LinkButton from "$lib/components/ui-library/link-button";
   import type { ExploreSection } from "$lib/types/explore-section.type";
 
   export let contents: ExploreSection = {};
@@ -115,17 +116,28 @@
           {note}
         </p>
       {/if}
-      <div class="buttons-wrapper pb-small sm:pb-micro md:pb-0">
-        <a
+      <LinkButton
+        variant="primary"
+        size="large"
+        href={link.href}
+        target={link.href.startsWith("http") ? "_blank" : null}
+        >{link.text}</LinkButton
+      >
+      <div class="flex wrap pb-small sm:pb-micro md:pb-0">
+        <LinkButton
+          size="large"
+          variant="primary"
           href={link.href}
           target={link.href.startsWith("http") ? "_blank" : null}
-          class="btn-conversion">{link.text}</a
+          >{link.text}</LinkButton
         >
         {#if secondaryLink}
-          <a
+          <LinkButton
+            variant="cta"
+            size="large"
             href={secondaryLink.href}
             target={secondaryLink.href.startsWith("http") ? "_blank" : null}
-            class="btn-cta">{secondaryLink.text}</a
+            >{secondaryLink.text}</LinkButton
           >
         {/if}
       </div>

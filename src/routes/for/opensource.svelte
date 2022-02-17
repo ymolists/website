@@ -21,6 +21,7 @@
   import CardSmall from "$lib/components/card/card-small.svelte";
   import Header from "$lib/components/header.svelte";
   import Quotes from "$lib/components/quotes.svelte";
+  import LinkButton from "$lib/components/ui-library/link-button";
   import { quotes } from "$lib/contents/opensource";
 </script>
 
@@ -40,9 +41,11 @@
   fullWidth={true}
 >
   <div slot="content">
-    <a
+    <LinkButton
+      variant="primary"
+      size="large"
       href="https://docs.google.com/forms/d/1TE0YGgnUpHxQIH-2Sibn4LldB2ZLlhc_nQo90bJya3w/viewform?edit_requested=true"
-      class="btn-conversion mt-x-small mb-medium">Apply now</a
+      class="mt-x-small mb-medium">Apply now</LinkButton
     >
     <Quotes {quotes} />
   </div>

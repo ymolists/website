@@ -3,6 +3,7 @@
   import Section from "../section.svelte";
   import Toggle from "../toggle.svelte";
   import IdeSwitcher from "./ide-switcher.svelte";
+  import LinkButton from "$lib/components/ui-library/link-button";
   let selectedIde = "vscode";
   let ideType = "browser";
   let toggleChecked = false;
@@ -75,7 +76,9 @@
         and customise it to your individual needs - from themes to extensions,
         you have full control.
       </p>
-      <a href="/#get-started" class="btn-conversion">Try Now</a>
+      <LinkButton variant="primary" size="large" href="/#get-started"
+        >Try Now</LinkButton
+      >
     </div>
   </div>
 </Section>

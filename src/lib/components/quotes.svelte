@@ -2,6 +2,7 @@
   import type { Quote } from "$lib/types/quote.type";
   export let quotes: Quote[];
   let selectedQuote: Quote = quotes[0];
+  import LinkButton from "$lib/components/ui-library/link-button";
 
   let clazz = "";
   export { clazz as class };
@@ -60,11 +61,11 @@
       </p>
 
       {#if selectedQuote.link}
-        <div>
-          <a
+        <div class="mt-xx-small">
+          <LinkButton
             href={selectedQuote.link.href}
-            class="inline-flex items-center justify-center py-macro px-xx-small mt-xx-small rounded-xl bg-black font-bold text-off-white text-sm focus:text-off-white focus:bg-black-hover hover:text-off-white hover:bg-black-hover"
-            >{selectedQuote.link.text}</a
+            variant="tertiary"
+            size="medium">{selectedQuote.link.text}</LinkButton
           >
         </div>
       {/if}

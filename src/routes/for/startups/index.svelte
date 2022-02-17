@@ -17,6 +17,7 @@
   import SectionCommon from "$lib/components/section-common.svelte";
   import FeatureBox from "$lib/components/feature-box.svelte";
   import Header from "$lib/components/header.svelte";
+  import LinkButton from "$lib/components/ui-library/link-button";
   import Quotes from "$lib/components/quotes.svelte";
   import { quotes } from "$lib/contents/customers";
 </script>
@@ -48,10 +49,11 @@
     >
       Use all our services for free, up to 2 years.
     </p>
-    <a
+    <LinkButton
+      variant="primary"
+      size="large"
       href="https://docs.google.com/forms/d/e/1FAIpQLSc-Vaelz0yG-XkuN2CYyUtZz0khhwMaju4oSLdMNIzoMkpHug/viewform"
-      target="_blank"
-      class="btn-conversion">Apply now</a
+      target="_blank">Apply now</LinkButton
     >
     <Quotes class="mt-small" {quotes} />
   </div>

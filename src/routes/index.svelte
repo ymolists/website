@@ -2,7 +2,7 @@
   export const prerender = true;
 </script>
 
-<script>
+<script lang="ts">
   import { testimonials } from "$lib/contents/home/index";
   import {
     features,
