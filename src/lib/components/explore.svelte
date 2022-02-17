@@ -116,13 +116,6 @@
           {note}
         </p>
       {/if}
-      <LinkButton
-        variant="primary"
-        size="large"
-        href={link.href}
-        target={link.href.startsWith("http") ? "_blank" : null}
-        >{link.text}</LinkButton
-      >
       <div class="flex wrap pb-small sm:pb-micro md:pb-0">
         <LinkButton
           size="large"
