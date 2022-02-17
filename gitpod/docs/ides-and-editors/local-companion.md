@@ -1,5 +1,5 @@
 ---
-section: develop
+section: ides-and-editors
 title: Gitpod Local Companion
 ---
 
@@ -13,6 +13,6 @@ title: Gitpod Local Companion
 
 You can refer to the [Gitpod Local Companion - localhost is going remote](/blog/local-app) blog post for details on how to explore the beta release of the _Gitpod local companion_.
 
-## Connect To Your Local VS Code
+## Connect To VS Code Desktop
 
-It is possible to use the Gitpod local companion to connect your local VS Code application to Gitpod, however an easier way is to use the Gitpod VSCode Plugin, which you can access directly from the command pallette via any Gitpod the workspace. For more details about VS Code Desktop, please refer to the [VS Code desktop support docs](/docs/editors/vscode).
+Whilst it is possible to use the Gitpod local companion to connect your desktop VS Code application to Gitpod, the best way is to use the Gitpod VSCode Plugin, which you can access directly from the command pallette via any Gitpod the workspace. For more details about VS Code Desktop, please refer to the [VS Code desktop support docs](/docs/ides-and-editors/vscode).
