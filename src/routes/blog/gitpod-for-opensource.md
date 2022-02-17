@@ -20,7 +20,7 @@ title: Introducing Gitpod for Open Source
 - Complementary [Gitpod self-hosted licenses](https://www.gitpod.io/self-hosted) are now available for projects that maintain their independence via running their own infrastructure (ie Haskell, Drupal, Rust). Apply via [this form](/for/opensource).
 - Free and open source software projects aligned with [FOSSHost](https://fosshost.org/about) can request an account upgrade to a complementary professional open source account via [this form](/for/opensource).
 - Over 18,000 people in the GitHub ecosystem have been pre-qualified for complementary professional open source accounts with unlimited hours. If you are in the short-list your account will be automatically upgraded either upon account creation or when you next start a workspace with your existing account. No action is required.
-  - If you had published a Visual Studio Code extension, eMacs or Vim plugin on GitHub before this blog post went live then you are likely on the shortlist.
+  - If you had published a Visual Studio Code extension, Emacs or Vim plugin on GitHub before this blog post went live then you are likely on the shortlist.
   - If your membership was public before this blog post went live on one of more of the following GitHub organizations then you are likely on the shortlist:
 
 > alpinelinux, angular, apache, apple, archlinux, babel, caddyserver, cake-build, cakephp, centos, clojure, cncf, cockroachdb, curl, darktable-org, dart-lang, django, docker, dotnet, eclipse, elastic, elixir-lang, endeavouros-team, erlang, expressjs, facebook, flutter, fody, freebsd, fsprojects, ghc, gnome, golang, haproxy, hashicorp, haskell, homebrew, illumos, jaegertracing, jetbrains, julialang, k3s-io, kubernetes, laravel, libressl-portable, llvm, lua, maintainers, mathworks, microsoft, moby, mongodb, mono, mozilla, mysql, neovim, netbsd, nginx, nixos, nodejs, npm, obsproject, ohmyzsh, open-telemetry, openjdk, openresty, openssl, particular, perl, phoenixframework, php, pnpm, postgres, python, r-lib, rails, redhat-developer, redis, rethinkdb, rstudio, rust-lang, scala, serilog, sixlabors, sparklemotion, spring-projects, statiqdev, sveltejs, symfony, tailwindlabs, tc39, tmux, twbs, videolan, vim, vuejs, wolfssl, womenwhocode and xunit
@@ -79,14 +79,14 @@ To qualify for Gitpod’s Open Source program, you need to meet one of this crit
 
 - You are a maintainer, core contributor to a well-established free software or open-source project.
 - You regularly contribute to free software or open source communities in other ways (e.g. producing regular content like blog posts, videos, live streams, translations, or organizing meet-ups, conferences, hackathons, etc).
-- You are an author, core contributor of extensions for editors such as VSCode, VIM, eMacs, et al. or of developer tools such as build systems, programming languages, compilers, and editor tooling such as Language Server Protocol (LSP) implementations.
+- You are an author, core contributor of extensions for editors such as VSCode, VIM, Emacs, et al. or of developer tools such as build systems, programming languages, compilers, and editor tooling such as Language Server Protocol (LSP) implementations.
 - A significant part of your income (employment or via community support) is from maintaining or producing open source work.
 
 ## How do I apply?
 
 Via [this form](/for/opensource) but you might not need to. Over 18,000 people in the GitHub ecosystem have been pre-qualified for complementary professional open source accounts with unlimited hours. If you are in the short-list your account will be automatically upgraded either upon account creation or when you next start a workspace. No action is required.
 
-- If you had published a Visual Studio Code extension, eMacs or Vim plugin on GitHub before this blog post went live then you are likely on the shortlist.
+- If you had published a Visual Studio Code extension, Emacs or Vim plugin on GitHub before this blog post went live then you are likely on the shortlist.
 
 - If your membership was public before this blog post went live on one of more of the following GitHub organizations then you are likely on the shortlist:
 
