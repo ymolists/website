@@ -1,6 +1,6 @@
 ---
 section: ides-and-editors
-title: IDE's & Editors
+title: IDEs & Editors
 ---
 
 <script context="module">
