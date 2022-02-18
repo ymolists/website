@@ -41,9 +41,12 @@
 
 <OpenGraph
   data={{
-    description: "New features and improvements to Gitpod.",
-    title: "Changelog",
+    description:
+      "A sum-up of Gitpod’s latest product improvements, feature releases and community contributions.",
+    title: "Gitpod Changelog - Latest releases and product updates",
     type: "website",
+    keywords:
+      "updates, product, changes, features, releases, bugs, fixes, version, updates, improvements",
   }}
 />
 

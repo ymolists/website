@@ -61,7 +61,10 @@ export const screencasts: Screencast[] = [
     tile: "screencast-4.jpg",
     youtubeId: "VYHsd1zI_tE",
     relatedDocs: [
-      { path: "/docs/ides-and-editors/vscode-extensions", title: "VS Code Extensions" },
+      {
+        path: "/docs/ides-and-editors/vscode-extensions",
+        title: "VS Code Extensions",
+      },
       { path: "/docs/environment-variables", title: "Environment Variables" },
     ],
     tags: ["Customisations"],
@@ -135,7 +138,10 @@ export const screencasts: Screencast[] = [
     tile: "screencast-10.jpg",
     youtubeId: "TwXYbZKEuoA",
     relatedDocs: [
-      { path: "/docs/ides-and-editors/vscode-extensions", title: "VS Code Extensions" },
+      {
+        path: "/docs/ides-and-editors/vscode-extensions",
+        title: "VS Code Extensions",
+      },
     ],
     tags: ["Customisations"],
   },

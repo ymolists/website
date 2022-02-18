@@ -19,7 +19,17 @@ keywords: open-source, community, redwoodJS, OSS
 	import Section from "$lib/components/section.svelte";
 	import Story from "$lib/components/customers/story.svelte";
 	import Quote from "$lib/components/quote.svelte";
+  	import OpenGraph from "$lib/components/open-graph.svelte";
 </script>
+
+<OpenGraph
+data={{
+    description:
+      "RedwoodJS was founded by Tom Preston-Werner, the Founder and former CEO of GitHub. Gitpod removed the friction of contributing to RedwoodJS, growing the community.",
+    title: "RedwoodJS case study: Building a community by removing friction",
+    keywords: "open-source, community, redwoodJS, OSS",
+  }}
+/>
 
 <CustomerHero
 title="Increasing Redwood's development velocity by removing the friction to&nbsp;contribute"

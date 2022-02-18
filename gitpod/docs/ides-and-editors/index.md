@@ -7,6 +7,19 @@ title: IDEs & Editors
   export const prerender = true;
 </script>
 
+<script lang="ts">
+    import OpenGraph from "$lib/components/open-graph.svelte";
+</script>
+
+<OpenGraph
+data={{
+    description:
+      "Connect and integrate Gitpod workspaces with your favourite IDE or editor. VS Code Browser and Desktop. JetBrains. IntelliJ. GoLand. PhpStorm. PyCharm. Vim. Emacs. SSH.",
+    title: "Gitpod integrates with VS Code, JetBrains and SSH.",
+    keywords: "online IDEs, JetBrains, VS Code, webstorm, IntelliJ, PHPStorm, PyCharm,Rider, RubyMine, Webstorm CLion, Datagrip etc.",
+  }}
+/>
+
 # {title}
 
 In line with [our ambition to "remove all friction from the developer experience"](https://www.notion.so/gitpod/Values-Attributes-2ed4c2f93c84499b98e3b5389980992e), Gitpod currently supports many popular IDE/editors e.g. JetBrains and VS Code. You can even use the command-line directly for editors like Vim (via SSH). There are many ways to [configure your IDE/editor in Gitpod](ides-and-editors/configure-your-editor-ide) to match your preferred workflow or setup.
