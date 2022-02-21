@@ -60,7 +60,7 @@
   >
     <div
       slot="content"
-      class="flex justify-center items-center flex-wrap space-x-4 pt-x-small"
+      class="flex justify-start items-center flex-wrap space-x-4 pt-x-small"
     >
       <TwitterFollowButton variant="primary" />
       <LinkButton
