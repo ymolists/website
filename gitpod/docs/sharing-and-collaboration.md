@@ -18,21 +18,22 @@ There are two ways to share your workspaces:
 
 ## Sharing Snapshots
 
-You can take snapshot URLs of your workspaces at any time and share them with others. Anyone clicking on such a snapshot link will get a complete clone of your workspace, including the
+You can take a snapshot URL of your workspace at any time and share it with others. Clicking on the snapshot link will open a complete clone of your workspace, including
 
-- state of the workspace
+- all the files in the workspace
 - the VS Code layout
 
-Workspaces created from snapshots are treated as restarts, so you can configure them to launch differently than if you had created a fresh workspace from Git. Also, this is useful if you want to create
-easy-to-consume reproducible workspace states, for issues, stackoverflow answers, trainings, presentations, etc.
+Workspaces created from snapshots are treated as restarts, so you can configure them to launch differently than if you had created a fresh workspace from Git. This is useful if you want to create easy-to-consume reproducible workspace state e.g. for issues, support answers, training, or presentations.
 
 Unlike sharing running workspaces, snapshotted workspaces are full copies. This means developers can do whatever they like with the content. And of course, no access to any of your credentials is shared.
 
 Read more about this feature [in this blog post](/blog/workspace-snapshots).
 
+> **Note:** Users must have access to the git repository in the snapshot, in order to open it.
+
 ### How To Take a Snapshot URL
 
-Creating a snapshot is simple. You can find the action behind the hamburger menu on the top left.
+To create a snapshot, run `Gitpod: Share Workspace Snapshot` from the hamburger menu at the top left, or from the Gitpod menu at the bottom, or via the command palette.
 
 Once you execute it, the snapshot is taken and the URL is shown in a dialog.
 
