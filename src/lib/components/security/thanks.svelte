@@ -26,24 +26,32 @@
     slot="top"
   />
   <div class="mt-x-large" slot="content">
-    <h2 class="h4 year">2021</h2>
-    <ol class="text-left mx-auto my-x-small">
+    <h2 class="h4 year">2022</h2>
+    <ol class="mx-auto my-x-small">
       <li>
-        <a rel="nofollow" href="https://twitter.com/Kuys_Potpot"
-          >Andrei Jiroh Eugenio Halili</a
-        > from Marilao.
+        <a rel="nofollow" href="https://twitter.com/AlanCao5">Alan Cao</a> from New
+        York University.
       </li>
-      <li>
-        <a rel="nofollow" href="https://twitter.com/byte89">Kirill Efimov</a> from
-        Snyk.
-      </li>
-      <li>
-        <a
-          rel="nofollow"
-          href="https://about.gitlab.com/blog/2021/07/08/two-bugs-and-a-quick-fix-in-gitpod/"
-          >Joern Schneeweisz</a
-        > from GitLab.
-      </li>
+      <ol class="mt-x-large" />
+      <h2 class="h4 year">2021</h2>
+      <ol class="text-left mx-auto my-x-small">
+        <li>
+          <a rel="nofollow" href="https://twitter.com/Kuys_Potpot"
+            >Andrei Jiroh Eugenio Halili</a
+          > from Marilao.
+        </li>
+        <li>
+          <a rel="nofollow" href="https://twitter.com/byte89">Kirill Efimov</a> from
+          Snyk.
+        </li>
+        <li>
+          <a
+            rel="nofollow"
+            href="https://about.gitlab.com/blog/2021/07/08/two-bugs-and-a-quick-fix-in-gitpod/"
+            >Joern Schneeweisz</a
+          > from GitLab.
+        </li>
+      </ol>
     </ol>
   </div>
 </Header>
