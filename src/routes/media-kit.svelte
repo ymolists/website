@@ -13,14 +13,14 @@
 
 <OpenGraph
   data={{
-    description: "We’ve put together some assets to help you using our brand.",
+    description: "We’ve put together some assets to help you use our brand.",
     title: "Media kit",
   }}
 />
 
 <Header
   title="Media kit"
-  text="We’ve put together some assets to help you using our brand."
+  text="We’ve put together some assets to help you use our brand."
 >
   <img
     slot="content"
