@@ -2,6 +2,7 @@
   // Credit: www.vercel.com/docs 🙏
   import { page } from "$app/stores";
   import { trackEvent } from "../segment.svelte";
+  import Textarea from "$lib/components/ui-library/textarea";
   import Button from "$lib/components/ui-library/button";
 
   let selectedEmotion: number;
@@ -81,21 +82,20 @@
         </div>
         {#if selectedEmotion}
           <div class="mt-x-small">
-            <label for="note">Feedback</label>
-            <div>
-              <textarea
-                bind:value={note}
-                id="note"
-                width="100%"
-                placeholder="Your feedback..."
-                aria-label="Feedback input"
-                autocapitalize="off"
-                autocomplete="off"
-                autocorrect="off"
-                type="text"
-                class="mb-0"
-              />
-            </div>
+            <Textarea
+              label="Feedback"
+              bind:value={note}
+              id="note"
+              name="feedback"
+              width="100%"
+              placeholder="Your feedback..."
+              aria-label="Feedback input"
+              autocapitalize="off"
+              autocomplete="off"
+              autocorrect="off"
+              type="text"
+              class="mb-0"
+            />
             <div>
               <span>
                 <Button

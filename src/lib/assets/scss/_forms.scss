@@ -1,13 +1,9 @@
-input,
-textarea,
-select {
+[type="radio"],
+[type="checkbox"] {
   all: unset;
   font: inherit;
   color: var(--dark-grey);
   box-sizing: border-box;
-}
-textarea {
-  @apply whitespace-pre-wrap;
 }
 [type="radio"],
 [type="checkbox"] {
@@ -16,49 +12,23 @@ textarea {
 [type] + label {
   cursor: pointer;
 }
-select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-image: url("/arrow-grey.svg"),
-    linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
-  background-repeat: no-repeat, repeat;
-  background-position: right 1em top 50%, 0 0;
-  background-size: 1.25em auto, 100%;
-  width: 100%;
-}
+
 label,
-legend,
-[type="email"],
-[type="text"] {
+legend {
   display: block;
   color: var(--dark-grey);
   margin-bottom: 0.5rem;
 }
-[type="email"],
-[type="text"],
-textarea {
-  width: 100%;
-}
-form li {
-  margin-bottom: 2rem;
-}
-fieldset,
+
 [type="checkbox"] + label {
   display: flex;
-}
-fieldset {
-  flex-flow: row wrap;
 }
 legend {
   flex: 100%;
 }
-[type="email"],
-[type="text"],
+
 [type="number"],
-[type="radio"] + label,
-textarea,
-select {
+[type="radio"] + label {
   border: 1px solid var(--divider);
   padding: 0.5rem 1rem;
   border-radius: 0.5em;
@@ -106,8 +76,4 @@ select {
   background-color: var(--sand-dark);
   color: var(--dark-gray);
   cursor: default;
-}
-
-::placeholder {
-  @apply text-dark-grey !important;
 }

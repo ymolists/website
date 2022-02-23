@@ -6,6 +6,9 @@
   import { goto } from "$app/navigation";
   import type { Form } from "$lib/types/form.type";
   import OpenGraph from "$lib/components/open-graph.svelte";
+  import Textarea from "$lib/components/ui-library/textarea";
+  import Input from "$lib/components/ui-library/input";
+  import Select from "$lib/components/ui-library/select";
   import Button from "$lib/components/ui-library/button";
 
   import { countryList } from "$lib/contents/license-key";
@@ -98,17 +101,9 @@
   };
 </script>
 
-<style lang="scss">
+<style lang="postcss">
   .title:not(:first-child) {
     margin-top: var(--medium);
-  }
-
-  .half :last-child {
-    @apply mt-macro;
-  }
-
-  .option {
-    @apply text-gray-800;
   }
 </style>
 
@@ -133,58 +128,59 @@
   <form on:submit|preventDefault={handleSubmit} novalidate>
     <h2 class="h4 title">Customer Information</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-small">
-      <label
-        class="half"
-        class:error={isFormDirty && !formData.firstName.valid}
-      >
-        First Name*
-        <input
-          name="firstName"
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-small">
+      <div>
+        <Input
+          label="First Name*"
+          hasError={isFormDirty && !formData.firstName.valid}
+          name="first-name"
           type="text"
           bind:value={formData.firstName.value}
-          bind:this={formData.firstName.el}
+          bind:element={formData.firstName.el}
           on:change={() => {
             formData.firstName.valid =
               formData.firstName.value && formData.firstName.el.checkValidity();
           }}
           autocomplete="given-name"
         />
-      </label>
-      <label class="half" class:error={isFormDirty && !formData.lastName.valid}>
-        Last Name*
-        <input
-          name="lastName"
+      </div>
+      <div>
+        <Input
+          hasError={isFormDirty && !formData.lastName.valid}
+          label="Last Name*"
+          name="last-name"
           type="text"
           bind:value={formData.lastName.value}
-          bind:this={formData.lastName.el}
+          bind:element={formData.lastName.el}
           on:change={() => {
             formData.lastName.valid =
               formData.lastName.value && formData.lastName.el.checkValidity();
           }}
           autocomplete="family-name"
         />
-      </label>
-      <label class="half" class:error={isFormDirty && !formData.email.valid}>
-        Work Email*
-        <input
+      </div>
+      <div>
+        <Input
+          label="Work Email*"
+          hasError={isFormDirty && !formData.email.valid}
           type="email"
-          name="email"
+          name="e-mail"
           bind:value={formData.email.value}
-          bind:this={formData.email.el}
+          bind:element={formData.email.el}
           on:change={() => {
             formData.email.valid =
               formData.email.value && formData.email.el.checkValidity();
           }}
           autocomplete="email"
         />
-      </label>
-      <label class="half" class:error={isFormDirty && !formData.company.valid}>
-        Company*
-        <input
+      </div>
+      <div>
+        <Input
+          hasError={isFormDirty && !formData.company.valid}
+          label="Company*"
           name="company"
           bind:value={formData.company.value}
-          bind:this={formData.company.el}
+          bind:element={formData.company.el}
           on:change={() => {
             formData.company.valid =
               formData.company.value && formData.company.el.checkValidity();
@@ -192,77 +188,65 @@
           type="text"
           autocomplete="organization"
         />
-      </label>
-
-      <label class="half" class:error={isFormDirty && !formData.country.valid}>
-        Country*
-        <!-- svelte-ignore a11y-no-onchange -->
-        <select
+      </div>
+      <div>
+        <Select
+          hasError={isFormDirty && !formData.country.valid}
+          label="Country*"
           name="country"
           bind:value={formData.country.value}
-          bind:this={formData.country.el}
+          bind:element={formData.country.el}
           on:change={() => {
             formData.country.valid =
               formData.country.value && formData.country.el.checkValidity();
           }}
           class="option"
           autocomplete="country"
-        >
-          <option class="option" value="" disabled selected>Select...</option>
-          {#each countryList as c}
-            <option class="option" value={c}>
-              {c}
-            </option>
-          {/each}
-        </select>
-      </label>
-
-      <label
-        class="half"
-        class:error={isFormDirty && !formData.noOfDevelopers.valid}
-      >
-        Total Number of Developers*
-        <select
-          class="option"
+          options={countryList}
+          placeholder="Select..."
+        />
+      </div>
+      <div>
+        <Select
+          placeholder="Select..."
+          options={["1 - 100", "101 - 250", "251 - 500", "500 - 1000", "+1000"]}
+          label="Total Number of Developers*"
+          hasError={isFormDirty && !formData.noOfDevelopers.valid}
           name="noOfDevelopers"
           bind:value={formData.noOfDevelopers.value}
-          bind:this={formData.noOfDevelopers.el}
+          bind:element={formData.noOfDevelopers.el}
           on:change={() => {
             formData.noOfDevelopers.valid =
               formData.noOfDevelopers.value &&
               formData.noOfDevelopers.el.checkValidity();
           }}
-        >
-          <option class="option" value="" disabled selected>Select...</option>
-          {#each ["1 - 100", "101 - 250", "251 - 500", "500 - 1000", "+1000"] as n}
-            <option class="option" value={n}>
-              {n}
-            </option>
-          {/each}
-        </select>
-      </label>
+        />
+      </div>
     </div>
-
-    <label class="mt-macro half">
-      <p>
-        Optionally, tell us more about your interest in Gitpod. What challenges
-        are you looking to solve? How can we help?
-      </p>
-      <textarea
+    <div class="mt-4">
+      <Textarea
+        label="Optionally, tell us more about your interest in Gitpod. What challenges
+        are you looking to solve? How can we help?"
         cols="30"
         rows="4"
         bind:value={formData.message.value}
-        bind:this={formData.message.el}
+        bind:element={formData.message.el}
         name="message"
       />
-    </label>
-
-    <Button
-      variant="primary"
-      size="large"
-      type="submit"
-      disabled={isFormDirty && !isFormValid}>Install Now</Button
-    >
+      <div class="mt-4">
+        <Button
+          variant="primary"
+          size="large"
+          type="submit"
+          disabled={isFormDirty && !isFormValid}>Install Now</Button
+        >
+      </div>
+      {#if isFormDirty && !isFormValid}
+        <legend class="text-xs text-error block mt-1 mb-2">
+          Please fill out all required fields above
+        </legend>
+      {/if}
+    </div>
   </form>
 
   <div class="mt-6">

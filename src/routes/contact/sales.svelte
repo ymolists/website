@@ -9,7 +9,11 @@
   import SubmissionSuccess from "$lib/components/submission-success.svelte";
   import Section from "$lib/components/section.svelte";
   import { trackEvent, trackIdentity } from "$lib/components/segment.svelte";
+  import Textarea from "$lib/components/ui-library/textarea";
   import Header from "$lib/components/header.svelte";
+  import Input from "$lib/components/ui-library/input";
+  import Checkbox from "$lib/components/ui-library/checkbox";
+  import Select from "$lib/components/ui-library/select";
   import Button from "$lib/components/ui-library/button";
 
   const selfHostingSubject = "Self-hosting";
@@ -208,10 +212,10 @@
     {:else}
       <form on:submit|preventDefault={handleSubmit} novalidate>
         <h2 class="h3 text-center">Send us a message</h2>
-        <ul>
+        <ul class="space-y-8">
           <li class:error={isFormDirty && !formData.selectedSubject.valid}>
-            <fieldset>
-              <legend>Please choose a subject*</legend>
+            <fieldset class="flex">
+              <legend>Please choose a subject</legend>
               <ul>
                 {#each subjects as subject, index}
                   <li>
@@ -237,12 +241,10 @@
             </fieldset>
           </li>
           {#if isCloudPlatformsSelectShown && formData.cloudInfrastructure}
-            <li
-              class:error={isFormDirty && !formData.cloudInfrastructure.valid}
-            >
-              <label class="max-w-md">
-                <!-- svelte-ignore a11y-no-onchange -->
-                <select
+            <li>
+              <div>
+                <Select
+                  hasError={isFormDirty && !formData.cloudInfrastructure.valid}
                   name="cloudInfrastructure"
                   bind:value={formData.cloudInfrastructure.value}
                   on:change={(e) => {
@@ -251,25 +253,20 @@
                       // @ts-ignore
                       e.target.validity.valid;
                   }}
-                >
-                  <option class="option" value=""
-                    >Which cloud infrastructure do you use?</option
-                  >
-                  {#each cloudPlatforms as n}
-                    <option class="option" value={n}>
-                      {n}
-                    </option>
-                  {/each}
-                </select>
-              </label>
+                  options={cloudPlatforms}
+                  placeholder="Which cloud infrastructure do you use?"
+                />
+              </div>
             </li>
           {/if}
-          <li class:error={isFormDirty && !formData.name.valid}>
-            <label for="name">Full Name*</label>
-            <input
+          <li>
+            <Input
+              hasError={isFormDirty && !formData.name.valid}
+              label="Full Name*"
               id="name"
+              name="full-name"
               bind:value={formData.name.value}
-              bind:this={formData.name.el}
+              bind:element={formData.name.el}
               on:change={() => {
                 formData.name.valid =
                   formData.name.value && formData.name.el.checkValidity();
@@ -278,12 +275,14 @@
               autocomplete="name"
             />
           </li>
-          <li class:error={isFormDirty && !formData.workEmail.valid}>
-            <label for="email">Work e-mail* </label>
-            <input
+          <li>
+            <Input
+              hasError={isFormDirty && !formData.workEmail.valid}
+              label="Work e-mail*"
               id="email"
+              name="e-mail"
               bind:value={formData.workEmail.value}
-              bind:this={formData.workEmail.el}
+              bind:element={formData.workEmail.el}
               on:change={() => {
                 formData.workEmail.valid =
                   formData.workEmail.value &&
@@ -293,12 +292,14 @@
               autocomplete="email"
             />
           </li>
-          <li class:error={isFormDirty && !formData.companyWebsite.valid}>
-            <label for="company-website">Company website* </label>
-            <input
+          <li>
+            <Input
+              label="Company website*"
+              hasError={isFormDirty && !formData.companyWebsite.valid}
               id="compnay-website"
+              name="website"
               bind:value={formData.companyWebsite.value}
-              bind:this={formData.companyWebsite.el}
+              bind:element={formData.companyWebsite.el}
               on:change={() => {
                 formData.companyWebsite.valid =
                   formData.companyWebsite.value &&
@@ -308,36 +309,29 @@
               autocomplete="organization"
             />
           </li>
-          <li class:error={isFormDirty && !formData.noOfEngineers.valid}>
-            <label class="max-w-sm">
-              <!-- svelte-ignore a11y-no-onchange -->
-              <select
-                name="noOfEngineers"
-                bind:value={formData.noOfEngineers.value}
-                bind:this={formData.noOfEngineers.el}
-                on:change={() => {
-                  formData.noOfEngineers.valid =
-                    formData.noOfEngineers.value &&
-                    formData.noOfEngineers.el.checkValidity();
-                }}
-              >
-                <option class="option" value=""
-                  >Total number of engineers</option
-                >
-                {#each noOfEngineers as n}
-                  <option class="option" value={n}>
-                    {n}
-                  </option>
-                {/each}
-              </select>
-            </label>
+          <li>
+            <Select
+              placeholder="Total number of engineers"
+              hasError={isFormDirty && !formData.noOfEngineers.valid}
+              name="noOfEngineers"
+              bind:value={formData.noOfEngineers.value}
+              bind:element={formData.noOfEngineers.el}
+              on:change={() => {
+                formData.noOfEngineers.valid =
+                  formData.noOfEngineers.value &&
+                  formData.noOfEngineers.el.checkValidity();
+              }}
+              options={noOfEngineers}
+            />
           </li>
-          <li class:error={isFormDirty && !formData.message.valid}>
-            <label for="message">Your message*</label>
-            <textarea
+          <li>
+            <Textarea
+              label="Your message*"
               id="message"
+              name="message"
+              hasError={isFormDirty && !formData.message.valid}
               bind:value={formData.message.value}
-              bind:this={formData.message.el}
+              bind:element={formData.message.el}
               on:change={() => {
                 formData.message.valid =
                   formData.message.value && formData.message.el.validity.valid;
@@ -346,22 +340,18 @@
               rows="10"
             />
           </li>
-          <li class:error={isFormDirty && !formData.consent.valid}>
-            <input
-              id="consent"
+          <li>
+            <Checkbox
+              hasError={isFormDirty && !formData.consent.valid}
+              label="I consent to having this website store my submitted information so that the sales team can respond to my inquiry."
               bind:checked={formData.consent.checked}
-              bind:this={formData.consent.el}
+              bind:element={formData.consent.el}
               on:change={() => {
                 formData.consent.valid =
                   formData.consent.checked &&
                   formData.consent.el.validity.valid;
               }}
-              type="checkbox"
             />
-            <label for="consent"
-              >I consent to having this website store my submitted information
-              so that the sales team can respond to my inquiry.</label
-            >
           </li>
           <li>
             <Button
@@ -371,6 +361,11 @@
               type="submit"
               disabled={isFormDirty && !isFormValid}>Send message</Button
             >
+            {#if isFormDirty && !isFormValid}
+              <legend class="text-xs text-error block mt-1 mb-2">
+                Please fill out all required fields above
+              </legend>
+            {/if}
           </li>
         </ul>
         {#if isEmailSent}

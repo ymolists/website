@@ -6,6 +6,7 @@
   import type { Form } from "$lib/types/form.type";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import Header from "$lib/components/header.svelte";
+  import Textarea from "$lib/components/ui-library/textarea";
   import Button from "$lib/components/ui-library/button";
 
   const extensionUrls = {
@@ -83,6 +84,11 @@
   form li {
     @apply mb-0;
   }
+
+  fieldset {
+    display: flex;
+    flex-flow: row wrap;
+  }
 </style>
 
 <OpenGraph
@@ -155,14 +161,15 @@
           </ul>
         </fieldset>
       </li>
-      <li class:error={isFormDirty && !formData.otherFeedback.valid}>
-        <textarea
+      <li>
+        <Textarea
           aria-label="Do you have any other feedback?"
           placeholder="Do you have any other feedback?"
           id="otherFeedback"
-          name="otherFeedback"
+          hasError={isFormDirty && !formData.otherFeedback.valid}
+          name="feedback"
           bind:value={formData.otherFeedback.value}
-          bind:this={formData.otherFeedback.el}
+          bind:element={formData.otherFeedback.el}
           cols="20"
           rows="4"
           on:change={() => {
@@ -181,6 +188,11 @@
           disabled={(isFormDirty && !isFormValid) || isFeedbackSent}
           type="submit">Send</Button
         >
+        {#if isFormDirty && !isFormValid}
+          <legend class="text-xs text-error block mt-1 mb-2">
+            Please fill out all required fields above
+          </legend>
+        {/if}
       </li>
     </ul>
     {#if isFeedbackSent}

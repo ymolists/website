@@ -11,6 +11,9 @@
   import Section from "$lib/components/section.svelte";
   import { trackEvent, trackIdentity } from "$lib/components/segment.svelte";
   import Header from "$lib/components/header.svelte";
+  import Textarea from "$lib/components/ui-library/textarea";
+  import Input from "$lib/components/ui-library/input";
+  import Checkbox from "$lib/components/ui-library/checkbox";
   import Button from "$lib/components/ui-library/button";
 
   const studentUnlimitedSubject = "Educational Discount Verification";
@@ -179,9 +182,9 @@
     {:else}
       <form on:submit|preventDefault={handleSubmit} novalidate>
         <h2 class="h3 text-center">Send us a message</h2>
-        <ul>
+        <ul class="space-y-8">
           <li class:error={isFormDirty && !formData.selectedSubject.valid}>
-            <fieldset>
+            <fieldset class="flex">
               <legend>Please choose a subject*</legend>
               <ul>
                 {#each subjects as subject, index}
@@ -207,12 +210,14 @@
               </ul>
             </fieldset>
           </li>
-          <li class:error={isFormDirty && !formData.name.valid}>
-            <label for="name">Name*</label>
-            <input
+          <li>
+            <Input
+              hasError={isFormDirty && !formData.name.valid}
+              label="Name*"
               id="name"
+              name="name"
               bind:value={formData.name.value}
-              bind:this={formData.name.el}
+              bind:element={formData.name.el}
               on:change={() => {
                 formData.name.valid =
                   formData.name.value && formData.name.el.checkValidity();
@@ -222,16 +227,18 @@
             />
           </li>
           <li class:error={isFormDirty && !formData.email.valid}>
-            <label for="email"
+            <label class="cursor-pointer" for="email"
               >E-mail*
               {#if isStudentEmailNoteShown}
                 (Please use your student or faculty email)
               {/if}
             </label>
-            <input
+            <Input
+              hasError={isFormDirty && !formData.email.valid}
               id="email"
+              name="e-mail"
               bind:value={formData.email.value}
-              bind:this={formData.email.el}
+              bind:element={formData.email.el}
               on:change={() => {
                 formData.email.valid =
                   formData.email.value && formData.email.el.checkValidity();
@@ -240,12 +247,14 @@
               autocomplete="email"
             />
           </li>
-          <li class:error={isFormDirty && !formData.message.valid}>
-            <label for="message">Your message*</label>
-            <textarea
+          <li>
+            <Textarea
               id="message"
+              label="Your message*"
+              name="message"
+              hasError={isFormDirty && !formData.message.valid}
               bind:value={formData.message.value}
-              bind:this={formData.message.el}
+              bind:element={formData.message.el}
               on:change={() => {
                 formData.message.valid =
                   formData.message.value && formData.message.el.validity.valid;
@@ -254,22 +263,18 @@
               rows="10"
             />
           </li>
-          <li class:error={isFormDirty && !formData.consent.valid}>
-            <input
-              id="consent"
+          <li>
+            <Checkbox
+              hasError={isFormDirty && !formData.consent.valid}
+              label="I consent to having this website store my submitted information so that a support staff can respond to my inquiry."
               bind:checked={formData.consent.checked}
-              bind:this={formData.consent.el}
+              bind:element={formData.consent.el}
               on:change={() => {
                 formData.consent.valid =
                   formData.consent.checked &&
                   formData.consent.el.validity.valid;
               }}
-              type="checkbox"
             />
-            <label for="consent"
-              >I consent to having this website store my submitted information
-              so that a support staff can respond to my inquiry.</label
-            >
           </li>
           <li>
             <Button
@@ -277,9 +282,15 @@
               size="medium"
               on:click={handleClick}
               type="submit"
+              class="btn"
               disabled={isFormDirty && !isFormValid}
               >Send message
             </Button>
+            {#if isFormDirty && !isFormValid}
+              <legend class="text-xs text-error block mt-1 mb-2">
+                Please fill out all required fields above
+              </legend>
+            {/if}
           </li>
         </ul>
         {#if isEmailSent}

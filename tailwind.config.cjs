@@ -41,6 +41,7 @@ module.exports = {
         white: "var(--white)",
         "brand-hover": "var(--brand-hover)",
         "black-hover": "var(--black-hover)",
+        error: "var(--error)",
         "salmon-hover": "var(--salmon-hover)",
 
         gray: {
