@@ -106,7 +106,7 @@
 >
   <label for={docSearchInputSelector} class="sr-only">Search</label>
   <img
-    class="absolute top-1/2 left-3 -translate-y-1/2 pointer-events-none h-xx-small w-xx-small lef {iconClasses}"
+    class="absolute z-10 top-1/2 left-3 -translate-y-1/2 pointer-events-none h-xx-small w-xx-small lef {iconClasses}"
     src="/svg/mag-glass.svg"
     alt="Search"
     aria-hidden="true"
@@ -116,6 +116,6 @@
     type="search"
     {placeholder}
     id={docSearchInputSelector}
-    class="box-border block w-full text-p-medium h-small pl-11 pr-3 py-2 border border-transparent leading-5 text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-none focus:border-white focus:ring-white focus:text-gray-900 {clazz}"
+    class="box-border rounded-2xl block w-full text-p-medium h-small pl-11 pr-3 py-2 border border-transparent leading-5 text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-none focus:border-white focus:ring-white focus:text-gray-900 {clazz}"
   />
 </div>
