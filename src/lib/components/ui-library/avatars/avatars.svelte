@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { DisplayNames, SocialMediaLinks } from "$lib/types/avatars.type";
+  import type { DisplayNames, SocialMediaLinks } from "./avatars";
   import Avatar from "./avatar.svelte";
 
   /**

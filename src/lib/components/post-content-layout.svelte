@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Avatars from "./avatars.svelte";
+  import Avatars from "$lib/components/ui-library/avatars";
   import OpenGraph from "./open-graph.svelte";
   import { authors, authorSocialMediaLinks } from "$lib/contents/authors";
   import "$lib/assets/markdown-commons.scss";
