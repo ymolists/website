@@ -31,6 +31,11 @@ With Gitpod, you have the following three types of tasks:
 
 The order in which these tasks execute depends on whether you have [Prebuilds](/docs/prebuilds) configured for your project and which startup scenario applies. Let's look at the details.
 
+> **Caveats**
+>
+> - Any file changes made outside of `/workspace` file hierarchy from `init` tasks will be lost on workspace start when prebuilds are enabled. [Learn more](/docs/prebuilds#workspace-directory-only)
+> - User specific environment variables are not loaded automatically for `init` and `before` tasks but can be loaded if you want. [Learn more](/docs/prebuilds#user-specific-environment-variables-in-prebuilds)
+
 ### Prebuild and New Workspaces
 
 In this startup scenario, you can see how Prebuilds impact the execution order of tasks:
