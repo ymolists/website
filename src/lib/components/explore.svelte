@@ -117,7 +117,7 @@
         </p>
       {/if}
       <div
-        class="flex flex-wrap gap-4 justify-center pb-small sm:pb-micro md:pb-0"
+        class="flex flex-wrap gap-4 justify-center pb-small sm:justify-start sm:pb-micro md:pb-0"
       >
         <LinkButton
           size="large"
