@@ -24,7 +24,10 @@
       if (display && showBanner) {
         document.body.classList.add("banner-is-shown");
       } else if (!display || !showBanner) {
-        closeBanner();
+        showBanner = false;
+        if (clazz === "announcement-banner") {
+          document.body.classList.remove("banner-is-shown");
+        }
       }
     }
   });

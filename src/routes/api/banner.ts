@@ -2,11 +2,10 @@ import type { RequestHandler } from "@sveltejs/kit";
 
 const startDate = new Date("Feb 24 2022 07:00:00 EST");
 const endDate = new Date("Mar 24 2022 07:00:00 EST");
-
 export const get: RequestHandler = async () => {
   const currentDate = new Date();
 
-  const display = currentDate > startDate && endDate > currentDate;
+  const display = startDate < currentDate && currentDate < endDate;
 
   return {
     status: 200,
