@@ -44,10 +44,6 @@
     }
   }
 
-  div :global(a:not([class*="button"])) {
-    @apply text-dark-grey;
-  }
-
   @media (max-height: 525px) {
     .nav-items {
       @apply pb-20;
