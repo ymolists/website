@@ -21,7 +21,7 @@
 </style>
 
 <header
-  class="relative mx-auto mt-small mb-x-large md:my-x-large lg:my-xx-large sm:px-small lgx:px-0 {clazz}"
+  class="relative mt-small mb-x-large md:my-x-large lg:my-xx-large lgx:px-0 {clazz}"
   class:tight
   class:text-center={textAlign === "center"}
   class:max-w-4xl={!fullWidth}
