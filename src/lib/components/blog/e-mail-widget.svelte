@@ -25,12 +25,11 @@
     //   path: window.location.pathname,
     // });
 
-    const response = await fetch("/.netlify/functions/feedback", {
+    const response = await fetch("/.netlify/functions/signup", {
       method: "post",
       body: JSON.stringify({
         type,
         email,
-        url: $page.url.toString(),
       }),
     });
 

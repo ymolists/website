@@ -1,15 +1,12 @@
 import type { Handler } from "@netlify/functions";
 import { submitFeedback as submitExtensionFeedback } from "./_browser-extension";
 import { submitFeedback as submitManualFeedback } from "./_manual";
-import { submitFeedback as submitBlogEmail } from "./_blog-email";
 
 const routeToHandler = (type: string) => {
   if (type === "docs" || type === "guides" || type === "digests") {
     return submitManualFeedback;
   } else if (type === "browser-extension") {
     return submitExtensionFeedback;
-  } else if (type === "blog-email") {
-    return submitBlogEmail;
   }
   return () => {
     throw new Error("Please provide a feedback type.");
