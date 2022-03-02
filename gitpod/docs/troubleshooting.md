@@ -18,6 +18,7 @@ The ClearURLs browser extension for [Google Chrome](https://chrome.google.com/we
 - dark theme does not load
 - the bottom left gitpod button is missing
 - the vscode market place does not load
+- settings sync does not work
 
 This issue can be resolved by disabling "ETag filtering" in ClearURLs’ settings. A [issue has been created](https://gitlab.com/KevinRoebert/ClearUrls/-/issues/977) that requests to whitelist Gitpod by default and we would apprciate your upvotes on the issue.
 
