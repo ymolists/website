@@ -3,10 +3,10 @@ import saveFeedbackInSheet from "./_save-to-spreadsheet";
 import sendFeedbackToSlack from "./_send-to-slack";
 
 interface Feedback {
-  emotion: number;
+  emotion?: number;
   note?: string;
   url: string;
-  type: "docs" | "guides";
+  type: "docs" | "guides" | "blog-email";
 }
 
 const emotionSlackEmojiMap = {
@@ -24,17 +24,21 @@ const feedbackTypetoSheetTitle = {
 };
 
 export const submitFeedback = async (body: string): Promise<Response> => {
+  let isSentToSlack: boolean = false;
   const feedback: Feedback = JSON.parse(body) as Feedback;
   const isSavedInSheet = await saveFeedbackInSheet({
     sheetTitle: feedbackTypetoSheetTitle[feedback.type],
     data: [new Date(), feedback.emotion, feedback.url, feedback.note],
   });
-  const isSentToSlack = await sendFeedbackToSlack(`${
-    feedback.type.charAt(0).toUpperCase() + feedback.type.slice(1)
-  } feedback: ${emotionSlackEmojiMap[feedback.emotion]}
+  if (feedback.type !== "blog-email") {
+    isSentToSlack = await sendFeedbackToSlack(`${
+      feedback.type.charAt(0).toUpperCase() + feedback.type.slice(1)
+    } feedback: ${emotionSlackEmojiMap[feedback.emotion]}
 Link: ${feedback.url}
 Note: ${feedback.note ? feedback.note : "N/A"}`);
-
+  } else {
+    isSentToSlack = true;
+  }
   const statusCode = isSavedInSheet && isSentToSlack ? 201 : 500;
   return {
     statusCode,

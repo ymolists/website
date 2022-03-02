@@ -29,7 +29,7 @@
       method: "post",
       body: JSON.stringify({
         type,
-        email,
+        note: email,
         url: $page.url.toString(),
       }),
     });
