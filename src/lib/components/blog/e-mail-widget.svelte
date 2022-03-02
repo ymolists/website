@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import { trackEvent } from "../segment.svelte";
+  //   import { trackEvent } from "../segment.svelte";
   import Input from "$lib/components/ui-library/input";
   import Button from "$lib/components/ui-library/button";
 
