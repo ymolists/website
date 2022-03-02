@@ -9,7 +9,7 @@ interface SignupData {
 const signupTypeToSheetTitle = {
   newsletter: "Newsletter - Signups",
   "ambassador program": "Ambassador program - Signups",
-  "blog-email": "Blog-Email - Submitted",
+  "blog-email": "Gitpod OS - Signups",
 };
 
 export const signup = async (body: string): Promise<Response> => {

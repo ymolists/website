@@ -33,7 +33,10 @@
     });
 
     if (response.status === 201) {
-      resultMessage = "Thanks for your feedback, we appreciate it.";
+      resultMessage = "Thanks for signing up, we'll reach out to you";
+    } else if (response.status === 409) {
+      resultMessage =
+        "Thanks for signing up, it seems like you already signed up";
     } else {
       resultMessage = "Oh no, something went wrong :(.";
     }
