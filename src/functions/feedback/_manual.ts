@@ -20,6 +20,7 @@ const feedbackTypetoSheetTitle = {
   docs: "Docs - Raw Feedback",
   guides: "Guides - Raw Feedback",
   digests: "Digests - Raw Feedback",
+  "blog-email": "Blog - Emails - Submitted",
 };
 
 export const submitFeedback = async (body: string): Promise<Response> => {

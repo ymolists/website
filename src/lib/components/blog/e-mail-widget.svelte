@@ -10,7 +10,7 @@
   let clazz = "";
   let hasError: boolean = false;
   export { clazz as class };
-  const type = "blog";
+  const type = "blog-email";
 
   const submitFeedback = async () => {
     if (email.length == 0) {
@@ -19,11 +19,11 @@
     }
     isSubmittedOnce = true;
 
-    trackEvent("feedback_submitted", {
-      email: email,
-      url: window.location.href,
-      path: window.location.pathname,
-    });
+    // trackEvent("blog_email_submitted", {
+    //   email: email,
+    //   url: window.location.href,
+    //   path: window.location.pathname,
+    // });
 
     const response = await fetch("/.netlify/functions/feedback", {
       method: "post",
@@ -57,25 +57,23 @@
     {:else}
       <form on:submit|preventDefault={submitFeedback}>
         <div class="flex justify-center space-x-6" />
-        <div class="mt-x-small">
-          <Input
-            {hasError}
-            label="Submit Email Address"
-            bind:value={email}
-            name="Email"
-            type="email"
-          />
-          <div>
-            <span>
-              <Button
-                variant="primary"
-                size="medium"
-                disabled={isSubmittedOnce}
-                class="mt-micro"
-                type="submit"><span>Send</span></Button
-              >
-            </span>
-          </div>
+        <Input
+          {hasError}
+          label="Submit Email Address"
+          bind:value={email}
+          name="Email"
+          type="email"
+        />
+        <div>
+          <span>
+            <Button
+              variant="primary"
+              size="medium"
+              disabled={isSubmittedOnce}
+              class="mt-micro"
+              type="submit"><span>Send</span></Button
+            >
+          </span>
         </div>
       </form>
     {/if}
