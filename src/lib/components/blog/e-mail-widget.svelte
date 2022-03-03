@@ -60,7 +60,7 @@
         <div class="flex justify-center space-x-6" />
         <Input
           {hasError}
-          label="Submit Email Address"
+          label="Receive the next company building blog post via email"
           bind:value={email}
           name="Email"
           type="email"

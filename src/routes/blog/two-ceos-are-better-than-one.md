@@ -70,6 +70,8 @@ At Gitpod, we naturally grew into the co-leadership setup over time and have suc
 
 Leadership decisions are distinctive and specific to the company you are building. That said, we believe many of the reasons to embrace a dual leadership model apply to other companies, too.
 
+### Read our 7-part blog series about the Gitpod Company Operating System
+
 This article was the first in a series in which we share how we are building the Gitpod company operating system. We will walk through the tactical resources we are putting in place to create a fully distributed company. The title of the next article in this series is **Set Direction (Purpose, Product Vision, Brand)**. If you want to stay in the loop drop your email address below and we will reach out once the next article launches.
 
 &nbsp
