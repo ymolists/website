@@ -11,6 +11,7 @@
   import UsedBy from "$lib/components/index/used-by.svelte";
   import Header from "$lib/components/header.svelte";
   import LinkButton from "$lib/components/ui-library/link-button";
+  import Transparency from "$lib/components/security/transparency-is-key.svelte";
 </script>
 
 <OpenGraph
@@ -27,9 +28,11 @@
   textClassNames="text-large max-w-2xl mx-auto mb-x-small"
   tight={true}
 >
-  <LinkButton variant="primary" size="medium" href="/contact/support"
-    >Talk to an expert</LinkButton
-  >
+  <div slot="content">
+    <LinkButton variant="primary" size="medium" href="#program"
+      >View security program</LinkButton
+    >
+  </div>
 </Header>
 
 <UsedBy
@@ -38,6 +41,9 @@
   style="margin-top: 0"
 />
 <Secure />
-<Program />
+<Transparency />
+<div id="program">
+  <Program />
+</div>
 <CallToAction />
 <Report />

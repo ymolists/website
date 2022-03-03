@@ -53,6 +53,7 @@
 <div class="flex">
   <div class="hidden w-4/12 flex-shrink-0 md:block" />
   <Header
+    centered={false}
     title="Changelog"
     text="Gitpod product improvements and updates"
     class="w-full"

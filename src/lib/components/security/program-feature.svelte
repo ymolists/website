@@ -12,9 +12,9 @@
 </style>
 
 <div
-  class="bg-white shadow-normal px-9 py-medium rounded-4xl mb-micro md:mb-small"
+  class="bg-white shadow-normal px-9 py-medium rounded-5xl mb-micro md:mb-small"
 >
-  <img src="/svg/security/{image}" alt={title} class="mx-auto" />
+  <img src="/svg/security/{image}" alt={title} class="mx-auto h-[150px]" />
   <h3 class="text-center mt-xx-small mb-small">{title}</h3>
   {#each paragraphs as p}
     <p>{@html p}</p>

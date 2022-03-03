@@ -6,6 +6,7 @@ export const getSession: import("@sveltejs/kit").GetSession = async (event) => {
     posts: event.locals.posts,
     guides: event.locals.guides,
     customers: event.locals.customers,
+    securityLogs: event.locals.securityLogs,
   };
 };
 
@@ -38,6 +39,23 @@ const handleChangelogEntries = async ({ event, resolve }) => {
   );
   changelogEntries.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
   event.locals.changelogEntries = changelogEntries;
+  return await resolve(event);
+};
+
+const handleSecurityLogs = async ({ event, resolve }) => {
+  const securityLogs = await Promise.all(
+    Object.entries(import.meta.glob("/src/lib/contents/security/*.md"))
+      .filter(([path]) => !path.endsWith("_template.md"))
+      .map(async ([, mod]) => {
+        const { default: content, metadata } = await mod();
+        return {
+          ...metadata,
+          content: content.render().html,
+        };
+      })
+  );
+  securityLogs.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+  event.locals.securityLogs = securityLogs;
   return await resolve(event);
 };
 
@@ -92,6 +110,7 @@ export const handle = sequence(
   handleHeaders,
   handleBlogPosts,
   handleChangelogEntries,
+  handleSecurityLogs,
   handleGuides,
   handleCustomers
 );
