@@ -1,6 +1,6 @@
 <script lang="ts">
   import Section from "./section.svelte";
-  import LinkButton from "$lib/components/ui-library/button";
+  import LinkButton from "$lib/components/ui-library/link-button";
 
   type Link = {
     text: string;
