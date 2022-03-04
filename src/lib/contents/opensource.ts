@@ -96,7 +96,7 @@ export const programBenefits: Card[] = [
       transform: "scale(.95)",
     },
     title: "Gitpod for free",
-    text: "Maintainers get unlimited hours for usage on public repos. Contributors to your project are provided with a generous free plan for up to 50h a month, including private repos. For projects that run their own infrastructure complementary <a href='https://www.gitpod.io/self-hosted'>Gitpod self-hosted</a> licenses are also available.",
+    text: "Maintainers get unlimited hours for usage on public repos. Contributors to your project are provided with a generous free plan for up to 50h a month, including private repos. For projects that run their own infrastructure complementary <a href='https://www.gitpod.io/self-hosted'>Gitpod Self-Hosted</a> licenses are also available.",
   },
   {
     icon: {

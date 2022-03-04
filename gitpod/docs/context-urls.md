@@ -22,7 +22,7 @@ Gitpod is aware of the following contexts:
 - [Issue Context](#issue-context)
 - [Pull/Merge Request Context](#pullmerge-request-context)
 
-Please note, these contexts are supported for GitHub, GitLab, and Bitbucket. This also includes self-hosted installations of these git providers, where available.
+Please note, these contexts are supported for GitHub, GitLab, and Bitbucket. This also includes Self-Hosted installations of these git providers, where available.
 
 ## Repository Context
 

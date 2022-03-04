@@ -316,7 +316,7 @@ export const selfhostedFAQ: FAQ = {
     {
       title: "Can I create a team plan?",
       content:
-        '<p> Of course! You can use Gitpod Self-Hosted Community on your own infrastructure for free for unlimited users. If you\'d like to try additional features like unlimited prebuilds, shared workspaces, snapshots and an admin dashboard, the Free tier is available without a license for the first 10 users. You can upgrade to to the Professional Plan at any time. Simply update your existing instance with a license key. Currently, Self-hosted Gitpod licenses can currently only be purchased through contacting sales. Please <a href="/enterprise-license" >request a license</a > key or <a href="/contact/sales">Get in touch</a> if you have any questions. </p>',
+        '<p> Of course! You can use Gitpod Self-Hosted Community on your own infrastructure for free for unlimited users. If you\'d like to try additional features like unlimited prebuilds, shared workspaces, snapshots and an admin dashboard, the Free tier is available without a license for the first 10 users. You can upgrade to to the Professional Plan at any time. Simply update your existing instance with a license key. Currently, Self-Hosted Gitpod licenses can currently only be purchased through contacting sales. Please <a href="/enterprise-license" >request a license</a > key or <a href="/contact/sales">Get in touch</a> if you have any questions. </p>',
     },
     {
       title: "Can I add more users to my plan at any time?",

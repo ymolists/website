@@ -94,7 +94,7 @@ gitpod.your-domain.com
 
 ## Supported web browsers
 
-Gitpod Self-hosted works with the following browsers:
+Gitpod Self-Hosted works with the following browsers:
 
 - Mozilla Firefox
 - Google Chrome

@@ -70,7 +70,7 @@
         name: `${formData.firstName.value} ${formData.lastName.value}`,
       },
       subject:
-        "Requesting a professional self-hosted license" +
+        "Requesting a professional Self-Hosted license" +
         "  (from " +
         formData.email.value +
         ")",

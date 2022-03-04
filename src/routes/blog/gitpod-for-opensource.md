@@ -17,7 +17,7 @@ title: Introducing Gitpod for Open Source
 
 - Today we are announcing our “[Gitpod for Open Source](/for/opensource)” program.
 - Gitpod has formed a new team to support open source (ps [we are hiring](https://www.gitpod.io/careers)) and personalized support is now available to open source maintainers / communities.
-- Complementary [Gitpod self-hosted licenses](https://www.gitpod.io/self-hosted) are now available for projects that maintain their independence via running their own infrastructure (ie Haskell, Drupal, Rust). Apply via [this form](/for/opensource).
+- Complementary [Gitpod Self-Hosted licenses](https://www.gitpod.io/self-hosted) are now available for projects that maintain their independence via running their own infrastructure (ie Haskell, Drupal, Rust). Apply via [this form](/for/opensource).
 - Free and open source software projects aligned with [FOSSHost](https://fosshost.org/about) can request an account upgrade to a complementary professional open source account via [this form](/for/opensource).
 - Over 18,000 people in the GitHub ecosystem have been pre-qualified for complementary professional open source accounts with unlimited hours. If you are in the short-list your account will be automatically upgraded either upon account creation or when you next start a workspace with your existing account. No action is required.
   - If you had published a Visual Studio Code extension, Emacs or Vim plugin on GitHub before this blog post went live then you are likely on the shortlist.
@@ -29,7 +29,7 @@ title: Introducing Gitpod for Open Source
 
 Howdy folks,
 
-I’m gonna assume this is the first time you have heard about Gitpod and build from there because context is important. Gitpod is an open-core open source project and company that provides reproducible software developer environments. Gitpod can be consumed as a service or [self-hosted on your own infrastructure](https://www.gitpod.io/self-hosted).
+I’m gonna assume this is the first time you have heard about Gitpod and build from there because context is important. Gitpod is an open-core open source project and company that provides reproducible software developer environments. Gitpod can be consumed as a service or [Self-Hosted on your own infrastructure](https://www.gitpod.io/self-hosted).
 
 > “Gitpod totally changed the development velocity for RedwoodJS — it removed any issues related to configurations of dev environments and made it incredibly easy to contribute. Reviewing pull requests is delightful because they are prebuilt and ready for review!”
 >
@@ -70,7 +70,7 @@ Gitpod is equally delightful for open source maintainers as well:
 # Benefits
 
 - People and projects who qualify for Gitpod’s Open Source program are provided with unlimited hours for usage on public repos. Contributors to an open-source project are provided with a generous free plan for up to 50h a month, including private repos.
-- Complementary [Gitpod self-hosted](https://www.gitpod.io/self-hosted) licenses are available for projects that maintain their independence via running their own infrastructure (ie Haskell, Drupal, Rust).
+- Complementary [Gitpod Self-Hosted](https://www.gitpod.io/self-hosted) licenses are available for projects that maintain their independence via running their own infrastructure (ie Haskell, Drupal, Rust).
 - Personalized support is now available to open source maintainers / communities.
 
 # Who is eligible?

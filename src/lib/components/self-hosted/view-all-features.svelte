@@ -7,7 +7,7 @@
 
 <SectionCommon
   title="View all features"
-  text="Install Gitpod Self-hosted on GKE, EKS, AKS, or K3s."
+  text="Install Gitpod Self-Hosted on GKE, EKS, AKS, or K3s."
   textClassNames="mb-xx-small"
   id="features"
 >

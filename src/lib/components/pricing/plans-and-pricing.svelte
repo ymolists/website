@@ -37,7 +37,7 @@
     id="pricing"
     class="mb-xx-small"
     labelLeft="SaaS"
-    labelRight="Self-hosted"
+    labelRight="Self-Hosted"
     on:change={handleChange}
     isInversed={$page.url.pathname.includes("self-hosted")}
     checked={toggled}

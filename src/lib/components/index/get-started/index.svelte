@@ -46,7 +46,7 @@
   <h2 class="mb-small text-center text-h2">Get started now</h2>
   <Toggle
     labelLeft="SaaS"
-    labelRight="Self-hosted"
+    labelRight="Self-Hosted"
     on:change={handleChange}
     {checked}
     class="mb-x-small"
