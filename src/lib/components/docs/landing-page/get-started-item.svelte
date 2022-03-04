@@ -4,8 +4,14 @@
   export let getStartedItem: GetStartedItem;
 </script>
 
+<style lang="postcss">
+  p {
+    @apply mt-0;
+  }
+</style>
+
 <div
-  class="text-center bg-off-white rounded-4xl shadow-normal p-8 flex flex-col"
+  class="text-center bg-off-white rounded-4xl shadow-normal py-x-small px-micro flex flex-col"
 >
   <div class="flex justify-center">
     <img
@@ -15,8 +21,8 @@
     />
   </div>
   <div class="flex flex-col">
-    <h4 class="mt-4">{getStartedItem.title}</h4>
-    <p class="mb-4">{getStartedItem.description}</p>
+    <h4 class="mt-2 mb-macro">{getStartedItem.title}</h4>
+    <p>{getStartedItem.description}</p>
   </div>
   <div class="mt-auto">
     <LinkButton
