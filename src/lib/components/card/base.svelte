@@ -16,6 +16,13 @@
   export let btnClassNames: string = "mt-x-small";
   export let variant: "primary" | "secondary" | "cta" = "cta";
   export let styles: string = "";
+  export let textAlign: "left" | "center" | "right" = "center";
+
+  const alignmentMap = {
+    left: "text-left",
+    center: "text-center",
+    right: "text-right",
+  };
 
   let isModalOpen: boolean = false;
 </script>
@@ -38,7 +45,7 @@
     {:else}
       <h2 class="mb-micro {titleClassNames}">{title}</h2>
     {/if}
-    <p>{@html text}</p>
+    <p class={alignmentMap[textAlign]}>{@html text}</p>
   </div>
   {#if link}
     <LinkButton
