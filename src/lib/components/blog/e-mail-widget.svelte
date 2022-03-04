@@ -1,5 +1,5 @@
 <script lang="ts">
-  //   import { trackEvent } from "../segment.svelte";
+  import { trackEvent, trackIdentity } from "../segment.svelte";
   import Input from "$lib/components/ui-library/input";
   import Button from "$lib/components/ui-library/button";
 
@@ -18,11 +18,11 @@
     }
     isSubmittedOnce = true;
 
-    // trackEvent("blog_email_submitted", {
-    //   email: email,
-    //   url: window.location.href,
-    //   path: window.location.pathname,
-    // });
+    trackIdentity({
+      email_untrusted: email,
+    });
+
+    trackEvent("email_submitted", {});
 
     const response = await fetch("/.netlify/functions/signup", {
       method: "post",
