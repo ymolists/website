@@ -14,6 +14,7 @@
   import { countryList } from "$lib/contents/license-key";
   import type { Email } from "../functions/submit-form";
   import Header from "$lib/components/header.svelte";
+  import { noOfEngineers } from "$lib/contents/contact";
 
   const formData: Form = {
     firstName: {
@@ -209,8 +210,8 @@
       <div>
         <Select
           placeholder="Select..."
-          options={["1 - 100", "101 - 250", "251 - 500", "500 - 1000", "+1000"]}
-          label="Total Number of Developers*"
+          options={noOfEngineers}
+          label="Total number of engineers*"
           hasError={isFormDirty && !formData.noOfDevelopers.valid}
           name="noOfDevelopers"
           bind:value={formData.noOfDevelopers.value}

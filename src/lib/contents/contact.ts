@@ -38,3 +38,12 @@ export const contactActions: ContactAction[] = [
     },
   },
 ];
+
+export const noOfEngineers = [
+  "1-10",
+  "11-50",
+  "51-250",
+  "251-500",
+  "501-1000",
+  "+1000",
+];

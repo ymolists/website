@@ -15,6 +15,7 @@
   import Checkbox from "$lib/components/ui-library/checkbox";
   import Select from "$lib/components/ui-library/select";
   import Button from "$lib/components/ui-library/button";
+  import { noOfEngineers } from "$lib/contents/contact";
 
   const selfHostingSubject = "Self-hosting";
   const otherSubject = "Other";
@@ -30,7 +31,6 @@
     "Kubernetes",
     "Microsoft Azure Kubernetes Service (AKS)",
   ];
-  const noOfEngineers = ["2-5", "6-20", "21-50", "51-250", "+250"];
 
   let sectionStart: HTMLElement;
   let isCloudPlatformsSelectShown = false;
@@ -311,7 +311,7 @@
           </li>
           <li>
             <Select
-              placeholder="Total number of engineers"
+              placeholder="Total number of engineers*"
               hasError={isFormDirty && !formData.noOfEngineers.valid}
               name="noOfEngineers"
               bind:value={formData.noOfEngineers.value}
