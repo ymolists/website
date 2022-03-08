@@ -11,7 +11,8 @@ title: Gitpod Self-Hosted releases
 
 ## Currently Supported
 
-- [2022.01](https://github.com/gitpod-io/gitpod/releases/tag/2022.01) (January 2022)
+- [2022.02.0](https://github.com/gitpod-io/gitpod/releases/tag/2022.02.0) (February 2022)
+- [2022.01.1](https://github.com/gitpod-io/gitpod/releases/tag/2022.01.1) (January 2022)
 
 ## Deprecated
 
