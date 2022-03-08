@@ -1,19 +1,25 @@
 <script lang="ts">
-  import Header from "../header.svelte";
   import TwitterFollowButton from "../t-button.svelte";
   import LinkButton from "$lib/components/ui-library/link-button";
 </script>
 
-<Header
-  title="DevX Digest"
-  text=" Our newsletter where we cover everything about Developer Experience"
-  textClassNames="text-medium mb-x-small"
-  tight={true}
+<style lang="postcss">
+  h2 {
+    @apply mt-0;
+  }
+</style>
+
+<section
+  class="text-center shadow-normal rounded-2xl p-9 mt-x-large mb-huge bg-off-white"
 >
-  <div
-    slot="content"
-    class="flex justify-center items-center flex-wrap space-x-4"
-  >
+  <h2>More about DevX Digest</h2>
+  <p class="text-medium mb-x-small">
+    Sign up for our newsletter or follow <a
+      href="https://twitter.com/@devxconf"
+      target="_blank">@devxconf</a
+    > on Twitter to stay updated.
+  </p>
+  <div class="flex justify-center items-center flex-wrap space-x-4 mt-x-small">
     <LinkButton
       variant="primary"
       size="medium"
@@ -24,4 +30,4 @@
     >
     <TwitterFollowButton variant="secondary" />
   </div>
-</Header>
+</section>

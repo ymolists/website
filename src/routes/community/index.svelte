@@ -25,8 +25,8 @@
 />
 
 <Header
-  title="Community"
-  text="Welcome! Our community is at the centre of everything at Gitpod. We're
+  title="Welcome to our community"
+  text="Our community is at the centre of everything at Gitpod. We're
   excited to have you join us 🧡"
   fullWidth={true}
   textClassNames="max-w-3xl text-large mx-auto md:px-x-small"

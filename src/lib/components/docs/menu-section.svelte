@@ -38,7 +38,11 @@
           >
             <MenuLink href={sub.path}>{sub.title}</MenuLink>
             {#if sub.status}
-              <Pill text={sub.status} class="ml-1.5" />
+              <Pill
+                text={sub.status}
+                variant={sub.status === "soon" ? "pink" : "orange"}
+                class="ml-1.5"
+              />
             {/if}
           </li>
         {/each}

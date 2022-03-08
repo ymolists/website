@@ -106,7 +106,11 @@
           <MenuItem href={sub.path} onClick={() => ($subMenuState = false)}>
             {sub.title}
             {#if sub.status}
-              <Pill text={sub.status} class="ml-1.5" />
+              <Pill
+                variant={sub.status === "soon" ? "pink" : "orange"}
+                text={sub.status}
+                class="ml-1.5"
+              />
             {/if}
           </MenuItem>
         {/each}

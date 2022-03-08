@@ -4,10 +4,12 @@
   import { authors, authorSocialMediaLinks } from "$lib/contents/authors";
   import "$lib/assets/markdown-commons.scss";
   import Share from "$lib/components/share.svelte";
+  import Pill from "./pill.svelte";
 
   export let baseUrl: string;
   export let imagesDirectoryName: string;
   export let norobots: boolean = false;
+  export let type: string = "";
 
   const { date, author, slug, title, image, teaserImage, excerpt } =
     $$restProps;
@@ -99,6 +101,9 @@
       class="max-h-[540px] rounded-tl-2xl rounded-tr-[1.3rem]"
     />
     <p class="mt-[1.875rem] mb-6 text-dark-grey">{dateDisplay}</p>
+    {#if type === "digest"}
+      <Pill text="DevX Digest" class="mb-micro" />
+    {/if}
     <h1 class="mb-6 text-h3">{title}</h1>
     <p>
       <span

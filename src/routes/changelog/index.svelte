@@ -55,7 +55,7 @@
   <Header
     centered={false}
     title="Changelog"
-    text="Gitpod product improvements and updates"
+    text="A sum-up of Gitpod’s latest product improvements, feature releases<br class='hidden xl:block'> and community contributions."
     class="w-full"
     textAlign="left"
   >

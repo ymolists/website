@@ -48,6 +48,7 @@
     type: "article",
     image: `images/changelog/${image}`,
     imageTwitter: `images/changelog/${image}`,
+    norobots: true,
   }}
 />
 

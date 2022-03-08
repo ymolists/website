@@ -56,7 +56,7 @@
   >
     <div>
       {#if !availability}
-        <Pill text="soon" />
+        <Pill text="soon" variant="pink" />
       {/if}
       <div class:mt-micro={!availability}>
         {#if headlineOrder === "h3"}

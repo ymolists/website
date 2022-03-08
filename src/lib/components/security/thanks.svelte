@@ -14,7 +14,7 @@
 </style>
 
 <Header
-  title="Thanks"
+  title="Thanks for your help"
   text="Big thanks the following people who responsibly disclosed their security
   findings."
   class="max-w-lg"
