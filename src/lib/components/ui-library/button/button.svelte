@@ -53,7 +53,7 @@
   use:forwardEvents
   {disabled}
   class:disabled
-  class="transition-all duration-[50ms] inline-block text-center shadow-light font-semibold bg-none text-black whitespace-nowrap {variant ===
+  class="transition-all duration-200 delay-[50ms] inline-block text-center shadow-light font-semibold bg-none text-black whitespace-nowrap {variant ===
   'unstyled'
     ? ''
     : variant} {size} {className}"

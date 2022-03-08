@@ -24,7 +24,7 @@
     <img
       src={`/${logo}`}
       {alt}
-      class="mr-micro grayscale group-focus:grayscale-0 group-hover:grayscale-0"
+      class="mr-micro transition-all duration-200 delay-[50ms] grayscale group-focus:grayscale-0 group-hover:grayscale-0"
       width="24"
       height="24"
     />
@@ -33,7 +33,7 @@
     </div>
   </div>
   <Button
-    class="hidden group-hover:inline-block"
+    class="hidden transition-all duration-200 delay-[50ms] group-hover:inline-block"
     variant="tertiary"
     size="medium">Launch workspace</Button
   >
