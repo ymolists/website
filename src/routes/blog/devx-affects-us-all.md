@@ -38,5 +38,3 @@ This week’s shoutout by our guest is [Svelte Sirens](https://sveltesirens.dev/
 Another thing about Gitpodders is that we’re all driven by community feedback, and this newsletter is no exception! Please send us your thoughts, feedback and help us navigate this conversation. We may even feature some of your takes and comments in future newsletters!
 
 Come and hang out with us over on [our Discord](https://www.gitpod.io/chat). 👋🏼
-
-That’s it for now, thanks folks! See you over [on our Discord.](https://www.gitpod.io/chat) 👋🏼
