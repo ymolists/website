@@ -3,7 +3,7 @@
   import Button from "$lib/components/ui-library/button";
   import { isAnExternalLink } from "$lib/utils/helpers";
   import type { Card } from "$lib/types/card.type";
-  import Modal from "../modal.svelte";
+  import Modal from "$lib/components/ui-library/modal";
   let clazz = "";
   export { clazz as class };
 

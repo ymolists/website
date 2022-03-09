@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { showHideOverflowY } from "$lib/utils/helpers";
+  import { showHideOverflowY } from "$lib/components/ui-library/utils/show-hide-overflow-y";
 
   import { createEventDispatcher } from "svelte";
 
-  export let isOpen = false;
+  export let isOpen: boolean = false;
 
   $: {
     if (typeof document !== "undefined") {
