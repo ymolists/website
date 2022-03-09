@@ -165,9 +165,9 @@
     Please report security issues via <a href="mailto://security@gitpod.io"
       >security@gitpod.io</a
     >
-    or <a href="/security/report">https://www.gitpod.io/security/report</a>,
-    providing all relevant information. The more details you provide, the easier
-    it will be for us to triage and fix the issue.
+    or <a href="/security/report">https://www.gitpod.io/security/</a>, providing
+    all relevant information. The more details you provide, the easier it will
+    be for us to triage and fix the issue.
   </p>
   <h2 class="h3 mx-0 my-8">Safe Harbor</h2>
   <p class="mb-4">
