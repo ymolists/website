@@ -135,6 +135,7 @@
           label="First Name*"
           hasError={isFormDirty && !formData.firstName.valid}
           name="first-name"
+          id="first-name"
           type="text"
           bind:value={formData.firstName.value}
           bind:element={formData.firstName.el}
@@ -150,6 +151,7 @@
           hasError={isFormDirty && !formData.lastName.valid}
           label="Last Name*"
           name="last-name"
+          id="last-name"
           type="text"
           bind:value={formData.lastName.value}
           bind:element={formData.lastName.el}
@@ -166,6 +168,7 @@
           hasError={isFormDirty && !formData.email.valid}
           type="email"
           name="e-mail"
+          id="email"
           bind:value={formData.email.value}
           bind:element={formData.email.el}
           on:change={() => {
@@ -180,6 +183,7 @@
           hasError={isFormDirty && !formData.company.valid}
           label="Company*"
           name="company"
+          id="company"
           bind:value={formData.company.value}
           bind:element={formData.company.el}
           on:change={() => {
@@ -233,6 +237,7 @@
         bind:value={formData.message.value}
         bind:element={formData.message.el}
         name="message"
+        id="message"
       />
       <div class="mt-4">
         <Button

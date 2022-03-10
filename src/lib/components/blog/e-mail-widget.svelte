@@ -64,6 +64,7 @@
           bind:value={email}
           name="Email"
           type="email"
+          id="email"
         />
         <div>
           <span>
