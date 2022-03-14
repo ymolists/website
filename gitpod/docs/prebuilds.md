@@ -43,7 +43,7 @@ To use global installs like 'npm install -g', we suggest using a custom Dockerfi
 
 ## Projects and prebuilds
 
-[Projects](https://www.gitpod.io/docs/teams-and-projects#projects) are a convenient way to manage prebuilds and workspaces for your repository.
+[Projects](/docs/teams-and-projects#projects) are a convenient way to manage prebuilds and workspaces for your repository.
 
 To create a new project:
 

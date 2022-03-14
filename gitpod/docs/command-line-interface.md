@@ -114,7 +114,7 @@ See [Start Tasks](/docs/config-start-tasks#wait-for-commands-to-complete) for a 
 
 ## snapshot
 
-For sharing a complete clone of a workspace with others, `gp snapshot` is basically the CLI method for getting a snapshot URL. To learn more about snapshots, see [Collaboration & Sharing of Workspaces](https://www.gitpod.io/docs/sharing-and-collaboration#sharing-snapshots)
+For sharing a complete clone of a workspace with others, `gp snapshot` is basically the CLI method for getting a snapshot URL. To learn more about snapshots, see [Collaboration & Sharing of Workspaces](/docs/sharing-and-collaboration#sharing-snapshots)
 
 ## stop
 

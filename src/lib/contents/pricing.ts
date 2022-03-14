@@ -466,7 +466,7 @@ export const pricingTableToc: FeatureTableToc[] = [
     data: {
       text: "multi-ide support",
       tooltip:
-        "Connect Gitpod with your favourite IDE. View <a href='/docs/editors'>docs/IDE</a> to see all suported IDE’s.",
+        "Connect Gitpod with your favourite IDE. View <a href='/docs/ides-and-editors'>docs/IDE</a> to see all suported IDE’s.",
     },
   },
   {

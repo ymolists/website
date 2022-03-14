@@ -9,7 +9,7 @@ title: PhpStorm
 
 # {title}
 
-> **Please note:** JetBrains {title} Desktop is currently in beta. If you experience any issues, or have feedback, please [get in touch](https://www.gitpod.io/support).
+> **Please note:** JetBrains {title} Desktop is currently in beta. If you experience any issues, or have feedback, please [get in touch](/support).
 
 ### Getting Start with {title} Desktop in Gitpod
 

@@ -96,7 +96,7 @@ export const programBenefits: Card[] = [
       transform: "scale(.95)",
     },
     title: "Gitpod for free",
-    text: "Maintainers get unlimited hours for usage on public repos. Contributors to your project are provided with a generous free plan for up to 50h a month, including private repos. For projects that run their own infrastructure complimentary <a href='https://www.gitpod.io/self-hosted'>Gitpod Self-Hosted</a> licenses are also available.",
+    text: "Maintainers get unlimited hours for usage on public repos. Contributors to your project are provided with a generous free plan for up to 50h a month, including private repos. For projects that run their own infrastructure complimentary <a href='/self-hosted'>Gitpod Self-Hosted</a> licenses are also available.",
   },
   {
     icon: {
@@ -105,7 +105,7 @@ export const programBenefits: Card[] = [
       transform: "scale(0.8)",
     },
     title: "Special treats",
-    text: "If your open-source software appears in our bill of materials then Gitpod would like to unconditionally <a href='https://github.com/moby/buildkit/issues/2525'>shout you some beers</a> <a href='https://www.gitpod.io/blog/devxconf-wrap'>or more</a> as our way of saying thank-you.",
+    text: "If your open-source software appears in our bill of materials then Gitpod would like to unconditionally <a href='https://github.com/moby/buildkit/issues/2525'>shout you some beers</a> <a href='/blog/devxconf-wrap'>or more</a> as our way of saying thank-you.",
   },
   {
     icon: {
@@ -114,7 +114,7 @@ export const programBenefits: Card[] = [
       transform: "scale(1.6) translateY(3px)",
     },
     title: "Personal onboarding",
-    text: "We are here to help you with getting started and can provide ongoing support for maintaining the <a href='https://www.gitpod.io/docs/references/gitpod-yml'>.gitpod.yml</a> if you want.",
+    text: "We are here to help you with getting started and can provide ongoing support for maintaining the <a href='/docs/references/gitpod-yml'>.gitpod.yml</a> if you want.",
   },
 ];
 

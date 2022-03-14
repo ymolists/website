@@ -9,7 +9,7 @@ title: PyCharm
 
 # {title}
 
-> **Please note:** JetBrains PyCharm Desktop is currently in beta. If you experience any issues, or have feedback, please [get in touch](https://www.gitpod.io/support).
+> **Please note:** JetBrains PyCharm Desktop is currently in beta. If you experience any issues, or have feedback, please [get in touch](/support).
 
 ### Getting Start with PyCharm Desktop in Gitpod
 
