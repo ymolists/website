@@ -19,7 +19,7 @@
       target="_blank">@devxconf</a
     > on Twitter to stay updated.
   </p>
-  <div class="flex justify-center items-center flex-wrap space-x-4 mt-x-small">
+  <div class="flex justify-center items-center flex-wrap gap-4 mt-x-small">
     <LinkButton
       variant="primary"
       size="medium"
