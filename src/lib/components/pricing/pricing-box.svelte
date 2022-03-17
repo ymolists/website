@@ -2,6 +2,7 @@
   import type { Pricing } from "$lib/types/pricing.type";
   import QaTooltip from "../qa-tooltip.svelte";
   import LinkButton from "$lib/components/ui-library/link-button";
+  import Card from "$lib/components/ui-library/card";
 
   export let pricing: Pricing;
   const {
@@ -19,15 +20,6 @@
 </script>
 
 <style lang="postcss">
-  .box {
-    width: 295px;
-    padding-bottom: 85px;
-
-    @media (max-width: 375px) {
-      @apply w-full;
-    }
-  }
-
   .h1 {
     margin-bottom: 0.25rem;
   }
@@ -57,8 +49,9 @@
   }
 </style>
 
-<div
-  class={`box flex flex-col justify-between items-center bg-gray-100 pt-small px-0 mt-0 mx-macro 2xl:mx-micro mb-x-small rounded-2xl shadow-normal text-center transition-all duration-200 hover:shadow-brand ${
+<Card
+  size="small"
+  class={`box flex w-full sm:w-[295px] sm:pb-20 flex-col justify-between items-center bg-gray-100 pt-small px-0 mt-0 mx-macro 2xl:mx-micro mb-x-small  text-center transition-all duration-200 hover:shadow-brand ${
     spiced ? "spiced shadow-brand" : ""
   }`}
 >
@@ -107,4 +100,4 @@
   {#if footnote}
     <div class="text-p-xsmall px-small text-gray-800">{footnote}</div>
   {/if}
-</div>
+</Card>

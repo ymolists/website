@@ -1,6 +1,7 @@
 <script lang="ts">
   import FeatureTableItemMobile from "./feature-table-item-mobile.svelte";
   import LinkButton from "$lib/components/ui-library/link-button";
+  import Card from "$lib/components/ui-library/card";
   import FeatureTableHeaderMobile from "./feature-table-header-mobile.svelte";
   import type { FeatureTableColumn } from "../feature-table.types";
 
@@ -11,7 +12,7 @@
   let isShown: boolean = false;
 </script>
 
-<div class="p-x-small bg-off-white {shadow} rounded-3xl max-w-[400px] mx-auto">
+<Card size="small" class="p-x-small  {shadow}  max-w-[400px] mx-auto">
   <FeatureTableHeaderMobile headerData={featureData.header} bind:isShown>
     {#if isShown}
       <section
@@ -33,4 +34,4 @@
       </section>
     {/if}
   </FeatureTableHeaderMobile>
-</div>
+</Card>

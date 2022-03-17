@@ -11,6 +11,7 @@
   import { afterUpdate } from "svelte";
   import { trackEvent } from "./segment.svelte";
   import Share from "./share.svelte";
+  import Card from "$lib/components/ui-library/card";
 
   export let embedId: string;
   export let title: string;
@@ -86,8 +87,8 @@
   ];
 </script>
 
-<style>
-  .youtube {
+<style lang="postcss">
+  div :global(.youtube) {
     position: relative;
     overflow: hidden;
     max-width: 100%;
@@ -95,13 +96,12 @@
     margin: auto;
   }
 
-  .youtube,
-  .youtube + :global(div) {
+  div :global(.youtube) {
     width: 990px;
     max-width: 100%;
   }
 
-  .youtube::after {
+  div :global(.youtube::after) {
     display: block;
     content: "";
     padding-top: 56.25%;
@@ -117,17 +117,19 @@
   }
 </style>
 
-<div class="youtube rounded-2xl shadow-light1">
-  <iframe
-    id={randomId}
-    src={`https://www.youtube.com/embed/${embedId}?enablejsapi=1`}
-    {title}
-    width="560"
-    height="315"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  />
+<div>
+  <Card size="small" class="youtube">
+    <iframe
+      id={randomId}
+      src={`https://www.youtube.com/embed/${embedId}?enablejsapi=1`}
+      {title}
+      width="560"
+      height="315"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    />
+  </Card>
 </div>
 <Share
   text="Share this video"
