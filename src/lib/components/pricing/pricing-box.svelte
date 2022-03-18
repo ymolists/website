@@ -51,11 +51,11 @@
 
 <Card
   size="small"
-  class={`box flex w-full sm:w-[295px] sm:pb-20 flex-col justify-between items-center bg-gray-100 pt-small px-0 mt-0 mx-macro 2xl:mx-micro mb-x-small  text-center transition-all duration-200 hover:shadow-brand ${
+  class={`box flex w-full sm:w-[295px] gap-small py-small flex-col justify-between items-center bg-gray-100 px-0 mt-0 mx-macro 2xl:mx-micro mb-x-small  text-center transition-all duration-200 hover:shadow-brand ${
     spiced ? "spiced shadow-brand" : ""
   }`}
 >
-  <div class="min-h-full flex flex-col">
+  <div class="flex flex-col">
     <h2 class="h4">{title}</h2>
     <div class="h1 font-bold text-black flex items-center justify-center">
       {@html price}
