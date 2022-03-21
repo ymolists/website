@@ -22,7 +22,7 @@
   <img
     src="/svg/heart.svg"
     alt="Heart"
-    class="absolute -top-16 left-1/2 -translate-x-1/2 h-10"
+    class="h-10 mx-auto mb-micro"
     slot="top"
   />
   <div class="mt-x-large" slot="content">
