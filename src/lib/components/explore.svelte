@@ -3,6 +3,7 @@
   import Card from "$lib/components/ui-library/card";
   import LinkButton from "$lib/components/ui-library/link-button";
   import type { ExploreSection } from "$lib/types/explore-section.type";
+  import ButtonsWrapper from "./buttons-wrapper.svelte";
 
   export let contents: ExploreSection = {};
 
@@ -111,9 +112,7 @@
           {note}
         </p>
       {/if}
-      <div
-        class="flex flex-wrap gap-4 justify-center pb-small sm:justify-start sm:pb-micro md:pb-0"
-      >
+      <ButtonsWrapper class="pb-small sm:pb-micro md:pb-0">
         <LinkButton
           size="large"
           variant="primary"
@@ -130,7 +129,7 @@
             >{secondaryLink.text}</LinkButton
           >
         {/if}
-      </div>
+      </ButtonsWrapper>
     </div>
     <div
       class="explore__illustration w-full bg-cover bg-left"
