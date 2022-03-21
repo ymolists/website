@@ -20,6 +20,13 @@
 </script>
 
 <style lang="postcss">
+  :global(section) :global(.explore) {
+    @media (max-width: 830px) {
+      @apply flex-col mx-auto;
+      max-width: 345px;
+    }
+  }
+
   .h1 {
     @apply mb-micro;
 
@@ -93,7 +100,7 @@
 </style>
 
 <Section>
-  <Card size="medium" class="flex xl:items-center max-w-none text-left">
+  <Card size="medium" class="flex xl:items-center max-w-none text-left explore">
     <div class="explore__text md:py-medium xl:py-0">
       <h2 class="h1">{@html title}</h2>
       <p class="explore__paragraph text-p-large">
