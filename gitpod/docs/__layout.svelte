@@ -11,7 +11,7 @@
     <Menu {MENU} />
   </div>
   <div class="lg:w-3/4 lg:pl-4">
-    <Search />
+    <Search showEditInGitpod={true} />
     <MobileMenu {MENU} />
     <slot />
   </div>

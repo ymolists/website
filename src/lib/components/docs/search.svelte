@@ -22,6 +22,7 @@
   export let containerClasses = "";
   export let iconClasses = "";
   export let placeholder = "Quick search";
+  export let showEditInGitpod: boolean = false;
 
   const docSearchJSVersion = "2.6.3";
   const docSearchInputSelector = "search-doc-input";
@@ -61,12 +62,12 @@
 </script>
 
 <style lang="postcss">
-  .gitpod-button:not(.topics-active) {
-    @apply hidden sm:block;
+  .narrow-search {
+    @apply lg:w-3/4;
   }
 
   .input-container:not(.topics-active) {
-    @apply hidden sm:block;
+    @apply hidden lg:block;
   }
 
   :global(.algolia-autocomplete) {
@@ -98,8 +99,8 @@
 
 <svelte:body on:keydown={handleBodyKeyDown} />
 
-<div class="lg:flex hidden items-center my-4 sm:my-0 sm:mb-12">
-  <div class="sm:w-3/4 w-full sm:px-4">
+<div class="items-center flex my-4 lg:my-0  lg:mb-12">
+  <div class:narrow-search={showEditInGitpod} class="w-full sm:px-4">
     <div
       class={`w-full input-container relative ${
         $topicsState || isSupportPage ? "topics-active" : ""
@@ -121,12 +122,14 @@
       />
     </div>
   </div>
-  <div
-    class="w-1/4 sm:flex hidden justify-start sm:pl-4 lg:pl-8  {$topicsState ||
-    isSupportPage
-      ? 'topics-active'
-      : ''}"
-  >
-    <EditInGitpod />
-  </div>
+  {#if showEditInGitpod}
+    <div
+      class="w-1/4 lg:flex hidden justify-start sm:pl-4 lg:pl-8  {$topicsState ||
+      isSupportPage
+        ? 'topics-active'
+        : ''}"
+    >
+      <EditInGitpod />
+    </div>
+  {/if}
 </div>
