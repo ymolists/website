@@ -23,7 +23,7 @@ As usual, in today’s newsletter, we’ll be sharing some of our key takeaways 
 ![DevX Podcast Episode ](../../../static/images/blog/devx-with-chris/podcast.png)
 _DevX Pod is avaliable wherever you get your podcasts!_
 
-### Key Takeaways
+## Key Takeaways
 
 Before joining Gitpod as employee #2, Chris worked at an IT startup that came out of Bosch as a System Architect for a couple of year. He also did a PhD on Human Computer Interaction. Today, he’s Gitpod’s CTO.
 
@@ -37,7 +37,7 @@ Looking ahead, Chris compared DevX to CI/CD. In a similar fashion, in a few year
 
 _“If you're building a product that is aimed at developers. Or even remotely touches on developers! You'll need to provide good developer experience for that too, because otherwise it will be a hurdle for people to adopt your product.”_
 
-### DevX Digest is community-driven
+## DevX Digest is community-driven
 
 Another thing about Gitpodders is that we’re all driven by community feedback, and this newsletter is no exception! Please send us your thoughts, feedback and help us navigate this conversation. We may even feature some of your takes and comments in future newsletters!
 
