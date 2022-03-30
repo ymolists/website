@@ -13,7 +13,7 @@
     note = "",
     link = {
       text: "Try Now",
-      href: "/#get-started",
+      href: "https://gitpod.io/workspaces",
     },
     secondaryLink,
     useKumquatIllustration = false,

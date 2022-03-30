@@ -28,7 +28,7 @@ export const pricingPlans: Pricing[] = [
       },
     ],
     btnText: "Try Now",
-    btnHref: "/#get-started",
+    btnHref: "https://gitpod.io/workspaces/",
     trackingName: "free",
   },
   {
@@ -113,7 +113,7 @@ export const empowermentFeatures: Card[] = [
 
 export const freePlanTableData: FeatureTableColumn = {
   link: {
-    href: "/#get-started",
+    href: "https://gitpod.io/workspaces",
     label: "Try now",
   },
   header: {

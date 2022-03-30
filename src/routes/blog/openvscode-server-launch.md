@@ -72,7 +72,7 @@ A big thank you to all our engineers involved in making this happen, specificall
 
 Gitpod is all about removing friction from the developer experience by provisioning and orchestrating [automated, ephemeral developer environments](/blog/cloud-based-development-for-everyone#ephemeral-developer-environments) for you and your team. An IDE is just one building block of a working cloud based developer environment, in addition to the operating system, databases, compilers and all the other tools you need to be productive. At Gitpod we want to support the IDE or editor you like best, and providing VS Code through the web browser is just one possibility. Alternatively, you can access your Gitpod workspaces [through SSH](/blog/local-app), [local VS Code](/docs/ides-and-editors/vscode) and soon your favorite Jetbrains IDEs.
 
-- If you want one-click, fully automated developer environments that give yourself and your team an unparalleled productivity boost try [Gitpod](/#get-started).
+- If you want one-click, fully automated developer environments that give yourself and your team an unparalleled productivity boost try [Gitpod](https://gitpod.io/workspaces/).
 
 - If you have a machine somewhere which you would like to access with VS Code through a browser, check out [OpenVSCode Server](https://github.com/gitpod-io/openvscode-server/).
 
