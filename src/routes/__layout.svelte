@@ -31,6 +31,7 @@
   import CookieConsent from "$lib/components/banners/cookie-consent.svelte";
   import { key } from "$lib/components/banners/announcement.svelte";
   import type { BannerData } from "$lib/types/banner.type";
+  import { removeTrailingSlash } from "$lib/utils/helpers";
 
   export let bannerData: BannerData;
 
@@ -65,6 +66,13 @@
     scroll-padding-top: 6rem;
   }
 </style>
+
+<svelte:head
+  ><link
+    rel="canonical"
+    href={removeTrailingSlash(`https://www.gitpod.io${$page.url.pathname}`)}
+  /></svelte:head
+>
 
 <LayoutRoot>
   <Nav />

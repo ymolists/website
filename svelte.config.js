@@ -17,6 +17,7 @@ const config = {
   extensions: [".svelte", ".md"],
 
   kit: {
+    trailingSlash: "never",
     adapter: adapterNetlify({
       split: true,
     }),

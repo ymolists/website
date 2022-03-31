@@ -1,4 +1,5 @@
 import type { RequestHandler } from "@sveltejs/kit";
+import { removeTrailingSlash } from "$lib/utils/helpers";
 
 export const get: RequestHandler = async () => {
   const website = "https://www.gitpod.io";
@@ -27,8 +28,10 @@ export const get: RequestHandler = async () => {
   xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
   xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
 >
-<url> <loc>${website}/</loc></url>
-${staticPages.map((page) => `<url><loc>${page}</loc></url>`).join("")}
+<url><loc>${removeTrailingSlash(website)}</loc></url>
+${staticPages
+  .map((page) => `<url><loc>${removeTrailingSlash(page)}</loc></url>`)
+  .join("")}
 
 </urlset>`;
   return {

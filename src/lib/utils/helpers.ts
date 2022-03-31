@@ -39,3 +39,7 @@ export const scrollToElement = async (
   });
 };
 export const isAnExternalLink = (href: string) => href.startsWith("http");
+
+export const removeTrailingSlash = (site: string) => {
+  return site.replace(/\/$/, "");
+};
