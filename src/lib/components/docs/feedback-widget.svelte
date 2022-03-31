@@ -51,6 +51,10 @@
   .selected {
     @apply grayscale-0 scale-150;
   }
+
+  .link {
+    @apply underline;
+  }
 </style>
 
 <div class={clazz}>
@@ -99,6 +103,12 @@
               class="mb-0"
             />
             <div>
+              <p class="text-sm my-4">
+                By submitting this form I acknowledge that I have read and
+                understood <a class="link" href="/privacy"
+                  >Gitpod’s Privacy Policy.</a
+                >
+              </p>
               <span>
                 <Button
                   variant="primary"

@@ -90,6 +90,9 @@
   form li {
     @apply mb-0;
   }
+  .link {
+    @apply underline;
+  }
 
   fieldset {
     display: flex;
@@ -189,10 +192,15 @@
         />
       </li>
       <li>
+        <p class="text-sm my-4">
+          By submitting this form I acknowledge that I have read and understood <a
+            class="link"
+            href="/privacy">Gitpod’s Privacy Policy.</a
+          >
+        </p>
         <Button
           variant="cta"
           size="large"
-          class="mt-x-small"
           disabled={(isFormDirty && !isFormValid) || isFeedbackSent}
           type="submit">Send</Button
         >

@@ -16,6 +16,7 @@
   import type { Email } from "../functions/submit-form";
   import Header from "$lib/components/header.svelte";
   import { noOfEngineers } from "$lib/contents/contact";
+  import Checkbox from "$lib/components/ui-library/checkbox";
   import { tick } from "svelte";
   import { scrollToElement } from "../lib/utils/helpers";
 
@@ -24,6 +25,11 @@
       el: null,
       valid: false,
       value: "",
+    },
+    consent: {
+      el: null,
+      valid: false,
+      checked: false,
     },
     lastName: {
       el: null,
@@ -111,6 +117,10 @@
 <style lang="postcss">
   .title:not(:first-child) {
     margin-top: var(--medium);
+  }
+
+  .link {
+    @apply underline;
   }
 </style>
 
@@ -246,7 +256,25 @@
         name="message"
         id="message"
       />
+      <div class="my-4">
+        <Checkbox
+          hasError={isFormDirty && !formData.country.valid}
+          label="I consent to having this website store my submitted information so that the sales team can respond to my inquiry."
+          bind:checked={formData.consent.checked}
+          bind:element={formData.consent.el}
+          on:change={() => {
+            formData.consent.valid =
+              formData.consent.checked && formData.consent.el.validity.valid;
+          }}
+        />
+      </div>
       <div class="mt-4">
+        <p class="text-sm my-4">
+          By submitting this form I acknowledge that I have read and understood <a
+            class="link"
+            href="/privacy">Gitpod’s Privacy Policy.</a
+          >
+        </p>
         <Button
           variant="primary"
           size="large"

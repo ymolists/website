@@ -131,6 +131,9 @@
   .h3 {
     @apply mb-small;
   }
+  .link {
+    @apply underline;
+  }
 
   p {
     color: var(--dark-grey);
@@ -275,6 +278,12 @@
               />
             </li>
             <li>
+              <p class="text-sm my-4">
+                By submitting this form I acknowledge that I have read and
+                understood <a class="link" href="/privacy"
+                  >Gitpod’s Privacy Policy.</a
+                >
+              </p>
               <Button
                 variant="cta"
                 size="medium"
