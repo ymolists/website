@@ -164,6 +164,15 @@
     //props that were passed directly to the event target take precedence over those passed to ancestor elements, which take precedence over those implicitly determined.
     trackingMsg = { ...trackingMsg, ...ancestorProps, ...passedProps };
 
+    //"signup" context always takes preferences over others (relevant for marketing attribution)
+    if (
+      !Cookies.get("gitpod-user") &&
+      target instanceof HTMLAnchorElement &&
+      (target as HTMLAnchorElement).href.startsWith("https://gitpod.io/")
+    ) {
+      trackingMsg.context = "signup";
+    }
+
     //if dnt was passed to event target or any ancestor, no track call is done
     if (trackingMsg.dnt) {
       return;

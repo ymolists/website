@@ -34,7 +34,7 @@
 <p class="max-w-md mx-auto">
   Select a Git provider to start with an existing project from any Git context.
 </p>
-<div class="buttons space-y-4" data-analytics={`{"context":"signup"}`}>
+<div class="buttons space-y-4">
   <LinkButton
     href="https://gitpod.io/workspaces/"
     variant="unstyled"
