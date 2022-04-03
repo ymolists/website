@@ -26,7 +26,7 @@ There are two .gitpod.yml configuration keys, to support multi-repo workspaces.
 
 Consider a fullstack scenerio, with a frontend and a backend repository. In this case we chose the frontend repo to store the main Gitpod workspace configuration.
 
-The 'additionalRepositories' list contains an entry with the `url` of the backend repo, which will be cloned at the same directory level as the frontend repo. An optional `checkoutLocation` can override that path, relative to '/workspace'.
+The `additionalRepositories` list contains an entry with the `url` of the backend repo, which will be cloned at the same directory level as the frontend repo, i.e. at `/workspace`. An optional `checkoutLocation` can override that path, relative to `/workspace`.
 
 If you open a workspace on a branch, Gitpod will try to check out the same-named branch in all repositories. If such a branch doesn’t exist Gitpod checks out the default branch.
 
