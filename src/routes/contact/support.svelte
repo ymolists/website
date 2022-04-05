@@ -154,7 +154,7 @@
 <OpenGraph
   data={{
     description:
-      "Need help with any question or issue? Please get in contact and we’ll get onto it right away.",
+      "Do you need help with any question or issue? Please get in contact with us and we’ll get onto it right away.",
     title: "Contact Support",
   }}
 />

@@ -20,7 +20,8 @@
 
 <OpenGraph
   data={{
-    description: "On a mission to make developers' lives easier!",
+    description:
+      "Open source developer platform. Originally from Kiel now fully-remote from all around the globe. On a mission to make developers' lives easier!",
     title: "About Gitpod",
   }}
 />
