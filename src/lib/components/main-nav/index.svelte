@@ -94,7 +94,11 @@
   }
 
   button {
-    @apply outline-none;
+    @apply outline-none py-2;
+
+    @media (min-width: 1090px) {
+      @apply py-1;
+    }
   }
 
   button::-moz-focus-inner {

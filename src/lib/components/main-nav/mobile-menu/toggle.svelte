@@ -14,7 +14,7 @@
 </script>
 
 <style lang="postcss">
-  button {
+  div {
     &::before,
     &::after {
       content: "";
@@ -47,11 +47,11 @@
   }
 </style>
 
-<button
-  on:click={handleToggle}
-  aria-label="Show / hide nav items"
-  class="flex flex-col items-center justify-center h-6 w-12 rounded-xl transition-all duration-200 {$menuState
-    ? 'bg-sand-dark'
-    : 'bg-black'}"
-  class:open={$menuState}
-/>
+<button on:click={handleToggle} aria-label="Show / hide nav items" class="py-3">
+  <div
+    class="flex flex-col items-center justify-center h-6 w-12 rounded-xl transition-all duration-200 {$menuState
+      ? 'bg-sand-dark'
+      : 'bg-black'}"
+    class:open={$menuState}
+  />
+</button>
