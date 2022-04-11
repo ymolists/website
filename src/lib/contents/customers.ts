@@ -22,7 +22,7 @@ export const quotes: Quote[] = [
     author: "François Ruty",
     jobTitle: "CTO at Shares.io",
     companyLogo: {
-      src: "/images/customers/shares-io/shares-io.png",
+      src: "/images/customers/shares-io/shares-io.svg",
       alt: "Shares.io",
     },
     img: {
@@ -56,7 +56,7 @@ export const quotes: Quote[] = [
     author: "Tom Preston-Werner",
     jobTitle: "Founder of GitHub & Redwood, former CEO of GitHub",
     companyLogo: {
-      src: "/images/customers/redwoodjs/logo.png",
+      src: "/images/customers/redwoodjs/logo.svg",
       alt: "Redwoodjs",
     },
     img: {
