@@ -24,7 +24,6 @@
   const subjects = [
     "Question",
     "Issue",
-    "Abuse Report",
     "Billing",
     studentUnlimitedSubject,
     "Self-hosting Gitpod",
@@ -145,11 +144,10 @@
     margin: auto;
   }
   fieldset ul {
-    display: flex;
-    flex-flow: wrap;
+    @apply flex flex-wrap;
   }
   fieldset li {
-    margin: 0 1rem 0 0;
+    @apply mr-macro;
   }
 </style>
 
