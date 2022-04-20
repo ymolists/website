@@ -8,6 +8,10 @@ image: header.jpg
 teaserImage: header.jpg
 ---
 
+<script context="module">
+  export const prerender = true;
+</script>
+
 Developer experience is sometimes about making big changes, such as migrating to a new industry-defining tool or technology. But sometimes developer experience is about paying attention to the little things. Taking actions that we do as developers every day, and making them quicker, easier and removing friction.
 
 Recently, we shipped a feature on Gitpod that we’re excited to share with you, and we hope that it brings some more joy to your developer experience with Gitpod.
