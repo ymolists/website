@@ -26,11 +26,12 @@
     let:closeBanner
     class="announcement-banner"
   >
-    <span class="flex-1 text-lg text-right">🤝 </span>
+    <span class="flex-1 text-lg text-right">📣 </span>
     <p class="flex-2 px-4 md:px-2">
-      Gitpod x JetBrains join forces to solve 'works on my machine' problem | <a
-        href="/vs/jetbrains-space"
-        on:click={closeBanner}>View announcement</a
+      DevX Conf - Bring back joy and speed to our workflows. | <a
+        href="https://devxconf.org/"
+        target="_blank"
+        on:click={closeBanner}>Explore</a
       >
     </p>
     <div class="flex-1 flex justify-end">
