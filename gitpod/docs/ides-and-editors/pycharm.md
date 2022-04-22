@@ -21,8 +21,23 @@ Gitpod enables code editing using JetBrains {title} currently via [JetBrains Gat
 4. **Start (or restart) your workspace** - Either start a workspace directly from within the [JetBrains Gateway](jetbrains-gateway) via the Gitpod plugin **OR** open a new workspace direclty in Gitpod where on workspace start you will be prompted to open {title} for that workspace.
 
 <figure>
-    <img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Selecting PyCharm in the preferences" src="/images/editors/pycharm.gif">
-    <figcaption>Updating Gitpod IDE preferences to PyCharm</figcaption>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Updating Gitpod IDE preferences to {title}" src="/images/editors/select-jetbrains-ide.gif">
+    <figcaption>Updating Gitpod IDE preferences to {title}</figcaption>
+</figure>
+
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Opening a JetBrains IDE from Gitpod" src="/images/editors/opening-the-thin-jetbrains-client.gif">
+    <figcaption>Opening a JetBrains IDE from Gitpod</figcaption>
+</figure>
+
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Updating the Gitpod plugin in JetBrains Gateway" src="/images/editors/update-jetbrains-gateway-settings.gif">
+    <figcaption>Updating the Gitpod plugin in JetBrains Gateway</figcaption>
+</figure>
+
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Opening a JetBrains IDE from Gateway" src="/images/editors/open-from-jetbrains-gateway.gif">
+    <figcaption>Opening a JetBrains IDE from Gateway</figcaption>
 </figure>
 
 **Important:** You must restart any started workspaces for your IDE preferences to take effect.

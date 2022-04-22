@@ -36,10 +36,10 @@ Currently, there are five ways to connect an IDE, editor or command-line session
 
 ### Supported IDE/editors
 
-- [GoLand](ides-and-editors/goland)
-- [IntelliJ](ides-and-editors/intellij)
-- [PhpStorm](ides-and-editors/phpstorm)
-- [PyCharm](ides-and-editors/pycharm)
 - [VS Code Browser](ides-and-editors/vscode-browser)
 - [VS Code Desktop](ides-and-editors/vscode)
+- [IntelliJ](ides-and-editors/intellij)
+- [GoLand](ides-and-editors/goland)
+- [PhpStorm](ides-and-editors/phpstorm)
+- [PyCharm](ides-and-editors/pycharm)
 - [Command Line (e.g. Vim)](ides-and-editors/command-line)

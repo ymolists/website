@@ -56,12 +56,12 @@ export const MENU: MenuEntry[] = [
     M("JetBrains Gateway", "ides-and-editors/jetbrains-gateway", []),
     M("VS Code Extensions", "ides-and-editors/vscode-extensions"),
     M("Command Line (e.g. Vim)", "ides-and-editors/command-line", []),
-
     M(
       "Configure your IDE/editor",
       "ides-and-editors/configure-your-editor-ide",
       []
     ),
+    M("FAQs", "ides-and-editors/faqs", []),
   ]),
   M("Integrations", "integrations", [
     M("GitLab", "gitlab-integration"),

@@ -38,7 +38,7 @@ You can also copy/paste your SSH access from the workspace start page, which is 
     <figcaption>Copy pasting the SSH command from the workspace start page</figcaption>
 </figure>
 
-**Note:** SSH authentication is provided using a shared workspace token that is refreshed on each workspace state. So, as always, be careful where you copy/paste the link.
+**Note:** SSH authentication is provided using a shared workspace token that is refreshed on each workspace start. So, as always, be careful where you copy/paste the link.
 
 If you're one of our many users who lives in the [command-line](/docs/ides-and-editors/command-line), rather than in [an editor or IDE](/docs/ides-and-editors), you can also combine SSH copy/paste access to Gitpod workspaces with Gitpod features like [dotfiles](https://www.gitpod.io/docs/config-dotfiles), to get your workflow running just the way that you like it.
 

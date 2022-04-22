@@ -18,9 +18,58 @@ Using JetBrains Gateway on Desktop with Gitpod, allows you to:
 
 All without leaving needing to leave your desktop.
 
+JetBrains Gateway is the underlying technology for the Gitpod JetBrains IDE support of:
+
+- [IntelliJ](/docs/ides-and-editors/intellij)
+- [GoLand](/docs/ides-and-editors/goland)
+- [PhpStorm](/docs/ides-and-editors/phpstorm)
+- [PyCharm](/docs/ides-and-editors/pycharm)
+
 ## Getting Started
 
 1. **Install [JetBrains Gateway](https://www.jetbrains.com/help/idea/remote-development-a.html#gateway)** - With the [JetBrains Gateway and Gitpod](jetbrains-gateway) plugin you can create and manage your latest 20 Gitpod workspaces.
 2. **Install the Gitpod plugin** - Navigate to the JetBrains Gateway preferences page and select the plugins tab to search and install the [Gitpod plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway).
 3. **Update your Gitpod preferences** - Select your preferred JetBrains IDE on the [Gitpod preferences page](https://gitpod.io/preferences) which will set your default Desktop IDE for future workspace starts.
 4. **Start (or restart) your workspace** - Either start a workspace directly from within the [JetBrains Gateway](jetbrains-gateway) via the Gitpod plugin **OR** open a new workspace direclty in Gitpod where on workspace start you will be prompted to open your preferred JetBrains IDE for that workspace.
+
+### How does JetBrains and Gitpod work?
+
+On Gitpod workspace start, a JetBrains IDE is loaded into your workspace according to your preferences. When you start a workspace the JetBrains Gateway application downloads a thin client which then connects to your Gitpod workspace.
+
+Since [JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/) downloads the thin client for you, **you do not need to download, open or modify your JetBrains IDE directly**. JetBrains licensing still applies, but is applied to the connecting thin client, not the backend running in your Gitpod workspace.
+
+### Setting a JetBrains IDE as a preference
+
+To start a workspace using JetBrains from your browser, you need to first set your preferred JetBrains IDE as your user preference.
+
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Updating Gitpod IDE preferences to a JetBrains IDE" src="/images/editors/select-jetbrains-ide.gif">
+    <figcaption>Updating Gitpod IDE preferences to a JetBrains IDE</figcaption>
+</figure>
+
+### Opening a JetBrains IDE from Gitpod
+
+When starting a new workspace from Gitpod in the browser (with a JetBrains IDE set as your preference) you will see a prompt to open JetBrains Gateway. Clicking the prompt will immediately launch JetBrains Gateway and begin downloading the IDE thin client. The downloaded thin client will exactly match the IDE running in your Gitpod workspace.
+
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Opening JetBrains Gateway from Gitpod" src="/images/editors/opening-the-thin-jetbrains-client.gif">
+    <figcaption>Opening JetBrains Gateway from Gitpod</figcaption>
+</figure>
+
+### Updating the Gitpod plugin in JetBrains Gateway
+
+Since Gitpod and JetBrains works via JetBrains Gateway, you do not need to download a JetBrains IDE. Also, **you do not need to alter your plugin settings in your JetBrains IDE**. All setup and configuration for Gitpod and JetBrains is completed within JetBrains Gateway.
+
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Updating the Gitpod plugin in JetBrains Gateway" src="/images/editors/update-jetbrains-gateway-settings.gif">
+    <figcaption>Updating the Gitpod plugin in JetBrains Gateway</figcaption>
+</figure>
+
+### Opening a JetBrains IDE from JetBrains Gateway
+
+You can also start, and connect to Gitpod workspaces directly from JetBrains Gateway. Click Gitpod in the left-hand side of JetBrains Gateway, and paste a source control context URL directly to start a new workspace, or click connect on a running or stopped workspace.
+
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Opening a JetBrains IDE from Gateway" src="/images/editors/open-from-jetbrains-gateway.gif">
+    <figcaption>Opening a JetBrains IDE from Gateway</figcaption>
+</figure>
