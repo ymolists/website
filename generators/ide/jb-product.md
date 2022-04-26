@@ -1,6 +1,6 @@
 ---
 section: ides-and-editors
-title: PhpStorm
+title: { productTitle }
 ---
 
 <!--

@@ -1,7 +1,12 @@
 ---
 section: ides-and-editors
-title: IntelliJ
+title: IntelliJ IDEA
 ---
+
+<!--
+  This document is auto generated from generators/ide/jb-product.md
+  Edit this file instead and run `yarn generate:jb`to apply.
+-->
 
 <script context="module">
   export const prerender = true;

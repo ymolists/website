@@ -3,6 +3,11 @@ section: ides-and-editors
 title: GoLand
 ---
 
+<!--
+  This document is auto generated from generators/ide/jb-product.md
+  Edit this file instead and run `yarn generate:jb`to apply.
+-->
+
 <script context="module">
   export const prerender = true;
 </script>

@@ -27,6 +27,7 @@
     "validate": "svelte-check",
     "prepare": "husky install",
     "generate:blog-post": "plop --plopfile ./generators/index.cjs blog-post",
+    "generate:jb": "node ./generators/ide/jb-gen.js",
     "cypress:open": "cypress open --browser firefox",
     "test:e2e": "cypress run --headless --browser firefox"
   },

@@ -3,6 +3,11 @@ section: ides-and-editors
 title: PyCharm
 ---
 
+<!--
+  This document is auto generated from generators/ide/jb-product.md
+  Edit this file instead and run `yarn generate:jb`to apply.
+-->
+
 <script context="module">
   export const prerender = true;
 </script>
@@ -11,7 +16,7 @@ title: PyCharm
 
 Gitpod enables code editing using JetBrains {title} currently via [JetBrains Gateway](jetbrains-gateway).
 
-> **Please note:** JetBrains PyCharm Desktop is currently in beta. If you experience any issues, or have feedback, please [get in touch](/contact/support).
+> **Please note:** JetBrains {title} Desktop is currently in beta. If you experience any issues, or have feedback, please [get in touch](/contact/support).
 
 ### Getting Started
 
