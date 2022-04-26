@@ -11,12 +11,13 @@ title: Troubleshooting
 
 If you cannot find your issue here or in the documentation, please contact Gitpod via our [Support page](/support).
 
-## Gitpod logs in VS Code Web
+## Gitpod logs in VS Code Web and Desktop
 
 These logs contain information about the workspace, the session, and the Visual Studio Code environment. They are useful for diagnosing connection issues and other unexpected behavior.
 
-- Open the Visual Studio Code Command Palette (<kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>P</kbd> (Mac) / <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Windows)) and type **Export logs**, select **Developer: Export all logs** from the list to download a zip file containing all of the logs.
-  **Important:** The content of these logs should **NOT** be shared publicly as they could contain sensitive information about your workspace. Instead, send them to support@gitpod.io along with a link to a corresponding GitHub issue if needed.
+- Open the Visual Studio Code Command Palette (<kbd>Shift</kbd> + <kbd>Command</kbd> + <kbd>P</kbd> (Mac) / <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Windows)) and type **Export logs**, select **Gitpod: Export all logs** from the list to download a zip file containing all of the logs.
+
+**Important:** The content of these logs should **NOT** be shared publicly as they could contain sensitive information about your workspace. Instead, send them to support@gitpod.io along with a link to a corresponding GitHub issue if needed.
 
 ## Why doesn't the "ClearURLs" browser extension work with Gitpod?
 
