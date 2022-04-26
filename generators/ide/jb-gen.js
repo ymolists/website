@@ -13,15 +13,19 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const products = new Map();
 products.set("intellij", {
   productTitle: "IntelliJ IDEA",
+  productDocCode: "idea",
 });
 products.set("goland", {
   productTitle: "GoLand",
+  productDocCode: "go",
 });
 products.set("phpstorm", {
   productTitle: "PhpStorm",
+  productDocCode: "phpstorm",
 });
 products.set("pycharm", {
   productTitle: "PyCharm",
+  productDocCode: "pycharm",
 });
 
 for (const [id, parameters] of products) {
