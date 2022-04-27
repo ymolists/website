@@ -108,3 +108,31 @@ You can find **pluginId** on the [JetBrains Marketplace](https://plugins.jetbrai
 #### Install for your user
 
 It is not yet possible to install plugins on **{title} backend** for your user to share across all your Gitpod workspaces.
+
+## Indexing using Prebuilds
+
+> **Please note:** This feature is currently experimental and is a subject to change. [Send feedback](https://github.com/gitpod-io/gitpod/issues/6740).
+
+When you open the project {title} starts indexing to load modules and
+enable the core functionality like code completion and navigation.
+Depending on the size of your project indexing speed can vary significantly.
+
+You can speed up the indexing of a project by applying these [general recommendations](https://www.jetbrains.com/help/go/indexing.html).
+Gitpod prebuilds allow you to improve it further by indexing before you start a new workspace.
+
+To leverage it:
+
+- configure prebuilds for your repository, refer to [Prebuilds](/docs/prebuilds);
+- enable indexing for {title} in prebuilds by editing [.gitpod.yml](/docs/config-gitpod-file) in your repository:
+
+```yaml
+jetbrains:
+  pycharm:
+    prebuilds:
+      version: stable
+```
+
+- push changes to your Git repository to apply.
+
+The `version` property allows you to control whether to index for `stable`, `latest`, or `both` versions of {title} compatible with Gitpod.
+Users can switch between `stable` and `latest` versions of {title} on the [user preferences](https://gitpod.io/preferences) page.
