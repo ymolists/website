@@ -30,9 +30,9 @@ products.set("pycharm", {
 
 for (const [id, parameters] of products) {
   let content = fs.readFileSync(path.join(__dirname, "jb-product.md"), "utf-8");
-  content = content.replace(/{productId}/gi, parameters["productId"] || id);
+  content = content.replace(/__productId__/gi, parameters["productId"] || id);
   for (const key in parameters) {
-    content = content.replace(new RegExp(`{${key}}`, "gi"), parameters[key]);
+    content = content.replace(new RegExp(`__${key}__`, "gi"), parameters[key]);
   }
   fs.writeFileSync(
     path.join(__dirname, `../../gitpod/docs/ides-and-editors/${id}.md`),

@@ -1,6 +1,6 @@
 ---
 section: ides-and-editors
-title: { productTitle }
+title: __productTitle__
 ---
 
 <!--
@@ -20,7 +20,7 @@ Gitpod enables code editing using JetBrains {title} currently via [JetBrains Gat
 
 ## Getting Started
 
-1. **Install [JetBrains Gateway](https://www.jetbrains.com/help/{productDocCode}/remote-development-a.html#gateway)** - With the [JetBrains Gateway and Gitpod](jetbrains-gateway) plugin you can create and manage your latest 20 Gitpod workspaces.
+1. **Install [JetBrains Gateway](https://www.jetbrains.com/help/__productDocCode__/remote-development-a.html#gateway)** - With the [JetBrains Gateway and Gitpod](jetbrains-gateway) plugin you can create and manage your latest 20 Gitpod workspaces.
 2. **Install the Gitpod plugin** - Navigate to the JetBrains Gateway preferences page and select the plugins tab to search and install the [Gitpod plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway).
 3. **Update your Gitpod preferences** - Select {title} on the [Gitpod preferences page](https://gitpod.io/preferences) which will set {title} as your default Desktop IDE for future workspace starts.
 4. **Start (or restart) your workspace** - Either start a workspace directly from within the [JetBrains Gateway](jetbrains-gateway) via the Gitpod plugin **OR** open a new workspace direclty in Gitpod where on workspace start you will be prompted to open {title} for that workspace.
@@ -49,9 +49,9 @@ Gitpod enables code editing using JetBrains {title} currently via [JetBrains Gat
 
 ## Install Plugins
 
-> This section is about installing plugins in context of remote development with Gitpod. For more information on regular plugin management, refer to <a href="https://www.jetbrains.com/help/{productDocCode}/managing-plugins.html" target="_blank">{title} docs</a>.
+> This section is about installing plugins in context of remote development with Gitpod. For more information on regular plugin management, refer to <a href="https://www.jetbrains.com/help/__productDocCode__/managing-plugins.html" target="_blank">{title} docs</a>.
 
-[Remote development](https://www.jetbrains.com/help/{productDocCode}/remote-development-overview.html#defs) with {title} allows to install plugins in:
+[Remote development](https://www.jetbrains.com/help/__productDocCode__/remote-development-overview.html#defs) with {title} allows to install plugins in:
 
 - [**{title} backend**](#install-on-title-backend) running in a _remote Gitpod workspace_. Plugins contribute functionality which require access to remote filesystem and tools, e.g. contributing support of languages and frameworks. A plugin is installed only for [the current Gitpod workspace by default](#install-for-your-current-workspace), but can be [preconfigured for all users of a repository](#preconfigure-for-repository). It is not yet possible to install them for all workspaces of your user.
 - [**JetBrains Client**](#install-on-jetbrains-client) running on _your local machine_ and providing the UI to **{title} backend**. Plugins contribute modifications to the UI, keyboard shortcuts, themes and so on. Once installed a plugin is available for **any Gitpod workspace** running the same version of **{title} backend**.
@@ -94,7 +94,7 @@ Each workspace is preconfigured with plugins from this configuration file, here 
 
 ```yaml
 jetbrains:
-  { productId }:
+  __productId__:
     - zielu.gittoolbox
     - izhangzhihao.rainbow.brackets
 ```
