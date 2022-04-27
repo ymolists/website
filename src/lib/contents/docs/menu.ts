@@ -53,7 +53,7 @@ export const MENU: MenuEntry[] = [
     M("RubyMine", "ides-and-editors/rubymine", [], "soon"),
     M("WebStorm", "ides-and-editors/webstorm", [], "soon"),
     M("Local Companion", "ides-and-editors/local-companion", [], "beta"),
-    M("JetBrains Gateway", "ides-and-editors/jetbrains-gateway", []),
+    M("JetBrains Gateway", "ides-and-editors/jetbrains-gateway", [], "beta"),
     M("VS Code Extensions", "ides-and-editors/vscode-extensions"),
     M("Command Line (e.g. Vim)", "ides-and-editors/command-line", []),
     M(
