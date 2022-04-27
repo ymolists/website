@@ -68,6 +68,7 @@ export const MENU: MenuEntry[] = [
     M("GitHub", "github-integration"),
     M("Bitbucket", "bitbucket-integration"),
     M("GitHub Enterprise", "github-enterprise-integration"),
+    M("Bitbucket Server", "bitbucket-server-integration"),
     M("Browser Bookmarklet", "browser-bookmarklet"),
     M("Browser Extension", "browser-extension"),
   ]),
