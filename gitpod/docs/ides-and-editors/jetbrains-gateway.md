@@ -43,7 +43,7 @@ Since [JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/)
 To start a workspace using JetBrains from your browser, you need to first set your preferred JetBrains IDE as your user preference.
 
 <figure>
-<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Updating Gitpod IDE preferences to a JetBrains IDE" src="/images/editors/select-jetbrains-ide.gif">
+<video playsinline autoplay no-controls loop muted class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Updating Gitpod IDE preferences to {title}" src="/images/editors/select-jetbrains-ide.mp4"></video>
     <figcaption>Updating Gitpod IDE preferences to a JetBrains IDE</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ To start a workspace using JetBrains from your browser, you need to first set yo
 When starting a new workspace from Gitpod in the browser (with a JetBrains IDE set as your preference) you will see a prompt to open JetBrains Gateway. Clicking the prompt will immediately launch JetBrains Gateway and begin downloading the IDE thin client. The downloaded thin client will exactly match the IDE running in your Gitpod workspace.
 
 <figure>
-<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Opening JetBrains Gateway from Gitpod" src="/images/editors/opening-the-thin-jetbrains-client.gif">
+<video playsinline autoplay no-controls loop muted class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Opening a JetBrains IDE from Gitpod" src="/images/editors/opening-the-thin-jetbrains-client.mp4"></video>
     <figcaption>Opening JetBrains Gateway from Gitpod</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ When starting a new workspace from Gitpod in the browser (with a JetBrains IDE s
 Since Gitpod and JetBrains works via JetBrains Gateway, you do not need to download a JetBrains IDE. Also, **you do not need to alter your plugin settings in your JetBrains IDE**. All setup and configuration for Gitpod and JetBrains is completed within JetBrains Gateway.
 
 <figure>
-<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Updating the Gitpod plugin in JetBrains Gateway" src="/images/editors/update-jetbrains-gateway-settings.gif">
+<video playsinline autoplay no-controls loop muted  class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Updating the Gitpod plugin in JetBrains Gateway" src="/images/editors/update-jetbrains-gateway-settings.mp4"></video>
     <figcaption>Updating the Gitpod plugin in JetBrains Gateway</figcaption>
 </figure>
 
@@ -70,6 +70,6 @@ Since Gitpod and JetBrains works via JetBrains Gateway, you do not need to downl
 You can also start, and connect to Gitpod workspaces directly from JetBrains Gateway. Click Gitpod in the left-hand side of JetBrains Gateway, and paste a source control context URL directly to start a new workspace, or click connect on a running or stopped workspace.
 
 <figure>
-<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Opening a JetBrains IDE from Gateway" src="/images/editors/open-from-jetbrains-gateway.gif">
+<video playsinline autoplay no-controls loop muted class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Opening a JetBrains IDE from Gateway" src="/images/editors/open-from-jetbrains-gateway.mp4"></video>
     <figcaption>Opening a JetBrains IDE from Gateway</figcaption>
 </figure>
