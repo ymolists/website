@@ -1,6 +1,6 @@
 ---
 section: self-hosted/latest
-title: Install Gitpod Self-Hosted on Amazon Elastic Kubernetes Service (EKS)
+title: Requirements of Gitpod Self-Hosted
 ---
 
 <script context="module">
@@ -8,7 +8,7 @@ title: Install Gitpod Self-Hosted on Amazon Elastic Kubernetes Service (EKS)
   export const load = () => {
     return {
       status: 301,
-      redirect: "/docs/self-hosted/latest/cluster-set-up/on-amazon-eks"
+      redirect: "/docs/self-hosted/latest/required-components"
     }
   };
 </script>
