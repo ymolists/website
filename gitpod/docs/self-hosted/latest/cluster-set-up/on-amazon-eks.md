@@ -9,7 +9,7 @@ title: Amazon Elastic Kubernetes Service (EKS)
 
 # How to Create a Cluster on Amazon Elastic Kubernetes Service (EKS)
 
-Installation instructions for Gitpod Self-Hosted on Amazon EKS are currently located in the [gitpod-io/gitpod-eks-guide](https://github.com/gitpod-io/gitpod-eks-guide) repository on GitHub. The installation process takes around forty minutes. In the end, the following resources are created:
+Instructions on how to create an Amazon EKS environment that is ready to install Gitpod are located in the [gitpod-io/gitpod-eks-guide](https://github.com/gitpod-io/gitpod-eks-guide) repository on GitHub. The installation process takes around twenty minutes. In the end, the following resources are created:
 
 - An Amazon EKS cluster running Kubernetes v1.21
 - Kubernetes nodes using a custom [AMI image](https://github.com/gitpod-io/amazon-eks-custom-amis/tree/gitpod):
@@ -30,4 +30,3 @@ Installation instructions for Gitpod Self-Hosted on Amazon EKS are currently loc
 - Installation of [cert-manager](https://cert-manager.io/) for self-signed SSL certificates
 - Installation of [cluster-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler)
 - Installation of [metrics-server](https://github.com/kubernetes-sigs/metrics-server)
-- A [gitpod.io](https://github.com/gitpod-io/gitpod) deployment

@@ -19,7 +19,7 @@ Gitpod is a Kubernetes application running with certain expectations on the char
 
 > These guides are intended as a starting point for most users, but will not cover edge cases. In these situations, please see the requirements below to create your own cluster.
 
-Our guides help you set up the infrastructure needed to run Gitpod Self-Hosted. These guides will also create cloud-provider specific versions of the [required components](./required-components) that you can then link to your Gitpod installation during the installation process. They will also install [cert-manager](./required-components#cert-manager) for you.
+Our guides help you set up the infrastructure needed to run Gitpod Self-Hosted. These guides will also create cloud-provider specific versions of the [required components](./required-components) that you can then connect to your Gitpod installation during the installation process. They will also install [cert-manager](./required-components#cert-manager) for you.
 
 There are guides for the most popular cloud providers and Kubernetes distributions:
 
