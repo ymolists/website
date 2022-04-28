@@ -37,8 +37,6 @@ Upload your own TLS certificate, key, and (optionally) CA certificate. When your
 
 ![kots-tls-bring-own](../../static/images/docs/self-hosted/kots-tls-bring-own.png)
 
-> ⚠️ **Limitations**
+> ⚠️ **Limitation**
 >
 > Adding custom CA certificates is currently _not_ supported on **Google Kubernetes Engine (GKE)** because you cannot get `containerd` to trust other certificates without being restarted. We are in contact with Google for a fix.
->
-> We currently do not accept **self-signed certificates for SCMs**--even when it's signed by the CA you uploaded. Your [SCM](../required-components#source-control-management-system) needs to have a TLS certificate signed by a publicly accepted TLS authority. We are working on a fix.
