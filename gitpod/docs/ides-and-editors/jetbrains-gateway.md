@@ -18,7 +18,9 @@ Using JetBrains Gateway on Desktop with Gitpod, allows you to:
 
 All without leaving needing to leave your desktop.
 
-JetBrains Gateway is the underlying technology for the Gitpod JetBrains IDE support of:
+## JetBrains IDE support
+
+JetBrains Gateway is the underlying technology which enables the Gitpod integration. Support for JetBrains IDEs will be rolled out incrementally. The [JetBrains Gateway plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway) is a standalone feature, so its release cycle is independent individual JetBrains IDE support.
 
 - [IntelliJ](/docs/ides-and-editors/intellij)
 - [GoLand](/docs/ides-and-editors/goland)
