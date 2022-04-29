@@ -38,10 +38,11 @@ Gitpod relies on an image registry to store images used to start workspaces. By 
 
 <details>
   <summary  class="text-p-medium">Using Amazon Elastic Container Registry (ECR)</summary>
-  Amazon ECR does not implement this spec fully. The spec expects
-  that, if an image is pushed to a repository that doesn't exist, it creates the
-  repository before uploading the image. Amazon ECR does not do this - if the
-  repository doesn't exist, it will error on push.
+
+Amazon ECR does not implement this spec fully. The spec expects
+that, if an image is pushed to a repository that doesn't exist, it creates the
+repository before uploading the image. Amazon ECR does not do this - if the
+repository doesn't exist, it will error on push.
 
 To configure Gitpod to use Amazon, you will need to use the in-cluster
 registry and configure it to use S3 storage as the backend storage.
