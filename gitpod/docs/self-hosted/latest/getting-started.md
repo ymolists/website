@@ -56,7 +56,7 @@ Now, you are ready to install Gitpod. Run the following command in your terminal
 $ kubectl kots install gitpod
 ```
 
-You will be asked for the namespace you want to install Gitpod as well as a password for the admin console. After some time, you will see the following output:
+You will be asked for the namespace you want to install Gitpod to as well as a password for the admin console. After some time, you will see the following output:
 
 ```
   • Press Ctrl+C to exit
