@@ -27,7 +27,7 @@ These logs contain information about the workspace, the session, and the JetBrai
 
 **Important:** The content of these logs should **NOT** be shared publicly as they could contain sensitive information about your workspace. Instead, send them to support@gitpod.io along with a link to a corresponding GitHub issue if needed.
 
-**Note:** Ensure you are using the latest version of [JetBrains Gateway](https://www.jetbrains.com/help/idea/remote-development-a.html#gateway) and [Gitpod JetBrains Gateway plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway) before collecting the logs. Older versions may not be compatible with this feature, which can cause the Gateway to close unexpectedly.
+**Note:** Ensure you are using the latest version of [JetBrains Gateway](https://www.jetbrains.com/help/idea/remote-development-a.html#gateway) and [Gitpod JetBrains Gateway plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway), as issues from older versions might have already been fixed.
 
 ## Gitpod logs in JetBrains Client
 
@@ -37,7 +37,7 @@ These logs contain information about the workspace, the session, and the JetBrai
 
 **Important:** The content of these logs should **NOT** be shared publicly as they could contain sensitive information about your workspace. Instead, send them to support@gitpod.io along with a link to a corresponding GitHub issue if needed.
 
-**Note:** Ensure you are using the latest version of both [JetBrains Gateway](https://www.jetbrains.com/help/idea/remote-development-a.html#gateway) and [Gitpod JetBrains Gateway plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway) before collecting the logs. Older versions may not be compatible with this feature, which can cause the IDE to close unexpectedly.
+**Note:** Ensure you are using the latest version of both [JetBrains Gateway](https://www.jetbrains.com/help/idea/remote-development-a.html#gateway) and [Gitpod JetBrains Gateway plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway), as issues from older versions might have already been fixed.
 
 ## Why doesn't the "ClearURLs" browser extension work with Gitpod?
 
