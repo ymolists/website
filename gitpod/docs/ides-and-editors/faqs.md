@@ -39,6 +39,10 @@ The licensing of Remote Development is handled on the local machine and is cover
 
 Yes, the plan is to eventually support all of the JetBrains IDE's. Please refer to the [Gitpod roadmap](https://www.gitpod.io/roadmap) for future updates.
 
+## Does Gitpod support the IntelliJ IDEA Community edition?
+
+No, JetBrains Remote Development and Gateway are available only in the IntelliJ IDEA Ultimate edition, please refer to [IntelliJ IDEA FAQ](https://www.jetbrains.com/help/idea/faq-about-remote-development.html#community).
+
 ## Will Gitpod support JetBrains Fleet?
 
 [JetBrains Fleet](https://www.jetbrains.com/fleet/) is a next-generation IDE from JetBrains. The currently supported method of using JetBrains IDE's with Gitpod is on desktop via [JetBrains Gateway](/docs/ides-and-editors/jetbrains-gateway), please refer to our documentation for current [IDE and editor support](/docs/ides-and-editors) and the [Gitpod roadmap](https://www.gitpod.io/roadmap) for future updates.

@@ -12,11 +12,11 @@ title: IntelliJ IDEA
   export const prerender = true;
 </script>
 
-# {title}
+# IntelliJ IDEA Ultimate
 
 Gitpod enables code editing using JetBrains {title} currently via [JetBrains Gateway](jetbrains-gateway).
 
-> **Please note:** JetBrains {title} Desktop is currently in beta. If you experience any issues, or have feedback, please [get in touch](/contact/support).
+> **Please note:** JetBrains {title} is currently in beta. If you experience any issues, or have feedback, please [get in touch](/contact/support).
 
 ## Getting Started
 
@@ -43,7 +43,6 @@ Gitpod enables code editing using JetBrains {title} currently via [JetBrains Gat
 <figure>
 <video playsinline autoplay no-controls loop muted class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Opening a JetBrains IDE from Gateway" src="/images/editors/open-from-jetbrains-gateway.mp4"></video>
     <figcaption>Opening a JetBrains IDE from Gateway</figcaption>
-
 </figure>
 
 **Important:** You must restart any started workspaces for your IDE preferences to take effect.
@@ -143,3 +142,9 @@ jetbrains:
 
 The `version` property allows you to control whether to index for `stable`, `latest`, or `both` versions of {title} compatible with Gitpod.
 Users can switch between `stable` and `latest` versions of {title} on the [user preferences](https://gitpod.io/preferences) page.
+
+## FAQ
+
+- For the questions about supported IDEs and Editors in Gitpod, refer to [FAQs](/docs/ides-and-editors/faqs).
+
+- For the general questions about JetBrains Remote Development, refer to refer to <a href="https://www.jetbrains.com/help/idea/faq-about-remote-development.html" target="_blank">{title} FAQ</a>.

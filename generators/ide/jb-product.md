@@ -12,11 +12,11 @@ title: __productTitle__
   export const prerender = true;
 </script>
 
-# {title}
+# **productFullyQualifiedTitle**
 
 Gitpod enables code editing using JetBrains {title} currently via [JetBrains Gateway](jetbrains-gateway).
 
-> **Please note:** JetBrains {title} Desktop is currently in beta. If you experience any issues, or have feedback, please [get in touch](/contact/support).
+> **Please note:** JetBrains {title} is currently in beta. If you experience any issues, or have feedback, please [get in touch](/contact/support).
 
 ## Getting Started
 
@@ -142,3 +142,9 @@ jetbrains:
 
 The `version` property allows you to control whether to index for `stable`, `latest`, or `both` versions of {title} compatible with Gitpod.
 Users can switch between `stable` and `latest` versions of {title} on the [user preferences](https://gitpod.io/preferences) page.
+
+## FAQ
+
+- For the questions about supported IDEs and Editors in Gitpod, refer to [FAQs](/docs/ides-and-editors/faqs).
+
+- For the general questions about JetBrains Remote Development, refer to refer to <a href="https://www.jetbrains.com/help/__productDocCode__/faq-about-remote-development.html" target="_blank">{title} FAQ</a>.

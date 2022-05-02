@@ -13,6 +13,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const products = new Map();
 products.set("intellij", {
   productTitle: "IntelliJ IDEA",
+  productFullyQualifiedTitle: "IntelliJ IDEA Ultimate",
   productDocCode: "idea",
 });
 products.set("goland", {
@@ -28,11 +29,23 @@ products.set("pycharm", {
   productDocCode: "pycharm",
 });
 
+const keys = new Set();
+keys.add("productId");
+for (const parameters of products.values()) {
+  for (const key in parameters) {
+    keys.add(key);
+  }
+}
+
 for (const [id, parameters] of products) {
   let content = fs.readFileSync(path.join(__dirname, "jb-product.md"), "utf-8");
-  content = content.replace(/__productId__/gi, parameters["productId"] || id);
-  for (const key in parameters) {
-    content = content.replace(new RegExp(`__${key}__`, "gi"), parameters[key]);
+  for (const key of keys) {
+    const value =
+      parameters[key] ||
+      (key === "productId" && id) ||
+      (key === "productFullyQualifiedTitle" && parameters["productTitle"]) ||
+      "";
+    content = content.replace(new RegExp(`__${key}__`, "gi"), value);
   }
   fs.writeFileSync(
     path.join(__dirname, `../../gitpod/docs/ides-and-editors/${id}.md`),
