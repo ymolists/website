@@ -41,13 +41,13 @@ In this post, we’ll cover:
 
 ### April 11th
 
-**13:17 UTC** - We received reports from customers and Gitpodders at _13:17_ that workspaces were intermittently becoming unresponsive. We opened [an incident](https://www.gitpodstatus.com/incidents/jzgzzk008hqp) in Slack via our incident.io integration and began investigating.
+**_13:17 UTC_** - We received reports from customers and Gitpodders at _13:17_ that workspaces were intermittently becoming unresponsive. We opened [an incident](https://www.gitpodstatus.com/incidents/jzgzzk008hqp) in Slack via our incident.io integration and began investigating.
 
-**13:58 UTC** - When we inspected the CPU usage for nodes and pods, it was normal, nothing was maxed out, and signs did not indicate our CPU limiting had failed or that there were noisy neighbors. At _13:58_, we realized workspaces were getting IO bound, rather than CPU bound.
+**_13:58 UTC_** - When we inspected the CPU usage for nodes and pods, it was normal, nothing was maxed out, and signs did not indicate our CPU limiting had failed or that there were noisy neighbors. At _13:58_, we realized workspaces were getting IO bound, rather than CPU bound.
 
 At the time, we lacked IO limiting capabilities, so we decided to shift traffic for workspace starts back to our prior set of clusters (`ws38`), which did not have this performance issue. This was completed at _15:37_.
 
-**21:29 UTC** - While stable on the prior generation (`ws38`), we planned short and long term action items to move forward with the release. For the short term: build a new set of clusters (`ws39a`) running faster machine types ([t2d→c2d](https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types)) with quicker disks (local SSDs). For the long term, prepare a new VM image and environment so that we can design a IO limiting feature.
+**_21:29 UTC_** - While stable on the prior generation (`ws38`), we planned short and long term action items to move forward with the release. For the short term: build a new set of clusters (`ws39a`) running faster machine types ([t2d→c2d](https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types)) with quicker disks (local SSDs). For the long term, prepare a new VM image and environment so that we can design a IO limiting feature.
 
 In other words, short term, we decided to alleviate the IO bandwidth issues by using faster disks. The reasoning was that we would avoid maxing out the read and write capabilities of disks, hence avoid workspaces being IO bound. We planned to run like this for 2-3 days, while researching, building, and testing an IO limiting solution.
 
@@ -60,7 +60,7 @@ The traffic shift from `ws38` to `ws39a` was completed by _21:29_, and [the inci
 
 ### April 12th
 
-**_11:53 UTC-_** - Customers and Gitpodders reported that workspaces were experiencing performance issues. After troubleshooting, we [created a new incident](https://www.gitpodstatus.com/incidents/2jymw3f0q9zb), and confirmed workspaces were becoming IO bound, again.
+**_11:53 UTC_** - Customers and Gitpodders reported that workspaces were experiencing performance issues. After troubleshooting, we [created a new incident](https://www.gitpodstatus.com/incidents/2jymw3f0q9zb), and confirmed workspaces were becoming IO bound, again.
 
 At this point, it was apparent we needed an IO limiting solution for the new workspace cluster release. In the meantime, we had successfully [built](https://github.com/gitpod-io/gitpod/pull/9271) a [cgroups-based IO limiter](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html#limits) for Gitpod, and it worked well in our dev/test environment!
 
