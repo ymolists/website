@@ -278,7 +278,7 @@ export const authors: { [idx: string]: Author } = {
     description: "",
   },
   lucasvaltl: {
-    name: "Lucas Valti",
+    name: "Lucas Valtl",
     socialProfiles: {
       github: "lucasvaltl",
       twitter: "",
