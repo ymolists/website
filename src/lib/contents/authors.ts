@@ -268,6 +268,24 @@ export const authors: { [idx: string]: Author } = {
     },
     description: "",
   },
+  Furisto: {
+    name: "Thomas Schubart",
+    socialProfiles: {
+      github: "Furisto",
+      twitter: "",
+      linkedin: "",
+    },
+    description: "",
+  },
+  lucasvaltl: {
+    name: "Lucas Valti",
+    socialProfiles: {
+      github: "lucasvaltl",
+      twitter: "",
+      linkedin: "",
+    },
+    description: "",
+  },
   brandonroberts: {
     name: "Brandon Roberts",
     socialProfiles: {
@@ -301,7 +319,8 @@ export const authors: { [idx: string]: Author } = {
       twitter: "HelenJoScott",
       linkedin: "",
     },
-    description: "Helen Scott is a Java Developer Advocate at JetBrains. She has worked at numerous software companies in the last 20 years.",
+    description:
+      "Helen Scott is a Java Developer Advocate at JetBrains. She has worked at numerous software companies in the last 20 years.",
   },
 };
 
