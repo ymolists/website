@@ -17,7 +17,7 @@ Gitpod experienced a series of [incidents](https://www.gitpodstatus.com/) [[1](h
 
 ## Summary
 
-Gitpod workspaces are meant to “feel” like your own machine, except in the cloud. Performance and reliability of workspaces are hallmark features of Gitpod . And, just like your own machine, the pain is very real when workspaces do not perform as you need or expect.
+Gitpod workspaces are meant to “feel” like your own machine, except in the cloud. Performance and reliability of workspaces are hallmark features of Gitpod. And, just like your own machine, the pain is very real when workspaces do not perform as you need or expect.
 
 On April 9th at _7:30_ UTC (all times will be in _24 hour-format UTC_), we finished shipping a new generation of workspace clusters (`ws39`). This included a variety of features to reduce workspace startup times, as well as make more CPU accessible to users at runtime.
 
