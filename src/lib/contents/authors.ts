@@ -322,6 +322,15 @@ export const authors: { [idx: string]: Author } = {
     description:
       "Helen Scott is a Java Developer Advocate at JetBrains. She has worked at numerous software companies in the last 20 years.",
   },
+  jacobparis: {
+    name: "Jacob Paris",
+    socialProfiles: {
+      github: "JacobParis",
+      twitter: "jacobmparis",
+      linkedin: "",
+    },
+    description: "",
+  },
 };
 
 export const authorSocialMediaLinks: SocialMediaLinks = Object.entries(
