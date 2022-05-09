@@ -33,6 +33,7 @@ export const pricingPlans: Pricing[] = [
       "Unlimited users",
       "Public & private repos",
       "GitLab, GitHub and Bitbucket",
+      "Admin Dashboard",
     ],
     btnText: "Install now",
     btnHref: "/docs/self-hosted/latest",
@@ -44,7 +45,7 @@ export const pricingPlans: Pricing[] = [
     duration: "per user/month",
     features: [
       "Starts after the 11th user",
-      "Everything from Starter",
+      "All features from Community",
       "Air gapped environments",
       "Standard support",
     ],
@@ -110,15 +111,15 @@ export const communityBelow10PlanTableData: FeatureTableColumn = {
       availability: true,
     },
     {
+      term: "Admin Dashboard",
+      availability: true,
+    },
+    {
       term: "Shared workspaces",
       availability: true,
     },
     {
       term: "Snapshots",
-      availability: true,
-    },
-    {
-      term: "Admin Dashboard",
       availability: true,
     },
     {
@@ -183,15 +184,15 @@ export const communityPlanTableData: FeatureTableColumn = {
       availability: true,
     },
     {
+      term: "Admin Dashboard",
+      availability: true,
+    },
+    {
       term: "Shared workspaces",
       availability: false,
     },
     {
       term: "Snapshots",
-      availability: false,
-    },
-    {
-      term: "Admin Dashboard",
       availability: false,
     },
     {
@@ -257,15 +258,15 @@ export const professionalPlanTableData: FeatureTableColumn = {
       availability: true,
     },
     {
+      term: "Admin Dashboard",
+      availability: true,
+    },
+    {
       term: "Shared workspaces",
       availability: true,
     },
     {
       term: "Snapshots",
-      availability: true,
-    },
-    {
-      term: "Admin Dashboard",
       availability: true,
     },
     {
@@ -367,6 +368,13 @@ export const selfHostedToc: FeatureTableToc[] = [
   {
     type: "tooltip",
     data: {
+      text: "Admin Dashboard",
+      tooltip: "Access to team and project management and configuration.",
+    },
+  },
+  {
+    type: "tooltip",
+    data: {
       text: "Shared workspaces",
       tooltip: "Pair program with your team by sharing running workspaces.",
     },
@@ -377,13 +385,6 @@ export const selfHostedToc: FeatureTableToc[] = [
       text: "Snapshots",
       tooltip:
         "Create a copy of your workspace by sharing a snapshot with your team.",
-    },
-  },
-  {
-    type: "tooltip",
-    data: {
-      text: "Admin Dashboard",
-      tooltip: "Access to team and project management and configuration.",
     },
   },
   {
