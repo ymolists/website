@@ -25,18 +25,16 @@ This guide will show how easy it is to connect Gitpod workspaces over a secure t
 
 A typical architecture these days is server-side rendering (SSR). You generate the view by calling backend services on the frontend server instead of calling your API from client devices. If you develop on your local machine, two repositories will be open in two IDE windows. Every service can communicate with each other as they are all running on the same machine.
 
-<figure>
-<center><img src="/images/guides/connect-multiple-repositories-using-tailscale/locahost-ssr.png" alt="Multiple services can communincate with each-other when running on the same machine" width=500/>
-<figcaption>Local setup</figcaption>
-</center>
+<figure class="flex flex-col items-center text-center">
+  <img src="/images/guides/connect-multiple-repositories-using-tailscale/locahost-ssr.png" alt="Multiple services can communincate with each-other when running on the same machine" width="500" />
+  <figcaption>Local setup</figcaption>
 </figure>
 
 In Gitpod, each workspace runs in a secure sandbox. You can expose ports so that only your browser can access them. However, the workspaces cannot communicate with one another.
 
-<figure>
-<center><img src="/images/guides/connect-multiple-repositories-using-tailscale/gitpod-workspace-without-tailscale.png" alt="In Gitpod each workspace runs in a secure sandbox, workspaces cannont communicate with one another" width=500/>
-<figcaption>Gitpod workspaces are secure and isolated</figcaption>
-</center>
+<figure class="flex flex-col items-center text-center">
+  <img src="/images/guides/connect-multiple-repositories-using-tailscale/gitpod-workspace-without-tailscale.png" alt="In Gitpod each workspace runs in a secure sandbox, workspaces cannont communicate with one another" width="500" />
+  <figcaption class="w-full">Gitpod workspaces are secure and isolated</figcaption>
 </figure>
 
 As long as only the browser interacts with the API, this will work with Gitpod without any changes. If you develop single-page applications and static sites where every network request is a client-side fetch, you don't need Tailscale.
@@ -45,10 +43,9 @@ But if your application has a server-side that needs to fetch data from another 
 
 **This is what Tailscale is made for ✨**
 
-<figure>
-<center><img src="/images/guides/connect-multiple-repositories-using-tailscale/gitpod-workspaces-with-tailscale.png" alt="Connect multiple workspaces on Gitpod using Tailscale" width=600/>
-<figcaption>Establish secure tunnel using Tailscale</figcaption>
-</center>
+<figure class="flex flex-col items-center text-center">
+  <img src="/images/guides/connect-multiple-repositories-using-tailscale/gitpod-workspaces-with-tailscale.png" alt="Connect multiple workspaces on Gitpod using Tailscale" width="600" />
+  <figcaption class="w-full">Establish secure tunnel using Tailscale</figcaption>
 </figure>
 
 ## Connecting multiple workspaces together with Tailscale
