@@ -101,8 +101,9 @@ Each workspace is preconfigured with plugins from the `gitpod.yml` configuration
 ```yaml
 jetbrains:
   goland:
-    - zielu.gittoolbox
-    - izhangzhihao.rainbow.brackets
+    plugins:
+      - zielu.gittoolbox
+      - izhangzhihao.rainbow.brackets
 ```
 
 You can find the **pluginId** on the [JetBrains Marketplace](https://plugins.jetbrains.com) page:
