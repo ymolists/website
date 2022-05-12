@@ -48,8 +48,9 @@
   </head>
   <body>
     <script>
-      const theme = localStorage.getItem("theme");
-
+      // const theme = localStorage.getItem("theme");
+      const theme = null; // this should be removed when the dark mode goes live
+      
       if (theme === "dark") {
         document.body.classList.add("dark");
       } else if (theme === "light") {
