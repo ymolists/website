@@ -1,4 +1,5 @@
 <script>
+  // import ThemeSwitcher from "../theme-switcher.svelte";
   import FooterLink from "./link.svelte";
   import Section from "./section.svelte";
 
@@ -21,7 +22,7 @@
   ];
 </script>
 
-<div class="pb-8 bg-gray-100 text-p-footer" data-id="footer">
+<div class="pb-8 bg-card text-p-footer" data-id="footer">
   <footer
     class="py-large m-auto px-xx-small md:max-w-4xl md:py-small md:px-xx-small"
   >
@@ -108,9 +109,8 @@
         </li>
       </Section>
     </div>
-
     <div
-      class="flex flex-col-reverse items-center justify-between border-t border-solid border-sand-dark pt-xx-small md:flex-row md:pt-x-small"
+      class="flex flex-col-reverse items-center justify-between border-t border-solid border-divider pt-xx-small md:flex-row md:pt-x-small"
     >
       <div class="mt-micro flex items-center md:mt-0">
         <FooterLink href="/"
@@ -126,6 +126,7 @@
           >Copyright &copy; {new Date().getFullYear()} Gitpod</span
         >
       </div>
+      <!-- <ThemeSwitcher /> -->
       <div class="flex space-x-macro">
         {#each socialLinks as link}
           <FooterLink

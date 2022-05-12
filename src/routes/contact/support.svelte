@@ -137,7 +137,7 @@
   }
 
   p {
-    color: var(--dark-grey);
+    color: var(--body);
   }
   form {
     max-width: 45rem;

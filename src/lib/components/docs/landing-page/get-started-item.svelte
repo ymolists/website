@@ -16,14 +16,10 @@
 </style>
 
 <div
-  class="text-center bg-off-white rounded-2xl shadow-normal py-x-small px-micro flex flex-col"
+  class="text-center bg-card rounded-2xl shadow-normal py-x-small px-micro flex flex-col"
 >
   <div class="flex justify-center">
-    <img
-      src={getStartedItem.icon.path}
-      style={`transform: ${getStartedItem.icon.transform}`}
-      alt={getStartedItem.title}
-    />
+    <svelte:component this={getStartedItem.icon} />
   </div>
   <div class="flex flex-col">
     <h2 class="mt-2 h4 mb-macro">{getStartedItem.title}</h2>

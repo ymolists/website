@@ -11,7 +11,7 @@
 
 <style lang="postcss">
   label {
-    @apply mb-0 cursor-pointer text-h6 font-bold py-macro px-xx-small rounded-5xl transition-all duration-300 hover:text-gray-900;
+    @apply mb-0 cursor-pointer text-h6 font-bold py-macro px-xx-small rounded-5xl transition-all duration-300 hover:text-important focus:text-important;
   }
 
   .switch-container {
@@ -19,7 +19,7 @@
   }
 
   label:first-of-type {
-    @apply bg-orange-700;
+    @apply bg-tertiary;
   }
 
   .checked label {
@@ -28,7 +28,7 @@
     }
 
     &:last-of-type {
-      @apply bg-orange-700 text-gray-900;
+      @apply bg-tertiary text-important;
     }
   }
 
@@ -38,17 +38,60 @@
     }
 
     &:last-of-type {
-      @apply bg-orange-700 text-gray-900;
+      @apply bg-tertiary text-important;
     }
   }
 
   .inversed.checked label {
     &:first-of-type {
-      @apply bg-orange-700 text-gray-900;
+      @apply bg-tertiary text-important;
     }
 
     &:last-of-type {
       @apply bg-white;
+    }
+  }
+
+  :global(body.dark) .switch-container {
+    @apply bg-card;
+
+    label:first-of-type {
+      @apply bg-primary text-black;
+    }
+
+    &.checked label {
+      &:first-of-type {
+        @apply bg-transparent text-body;
+      }
+
+      &:last-of-type {
+        @apply bg-primary text-black;
+      }
+    }
+
+    &.inversed {
+      label:first-of-type {
+        @apply bg-transparent text-body;
+
+        &:hover,
+        &:focus {
+          @apply text-important;
+        }
+      }
+
+      label:last-of-type {
+        @apply bg-primary text-black;
+      }
+
+      &.checked {
+        label:first-of-type {
+          @apply bg-primary text-black;
+        }
+
+        label:last-of-type {
+          @apply bg-transparent text-body;
+        }
+      }
     }
   }
 </style>
@@ -59,7 +102,7 @@
     class:checked
     class:inversed={isInversed}
   >
-    <label for={id} class:text-gray-900={!checked && !isInversed}>
+    <label for={id} class:text-important={!checked && !isInversed}>
       {labelLeft}
     </label>
     <div class="relative flex items-center cursor-pointer">

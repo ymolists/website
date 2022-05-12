@@ -30,13 +30,23 @@
     </div>
     <div class="pt-micro md:px-small md:py-x-small max-w-xl lgx:max-w-2xl">
       <img
-        class="hidden md:block"
+        class="hidden md:block dark:hidden"
         src="/images/local-development/comparison.png"
         alt={text}
       />
       <img
-        class="md:hidden max-h-96 mx-auto"
+        class="hidden dark:md:block"
+        src="/images/local-development/comparison-dark.png"
+        alt={text}
+      />
+      <img
+        class="md:hidden dark:hidden max-h-96 mx-auto"
         src="/images/local-development/comparison-mobile.png"
+        alt={text}
+      />
+      <img
+        class="hidden dark:md:hidden dark:block max-h-96 mx-auto"
+        src="/images/local-development/comparison-mobile-dark.png"
         alt={text}
       />
     </div>

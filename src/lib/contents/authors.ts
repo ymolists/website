@@ -184,10 +184,10 @@ export const authors: { [idx: string]: Author } = {
     description:
       "A big open-source fan, Arthur is a SRE focused on cloud-native observability. When not training backflips and gymnastics, you can find him chit-chatting at CNCF's slack channels.",
   },
-  christinfrohne: {
+  chrifro: {
     name: "Christin Frohne",
     socialProfiles: {
-      github: "ChristinFrohne",
+      github: "chrifro",
       twitter: "christinfrohne",
       linkedin: "christin-frohne-91a4b0173",
     },

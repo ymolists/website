@@ -50,7 +50,7 @@
 {#if showBanner}
   <div
     transition:slide
-    class="{location} px-4 py-2 flex justify-between items-center w-full bg-sand-dark shadow-sm text-xs sm:text-sm md:text-base"
+    class="{location} px-4 py-2 flex justify-between items-center w-full bg-sand-dark dark:bg-card shadow-sm text-xs sm:text-sm md:text-base {clazz}"
   >
     <slot {closeBanner} />
   </div>

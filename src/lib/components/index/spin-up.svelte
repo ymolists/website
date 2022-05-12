@@ -38,7 +38,7 @@
         and Bitbucket projects to easily spin up a dev environment with a single
         click.
       </p>
-      <ButtonsWrapper class="justify-center">
+      <ButtonsWrapper class="justify-center sm:justify-start">
         {#each buttons as { href, icon, text }}
           <LinkButton
             class="flex items-center"

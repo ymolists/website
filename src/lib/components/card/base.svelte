@@ -8,7 +8,7 @@
   export { clazz as class };
 
   export let card: Card;
-  const { title, text, link, icon, modal } = card;
+  const { title, text, link, icon, modal, transform } = card;
   const target = link && isAnExternalLink(link.href) ? "_blank" : undefined;
   export let headingLevel: "h3" | "h2" = "h3";
   export let titleClassNames: "h4" | "h5" = "h4";
@@ -32,13 +32,24 @@
   style={styles}
 >
   <div>
-    {#if icon}
+    {#if icon && icon.src}
       <img
         src={icon.src}
         alt={icon.alt || title}
         class="{iconClassNames} mb-xx-small mx-auto"
-        style="transform: {icon.transform}"
+        style="transform: {transform}"
       />
+    {:else if icon}
+      <div
+        class="{iconClassNames} mb-xx-small flex justify-center"
+        style="width: auto;"
+      >
+        <svelte:component
+          this={icon}
+          class="mx-auto {iconClassNames}"
+          style="transform: {transform}"
+        />
+      </div>
     {/if}
     {#if headingLevel === "h3"}
       <h3 class="mb-micro {titleClassNames}">{title}</h3>

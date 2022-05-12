@@ -3,10 +3,11 @@
 
   let className: string = "";
   export { className as class };
-  export let background: CardBackground = "off-white";
+  export let background: CardBackground = "card";
   export let brandShadow: boolean = false;
   export let size: CardSize;
   export let styles: string = "";
+  export let stroked: boolean = true;
 </script>
 
 <style lang="postcss">
@@ -14,15 +15,19 @@
     @apply rounded-2xl;
   }
   .medium {
-    @apply rounded-2xl md:rounded-5xl;
+    @apply shadow-normal rounded-2xl md:rounded-5xl;
   }
 
   .white {
     @apply bg-white;
   }
 
-  .off-white {
-    @apply bg-off-white;
+  :global(body.dark) .white {
+    @apply bg-bg;
+  }
+
+  .card {
+    @apply bg-card;
   }
 
   .brand {
@@ -31,9 +36,10 @@
 </style>
 
 <div
-  class:brand={brandShadow}
   style={styles}
-  class="shadow-normal {background} {size} {className}"
+  class="shadow-normal dark:shadow-none {background} {size} {className}"
+  class:brand={brandShadow}
+  class:stroked
 >
   <slot />
 </div>

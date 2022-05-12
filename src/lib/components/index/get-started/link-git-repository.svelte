@@ -2,7 +2,7 @@
   import LinkButton from "$lib/components/ui-library/link-button";
 </script>
 
-<style lang="scss">
+<style lang="postcss">
   .buttons {
     display: inline-flex;
     flex-direction: column;
@@ -22,6 +22,7 @@
   } */
 
   .prefix {
+    color: var(--dark-grey);
     display: inline-block;
     padding: 0 var(--micro);
     margin-top: var(--macro);
@@ -39,7 +40,7 @@
     href="https://gitpod.io/workspaces/"
     variant="unstyled"
     size="large"
-    class="bg-[#5e48ba] text-white hover:text-white focus:text-white active:text-white hover:opacity-90 focus:bg-black-hover active:bg-black-hover flex items-center"
+    class="bg-[#5e48ba] text-white dark:text-important hover:text-white focus:text-white active:text-white hover:opacity-90 focus:bg-less-important active:bg-less-important flex items-center"
   >
     <svg viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
       <title>GitLab</title>
@@ -55,7 +56,7 @@
     href="https://gitpod.io/workspaces/"
     variant="unstyled"
     size="large"
-    class="bg-black text-white flex items-center hover:text-white focus:text-white active:text-white hover:bg-black-hover focus:bg-black-hover active:bg-black-hover"
+    class="bg-important text-white dark:text-black flex items-center hover:text-white focus:text-white active:text-white hover:bg-less-important focus:bg-less-important active:bg-less-important dark:hover:bg-sand-dark dark:hover:opacity-80"
   >
     <svg viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
       <title>GitHub Octocat</title>
@@ -64,6 +65,7 @@
         clip-rule="evenodd"
         d="M14.57.5a14.374 14.374 0 00-9.442 3.54 14.947 14.947 0 00-4.94 8.946A15.133 15.133 0 002.106 23.07a14.615 14.615 0 007.862 6.406c.733.137.992-.329.992-.721v-2.528c-4.065.903-4.923-1.999-4.923-1.999a3.97 3.97 0 00-1.617-2.181c-1.314-.913.107-.913.107-.913.46.067.9.24 1.285.505.386.265.707.617.94 1.029.197.366.464.688.784.949a3.047 3.047 0 003.45.292c.057-.751.374-1.457.894-1.99-3.234-.374-6.63-1.652-6.63-7.3a5.82 5.82 0 011.493-3.989 5.529 5.529 0 01.143-3.933s1.224-.402 4.002 1.524a13.49 13.49 0 017.291 0c2.779-1.926 3.994-1.524 3.994-1.524.536 1.233.6 2.627.179 3.906a5.82 5.82 0 011.492 3.988c0 5.713-3.404 6.963-6.648 7.3.348.358.617.787.788 1.26.17.472.24.976.204 1.479v4.079c0 .484.26.858 1 .712a14.623 14.623 0 007.752-6.43 15.134 15.134 0 001.87-10.019 14.949 14.949 0 00-4.89-8.892A14.377 14.377 0 0014.57.5z"
         fill="#F9F9F9"
+        class="fill-card dark:fill-black"
         opacity=".85"
       />
     </svg>
@@ -73,7 +75,7 @@
     size="large"
     variant="unstyled"
     href="https://gitpod.io/workspaces/"
-    class="bg-[#265583] text-white flex items-center hover:text-white focus:text-white active:text-white hover:opacity-90 focus:bg-black-hover active:bg-black-hover"
+    class="bg-[#265583] text-white dark:text-important flex items-center hover:text-white focus:text-white active:text-white hover:opacity-90 focus:bg-less-important active:bg-less-important"
   >
     <svg viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <title>Bitbucket</title>

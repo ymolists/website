@@ -61,7 +61,22 @@
         aria-label="close this popup"
         on:click={closeModal}
       >
-        <img alt="Close" role="presentation" src="/x.svg" class="h-3 w-3" />
+        <svg
+          width="12"
+          height="12"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Close</title>
+          <path
+            d="M13 1L1 13M1 1L13 13L1 1Z"
+            stroke="var(--important)"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
       </button>
       <slot />
     </div>

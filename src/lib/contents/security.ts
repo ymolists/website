@@ -1,7 +1,17 @@
 import type { Action } from "$lib/types/action.type";
+// @ts-ignore
+import complianceSvelte from "$lib/components/svgs/security/compliance.svelte";
 
 import type { Card } from "$lib/types/card.type";
 import type { ProgramFeature } from "$lib/types/program-feature.type";
+// @ts-ignore
+import quickstartSvelte from "$lib/components/svgs/docs/quickstart.svelte";
+// @ts-ignore
+import communitySvelte from "$lib/components/svgs/community.svelte";
+// @ts-ignore
+import authSvelte from "$lib/components/svgs/security/auth.svelte";
+// @ts-ignore
+import encryptionSvelte from "$lib/components/svgs/security/encryption.svelte";
 
 export const secureParagraphs = [
   "Storing copies of your source code locally on countless unsecured devices and networks is a bad practice. At the same time, it has become a reality for many organisations to enable their employees to work remotely with BYOD policies.",
@@ -13,33 +23,31 @@ export const programFeatures: Card[] = [
   {
     title: "Compliance",
     text: "<p>Gitpod is a European company committed to security and data privacy. We provide our users with the ability to access and control the information that we collect about them.</p><p>Gitpod is built with security in mind and we continuously invest in security best practices. We are currently in the process of becoming SOC 2 compliant and you can request a copy of our SOC2 audit report as soon as it's available.</p>",
-    icon: { src: "/svg/security/compliance.svg", transform: "scale(1.8)" },
+    icon: complianceSvelte,
+    transform: "scale(1.5)",
   },
   {
     title: "Environment Isolation",
     text: '<p>Each Gitpod workspace or prebuild runs on a secured single-use container providing fast startup times without compromising on security</p><p>We create separate user, PID, mount and network namespaces for each Gitpod workspace, and establish an unprivileged node user as root within that user namespace. More details on the technical approach can be found <a href="https://www.youtube.com/watch?v=iYLCHQgj0fE" target="_blank" rel="noreferrer">in this talk</a> from our Head of Engineering as well as in this <a href="https://kinvolk.io/blog/2020/12/improving-kubernetes-and-container-security-with-user-namespaces/"  rel="noreferrer" target="_blank">blog post</a> from the container security experts at Kinvolk who stress-tested our namespace layering implementation.</p>',
-
-    icon: {
-      src: "/svg/security/environment-isolation.svg",
-      transform: "scale(1.5)",
-    },
+    icon: quickstartSvelte,
   },
   {
     title: "Open source",
     text: '<p>Built-in the open, our source code and how Gitpod is developed are publicly available for review by everyone. Our security posture, disclosure policy and speed in vulnerability handling is highlighted in the following <a href="https://about.gitlab.com/blog/2021/07/08/two-bugs-and-a-quick-fix-in-gitpod/" rel="noreferrer" target="_blank">blog post</a> from the security research team at GitLab.</p><p>In addition to this, we acknowledge the importance of giving back to the community and have taken steps to support the software supply chain of Gitpod and our customers through the creation of a monetary fund for supporting open-source maintainers.</p>',
-
-    icon: { src: "/svg/security/open-source.svg", transform: "scale(1.5)" },
+    icon: communitySvelte,
+    transform: "scale(.7) translateY(-2.5rem)",
   },
   {
     title: "Authentication and Authorization",
     text: "<p>Gitpod uses your Git provider's SSO and, by default, all workspaces connections are private and authenticated, making them accessible only by the creator.</p><p>Prebuild logs are readable by all members of the corresponding team and no one else.</p>",
-
-    icon: { src: "/svg/security/auth.svg", transform: "scale(1.5)" },
+    icon: authSvelte,
+    transform: "scale(.7) translateY(-2.5rem)",
   },
   {
     title: "Encryption",
     text: "<p>All data, including workspace backups and environment variables, is encrypted at rest using AES256; and all connections to the Gitpod app, website, workspaces and workspaces' endpoints are encrypted in transit (TLS).</p>",
-    icon: { src: "/svg/security/encryption.svg", transform: "scale(1.5)" },
+    icon: encryptionSvelte,
+    transform: "scale(.7) translateY(-2.3rem)",
   },
 ];
 

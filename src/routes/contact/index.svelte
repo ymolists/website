@@ -23,7 +23,10 @@
   tight={true}
   fullWidth={true}
 >
-  <div slot="content" class="flex flex-wrap justify-around mt-small">
+  <div
+    slot="content"
+    class="flex flex-wrap justify-around mt-small max-w-7xl mx-auto"
+  >
     {#each contactActions as action}
       <Action {action} width="19rem" />
     {/each}

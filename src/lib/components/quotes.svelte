@@ -17,6 +17,10 @@
   .square {
     @apply max-w-[50%] md:max-w-[65%] rounded-3xl;
   }
+
+  button > :global(*) {
+    @apply h-7 w-20 sm:h-9 sm:w-28 transition group-hover:opacity-100 group-focus:opacity-100 group-focus:filter-none group-hover:filter-none;
+  }
 </style>
 
 <div>
@@ -27,17 +31,24 @@
     <div class="flex justify-around flex-wrap max-w-3xl mx-auto">
       {#each quotes as quote}
         <button
-          class="flex justify-center py-3 group mx-xx-small sm:mx-micro"
+          class="flex justify-center py-3 group mx-xx-small sm:mx-micro transition-all duration-200"
+          class:opacity-60={selectedQuote !== quote}
+          class:grayscale={selectedQuote !== quote}
           on:mouseenter={() => (selectedQuote = quote)}
           on:click={() => (selectedQuote = quote)}
         >
-          <img
-            src={quote.companyLogo.src}
-            alt={quote.companyLogo.alt}
-            class="h-7 w-20 sm:h-9 sm:w-28 transition group-hover:opacity-100 group-focus:opacity-100 group-focus:filter-none group-hover:filter-none"
-            class:opacity-60={selectedQuote !== quote}
-            class:grayscale={selectedQuote !== quote}
-          />
+          {#if quote.companyLogo.src}
+            <img
+              src={quote.companyLogo.src}
+              alt={quote.companyLogo.alt}
+              class=""
+            />
+          {:else}
+            <svelte:component
+              this={quote.companyLogo}
+              inActive={selectedQuote !== quote}
+            />
+          {/if}
         </button>
       {/each}
     </div>

@@ -6,6 +6,7 @@ import type {
   FeatureTableColumn,
   FeatureTableToc,
 } from "../components/ui-library/feature-table/feature-table.types";
+import logoSvelte from "$lib/components/svgs/logo.svelte";
 
 export const benefits: Card[] = [
   {
@@ -66,8 +67,8 @@ export const intros: Intro[] = [
     image: "/images/local-development/alice.png",
     name: "Alice",
     works: "works in the cloud",
-    workflow:
-      '<p>Automates the configuration setup by using <img src="/svg/media-kit/logo-light-theme.svg" alt="Gitpod" class="inline h-6 w-20">&nbsp;.</p>',
+    workflow: "Automates the configuration setup by using",
+    workflowComponent: logoSvelte,
     isHighlighted: true,
   },
 ];

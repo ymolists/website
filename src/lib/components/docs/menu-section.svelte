@@ -18,7 +18,7 @@
 
 <style lang="postcss">
   .isActiveSection {
-    @apply py-6 bg-white rounded-2xl shadow-normal;
+    @apply py-6 bg-card rounded-2xl shadow-normal;
   }
 </style>
 

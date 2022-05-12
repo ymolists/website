@@ -7,6 +7,8 @@ import type {
   FeatureTableToc,
 } from "../components/ui-library/feature-table/feature-table.types";
 import type { FAQ } from "../types/faq.type";
+// @ts-ignore
+import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
 
 export const pricingPlans: Pricing[] = [
   {
@@ -323,10 +325,7 @@ export const selfHostedToc: FeatureTableToc[] = [
     type: "image",
     data: {
       text: "GitHub",
-      image: {
-        path: "/svg/github.svg",
-        alt: "GitHub",
-      },
+      image: githubMarkSvelte,
     },
   },
   {

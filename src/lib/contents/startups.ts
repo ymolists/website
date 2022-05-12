@@ -20,6 +20,7 @@ export const features: Feature[] = [
     },
     image: {
       src: "/images/startups/stories.png",
+      darkSrc: "/images/startups/stories-dark.png",
       alt: "Gitpod Customer Stories",
     },
   },
