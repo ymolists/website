@@ -7,6 +7,6 @@ const storedTheme =
     : "light";
 export const theme = writable(storedTheme);
 theme.subscribe((value) => {
-  typeof window !== "undefined" &&
-    localStorage.setItem("theme", value === "dark" ? "dark" : "light");
+  // typeof window !== "undefined" &&
+  //   localStorage.setItem("theme", value === "dark" ? "dark" : "light");
 });
