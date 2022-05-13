@@ -7,7 +7,7 @@
     @apply transition-all duration-200;
   }
 
-  .inactive path {
+  :global(body.dark) .inactive path {
     @apply fill-divider-light;
   }
 </style>
