@@ -1,14 +1,11 @@
-// @ts-nocheck
-import type { ContactAction } from "$lib/types/contact-action.type";
-import docsSvelte from "$lib/components/svgs/docs/docs.svelte";
-import quickstartSvelte from "$lib/components/svgs/docs/quickstart.svelte";
-import communitySvelte from "$lib/components/svgs/community.svelte";
-import salesSvelte from "$lib/components/svgs/sales.svelte";
+import type { Card } from "$lib/types/card.type";
 
-export const contactActions: ContactAction[] = [
+export const contactActions: Card[] = [
   {
-    icon: quickstartSvelte,
-    transform: "scale(1.05)",
+    icon: {
+      src: "/svg/icons/chat.svg",
+      alt: "Chat",
+    },
     title: "Support",
     text: "Get help with any question or issue.",
     link: {
@@ -17,18 +14,23 @@ export const contactActions: ContactAction[] = [
     },
   },
   {
-    icon: salesSvelte,
+    icon: {
+      src: "/svg/icons/headphones.svg",
+      alt: "Sales",
+    },
     title: "Sales",
     text: "We’d love to talk about how we can work together.",
-    transform: "scale(.9)",
     link: {
       text: "Contact Sales",
       href: "/contact/sales",
     },
   },
   {
-    icon: communitySvelte,
-    transform: "translateY(-1rem) scale(.95)",
+    icon: {
+      src: "/svg/icons/team.svg",
+      alt: "Community",
+      transform: "scale(1.1)",
+    },
     title: "Community",
     text: "Connect with the community to get help for common requests.",
     link: {
@@ -37,8 +39,10 @@ export const contactActions: ContactAction[] = [
     },
   },
   {
-    icon: docsSvelte,
-    transform: "scale(1.1)",
+    icon: {
+      src: "/svg/icons/file.svg",
+      alt: "Docs",
+    },
     title: "Docs",
     text: "Learn more about how to become always ready to code.",
     link: {

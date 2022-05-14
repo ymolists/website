@@ -11,8 +11,6 @@ import {
 } from "./home/features";
 import type { FAQ } from "$lib/types/faq.type";
 // @ts-ignore
-import salesSvelte from "$lib/components/svgs/sales.svelte";
-// @ts-ignore
 import redwoodjsSvelte from "$lib/components/svgs/customers/redwoodjs.svelte";
 // @ts-ignore
 import prismaSvelte from "$lib/components/svgs/opensource/prisma.svelte";
@@ -111,8 +109,10 @@ export const programBenefits: Card[] = [
     text: "If your open-source software appears in our bill of materials then Gitpod would like to unconditionally <a href='https://github.com/moby/buildkit/issues/2525'>shout you some beers</a> <a href='/blog/devxconf-wrap'>or more</a> as our way of saying thank-you.",
   },
   {
-    icon: salesSvelte,
-    transform: "scale(1.6) translateY(3px)",
+    icon: {
+      src: "/svg/icons/headphones.svg",
+      alt: "Personal onboarding",
+    },
     title: "Personal onboarding",
     text: "We are here to help you with getting started and can provide ongoing support for maintaining the <a href='/docs/references/gitpod-yml'>.gitpod.yml</a> if you want.",
   },

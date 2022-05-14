@@ -18,9 +18,11 @@
 <div
   class="text-center bg-card rounded-2xl shadow-normal py-x-small px-micro flex flex-col"
 >
-  <div class="flex justify-center">
-    <svelte:component this={getStartedItem.icon} />
-  </div>
+  <img
+    src={getStartedItem.icon.src}
+    alt={getStartedItem.icon.alt}
+    class="h-10 mb-xx-small"
+  />
   <div class="flex flex-col">
     <h2 class="mt-2 h4 mb-macro">{getStartedItem.title}</h2>
     <p>{getStartedItem.description}</p>

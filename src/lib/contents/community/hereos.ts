@@ -1,6 +1,3 @@
-// @ts-ignore
-import communitySvelte from "$lib/components/svgs/community.svelte";
-import quickstartSvelte from "$lib/components/svgs/docs/quickstart.svelte";
 import type { Card } from "$lib/types/card.type";
 import type { ExploreSection } from "$lib/types/explore-section.type";
 
@@ -13,8 +10,10 @@ export const benefits: Card[] = [
     text: "We promise you a safe space to improve your coding, content creation or even public speaking skills.",
   },
   {
-    icon: communitySvelte,
-    transform: "scale(.8) translateY(-2.2rem)",
+    icon: {
+      src: "/svg/icons/team.svg",
+      alt: "People",
+    },
     title: "Build a network",
     text: "Build your network with our thriving community, connect with and learn from like-minded people.",
   },
@@ -27,8 +26,10 @@ export const benefits: Card[] = [
     text: "Associate yourself with our brand and become one of our community moderators on Discord.",
   },
   {
-    icon: quickstartSvelte,
-    transform: "scale(1.7)",
+    icon: {
+      src: "/svg/icons/chat.svg",
+      alt: "Free OSS plan",
+    },
     title: "Free OSS plan",
     text: "Enjoy free, unlimited hours on any public repository.",
   },
