@@ -1,4 +1,3 @@
-import type { TableData } from "$lib/types/table-data.type";
 import type { Card } from "$lib/types/card.type";
 import type { Intro } from "$lib/types/intro.type";
 import type {
@@ -11,36 +10,32 @@ import logoSvelte from "$lib/components/svgs/logo.svelte";
 export const benefits: Card[] = [
   {
     icon: {
-      src: "/svg/local-development/developer-experience.svg",
+      src: "/svg/icons/team.svg",
       alt: "Developer experience",
-      transform: "scale(1.6)",
     },
     title: "Developer experience",
     text: "Developer productivity increases and results in greater team morale.",
   },
   {
     icon: {
-      src: "/svg/local-development/remote-work.svg",
+      src: "/svg/icons/cloud.svg",
       alt: "Remote work",
-      transform: "scale(1.4)",
     },
     title: "Remote work",
     text: "Work from anywhere on any device. All you need is a browser.",
   },
   {
     icon: {
-      src: "/svg/local-development/faster-onboarding.svg",
+      src: "/svg/icons/play.svg",
       alt: "Faster onboarding",
-      transform: "scale(1.5)",
     },
     title: "Faster onboarding",
     text: "Ready to code within seconds. No need to set up dev environments.",
   },
   {
     icon: {
-      src: "/svg/local-development/open-source-contributions.svg",
+      src: "/svg/icons/opensource.svg",
       alt: "Open-source contributions",
-      transform: "scale(1.5) translateY(4px)",
     },
     title: "Open-source contributions",
     text: "Increase in open-source contributions thanks to an easy onboarding.",

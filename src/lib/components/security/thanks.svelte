@@ -24,7 +24,7 @@
   class="max-w-lg"
 >
   <img
-    src="/svg/heart.svg"
+    src="/svg/icons/heart.svg"
     alt="Heart"
     class="h-10 mx-auto mb-micro"
     slot="top"

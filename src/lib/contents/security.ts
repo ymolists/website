@@ -28,7 +28,7 @@ export const programFeatures: Card[] = [
       src: "/svg/icons/chat.svg",
       alt: "Chat",
     },
-    transform: "scale(.85)",
+    transform: "scale(.8)",
   },
   {
     title: "Open source",
@@ -41,14 +41,17 @@ export const programFeatures: Card[] = [
   {
     title: "Authentication and Authorization",
     text: "<p>Gitpod uses your Git provider's SSO and, by default, all workspaces connections are private and authenticated, making them accessible only by the creator.</p><p>Prebuild logs are readable by all members of the corresponding team and no one else.</p>",
-    icon: authSvelte,
-    transform: "scale(1.7)",
+    icon: {
+      src: "/svg/icons/secure.svg",
+      alt: "Authentication and Authorization",
+    },
   },
   {
     title: "Encryption",
     text: "<p>All data, including workspace backups and environment variables, is encrypted at rest using AES256; and all connections to the Gitpod app, website, workspaces and workspaces' endpoints are encrypted in transit (TLS).</p>",
-    icon: encryptionSvelte,
-    transform: "scale(1.7)",
+    icon: {
+      src: "/svg/icons/lock.svg",
+    },
   },
 ];
 

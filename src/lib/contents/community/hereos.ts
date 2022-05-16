@@ -4,7 +4,8 @@ import type { ExploreSection } from "$lib/types/explore-section.type";
 export const benefits: Card[] = [
   {
     icon: {
-      src: "/svg/heroes/oppritunities-to-grow.svg",
+      src: "/svg/icons/cloud.svg",
+      alt: "Cloud",
     },
     title: "Opportunities to grow",
     text: "We promise you a safe space to improve your coding, content creation or even public speaking skills.",
@@ -19,15 +20,15 @@ export const benefits: Card[] = [
   },
   {
     icon: {
-      src: "/svg/heroes/recogination.svg",
+      src: "/svg/icons/heart.svg",
+      alt: "Heart",
     },
-    transform: "scale(1.9) translateY(3px)",
     title: "Recognition",
     text: "Associate yourself with our brand and become one of our community moderators on Discord.",
   },
   {
     icon: {
-      src: "/svg/icons/chat.svg",
+      src: "/svg/icons/opensource.svg",
       alt: "Free OSS plan",
     },
     title: "Free OSS plan",
@@ -35,17 +36,17 @@ export const benefits: Card[] = [
   },
   {
     icon: {
-      src: "/svg/heroes/extra-resources.svg",
+      src: "/svg/icons/plus.svg",
+      alt: "Plus",
     },
-    transform: "scale(1.9) translateY(3px)",
     title: "Extra resources",
     text: "Receive exclusive swag, access to resources to help you spread the word, content reviews from the Gitpod team,  and more!",
   },
   {
     icon: {
-      src: "/svg/heroes/beta-access.svg",
+      src: "/svg/icons/tick.svg",
+      alt: "Tick",
     },
-    transform: "scale(1.4)",
     title: "Beta access",
     text: "Test new features before they are officially released and share your feedback with our product teams.",
   },

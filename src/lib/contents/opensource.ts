@@ -101,7 +101,7 @@ export const programBenefits: Card[] = [
   },
   {
     icon: {
-      src: "/svg/heart.svg",
+      src: "/svg/icons/heart.svg",
       alt: "Special treats",
     },
     transform: "scale(0.8)",
@@ -110,8 +110,9 @@ export const programBenefits: Card[] = [
   },
   {
     icon: {
-      src: "/svg/icons/headphones.svg",
+      src: "/svg/icons/chat.svg",
       alt: "Personal onboarding",
+      transform: "scale(.85)",
     },
     title: "Personal onboarding",
     text: "We are here to help you with getting started and can provide ongoing support for maintaining the <a href='/docs/references/gitpod-yml'>.gitpod.yml</a> if you want.",

@@ -41,7 +41,10 @@
   tight={true}
   fullWidth={true}
 >
-  <div slot="content" class="grid gap-micro justify-center mt-small">
+  <div
+    slot="content"
+    class="grid gap-micro justify-center mt-small sm:mb-xx-large"
+  >
     {#each contactActions as action}
       <CardSmall card={action} btnSize="normal" titleClassNames="h4" />
     {/each}
