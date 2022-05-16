@@ -1,12 +1,6 @@
 import type { Action } from "$lib/types/action.type";
-// @ts-ignore
-import complianceSvelte from "$lib/components/svgs/security/compliance.svelte";
 
 import type { Card } from "$lib/types/card.type";
-// @ts-ignore
-import authSvelte from "$lib/components/svgs/security/auth.svelte";
-// @ts-ignore
-import encryptionSvelte from "$lib/components/svgs/security/encryption.svelte";
 
 export const secureParagraphs = [
   "Storing copies of your source code locally on countless unsecured devices and networks is a bad practice. At the same time, it has become a reality for many organisations to enable their employees to work remotely with BYOD policies.",
@@ -18,14 +12,16 @@ export const programFeatures: Card[] = [
   {
     title: "Compliance",
     text: "<p>Gitpod is a European company committed to security and data privacy. We provide our users with the ability to access and control the information that we collect about them.</p><p>Gitpod is built with security in mind and we continuously invest in security best practices. We are currently in the process of becoming SOC 2 compliant and you can request a copy of our SOC2 audit report as soon as it's available.</p>",
-    icon: complianceSvelte,
+    icon: {
+      src: "/svg/security/compliance.svg",
+    },
     transform: "scale(1.5) translateY(.2rem)",
   },
   {
     title: "Environment Isolation",
     text: '<p>Each Gitpod workspace or prebuild runs on a secured single-use container providing fast startup times without compromising on security</p><p>We create separate user, PID, mount and network namespaces for each Gitpod workspace, and establish an unprivileged node user as root within that user namespace. More details on the technical approach can be found <a href="https://www.youtube.com/watch?v=iYLCHQgj0fE" target="_blank" rel="noreferrer">in this talk</a> from our Head of Engineering as well as in this <a href="https://kinvolk.io/blog/2020/12/improving-kubernetes-and-container-security-with-user-namespaces/"  rel="noreferrer" target="_blank">blog post</a> from the container security experts at Kinvolk who stress-tested our namespace layering implementation.</p>',
     icon: {
-      src: "/svg/icons/chat.svg",
+      src: "/svg/icons/secure.svg",
       alt: "Chat",
     },
     transform: "scale(.8)",
@@ -42,7 +38,7 @@ export const programFeatures: Card[] = [
     title: "Authentication and Authorization",
     text: "<p>Gitpod uses your Git provider's SSO and, by default, all workspaces connections are private and authenticated, making them accessible only by the creator.</p><p>Prebuild logs are readable by all members of the corresponding team and no one else.</p>",
     icon: {
-      src: "/svg/icons/secure.svg",
+      src: "/svg/icons/lock.svg",
       alt: "Authentication and Authorization",
     },
   },
@@ -50,7 +46,7 @@ export const programFeatures: Card[] = [
     title: "Encryption",
     text: "<p>All data, including workspace backups and environment variables, is encrypted at rest using AES256; and all connections to the Gitpod app, website, workspaces and workspaces' endpoints are encrypted in transit (TLS).</p>",
     icon: {
-      src: "/svg/icons/lock.svg",
+      src: "/svg/icons/file.svg",
     },
   },
 ];
