@@ -48,15 +48,14 @@
   </head>
   <body>
     <script>
-      // const theme = localStorage.getItem("theme");
-      const theme = null; // this should be removed when the dark mode goes live
+      const theme = localStorage.getItem("theme");
       
       if (theme === "dark") {
         document.body.classList.add("dark");
       } else if (theme === "light") {
         document.body.classList.add("light");
-      // } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      //   document.body.classList.add("dark");
+      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.body.classList.add("dark");
       } else {
         document.body.classList.add("light");
       }

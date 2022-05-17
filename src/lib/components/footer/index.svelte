@@ -1,5 +1,5 @@
 <script>
-  // import ThemeSwitcher from "../theme-switcher.svelte";
+  import ThemeSwitcher from "../theme-switcher.svelte";
   import FooterLink from "./link.svelte";
   import Section from "./section.svelte";
 
@@ -126,7 +126,7 @@
           >Copyright &copy; {new Date().getFullYear()} Gitpod</span
         >
       </div>
-      <!-- <ThemeSwitcher /> -->
+      <ThemeSwitcher />
       <div class="flex space-x-macro">
         {#each socialLinks as link}
           <FooterLink
