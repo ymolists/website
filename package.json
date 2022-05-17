@@ -39,7 +39,6 @@
     "js-cookie": "^3.0.1"
   },
   "devDependencies": {
-    "@jsdevtools/rehype-toc": "^3.0.2",
     "@netlify/functions": "^0.8.0",
     "@sveltejs/adapter-netlify": "1.0.0-next.42",
     "@sveltejs/kit": "1.0.0-next.240",

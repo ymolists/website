@@ -176,7 +176,6 @@ module.exports = {
               },
             },
             h1: {
-              fontSize: "var(--h3)",
               fontWeight: "700",
               marginBottom: "var(--xx-small)",
             },
@@ -184,7 +183,6 @@ module.exports = {
               code: {
                 fontWeight: "700 !important",
               },
-              fontSize: "var(--h4)",
               fontWeight: "700",
               marginBottom: "var(--xx-small)",
               marginTop: "var(--medium)",
@@ -193,7 +191,6 @@ module.exports = {
               code: {
                 fontWeight: "700 !important",
               },
-              fontSize: "var(--h5)",
               fontWeight: "700",
               marginBottom: "var(--xx-small)",
               em: {
@@ -201,7 +198,6 @@ module.exports = {
               },
             },
             h4: {
-              fontSize: "var(--p-large)",
               marginBottom: "var(--macro)",
             },
             iframe: {
