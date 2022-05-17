@@ -137,7 +137,7 @@
 <div class="hero mt-x-small" data-analytics={`{"position":"hero"}`}>
   <div class="hero__text">
     <h1 class="homeh1">
-      Always<br /> Ready to Code.
+      Always<br /> ready to code.
     </h1>
     <p id="choose-project-observer-target" class="hero__intro-text text-large">
       Spin up fresh, automated dev environments<br />
