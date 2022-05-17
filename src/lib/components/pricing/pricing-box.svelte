@@ -51,16 +51,27 @@
 
 <Card
   size="small"
-  class={`box flex w-full max-w-xs sm:w-[320px] gap-small py-small flex-col justify-between items-center bg-card px-0 mt-0 mx-macro mb-x-small  text-center transition-all duration-200 hover:shadow-brand`}
+  class="box flex w-full max-w-xs sm:w-[320px] gap-small {spiced
+    ? 'pt-xx-small'
+    : 'pt-x-small'} pb-small flex-col justify-between items-center bg-card px-0 mt-0 mx-macro mb-x-small text-center transition-all duration-200"
   brandShadow={spiced}
   stroked={false}
 >
   <div class="flex flex-col">
-    <h2 class="h4">{title}</h2>
-    <div class="h1 font-bold text-important flex items-center justify-center">
+    {#if spiced}
+      <div
+        class="text-xs bg-black dark:bg-light-black text-white py-1 rounded-2xl w-28 mx-auto mb-macro shadow-light dark:shadow-none"
+      >
+        Most Popular
+      </div>
+    {/if}
+    <h2 class="h4 !mb-0">{title}</h2>
+    <div
+      class="h2 font-bold text-important flex items-center justify-center mt-macro"
+    >
       {@html price}
     </div>
-    <div class="text-body font-semibold">
+    <div class="text-sub font-semibold mt-1">
       {#if duration}
         {duration}
       {:else}
@@ -68,7 +79,7 @@
       {/if}
     </div>
     {#if features}
-      <ulˀ
+      <ul
         class="inline-flex flex-col ml-x-small mt-xx-small space-y-micro text-left"
       >
         {#each features as feature}
@@ -80,7 +91,7 @@
             {/if}
           </li>
         {/each}
-      </ulˀ>
+      </ul>
     {/if}
     {#if learnMoreHref}
       <div class="flex flex-1 justify-center items-center">
