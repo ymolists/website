@@ -3,29 +3,31 @@ import { terminalSource, linuxSource } from "../terminal";
 // @ts-ignore
 import Workspaces from "$lib/components/workspaces.svelte";
 import type { Card } from "$lib/types/card.type";
-//@ts-ignore
-import multiTrackDevelopmentSvelte from "$lib/components/svgs/startups/multi-track-development.svelte";
 
 export const multiTrackDevelopmentFeature: Feature = {
   title: "Multi track development with ease",
   paragraph:
     "You can have multiple workspaces with different contexts open at once - one for your feature, one for a bug or one for your code review directly in Gitpod.",
-  previewComponent: multiTrackDevelopmentSvelte,
+  lottie: {
+    src: "/lottie/edit_workspace.json",
+    id: "edit_workspace",
+  },
 };
 
 export const collaborationFeature: Feature = {
   title: "Where teams code together",
   paragraph:
     "Share running workspaces for pair programming, use port forwarding or share a snapshot as a copy of your workspace with teammates.",
-  image: {
-    src: "/images/features/collaboration.png",
-    alt: "Collaboration",
-    classNames: "shadow-medium",
-    styles: "border-radius: 7px",
+  // image: {
+  //   src: "/images/features/collaboration.png",
+  //   alt: "Collaboration",
+  //   classNames: "shadow-medium",
+  //   styles: "border-radius: 7px",
+  // },
+  lottie: {
+    src: "/lottie/share_workspace.json",
+    id: "share-workspace",
   },
-  // lottie: {
-  //   src: '/lottie/share_workspace.json'
-  // }
 };
 
 export const codeAnywhereFeature: Feature = {

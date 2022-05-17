@@ -1,17 +1,11 @@
-import type { TableData } from "$lib/types/table-data.type";
 import type { Feature } from "$lib/types/feature.type";
 import type {
   FeatureTable,
   FeatureTableColumn,
   FeatureTableToc,
 } from "$lib/components/ui-library/feature-table/feature-table.types";
-// @ts-ignore
 import opensourceSvelte from "$lib/components/svgs/opensource.svelte";
-// @ts-ignore
-import multiTrackDevelopmentSvelte from "$lib/components/svgs/startups/multi-track-development.svelte";
-// @ts-ignore
 import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
-// @ts-ignore
 import awsSvelte from "$lib/components/svgs/aws.svelte";
 import idesSvelte from "$lib/components/svgs/ides.svelte";
 
@@ -50,7 +44,10 @@ export const features: Feature[] = [
     title: "Ephemeral workspaces",
     paragraph:
       "Spin up preconfigured, standardized dev environments from any git context when you need them and close them when you're done. Once you’ve experienced the freedom, you won’t go back to the friction of long-living stateful environments.",
-    previewComponent: multiTrackDevelopmentSvelte,
+    lottie: {
+      src: "/lottie/edit_workspace.json",
+      id: "edit_workspace",
+    },
   },
 ];
 

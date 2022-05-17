@@ -14,7 +14,7 @@
       mode: "scroll",
       actions: [
         {
-          visibility: [0, 1.0],
+          visibility: [0.25, 1.0],
           type: "play",
         },
       ],
@@ -28,6 +28,6 @@
   background="transparent"
   speed="1"
   {style}
-  loop
+  loop={false}
   autoplay
 />
