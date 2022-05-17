@@ -1,7 +1,7 @@
 import { writable } from "svelte/store";
 
 const storedTheme =
-  (typeof window !== "undefined" && localStorage.getItem("theme")) ||
+  (typeof window !== "undefined" && localStorage.getItem("theme") === "dark") ||
   (typeof document !== "undefined" && document.body.classList.contains("dark"))
     ? "dark"
     : "light";

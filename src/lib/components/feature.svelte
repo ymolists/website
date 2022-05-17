@@ -34,7 +34,7 @@
   }
 
   .feature :global(code) {
-    @apply py-1 px-2 rounded-xl bg-tertiary;
+    @apply py-1 px-2 rounded-xl bg-tertiary text-dark-grey;
     white-space: break-spaces;
   }
 
