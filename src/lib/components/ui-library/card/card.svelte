@@ -15,7 +15,7 @@
     @apply rounded-2xl;
   }
   .medium {
-    @apply shadow-normal rounded-2xl md:rounded-5xl;
+    @apply rounded-2xl md:rounded-5xl;
   }
 
   .white {
@@ -31,13 +31,13 @@
   }
 
   .brand {
-    @apply shadow-brand;
+    @apply shadow-highlight;
   }
 </style>
 
 <div
   style={styles}
-  class="shadow-normal dark:shadow-none {background} {size} {className}"
+  class="{background} {size} {className}"
   class:brand={brandShadow}
   class:stroked
 >

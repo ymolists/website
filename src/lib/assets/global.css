@@ -120,6 +120,12 @@
     }
   }
 
+  .stroked-light {
+    &::after {
+      @apply bg-white dark:bg-card;
+    }
+  }
+
   body.dark .stroked {
     &::before {
       background: linear-gradient(to bottom, #332d23, #0f0e0b);

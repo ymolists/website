@@ -43,6 +43,7 @@
 <style lang="postcss">
   .modal {
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100000;
   }
 </style>
 
@@ -50,7 +51,7 @@
 
 {#if isOpen}
   <div
-    class="modal fixed top-0 left-0 w-full h-screen z-50 flex justify-center items-center"
+    class="modal z-50 fixed top-0 left-0 w-full h-screen flex justify-center items-center"
     on:click={closeModal}
     use:focusTrap
   >

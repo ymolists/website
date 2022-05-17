@@ -141,7 +141,7 @@
 
 <Card
   size="small"
-  class="p-xx-small sm:py-small sm:px-x-small md:p-medium mb-32 sm:mx-8"
+  class="shadow-normal p-xx-small sm:py-small sm:px-x-small md:p-medium mb-32 sm:mx-8"
 >
   <form bind:this={form} on:submit|preventDefault={handleSubmit} novalidate>
     <h2 class="h4 title">Customer Information</h2>

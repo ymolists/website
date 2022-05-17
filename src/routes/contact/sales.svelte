@@ -196,7 +196,7 @@
 
 <Card
   size="small"
-  class="p-xx-small sm:py-small sm:px-x-small md:p-medium sm:mx-8 mb-xx-large"
+  class="shadow-normal p-xx-small sm:py-small sm:px-x-small md:p-medium sm:mx-8 mb-xx-large"
   styles="margin-top: 0"
 >
   <Section id="form" style="padding: 0; margin: 0">

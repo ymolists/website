@@ -38,7 +38,7 @@
   rel="noreferrer"
 >
   <div
-    class="testimonial w-96 p-xx-small overflow-hidden rounded-2xl bg-white dark:bg-card hover:shadow-xl transition-shadow duration-300 ease-in-out text-body"
+    class="testimonial stroked stroked-light w-96 p-xx-small overflow-hidden rounded-2xl bg-white dark:bg-card hover:shadow-xl transition-shadow duration-300 ease-in-out text-body"
   >
     <div>{@html text}</div>
     <div class="mt-4 flex">

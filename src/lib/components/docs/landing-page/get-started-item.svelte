@@ -16,7 +16,7 @@
 </style>
 
 <div
-  class="text-center bg-card rounded-2xl shadow-normal py-x-small px-micro flex flex-col"
+  class="stroked text-center bg-card rounded-2xl shadow-normal py-x-small px-micro flex flex-col"
 >
   <img
     src={getStartedItem.icon.src}

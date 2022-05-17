@@ -33,7 +33,7 @@
 <div>
   <Card
     size="medium"
-    class="flex items-start relative text-left md:mx-auto py-x-small px-micro sm:p-small max-w-4xl {clazz}"
+    class="shadow-normal flex items-start relative text-left md:mx-auto py-x-small px-micro sm:p-small max-w-4xl {clazz}"
   >
     <img
       src="/images/startups/kumquat-left.png"
