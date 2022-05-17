@@ -170,7 +170,7 @@ export const aliceTableData: FeatureTableColumn = {
     },
     {
       term: "Set up a new computer",
-      list: ["only needs is a browser"],
+      list: ["only needs a browser"],
     },
     {
       term: "Contribute to open-source projects",
