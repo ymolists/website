@@ -52,11 +52,6 @@
   btnPrimary={{
     href: "https://www.gitpod.io/docs/ides-and-editors/jetbrains-gateway",
     text: "Try Now",
-    onClickHandler: () =>
-      window.analytics.track("product_cta_clicked", {
-        context: "hero",
-        destination: "https://gitpod.io/workspaces/",
-      }),
   }}
 />
 
