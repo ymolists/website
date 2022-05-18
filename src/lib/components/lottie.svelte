@@ -5,9 +5,10 @@
 
   export let lottie: Lottie;
 
+  let player: HTMLElement;
   const { src, style, id } = lottie;
 
-  onMount(() => {
+  const handleOnLoad = () => {
     // @ts-ignore
     LottieInteractivity.create({
       player: `#${id}`,
@@ -19,12 +20,19 @@
         },
       ],
     });
+  };
+
+  onMount(() => {
+    player.addEventListener("load", handleOnLoad);
+
+    return () => player.removeEventListener("load", handleOnLoad);
   });
 </script>
 
 <lottie-player
   {id}
   {src}
+  bind:this={player}
   background="transparent"
   speed="1"
   {style}
