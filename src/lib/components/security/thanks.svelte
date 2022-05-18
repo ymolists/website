@@ -36,6 +36,9 @@
         <a rel="nofollow" href="https://twitter.com/AlanCao5">Alan Cao</a> from New
         York University.
       </li>
+      <li>
+        <a href="https://www.linkedin.com/in/0x33c0unt/"> Yusuf Kocadaş</a>.
+      </li>
     </ol>
     <h2 class="h4 year">2021</h2>
     <ol class="text-left mx-auto my-x-small">
