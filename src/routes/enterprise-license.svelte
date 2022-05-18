@@ -134,7 +134,7 @@
 
 <Header tight={true}>
   <div slot="content">
-    <h1 class="h2">Fill this out and get 10 additional users.</h1>
+    <h1 class="h2">Fill this out to get additional users.</h1>
     <p>Tell us how we can help and your license will be emailed shortly.</p>
   </div>
 </Header>
@@ -294,8 +294,7 @@
     <div>
       <p>
         <a href="/docs/self-hosted/latest"
-          >Skip the 10 extra users and just go directly to the installation
-          guides.</a
+          >Skip the extra users and just go directly to the installation guides.</a
         >
       </p>
     </div>
