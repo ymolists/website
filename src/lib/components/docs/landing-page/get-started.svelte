@@ -4,12 +4,7 @@
   import { getStartedItems } from "$lib/contents/docs/landing-page/get-started";
 </script>
 
-<Card
-  shadow={false}
-  size="medium"
-  background="white"
-  class="flex items-center p-12 gap-12"
->
+<Card size="medium" background="white" class="flex items-center p-12 gap-12">
   <img
     src="/images/docs/book.png"
     class="hidden lg:block"
