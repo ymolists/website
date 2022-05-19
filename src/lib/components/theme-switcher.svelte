@@ -2,23 +2,40 @@
   import Gear from "./svgs/switcher/gear.svelte";
   import Sun from "./svgs/switcher/sun.svelte";
   import Moon from "./svgs/switcher/moon.svelte";
+  import { onMount } from "svelte";
+  let theme: string;
+
+  onMount(() => {
+    let storedTheme = localStorage.getItem("theme");
+    if (storedTheme === null || storedTheme === "system") {
+      theme = "system";
+    } else if (storedTheme === "dark") {
+      theme = "dark";
+    } else {
+      theme = "light";
+    }
+  });
 
   const setLight = () => {
     document.body.classList.replace("dark", "light");
     localStorage.setItem("theme", "light");
+    theme = "light";
   };
 
   const setDark = () => {
     document.body.classList.replace("light", "dark");
     localStorage.setItem("theme", "dark");
+    theme = "dark";
   };
 
   const setSystem = () => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setDark();
+      document.body.classList.replace("light", "dark");
     } else {
-      setLight();
+      document.body.classList.replace("dark", "light");
     }
+    localStorage.setItem("theme", "system");
+    theme = "system";
   };
 </script>
 
@@ -42,12 +59,12 @@
     title="Switch to System's prefered color scheme."
     on:click={setSystem}
   >
-    <Gear />
+    <Gear active={theme === "system"} />
   </button>
   <button title="Switch to Light theme" on:click={setLight}>
-    <Sun />
+    <Sun active={theme === "light"} />
   </button>
   <button title="Switch to Dark theme" on:click={setDark}>
-    <Moon />
+    <Moon active={theme === "dark"} />
   </button>
 </div>
