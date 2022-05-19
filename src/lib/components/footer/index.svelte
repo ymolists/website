@@ -78,7 +78,7 @@
         <li><FooterLink href="/guides">Guides</FooterLink></li>
         <li>
           <FooterLink
-            href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
+            href="https://github.com/gitpod-io/gitpod/issues/new?assignees=&labels=type%3A+bug&template=bug_report.yml"
             target="_blank"
             rel="noopener">Report a bug</FooterLink
           >
