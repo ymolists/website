@@ -3,7 +3,6 @@
    * Typescript is not supported in mdsvex layout files.
    * @see https://github.com/pngwn/MDsveX/issues/116
    */
-  import AnnouncementBanner from "./announcement-banner.svelte";
   import OpenGraph from "../open-graph.svelte";
   import FeedbackWidget from "./feedback-widget.svelte";
   import docsCurrentSectionStore from "$lib/stores/docs-current-section";
@@ -38,7 +37,6 @@
   <div
     class="content-docs prose prose-h1:text-[32px] !prose-pre:rounded-xl md:px-4 max-w-none flex-auto min-w-0 xl:w-2/3"
   >
-    <AnnouncementBanner />
     <slot />
   </div>
 </div>
