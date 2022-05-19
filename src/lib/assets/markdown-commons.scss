@@ -131,6 +131,16 @@
 }
 
 body.dark {
+  blockquote {
+    & a[href*="http://"]:not([href*="www.gitpod.io"]),
+  & a[href*="https://"]:not([href*="www.gitpod.io"])
+    {
+      &::after {
+        filter: none;
+      }
+    }
+  }
+
   a[href*="http://"]:not([href*="www.gitpod.io"]),
   a[href*="https://"]:not([href*="www.gitpod.io"])
   {
