@@ -12,13 +12,8 @@
   import Header from "$lib/components/header.svelte";
   import { formatDate } from "$lib/utils/helpers";
   import Wrapper from "$lib/components/changelog/wrapper.svelte";
-  import { onMount } from "svelte";
 
   export let securityLogs: SecurityLog[];
-  onMount(() => {
-    const tocs = document.getElementsByClassName("toc");
-    while (tocs.length > 0) tocs[0].remove();
-  });
 </script>
 
 <style lang="postcss">

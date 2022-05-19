@@ -9,7 +9,6 @@
 <script lang="ts">
   import type { ChangelogEntry as ChangelogEntryType } from "$lib/types/changelog-entry.type";
 
-  import { onMount } from "svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
   import "$lib/assets/markdown-commons.scss";
   import TwitterFollowButton from "$lib/components/t-button.svelte";
@@ -22,12 +21,6 @@
   import ButtonsWrapper from "$lib/components/buttons-wrapper.svelte";
 
   export let changelogEntries: ChangelogEntryType[];
-
-  onMount(() => {
-    Array.from(document.getElementsByClassName("toc")).forEach((toc) =>
-      toc.remove()
-    );
-  });
 </script>
 
 <style lang="postcss">
