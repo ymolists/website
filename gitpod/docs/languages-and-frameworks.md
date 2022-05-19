@@ -1,5 +1,5 @@
 ---
-section: references
+section: languages-and-frameworks
 title: Languages & Frameworks
 ---
 
@@ -13,7 +13,7 @@ Below is a list of language and framework specific tips & tricks.
 
 > This is a non-exhaustive list we no longer maintain. Gitpod is a Ubuntu-based operating system in the cloud and you can install your languages & frameworks of choice. Please refer to [Quickstart](/docs/quickstart) for template projects to get started.
 
-- [JavaScript](/docs/languages/javascript)
+- [JavaScript](/docs/)
 - [Python](/docs/languages/python)
 - [HTML/CSS](/docs/languages/html)
 - [Java](/docs/languages/java)

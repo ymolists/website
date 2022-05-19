@@ -1,5 +1,5 @@
 ---
-section: references
+section: languages-and-frameworks
 title: Python in Gitpod
 ---
 
