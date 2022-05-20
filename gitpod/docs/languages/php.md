@@ -1,5 +1,5 @@
 ---
-section: languages-and-frameworks
+section: languages
 title: PHP in Gitpod
 ---
 

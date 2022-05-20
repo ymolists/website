@@ -64,7 +64,7 @@ export const MENU: MenuEntry[] = [
     ),
     M("FAQs", "ides-and-editors/faqs", []),
   ]),
-  M("Languages & Framework", "languages-and-frameworks", [
+  M("Languages", "languages", [
     M("JavaScript", "languages/javascript"),
     M("Python", "languages/python"),
     M("HTML/CSS", "languages/html"),

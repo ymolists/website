@@ -1,5 +1,5 @@
 ---
-section: languages-and-frameworks
+section: languages
 title: Julia in Gitpod
 ---
 
