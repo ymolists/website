@@ -58,7 +58,7 @@
       },
       previewComponent: Spaces_1,
       footnote:
-        "Compared start-up time until ready-to-code for<br /> <a href='https://github.com/gitpod-io/vscode' target='_blank'>https://github.com/gitpod-io/vscode</a>. Last verified 25 Sep 2020.",
+        "Compared start-up time until ready-to-code for<br /> <a href='https://github.com/gitpod-io/openvscode-server' target='_blank'>https://github.com/gitpod-io/openvscode-server</a>. Last verified 14 Feb 2022.",
     }}
   />
 
