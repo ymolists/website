@@ -13,6 +13,7 @@
   import AnnouncementBanner from "$lib/components/banners/announcement.svelte";
   import ContactLink from "./contact-link.svelte";
   import SkipToContent from "../skip-to-content.svelte";
+  import { session } from "$app/stores";
 
   let scroll: number;
 
@@ -48,11 +49,7 @@
     },
   ];
 
-  const isLoggedIn =
-    typeof document === "undefined"
-      ? false
-      : !!document.cookie.match("gitpod-user=loggedIn") ||
-        !!document.cookie.match("gitpod-user=true");
+  const isLoggedIn = $session.loggedIn;
 </script>
 
 <style lang="postcss">

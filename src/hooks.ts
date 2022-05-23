@@ -1,7 +1,10 @@
+import type { Handle } from "@sveltejs/kit";
+import * as cookie from "cookie";
 import { sequence } from "@sveltejs/kit/hooks";
 
 export const getSession: import("@sveltejs/kit").GetSession = async (event) => {
   return {
+    loggedIn: event.locals.loggedIn,
     changelogEntries: event.locals.changelogEntries,
     posts: event.locals.posts,
     guides: event.locals.guides,
@@ -89,6 +92,14 @@ const handleCustomers = async ({ event, resolve }) => {
   return await resolve(event);
 };
 
+const handleLoggedIn: Handle = async ({ event, resolve }) => {
+  const cookies = cookie.parse(event.request.headers.get("cookie") || "");
+  event.locals.loggedIn =
+    cookies["gitpod-user"] === "true" || cookies["gitpod-user"] === "loggedIn";
+
+  return await resolve(event);
+};
+
 const handleHeaders = async ({ event, resolve }) => {
   const response = await resolve(event);
   response.headers.set(
@@ -108,6 +119,7 @@ const handleHeaders = async ({ event, resolve }) => {
 
 export const handle = sequence(
   handleHeaders,
+  handleLoggedIn,
   handleBlogPosts,
   handleChangelogEntries,
   handleSecurityLogs,
