@@ -52,7 +52,7 @@
   }
 
   .bottom {
-    @apply bottom-0 fixed z-10;
+    @apply bottom-0 fixed z-30;
   }
 </style>
 
