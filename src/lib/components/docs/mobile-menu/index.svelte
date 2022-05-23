@@ -28,6 +28,6 @@
     <MobileMenuSubMenu {currentSection} />
   {/if}
   <div class="mt-4">
-    <EditInGitpod />
+    <EditInGitpod renderedOn="mobile" />
   </div>
 </div>
