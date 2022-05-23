@@ -1,4 +1,3 @@
-import type { TableData } from "$lib/types/table-data.type";
 import type { Pricing } from "$lib/types/pricing.type";
 import { isEurope } from "$lib/utils/helpers";
 import type {
@@ -12,34 +11,37 @@ import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
 
 export const pricingPlans: Pricing[] = [
   {
-    title: "Community (≤10 users)",
+    title: "Community",
     price: `${isEurope() ? "€" : "$"}0`,
-    duration: "for the first 10 users",
-    features: [
-      "Public & private repos",
-      "GitLab, GitHub and Bitbucket",
-      "Prebuilds",
-      "Shared Workspaces",
-      "Snapshots",
-      "Admin Dashboard",
-    ],
-    btnText: "Install now",
-    btnHref: "/docs/self-hosted/latest",
-    trackingName: "communitystarter",
-  },
-  {
-    title: "Community (>10 users)",
-    price: `${isEurope() ? "€" : "$"}0`,
-    duration: "after the 11th user",
-    features: [
-      "Unlimited users",
-      "Public & private repos",
-      "GitLab, GitHub and Bitbucket",
-      "Admin Dashboard",
-    ],
     btnText: "Install now",
     btnHref: "/docs/self-hosted/latest",
     trackingName: "community",
+    plans: [
+      {
+        title: "≤10 users",
+        features: [
+          "Public & private repos",
+          "GitLab, GitHub and Bitbucket",
+          {
+            text: "Full feature set",
+            tooltip:
+              "See <a href='#features'>features table</a> below for more details.",
+          },
+        ],
+      },
+      {
+        title: ">10 users",
+        features: [
+          "Public & private repos",
+          "GitLab, GitHub and Bitbucket",
+          {
+            text: "Limited features",
+            tooltip:
+              "See <a href='#features'>features table</a> below for more details.",
+          },
+        ],
+      },
+    ],
   },
   {
     title: "Professional",
@@ -47,7 +49,11 @@ export const pricingPlans: Pricing[] = [
     duration: "per user/month",
     features: [
       "Starts after the 11th user",
-      "All features from Community",
+      {
+        text: "Full feature set",
+        tooltip:
+          "See <a href='#features'>features table</a> below for more details.",
+      },
       "Air gapped environments",
       "Standard support",
     ],
@@ -58,148 +64,145 @@ export const pricingPlans: Pricing[] = [
   },
 ];
 
-export const communityBelow10PlanTableData: FeatureTableColumn = {
-  header: {
-    headline: "Community (≤10&nbsp;users)",
-    subtitle: `${isEurope() ? "€" : "$"}0 per user/month`,
-  },
-  link: {
-    label: "Install now",
-    href: "/docs/self-hosted/latest",
-  },
-  items: [
-    {
-      term: "Public & Private Repos",
-      availability: true,
-    },
-    {
-      term: "Team Limit",
-      text: "<span class='font-bold'>10 registered users</span>",
-    },
-    {
-      term: "Inactivity timeout",
-      text: "unlimited",
-    },
-    {
-      term: "Timeout Boost",
-      text: "unlimited",
-    },
-    {
-      term: "Parallel Workspaces",
-      text: "unlimited",
-    },
-    {
-      term: "Prebuilds",
-      text: "unlimited",
-    },
-    {
-      term: "GitLab",
-      availability: true,
-    },
-    {
-      term: "GitHub",
-      availability: true,
-    },
-    {
-      term: "Bitbucket",
-      availability: true,
-    },
-    {
-      term: "Multi-IDE support",
-      availability: true,
-    },
-    {
-      term: "Encrypted backups",
-      availability: true,
-    },
-    {
-      term: "Admin Dashboard",
-      availability: true,
-    },
-    {
-      term: "Shared workspaces",
-      availability: true,
-    },
-    {
-      term: "Snapshots",
-      availability: true,
-    },
-    {
-      term: "Air gapped environment support",
-      availability: false,
-    },
-  ],
-};
-
 export const communityPlanTableData: FeatureTableColumn = {
   header: {
-    headline: "Community (>10&nbsp;users)",
-    subtitle: `${isEurope() ? "€" : "$"}0 per user/month`,
+    headline: "Community",
+    subtitle: `${isEurope() ? "€" : "$"}0`,
   },
   link: {
     label: "Install now",
     href: "/docs/self-hosted/latest",
   },
-  items: [
+  enteries: [
     {
-      term: "Public & Private Repos",
-      availability: true,
+      users: "≤10 users",
+      items: [
+        {
+          term: "Public & Private Repos",
+          availability: true,
+        },
+        {
+          term: "Team Limit",
+          text: "<span class='font-bold'>≤10 registered users</span>",
+        },
+        {
+          term: "Inactivity timeout",
+          text: "unlimited",
+        },
+        {
+          term: "Timeout Boost",
+          text: "unlimited",
+        },
+        {
+          term: "Parallel Workspaces",
+          text: "unlimited",
+        },
+        {
+          term: "Prebuilds",
+          text: "unlimited",
+        },
+        {
+          term: "GitLab",
+          availability: true,
+        },
+        {
+          term: "GitHub",
+          availability: true,
+        },
+        {
+          term: "Bitbucket",
+          availability: true,
+        },
+        {
+          term: "Encrypted backups",
+          availability: true,
+        },
+        {
+          term: "Multi-IDE support",
+          availability: true,
+        },
+        {
+          term: "Admin Dashboard",
+          availability: true,
+        },
+        {
+          term: "Shared workspaces",
+          availability: true,
+        },
+        {
+          term: "Snapshots",
+          availability: true,
+        },
+        {
+          term: "Air gapped environment support",
+          availability: false,
+        },
+      ],
     },
     {
-      term: "Team Limit",
-      text: "<span class='font-bold'>unlimited</span>",
-    },
-    {
-      term: "Inactivity timeout",
-      text: "unlimited",
-    },
-    {
-      term: "Timeout Boost",
-      text: "unlimited",
-    },
-    {
-      term: "Parallel Workspaces",
-      text: "unlimited",
-    },
-    {
-      term: "Prebuilds",
-      text: "unavaliable",
-    },
-    {
-      term: "GitLab",
-      availability: true,
-    },
-    {
-      term: "GitHub",
-      availability: true,
-    },
-    {
-      term: "Bitbucket",
-      availability: true,
-    },
-    {
-      term: "Multi-IDE support",
-      availability: true,
-    },
-    {
-      term: "Encrypted backups",
-      availability: true,
-    },
-    {
-      term: "Admin Dashboard",
-      availability: true,
-    },
-    {
-      term: "Shared workspaces",
-      availability: false,
-    },
-    {
-      term: "Snapshots",
-      availability: false,
-    },
-    {
-      term: "Air gapped environment support",
-      availability: false,
+      users: ">10 users",
+      items: [
+        {
+          term: "Public & Private Repos",
+          availability: true,
+        },
+        {
+          term: "Team Limit",
+          text: "unlimited",
+        },
+        {
+          term: "Inactivity timeout",
+          text: "unlimited",
+        },
+        {
+          term: "Timeout Boost",
+          text: "unlimited",
+        },
+        {
+          term: "Parallel Workspaces",
+          text: "unlimited",
+        },
+        {
+          term: "Prebuilds",
+          availability: false,
+        },
+        {
+          term: "GitLab",
+          availability: true,
+        },
+        {
+          term: "GitHub",
+          availability: true,
+        },
+        {
+          term: "Bitbucket",
+          availability: true,
+        },
+        {
+          term: "Encrypted backups",
+          availability: true,
+        },
+        {
+          term: "Multi-IDE support",
+          availability: true,
+        },
+        {
+          term: "Admin Dashboard",
+          availability: true,
+        },
+        {
+          term: "Shared workspaces",
+          availability: false,
+        },
+        {
+          term: "Snapshots",
+          availability: false,
+        },
+        {
+          term: "Air gapped environment support",
+          availability: false,
+        },
+      ],
     },
   ],
 };
@@ -209,76 +212,88 @@ export const professionalPlanTableData: FeatureTableColumn = {
   header: {
     headline: "Professional",
     subtitle: `${isEurope() ? "€29" : "$35"} per user/month`,
+    isMostPopular: true,
   },
   link: {
     label: "Register and Install Now",
     href: "/enterprise-license",
   },
-  items: [
+  enteries: [
     {
-      term: "Public & Private Repos",
-      availability: true,
-    },
-    {
-      term: "Team Limit",
-      text: "<span class='font-bold'>unlimited</span>",
-    },
-    {
-      term: "Inactivity timeout",
-      text: "unlimited",
-    },
-    {
-      term: "Timeout Boost",
-      text: "unlimited",
-    },
-    {
-      term: "Parallel Workspaces",
-      text: "unlimited",
-    },
-    {
-      term: "Prebuilds",
-      text: "unlimited",
-    },
-    {
-      term: "GitLab",
-      availability: true,
-    },
-    {
-      term: "GitHub",
-      availability: true,
-    },
-    {
-      term: "Bitbucket",
-      availability: true,
-    },
-    {
-      term: "Multi-IDE support",
-      availability: true,
-    },
-    {
-      term: "Encrypted backups",
-      availability: true,
-    },
-    {
-      term: "Admin Dashboard",
-      availability: true,
-    },
-    {
-      term: "Shared workspaces",
-      availability: true,
-    },
-    {
-      term: "Snapshots",
-      availability: true,
-    },
-    {
-      term: "Air gapped environment support",
-      availability: true,
+      users: ">10 users",
+      items: [
+        {
+          term: "Public & Private Repos",
+          availability: true,
+        },
+        {
+          term: "Team Limit",
+          text: "unlimited",
+        },
+        {
+          term: "Inactivity timeout",
+          text: "unlimited",
+        },
+        {
+          term: "Timeout Boost",
+          text: "unlimited",
+        },
+        {
+          term: "Parallel Workspaces",
+          text: "unlimited",
+        },
+        {
+          term: "Prebuilds",
+          availability: true,
+        },
+        {
+          term: "GitLab",
+          availability: true,
+        },
+        {
+          term: "GitHub",
+          availability: true,
+        },
+        {
+          term: "Bitbucket",
+          availability: true,
+        },
+        {
+          term: "Encrypted backups",
+          availability: true,
+        },
+        {
+          term: "Multi-IDE support",
+          availability: true,
+        },
+        {
+          term: "Admin Dashboard",
+          availability: true,
+        },
+        {
+          term: "Shared workspaces",
+          availability: true,
+        },
+        {
+          term: "Snapshots",
+          availability: true,
+        },
+        {
+          term: "Air gapped environment support",
+          availability: true,
+        },
+      ],
     },
   ],
 };
 
 export const selfHostedToc: FeatureTableToc[] = [
+  {
+    type: "text",
+    data: {
+      text: "",
+    },
+  },
   {
     type: "text",
     data: {
@@ -351,17 +366,17 @@ export const selfHostedToc: FeatureTableToc[] = [
   {
     type: "tooltip",
     data: {
-      text: "Multi-IDE support",
+      text: "Encrypted backups",
       tooltip:
-        "Connect Gitpod with your favourite IDE. View <a href='/docs/ides-and-editors'>docs/IDE</a> to see all suported IDE’s.",
+        "Keeps your data safe. More on <a href='/security'>security</a>.",
     },
   },
   {
     type: "tooltip",
     data: {
-      text: "Encrypted backups",
+      text: "Multi-IDE support",
       tooltip:
-        "Keeps your data safe. More on <a href='/security'>security</a>.",
+        "Connect Gitpod with your favourite IDE. View <a href='/docs/ides-and-editors'>docs/IDE</a> to see all suported IDE’s.",
     },
   },
   {
@@ -398,11 +413,7 @@ export const selfHostedToc: FeatureTableToc[] = [
 
 export const selfHostedComparison: FeatureTable = {
   toc: selfHostedToc,
-  columns: [
-    communityBelow10PlanTableData,
-    communityPlanTableData,
-    professionalPlanTableData,
-  ],
+  columns: [communityPlanTableData, professionalPlanTableData],
 };
 export const selfhostedFAQ: FAQ = {
   headline: "FAQs",

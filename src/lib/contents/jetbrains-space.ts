@@ -60,62 +60,66 @@ export const gitpodTableData: FeatureTableColumn = {
       path: "/svg/media-kit/logo-mark.svg",
     },
   },
-  items: [
+  enteries: [
     {
-      term: "Pricing (SaaS)",
-      text: "Free for 50h/month",
-    },
-    {
-      term: "License",
-      text: "Open-Source",
-    },
-    {
-      term: "GitHub Integration",
-      availability: true,
-    },
-    {
-      term: "GitLab Integration",
-      availability: true,
-    },
-    {
-      term: "Bitbucket Integration",
-      availability: true,
-    },
-    {
-      term: "Self-Host on GCP",
-      availability: true,
-    },
-    {
-      term: "Self-Host on AWS",
-      availability: true,
-    },
-    {
-      term: "Self-Host on Kubernetes",
-      availability: true,
-    },
-    {
-      term: "Prebuilds",
-      availability: true,
-    },
-    {
-      term: "Snapshots",
-      availability: true,
-    },
-    {
-      term: "VS Code Extensions",
-      availability: true,
-    },
-    {
-      term: "iPad Support",
-      availability: true,
-    },
-    {
-      term: "Jetbrains IDE Support",
-      availability: true,
-    },
-    {
-      term: "VS Code Support",
-      availability: true,
+      items: [
+        {
+          term: "Pricing (SaaS)",
+          text: "Free for 50h/month",
+        },
+        {
+          term: "License",
+          text: "Open-Source",
+        },
+        {
+          term: "GitHub Integration",
+          availability: true,
+        },
+        {
+          term: "GitLab Integration",
+          availability: true,
+        },
+        {
+          term: "Bitbucket Integration",
+          availability: true,
+        },
+        {
+          term: "Self-Host on GCP",
+          availability: true,
+        },
+        {
+          term: "Self-Host on AWS",
+          availability: true,
+        },
+        {
+          term: "Self-Host on Kubernetes",
+          availability: true,
+        },
+        {
+          term: "Prebuilds",
+          availability: true,
+        },
+        {
+          term: "Snapshots",
+          availability: true,
+        },
+        {
+          term: "VS Code Extensions",
+          availability: true,
+        },
+        {
+          term: "iPad Support",
+          availability: true,
+        },
+        {
+          term: "Jetbrains IDE Support",
+          availability: true,
+        },
+        {
+          term: "VS Code Support",
+          availability: true,
+        },
+      ],
     },
   ],
 };
@@ -128,62 +132,66 @@ export const jetbrainsTableData: FeatureTableColumn = {
       path: "/svg/jetbrains-space/space.svg",
     },
   },
-  items: [
+  enteries: [
     {
-      term: "Pricing (SAAS)",
-      text: "$$$",
-    },
-    {
-      term: "License",
-      text: "Proprietary",
-    },
-    {
-      term: "GitHub Integration",
-      availability: false,
-    },
-    {
-      term: "GitLab Integration",
-      availability: false,
-    },
-    {
-      term: "Bitbucket Integration",
-      availability: false,
-    },
-    {
-      term: "Self-Host on GCP",
-      availability: false,
-    },
-    {
-      term: "Self-Host on AWS",
-      availability: false,
-    },
-    {
-      term: "Self-Host on Kubernetes",
-      availability: false,
-    },
-    {
-      term: "Prebuilds",
-      availability: true,
-    },
-    {
-      term: "Snapshots",
-      availability: true,
-    },
-    {
-      term: "VS Code Extensions",
-      availability: false,
-    },
-    {
-      term: "iPad Support",
-      availability: false,
-    },
-    {
-      term: "Jetbrains IDE Support",
-      availability: true,
-    },
-    {
-      term: "VS Code Support",
-      availability: false,
+      items: [
+        {
+          term: "Pricing (SAAS)",
+          text: "$$$",
+        },
+        {
+          term: "License",
+          text: "Proprietary",
+        },
+        {
+          term: "GitHub Integration",
+          availability: false,
+        },
+        {
+          term: "GitLab Integration",
+          availability: false,
+        },
+        {
+          term: "Bitbucket Integration",
+          availability: false,
+        },
+        {
+          term: "Self-Host on GCP",
+          availability: false,
+        },
+        {
+          term: "Self-Host on AWS",
+          availability: false,
+        },
+        {
+          term: "Self-Host on Kubernetes",
+          availability: false,
+        },
+        {
+          term: "Prebuilds",
+          availability: true,
+        },
+        {
+          term: "Snapshots",
+          availability: true,
+        },
+        {
+          term: "VS Code Extensions",
+          availability: false,
+        },
+        {
+          term: "iPad Support",
+          availability: false,
+        },
+        {
+          term: "Jetbrains IDE Support",
+          availability: true,
+        },
+        {
+          term: "VS Code Support",
+          availability: false,
+        },
+      ],
     },
   ],
 };
