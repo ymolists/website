@@ -30,4 +30,4 @@ You can also copy/paste your SSH access from the workspace start page, which is 
 
 You will need an existing private key on your machine for the access to work. If needed, you can generate one using [ssh-keygen](https://en.wikipedia.org/wiki/Ssh-keygen).
 
-**Note:** Whilst it is possible to access your Gitpod workspaces via the command line using [local companion](/docs/ides-and-editors/local-companion). As the local companion is still in beta the above method is the current preferred approach.
+**Note:** It is possible to access your Gitpod workspaces via the command line using [local companion](/docs/ides-and-editors/local-companion). As the local companion is still in beta, the above method is the current preferred approach.
