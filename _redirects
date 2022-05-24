@@ -54,7 +54,8 @@
 /docs/editors/intellij /docs/ides-and-editors/intellij
 /docs/editors/vscode /docs/ides-and-editors/vscode
 /docs/editors/clion /docs/ides-and-editors/clion
-/docs/editors/datagrip /docs/ides-and-editors/datagrip
+/docs/editors/datagrip /docs/ides-and-editors
+/docs/ides-and-editors/datagrip /docs/ides-and-editors
 /docs/editors/phpstorm /docs/ides-and-editors/phpstorm
 /docs/editors/pycharm /docs/ides-and-editors/pycharm
 /docs/editors/rider /docs/ides-and-editors/rider

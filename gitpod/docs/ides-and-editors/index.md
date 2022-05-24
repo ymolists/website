@@ -16,7 +16,7 @@ data={{
     description:
       "Connect and integrate Gitpod workspaces with your favourite IDE or editor. VS Code Browser and Desktop. JetBrains. IntelliJ. GoLand. PhpStorm. PyCharm. Vim. Emacs. SSH.",
     title: "Gitpod integrates with VS Code, JetBrains and SSH.",
-    keywords: "online IDEs, JetBrains, VS Code, webstorm, IntelliJ, PHPStorm, PyCharm,Rider, RubyMine, Webstorm CLion, Datagrip etc.",
+    keywords: "online IDEs, JetBrains, VS Code, IntelliJ, PHPStorm, PyCharm, Rider, RubyMine, WebStorm, CLion etc.",
   }}
 />
 

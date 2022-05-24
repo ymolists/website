@@ -48,7 +48,6 @@ export const MENU: MenuEntry[] = [
     M("PhpStorm", "ides-and-editors/phpstorm", [], "beta"),
     M("PyCharm", "ides-and-editors/pycharm", [], "beta"),
     M("CLion", "ides-and-editors/clion", [], "soon"),
-    M("DataGrip", "ides-and-editors/datagrip", [], "soon"),
     M("Rider", "ides-and-editors/rider", [], "soon"),
     M("RubyMine", "ides-and-editors/rubymine", [], "soon"),
     M("WebStorm", "ides-and-editors/webstorm", [], "soon"),
