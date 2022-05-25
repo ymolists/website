@@ -14,33 +14,20 @@
     @apply text-error border-error;
   }
 
-  label::before {
-    content: "";
-    flex: 0 0 24px;
-    @apply text-transparent block h-6 rounded
-      text-center mr-micro transition border border-solid border-divider
-      leading-[1.1];
-  }
-
-  input:checked + label::before {
-    background-image: url("/tick-dark.svg");
-    @apply text-important border border-solid border-primary bg-primary bg-center;
-  }
-
-  label:hover::before,
-  label:focus::before {
-    @apply border-black;
+  label:hover span,
+  label:focus span {
+    @apply border-divider;
   }
 
   .disabled {
     @apply pointer-events-none border-divider;
   }
 
-  .error + label::before {
+  .error + label span {
     @apply text-error border-error;
   }
 
-  .disabled + label::before {
+  .disabled + label span {
     @apply text-error border-error;
   }
 </style>
@@ -61,6 +48,8 @@
   <label
     class="flex cursor-pointer text-body mt-1 mb-2 {labelClasses}"
     for={label}
-    >{@html label}
+  >
+    <span />
+    {@html label}
   </label>
 {/if}
