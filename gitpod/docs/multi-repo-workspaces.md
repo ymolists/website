@@ -7,10 +7,9 @@ title: Multi-repo Workspaces
   export const prerender = true;
 </script>
 
-# Multi-repo Workspaces
+# {title}
 
-> **NEW FEATURE** —
-> Multi-repo workspaces are still in **Beta**. [Send feedback](https://github.com/gitpod-io/gitpod/issues/8623).
+> {title} is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/8623).
 
 If you use multiple repositories in your software project, you may find it useful to clone and develop in a single workspace. This avoids having to run multiple workspaces, and makes it easier to configure services which need to be aware of each other.
 

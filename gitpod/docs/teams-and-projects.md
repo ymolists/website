@@ -1,16 +1,15 @@
 ---
 section: develop
-title: Create a Team
+title: Teams & Projects
 ---
 
 <script context="module">
   export const prerender = true;
 </script>
 
-> **NEW FEATURE** —
-> Teams & Projects is still in **Beta**. [Send feedback](https://github.com/gitpod-io/gitpod/issues/5095).
+# {title}
 
-# Teams & Projects
+> {title} is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/5095).
 
 In Gitpod, you can use teams to manage multiple projects and also collaborate with your team using more efficient workflows.
 

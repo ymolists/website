@@ -15,9 +15,7 @@ title: GoLand
 <!-- prettier-ignore -->
 # GoLand
 
-Gitpod enables code editing using JetBrains {title} currently via [JetBrains Gateway](jetbrains-gateway).
-
-> **Please note:** JetBrains {title} is currently in beta. If you experience any issues, or have feedback, please [get in touch](/contact/support).
+> {title} is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 ## Getting Started
 
@@ -96,7 +94,7 @@ You can install a plugin only for **your current workspace** following these ste
 
 #### Preconfigure for repository
 
-> **Please note:** This feature is currently experimental and is a subject to change. [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
+> JetBrains plugin support is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 You can share a plugin on **{title} backend** with everybody working on the repository by adding it to [.gitpod.yml](/docs/config-gitpod-file) and pushing to your Git repository.
 Each workspace is preconfigured with plugins from the `gitpod.yml` configuration file. For example:
@@ -121,7 +119,7 @@ It is not yet possible to install plugins on **{title} backend** for your user t
 
 ## Indexing using Prebuilds
 
-> **Please note:** This feature is currently experimental and is a subject to change. [Send feedback](https://github.com/gitpod-io/gitpod/issues/6740).
+> JetBrains Prebuilds is currently in [Alpha](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 When you open the project {title} starts indexing to load modules and
 enable the core functionality like code completion and navigation.

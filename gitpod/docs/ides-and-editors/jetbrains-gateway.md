@@ -9,7 +9,7 @@ title: JetBrains Gateway
 
 # {title}
 
-> **Please note:** {title} is currently in beta. If you experience any issues, or have feedback, please [get in touch](/contact/support).
+> {title} is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 [JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/) is your single entry point to all remote development environments when using JetBrains IDE's. JetBrains Gateway is a compact desktop app that allows you to work remotely with a JetBrains IDE without downloading the full IDE. Gitpod works with JetBrains Gateway via a custom Gitpod [JetBrains Gateway plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway).
 

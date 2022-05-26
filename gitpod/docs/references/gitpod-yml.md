@@ -13,41 +13,42 @@ The `.gitpod.yml` file at the root of your project is where you tell Gitpod how 
 
 Below is a full reference of all available properties. To see the underlying schema, please refer to [`gitpod-io/gitpod`](https://github.com/gitpod-io/gitpod/blob/main/components/gitpod-protocol/data/gitpod-schema.json) in the [gitpod-io/gitpod](https://github.com/gitpod-io/gitpod) repository.
 
-- [`checkoutLocation`](#checkoutlocation)
-- [`gitConfig`](#gitconfig)
-- [`github`](#github)
-  - [`prebuilds.addBadge`](#prebuildsaddbadge)
-  - [`prebuilds.addCheck`](#prebuildsaddcheck)
-  - [`prebuilds.addComment`](#prebuildsaddcomment)
-  - [`prebuilds.addLabel`](#prebuildsaddlabel)
-  - [`prebuilds.branches`](#prebuildsbranches)
-  - [`prebuilds.master`](#prebuildsmaster)
-  - [`prebuilds.pullRequests`](#prebuildspullrequests)
-  - [`prebuilds.pullRequestsFromForks`](#prebuildspullrequestsfromforks)
-- [`image`](#image)
-  - [`image.file`](#imagefile)
-  - [`image.context`](#imagecontext)
-- [`jetbrains`](#jetbrains)
-  - [`jetbrains.plugins`](#jetbrainsplugins)
-  - [`jetbrains.[product]`](#jetbrainsproduct)
-  - [`jetbrains.[product].plugins`](#jetbrainsproductplugins)
-  - [`jetbrains.[product].prebuilds`](#jetbrainsproductprebuilds)
-- [`ports`](#ports)
-  - [`ports[n].onOpen`](#portsnonopen)
-  - [`ports[n].port`](#portsnport)
-  - [`ports[n].visibility`](#portsnvisibility)
-- [`tasks`](#tasks)
-  - [`tasks[n].before`](#tasksnbefore)
-  - [`tasks[n].command`](#tasksncommand)
-  - [`tasks[n].env`](#tasksnenv)
-  - [`tasks[n].init`](#tasksninit)
-  - [`tasks[n].name`](#tasksnname)
-  - [`tasks[n].openIn`](#tasksnopenin)
-  - [`tasks[n].openMode`](#tasksnopenmode)
-  - [`tasks[n].prebuild`](#tasksnprebuild)
-- [`vscode`](#vscode)
-  - [`vscode.extensions`](#vscodeextensions)
-- [`workspaceLocation`](#workspacelocation)
+- [.gitpod.yml Reference](#gitpodyml-reference)
+  - [`checkoutLocation`](#checkoutlocation)
+  - [`gitConfig`](#gitconfig)
+  - [`github`](#github)
+    - [`prebuilds.addBadge`](#prebuildsaddbadge)
+    - [`prebuilds.addCheck`](#prebuildsaddcheck)
+    - [`prebuilds.addComment`](#prebuildsaddcomment)
+    - [`prebuilds.addLabel`](#prebuildsaddlabel)
+    - [`prebuilds.branches`](#prebuildsbranches)
+    - [`prebuilds.master`](#prebuildsmaster)
+    - [`prebuilds.pullRequests`](#prebuildspullrequests)
+    - [`prebuilds.pullRequestsFromForks`](#prebuildspullrequestsfromforks)
+  - [`image`](#image)
+    - [`image.file`](#imagefile)
+    - [`image.context`](#imagecontext)
+  - [`jetbrains`](#jetbrains)
+    - [`jetbrains.plugins`](#jetbrainsplugins)
+    - [`jetbrains.[product]`](#jetbrainsproduct)
+    - [`jetbrains.[product].plugins`](#jetbrainsproductplugins)
+    - [`jetbrains.[product].prebuilds`](#jetbrainsproductprebuilds)
+  - [`ports`](#ports)
+    - [`ports[n].onOpen`](#portsnonopen)
+    - [`ports[n].port`](#portsnport)
+    - [`ports[n].visibility`](#portsnvisibility)
+  - [`tasks`](#tasks)
+    - [`tasks[n].before`](#tasksnbefore)
+    - [`tasks[n].command`](#tasksncommand)
+    - [`tasks[n].env`](#tasksnenv)
+    - [`tasks[n].init`](#tasksninit)
+    - [`tasks[n].name`](#tasksnname)
+    - [`tasks[n].openIn`](#tasksnopenin)
+    - [`tasks[n].openMode`](#tasksnopenmode)
+    - [`tasks[n].prebuild`](#tasksnprebuild)
+  - [`vscode`](#vscode)
+    - [`vscode.extensions`](#vscodeextensions)
+  - [`workspaceLocation`](#workspacelocation)
 
 ## `checkoutLocation`
 
@@ -278,7 +279,7 @@ Optionally, you can set the `image.context`. This is useful when you want to cop
 
 ## `jetbrains`
 
-> **Please note:** This feature is currently experimental and is a subject to change. [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
+> JetBrains is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 Define the integration between Gitpod and JetBrains IDEs.
 
@@ -292,7 +293,7 @@ Define the integration between Gitpod and JetBrains IDEs.
 
 ### `jetbrains.plugins`
 
-> **Please note:** This feature is currently experimental and is a subject to change. [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
+> JetBrains plugin support (via gitpod.yml) is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 Define a list of plugins which should be installed for all compatible JetBrains IDEs when starting a workspace. To find the plugin identifier, from the [JetBrains Marketplace](https://plugins.jetbrains.com), find the desired plugin, open the 'Versions' tab, select any version and copy the 'Plugin ID' (like `${publisher}.${name}`).
 
@@ -306,7 +307,7 @@ Define a list of plugins which should be installed for all compatible JetBrains 
 
 ### `jetbrains.[product]`
 
-> **Please note:** This feature is currently experimental and is a subject to change. [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
+> JetBrains is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 Define the integration between Gitpod and a specific JetBrains IDE. Install plugins and configure prebuilds to speed up the IDE indexing.
 
@@ -327,7 +328,7 @@ Specify the 'product' with one of the following values:
 
 ### `jetbrains.[product].plugins`
 
-> **Please note:** This feature is currently experimental and is a subject to change. [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
+> JetBrains plugin support (via gitpod.yml) is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 Define a list of plugins which should be installed for the given JetBrains IDE when starting a workspace. To find the plugin identifier, from the [JetBrains Marketplace](https://plugins.jetbrains.com), find the desired plugin, open the 'Versions' tab, select any version and copy the 'Plugin ID' (like `${publisher}.${name}`).
 
@@ -351,7 +352,7 @@ jetbrains:
 
 ### `jetbrains.[product].prebuilds`
 
-> **Please note:** This feature is currently experimental and is a subject to change. [Send feedback](https://github.com/gitpod-io/gitpod/issues/6740).
+> JetBrains prebuilds support (via gitpod.yml) is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 Define whether Gitpod enables prebuilds for a specific JetBrains IDE.
 
