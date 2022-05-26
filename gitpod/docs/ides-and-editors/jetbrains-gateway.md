@@ -79,3 +79,9 @@ You can also start, and connect to Gitpod workspaces directly from JetBrains Gat
 <video playsinline autoplay no-controls loop muted class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Opening a JetBrains IDE from Gateway" src="/images/editors/open-from-jetbrains-gateway.mp4"></video>
     <figcaption>Opening a JetBrains IDE from Gateway</figcaption>
 </figure>
+
+## Troubleshooting
+
+- [What should I do if JetBrains Gateway and Gitpod aren’t working?](/docs/troubleshooting#what-should-i-do-if-jetbrains-gateway-and-gitpod-arent-working)
+- [Gitpod logs in JetBrains Gateway](/docs/troubleshooting#gitpod-logs-in-jetbrains-gateway)
+- [Gitpod logs in JetBrains Client](/docs/troubleshooting#gitpod-logs-in-jetbrains-client)

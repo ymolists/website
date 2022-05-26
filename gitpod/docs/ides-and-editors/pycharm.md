@@ -152,3 +152,9 @@ Users can switch between `stable` and `latest` versions of {title} on the [user 
 - For the questions about supported IDEs and Editors in Gitpod, refer to [FAQs](/docs/ides-and-editors/faqs).
 
 - For the general questions about JetBrains Remote Development, refer to refer to <a href="https://www.jetbrains.com/help/pycharm/faq-about-remote-development.html" target="_blank">{title} FAQ</a>.
+
+## Troubleshooting
+
+- [What should I do if JetBrains Gateway and Gitpod aren’t working?](/docs/troubleshooting#what-should-i-do-if-jetbrains-gateway-and-gitpod-arent-working)
+- [Gitpod logs in JetBrains Client](/docs/troubleshooting#gitpod-logs-in-jetbrains-client)
+- [Gitpod logs in JetBrains Gateway](/docs/troubleshooting#gitpod-logs-in-jetbrains-gateway)
