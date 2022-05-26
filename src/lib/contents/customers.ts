@@ -20,50 +20,52 @@ export const benefits = [
   },
 ];
 
-export const quotes: Quote[] = [
-  {
-    text: "Gitpod has been instrumental to our ability to scale so quickly",
-    author: "François Ruty",
-    jobTitle: "CTO at Shares.io",
-    companyLogo: sharesSvelte,
-    img: {
-      src: "/images/customers/shares-io/quote.png",
-      alt: "Shares.io",
-    },
-    link: {
-      href: "/customers/shares-io",
-      text: "View customer story",
-    },
+export const sharesIoQuote: Quote = {
+  text: "Gitpod has been instrumental to our ability to scale so quickly",
+  author: "François Ruty",
+  jobTitle: "CTO at Shares.io",
+  companyLogo: sharesSvelte,
+  img: {
+    src: "/images/customers/shares-io/quote.png",
+    alt: "Shares.io",
   },
-  {
-    text: "Gitpod will become the default way of developing. Local development is just not an option anymore.",
-    author: "Konrad Mattheis",
-    jobTitle: "CTO at Vizlib",
-    companyLogo: vizlibSvelte,
-    img: {
-      src: "/images/customers/vizlib/quote.png",
-      alt: "Vizlib",
-    },
-    link: {
-      href: "/customers/vizlib",
-      text: "View customer story",
-    },
+  link: {
+    href: "/customers/shares-io",
+    text: "View customer story",
   },
-  {
-    text: "Gitpod totally changed the development velocity for RedwoodJS—it removed any issues related to configurations of dev environments and made it incredibly easy to contribute.",
-    author: "Tom Preston-Werner",
-    jobTitle: "Founder of GitHub & Redwood, former CEO of GitHub",
-    companyLogo: redwoodjsSvelte,
-    img: {
-      src: "/images/customers/redwoodjs/quote.png",
-      alt: "Shares.io",
-    },
-    link: {
-      href: "/customers/redwoodjs",
-      text: "View customer story",
-    },
+};
+
+export const vizlibQuote: Quote = {
+  text: "Gitpod will become the default way of developing. Local development is just not an option anymore.",
+  author: "Konrad Mattheis",
+  jobTitle: "CTO at Vizlib",
+  companyLogo: vizlibSvelte,
+  img: {
+    src: "/images/customers/vizlib/quote.png",
+    alt: "Vizlib",
   },
-];
+  link: {
+    href: "/customers/vizlib",
+    text: "View customer story",
+  },
+};
+
+export const redwoodJsQuote: Quote = {
+  text: "Gitpod totally changed the development velocity for RedwoodJS—it removed any issues related to configurations of dev environments and made it incredibly easy to contribute.",
+  author: "Tom Preston-Werner",
+  jobTitle: "Founder of GitHub & Redwood, former CEO of GitHub",
+  companyLogo: redwoodjsSvelte,
+  img: {
+    src: "/images/customers/redwoodjs/quote.png",
+    alt: "Shares.io",
+  },
+  link: {
+    href: "/customers/redwoodjs",
+    text: "View customer story",
+  },
+};
+
+export const quotes: Quote[] = [sharesIoQuote, vizlibQuote, redwoodJsQuote];
 
 export const developFeature: Feature = {
   title: "Develop like Google, Facebook or&nbsp;Shopify",

@@ -43,6 +43,11 @@
           >
         </li>
         <li>
+          <FooterLink href="/for/enterprise" class="flex items-center"
+            >Gitpod for Enterprises</FooterLink
+          >
+        </li>
+        <li>
           <FooterLink href="/vs/github-codespaces"
             >Gitpod vs GitHub <br />Codespaces
           </FooterLink>

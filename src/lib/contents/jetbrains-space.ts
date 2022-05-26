@@ -8,6 +8,8 @@ import opensourceSvelte from "$lib/components/svgs/opensource.svelte";
 import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
 import awsSvelte from "$lib/components/svgs/aws.svelte";
 import idesSvelte from "$lib/components/svgs/ides.svelte";
+import type { Quote } from "$lib/types/quote.type";
+import Jetbrains from "$lib/components/svgs/brands/jetbrains.svelte";
 
 export const openSourceFeature = {
   title: "Open-source",
@@ -300,6 +302,24 @@ export const JetbraisSpaceToc: FeatureTableToc[] = [
     },
   },
 ];
+
+export const jetbrainsQuote: Quote = {
+  text: "Through our partnership with Gitpod, we are enabling our mutual users to accelerate productivity, save resources and time while strengthening security compliance. Remote development is meant to simplify daily work. This really helps to supercharge developers’ performance.",
+  author: "Max Shafirov",
+  jobTitle: "CEO at JetBrains",
+  companyLogo: Jetbrains,
+  companyLogoProps: {
+    isDark: true,
+  },
+  img: {
+    src: "/images/jetbrains-space/quote.png",
+    alt: "Jetbrains",
+  },
+  link: {
+    href: "/blog/gitpod-jetbrains",
+    text: "View blog post",
+  },
+};
 
 export const JetBrainsComparison: FeatureTable = {
   toc: JetbraisSpaceToc,

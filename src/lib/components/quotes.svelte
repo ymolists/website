@@ -86,6 +86,7 @@
               <svelte:component
                 this={quote.companyLogo}
                 inActive={selectedQuote !== quote}
+                {...quote.companyLogoProps}
               />
             {/if}
           </button>

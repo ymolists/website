@@ -46,6 +46,7 @@
   image={{
     src: "/images/customers/hero.png",
     alt: "Gitpod Illustration image",
+    isCut: false,
   }}
   btnPrimary={{
     href: "#stories",

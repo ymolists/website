@@ -22,9 +22,13 @@
   };
 
   const navItems = [
+    // {
+    //   href: "/screencasts/getting-started-with-gitpod",
+    //   label: "Screencasts",
+    // },
     {
-      href: "/screencasts/getting-started-with-gitpod",
-      label: "Screencasts",
+      href: "/for/enterprise",
+      label: "Enterprise",
     },
     {
       href: "/blog",
