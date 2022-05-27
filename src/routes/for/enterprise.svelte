@@ -29,7 +29,10 @@
 <OpenGraph
   data={{
     title: "Gitpod for enterprises",
-    description: "Discover Gitpod for enterprises.",
+    description:
+      "Gitpod remote developer environments help enterprises ship faster and more securely. Engineering teams improve onboarding, collaboration, and security using Gitpod.",
+    keywords:
+      "cloud dev environment, remote development, developer onboarding, developer collaboration, cloud development, VDI",
   }}
 />
 
