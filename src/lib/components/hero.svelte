@@ -79,9 +79,9 @@
   </div>
   <img
     class="
-      max-w-2xl 
+      max-w-lg 
       -z-10 hidden 
-      lg:block dark:lg:hidden
+      lg:block {darkSrc ? 'dark:lg:hidden' : ''}
       w-[35vw] 
       {isCut
       ? 'xl:transform xl:translate-x-24 xl:translate-y-[20%] xl:scale-150'
@@ -90,19 +90,21 @@
     {src}
     {alt}
   />
-  <img
-    class="
-      max-w-2xl 
-      -z-10 hidden 
-      dark:lg:block 
-      w-[35vw]
-      transfrom 
-      scale-[1.12]
-      {isCut
-      ? 'xl:transform xl:translate-x-24 xl:translate-y-[20%] xl:scale-[1.66]'
-      : 'absolute right-0 top-1/2 -translate-y-[40%]'}
-    "
-    src={darkSrc}
-    {alt}
-  />
+  {#if darkSrc}
+    <img
+      class="
+        max-w-lg 
+        -z-10 hidden 
+        dark:lg:block 
+        w-[35vw]
+        transfrom 
+        scale-[1.12]
+        {isCut
+        ? 'xl:transform xl:translate-x-24 xl:translate-y-[20%] xl:scale-[1.66]'
+        : 'absolute right-0 top-1/2 -translate-y-[40%]'}
+      "
+      src={darkSrc}
+      {alt}
+    />
+  {/if}
 </Section>
