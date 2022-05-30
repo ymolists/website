@@ -26,7 +26,9 @@
   <footer
     class="py-large m-auto px-xx-small md:max-w-4xl md:py-small md:px-xx-small"
   >
-    <div class="flex justify-between flex-wrap pb-micro md:pb-small">
+    <div
+      class="flex gap-x-x-small sm:gap-x-medium md:gap-0 justify-between flex-wrap pb-micro md:pb-small"
+    >
       <Section title="Gitpod">
         <li><FooterLink href="/">Home</FooterLink></li>
         <li><FooterLink href="/pricing">Pricing</FooterLink></li>
