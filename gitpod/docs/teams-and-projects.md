@@ -93,14 +93,16 @@ You can remove a project by using the more actions button while hovering over a 
 
 ## Roles
 
-| Permission          | Owner | Member |
-| ------------------- | ----- | ------ |
-| Manage Team Members | Yes   | No     |
-| Delete Team         | Yes   | No     |
-| Invite Team Members | Yes   | Yes    |
-| Add Projects        | Yes   | Yes    |
-| Remove Projects     | Yes   | Yes    |
-| Add Projects        | Yes   | Yes    |
-| View Branches       | Yes   | Yes    |
-| View Prebuilds      | Yes   | Yes    |
-| Trigger Prebuilds   | Yes   | Yes    |
+| Permission             | Owner | Member |
+| ---------------------- | ----- | ------ |
+| Manage Team Members    | Yes   | No     |
+| Delete Team            | Yes   | No     |
+| Edit Project Settings  | Yes   | No     |
+| Edit Project Variables | Yes   | No     |
+| Invite Team Members    | Yes   | Yes    |
+| Add Projects.          | Yes   | Yes    |
+| Remove Projects.       | Yes   | Yes    |
+| Add Projects           | Yes   | Yes    |
+| View Branches          | Yes   | Yes    |
+| View Prebuilds         | Yes   | Yes    |
+| Trigger Prebuilds      | Yes   | Yes    |
