@@ -38,9 +38,14 @@
     white-space: break-spaces;
   }
 
+  blockquote code {
+    background: #ffb45b;
+  }
+
   pre {
     &:not(.language-null) {
       background: var(--card);
+      border-radius: 12px;
     }
   }
 
