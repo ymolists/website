@@ -27,6 +27,7 @@ export const pricingPlans: Pricing[] = [
             tooltip:
               "See <a href='#features'>features table</a> below for more details.",
           },
+          "Community support",
         ],
       },
       {
@@ -39,6 +40,7 @@ export const pricingPlans: Pricing[] = [
             tooltip:
               "See <a href='#features'>features table</a> below for more details.",
           },
+          "Community support",
         ],
       },
     ],
@@ -55,7 +57,7 @@ export const pricingPlans: Pricing[] = [
           "See <a href='#features'>features table</a> below for more details.",
       },
       "Air gapped environments",
-      "Standard support",
+      "Professional support",
     ],
     btnText: "Register and Install now",
     btnHref: "/enterprise-license",
@@ -98,8 +100,12 @@ export const communityPlanTableData: FeatureTableColumn = {
           text: "unlimited",
         },
         {
+          term: "Encrypted backups",
+          availability: true,
+        },
+        {
           term: "Prebuilds",
-          text: "unlimited",
+          availability: true,
         },
         {
           term: "GitLab",
@@ -111,10 +117,6 @@ export const communityPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Bitbucket",
-          availability: true,
-        },
-        {
-          term: "Encrypted backups",
           availability: true,
         },
         {
@@ -135,6 +137,22 @@ export const communityPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Air gapped environment support",
+          availability: false,
+        },
+        {
+          term: "Updates and upgrades",
+          availability: true,
+        },
+        {
+          term: "Community support",
+          availability: true,
+        },
+        {
+          term: "Business day support",
+          availability: false,
+        },
+        {
+          term: "24/7 support",
           availability: false,
         },
       ],
@@ -163,6 +181,10 @@ export const communityPlanTableData: FeatureTableColumn = {
           text: "unlimited",
         },
         {
+          term: "Encrypted backups",
+          availability: true,
+        },
+        {
           term: "Prebuilds",
           availability: false,
         },
@@ -176,10 +198,6 @@ export const communityPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Bitbucket",
-          availability: true,
-        },
-        {
-          term: "Encrypted backups",
           availability: true,
         },
         {
@@ -200,6 +218,22 @@ export const communityPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Air gapped environment support",
+          availability: false,
+        },
+        {
+          term: "Updates and upgrades",
+          availability: true,
+        },
+        {
+          term: "Community support",
+          availability: true,
+        },
+        {
+          term: "Business day support",
+          availability: false,
+        },
+        {
+          term: "24/7 support",
           availability: false,
         },
       ],
@@ -243,6 +277,10 @@ export const professionalPlanTableData: FeatureTableColumn = {
           text: "unlimited",
         },
         {
+          term: "Encrypted backups",
+          availability: true,
+        },
+        {
           term: "Prebuilds",
           availability: true,
         },
@@ -256,10 +294,6 @@ export const professionalPlanTableData: FeatureTableColumn = {
         },
         {
           term: "Bitbucket",
-          availability: true,
-        },
-        {
-          term: "Encrypted backups",
           availability: true,
         },
         {
@@ -281,6 +315,22 @@ export const professionalPlanTableData: FeatureTableColumn = {
         {
           term: "Air gapped environment support",
           availability: true,
+        },
+        {
+          term: "Updates and upgrades",
+          availability: true,
+        },
+        {
+          term: "Community support",
+          availability: true,
+        },
+        {
+          term: "Business day support",
+          availability: true,
+        },
+        {
+          term: "24/7 support",
+          text: "optional",
         },
       ],
     },
@@ -331,9 +381,17 @@ export const selfHostedToc: FeatureTableToc[] = [
   {
     type: "tooltip",
     data: {
+      text: "Encrypted backups",
+      tooltip:
+        "Your workspace backups are encrypted. More on <a href='/security'>security</a>.",
+    },
+  },
+  {
+    type: "tooltip",
+    data: {
       text: "Prebuilds",
       tooltip:
-        "Enable prebuilds to continuously build your Git branches, so you and your team can always start coding right away.",
+        "Enable prebuilds to continuously build your Git branches, so you and your team can always start coding right away. More on <a href='/docs/prebuilds'>prebuilds</a>.",
     },
   },
   {
@@ -361,14 +419,6 @@ export const selfHostedToc: FeatureTableToc[] = [
         path: "/svg/bitbucket.svg",
         alt: "Bitbucket",
       },
-    },
-  },
-  {
-    type: "tooltip",
-    data: {
-      text: "Encrypted backups",
-      tooltip:
-        "Keeps your data safe. More on <a href='/security'>security</a>.",
     },
   },
   {
@@ -407,6 +457,34 @@ export const selfHostedToc: FeatureTableToc[] = [
       text: "Air gapped environment support",
       tooltip:
         "Install Gitpod in an environment that does not have access to the public internet.",
+    },
+  },
+  {
+    type: "tooltip",
+    data: {
+      text: "Updates and upgrades",
+      tooltip: "Regular updates and upgrade to the product.",
+    },
+  },
+  {
+    type: "tooltip",
+    data: {
+      text: "Community support",
+      tooltip: "Support from the community via Discord and Github",
+    },
+  },
+  {
+    type: "tooltip",
+    data: {
+      text: "Business day support",
+      tooltip: "Professional support within business day hours.",
+    },
+  },
+  {
+    type: "tooltip",
+    data: {
+      text: "24/7 support",
+      tooltip: "Get professional support 24/7.",
     },
   },
 ];
