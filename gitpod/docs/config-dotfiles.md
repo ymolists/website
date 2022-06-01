@@ -9,8 +9,6 @@ title: Dotfiles
 
 # {title}
 
-> {title} is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/7603).
-
 Dotfiles are a way to customize your developer environment according to your personal needs.
 
 To configure Gitpod to use your own dotfiles for all your workspaces, enter the URL of a public dotfiles repository in https://gitpod.io/preferences.
