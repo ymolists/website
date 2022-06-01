@@ -3,7 +3,7 @@ import { visit } from "unist-util-visit";
 const youtubeEmbedRegex = new RegExp(`\(youtube\):\(\.\*\)`, "i");
 
 const embedVideoHtml = (videoId, options) => `
-<span class="relative mt-medium block overflow-hidden max-w-full after:block after:pt-[56.26%]"><iframe
+<span class="relative mt-medium not-prose block overflow-hidden max-w-full after:block after:pt-[56.26%]"><iframe
   title="${options.title ? options.title : "Youtube Video"}"
   width="${options.width}"
   height="${options.height}"
