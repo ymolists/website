@@ -34,7 +34,7 @@ title: Our Core Values
 
 Developers architect our future. Moving software development to the cloud is the next logical step in automating our software delivery pipelines on our path to build the developer experience company.
 
-> **With Gitpod we want to remove all friction from the developer experience to be always ready-to-code and make software engineering more collaborative, joyful, and secure**.
+> With Gitpod we want to remove all friction from the developer experience to be always ready-to-code and make software engineering more collaborative, joyful, and secure.
 
 As we scale the company around the globe, we started to formalize our culture, write down what we stand for and how we will move towards our purpose. We hope this helps you to understand who we are.
 
