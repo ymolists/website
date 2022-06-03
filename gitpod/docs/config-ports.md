@@ -9,11 +9,55 @@ title: Configure Ports
 
 # Configure Ports
 
-When your project starts a service that listens on a given port, Gitpod automatically serves traffic to this port to your application on an authenticated URL.
+Gitpod supports exposing HTTP ports via a custom domain that is associated with your workspace. You can also use port forwarding, so that you do not need to update your application if it already references the localhost hostname. You can forward all ports using the [local companion](/docs/ides-and-editors/local-companion), natively in both [VS Code Desktop](/docs/ides-and-editors/vscode), [JetBrains](/docs/ides-and-editors/jetbrains-gateway) and also via the [command-line](/docs/ides-and-editors/command-line) using SSH.
 
-If you want to configure ports, such as their visibility, what Gitpod does when it detects a new port being available, etc, you do that in the `ports` section of the [`.gitpod.yml`](/docs/references/gitpod-yml) configuration file.
+## Default port behaviors
 
-For example, the following configuration automatically opens a preview browser tab for the application running on port 8080.
+By default, when a port is opening in a Gitpod workspace, Gitpod will:
+
+1. **Direct HTTP traffic** - When an application starts listening to an HTTP port, Gitpod detects the port and exposes it on a URL that requires authentication. Setting the port to "public" would make the port URL accessible to anyone on the internet (or the installed network if using self-hosted Gitpod).
+1. **Notify the user** - Gitpod sends the user a popup notification in their [IDE or editor](/docs/ides-and-editors) to let the user know that a port has been detected.
+
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Setting a port public/private in VS Code Browser" src="/images/editors/port-notification-vscode.png">
+    <figcaption>Setting a port public/private in VS Code Browser</figcaption>
+</figure>
+
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Setting a port public/private in a JetBrains IDE" src="/images/jetbrains-gateway/jetbrains-notification.png">
+    <figcaption>Setting a port public/private in a JetBrains IDE</figcaption>
+</figure>
+
+## Accessing port URLs
+
+You can access the dedicated port URL by pre-pending the port number to the workspace URL.
+
+e.g `3000-yourworkspace.ws-eu45.gitpod.io`
+
+You can also print the port URL using the [gp](/docs/command-line-interface) url command e.g. `gp url 3000`.
+
+## Configuring port behaviors
+
+To modify or change default port behaviors, update the `ports` section of your [`.gitpod.yml`](/docs/references/gitpod-yml).
+
+All changes to port behaviors take effect immediately, not requiring a workspace restart.
+
+**Note:** Some actions (e.g. setting a port public/private) can be taken via the IDE or editor.
+
+### Configure port opening
+
+The port open event is triggered when a new port is detected as open within the workspace.
+
+Port opening behavior can only be set via the [`.gitpod.yml`](/docs/references/gitpod-yml)
+
+The property `onOpen` configures port opening behaviors:
+
+- `notify` (default) - Show a notification for newly detected ports.
+- `open-preview` - Open the port URL in a preview within the editor or IDE.
+- `open-browser` - Open the port URL a browser tab.
+- `ignore` - Ignore default behavior (notify).
+
+**Example**: Open a browser tab for port 8080
 
 ```yaml
 ports:
@@ -21,13 +65,35 @@ ports:
     onOpen: open-browser
 ```
 
-Ports are mapped to their own URLs. In a workspace you can get the URL mapped to a port using `gp url <port>`. At the moment you can only expose HTTP servers.
+### Configure port visibility
 
-## Port Ranges
+Port visibility can be set via the [`.gitpod.yml`](/docs/references/gitpod-yml), or manually changed within the IDE or editor.
 
-You can configure entire ranges and tell Gitpod how it should behave when a service in such a range is opened.
+The property `visibility` configures who can access a port:
 
-For instance, the following configs will stop notifying the user when a service opens on a port between 3000 and 8999:
+- `private` (default) - Only allow users with workspace access to access the port.
+- `public` - Allows everyone with the port URL to access the port.
+
+### Port Visibility in VS Code Browser
+
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Setting a port public/private in VS Code Browser" src="/images/editors/toggle-port-visibility-vscode.png">
+    <figcaption>Setting a port public/private in VS Code Browser</figcaption>
+</figure>
+
+### Port Visibility in VS Code Desktop
+
+Currently, toggling port visibility is not possible in VS Code Desktop.
+
+### Port Visibility in JetBrains IDEs
+
+Currently, toggling port visibility is not possible in JetBrains IDEs.
+
+### Configure port ranges
+
+All port configurations can be applied to ranges as well as single ports.
+
+**Example:** Prevent notifications for ports between 3000 and 8999.
 
 ```yaml
 ports:
@@ -35,36 +101,43 @@ ports:
     onOpen: ignore
 ```
 
-## Configure the Opening Behavior
+## Port Forwarding
 
-When a newly started service gets detected, you usually get a notification telling you about it.
-If it is not yet exposed, because it is not listed in the `.gitpod.yml`, the notification will allow you to expose the port.
-If it is already exposed, either through the `.gitpod.yml` or by manually exposing it, the notification asks
-whether and how to open it.
+There are two types of port forwarding: local and remote.
 
-To change this behavior you can provide the property `onOpen`.
-It has four possible values:
+Local port forwarding allows you to forward a port running in your Gitpod workspace to access via your localhost hostname. Remote port forwarding exposes a locally running process to use in your workspace. Remote port forwarding is not currently supported.
 
-- `notify` (default) - Show the notification.
-- `open-preview` - Open in the preview on the right.
-- `open-browser` - Open in a browser tab.
-- `ignore` - Don't do anything.
+### Local Port Forwarding in VS Code Browser
 
-Any changes to the `.gitpod.yml` will have effect immediately.
+Using the [Local Companion](/docs/ides-and-editors/local-companion), you can automatically forward all ports from your workspace to localhost. Setting up port forwarding for VS Code Browser allows you to use a project already configured with localhost without requiring any code changes.
 
-![.gitpod.yml containing ports configuration](../../../static/images/docs/ports-onOpen.png)
+### Local Port Forwarding in VS Code Desktop
 
-## Configure port visibility
+With VS Code Desktop, all ports are automatically forwarded, allowing you to access any forwarded ports on your localhost address. You can also manually forward a port using the ports view.
 
-By default, all ports are in private visibility state.
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Setting a port public/private in VS Code Browser" src="/images/editors/port-forwarding-vscode-desktop.png">
+    <figcaption>Setting a port public/private in VS Code Browser</figcaption>
+</figure>
 
-To change this behavior you can provide the property `visibility`.
-It has two possible values:
+### Local Port Forwarding in JetBrains IDEs
 
-- `private` (default) - Only allow users with workspace access to access the port.
-- `public` - Allows everyone with the port URL to access the port.
+To forward a port in JetBrains, navigate to the preferences page in the [JetBrains Gateway](/docs/ides-and-editors/jetbrains-gateway) client to select the port and protocol to be forwarded.
 
-### CORS
+<figure>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Setting a port public/private in VS Code Browser" src="/images/jetbrains-gateway/port-forward-jetbrains.png">
+    <figcaption>Setting a port public/private in a JetBrains IDE</figcaption>
+</figure>
+
+### Local Port Forwarding via SSH
+
+Using [SSH command-line](/docs/ides-and-editors/command-line) access to your workspace, ports can also be forwarded manually using tools such as the OpenSSH remote login client.
+
+**Example:** Forwarding port `3000` to `localhost:3000`
+
+`ssh -L 3000:localhost:3000 <workspace-ssh-connection>`
+
+### Cross-Origin Resource Sharing (CORS)
 
 If you start a server on a private port, let's say 5001, and want to connect to it from your web application which runs on a different port, e.g. 3000, you have to configure your requests. This is necessary because Gitpod requires credentials for private ports. Without credentials, Gitpod cannot verify that the request is made by an authorized user.
 
