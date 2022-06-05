@@ -36,6 +36,7 @@
     border-radius: 0.75rem;
     background: var(--brand-light);
     white-space: break-spaces;
+    overflow-wrap: break-word;
   }
 
   blockquote code {
