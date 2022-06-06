@@ -1,6 +1,6 @@
 ---
 section: self-hosted/latest
-title: Gettings Started with Gitpod Self-Hosted
+title: Getting Started with Gitpod Self-Hosted
 ---
 
 <script context="module">
