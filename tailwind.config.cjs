@@ -19,6 +19,7 @@ module.exports = {
         roman: "upper-roman",
       },
       screens: {
+        xs: "425px",
         lgx: "1140px",
         "1/2xl": "1442px",
       },
