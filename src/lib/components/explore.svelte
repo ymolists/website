@@ -15,7 +15,10 @@
       text: "Try Now",
       href: "https://gitpod.io/workspaces",
     },
-    secondaryLink,
+    secondaryLink = {
+      text: "Get a demo",
+      href: "/contact/sales",
+    },
     useKumquatIllustration = false,
   } = contents;
 </script>
