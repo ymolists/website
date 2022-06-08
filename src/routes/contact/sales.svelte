@@ -20,11 +20,14 @@
   import { scrollToElement } from "$lib/utils/helpers";
   import { tick } from "svelte";
   import Unleashing from "$lib/components/contact/unleashing.svelte";
+  import { afterNavigate } from "$app/navigation";
 
   const selfHostingSubject = "Self-hosting";
   const otherSubject = "Other";
+  const demoSubject = "Get a demo";
   const subjects = [
     selfHostingSubject,
+    demoSubject,
     "Educational Discount",
     "Reselling",
     otherSubject,
@@ -89,6 +92,12 @@
     isCloudPlatformsSelectShown = false;
     delete formData.cloudInfrastructure;
   }
+
+  afterNavigate(() => {
+    if (window.location.search.includes("get-a-demo")) {
+      formData.selectedSubject.value = demoSubject;
+    }
+  });
 
   let isFormDirty = false;
   let isEmailSent = false;

@@ -27,7 +27,7 @@
     {#each [...brands, fourGeeks, jetbrains] as brand}
       <svelte:component
         this={brand.logo}
-        class="max-h-[60px] w-24 lgx:w-28"
+        class="max-h-[40px] w-24"
         transform={brand.transform}
       />
     {/each}

@@ -17,7 +17,7 @@
     },
     secondaryLink = {
       text: "Get a demo",
-      href: "/contact/sales",
+      href: "/contact/sales?get-a-demo",
     },
     useKumquatIllustration = false,
   } = contents;
