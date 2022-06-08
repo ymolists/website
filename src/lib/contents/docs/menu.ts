@@ -30,6 +30,7 @@ export const MENU: MenuEntry[] = [
     M("Workspace Location", "checkout-location"),
     M("Browser Settings", "configure/browser-settings"),
     M("Dotfiles", "config-dotfiles", []),
+    M("SSH", "configure/ssh"),
     M("Multi-Repo", "multi-repo-workspaces", [], "beta"),
   ]),
   M("Develop", "develop", [
