@@ -11,7 +11,7 @@
     cards,
     featureCards,
     partnershipCards,
-    integrate,
+    integrateFeatures,
     otherFeatures,
     quotes,
   } from "$lib/contents/enterprise";
@@ -89,6 +89,6 @@
 <Section>
   <Quotes {quotes} />
 </Section>
-<Integrate features={integrate} />
+<Integrate features={integrateFeatures} />
 <Partnership partnershipItems={partnershipCards} />
 <Explore contents={exploreContents} />

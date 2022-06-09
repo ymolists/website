@@ -106,7 +106,7 @@ export let partnershipCards: PartnershipCard[] = [
   },
 ];
 
-export const integrate: verticalFeature[] = [
+export const integrateFeatures: verticalFeature[] = [
   {
     paragraph:
       "Gitpod natively integrates with JetBrains IDEs and VS Code. Other IDEs can be configured easily.",

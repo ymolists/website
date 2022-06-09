@@ -8,6 +8,7 @@
 <SectionCommon
   title="Integrate, don’t dictate"
   text="Gitpod is a fast, resource-efficient, open-source platform that integrates with your individual stack."
+  textClassNames="max-w-3xl mx-auto"
 >
   <div slot="content" class="mt-small flex justify-center gap-micro flex-wrap">
     {#each features as feature}

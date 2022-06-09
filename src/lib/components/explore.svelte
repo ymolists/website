@@ -126,6 +126,7 @@
       <p class="explore__paragraph text-p-large">
         {@html description}
       </p>
+      <slot name="list" />
       {#if note}
         <p class="h5 font-semibold text-important mb-x-small md:-mt-micro">
           {note}

@@ -64,8 +64,8 @@
     <LinkButton
       href={link.href}
       {target}
-      {variant}
-      size={btnSize}
+      variant={link.variant || variant}
+      size={link.btnSize || btnSize}
       class={btnClassNames}>{link.text}</LinkButton
     >
   {/if}
