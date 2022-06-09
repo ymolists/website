@@ -8,12 +8,6 @@
 
   let isModalOpen: boolean = false;
 
-  const handleAccept = () => {
-    Cookies.set(cookies.ANALYTICAL, "true");
-    Cookies.set(cookies.NECESSARY, "true");
-    Cookies.set(cookies.TARGETING, "true");
-  };
-
   const handleClose = () => (isModalOpen = false);
 </script>
 
@@ -43,7 +37,12 @@
         Cookie settings
       </button>
       <button
-        on:click={handleAccept}
+        on:click={() => {
+          Cookies.set(cookies.ANALYTICAL, "true");
+          Cookies.set(cookies.NECESSARY, "true");
+          Cookies.set(cookies.TARGETING, "true");
+          closeBanner();
+        }}
         class="px-3 py-1 bg-card dark:bg-bg rounded-lg md:px-6 hover:bg-white hover:dark:bg-black"
       >
         Accept Cookies
