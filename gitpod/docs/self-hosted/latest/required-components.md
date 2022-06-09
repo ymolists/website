@@ -11,13 +11,13 @@ title: Required Components
 
 Gitpod relies on certain components and services for it to function. By default, most of these can be automatically installed in-cluster during installation. However, you can also configure Gitpod to use your own version of these that may or may not live inside the cluster. <!--- todo: When do we advise these to be run outside of cluster? --->
 
-| Component                                                                                  | Required?                     |
-| ------------------------------------------------------------------------------------------ | ----------------------------- |
-| [Bucket Storage](./required-components#bucket-storage)                                     | Use default or bring your own |
-| [Database](./required-components#database)                                                 | Use default or bring your own |
-| [Image Registry](./required-components#image-registry)                                     | Use default or bring your own |
-| [Source Control Management System](./required-components#source-control-management-system) | Use default or bring your own |
-| [Cert-manager](./required-components#cert-manager)                                         | Yes                           |
+| Component                                                                                  | Required?                      |
+| ------------------------------------------------------------------------------------------ | ------------------------------ |
+| [Bucket Storage](./required-components#bucket-storage)                                     | Use default or bring your own  |
+| [Database](./required-components#database)                                                 | Use default or bring your own  |
+| [Image Registry](./required-components#image-registry)                                     | Use default or bring your own  |
+| [Source Control Management System](./required-components#source-control-management-system) | Yes (cloud or self-hosted SCM) |
+| [Cert-manager](./required-components#cert-manager)                                         | Yes                            |
 
 ## Bucket Storage
 
