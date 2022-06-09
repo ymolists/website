@@ -33,7 +33,7 @@ const config = {
     prerender: {
       crawl: true,
       enabled: true,
-      onError: "fail",
+      onError: "continue", //once the netlify-endpoint for requesting the images isn't needed anymore this can be "fail" again
       entries: ["*"],
     },
     router: true,

@@ -20,14 +20,14 @@
   }
 
   .disabled {
-    @apply pointer-events-none border-divider;
-  }
-
-  .error + label span {
-    @apply text-error border-error;
+    @apply pointer-events-none;
   }
 
   .disabled + label span {
+    @apply opacity-50;
+  }
+
+  .error + label span {
     @apply text-error border-error;
   }
 </style>
@@ -46,7 +46,9 @@
 />
 {#if label}
   <label
-    class="flex cursor-pointer text-body mt-1 mb-2 {labelClasses}"
+    class="flex cursor-pointer text-body mt-1 mb-2 {labelClasses} {disabled
+      ? 'pointer-events-none'
+      : ''}"
     for={label}
   >
     <span />

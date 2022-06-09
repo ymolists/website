@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
   import ThemeSwitcher from "../theme-switcher.svelte";
   import FooterLink from "./link.svelte";
   import Section from "./section.svelte";
+  import Modal from "../ui-library/modal/modal.svelte";
+  import CookieSettings from "../cookie-settings.svelte";
 
   const socialLinks = [
     {
@@ -20,6 +22,10 @@
       icon: "/svg/brands/discord.svg",
     },
   ];
+
+  let isModalOpen: boolean = false;
+
+  const handleClose = () => (isModalOpen = false);
 </script>
 
 <div class="pb-8 bg-card text-p-footer" data-id="footer">
@@ -114,6 +120,14 @@
         <li>
           <FooterLink href="/privacy">Privacy Policy</FooterLink>
         </li>
+        <li>
+          <FooterLink href="/cookies">Cookie Policy</FooterLink>
+        </li>
+        <li>
+          <button on:click={() => (isModalOpen = true)}
+            >Cookie Preferences</button
+          >
+        </li>
       </Section>
     </div>
     <div
@@ -157,3 +171,7 @@
     </div>
   </footer>
 </div>
+
+<Modal on:close={handleClose} isOpen={isModalOpen}>
+  <CookieSettings {handleClose} />
+</Modal>

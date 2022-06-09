@@ -7,7 +7,7 @@ const embedVideoHtml = (videoId, options) => `
   title="${options.title ? options.title : "Youtube Video"}"
   width="${options.width}"
   height="${options.height}"
-  src="https://www.youtube.com/embed/${videoId}?rel=0"
+  src="https://www.youtube-nocookie.com/embed/${videoId}?rel=0"
   class="absolute top-0 left-0 w-full h-full"
   ${options.noIframeBorder ? 'style="border:0"' : ""}
   allowfullscreen

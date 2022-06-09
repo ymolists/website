@@ -32,12 +32,14 @@
   import { key } from "$lib/components/banners/announcement.svelte";
   import type { BannerData } from "$lib/types/banner.type";
   import { removeTrailingSlash } from "$lib/utils/helpers";
+  import Cookies from "js-cookie";
 
   export let bannerData: BannerData;
 
   setContext(key, bannerData);
 
   onMount(() => {
+    Cookies.set("gp-necessary", "true");
     // If you change the cookie, please also change it in src/hooks.ts
     document.cookie = `gitpod-marketing-website-visited=true; Domain=.gitpod.io; Path=/; max-age=${
       365 * 24 * 60 * 60
