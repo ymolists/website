@@ -20,7 +20,7 @@
 <div data-analytics={`{"position":"cookie-consent"}`}>
   <Banner
     location="bottom"
-    storageKey="cookie-consent"
+    storageKey="cookie-consent-bar"
     let:closeBanner
     class="border-t border-divider border-solid flex flex-col space-y-micro lg:space-y-0 lg:flex-row"
   >
