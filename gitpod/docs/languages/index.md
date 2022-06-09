@@ -11,7 +11,7 @@ title: Languages
 
 Below is a list of language specific tips & tricks
 
-- [JavaScript](/docs/)
+- [JavaScript](/docs/languages/javascript)
 - [Python](/docs/languages/python)
 - [HTML/CSS](/docs/languages/html)
 - [Java](/docs/languages/java)
