@@ -34,7 +34,9 @@ You can access the dedicated port URL by pre-pending the port number to the work
 
 e.g `3000-yourworkspace.ws-eu45.gitpod.io`
 
-You can also print the port URL using the [gp](/docs/command-line-interface) url command e.g. `gp url 3000`.
+You can also print the port URL using the [gp url](/docs/command-line-interface) command (e.g. `gp url 3000`).
+
+And if you prefer listing all open ports URLs at once, use [gp ports list](/docs/command-line-interface) command.
 
 ## Configuring port behaviors
 

@@ -24,6 +24,7 @@ Available Commands:
   help                Help about any command
   init                Create a Gitpod configuration for this project.
   open                Opens a file in Gitpod
+  ports               Interact with workspace ports.
   preview             Opens a URL in the IDE's preview
   snapshot            Take a snapshot of the current workspace
   stop                Stop current workspace
@@ -123,7 +124,7 @@ For sharing a complete clone of a workspace with others, `gp snapshot` is basica
 
 ## tasks
 
-Programatically view and interact with workspace tasks as defined in the projects [.gitpod.yml](/docs/references/gitpod-yml). Useful when using the command line, such as ssh'ing into a workspace or after accidentally losing view of a terminal and it's output.
+Programmatically view and interact with workspace tasks as defined in the project's [.gitpod.yml](/docs/references/gitpod-yml). Useful when using the command line, such as ssh'ing into a workspace or after accidentally losing view of a terminal and it's output.
 
 ### list
 
@@ -147,4 +148,16 @@ Alternatively, specify the `Terminal ID` that you can see with `gp tasks list`:
 
 ```sh
 gp tasks attach <id>
+```
+
+## ports
+
+Provides a way to manage a workspace's ports. Applies to both: ports defined in [.gitpod.yml](/docs/references/gitpod-yml) and ports that are undeclared but are opened during the lifetime of the workspace.
+
+### list
+
+Outputs a table-formatted list of ports along with their status, URL, name and description.
+
+```sh
+gp ports list
 ```
