@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import Header from "$lib/components/education/header.svelte";
   import Integrate from "$lib/components/enterprise/integrate.svelte";
