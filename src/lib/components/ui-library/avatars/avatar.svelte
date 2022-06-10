@@ -16,7 +16,7 @@
 
 <!-- This uses a Netlify-Endpoint for returning the image -->
 <img
-  src="/.netlify/functions/avatar?username={username}"
+  src="https://www.gitpod.io/.netlify/functions/avatar?username={username}"
   alt="Avatar of {username}"
   title="Avatar of {username}"
   height="28"
