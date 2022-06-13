@@ -13,7 +13,7 @@
 
 </div>
 
-Date: 9 June 2022
+Date: 13th of June, 2022
 
 ## General statement on Cookies
 
@@ -61,6 +61,9 @@ If you want to disable cookies on our Website, you can click on "Cookie Preferen
 | Website          | ajs_anonymous_id                 | Strictly Necessary    | Cookie used to identify reoccurring website visitors and contact form submissions                                                                          | 1 year          | Yes                | https://segment.com/legal/privacy/        |
 | Website          | ajs_anonymous_id                 | Strictly Necessary    | Local Browser Storage used to identify reoccurring website visitors and contact form submissions                                                           | Persistent      | Yes                | https://segment.com/legal/privacy/        |
 | Product          | rc::a                            | Strictly Necessary    | This cookie is used to distinguish between humans and bots. This is necessary for the website, in order to make valid reports on the use of their website. | Persistent      | Yes                | https://policies.google.com/privacy?hl=en |
+| Product, Website | gp-analytical                    | Strictly Necessary    | Stores and indicates cookie consent preferences of an user for a certain category                                                                          | 1 year          | No                 |                                           |
+| Product, Website | gp-necessary                     | Strictly Necessary    | Stores and indicates cookie consent preferences of an user for a certain category                                                                          | 1 year          | No                 |                                           |
+| Product, Website | gp-targeting                     | Strictly Necessary    | Stores and indicates cookie consent preferences of an user for a certain category                                                                          | 1 year          | No                 |                                           |
 | Website          | \_gcl_au                         | Targeting/Marketing   | Used by Google Ad sense to store and track conversions and advertising efficiency                                                                          | 3 months        | Yes                | https://policies.google.com/privacy?hl=en |
 | Website          | _tld_                            | Targeting/Marketing   | Used to track users across multiple website in order to present relevant advertisement                                                                     | Session         | No                 |                                           |
 | Website          | VISITOR_INFO1_LIVE               | Targeting/Marketing   | Tries to estimate the users' bandwidth on pages with integrated YouTube videos                                                                             | 6 months        | Yes                | https://policies.google.com/privacy?hl=en |
