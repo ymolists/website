@@ -2,26 +2,14 @@
 .content-blog {
   line-height: 177.7%;
 
-  // Spacing
-  * + h2,
-  * + .h2 {
-    margin-top: var(--medium);
-  }
-
-  * + h3,
-  * + .h3 {
-    margin-top: var(--large);
-  }
-
-  p + h4,
-  h4 ~ h4 {
-    margin-top: var(--xx-small);
+  p {
+    margin-top: 0;
   }
 
   p + p,
   p + ul,
   ul + p {
-    margin-top: var(--micro);
+    margin-top: var(--xx-small);
   }
 
   li {

@@ -177,29 +177,35 @@ module.exports = {
               },
             },
             h1: {
-              fontWeight: "700",
               marginBottom: "var(--xx-small)",
+              fontSize: "var(--h4)",
+              fontWeight: "700",
             },
             h2: {
+              marginTop: "var(--x-large)",
+              marginBottom: "var(--micro)",
+              fontSize: "var(--p-large)",
+              fontWeight: "700",
               code: {
                 fontWeight: "700 !important",
               },
-              fontWeight: "700",
-              marginBottom: "var(--xx-small)",
-              marginTop: "var(--medium)",
             },
             h3: {
+              marginTop: "var(--medium)",
+              marginBottom: "var(--macro)",
+              fontSize: "var(--h6)",
+              fontWeight: "700",
               code: {
                 fontWeight: "700 !important",
               },
-              fontWeight: "700",
-              marginBottom: "var(--xx-small)",
               em: {
                 fontStyle: "normal",
               },
             },
             h4: {
-              marginBottom: "var(--macro)",
+              marginTop: "var(--small)",
+              marginBottom: ".25rem",
+              fontSize: "var(--p-medium)",
             },
             iframe: {
               maxWidth: "100%",
