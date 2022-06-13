@@ -33,13 +33,14 @@
   import type { BannerData } from "$lib/types/banner.type";
   import { removeTrailingSlash } from "$lib/utils/helpers";
   import Cookies from "js-cookie";
+  import { cookies } from "$lib/constants";
 
   export let bannerData: BannerData;
 
   setContext(key, bannerData);
 
   onMount(() => {
-    Cookies.set("gp-necessary", "true");
+    Cookies.set(cookies.NECESSARY, "true", { expires: 365 });
     // If you change the cookie, please also change it in src/hooks.ts
     document.cookie = `gitpod-marketing-website-visited=true; Domain=.gitpod.io; Path=/; max-age=${
       365 * 24 * 60 * 60

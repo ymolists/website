@@ -12,12 +12,12 @@
 
   const handleSave = () => {
     if (analyticalChecked) {
-      Cookies.set(cookies.ANALYTICAL, "true");
+      Cookies.set(cookies.ANALYTICAL, "true", { expires: 365 });
     } else {
       Cookies.remove(cookies.ANALYTICAL);
     }
     if (targetingChecked) {
-      Cookies.set(cookies.TARGETING, "true");
+      Cookies.set(cookies.TARGETING, "true", { expires: 365 });
     } else {
       Cookies.remove(cookies.TARGETING);
     }
