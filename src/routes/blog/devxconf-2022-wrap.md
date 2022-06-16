@@ -73,7 +73,7 @@ Gitpod hopes other companies will also start taking steps to mitigate this criti
 
 At DevX Conf 2022, we created a space where new concepts and ways of doing things were discussed and provided the stage to the growing number of contributors to the DevX ecosystem by highlighting projects that are at the forefront of developer experience.
 
-Some notable talks by speakers at DevX Conf shared how to [build an internal team](https://www.youtube.com/watch?v=xX5zeVy8Ta4) focused on developer experience, [onboard developers in a day](https://www.youtube.com/watch?v=mDpSVbEjEtw), and approach [product design](https://www.youtube.com/watch?v=-oSb5GUyUFo) and [product management](https://www.youtube.com/watch?v=ja-Pr58FCIQ) from a developer-first perspective.
+Some notable talks by speakers at DevX Conf shared how to [build an internal team](https://www.youtube.com/watch?v=xX5zeVy8Ta4) focused on developer experience, how to [onboard developers in a day](https://www.youtube.com/watch?v=mDpSVbEjEtw), and approach [product design](https://www.youtube.com/watch?v=-oSb5GUyUFo) and [product management](https://www.youtube.com/watch?v=ja-Pr58FCIQ) from a developer-first perspective.
 
 All twenty seven talks from the conference are now [available on YouTube](https://www.youtube.com/playlist?list=PL3TSF5whlprXqwYNIM0X8mBzula2McGKd) and over in the [Discord server](https://www.gitpod.io/chat) you'll find dedicated rooms filled with people who deeply care about the topic of DevX. We will be back next year, bigger than ever but until then cya in [Discord](https://www.gitpod.io/chat)?
 
