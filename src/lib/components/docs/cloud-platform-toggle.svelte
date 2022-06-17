@@ -35,11 +35,8 @@
 </script>
 
 <style lang="postcss">
-  .active {
-    @apply bg-white;
-  }
   .box {
-    @apply px-4 py-2 rounded-b-2xl rounded-tr-2xl bg-white border-t-0;
+    @apply px-4 py-2 rounded-b-2xl rounded-tr-2xl border-t-0;
   }
 
   li {
@@ -58,15 +55,15 @@
             <span
               class="rounded-t-2xl cursor-pointer px-4 py-2 hidden md:block {activeValue ===
               item.value
-                ? 'active'
-                : ''} bg-sand-dark transition-all duration-200"
+                ? 'bg-white dark:bg-card'
+                : 'bg-sand-dark'} transition-all duration-200"
               on:click={clickHandler(item.value)}>{item.title}</span
             >
             <span
               class="rounded-t-2xl cursor-pointer px-4 py-2 md:hidden block {activeValue ===
               item.value
-                ? 'active'
-                : ''} bg-sand-dark transition-all duration-200"
+                ? 'bg-white dark:bg-card'
+                : 'bg-sand-dark'} transition-all duration-200"
               on:click={clickHandler(item.value)}>{item.mobileTitle}</span
             >
           </li>
@@ -75,21 +72,21 @@
     </ul>
     {#if $$slots.gcp}
       {#if activeValue === 1}
-        <div class="box">
+        <div class="box bg-white dark:bg-card">
           <slot name="gcp" />
         </div>
       {/if}
     {/if}
     {#if $$slots.aws}
       {#if activeValue === 2}
-        <div class="box">
+        <div class="box bg-white dark:bg-card">
           <slot name="aws" />
         </div>
       {/if}
     {/if}
     {#if $$slots.azure}
       {#if activeValue === 3}
-        <div class="box">
+        <div class="box bg-white dark:bg-card">
           <slot name="azure" />
         </div>
       {/if}
