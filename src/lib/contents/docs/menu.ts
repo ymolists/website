@@ -116,6 +116,7 @@ export const MENU: MenuEntry[] = [
     M("Gitpod Releases", "references/gitpod-releases"),
   ]),
   M("Contribute", "contribute", [
+    M("Content", "contribute/content"),
     M("Documentation", "contribute/documentation"),
     M("Features & Patches", "contribute/features-and-patches"),
   ]),
