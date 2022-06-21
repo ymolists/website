@@ -352,7 +352,7 @@ jetbrains:
 
 ### `jetbrains.[product].prebuilds`
 
-> JetBrains prebuilds support (via gitpod.yml) is currently in [Beta](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
+> JetBrains prebuilds support (via gitpod.yml) is currently in [Alpha](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/6576).
 
 Define whether Gitpod enables prebuilds for a specific JetBrains IDE.
 
