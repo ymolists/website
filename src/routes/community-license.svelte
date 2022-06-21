@@ -61,6 +61,7 @@
   let form: HTMLElement;
   let isEmailSent: boolean = false;
   let sectionStart: HTMLElement;
+  let isSubmissionInProgress: boolean = false;
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
 
@@ -71,6 +72,8 @@
       scrollToElement(form, ".error");
       return;
     }
+
+    isSubmissionInProgress = true;
 
     const email: Email = {
       toType: "community-license",
@@ -106,6 +109,7 @@
         body: JSON.stringify(email),
       });
       if (response.ok) {
+        isSubmissionInProgress = false;
         isEmailSent = true;
         setTimeout(() => {
           sectionStart.scrollIntoView();
@@ -278,8 +282,11 @@
             variant="primary"
             size="large"
             type="submit"
-            disabled={isFormDirty && !isFormValid}>Receive license</Button
+            disabled={(isFormDirty && !isFormValid) || isSubmissionInProgress}
+            isLoading={isSubmissionInProgress}
           >
+            Receive license
+          </Button>
         </div>
         {#if isFormDirty && !isFormValid}
           <legend class="text-xs text-error block mt-1 mb-2">
