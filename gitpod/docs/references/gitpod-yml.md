@@ -33,6 +33,7 @@ Below is a full reference of all available properties. To see the underlying sch
     - [`jetbrains.[product]`](#jetbrainsproduct)
     - [`jetbrains.[product].plugins`](#jetbrainsproductplugins)
     - [`jetbrains.[product].prebuilds`](#jetbrainsproductprebuilds)
+    - [`jetbrains.[product].vmoptions`](#jetbrainsproductvmoptions)
   - [`ports`](#ports)
     - [`ports[n].name`](#portsnname)
     - [`ports[n].description`](#portsndescription)
@@ -384,6 +385,28 @@ The `version` is defined as follows:
 | `string` | `stable` | `stable`, `latest`, `both` |
 
 </div>
+
+### `jetbrains.[product].vmoptions`
+
+> JetBrains VM options support (via gitpod.yml) is currently in [Alpha](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/8704).
+
+Configure VM options for a specific JetBrains IDE.
+
+<div class="overflow-x-auto">
+
+| Type     | Default   |
+| -------- | --------- |
+| `string` | `<empty>` |
+
+</div>
+
+**Example**
+
+```yaml
+jetbrains:
+  intellij:
+    vmoptions: "-Xmx4g"
+```
 
 ## `ports`
 
