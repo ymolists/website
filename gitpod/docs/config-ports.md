@@ -118,8 +118,8 @@ Using the [Local Companion](/docs/ides-and-editors/local-companion), you can aut
 With VS Code Desktop, all ports are automatically forwarded, allowing you to access any forwarded ports on your localhost address. You can also manually forward a port using the ports view.
 
 <figure>
-<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Setting a port public/private in VS Code Browser" src="/images/editors/port-forwarding-vscode-desktop.png">
-    <figcaption>Setting a port public/private in VS Code Browser</figcaption>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Port forwarding in VS Code Desktop" src="/images/editors/port-forwarding-vscode-desktop.png">
+    <figcaption>Port forwarding in VS Code Desktop</figcaption>
 </figure>
 
 ### Local Port Forwarding in JetBrains IDEs
@@ -127,8 +127,8 @@ With VS Code Desktop, all ports are automatically forwarded, allowing you to acc
 To forward a port in JetBrains, navigate to the preferences page in the [JetBrains Gateway](/docs/ides-and-editors/jetbrains-gateway) client to select the port and protocol to be forwarded.
 
 <figure>
-<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Setting a port public/private in VS Code Browser" src="/images/jetbrains-gateway/port-forward-jetbrains.png">
-    <figcaption>Setting a port public/private in a JetBrains IDE</figcaption>
+<img class="shadow-medium w-full rounded-xl max-w-3xl mt-x-small" alt="Port forwarding in a JetBrains IDE" src="/images/jetbrains-gateway/port-forward-jetbrains.png">
+    <figcaption>Port forwarding in a JetBrains IDE</figcaption>
 </figure>
 
 ### Local Port Forwarding via SSH
