@@ -31,6 +31,7 @@ Available Commands:
   sync-await          Awaits an event triggered using gp sync-done
   sync-done           Notifies the corresponding gp sync-await calls that this event has happened
   tasks               Interact with workspace tasks
+  timeout             Interact with workspace timeout configuration
   top                 Display workspace resource (CPU and memory usage)
   url                 Prints the URL of this workspace
   version             Prints the version of the CLI
@@ -150,6 +151,18 @@ Alternatively, specify the `Terminal ID` that you can see with `gp tasks list`:
 ```sh
 gp tasks attach <id>
 ```
+
+## timeout
+
+Interact with workspace timeout configuration. You can learn more in [Life of a Workspace](/docs/life-of-workspace#timeouts).
+
+### extend
+
+Extends the current workspace's timeout.
+
+> **Note:** You can only have one workspace with extended timeout at a time.
+
+The default timeout, and the ability to extend a workspace timeout depends on your [plan](https://gitpod.io/plans) or [team plan](https://gitpod.io/teams).
 
 ## ports
 
