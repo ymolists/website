@@ -97,6 +97,12 @@ export const MENU: MenuEntry[] = [
     M("Browser Extension", "browser-extension"),
   ]),
   M("Gitpod Self-Hosted", "self-hosted/latest", [
+    M(
+      "Preview Installation",
+      "self-hosted/latest/preview-install",
+      [],
+      "alpha"
+    ),
     M("Getting Started", "self-hosted/latest/getting-started"),
     M("Reference Architectures", "self-hosted/latest/reference-architecture"),
     M("Cluster Set-Up", "self-hosted/latest/cluster-set-up"),
