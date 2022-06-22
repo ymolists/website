@@ -388,9 +388,9 @@ The `version` is defined as follows:
 
 ### `jetbrains.[product].vmoptions`
 
-> JetBrains VM options support (via gitpod.yml) is currently in [Alpha](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/8704).
+> Configuration of JVM options (via gitpod.yml) is currently in [Alpha](/docs/references/gitpod-releases) · [Send feedback](https://github.com/gitpod-io/gitpod/issues/8704).
 
-Configure VM options for a specific JetBrains IDE.
+Configure JVM options for a specific JetBrains IDE.
 
 <div class="overflow-x-auto">
 
