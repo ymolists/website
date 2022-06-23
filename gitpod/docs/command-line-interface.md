@@ -157,10 +157,6 @@ Outputs a table-formatted list of ports along with their status, URL, name and d
 gp ports list
 ```
 
-### top
-
-Displays the used and available workspace CPU and memory.
-
 ### expose
 
 In Gitpod, services/servers running on a port need to be _exposed_ before they become accessible from the internet. This process only works with services listening on `0.0.0.0` and not just `localhost`.
@@ -181,3 +177,7 @@ Here's an example that will open a certain path once a service is a available:
 ```sh
 gp ports await 3000 && gp preview $(gp url 3000)/my/path/index.html
 ```
+
+## top
+
+Displays the used and available workspace CPU and memory.
