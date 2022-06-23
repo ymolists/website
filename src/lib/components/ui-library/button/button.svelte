@@ -31,7 +31,7 @@
 
 <style lang="postcss">
   .loading {
-    @apply relative text-transparent select-none;
+    @apply relative text-transparent select-none !important;
   }
 </style>
 
@@ -62,6 +62,11 @@
   <slot name="image" />
   <slot />
   {#if isLoading}
-    <Loader isPositionedCenter={true} />
+    <Loader
+      isPositionedCenter={true}
+      height={size === "medium" ? 16 : undefined}
+      width={size === "medium" ? 16 : undefined}
+      borderWidth={size === "medium" ? 2 : undefined}
+    />
   {/if}
 </button>

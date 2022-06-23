@@ -13,7 +13,7 @@
   import Card from "$lib/components/ui-library/card";
 
   import { countryList } from "$lib/contents/license-key";
-  import type { Email } from "../functions/submit-form";
+  import type { Email, EmailToType } from "../functions/submit-form";
   import Header from "$lib/components/header.svelte";
   import { noOfEngineers } from "$lib/contents/contact";
   import Checkbox from "$lib/components/ui-library/checkbox";
@@ -51,7 +51,7 @@
       valid: false,
       value: "",
     },
-    noOfDevelopers: {
+    noOfEngineers: {
       el: null,
       valid: false,
       value: "",
@@ -62,6 +62,9 @@
       value: "",
     },
   };
+
+  let isSubmissionInProgress: boolean = false;
+  let toType: EmailToType = "sales";
 
   let isFormDirty: boolean = false;
   let form: HTMLElement;
@@ -75,9 +78,10 @@
       scrollToElement(form, ".error");
       return;
     }
+    isSubmissionInProgress = true;
 
     const email: Email = {
-      toType: "sales",
+      toType,
       replyTo: {
         email: formData.email.value,
         name: `${formData.firstName.value} ${formData.lastName.value}`,
@@ -91,7 +95,7 @@
         ${formData.company.value}
         ${formData.firstName.value} ${formData.lastName.value}
 
-        developers: ${formData.noOfDevelopers.value}
+        developers: ${formData.noOfEngineers.value}
 
         Message:
         ${formData.message.value}
@@ -99,9 +103,24 @@
     };
 
     try {
+      const emailToSend =
+        toType === "community-license"
+          ? {
+              ...email,
+              data: {
+                company: formData.company.value,
+                noOfEngineers: formData.noOfEngineers.value,
+                cloudInfrastructure: formData.cloudInfrastructure
+                  ? formData.cloudInfrastructure.value
+                  : "",
+                message: formData.message.value,
+              },
+            }
+          : email;
+
       const response = await fetch("/.netlify/functions/submit-form", {
         method: "POST",
-        body: JSON.stringify(email),
+        body: JSON.stringify(emailToSend),
       });
       if (response.ok) {
         goto("/docs/self-hosted/latest");
@@ -112,6 +131,14 @@
       console.error(error);
     }
   };
+
+  $: {
+    if (formData.noOfEngineers.value === "1-10") {
+      toType = "community-license";
+    } else {
+      toType = "sales";
+    }
+  }
 </script>
 
 <style lang="postcss">
@@ -233,14 +260,14 @@
           placeholder="Select..."
           options={noOfEngineers}
           label="Total number of engineers*"
-          hasError={isFormDirty && !formData.noOfDevelopers.valid}
-          name="noOfDevelopers"
-          bind:value={formData.noOfDevelopers.value}
-          bind:element={formData.noOfDevelopers.el}
+          hasError={isFormDirty && !formData.noOfEngineers.valid}
+          name="noOfEngineers"
+          bind:value={formData.noOfEngineers.value}
+          bind:element={formData.noOfEngineers.el}
           on:change={() => {
-            formData.noOfDevelopers.valid =
-              formData.noOfDevelopers.value &&
-              formData.noOfDevelopers.el.checkValidity();
+            formData.noOfEngineers.valid =
+              formData.noOfEngineers.value &&
+              formData.noOfEngineers.el.checkValidity();
           }}
         />
       </div>
@@ -276,11 +303,18 @@
           >
         </p>
         <Button
-          variant="primary"
-          size="large"
+          variant="cta"
+          size="medium"
           type="submit"
-          disabled={isFormDirty && !isFormValid}>Install Now</Button
+          isLoading={isSubmissionInProgress}
+          disabled={(isFormDirty && !isFormValid) || isSubmissionInProgress}
         >
+          {#if toType === "community-license"}
+            Receive license
+          {:else}
+            Contact sales
+          {/if}
+        </Button>
       </div>
       {#if isFormDirty && !isFormValid}
         <legend class="text-xs text-error block mt-1 mb-2">
