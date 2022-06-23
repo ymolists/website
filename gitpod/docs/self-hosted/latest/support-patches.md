@@ -1,6 +1,7 @@
 ---
 section: self-hosted/latest
-title: Gitpod Provided Support Patches
+subsection: troubleshooting
+title: Support Patches
 ---
 
 <script context="module">
