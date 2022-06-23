@@ -18,25 +18,6 @@ export const exploreContents: ExploreSection = {
   useKumquatIllustration: false,
 };
 
-export const cards: Card[] = [
-  {
-    title: "5h",
-    text: "saved per engineer per week",
-  },
-  {
-    title: "4x",
-    text: "faster from zero to first contribution",
-  },
-  {
-    title: "61%",
-    text: "cost savings compared to VDI",
-  },
-  {
-    title: "+500k",
-    text: "developers are using Gitpod",
-  },
-];
-
 export const featureCards: Card[] = [
   {
     title: "Self-hosted",
