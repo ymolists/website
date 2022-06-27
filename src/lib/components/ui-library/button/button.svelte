@@ -18,6 +18,8 @@
       "bg-important dark:bg-primary text-white dark:text-black hover:text-white hover:bg-less-important dark:hover:bg-quaternary",
     cta: "text-black bg-sand-dark dark:bg-light-black dark:text-sand-dark hover:bg-tertiary hover:dark:bg-tertiary hover:dark:text-black focus:bg-tertiary",
     gray: "bg-sand-dark dark:bg-light-black text-important dark:text-important hover:bg-tertiary focus:bg-tertiary hover:text-important focus:text-important dark:hover:bg-tertiary dark:hover:text-black",
+    white:
+      "bg-card dark:bg-light-black text-important dark:text-important hover:bg-white focus:bg-tertiary hover:text-important focus:text-important dark:hover:bg-tertiary dark:hover:text-black",
     disabled: "pointer-events-none text-body bg-sand-dark",
     medium: "py-2 px-6 text-btn-small leading-4 rounded-xl",
     large: " py-3 px-8 text-p-medium leading-[1.25] min-w-[10rem] rounded-2xl",

@@ -34,6 +34,7 @@
   import { removeTrailingSlash } from "$lib/utils/helpers";
   import Cookies from "js-cookie";
   import { cookies } from "$lib/constants";
+  import ContactWidget from "$lib/components/contact-widget.svelte";
 
   export let bannerData: BannerData;
 
@@ -79,6 +80,7 @@
 
 <LayoutRoot>
   <Nav />
+  <ContactWidget />
   <LayoutMain>
     <slot />
   </LayoutMain>
