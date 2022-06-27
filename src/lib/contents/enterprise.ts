@@ -7,7 +7,12 @@ import GitProviders from "../components/svgs/enterprise/git-providers.svelte";
 import { linuxSource } from "./terminal";
 import Jetbrains from "$lib/components/svgs/brands/jetbrains.svelte";
 import type { Quote } from "$lib/types/quote.type";
-import { redwoodJsQuote, sharesIoQuote, vizlibQuote } from "./customers";
+import {
+  factorialQuote,
+  redwoodJsQuote,
+  sharesIoQuote,
+  vizlibQuote,
+} from "./customers";
 import { jetbrainsQuote } from "./jetbrains-space";
 
 export const exploreContents: ExploreSection = {
@@ -155,7 +160,7 @@ export const otherFeatures: Feature[] = [
 ];
 
 export const quotes: Quote[] = [
-  redwoodJsQuote,
+  factorialQuote,
   jetbrainsQuote,
   sharesIoQuote,
   vizlibQuote,
