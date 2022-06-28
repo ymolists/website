@@ -90,15 +90,20 @@
   }
 </style>
 
-<div class="fixed bottom-4 right-4 flex flex-col items-end z-50">
+<div
+  class="fixed bottom-4 right-4 flex flex-col items-end z-50"
+  data-analytics={`{"context":"contact_widget"}`}
+>
   {#if areButtonsShown}
-    <button
-      on:click={() => (areButtonsShown = false)}
-      in:fade={{ duration: 200, delay: 300 }}
-      out:fade={{ duration: 300 }}
-    >
-      <Close class="h-6 w-6 mb-macro" />
-    </button>
+    <div data-analytics={`{"label":"Close Contact Widget"}`}>
+      <button
+        on:click={() => (areButtonsShown = false)}
+        in:fade={{ duration: 200, delay: 300 }}
+        out:fade={{ duration: 300 }}
+      >
+        <Close class="h-6 w-6 mb-macro" />
+      </button>
+    </div>
     <div
       in:fade={{ duration: 600 }}
       out:fade={{ duration: 300 }}
@@ -130,21 +135,23 @@
   {/if}
 
   {#if isToggleShown}
-    <button
-      in:fade={{ duration: 200 }}
-      class="stroked flex group justify-center items-center bg-card h-14 w-14 rounded-full"
-      on:click={() => {
-        areButtonsShown = !areButtonsShown;
-      }}
-    >
-      <div class="icon-wrapper" bind:this={iconWrapper}>
-        <svelte:component
-          this={Chat}
-          class="h-8 w-8 filter group-hover:grayscale transition-all duration-200 {areButtonsShown
-            ? 'grayscale'
-            : ''}"
-        />
-      </div>
-    </button>
+    <div data-analytics={`{"label":"Hide/Show Contact Widget"}`}>
+      <button
+        in:fade={{ duration: 200 }}
+        class="stroked flex group justify-center items-center bg-card h-14 w-14 rounded-full"
+        on:click={() => {
+          areButtonsShown = !areButtonsShown;
+        }}
+      >
+        <div class="icon-wrapper" bind:this={iconWrapper}>
+          <svelte:component
+            this={Chat}
+            class="h-8 w-8 filter group-hover:grayscale transition-all duration-200 {areButtonsShown
+              ? 'grayscale'
+              : ''}"
+          />
+        </div>
+      </button>
+    </div>
   {/if}
 </div>
