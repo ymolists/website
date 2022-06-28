@@ -80,14 +80,21 @@
       return;
     }
 
-    trackIdentity({
-      name_untrusted: formData.name.value,
-      email_untrusted: formData.email.value,
-    });
+    trackIdentity(
+      {
+        name_untrusted: formData.name.value,
+        email_untrusted: formData.email.value,
+      },
+      true
+    );
 
-    trackEvent("message_submitted", {
-      subject: formData.selectedSubject.value,
-    });
+    trackEvent(
+      "message_submitted",
+      {
+        subject: formData.selectedSubject.value,
+      },
+      true
+    );
 
     const email: Email = {
       replyTo: {
