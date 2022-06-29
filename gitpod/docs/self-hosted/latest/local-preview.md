@@ -1,19 +1,19 @@
 ---
 section: self-hosted/latest
-title: Preview Installation Gitpod Self-Hosted
+title: Local Preview of Gitpod Self-Hosted
 ---
 
 <script context="module"> 
   export const prerender = true;
 </script>
 
-# Preview Installation of Gitpod Self-Hosted
+# Local Preview of Gitpod Self-Hosted
 
-> **Note:** Currently, this preview installation method is in [alpha](../../references/gitpod-releases). It works only on Linux systems. Windows and Mac
+> **Note:** Currently, this Local Preview of Gitpod Self-Hosted is in [alpha](../../references/gitpod-releases). It works only on Linux systems. Windows and Mac
 > support is in the works. See [the relevant issue](https://github.com/gitpod-io/gitpod/issues/9075)
 > for more information.
 
-Gitpod's preview installation is the easiest way to try out Gitpod locally without having to build a production setup (i.e. spin up a Kubernetes cluster). This is aimed at users who want to try Self-Hosted Gitpod locally with minimal effort and resource requirements. This is **not intended for production** usage. Please refer to the [Getting Started](./getting-started) page for instructions on how to install Gitpod for production usage.
+The Local Preview of Gitpod Self-Hosted is the easiest way to try out Gitpod locally without having to build a production setup (i.e. spin up a Kubernetes cluster). This is aimed at users who want to try Self-Hosted Gitpod locally with minimal effort and resource requirements. This is **not intended for production** usage. Please refer to the [Getting Started](./getting-started) page for instructions on how to install Gitpod for production usage.
 
 ## Running the docker container
 
@@ -46,7 +46,7 @@ docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' gitp
 
 The URL will be in the form of `<ip-address>.nip.io`. [nip.io](https://nip.io/) is just wildcard DNS for local addresses, so all off this is local, and cannot be accessed over the internet.
 
-Open your Gitpod URL in your browser to access your running Gitpod instance. The first screen you see will ask you to configure a git integration. This git integration will also serve as the way that you and your users authenticated against your Gitpod installation. You can find out more in the [integrations](../../integrations) section.
+Open your Gitpod URL in your browser to access your running Gitpod instance. The first screen you see will ask you to configure a git integration. This git integration will also serve as the way that you and your users authenticated against Gitpod. You can find out more in the [integrations](../../integrations) section.
 
 > **Important:** Public (SaaS) Source Control Management Systems (SCMs) (i.e. [GitLab.com](http://Gitlab.com), [GitHub.com](http://github.com/) and [Bitbucket.org](http://Bitbucket.org)) are **not** integrated by default with a Self-Hosted Gitpod instance because OAuth apps are tied to domains. Therefore, these public SCMs need to be integrated manually with an OAuth application you specifically create for your domain. This is done similarly to how it is done for the private/self-hosted versions of each SCM. As such their respective guides also apply here:<br \> - Follow [these](../../gitlab-integration#registering-a-self-hosted-gitlab-installation) steps to integrate [`GitLab.com`](https://gitlab.com/) with your self-hosted Gitpod instance. You will need to enter `gitlab.com` as the `Provider Host Name` in the New Git Integration Modal.<br \>- Follow [these](../../github-enterprise-integration) steps to integrate [`GitHub.com`](http://github.com) with your self-hosted Gitpod instance. You will need to enter `github.com` as the `Provider Host Name` in the New Git Integration Modal. <br \>- Follow [these](../../bitbucket-server-integration) steps to integrate [`Bitbucket.org`](https://bitbucket.org/) with your self-hosted Gitpod instance. Select `Bitbucket` as the `Provider Type` in the New Git Integration Modal. For bitbucket.org this requires configuring an "OAuth consumer" on a "workspace". This is slightly different from the documented Bitbucket Server integration. See [gitpod PR #9894](https://github.com/gitpod-io/gitpod/pull/9894#pullrequestreview-969013833) for an example.
 
