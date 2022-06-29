@@ -195,7 +195,7 @@ To get PostgreSQL for your project, you can use our dedicated [PostgreSQL image]
 Simply base your `.gitpod.dockerfile` on:
 
 ```dockerfile
-FROM gitpod/workspace-postgres
+FROM gitpod/workspace-postgresql
 ```
 
 <br>
