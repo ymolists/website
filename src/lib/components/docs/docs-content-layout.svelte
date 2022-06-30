@@ -21,12 +21,6 @@
   $: $docsCurrentSubSectionStore = subsection;
 </script>
 
-<style lang="postcss">
-  :global(pre[class*="language-"]) {
-    @apply rounded-xl;
-  }
-</style>
-
 <svelte:head>
   <link rel="stylesheet" href="/prism-solarized-light.min.css" />
 </svelte:head>
