@@ -1,6 +1,6 @@
 ---
 author: axonasif, pawlean, nancy-chauhan
-date: Wednesday, 29 Jun 2022 11:00:00 UTC
+date: Wednesday, 30 Jun 2022 02:00:00 UTC
 excerpt: A detailed guide for setting up your Android phone for optimal development experience with Gitpod
 slug: getting-started-with-gitpod-in-android
 teaserImage: teaser.png
@@ -76,7 +76,7 @@ We can also utilize some software-based things; these can be helpful whether you
 # Extra Tips & tricks
 
 - You can use an app called [Rotation Control](https://play.google.com/store/apps/details?id=org.crape.rotationcontrol) to force landscape/auto-rotate mode for every app on Android (including your Home launcher!)
-- I'm using a $2 phone stand, it's called "Retractable L7 Phone Stand", sharing the name for reference in case you want to find something similar in your local market or online. Or you can use a put your phone against a book as a stand 😆
+- I'm using a $2 phone stand, it's called "Retractable L7 Phone Stand", sharing the name for reference in case you want to find something similar in your local market or online. Or you can put your phone against a book as well 😆
 
 Congratulations 🎉. Now you have set up the browser and display and connected the hardware keyboard and mouse with your Android phone. You can now code, build and learn seamlessly using Gitpod ⚡️. To get started, you can refer to the [following documentation](https://www.gitpod.io/docs/getting-started).
 

@@ -1,6 +1,6 @@
 ---
 author: axonasif, pawlean, nancy-chauhan
-date: Thursday, 23 Jun 2022 11:00:00 UTC
+date: Thursday, 30 Jun 2022 02:00:00 UTC
 excerpt: This story is about how Gitpod enabled an 18-year-old student from Dhaka with a broken laptop to continue developing software on an Android phone seamlessly
 slug: software-development-from-my-android-phone-at-datacenter-speeds
 teaserImage: teaser.png
