@@ -64,6 +64,10 @@
 </script>
 
 <style lang="postcss">
+  :global(body.consent-is-shown) .parent {
+    @apply bottom-[95px] xl:bottom-14;
+  }
+
   .links {
     @apply relative;
 
@@ -91,7 +95,7 @@
 </style>
 
 <div
-  class="fixed bottom-4 right-4 flex flex-col items-end z-50"
+  class="fixed bottom-4 right-4 flex flex-col items-end z-50 parent"
   data-analytics={`{"context":"contact_widget"}`}
 >
   {#if areButtonsShown}
@@ -100,6 +104,7 @@
         on:click={() => (areButtonsShown = false)}
         in:fade={{ duration: 200, delay: 300 }}
         out:fade={{ duration: 300 }}
+        aria-label="Close the menu"
       >
         <Close class="h-6 w-6 mb-macro" />
       </button>
@@ -108,29 +113,27 @@
       in:fade={{ duration: 600 }}
       out:fade={{ duration: 300 }}
       bind:this={linksWrapper}
-      class="stroked stroked-sand flex flex-col rounded-2xl mb-xx-small"
+      class="stroked stroked-sand flex flex-col rounded-2xl mb-5 sm:mb-xx-small links p-3 sm:p-xx-small"
     >
-      <div class="links p-xx-small">
-        <div class="before" />
-        <div class="space-y-macro">
-          {#each buttons as { href, text, icon }}
-            <LinkButton
-              {href}
-              variant="white"
-              textAlign="left"
-              class="flex items-center max-w-[205px] group"
-            >
-              <svelte:component
-                this={icon}
-                class="h-4 w-4 mr-3 filter grayscale group-hover:grayscale-0 transition-all duration-200"
-                slot="image"
-              />
-              {text}
-            </LinkButton>
-          {/each}
-        </div>
-        <div class="stroked stroked-sand after" />
+      <div class="before" />
+      <div class="space-y-macro">
+        {#each buttons as { href, text, icon }}
+          <LinkButton
+            {href}
+            variant="white"
+            textAlign="left"
+            class="flex items-center max-w-[205px] group"
+          >
+            <svelte:component
+              this={icon}
+              class="h-4 w-4 mr-3 filter grayscale group-hover:grayscale-0 transition-all duration-200"
+              slot="image"
+            />
+            {text}
+          </LinkButton>
+        {/each}
       </div>
+      <div class="stroked stroked-sand after" />
     </div>
   {/if}
 
@@ -138,7 +141,7 @@
     <div data-analytics={`{"label":"Hide/Show Contact Widget"}`}>
       <button
         in:fade={{ duration: 200 }}
-        class="stroked flex group justify-center items-center bg-card h-14 w-14 rounded-full"
+        class="stroked flex group justify-center items-center bg-card h-12 w-12 sm:h-14 sm:w-14 rounded-full"
         on:click={() => {
           areButtonsShown = !areButtonsShown;
         }}
@@ -146,7 +149,7 @@
         <div class="icon-wrapper" bind:this={iconWrapper}>
           <svelte:component
             this={Chat}
-            class="h-8 w-8 filter group-hover:grayscale transition-all duration-200 {areButtonsShown
+            class="h-6 w-6 sm:h-8 sm:w-8 filter group-hover:grayscale transition-all duration-200 {areButtonsShown
               ? 'grayscale'
               : ''}"
           />
