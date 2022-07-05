@@ -73,4 +73,4 @@ These are the components expected on each node:
 - Either Ubuntu 18.04 with ≥ v5.4 kernel or Ubuntu 20.04 with ≥ v5.4 kernel
 - Calico for the networking overlay and network policy
 - Containerd ≥ 1.5
-- At least 4 vCPU and 8GB of RAM
+- At least 4 vCPU and 16GB of RAM
