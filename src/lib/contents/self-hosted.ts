@@ -79,7 +79,6 @@ export const communityPlanTableData: FeatureTableColumn = {
     {
       users: "≤10 users",
       items: [
-        { term: "Workspace", isHeadline: true },
         {
           term: "Public & Private Repos",
           availability: true,
@@ -120,17 +119,6 @@ export const communityPlanTableData: FeatureTableColumn = {
           term: "Bitbucket",
           availability: true,
         },
-
-        {
-          term: "Shared workspaces",
-          availability: true,
-        },
-        {
-          term: "Snapshots",
-          availability: true,
-        },
-        { term: "" },
-        { term: "Business", isHeadline: true },
         {
           term: "Multi-IDE support",
           availability: true,
@@ -140,7 +128,15 @@ export const communityPlanTableData: FeatureTableColumn = {
           availability: true,
         },
         {
-          term: "Air gapped support",
+          term: "Shared workspaces",
+          availability: true,
+        },
+        {
+          term: "Snapshots",
+          availability: true,
+        },
+        {
+          term: "Air gapped environment support",
           availability: false,
         },
         {
@@ -164,7 +160,6 @@ export const communityPlanTableData: FeatureTableColumn = {
     {
       users: ">10 users",
       items: [
-        { term: "Workspace", isHeadline: true },
         {
           term: "Public & Private Repos",
           availability: true,
@@ -205,17 +200,6 @@ export const communityPlanTableData: FeatureTableColumn = {
           term: "Bitbucket",
           availability: true,
         },
-
-        {
-          term: "Shared workspaces",
-          availability: false,
-        },
-        {
-          term: "Snapshots",
-          availability: false,
-        },
-        { term: "" },
-        { term: "Business", isHeadline: true },
         {
           term: "Multi-IDE support",
           availability: true,
@@ -225,7 +209,15 @@ export const communityPlanTableData: FeatureTableColumn = {
           availability: true,
         },
         {
-          term: "Air gapped support",
+          term: "Shared workspaces",
+          availability: false,
+        },
+        {
+          term: "Snapshots",
+          availability: false,
+        },
+        {
+          term: "Air gapped environment support",
           availability: false,
         },
         {
@@ -264,7 +256,6 @@ export const professionalPlanTableData: FeatureTableColumn = {
     {
       users: ">10 users",
       items: [
-        { term: "Workspace", isHeadline: true },
         {
           term: "Public & Private Repos",
           availability: true,
@@ -305,17 +296,6 @@ export const professionalPlanTableData: FeatureTableColumn = {
           term: "Bitbucket",
           availability: true,
         },
-
-        {
-          term: "Shared workspaces",
-          availability: true,
-        },
-        {
-          term: "Snapshots",
-          availability: true,
-        },
-        { term: "" },
-        { term: "Business", isHeadline: true },
         {
           term: "Multi-IDE support",
           availability: true,
@@ -325,7 +305,15 @@ export const professionalPlanTableData: FeatureTableColumn = {
           availability: true,
         },
         {
-          term: "Air gapped support",
+          term: "Shared workspaces",
+          availability: true,
+        },
+        {
+          term: "Snapshots",
+          availability: true,
+        },
+        {
+          term: "Air gapped environment support",
           availability: true,
         },
         {
@@ -355,10 +343,6 @@ export const selfHostedToc: FeatureTableToc[] = [
     data: {
       text: "",
     },
-  },
-  {
-    isHeadline: true,
-    headlineText: "Workspace",
   },
   {
     type: "text",
@@ -437,32 +421,6 @@ export const selfHostedToc: FeatureTableToc[] = [
       },
     },
   },
-
-  {
-    type: "tooltip",
-    data: {
-      text: "Shared workspaces",
-      tooltip: "Pair program with your team by sharing running workspaces.",
-    },
-  },
-  {
-    type: "tooltip",
-    data: {
-      text: "Snapshots",
-      tooltip:
-        "Create a copy of your workspace by sharing a snapshot with your team.",
-    },
-  },
-  {
-    type: "text",
-    data: {
-      text: "",
-    },
-  },
-  {
-    isHeadline: true,
-    headlineText: "Business",
-  },
   {
     type: "tooltip",
     data: {
@@ -476,6 +434,21 @@ export const selfHostedToc: FeatureTableToc[] = [
     data: {
       text: "Admin Dashboard",
       tooltip: "Access to team and project management and configuration.",
+    },
+  },
+  {
+    type: "tooltip",
+    data: {
+      text: "Shared workspaces",
+      tooltip: "Pair program with your team by sharing running workspaces.",
+    },
+  },
+  {
+    type: "tooltip",
+    data: {
+      text: "Snapshots",
+      tooltip:
+        "Create a copy of your workspace by sharing a snapshot with your team.",
     },
   },
   {
