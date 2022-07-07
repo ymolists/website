@@ -21,6 +21,7 @@
   import { tick } from "svelte";
   import Unleashing from "$lib/components/contact/unleashing.svelte";
   import { afterNavigate } from "$app/navigation";
+  import InputsHalf from "./inputs-half.svelte";
 
   const selfHostingSubject = "Self-hosting";
   const otherSubject = "Other";
@@ -230,15 +231,6 @@
       min-width: 650px;
     }
   }
-
-  .input-halfs {
-    @apply sm:flex sm:justify-between;
-
-    & > * {
-      flex: 0 0 46%;
-      @apply mt-x-small sm:mt-0;
-    }
-  }
 </style>
 
 <OpenGraph
@@ -320,7 +312,7 @@
                   class="max-w-md"
                 />
               {/if}
-              <div class="input-halfs">
+              <InputsHalf>
                 <div>
                   <Input
                     hasError={isFormDirty && !formData.name.valid}
@@ -354,8 +346,8 @@
                     autocomplete="email"
                   />
                 </div>
-              </div>
-              <div class="input-halfs">
+              </InputsHalf>
+              <InputsHalf>
                 <div>
                   <Input
                     label="Company website*"
@@ -388,7 +380,7 @@
                     options={noOfEngineers}
                   />
                 </div>
-              </div>
+              </InputsHalf>
               <div>
                 <Textarea
                   label="Your message*"
