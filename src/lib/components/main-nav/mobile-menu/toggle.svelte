@@ -48,7 +48,7 @@
       }
     }
 
-    @media (min-width: 1190px) {
+    @media (min-width: 1090px) {
       @apply hidden;
     }
   }

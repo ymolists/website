@@ -12,8 +12,6 @@
   import SignUpButtonTablet from "./sign-up-button-tablet.svelte";
   import AnnouncementBanner from "$lib/components/banners/announcement.svelte";
   import SkipToContent from "../skip-to-content.svelte";
-  import GithubStars from "./github-stars.svelte";
-
   // import { session } from "$app/stores";
 
   let scroll: number;
@@ -85,7 +83,7 @@
     backdrop-filter: saturate(0.5) blur(5px);
   }
 
-  @media (min-width: 1190px) {
+  @media (min-width: 1090px) {
     .wrapper {
       @apply h-20;
     }
@@ -99,19 +97,13 @@
   button {
     @apply outline-none py-2;
 
-    @media (min-width: 1190px) {
+    @media (min-width: 1090px) {
       @apply py-1;
     }
   }
 
   button::-moz-focus-inner {
     @apply border-0;
-  }
-
-  .stars {
-    @media (min-width: 1190px) {
-      @apply hidden;
-    }
   }
 </style>
 
@@ -148,7 +140,6 @@
       {/each}
     </div>
     <div class="login-wrapper items-center hidden space-x-x-small">
-      <GithubStars />
       {#if isLoggedIn}
         <DashboardButton />
       {:else}
@@ -156,10 +147,7 @@
         <DemoButton />
       {/if}
     </div>
-    <div class="flex items-center space-x-micro">
-      <div class="stars">
-        <GithubStars />
-      </div>
+    <div class="flex items-center">
       {#if !$menuState && !isLoggedIn}
         <SignUpButtonTablet />
       {/if}

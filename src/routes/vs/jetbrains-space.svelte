@@ -52,7 +52,7 @@
   }}
   btnPrimary={{
     href: "https://www.gitpod.io/docs/ides-and-editors/jetbrains-gateway",
-    text: "Try now",
+    text: "Try Now",
   }}
 />
 

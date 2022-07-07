@@ -79,7 +79,7 @@
       <LinkButton
         variant="primary"
         size="large"
-        href="https://gitpod.io/workspaces/">Try now</LinkButton
+        href="https://gitpod.io/workspaces/">Try Now</LinkButton
       >
     </div>
   </div>

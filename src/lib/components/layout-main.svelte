@@ -1,6 +1,6 @@
 <style lang="postcss">
   main {
-    @media (min-width: 1190px) {
+    @media (min-width: 1090px) {
       @apply pt-20;
     }
     max-width: 87.5rem;
