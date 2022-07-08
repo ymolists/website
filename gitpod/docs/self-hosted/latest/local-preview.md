@@ -23,10 +23,10 @@ automatically created and a self-signed Gitpod instance will be installed into t
 created instance will be accessible to the user on one of the [docker bridge network](https://docs.docker.com/network/network-tutorial-standalone/#use-the-default-bridge-network)
 IP addresses.
 
-Run the following command to get the `preview-install` docker container up and running:
+Run the following command to get the `local-preview` docker container up and running:
 
 ```bash
-docker run --privileged --name gitpod --rm -it -v /tmp/gitpod:/var/gitpod eu.gcr.io/gitpod-core-dev/build/preview-install
+docker run --privileged --name gitpod --rm -it -v /tmp/gitpod:/var/gitpod eu.gcr.io/gitpod-core-dev/build/local-preview
 ```
 
 Unpacking the above command:
