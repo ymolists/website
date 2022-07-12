@@ -6,7 +6,7 @@ layout: false
   import CloudPlatformToggle from "$lib/components/docs/cloud-platform-toggle.svelte";
 </script>
 
-Gitpod uses an **object storage** to store blob data. This includes workspace backups that will be created when a workspace stops and are used to restore state upon restart. Different user settings like IDE preferencesa are also stored this way.
+Gitpod uses an **object storage** to store blob data. This includes workspace backups that will be created when a workspace stops and are used to restore state upon restart. Different user settings like IDE preferences are also stored this way.
 
 This reference architecture uses managed object storage by the cloud providers.
 

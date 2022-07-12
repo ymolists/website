@@ -36,7 +36,7 @@ It is suggested to create a dedicated VPC (and EKS instance) for Gitpod. eksctl 
 
 - You also customize eksctl’s [vpc](https://eksctl.io/usage/vpc-subnet-settings/#custom-subnet-topology) creation to suit your existing configurations.
 
-The VPC needs public and private subnets. All managed node groups and Gitpod services should run in the private subnet. Inbound access to the services should be through ALB/ELB services auto-provisioned by AWS based on the configuration used (standard LoadBalancer roles or creation of an Ingress). If running a jump host or vpn endpoint, it should be deployed in the public subnet.
+The VPC needs public and private subnets. All managed node groups and Gitpod services should run in the private subnet. Inbound access to the services should be through ALB/ELB services auto-provisioned by AWS based on the configuration used (standard LoadBalancer roles or creation of an Ingress). If running a jump host or VPN endpoint, it should be deployed in the public subnet.
 
 If installing Calico, follow their [installation steps](https://projectcalico.docs.tigera.io/getting-started/kubernetes/managed-public-cloud/eks) and ensure you modify the `hostNetwork: True` option on the cert-manager installation options later.
 
