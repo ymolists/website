@@ -9,6 +9,7 @@ export const getSession: import("@sveltejs/kit").GetSession = async (event) => {
     posts: event.locals.posts,
     guides: event.locals.guides,
     customers: event.locals.customers,
+    educationCustomers: event.locals.educationCustomers,
     securityLogs: event.locals.securityLogs,
   };
 };
@@ -92,6 +93,21 @@ const handleCustomers = async ({ event, resolve }) => {
   return await resolve(event);
 };
 
+const handleEducationCustomers = async ({ event, resolve }) => {
+  const customers = await Promise.all(
+    Object.entries(import.meta.glob("/src/routes/for/education/*.md")).map(
+      async ([path, page]) => {
+        const { metadata } = await page();
+        const filename = path.split("/").pop();
+        return { ...metadata, filename };
+      }
+    )
+  );
+  customers.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+  event.locals.educationCustomers = customers;
+  return await resolve(event);
+};
+
 // const handleLoggedIn: Handle = async ({ event, resolve }) => {
 //   const cookies = cookie.parse(event.request.headers.get("cookie") || "");
 //   event.locals.loggedIn =
@@ -117,5 +133,6 @@ export const handle = sequence(
   handleChangelogEntries,
   handleSecurityLogs,
   handleGuides,
-  handleCustomers
+  handleCustomers,
+  handleEducationCustomers
 );

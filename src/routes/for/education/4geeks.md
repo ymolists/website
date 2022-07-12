@@ -35,7 +35,7 @@ data={{
 title="Building a learning platform on Gitpod"
 text="4Geeks built LearnPack – an educational platform that runs in Gitpod on VS Code and allows instructors to teach, evaluate, and grade code lessons. Using LearnPack and Gitpod, they have taught over 4000 students in 6 countries and have received over $15 million USD in educational grants."
 card={{
-		image: "/images/customers/4geeks/teaser.png",
+		image: "/images/education/4geeks/teaser.png",
 		details:{
 			industry: "Education",
 			plan: "Team Unlimited, SaaS",
