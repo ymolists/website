@@ -1,6 +1,6 @@
 ---
 author: iqqbot, mustard-mh, loujaybee
-# date: Monday, 11 July 2022 11:00:00 UTC
+date: Wednesday, 13 July 2022 09:00:00 UTC
 excerpt: For more secure and easier to use workspace access, you can now upload a public SSH key to Gitpod to access Gitpod workspaces using your own dedicated SSH key.
 image: header.jpg
 slug: ssh-key-upload
@@ -15,7 +15,7 @@ title: "Introducing workspace SSH support using your own private key(s)"
 
 SSH (secure shell) is a critical protocol for remote development.
 
-Both [JetBrains](https://www.jetbrains.com/help/idea/remote-development-a.html) IDEs and the [VS Code](https://code.visualstudio.com/docs/remote/remote-overview) editor use SSH their remote development foundation. So, a big focus at Gitpod has been on improving performance and usability for connecting and using SSH.
+Both [JetBrains](https://www.jetbrains.com/help/idea/remote-development-a.html) IDEs and the [VS Code](https://code.visualstudio.com/docs/remote/remote-overview) editor use SSH as their remote development foundation. So, a big focus at Gitpod has been on improving performance and usability for connecting using SSH.
 
 Which is why today **we're excited to announce that in Gitpod you can now upload your own public keys to access your workspace.** In addition, we've also removed the requirement for a mandatory public key to be available when access Gitpod using SSH with an Access Token.
 
