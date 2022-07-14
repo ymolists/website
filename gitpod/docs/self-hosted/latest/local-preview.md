@@ -4,7 +4,7 @@ subsection: installation-guides
 title: Local Preview of Gitpod Self-Hosted
 ---
 
-<script context="module"> 
+<script context="module">
   export const prerender = true;
 </script>
 
