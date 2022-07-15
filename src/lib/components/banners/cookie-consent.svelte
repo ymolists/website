@@ -17,7 +17,7 @@
     location="custom"
     storageKey="cookie-consent-bar"
     let:closeBanner
-    class=" fixed stroked stroked-divider bottom-0 md:bottom-macro md:left-macro z-50 w-full md:max-w-[410px] px-micro py-macro md:p-xx-small text-xs md:text-base md:rounded-2xl md:shadow-sm"
+    class="fixed stroked stroked-sand bottom-0 md:bottom-macro md:left-macro z-50 w-full md:max-w-[410px] px-micro py-macro md:p-xx-small text-xs md:text-base md:rounded-2xl md:shadow-sm"
   >
     <p>
       This website uses cookies to enhance the user experience. Read our <a
@@ -25,10 +25,10 @@
       > for more info.
     </p>
     <div
-      class="flex flex-row-reverse items-center justify-between mt-micro md:mt-x-small"
+      class="flex flex-row-reverse md:flex-row items-center justify-between mt-micro md:mt-x-small"
     >
       <div class="space-x-micro">
-        <button on:click={closeBanner} class="underline"> Opt-out </button>
+        <button on:click={closeBanner} class="underline">Opt-out</button>
         <button
           on:click={() => {
             isModalOpen = true;
