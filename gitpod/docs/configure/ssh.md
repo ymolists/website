@@ -13,7 +13,9 @@ Secure Shell Protocol (SSH) is the basis for connecting to your Gitpod workspace
 
 See [command-line](/docs/ides-and-editors/command-line) editors & IDEs documentation for more.
 
-## Installing a supported SSH client
+## Manage your SSH Keys
+
+### Installing a supported SSH client
 
 How to install a local SSH client depending on your operating system.
 
@@ -27,7 +29,7 @@ How to install a local SSH client depending on your operating system.
 
 > ❗️ PuTTY for Windows is not a supported client
 
-## Create an SSH key
+### Create an SSH key
 
 Check to see if you already have an SSH key on your **local** machine. The key is typically located at `~/.ssh/id_rsa.pub` on macOS / Linux, and the `.ssh` directory in your user profile folder on Windows (for example `C:\Users\your-user\.ssh\id_rsa.pub`).
 
@@ -41,7 +43,7 @@ You will then be prompted to enter a secure passphrase, but you can leave that b
 
 > **Tip:** Don't have `ssh-keygen`? Install [a supported SSH client](#installing-a-supported-ssh-client).
 
-## SSH file and folder permissions
+### SSH file and folder permissions
 
 **macOS / Linux:**
 
@@ -62,7 +64,7 @@ In this case, make sure that all of the files in the `.ssh` folder for your remo
 
 For all other clients, consult your client's documentation for what the implementation expects.
 
-## Upload an SSH key to Gitpod
+### Upload an SSH key to Gitpod
 
 Once you've created an SSH key pair, you can upload your public SSH key to Gitpod, by navigating to [gitpod.io/keys](https://gitpod.io/keys) where you can upload one or more public SSH keys.
 
@@ -74,20 +76,31 @@ Paste your public key, and give your key a memorable title so that you can remem
 ![Adding an SSH Key to Gitpod](/images/docs/new-ssh-key-light-theme.png)
 ![Adding an SSH Key to Gitpod](/images/docs/new-ssh-key-dark-theme.png)
 
-## Edit an SSH key in Gitpod
+### Edit an SSH key in Gitpod
 
 Gitpod doesn't support editing an SSH key.
 
 To update an SSH key, delete the key and re-upload the SSH key to Gitpod.
 
-## Delete an SSH key from Gitpod
+### Delete an SSH key from Gitpod
 
 To delete an SSH key, click the kebab menu to the right of the SSH key in the dashboard and select "delete".
 
 ![Deleting an SSH key from Gitpod](/images/docs/delete-ssh-key-light-theme.png)
 ![Deleting an SSH key from Gitpod](/images/docs/delete-ssh-key-dark-theme.png)
 
-## SSH in Self-Hosted Gitpod
+## SSH Gateway
+
+SSH Gateway facilitates connection via SSH for direct SSH access using uploaded public keys, and using the workspace owner token. Both the [VS Code Desktop](/docs/ides-and-editors/vscode) and [JetBrains](/docs/ides-and-editors/jetbrains-gateway) integrations use SSH Gateway to connect to Gitpod workspaces.
+
+### What is SSH Gateway?
+
+SSH Gateway is an intermediary service within Gitpod that proxies incoming SSH requests to the appropriate running workspaces.
+
+![SSH Gateway architecture in Gitpod](/images/ssh-gateway/ssh-gateway-dark-theme.png)
+![SSH Gateway architecture in Gitpod](/images/ssh-gateway/ssh-gateway-light-theme.png)
+
+### SSH Gateway in Self-Hosted
 
 If you are running a [Self-Hosted](https://www.gitpod.io/self-hosted) Gitpod installation, you will need to ensure that:
 
