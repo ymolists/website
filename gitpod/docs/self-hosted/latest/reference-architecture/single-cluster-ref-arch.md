@@ -1,7 +1,7 @@
 ---
 section: self-hosted/latest
 subsection: installation-guides
-title: "Single-Cluster Production-Ready Reference Architecture"
+title: "Single-Cluster Reference Architecture"
 ---
 
 <script context="module">
@@ -20,9 +20,9 @@ title: "Single-Cluster Production-Ready Reference Architecture"
   import Install from "./_chunks/install.md";
 </script>
 
-# Single-Cluster Production-Ready Reference Architecture
+# Single-Cluster Reference Architecture for Production Purposes
 
-This guide describes a single-cluster production-ready reference architecture for Gitpod. It consists of a Kubernetes cluster, cert-manager, external MySQL database, external OCI image registry, and external object storage. It includes instructions on how to set up this reference architecture on the officially supported cloud providers.
+This guide describes a single-cluster reference architecture for Gitpod aimed at production environments: continuous deployments of Gitpod used in anger by your engineers. It consists of a Kubernetes cluster, cert-manager, external MySQL database, external OCI image registry, and external object storage. It includes instructions on how to set up this reference architecture on the officially supported cloud providers.
 
 This reference architecture can be used as a blueprint for your Gitpod installation: Start with this reference architecture and adapt it to your needs. The reference architecture as described in this guide is what Gitpod supports, and is used to test against every self-hosted Gitpod release.
 

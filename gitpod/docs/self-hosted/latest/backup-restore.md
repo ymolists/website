@@ -12,13 +12,13 @@ title: How to backup and restore Gitpod
 
 For [business continuity](https://en.wikipedia.org/wiki/Business_continuity_planning) purposes, it is important to think about how you might restore your ability to use Gitpod, and thus develop software in the event of a catastrophic failure of Gitpod or the underlying infrastructure it runs on. This guide assumes that you will use the backup and restore strategy for disaster recovery and will guide you towards what needs to be backed up and how to restore using said backup. Please see our background reading on [disaster recovery](./disaster-recovery) for more information.
 
-> **Important:** When using Gitpod in a production setting, we recommend you base your installation on the [single cluster reference architecture](./reference-architecture/production-ready-single-cluster). Using in-cluster dependencies is not recommended because there is no means to produce backups, and the database/storages systems are within failure domain of the cluster. If possible consider using Gitpod [SaaS](https://www.gitpod.io/pricing).
+> **Important:** When using Gitpod in a production setting, we recommend you base your installation on the [single cluster reference architecture](./reference-architecture/single-cluster-ref-arch). Using in-cluster dependencies is not recommended because there is no means to produce backups, and the database/storages systems are within failure domain of the cluster. If possible consider using Gitpod [SaaS](https://www.gitpod.io/pricing).
 
 > **Note:** We recommend to regularly trial run a recovery using this method to ensure that it works in practice and to allow yourself the chance to spot any unforeseen issues.
 
 ## What to back up
 
-It is critical to consider what needs to be backed up and ensure you take the necessary steps to secure each of the listed elements. What needs to be backed up is closely aligned with [Gitpod’s architecture](./reference-architecture/production-ready-single-cluster#overview) and how it runs.
+It is critical to consider what needs to be backed up and ensure you take the necessary steps to secure each of the listed elements. What needs to be backed up is closely aligned with [Gitpod’s architecture](./reference-architecture/single-cluster-ref-arch#overview) and how it runs.
 
 ### Database
 
