@@ -15,7 +15,7 @@
       title: "Amazon Web Services (AWS)",
       value: 2,
       slotName: "aws",
-      hidden: true, // hidden since it is not ready to publish yet
+      hidden: false, // hidden since it is not ready to publish yet
     },
     {
       mobileTitle: "Azure",
@@ -45,7 +45,9 @@
 </style>
 
 <details open={open || null} {id}>
-  <summary class="text-p-medium">Cloud provider specific instructions</summary>
+  <summary class="text-p-medium"
+    ><b>Cloud provider specific instructions</b></summary
+  >
 
   <div class="my-8 mt-0">
     <ul class="flex flex-wrap !pl-0 !mb-0">

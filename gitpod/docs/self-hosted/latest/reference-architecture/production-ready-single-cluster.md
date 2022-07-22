@@ -46,6 +46,10 @@ You can also create a Kubernetes cluster on your bare metal servers for smaller 
 
 <Networking />
 
+## Object Storage
+
+<Storage />
+
 ## OCI Image Registry
 
 <Registry />
@@ -53,10 +57,6 @@ You can also create a Kubernetes cluster on your bare metal servers for smaller 
 ## Database
 
 <Database />
-
-## Object Storage
-
-<Storage />
 
 ## Install Gitpod
 
