@@ -84,7 +84,6 @@ export const MENU: MenuEntry[] = [
     M("LaTeX", "languages/latex"),
     M("R", "languages/r"),
     M("Kotlin", "languages/kotlin"),
-    M("Pandas", "languages/python#pandas"),
     M("Deno", "languages/deno"),
   ]),
   M("Integrations", "integrations", [
