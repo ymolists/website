@@ -75,3 +75,7 @@ These are the components expected on each node:
 - Calico for the networking overlay and network policy
 - Containerd ≥ 1.5
 - At least 4 vCPU and 16GB of RAM
+
+### Kubernetes Privilege Requirements
+
+Your Kubernetes cluster must allow Gitpod to run privileged pods and manage PodSecurityPolicies, as Gitpod depends on these privileges to provide workspace isolation.
