@@ -18,7 +18,7 @@
       <Calendar class="h-7 w-7 mr-micro" /> August 04 - 6pm CEST/ 9am PDT
     </div>
     <div class="flex items-center">
-      <Clock class="h-7 w-7 mr-micro" /> 30min
+      <Clock class="h-7 w-7 mr-micro" /> 60min
     </div>
     <p class="text-large my-x-small">
       Curious how the biggest tech companies are using remote development to
