@@ -132,9 +132,26 @@ export const post: RequestHandler = async ({ request }) => {
       sheetRes.status = 500;
       sheetRes.body = err;
     }
+  } else if (email.toType === "webinar-registeration") {
+    const data = [
+      new Date(),
+      email.data.name,
+      email.data.email,
+      email.data.company,
+    ];
+
+    try {
+      const saveResponse = await saveToSheet("Webinar registrations", data);
+      sheetRes.status = saveResponse.statusCode;
+      sheetRes.body = saveResponse.body;
+    } catch (err) {
+      console.error(err);
+      sheetRes.status = 500;
+      sheetRes.body = err;
+    }
   }
 
-  if (!dontEmail) {
+  if (!dontEmail && email.toType !== "webinar-registeration") {
     client.setApiKey(SENDGRID_API_KEY);
     const dontEmailResponse = await sendEmail(client, email);
     emailRes.status = dontEmailResponse.statusCode;

@@ -61,6 +61,7 @@
 
   let isStudentEmailNoteShown: boolean = false;
   let sectionStart: HTMLElement;
+  let isSubmissionInProgress: boolean = false;
 
   $: if (formData.selectedSubject.value === studentUnlimitedSubject) {
     isStudentEmailNoteShown = true;
@@ -123,6 +124,7 @@
       scrollToElement(sectionStart, ".error");
       return;
     }
+    isSubmissionInProgress = true;
 
     trackIdentity(
       {
@@ -360,7 +362,7 @@
               <InputsHalf>
                 <div class:error={isFormDirty && !formData.company.valid}>
                   <Input
-                    label="Company"
+                    label="Company*"
                     hasError={isFormDirty && !formData.company.valid}
                     id="company"
                     name="company"
@@ -419,7 +421,9 @@
                 size="medium"
                 type="submit"
                 class="btn"
-                disabled={isFormDirty && !isFormValid}
+                disabled={(isFormDirty && !isFormValid) ||
+                  isSubmissionInProgress}
+                isLoading={isSubmissionInProgress}
                 >Send message
               </Button>
               {#if isFormDirty && !isFormValid}
