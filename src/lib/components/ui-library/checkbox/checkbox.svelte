@@ -8,6 +8,7 @@
   export let hasError: boolean = false;
   export let disabled: boolean = false;
   export let labelClasses: string = "";
+  export let textClassName: string = "text-body";
   export { className as class };
   const uid = nanoid();
 </script>
@@ -49,7 +50,7 @@
 />
 {#if label}
   <label
-    class="flex cursor-pointer text-body mt-1 mb-2 {labelClasses} {disabled
+    class="flex cursor-pointer mt-1 mb-2 {textClassName} {labelClasses} {disabled
       ? 'pointer-events-none'
       : ''}"
     for={uid + label}

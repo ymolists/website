@@ -59,18 +59,28 @@ async function sendEmail(
   }
 }
 
-async function saveToSheet(sheetTitle: string, data: any) {
+async function saveToSheet(
+  sheetTitle: string,
+  data: any,
+  type?: "signup" | "webinar-registeration"
+) {
   const isSaved = await save({
     sheetTitle,
     data,
+    type,
   });
 
-  const statusCode = isSaved ? 200 : 500;
-
-  return {
-    statusCode,
-    body: JSON.stringify(data) + " added",
-  };
+  if (isSaved === "duplicate") {
+    return {
+      statusCode: 409,
+      body: "duplicate",
+    };
+  } else {
+    return {
+      statusCode: isSaved ? 200 : 500,
+      body: JSON.stringify(data) + " added",
+    };
+  }
 }
 
 export const post: RequestHandler = async ({ request }) => {
@@ -138,10 +148,15 @@ export const post: RequestHandler = async ({ request }) => {
       email.data.name,
       email.data.email,
       email.data.company,
+      email.data.jetbrainsConsent,
     ];
 
     try {
-      const saveResponse = await saveToSheet("Webinar registrations", data);
+      const saveResponse = await saveToSheet(
+        "Webinar registrations",
+        data,
+        "webinar-registeration"
+      );
       sheetRes.status = saveResponse.statusCode;
       sheetRes.body = saveResponse.body;
     } catch (err) {
@@ -154,8 +169,8 @@ export const post: RequestHandler = async ({ request }) => {
   if (!dontEmail && email.toType !== "webinar-registeration") {
     client.setApiKey(SENDGRID_API_KEY);
     const dontEmailResponse = await sendEmail(client, email);
-    emailRes.status = dontEmailResponse.statusCode;
-    emailRes.body = dontEmailResponse.body;
+    sheetRes.status = dontEmailResponse.statusCode;
+    sheetRes.body = dontEmailResponse.body;
   }
 
   if (!dontEmail && email.toType === "community-license") {
@@ -172,7 +187,7 @@ export const post: RequestHandler = async ({ request }) => {
       res.status === 500;
       res.body = emailRes.body;
     }
-  } else if (!dontEmail) {
+  } else if (!dontEmail && email.toType !== "webinar-registeration") {
     res.status = emailRes.status;
     res.body = emailRes.body;
   } else {

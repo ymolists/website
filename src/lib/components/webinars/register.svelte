@@ -30,6 +30,11 @@
       valid: false,
       value: "",
     },
+    jetbrainsConsent: {
+      el: null,
+      valid: true,
+      value: "",
+    },
     consent: {
       el: null,
       valid: false,
@@ -43,6 +48,7 @@
   let isSubmissionInProgress: boolean = false;
   let toType: EmailToType = "webinar-registeration";
   let sectionStart: HTMLElement;
+  let isDuplicate: boolean = false;
 
   $: isFormValid = Object.values(formData).every((field) => field.valid);
 
@@ -61,6 +67,7 @@
         name: formData.name.value,
         email: formData.email.value,
         company: formData.companyWebsite.value,
+        jetbrainsConsent: formData.jetbrainsConsent.value,
       },
     };
 
@@ -75,6 +82,8 @@
         setTimeout(() => {
           sectionStart.scrollIntoView();
         });
+      } else if (response.status === 409) {
+        isDuplicate = true;
       } else {
         console.error(response.statusText);
       }
@@ -104,6 +113,8 @@
         title="Thanks for your registration"
         text="You will receive a confirmation email shortly."
       />
+    {:else if isDuplicate}
+      <SubmissionSuccess title="You have already registered" />
     {:else}
       <form
         class="space-y-xx-small md:space-y-x-small"
@@ -162,16 +173,33 @@
             />
           </div>
         </InputsHalf>
-        <Checkbox
-          hasError={isFormDirty && !formData.consent.valid}
-          label="I consent to having this website store my submitted information so that I can get event notifications."
-          bind:checked={formData.consent.checked}
-          bind:element={formData.consent.el}
-          on:change={() => {
-            formData.consent.valid =
-              formData.consent.checked && formData.consent.el.validity.valid;
-          }}
-        />
+        <div>
+          <Checkbox
+            hasError={isFormDirty && !formData.consent.valid}
+            label="I consent to having this website store my submitted information so that I can get event notifications."
+            bind:checked={formData.consent.checked}
+            bind:element={formData.consent.el}
+            on:change={() => {
+              formData.consent.valid =
+                formData.consent.checked && formData.consent.el.validity.valid;
+            }}
+            textClassName="text-sm"
+          />
+          <Checkbox
+            hasError={isFormDirty && !formData.jetbrainsConsent.valid}
+            label="(Optional) I consent to sharing my submitted information with JetBrains to receive a one-time 20% discount for new purchases of personal subscriptions to the All Products Pack or to any IDE that JetBrains Gateway supports."
+            bind:checked={formData.jetbrainsConsent.checked}
+            bind:element={formData.jetbrainsConsent.el}
+            on:change={() => {
+              if (formData.jetbrainsConsent.checked) {
+                formData.jetbrainsConsent.value = "given";
+              } else {
+                formData.jetbrainsConsent.value = "";
+              }
+            }}
+            textClassName="text-sm"
+          />
+        </div>
         <Button
           variant="primary"
           size="large"

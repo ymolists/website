@@ -24,7 +24,7 @@ export declare interface Email {
 export declare interface SheetInfo {
   sheetTitle: string;
   data: any[];
-  type?: "signup";
+  type?: "signup" | "webinar-registeration";
 }
 
 export declare interface SignupData {

@@ -13,14 +13,20 @@ export default async (sheetInfo: SheetInfo): Promise<boolean | string> => {
     });
     await doc.loadInfo();
     const sheet = doc.sheetsByTitle[sheetInfo.sheetTitle];
-    if (sheetInfo.type === "signup") {
+    const sheetInfoData =
+      sheetInfo.type === "signup" ? sheetInfo.data[0] : sheetInfo.data[2];
+    if (
+      sheetInfo.type === "signup" ||
+      sheetInfo.type === "webinar-registeration"
+    ) {
       const rows = await sheet.getRows();
       let existingEmails: string[] = [];
       rows.map((row) => {
-        existingEmails.push(row._rawData[0]);
+        const data =
+          sheetInfo.type === "signup" ? row._rawData[0] : row._rawData[2];
+        existingEmails.push(data);
       });
-
-      if (existingEmails.includes(sheetInfo.data[0])) {
+      if (existingEmails.includes(sheetInfoData)) {
         return "duplicate";
       }
     }
