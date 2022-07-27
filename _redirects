@@ -1,3 +1,5 @@
+https://blog.gitpod.io https://www.gitpod.io/blog 301
+https://blog.gitpod.io/* https://www.gitpod.io/blog 301
 https://community.gitpod.io https://www.gitpod.io/chat 301
 https://community.gitpod.io/* https://www.gitpod.io/chat 301
 /blog/gitlab-integration/+ /blog/gitlab-integration 301
