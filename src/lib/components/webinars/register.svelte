@@ -142,7 +142,7 @@
           <div>
             <Input
               hasError={isFormDirty && !formData.email.valid}
-              label="Work e-mail*"
+              label="Work email*"
               id="email"
               name="work-email"
               bind:value={formData.email.value}
