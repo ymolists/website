@@ -20,10 +20,10 @@ You need to assign the following labels to the node pools to enforce that the Gi
 
 The following table gives an overview of the node types for the different cloud providers that are used by this reference architecture.
 
-|                      | GCP               | AWS           |
-| -------------------- | ----------------- | ------------- |
-| Services Node Pool   | `n2d-standard-8`  | `m6i.xlarge`  |
-| Workspaces Node Pool | `n2d-standard-16` | `m6i.2xlarge` |
+|                      | GCP              | AWS           |
+| -------------------- | ---------------- | ------------- |
+| Services Node Pool   | `n2d-standard-4` | `m6i.xlarge`  |
+| Workspaces Node Pool | `n2d-standard-8` | `m6i.2xlarge` |
 
 <br/>
 
@@ -112,7 +112,7 @@ Now, we are [creating a **node pool**](https://cloud.google.com/kubernetes-engin
 |                   |                                                                                     |
 | ----------------- | ----------------------------------------------------------------------------------- |
 | Image Type        | `UBUNTU_CONTAINERD`                                                                 |
-| Machine Type      | `n2d-standard-8`                                                                    |
+| Machine Type      | `n2d-standard-4`                                                                    |
 | Enable            | Autoscaling<br/>Autorepair<br/>IP Alias<br/>Network Policy                          |
 | Disable           | Autoupgrade<br/>`metadata=disable-legacy-endpoints=true`                            |
 | Create Subnetwork | `gitpod-${CLUSTER_NAME}`                                                            |
@@ -131,7 +131,7 @@ gcloud container node-pools \
     --disk-type="pd-ssd" \
     --disk-size="100GB" \
     --image-type="UBUNTU_CONTAINERD" \
-    --machine-type="n2d-standard-8" \
+    --machine-type="n2d-standard-4" \
     --num-nodes=1 \
     --no-enable-autoupgrade \
     --enable-autorepair \
@@ -150,7 +150,7 @@ We are also creating a **node pool for the Gitpod workspaces**.
 |                   |                                                                                                                                                 |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | Image Type        | `UBUNTU_CONTAINERD`                                                                                                                             |
-| Machine Type      | `n2d-standard-16`                                                                                                                               |
+| Machine Type      | `n2d-standard-8`                                                                                                                                |
 | Enable            | Autoscaling,<br/>Autorepair,<br/>IP Alias,<br/>Network Policy                                                                                   |
 | Disable           | Autoupgrade<br/>`metadata=disable-legacy-endpoints=true`                                                                                        |
 | Create Subnetwork | `gitpod-${CLUSTER_NAME}`                                                                                                                        |
@@ -169,7 +169,7 @@ gcloud container node-pools \
     --disk-type="pd-ssd" \
     --disk-size="100GB" \
     --image-type="UBUNTU_CONTAINERD" \
-    --machine-type="n2d-standard-16" \
+    --machine-type="n2d-standard-8" \
     --num-nodes=1 \
     --no-enable-autoupgrade \
     --enable-autorepair \
