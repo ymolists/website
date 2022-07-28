@@ -234,7 +234,7 @@
   text="Need help with any question or issue? Please get in contact and we’ll get
   onto it right away."
   tight={true}
-  class="max-w-2xl"
+  textClassNames="max-w-2xl mx-auto text-large"
 />
 
 <Card
