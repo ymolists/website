@@ -1,9 +1,9 @@
 <script lang="ts">
   import ButtonsWrapper from "../buttons-wrapper.svelte";
+  import ImageLightDark from "../image-light-dark.svelte";
   import Section from "../section.svelte";
-  import Crane from "../svgs/about/crane.svelte";
+  import GeneralCatalyst from "../svgs/about/general-catalyst.svelte";
   import SpeedInvest from "../svgs/about/speed-invest.svelte";
-  import Vertex from "../svgs/about/vertex.svelte";
   import Jetbrains from "../svgs/brands/jetbrains.svelte";
   import LinkButton from "../ui-library/link-button/link-button.svelte";
   import FindOutMore from "./find-out-more.svelte";
@@ -91,10 +91,27 @@
       other exciting companies in the world of developer tools and open source software.
     </p>
 
-    <div class="flex space-x-x-small mt-xx-small">
-      <Crane />
+    <div
+      class="flex flex-wrap items-center justify-center xs:justify-start gap-x-x-small gap-y-micro md:gap-small mt-xx-small"
+    >
+      <GeneralCatalyst />
       <SpeedInvest />
-      <Vertex />
+      <ImageLightDark
+        image={{
+          src: "/images/about/crane.png",
+          darkSrc: "/images/about/crane-dark.png",
+          alt: "Crane",
+          class: "h-[35px]",
+        }}
+      />
+      <ImageLightDark
+        image={{
+          src: "/images/about/vertex.png",
+          darkSrc: "/images/about/vertex-dark.png",
+          alt: "Crane",
+          class: "h-[38px]",
+        }}
+      />
     </div>
 
     <h2 class="h3">
