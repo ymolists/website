@@ -9,7 +9,7 @@ title: Command Line (SSH)
 
 # {title}
 
-You can directly access your workspace via SSH for editing code directly using a [command-line editor](/docs/ides-and-editors/command-line), such as Vim or for connecting SSH supported applications such as a database client.
+You can directly access your workspace via SSH for editing code directly using a [command-line editor](/docs/ides-and-editors/command-line), such as Vim & Emacs or for connecting SSH supported applications such as a database client.
 
 ## Workspace SSH approaches
 
