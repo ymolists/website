@@ -1,4 +1,5 @@
 import { basename } from "path";
+import type { ChangelogEntry as ChangelogEntryType } from "$lib/types/changelog-entry.type";
 
 export const get: import("@sveltejs/kit").RequestHandler = async ({
   url,
@@ -16,7 +17,9 @@ export const get: import("@sveltejs/kit").RequestHandler = async ({
   const releaseId = url.searchParams.get("releaseId");
   const fileName = releaseId
     ? `${releaseId}.md`
-    : locals.changelogEntries[0].fileName;
+    : (locals.changelogEntries as ChangelogEntryType[]).find((e) => {
+        return !e.tag || e.tag.indexOf("self-hosted") == -1;
+      }).fileName;
   const body = changelogEntries[fileName];
   if (!body) {
     return {

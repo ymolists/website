@@ -8,7 +8,7 @@ title: Disaster Recovery
   export const prerender = true;
 </script>
 
-## Business Continuity and Disaster Recovery Considerations with Gitpod
+# Business Continuity and Disaster Recovery Considerations with Gitpod
 
 > **Note:** There is a lot more to disaster recovery than we can cover here. This is just a high-level overview that speaks to how disaster recovery relates to Gitpod - it does not aim to be a complete guide to the topic.
 

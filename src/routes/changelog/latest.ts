@@ -3,7 +3,11 @@ import type { ChangelogEntry as ChangelogEntryType } from "$lib/types/changelog-
 export const get: import("@sveltejs/kit").RequestHandler = async ({
   locals,
 }) => {
-  const { fileName } = locals.changelogEntries[0] as ChangelogEntryType;
+  const { fileName } = (locals.changelogEntries as ChangelogEntryType[]).find(
+    (e) => {
+      return !e.tag || e.tag.indexOf("self-hosted") == -1;
+    }
+  );
   return {
     headers: {
       "Cache-Control": "public, max-age=86400",

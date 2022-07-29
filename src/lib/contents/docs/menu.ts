@@ -122,8 +122,9 @@ export const MENU: MenuEntry[] = [
     ]),
     M("Reference", "self-hosted/latest/reference", [
       M("Required Components", "self-hosted/latest/required-components"),
-      M("Releases", "self-hosted/latest/releases"),
       M("Telemetry", "self-hosted/latest/telemetry"),
+      M("Release Policies", "self-hosted/latest/releases"),
+      M("Upgrade Guides", "self-hosted/latest/upgrade-guides"),
     ]),
   ]),
   M("References", "references", [

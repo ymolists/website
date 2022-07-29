@@ -6,4 +6,5 @@ export type ChangelogEntry = {
   image: string;
   alt: string;
   fileName: string;
+  tag?: string;
 };
