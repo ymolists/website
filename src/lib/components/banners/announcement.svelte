@@ -29,9 +29,9 @@
   >
     <span class="flex-1 text-lg text-right">🤝 </span>
     <p class="flex-2 px-4 md:px-2">
-      Gitpod x JetBrains join forces to solve 'works on my machine' problem | <a
-        href="/blog/gitpod-jetbrains"
-        on:click={closeBanner}>View announcement</a
+      ⚡ Webinar: Remote Development with IntelliJ & Gitpod | <a
+        href="/webinars/java-remote-development"
+        on:click={closeBanner}>Register now</a
       >
     </p>
     <div class="flex-1 flex justify-end">
