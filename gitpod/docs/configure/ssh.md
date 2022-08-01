@@ -24,8 +24,9 @@ How to install a local SSH client depending on your operating system.
 | Windows 10 1803+ / Server 2016/2019 1803+ | Install the [Windows OpenSSH Client](https://docs.microsoft.com/windows-server/administration/openssh/openssh_install_firstuse). |
 | Earlier Windows                           | Install [Git for Windows](https://git-scm.com/download/win).                                                                     |
 | macOS                                     | Comes pre-installed.                                                                                                             |
-| Debian/Ubuntu                             | Run `sudo apt-get install openssh-client`                                                                                        |
+| Debian / Ubuntu / Mint                    | Run `sudo apt-get install openssh-client`                                                                                        |
 | RHEL / Fedora / CentOS                    | Run `sudo yum install openssh-clients`                                                                                           |
+| Arch / Manjaro                            | Comes pre-installed.                                                                                                             |
 
 > ❗️ PuTTY for Windows is not a supported client
 
