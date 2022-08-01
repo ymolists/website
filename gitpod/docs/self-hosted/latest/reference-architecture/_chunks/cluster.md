@@ -592,10 +592,12 @@ eksctl delete nodegroup --name services --cluster gitpod --disable-eviction --pa
 aws ec2 delete-security-group --group-id sg-04b9a5f403307efe5
 eksctl delete cluster --name gitpod --force --disable-nodegroup-eviction --wait
 
-#### The following are optional - you can remove them if yuou do not wish to reuse them for another Gitpod installation
+#### The following removal steps are optional; if you plan on creating another Gitpod installation then the S3 bucket,
+#### access account, key, and policy can be kept for later use.
+
 #### delete s3 resources
-aws s3 rm s3://suitably-tired-puma-registry --recursive
-aws s3 rb s3://suitably-tired-puma-registry --force
+aws s3 rm s3://${S3_BUCKET_NAME} --recursive
+aws s3 rb s3://${S3_BUCKET_NAME} --force
 
 #### delete iam resources
 aws iam detach-user-policy --user-name gitpod-s3-access --policy-arn 'arn:aws:iam::12344:policy/gitpod_s3_access_policy'

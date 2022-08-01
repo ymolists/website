@@ -44,7 +44,7 @@ Below, we create one S3 bucket and one IAM User service account to access it. Th
 
 ```bash
 export S3_BUCKET_NAME="suitably-tired-puma-registry"
-echo $S3_BUCKET_NAME
+echo ${S3_BUCKET_NAME}
 ```
 
 ### Create the S3 Bucket and ensure it is private
@@ -69,7 +69,7 @@ aws iam create-user \
   --tags Key=project,Value=gitpod
 ```
 
-Save the following file as `S3_policy.json`, replacing the resource name with the S3 bucket you created:
+Save the following file as `S3_policy.json`, replacing `${S3_BUCKET_NAME}` with the S3 bucket you created:
 
 ```json
 {
@@ -81,9 +81,7 @@ Save the following file as `S3_policy.json`, replacing the resource name with th
         "s3:GetBucketLocation"
       ],
       "Effect": "Allow",
-      "Resource": [
-        "arn:aws:s3:::<bucket name like suitably-tired-puma-registry>"
-      ],
+      "Resource": ["arn:aws:s3:::${S3_BUCKET_NAME}>"],
       "Sid": ""
     },
     {
@@ -95,9 +93,7 @@ Save the following file as `S3_policy.json`, replacing the resource name with th
         "s3:AbortMultipartUpload"
       ],
       "Effect": "Allow",
-      "Resource": [
-        "arn:aws:s3:::<bucket name like suitably-tired-puma-registry>/*"
-      ],
+      "Resource": ["arn:aws:s3:::${S3_BUCKET_NAME}/*"],
       "Sid": ""
     }
   ],
@@ -149,7 +145,7 @@ aws iam attach-user-policy \
 
 ### Create and store a user access token
 
-Be prepared to store the `AccessKeyId` and `SecretAccessKey` securely once you execute the following command:
+Create an access key with the following command, and securely record the resulting `AccessKeyId` and `SecretAccessKey` fields:
 
 ```bash
 aws iam create-access-key --user-name gitpod-s3-access
@@ -163,36 +159,33 @@ This should result in an output similar to the following:
         "UserName": "gitpod-s3-access",
         "AccessKeyId": "<accessKeyId>",
         "Status": "Active",
-        "SecretAccessKey": "SecretAccessKey",
+        "SecretAccessKey": "<SecretAccessKey>",
         "CreateDate": "2022-06-24T14:37:40+00:00"
     }
 }
 ```
 
-To test that this works, open a new shell session and configure it to use the `AccessKeyId` and `SecretAccessKey` you've just retrieved, and attempt to upload a file and then delete it, similar to the following:
+To test that these credentials provide write access to the S3 bucket, open a new shell session and configure it to use the `AccessKeyId` and `SecretAccessKey` you've just retrieved, and attempt to upload a file and then delete it:
 
 ```sh
 export AWS_ACCESS_KEY_ID=<accessKeyId>
-export AWS_SECRET_ACCESS_KEY="SecretAccessKey"
-aws s3 ls s3://suitably-tired-puma-registry
+export AWS_SECRET_ACCESS_KEY=<SecretAccessKey>
+aws s3 ls s3://${S3_BUCKET_NAME}
 echo "hello world" > gitpod_test.txt
-aws s3 cp gitpod_test.txt s3://suitably-tired-puma-registry
-upload: ./gitpod_test.txt to s3://suitably-tired-puma-registry/gitpod_test.txt
-aws s3 ls s3://suitably-tired-puma-registry
-2022-06-24 15:50:20         12 gitpod_test.txt
-aws s3 rm s3://suitably-tired-puma-registry/gitpod_test.txt
-delete: s3://suitably-tired-puma-registry/gitpod_test.txt
-aws s3 ls s3://suitably-tired-puma-registry
-*nothing returns if empty*
+aws s3 cp gitpod_test.txt s3://${S3_BUCKET_NAME}
+# => upload: ./gitpod_test.txt to s3://$S3_BUCKET_NAME/gitpod_test.txt
+aws s3 ls s3://${S3_BUCKET_NAME}
+# => 2022-06-24 15:50:20         12 gitpod_test.txt
+aws s3 rm s3://${S3_BUCKET_NAME}/gitpod_test.txt
+# => delete: s3://$S3_BUCKET_NAME/gitpod_test.txt
+aws s3 ls s3://${S3_BUCKET_NAME}
+# => *nothing returns if empty*
 ```
 
 To avoid impacting any further calls to AWS, unset the environment variables created:
 
 ```bash
 unset AWS_ACCESS_KEY_ID
-```
-
-```bash
 unset AWS_SECRET_ACCESS_KEY
 ```
 
