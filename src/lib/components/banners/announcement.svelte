@@ -29,7 +29,7 @@
   >
     <span class="flex-1 text-lg text-right">🤝 </span>
     <p class="flex-2 px-4 md:px-2">
-      ⚡ Webinar: Remote Development with IntelliJ & Gitpod | <a
+      ⚡ Joint JetBrains x Gitpod webinar on Java remote development | <a
         href="/webinars/java-remote-development"
         on:click={closeBanner}>Register now</a
       >
