@@ -22,6 +22,12 @@ title: "Single-Cluster Reference Architecture"
 
 # Single-Cluster Reference Architecture for Production Purposes
 
+                                                                                   |
+
+| --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Intended for: | Continous usage of Gitpod at a company-wide scale in a reliable way by relying on popular cloud provider services such as S3 and RDS. |
+| Limitations: | - Is bound to a single cluster. Deploying in several regions requires setting up several Gitpod installations <br /> - Requires external dependencies (Object storage, registry, database) to be set up|
+
 This guide describes a single-cluster reference architecture for Gitpod aimed at production environments: continuous deployments of Gitpod used in anger by your engineers. It consists of a Kubernetes cluster, cert-manager, external MySQL database, external OCI image registry, and external object storage. It includes instructions on how to set up this reference architecture on the officially supported cloud providers.
 
 This reference architecture can be used as a blueprint for your Gitpod installation: Start with this reference architecture and adapt it to your needs. The reference architecture as described in this guide is what Gitpod supports, and is used to test against every self-hosted Gitpod release.

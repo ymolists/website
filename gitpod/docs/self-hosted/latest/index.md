@@ -23,6 +23,10 @@ data={{
 
 Gitpod can be deployed and operated on your own infrastructure. It supports different cloud providers, self-managed Kubernetes clusters, corporate firewalls, and even off-grid / air-gapped networks.
 
+## Local Preview
+
+The [Local Preview](./latest/local-preview) provides a way to run Gitpod Self-Hosted locally on your machine to experience Gitpod without having to spin up a Kubernetes cluster. It is intended for preview purposes only - we strongly encourage the Kubernetes-based installation below for continuous usage.
+
 ## Prerequisites to Install Gitpod Self-Hosted
 
 - **Kubernetes expertise** <br />
@@ -39,10 +43,6 @@ Gitpod can be deployed and operated on your own infrastructure. It supports diff
 
 - **Gitpod product license** <br />
   To install Gitpod, you need a license which you can get [here](/community-license).
-
-## Local Preview
-
-The [Local Preview](./latest/local-preview) provides you with a way to run Gitpod Self-Hosted locally on your machine to be able to experience it without having to spin up a Kubernetes cluster.
 
 ## Getting Started
 
