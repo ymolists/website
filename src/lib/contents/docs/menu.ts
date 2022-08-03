@@ -21,7 +21,7 @@ export const MENU: MenuEntry[] = [
   M("Configure", "configure", [
     M(".gitpod.yml", "config-gitpod-file"),
     // Why is this side bar name different to the title / URL?
-    M("Configure Docker", "config-docker"),
+    M("Docker", "config-docker"),
     M("Start Tasks", "config-start-tasks"),
     M("Ports", "config-ports"),
     M("Prebuilds", "prebuilds"),
