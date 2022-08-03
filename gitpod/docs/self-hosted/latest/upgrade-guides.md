@@ -14,6 +14,12 @@ This page informs you if there are specific considerations to take into account 
 
 ## 2022.07
 
+### Setting the service type of the proxy component
+
+You can now configure the service type of the proxy service in the installation UI (see image below) - you do not need to upload a `.yaml` file as a [support patch](./support-patches) anymore to configure this. However, having it in the support patch will still work until December.
+
+![proxy service type UI](../../static/images/docs/self-hosted/proxy-service-type-ui.png)
+
 ### Setting workspace resource limits
 
 If you are setting a resource limit for workspaces via a [config-patch](../latest/support-patches), the way to set these limits has changed slightly:
